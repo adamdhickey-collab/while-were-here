@@ -1,5 +1,5 @@
 {
-  "title": "While We’re Here",
+  "title": "While We\u2019re Here",
   "subtitle": "Small essays about attention, technology, beauty, time, and being alive",
   "author": "Adam Hickey",
   "backCoverLine": "Some things become ordinary only because we have stopped looking at them.",
@@ -30,6 +30,10 @@
     {
       "type": "divider",
       "source": "sections/part-1.md"
+    },
+    {
+      "type": "essay",
+      "source": "essays/why-ordinary-days-may-be-the-point-of-life.md"
     },
     {
       "type": "essay",

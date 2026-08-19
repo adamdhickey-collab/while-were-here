@@ -78,4 +78,54 @@ export function attentionDiagram() {
 </svg>`;
 }
 
-export const diagrams = { 'attention-diagram': attentionDiagram };
+/**
+ * "Thirty thousand days" — the whole budget of a long life drawn at once, with
+ * the two hundred that end up in an album picked out in rust.
+ *
+ * The grey field is 125 full-height strokes per page with a dash pattern tuned
+ * so each dash is one day. That is two elements instead of fifteen thousand,
+ * and — unlike an SVG <pattern> fill, which Chromium drops on the print path —
+ * it survives into the PDF. The two halves share one grid and meet across the
+ * fold without a seam.
+ */
+export function dayField(half = 0) {
+  const COLS = 250, ROWS = 120;          // 30,000 days ≈ 82 years
+  const HALF_COLS = COLS / 2;
+  const W = 2660, H = 2360;              // tenths of a millimetre, per page
+  const cw = W / HALF_COLS;              // column pitch
+  const rh = H / ROWS;                   // row pitch
+  const tick = 10;                       // 1 mm mark
+
+  let columns = '';
+  for (let c = 0; c < HALF_COLS; c++) {
+    const x = (c * cw + cw / 2).toFixed(2);
+    columns += `M${x} 0V${H}`;
+  }
+
+  const rand = seeded(19740312);
+  const marked = new Set();
+  while (marked.size < 200) marked.add(Math.floor(rand() * COLS * ROWS));
+
+  let rust = '';
+  for (const i of marked) {
+    const col = i % COLS;
+    if (Math.floor(col / HALF_COLS) !== half) continue;
+    const x = ((col % HALF_COLS) * cw + cw / 2).toFixed(1);
+    const y = (Math.floor(i / COLS) * rh + (rh - tick * 1.4) / 2).toFixed(1);
+    rust += `M${x} ${y}v${(tick * 1.4).toFixed(0)}`;
+  }
+
+  return `
+<svg class="fieldnote day-field" viewBox="0 0 ${W} ${H}" preserveAspectRatio="none"
+     role="img" aria-label="Thirty thousand marks, two hundred of them picked out.">
+  <path d="${columns}" stroke="#191919" stroke-width="3" opacity="0.44"
+        stroke-dasharray="${tick} ${(rh - tick).toFixed(3)}"
+        stroke-dashoffset="${(-(rh - tick) / 2).toFixed(3)}"/>
+  <path d="${rust}" stroke="#A95738" stroke-width="5" stroke-linecap="butt"/>
+</svg>`;
+}
+
+export const diagrams = {
+  'attention-diagram': attentionDiagram,
+  'day-field': dayField,
+};

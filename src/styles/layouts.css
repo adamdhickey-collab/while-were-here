@@ -47,11 +47,7 @@
 .opener__lede { max-width: 104mm; font-size: 10.5pt; }
 .opener__foot .meta { white-space: nowrap; padding-bottom: 1mm; }
 
-/* Title reversed out of the image, when an opener wants it. */
-.opener--over .essay-title,
-.opener--over .deck,
-.opener--over .meta { color: var(--paper); }
-.opener--over .opener__eyebrow { border-color: rgba(243, 239, 229, 0.4); }
+/* The `over` variant — image across both pages, title reversed out — is in §9. */
 
 /* ---- 2. READING · TWO COLUMN -------------------------------------------- */
 
@@ -274,3 +270,104 @@
 
 /* ---- Blank -------------------------------------------------------------- */
 .page--blank { background: var(--paper); }
+
+/* ---- 9. OPENER · OVER ---------------------------------------------------
+   One image across both pages, the title reversed out of the recto. Used when
+   an essay should be inside its own world before it starts talking.          */
+
+.opener--over { background: var(--ink); }
+.opener--over .essay-title,
+.opener--over .meta,
+.opener--over .numeral { color: var(--paper); position: relative; }
+.opener--over .deck,
+.opener--over .opener__lede { color: rgba(243, 239, 229, 0.84); position: relative; }
+.opener--over .opener__eyebrow { border-color: rgba(243, 239, 229, 0.38); }
+.opener--over .page__block { z-index: 2; }
+/* A scrim, so type over a photograph survives a bad exposure. */
+.opener--over.opener__recto::after {
+  content: "";
+  position: absolute;
+  inset: calc(-1 * var(--bleed-out));
+  background: linear-gradient(200deg, rgba(15,14,12,0.66) 0%, rgba(15,14,12,0.30) 46%, rgba(15,14,12,0.60) 100%);
+  z-index: 1;
+}
+
+/* ---- 10. MARK FIELD -----------------------------------------------------
+   Thirty thousand ticks across the fold, two hundred of them in rust. A
+   diagram scaled up until it behaves like an image.                          */
+
+.mark-field { background: var(--paper-pale); }
+.mark-field__stage {
+  position: absolute;
+  top: var(--m-top);
+  bottom: calc(var(--m-bottom) + 34mm);
+}
+.page--verso.mark-field .mark-field__stage { left: var(--m-outside); right: 0; }
+.page--recto.mark-field .mark-field__stage { left: 0; right: var(--m-outside); }
+.day-field { display: block; width: 100%; height: 100%; }
+
+.mark-field__foot { position: absolute; bottom: var(--m-bottom); }
+.page--verso.mark-field .mark-field__foot { left: var(--m-outside); right: var(--m-inside); }
+.page--recto.mark-field .mark-field__foot { left: var(--m-inside); right: var(--m-outside); }
+.mark-field__note { max-width: 96mm; font-size: 9.5pt; line-height: 1.54; color: var(--ink-soft); }
+.mark-field__note p + p { text-indent: 0; }
+.mark-field__legend { display: flex; flex-direction: column; align-items: flex-end; gap: 3mm; text-align: right; }
+.mark-field__swatch {
+  display: inline-block;
+  width: 0.5mm; height: 3.4mm;
+  background: var(--rust);
+  margin-right: 2.5mm;
+  transform: translateY(0.6mm);
+}
+
+/* ---- 11. VISUAL ESSAY ---------------------------------------------------
+   A sequence, not a grid. The sizes are unequal on purpose — a contact sheet
+   with an editor's hand on it.                                               */
+
+.visual-essay__grid {
+  position: absolute;
+  top: var(--m-top);
+  bottom: var(--m-bottom);
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  column-gap: var(--gutter);
+  row-gap: var(--gutter);
+}
+.page--verso .visual-essay__grid { left: var(--m-outside); right: var(--m-inside); }
+.page--recto .visual-essay__grid { left: var(--m-inside);  right: var(--m-outside); }
+.visual-essay__grid > div { position: relative; }
+.visual-essay__grid .figure { position: absolute; inset: 0; }
+
+.ve-note { grid-column: 1 / 7;  grid-row: 1 / 3; align-self: start; }
+.ve-note .caption { margin-top: 4mm; max-width: 74mm; }
+.ve-a    { grid-column: 8 / 13; grid-row: 1 / 5; }
+.ve-b    { grid-column: 1 / 6;  grid-row: 4 / 8; }
+.ve-c    { grid-column: 1 / 13; grid-row: 1 / 4; }
+.ve-d    { grid-column: 1 / 6;  grid-row: 5 / 9; }
+.ve-e    { grid-column: 6 / 13; grid-row: 5 / 8; }
+
+/* ---- 12. IMAGE + ESSAY · BAND -------------------------------------------
+   The image runs across the top of the whole spread; the text sits under it.  */
+
+.image-essay--band .image-essay__figure {
+  position: absolute;
+  top: calc(-1 * var(--bleed-out));
+  height: 46%;
+}
+.page--verso.image-essay--band .image-essay__figure { left: calc(-1 * var(--bleed-out)); right: 0; }
+.page--recto.image-essay--band .image-essay__figure { right: calc(-1 * var(--bleed-out)); left: 0; }
+.image-essay--band .figure { position: absolute; inset: 0; }
+
+.image-essay--band .page__block {
+  top: calc(46% + 16mm);
+  align-content: start;
+  grid-template-rows: auto 1fr;
+}
+.image-essay--band .image-essay__text { grid-column: 1 / 9; font-size: 12pt; line-height: 1.66; }
+.image-essay--band .image-essay__caption-flow {
+  grid-column: 1 / 7;
+  grid-row: 2;
+  align-self: end;
+  max-width: none;
+}

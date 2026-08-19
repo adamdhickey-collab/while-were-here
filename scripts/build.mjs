@@ -86,8 +86,9 @@ const ctxBase = { root, image: (id) => imagesById[id] };
    A paired spread always begins on a verso; a blank is inserted if the flow
    would land it wrong. Nothing in the layouts needs to know about this. */
 
-function compose(book, toc) {
+function compose(book, toc, folios = {}) {
   const out = [];
+  const openings = {};                        // essay title -> folio of its title page
   let n = 0;                                  // interior page counter
   const nextSide = () => ((n + 1) % 2 === 1 ? 'recto' : 'verso');
 
@@ -138,7 +139,7 @@ function compose(book, toc) {
         place(L.openingNote(loadDoc(item.source)), { prefersRecto: true });
         break;
       case 'contents':
-        place(L.contents(book, toc));
+        place(L.contents(book, toc, folios));
         break;
       case 'divider': {
         const { data } = loadDoc(item.source);
@@ -149,10 +150,10 @@ function compose(book, toc) {
         const doc = loadDoc(item.source);
         const essay = doc.data;
         const ctx = { ...ctxBase, blocks: doc.blocks };
+        openings[essay.title] = n + 2;        // opener is a pair: verso, then the title recto
         for (const spread of essay.spreads) {
-          const key = spread.variant && spread.type === 'reading'
-            ? `reading-${spread.variant}`
-            : spread.type;
+          const variantKey = spread.variant ? `${spread.type}-${spread.variant}` : null;
+          const key = variantKey && L.essaySpreads[variantKey] ? variantKey : spread.type;
           const renderer = L.essaySpreads[key];
           if (!renderer) throw new Error(`Unknown spread type: ${key}`);
           place(renderer(spread, essay, ctx));
@@ -164,7 +165,7 @@ function compose(book, toc) {
     }
   }
 
-  return { pages: out, count: n };
+  return { pages: out, count: n, openings };
 }
 
 /* ---- Documents ----------------------------------------------------------- */
@@ -318,7 +319,8 @@ export function build() {
   copyDir(path.join(root, 'src/scripts'), path.join(out, 'scripts'));
   copyDir(path.join(root, 'public'), out);
 
-  const { pages, count } = compose(book, toc);
+  const { openings } = compose(book, toc);            // pass 1: find the folios
+  const { pages, count } = compose(book, toc, openings); // pass 2: print them
   const body = pages.join('\n');
 
   fs.writeFileSync(path.join(out, 'book.html'),

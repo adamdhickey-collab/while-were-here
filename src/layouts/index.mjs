@@ -111,7 +111,7 @@ export const openingNote = (note) => ({
   }],
 });
 
-export const contents = (bookData, toc) => {
+export const contents = (bookData, toc, folios = {}) => {
   const half = (parts) => parts.map((p) => `
       <section class="contents__part">
         <p class="meta meta--rust">Part ${esc(p.number)}</p>
@@ -121,7 +121,7 @@ export const contents = (bookData, toc) => {
             <li class="${e.status === 'planned' ? 'is-forthcoming' : ''}">
               <span>${esc(e.title)}</span>
               <span class="contents__dots"></span>
-              <span class="contents__folio">${e.status === 'laid-out' ? '013' : '—'}</span>
+              <span class="contents__folio">${folios[e.title] ? String(folios[e.title]).padStart(3, '0') : '—'}</span>
             </li>`).join('')}
         </ul>
       </section>`).join('');
@@ -186,20 +186,29 @@ export const divider = (section, ctx) => ({
 
 /* ---- Essay spreads ------------------------------------------------------- */
 
-const openerSpread = (spread, essay, ctx) => ({
+const openerSpread = (spread, essay, ctx) => {
+  const over = spread.variant === 'over';
+  const img = ctx.image(spread.image);
+  return {
   pair: true,
   pages: [
     {
-      spread: 'essay opener',
+      spread: over ? 'essay opener · over' : 'essay opener',
       folio: false,
-      cls: 'opener opener__verso',
-      html: figure(ctx.image(spread.image), { className: 'figure--bleed', inverse: true, root: ctx.root }),
+      cls: 'opener opener__verso' + (over ? ' opener--over' : ''),
+      html: figure(img, {
+        className: 'figure--bleed',
+        half: over ? 'left' : null,
+        inverse: true,
+        root: ctx.root,
+      }),
     },
     {
-      spread: 'essay opener',
+      spread: over ? 'essay opener · over' : 'essay opener',
       folio: false,
-      cls: 'opener opener__recto',
+      cls: 'opener opener__recto' + (over ? ' opener--over' : ''),
       html: `
+        ${over ? figure(img, { className: 'figure--bleed', half: 'right', inverse: true, root: ctx.root }) : ''}
         <div class="page__block">
           <div class="opener__eyebrow">
             <p class="meta">Part ${esc(essay.part)} &nbsp;·&nbsp; ${esc(essay.partTitle)}</p>
@@ -216,7 +225,8 @@ const openerSpread = (spread, essay, ctx) => ({
         </div>`,
     },
   ],
-});
+  };
+};
 
 const readingTwo = (spread, essay, ctx) => ({
   pair: true,
@@ -310,6 +320,94 @@ const pullQuote = (spread, essay, ctx) => ({
     },
   ],
 });
+
+const imageEssayBand = (spread, essay, ctx) => {
+  const img = ctx.image(spread.image);
+  return {
+    pair: true,
+    pages: [
+      {
+        spread: 'image + essay · band',
+        folio: true,
+        cls: 'image-essay image-essay--band',
+        html: `
+          <div class="image-essay__figure">${figure(img, { half: 'left', root: ctx.root })}</div>
+          <div class="page__block">
+            <div class="prose image-essay__text">${block(ctx.blocks, spread.blocks[0])}</div>
+            <p class="caption image-essay__caption-flow">${spread.caption || ''}</p>
+          </div>`,
+      },
+      {
+        spread: 'image + essay · band',
+        folio: true,
+        cls: 'image-essay image-essay--band',
+        html: `
+          <div class="image-essay__figure">${figure(img, { half: 'right', root: ctx.root })}</div>
+          <div class="page__block">
+            <div class="prose image-essay__text">${block(ctx.blocks, spread.blocks[1])}</div>
+          </div>`,
+      },
+    ],
+  };
+};
+
+/* A field of marks that is really a diagram wearing an image's clothes. */
+const markField = (spread, essay, ctx) => {
+  const render = diagrams[spread.figure] || (() => '');
+  const foot = (side) => side === 'verso'
+    ? `<div class="mark-field__foot">
+         <div class="prose mark-field__note">${(spread.blocks || []).map((b) => block(ctx.blocks, b)).join('')}</div>
+       </div>`
+    : `<div class="mark-field__foot mark-field__legend">
+         <p class="meta">${esc(spread.label || '')}</p>
+         <p class="meta meta--rust"><span class="mark-field__swatch"></span>${esc(spread.sublabel || '')}</p>
+       </div>`;
+  return {
+    pair: true,
+    pages: ['verso', 'recto'].map((side, i) => ({
+      spread: 'mark field',
+      folio: false,
+      cls: 'mark-field',
+      html: `<div class="mark-field__stage">${render(i)}</div>${foot(side)}`,
+    })),
+  };
+};
+
+/* A sequence of images, deliberately unequal, with almost no text. */
+const visualEssay = (spread, essay, ctx) => {
+  const img = (id, cls) => `<div class="${cls}">${figure(ctx.image(id), { root: ctx.root })}</div>`;
+  const [a, b, c, d, e] = spread.images;
+  return {
+    pair: true,
+    pages: [
+      {
+        spread: 'visual essay',
+        folio: true,
+        cls: 'visual-essay',
+        html: `
+          <div class="visual-essay__grid">
+            <div class="ve-note">
+              <p class="meta meta--rust">${esc(spread.title || '')}</p>
+              <p class="caption">${spread.note || ''}</p>
+            </div>
+            ${img(a, 've-a')}
+            ${img(b, 've-b')}
+          </div>`,
+      },
+      {
+        spread: 'visual essay',
+        folio: true,
+        cls: 'visual-essay',
+        html: `
+          <div class="visual-essay__grid">
+            ${img(c, 've-c')}
+            ${img(d, 've-d')}
+            ${img(e, 've-e')}
+          </div>`,
+      },
+    ],
+  };
+};
 
 const imageEssay = (spread, essay, ctx) => ({
   pair: true,
@@ -423,6 +521,9 @@ export const essaySpreads = {
   'reading-aside': readingAside,
   'pull-quote': pullQuote,
   'image-essay': imageEssay,
+  'image-essay-band': imageEssayBand,
+  'mark-field': markField,
+  'visual-essay': visualEssay,
   'full-bleed': fullBleed,
   diagram: diagramSpread,
   closing,

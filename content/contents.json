@@ -4,43 +4,100 @@
       "number": "I",
       "title": "Look Again",
       "essays": [
-        { "title": "Why Ordinary Days May Be the Point of Life", "status": "drafted" },
-        { "title": "Why We Cry at Beauty", "status": "drafted" },
-        { "title": "The Secret Life of Attention", "status": "laid-out" },
-        { "title": "The Lost Art of Wandering", "status": "drafted" },
-        { "title": "The Psychology of Enough", "status": "drafted" }
+        {
+          "title": "Why Ordinary Days May Be the Point of Life",
+          "status": "laid-out"
+        },
+        {
+          "title": "Why We Cry at Beauty",
+          "status": "drafted"
+        },
+        {
+          "title": "The Secret Life of Attention",
+          "status": "laid-out"
+        },
+        {
+          "title": "The Lost Art of Wandering",
+          "status": "drafted"
+        },
+        {
+          "title": "The Psychology of Enough",
+          "status": "drafted"
+        }
       ]
     },
     {
       "number": "II",
       "title": "What Are We?",
       "essays": [
-        { "title": "The Intelligence Outside Your Head", "status": "drafted" },
-        { "title": "What If Consciousness Isn’t the Most Important Thing About Us?", "status": "drafted" },
-        { "title": "The Beauty of Systems Nobody Designed", "status": "drafted" },
-        { "title": "The Most Important Things in Life Are Impossible to Measure", "status": "drafted" },
-        { "title": "Your Body Is a Civilization", "status": "planned" }
+        {
+          "title": "The Intelligence Outside Your Head",
+          "status": "drafted"
+        },
+        {
+          "title": "What If Consciousness Isn\u2019t the Most Important Thing About Us?",
+          "status": "drafted"
+        },
+        {
+          "title": "The Beauty of Systems Nobody Designed",
+          "status": "drafted"
+        },
+        {
+          "title": "The Most Important Things in Life Are Impossible to Measure",
+          "status": "drafted"
+        },
+        {
+          "title": "Your Body Is a Civilization",
+          "status": "planned"
+        }
       ]
     },
     {
       "number": "III",
       "title": "The World Is Changing",
       "essays": [
-        { "title": "The Strange Privilege of Being Alive During a Technological Revolution", "status": "drafted" },
-        { "title": "When Your Career Stops Being Your Identity", "status": "drafted" },
-        { "title": "The Last Generation That Remembers the Before-Time", "status": "drafted" },
-        { "title": "Why We Need Things That Are Useless", "status": "planned" }
+        {
+          "title": "The Strange Privilege of Being Alive During a Technological Revolution",
+          "status": "drafted"
+        },
+        {
+          "title": "When Your Career Stops Being Your Identity",
+          "status": "drafted"
+        },
+        {
+          "title": "The Last Generation That Remembers the Before-Time",
+          "status": "drafted"
+        },
+        {
+          "title": "Why We Need Things That Are Useless",
+          "status": "planned"
+        }
       ]
     },
     {
       "number": "IV",
-      "title": "While We’re Here",
+      "title": "While We\u2019re Here",
       "essays": [
-        { "title": "Why Humans Need Pilgrimages", "status": "drafted" },
-        { "title": "The People You Love Are Temporary", "status": "planned" },
-        { "title": "The Strange Gift of Getting Older", "status": "planned" },
-        { "title": "Can You Become Wiser Without Becoming Smarter?", "status": "planned" },
-        { "title": "While We’re Here", "status": "planned" }
+        {
+          "title": "Why Humans Need Pilgrimages",
+          "status": "drafted"
+        },
+        {
+          "title": "The People You Love Are Temporary",
+          "status": "planned"
+        },
+        {
+          "title": "The Strange Gift of Getting Older",
+          "status": "planned"
+        },
+        {
+          "title": "Can You Become Wiser Without Becoming Smarter?",
+          "status": "planned"
+        },
+        {
+          "title": "While We\u2019re Here",
+          "status": "planned"
+        }
       ]
     }
   ]

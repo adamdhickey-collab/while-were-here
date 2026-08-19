@@ -105,3 +105,8 @@
 .fn-fill-rust { fill: var(--rust); stroke: none; }
 .fn-fill-ink  { fill: var(--ink); stroke: none; }
 .fn-dash  { stroke-dasharray: 3 3; }
+
+/* On a crossover, only the left half carries the label — the right half is the
+   same image continuing, and two copies of the caption read as a mistake. */
+.figure--spread-right .plate__bottom,
+.figure--spread-right .plate__top { visibility: hidden; }

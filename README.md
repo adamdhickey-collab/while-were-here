@@ -184,12 +184,34 @@ Three voices, set once in `src/styles/tokens.css` and referenced nowhere else:
 - `--font-note` — a systems voice for specimen labels, diagram callouts and
   field notations. This is where the book gets its personality.
 
-They currently resolve to **Hoefler Text**, **Avenir Next** and **Menlo**, which
-are the strongest faces guaranteed present on the authoring Mac, so the build
-stays hermetic. All three are substitutes for licensed families — the intended
-pairings are listed in the art direction. To swap: change the three variables,
-add `@font-face` rules pointing at files in `public/fonts`, and rebuild. Nothing
-else in the project names a typeface.
+They currently resolve to open-licence faces vendored from npm and served from
+`build/fonts`, so the PDF build is reproducible offline and the exported file
+embeds exactly these faces:
+
+| Voice | Board specifies | Currently | Why |
+| --- | --- | --- | --- |
+| Display | GT Super Bold | **Fraunces** (variable) | Same high-contrast literary serif register; its optical-size, softness and "wonk" axes are driven explicitly in `typography.css`. |
+| Body | Söhne Buch | **Archivo** | Grotesque in the Akzidenz/Franklin line that Söhne descends from, drawn for text. |
+| Annotations | GT America Mono | **IBM Plex Mono** | Neo-grotesque mono, warmer than Roboto Mono. |
+| Hand | script accent | **Caveat** | Natural handwriting, closest to the board's sample. |
+
+### Moving to Adobe Fonts
+
+The three families the boards name are **not available through Creative Cloud**
+— Grilli Type (GT Super, GT America Mono) and Klim (Söhne) license direct only.
+Freight Text Pro and the DIN families, named on the earlier boards, are on Adobe
+Fonts. If you go that route:
+
+1. Activate the desktop fonts in the Creative Cloud app. Vivliostyle renders
+   through headless Chromium on this machine, so activated fonts resolve by
+   family name and get embedded in the PDF.
+2. For the hosted preview, add your Adobe web-project `<link>` to the generated
+   HTML. Adobe web fonts cannot be self-hosted or vendored, which is why the
+   default path stays on the npm faces.
+3. Change the four `--font-*` variables in `src/styles/tokens.css`.
+
+Body size is tuned to the current faces. Changing them changes the copy fit —
+run `npm run dev` and watch the overflow outlines before trusting a swap.
 
 ---
 

@@ -12,6 +12,60 @@ upscale a weak generation to hit the target; regenerate instead.
 
 ---
 
+## —
+
+### cover-01-watercolor-systems
+
+**Save as** `public/images/illustration/cover-01-watercolor-systems.png` · 1:1 · target 6000 × 6000 px
+**Where it goes** Front cover, lower two-thirds
+**Why it is there** The front cover. Carries the whole book's promise before a word is read.
+**Watch for** Warm cream ground (#F3EFE5) that can be knocked out to transparent. Keep the top third quiet — the title sits there. No legible text anywhere in the artwork.
+
+```text
+An illustrated plate from a vintage scientific field guide, hand-drawn in ink on warm cream paper. Imperfect geometry — circles slightly out of true, lines drawn by hand, everything a degree or two off square. Field-guide illustration crossed with vintage scientific diagram, cartography and marginalia: arrows, rings, timelines, measure scales, tiny human figures. Screenprint and risograph texture with visible ink density variation and slight misregistration. Charcoal near-black ink on a warm cream ground (#F3EFE5), with restrained accents of muted rust (#A95738), faded cobalt (#536D8E) and moss green (#68735B). Intelligent, tactile, playful, handmade.
+
+A large organic form built from fine contour lines — like a topographic map of something that is not a landscape — with loose watercolour blooms of teal, slate blue, amber, coral and magenta washing through it, and a scatter of small ink dots joined by hairlines, as if a network had been traced over the top. It should read at once as weather, as a cell, as a root system and as a map, without settling into any of them.
+
+Square frame (1:1).
+
+Avoid: gradients; glossy 3D or rendered lighting; generic vector people; corporate infographic style; SaaS or explainer-video illustration; polished icon sets; decorative complexity with no conceptual purpose; fake handwritten paragraphs or invented lettering; any legible text; psychedelic imagery; symmetry for its own sake.
+```
+
+### cover-02-back-botanical
+
+**Save as** `public/images/illustration/cover-02-back-botanical.png` · 4:3 · target 3600 × 2700 px
+**Where it goes** Back cover, beneath the handwritten line
+**Why it is there** Back cover. Quiet counterweight to the front.
+**Watch for** Fine hatching only. The mycelium below the line is the point — do not crop it out.
+
+```text
+An illustrated plate from a vintage scientific field guide, hand-drawn in ink on warm cream paper. Imperfect geometry — circles slightly out of true, lines drawn by hand, everything a degree or two off square. Field-guide illustration crossed with vintage scientific diagram, cartography and marginalia: arrows, rings, timelines, measure scales, tiny human figures. Screenprint and risograph texture with visible ink density variation and slight misregistration. Charcoal near-black ink on a warm cream ground (#F3EFE5), with restrained accents of muted rust (#A95738), faded cobalt (#536D8E) and moss green (#68735B). Intelligent, tactile, playful, handmade.
+
+A small botanical ink drawing in the manner of a nineteenth-century field guide: a cluster of mushrooms with their mycelium threads visible below the soil line, drawn in fine charcoal hatching on warm cream, no colour.
+
+Horizontal frame (4:3).
+
+Avoid: gradients; glossy 3D or rendered lighting; generic vector people; corporate infographic style; SaaS or explainer-video illustration; polished icon sets; decorative complexity with no conceptual purpose; fake handwritten paragraphs or invented lettering; any legible text; psychedelic imagery; symmetry for its own sake.
+```
+
+### part-1-divider-sidewalk-birds
+
+**Save as** `public/images/photography/part-1-divider-sidewalk-birds.jpg` · 1:1 · target 4000 × 4000 px
+**Where it goes** Section divider (verso, full bleed)
+**Why it is there** Opens Part I on an image of a pattern that was always there.
+
+```text
+A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
+
+Wet sidewalk after rain, a scatter of starlings on a wire above it, arranged by accident into something that reads like handwriting.
+
+Square frame (1:1).
+
+Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
+```
+
+---
+
 ## Why Ordinary Days May Be the Point of Life
 
 ### ordinary-days-01a-dog-afternoon-light
@@ -342,26 +396,6 @@ A believable documentary photograph of the real world — quiet, contemplative, 
 Four strangers at a crosswalk, all looking at four different things, their shadows overlapping into a single shape.
 
 Very wide band (3:1), figures small in the frame.
-
-Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
-```
-
----
-
-## —
-
-### part-1-divider-sidewalk-birds
-
-**Save as** `public/images/photography/part-1-divider-sidewalk-birds.jpg` · 1:1 · target 4000 × 4000 px
-**Where it goes** Section divider (verso, full bleed)
-**Why it is there** Opens Part I on an image of a pattern that was always there.
-
-```text
-A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
-
-Wet sidewalk after rain, a scatter of starlings on a wire above it, arranged by accident into something that reads like handwriting.
-
-Square frame (1:1).
 
 Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
 ```

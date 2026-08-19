@@ -177,3 +177,51 @@
   text-transform: uppercase;
   color: var(--ink-faint);
 }
+
+/* ---- Cover artwork ------------------------------------------------------
+   Board three replaces the bare cream field with a watercolour-and-ink form.
+   The title still owns the top third; the artwork owns everything below it.  */
+
+.cover__art {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 24%;
+  bottom: 0;
+  z-index: 1;
+}
+.cover__art .figure { position: absolute; inset: 0; background: transparent; }
+.cover__art img { object-fit: contain; object-position: center bottom; }
+
+.cover .cover__inner { z-index: 2; grid-template-rows: auto 1fr auto; }
+.cover__head { align-self: start; }
+.cover__title { align-self: start; }
+.cover__sub {
+  margin: 9mm 0 0;
+  font-family: var(--font-text);
+  font-size: 9.5pt;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  text-indent: 0.28em;
+}
+.cover__author { align-self: end; margin-top: 0; }
+
+/* Back cover: a line in the hand, and one small botanical plate. */
+.cover-back__line.hand {
+  font-family: var(--font-hand);
+  font-size: 20pt;
+  line-height: 1.5;
+  max-width: 168mm;
+  color: var(--ink);
+  transform: none;
+}
+.cover-back__art {
+  position: relative;
+  width: 92mm;
+  height: 70mm;
+  margin-top: 12mm;
+}
+.cover-back__art .figure { position: absolute; inset: 0; background: transparent; }
+.cover-back__art img { object-fit: contain; object-position: left bottom; }
+.cover-back .cover__inner { grid-template-rows: auto auto 1fr auto auto; }

@@ -34,6 +34,8 @@
   --coral:        #E8705A;
   --signal:       #E44E2D;  /* signal orange — an event, not a colour        */
   --acid:         #B5C334;  /* acidic yellow-green                           */
+  --magenta:      #CE4A82;  /* the hot note in Expansion                     */
+  --lavender:     #9A93D6;
 
   /* ---- Stage defaults (Stage I) ------------------------------------------
      Every page carries a stage class. The stage sets the ground, the ink that
@@ -46,17 +48,24 @@
   --annotation:   0;        /* 0 quiet · 1 present · 2 dense                  */
 
   /* ---- Type families ----------------------------------------------------
+     ADOBE FONTS: the three families named on the boards — GT Super, Söhne and
+     GT America Mono — are not licensable through Creative Cloud; Grilli Type
+     and Klim both sell direct only. Freight Text Pro and DIN, which the
+     earlier boards named, ARE on Adobe Fonts. To switch, activate the desktop
+     fonts in Creative Cloud, add the web-project <link> to build/*.html for
+     the hosted preview, and change the four variables below. Nothing else in
+     the project names a typeface.
      Substitutions are deliberate: these are the strongest faces guaranteed to
      be present on the authoring machine. Swap in licensed families here and
      nowhere else — see README > Typography.                                 */
-  --font-display: "Hoefler Text", "Iowan Old Style", Baskerville, "Times New Roman", serif;
-  --font-text:    "Avenir Next", Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-display: "Fraunces", "Hoefler Text", "Iowan Old Style", Baskerville, serif;
+  --font-text:    "Archivo", "Avenir Next", "Helvetica Neue", Helvetica, Arial, sans-serif;
   /* The third voice: specimen labels, diagram callouts, field notations.
      This is where the book gets its personality. */
-  --font-note:    "DIN Condensed", Menlo, "SF Mono", "IBM Plex Mono", monospace;
+  --font-note:    "IBM Plex Mono", Menlo, "SF Mono", monospace;
   /* The fourth voice: field-note script. Used for a hand in the margin, never
      for anything the reader has to read. */
-  --font-hand:    "Bradley Hand", Noteworthy, "Segoe Script", cursive;
+  --font-hand:    "Caveat", "Bradley Hand", Noteworthy, cursive;
 
   /* ---- Type scale (points — this is a print document) -------------------- */
   --t-cover:        108pt;
@@ -66,7 +75,7 @@
   --t-quote-lg:      64pt;
   --t-deck:        15.5pt;
   --t-body:        10.5pt;
-  --t-body-lg:       13pt;   /* single-column reading spreads                */
+  --t-body-lg:     11.5pt;   /* single-column reading spreads                */
   --t-caption:        8pt;
   --t-margin-note:  7.5pt;
   --t-folio:          8pt;
@@ -148,8 +157,8 @@
   --rule: rgba(243, 239, 229, 0.24);
   --paper-deep: #1B1622;
   --paper-pale: #171320;
-  --accent-1: var(--coral);
-  --accent-2: var(--ultraviolet);
+  --accent-1: var(--magenta);
+  --accent-2: var(--lavender);
   --accent-3: var(--acid);
   --annotation: 2;
 }

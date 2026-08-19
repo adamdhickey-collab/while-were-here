@@ -12,7 +12,7 @@ const nb = (s = '') => String(s).replace(/ (\w{1,3})$/, '&nbsp;$1');
 
 /* ---- Covers -------------------------------------------------------------- */
 
-export const coverFront = (bookData) => ({
+export const coverFront = (bookData, ctx) => ({
   pair: false,
   pages: [{
     spread: 'cover',
@@ -20,15 +20,18 @@ export const coverFront = (bookData) => ({
     cls: 'cover',
     label: 'front cover',
     html: `
+      <div class="cover__art">${figure(ctx.image('cover-01-watercolor-systems'), { root: ctx.root })}</div>
       <div class="cover__inner">
-        <h1 class="cover__title"><span>While</span><span>We’re</span><span>Here</span></h1>
-        <div class="cover__mark">${radiant(27, 28)}</div>
+        <div class="cover__head">
+          <h1 class="cover__title"><span>While</span><span>We’re</span><span>Here</span></h1>
+          <p class="cover__sub">${esc(bookData.subtitle)}</p>
+        </div>
         <p class="cover__author">${esc(bookData.author)}</p>
       </div>`,
   }],
 });
 
-export const coverBack = (bookData) => ({
+export const coverBack = (bookData, ctx) => ({
   pair: false,
   pages: [{
     spread: 'cover',
@@ -292,7 +295,8 @@ const readingTwo = (spread, essay, ctx) => ({
           ${subhead(spread)}
           <div class="prose prose--cols${spread.dropCap ? ' prose--drop' : ''}">${block(ctx.blocks, spread.blocks[0])}</div>
           ${spread.bandImage ? `<div class="reading__band">${figure(ctx.image(spread.bandImage), { root: ctx.root })}</div>` : ''}
-          ${insetCard(spread.inset, ctx)}
+          ${spread.insetOn === 'recto' ? '' : insetCard(spread.inset, ctx)}
+          ${spread.noteOn === 'verso' && spread.marginNote ? `<div class="reading__note"><p class="margin-note">${spread.marginNote}</p></div>` : ''}
         </div>`,
     },
     {
@@ -314,7 +318,8 @@ const readingTwo = (spread, essay, ctx) => ({
                   <figcaption class="specimen">${esc(spread.contactSheet.captions[i] || '')}</figcaption>
                 </figure>`).join('')}
             </div>` : ''}
-          ${spread.marginNote ? `<div class="reading__note"><p class="margin-note">${spread.marginNote}</p></div>` : ''}
+          ${spread.insetOn === 'recto' ? insetCard(spread.inset, ctx) : ''}
+          ${spread.noteOn === 'verso' || !spread.marginNote ? '' : `<div class="reading__note"><p class="margin-note">${spread.marginNote}</p></div>`}
         </div>`,
     },
   ],

@@ -80,6 +80,33 @@ Built as `.taped`, `.tag`, `.label`, `.marginalia`, `.index-mark`, `.struck`,
 Note on overprint: `mix-blend-mode: multiply` is the only blend that survives
 the print path intact. Anything else gets rasterised on the way to PDF.
 
+## Material language
+
+Eight categories the imagery is drawn from, per board three. Every image in the
+manifest should be identifiable as one of these:
+
+**Field notes · Diagrams · Specimens · Maps · Microscopy · Overlays · Collage · Archival**
+
+## Layout rhythm
+
+> Essays average **4–6 spreads**: one opener, two to three reading spreads, one
+> visual or diagram, one closer.
+
+Essay 01 currently runs **seven** spreads (14 pp) with every word of the
+supplied text intact. Getting to six means cutting roughly 150 words. The
+arithmetic for the whole book is in *Open items*.
+
+## Production
+
+| | |
+| --- | --- |
+| Trim | 12 × 12 in · hardcover |
+| Extent | 144 pp (board estimate) |
+| Binding | Thread sewn, lay flat, printed endpapers |
+| Paper | Uncoated, tactile, warm white with natural fibre |
+| Ink | Rich black plus vibrant spot colours; occasional metallic or fluorescent hits |
+| Special | Occasional translucent overlays and fold-outs |
+
 ## Devices
 
 Taken directly from the interior direction boards and built as reusable parts:
@@ -155,9 +182,19 @@ moved below it as the boards show. **Worth deciding.**
 - **Trim.** The boards say 12 × 12 in, which is 304.8 mm. The build is 300 mm,
   matching Saal's 30 × 30 cm. One number has to give — `book.config.js` is the
   only place it lives.
-- **Extent.** The boards say ~200 pages. Essay 01 alone runs 22 pages at this
-  density; eighteen essays at that rate is roughly 400. Either the page count
-  rises, the density does, or essays get fewer spreads.
+- **Extent.** Board three sets 144 pp and 4–6 spreads per essay. Essay 01 fits
+  its full text in seven spreads (14 pp). Eighteen essays at seven spreads is
+  252 pp of essays before front matter and dividers. Three levers: cut ~150
+  words per essay to reach six spreads (≈216 pp), raise the extent, or accept
+  denser pages. **This one needs deciding before Part II is laid out.**
+- **Stage count.** Board two names five stages (observe / notice / understand /
+  expand / integrate); board three's journey bar names four (calm &
+  observational / discovery / expansion / integration). The build uses five,
+  which subdivides board three's first zone. Harmless, but worth confirming.
+- **Cover.** Board three replaces the bare cream field with watercolour-and-ink
+  artwork and a new subtitle, *Essays on ordinary days and hidden worlds*. Both
+  are in. The artwork is a placeholder plate until generated —
+  `cover-01-watercolor-systems`.
 - **Colour on press.** Bioluminescent teal, ultraviolet and acid are outside a
   comfortable CMYK gamut. On a photo-book press they will shift. Either accept
   the shift, restrict Act III's saturation, or plan for a printer that can hit

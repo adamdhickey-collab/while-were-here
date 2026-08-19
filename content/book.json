@@ -1,9 +1,9 @@
 {
   "title": "While We\u2019re Here",
-  "subtitle": "Small essays about attention, technology, beauty, time, and being alive",
+  "subtitle": "Essays on ordinary days and hidden worlds",
   "author": "Adam Hickey",
-  "backCoverLine": "Some things become ordinary only because we have stopped looking at them.",
-  "backCoverBlurb": "Eighteen short essays on paying attention \u2014 to weather, to strangers, to machines that are learning to think, to the people who will not always be here. A book for reading straight through, or for opening at random on a Tuesday.",
+  "backCoverLine": "You can walk around a familiar lake believing almost nothing is happening, while simultaneously moving through thousands of invisible systems.",
+  "backCoverBlurb": "Essays on attention, weather, water, machines that are learning to think, and the people who will not always be here. A book for reading straight through, or for opening at random on a Tuesday.",
   "sequence": [
     {
       "type": "cover-front"
@@ -45,5 +45,6 @@
     {
       "type": "cover-back"
     }
-  ]
+  ],
+  "coverStrapline": "Field notes. Science. Wonder. Ordinary life."
 }

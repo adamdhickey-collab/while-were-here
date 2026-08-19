@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "description": "WHILE WE'RE HERE \u2014 a print-first coffee-table book built with HTML, CSS and Vivliostyle.",
+  "description": "WHILE WE'RE HERE — a print-first coffee-table book built with HTML, CSS and Vivliostyle.",
   "author": "Adam Hickey",
   "scripts": {
     "build": "node scripts/build.mjs",
@@ -16,6 +16,11 @@
     "prompts": "node scripts/prompts.mjs"
   },
   "devDependencies": {
+    "@fontsource-variable/fraunces": "^5.3.0",
+    "@fontsource/archivo": "^5.3.0",
+    "@fontsource/caveat": "^5.3.0",
+    "@fontsource/fraunces": "^5.3.0",
+    "@fontsource/ibm-plex-mono": "^5.3.0",
     "@vivliostyle/cli": "^9.5.0",
     "chokidar": "^4.0.3",
     "concurrently": "^9.2.1",

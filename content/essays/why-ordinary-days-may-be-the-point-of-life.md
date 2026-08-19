@@ -17,29 +17,13 @@ spreads:
     variant: two
     subhead: The Life Between the Milestones
     dropCap: true
-    blocks: [s2a, s2b]
+    blocks: [s2a+s2b, s3a+s3b]
+    insetOn: recto
     inset:
       image: ordinary-days-01b-tabletop-object
       caption: Left where it was left.
+    noteOn: verso
     marginNote: Most of life is not a highlight reel.
-  - type: reading
-    variant: aside
-    subhead: Familiarity Makes Things Disappear
-    image: ordinary-days-01c-lake-quiet
-    figure: observational
-    figureTitle: Ripples, edge of the lake
-    blocks: [s3a, s3b]
-    noticeLede: Choose one thing on a familiar walk.
-    notice: >-
-      Look at it as though you need to explain it to someone who has never seen
-      it before. A tree. A storm drain. The edge of the lake. A bird. Your own
-      hand.
-  - type: pull-quote
-    variant: bare
-    quote: >-
-      The extraordinary becomes ordinary not because it stopped being
-      extraordinary, but because we stopped noticing it.
-    lede: A pause
   - type: image-pair
     subhead: Attention Changes the World
     images:
@@ -50,17 +34,30 @@ spreads:
       title: Visible / Present
       visible: [tree, path, water]
       present: [photosynthesis, groundwater, microbes, insects, wind, reflected wavelengths, cellular activity]
-  - type: image-essay
-    variant: tall
-    subhead: The Future Will Make Today Look Precious
-    image: ordinary-days-01e-two-walking
-    blocks: [s6a, s6b]
-    figure: walking
-    figureTitle: One step, four systems
+  - type: pull-quote
+    variant: bare
+    quote: >-
+      The extraordinary becomes ordinary not because it stopped being
+      extraordinary, but because we stopped noticing it.
+    lede: There is always more
   - type: reading
     variant: two
-    subhead: The Ordinary Is Not the Interruption
-    blocks: [s7a, s7b]
+    subhead: The Future Will Make Today Look Precious
+    blocks: [s6a+s6b, s7a+s7b]
+    insetOn: recto
+    inset:
+      figure: walking
+      title: One step, four systems
+      hand: none of this was decided
+    noticeLede: Choose one thing on a familiar walk.
+    notice: >-
+      Look at it as though you need to explain it to someone who has never seen
+      it before. A tree. A storm drain. The edge of the lake. A bird. Your own
+      hand.
+  - type: reading
+    variant: two
+    subhead: Why Repetition Isn’t Emptiness
+    blocks: [s8a+s8b, s9a+s9b]
     contactSheet:
       images:
         - ordinary-days-01f1-pavement-shadow
@@ -70,31 +67,13 @@ spreads:
         - 3:42 PM / wind from west
         - 4:05 PM / shoreline, low water
         - 4:20 PM / first cicadas
-  - type: sequence
-    subhead: Why Repetition Isn’t Emptiness
-    images:
-      - ordinary-days-01g1-tree-spring
-      - ordinary-days-01g2-tree-summer
-      - ordinary-days-01g3-tree-autumn
-      - ordinary-days-01g4-tree-winter
-    blocks: [s8a, s8b]
     marginNote: The route repeats. The world does not.
-  - type: image-essay
-    variant: band
-    subhead: The People We Stop Seeing
-    image: ordinary-days-01i-kitchen-light
-    blocks: [s9a, s9b]
-    caption: >-
-      <b>Plate 9.</b> A future slot for a real photograph. The person in the
-      kitchen light should be someone you actually know.
-  - type: reading
-    variant: aside
-    subhead: The Important Parts
-    blocks: [s10a, s10b]
   - type: closing
+    subhead: The Important Parts
     line: Maybe the ordinary days were the important parts.
     coda: We just didn’t know what they were worth yet.
     image: ordinary-days-01j-quiet-close
+    blocks: [s10a+s10b]
 ---
 
 <!-- block: s2a -->

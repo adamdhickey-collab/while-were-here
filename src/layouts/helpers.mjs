@@ -88,4 +88,10 @@ export function page({ side, folio: n, rubric, spread, label, className = '', bo
     </section>`;
 }
 
-export const block = (blocks, id) => blocks[id] || `<!-- missing block: ${id} -->`;
+/* A block reference may join several blocks with `+`, so a spread can carry a
+   longer run of prose without the markdown having to be re-cut. */
+export const block = (blocks, id) =>
+  String(id)
+    .split('+')
+    .map((k) => blocks[k.trim()] || `<!-- missing block: ${k.trim()} -->`)
+    .join('');

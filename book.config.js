@@ -35,8 +35,8 @@ export const geometry = {
   // Spine width cannot be calculated until final page count and paper stock are
   // fixed. Formula: pages / 2 * caliper + boardAllowance.
   cover: {
-    pageCount: 120,        // running estimate
-    paperCaliper: 0.14,    // mm per leaf — placeholder for a 170gsm silk
+    pageCount: 144,        // board estimate, thread bound
+    paperCaliper: 0.17,    // mm per leaf — uncoated warm white with natural fibre
     boardAllowance: 4,     // mm added for hardcover board and hinge
     wrapTurnIn: 15,        // mm folded around the board
     hingeGap: 8,           // mm groove either side of the spine

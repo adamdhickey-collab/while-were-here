@@ -15,6 +15,15 @@
   text-rendering: geometricPrecision;
 }
 
+/* Fraunces is used as static instances rather than as a variable font: a
+   variable instance is written into the PDF as Type 3 glyph procedures, which
+   prepress cannot subset. Weight is therefore the only axis available, and it
+   carries the whole hierarchy. */
+.display, .cover__title, .titlespread__title, .essay-title, .pull-quote,
+.statement, .closing__line, .cover-back__line { font-weight: 600; }
+.subhead, .diagram__title, .contents__part-title { font-weight: 600; }
+.prose--drop > p:first-child::first-letter { font-weight: 700; }
+
 /* ---- Display: section dividers, cover ----------------------------------- */
 .display {
   font-family: var(--font-display);

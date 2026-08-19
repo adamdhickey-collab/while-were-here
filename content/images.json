@@ -2,6 +2,38 @@
   "$comment": "Single source of truth for imagery. `npm run manifest` regenerates prompts/image-manifest.md from this file. Drop a real file into public/images/<kind>/<filename> and the placeholder plate is replaced automatically at build time.",
   "images": [
     {
+      "id": "cover-01-watercolor-systems",
+      "filename": "cover-01-watercolor-systems.png",
+      "kind": "illustration",
+      "essay": "\u2014",
+      "section": "Cover",
+      "spread": "Front cover, lower two-thirds",
+      "subject": "A large organic form built from fine contour lines \u2014 like a topographic map of something that is not a landscape \u2014 with loose watercolour blooms of teal, slate blue, amber, coral and magenta washing through it, and a scatter of small ink dots joined by hairlines, as if a network had been traced over the top. It should read at once as weather, as a cell, as a root system and as a map, without settling into any of them.",
+      "concept": "The hidden systems the book keeps pointing at, drawn once, on the outside.",
+      "purpose": "The front cover. Carries the whole book's promise before a word is read.",
+      "aspect": "1:1",
+      "target": "6000 \u00d7 6000 px",
+      "status": "not generated",
+      "selection": "\u2014",
+      "revision": "Warm cream ground (#F3EFE5) that can be knocked out to transparent. Keep the top third quiet \u2014 the title sits there. No legible text anywhere in the artwork."
+    },
+    {
+      "id": "cover-02-back-botanical",
+      "filename": "cover-02-back-botanical.png",
+      "kind": "illustration",
+      "essay": "\u2014",
+      "section": "Cover",
+      "spread": "Back cover, beneath the handwritten line",
+      "subject": "A small botanical ink drawing in the manner of a nineteenth-century field guide: a cluster of mushrooms with their mycelium threads visible below the soil line, drawn in fine charcoal hatching on warm cream, no colour.",
+      "concept": "The visible part, and the part doing the work.",
+      "purpose": "Back cover. Quiet counterweight to the front.",
+      "aspect": "4:3",
+      "target": "3600 \u00d7 2700 px",
+      "status": "not generated",
+      "selection": "\u2014",
+      "revision": "Fine hatching only. The mycelium below the line is the point \u2014 do not crop it out."
+    },
+    {
       "id": "ordinary-days-01a-dog-afternoon-light",
       "filename": "ordinary-days-01a-dog-afternoon-light.jpg",
       "kind": "photography",

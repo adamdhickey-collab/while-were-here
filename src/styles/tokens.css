@@ -70,7 +70,7 @@
   --font-hand:    "Caveat", "Bradley Hand", Noteworthy, cursive;
 
   /* ---- Type scale (points — this is a print document) -------------------- */
-  --t-cover:        108pt;
+  --t-cover:         84pt;
   --t-display:       96pt;   /* section dividers                             */
   --t-essay-title:   54pt;
   --t-quote:         52pt;   /* pull-quote spreads                           */

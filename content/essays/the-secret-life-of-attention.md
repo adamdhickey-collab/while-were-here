@@ -33,12 +33,6 @@ spreads:
     caption: >-
       <b>Plate 3.</b> A dog tracking a rectangle of afternoon light across a
       floor, ten minutes at a time, for nine years.
-    specimen:
-      Subject: Domestic dog, 11 yrs
-      Location: East-facing room
-      Observed: 16:20 – 16:50
-      Method: Unaided, seated
-      notes: Moved four times, each time to the leading edge of the light. No apparent effort.
     sidebar:
       title: Field notes
       lines:

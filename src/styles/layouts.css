@@ -634,3 +634,31 @@
 .typespec .deck { margin-top: 9mm; max-width: 140mm; }
 .typespec__body { margin-top: 16mm; grid-column: 1 / 9; font-size: 11.5pt; }
 .typespec__foot { grid-row: 5; align-self: end; display: grid; gap: 5mm; }
+
+/* ---- 19. COMPOSITES -----------------------------------------------------
+   Some images arrive already mounted on a card, taped down, captioned or
+   keyed. Where that is true the layout's own treatment layer stands down —
+   tape on tape, or a caption under a caption, reads as a mistake rather than
+   as richness. The grid still places them; it just stops decorating them.     */
+
+.inset-card:has(.figure--composite) {
+  border: 0;
+  padding: 0;
+  background: none;
+}
+.inset-card:has(.figure--composite)::before,
+.inset-card:has(.figure--composite)::after { display: none; }
+.inset-card:has(.figure--composite) .inset-card__title,
+.inset-card:has(.figure--composite) .inset-card__caption { display: none; }
+.inset-card:has(.figure--composite) .inset-card__plate { aspect-ratio: 4 / 3; }
+
+.contact-sheet__cell:has(.figure--composite) figcaption { display: none; }
+.contact-sheet__cell:has(.figure--composite) .contact-sheet__plate { aspect-ratio: 1 / 1; }
+.contact-sheet:has(.figure--composite) { align-items: end; }
+
+/* A composite is a document, not a crop: show all of it. */
+.figure--composite img { object-fit: contain; }
+.bleed-spread .figure--composite img,
+.opener__verso .figure--composite img,
+.divider__figure .figure--composite img,
+.closing__figure .figure--composite img { object-fit: cover; }

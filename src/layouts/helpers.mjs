@@ -19,7 +19,10 @@ const KIND_DIR = { photography: 'photography', illustration: 'illustration', per
  */
 export function figure(image, opts = {}) {
   const { className = '', inverse = false, half = null, compact = false, root = process.cwd() } = opts;
-  const classes = ['figure', className, half ? `figure--spread-${half}` : ''].filter(Boolean).join(' ');
+  /* A composite arrives already mounted, taped, captioned or keyed. The layout
+     must not put a second frame around a frame that is already in the picture. */
+  const classes = ['figure', className, half ? `figure--spread-${half}` : '',
+    image && image.composite ? 'figure--composite' : ''].filter(Boolean).join(' ');
 
   if (!image) {
     return `<div class="${classes}"><div class="plate"><p class="plate__id">missing manifest entry</p></div></div>`;

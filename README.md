@@ -27,7 +27,8 @@ Then open <http://localhost:4321/> — a small hub linking the three views.
 | `npm run build` | Compose `build/` from content. Fast, no browser. |
 | `npm run dev` | Build, watch content, and serve `build/` on port 4321. |
 | `npm run preview` | Open the real Vivliostyle paginator on `build/book.html`. |
-| `npm run pdf` | Proof PDF → `dist/while-were-here.pdf` (trimmed, no marks). |
+| `npm run pdf` | Full-resolution PDF → `dist/while-were-here.pdf`. Around 200 MB with real imagery — correct for a printer, unwieldy on a laptop. |
+| `npm run pdf:proof` | Review PDF at screen resolution → `dist/while-were-here-proof.pdf`, roughly 30 MB. |
 | `npm run pdf:press` | Press PDF → `dist/while-were-here-press.pdf` (bleed + crop marks). |
 | `npm run prompts` | Regenerate `prompts/image-prompts.md` from the manifest. |
 | `npm run place` | Put a generated image into the book; bare, it lists what is missing. |
@@ -145,6 +146,11 @@ writing a renderer in `src/layouts/index.mjs` and its CSS in
 
 `content/images.json` is the source of truth. `prompts/image-manifest.md`
 regenerates from it on every build — never edit the markdown.
+
+Images marked `composite` in the manifest arrive already mounted, taped,
+captioned or keyed. Where that is true the layout's treatment layer stands down
+— tape on tape, or a caption under a caption, reads as a mistake rather than as
+richness. Nineteen of the twenty-three current images are composites.
 
 Any image that has not been made yet renders as a **labelled plate** carrying its
 manifest ID, subject, aspect, target resolution and status. A proof PDF is

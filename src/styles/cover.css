@@ -50,7 +50,9 @@
 
 .cover__author {
   align-self: end;
-  margin-top: 26mm;
+  position: relative;
+  z-index: 3;
+  margin-top: 0;
   font-family: var(--font-text);
   font-size: 10pt;
   letter-spacing: 0.34em;
@@ -180,22 +182,26 @@
    Board three replaces the bare cream field with a watercolour-and-ink form.
    The title still owns the top third; the artwork owns everything below it.  */
 
+/* The artwork arrives on its own cream ground, so it is placed inside the page
+   rather than bled off it — that way the title sits on clean paper above and
+   the author line on clean paper below, and nothing has to compete with the
+   washes. */
 .cover__art {
   position: absolute;
   left: 0;
   right: 0;
-  top: 24%;
-  bottom: 0;
+  top: 38%;
+  bottom: 12%;
   z-index: 1;
 }
 .cover__art .figure { position: absolute; inset: 0; background: transparent; }
-.cover__art img { object-fit: contain; object-position: center bottom; }
+.cover__art img { object-fit: contain; object-position: center center; }
 
-.cover .cover__inner { z-index: 2; grid-template-rows: auto 1fr auto; }
-.cover__head { align-self: start; }
+.cover .cover__inner { z-index: 2; grid-template-rows: auto 1fr auto; align-content: stretch; }
+.cover__head { align-self: start; position: relative; z-index: 3; }
 .cover__title { align-self: start; }
 .cover__sub {
-  margin: 9mm 0 0;
+  margin: 7mm 0 0;
   font-family: var(--font-text);
   font-size: 9.5pt;
   letter-spacing: 0.28em;

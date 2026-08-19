@@ -17,7 +17,8 @@
     "place": "node scripts/place.mjs",
     "credits": "node scripts/credits.mjs",
     "fonts:convert": "./.venv/bin/python scripts/otf2ttf.py fonts-licensed fonts-licensed/.ttf-cache",
-    "fonts:setup": "python3 -m venv .venv && ./.venv/bin/pip install -q \"fonttools[woff]\" && npm run fonts:convert"
+    "fonts:setup": "python3 -m venv .venv && ./.venv/bin/pip install -q \"fonttools[woff]\" && npm run fonts:convert",
+    "pdf:proof": "npm run build && node scripts/proof.mjs && vivliostyle build build/book.html -o dist/while-were-here-proof.pdf && npm run build"
   },
   "devDependencies": {
     "@fontsource-variable/fraunces": "^5.3.0",

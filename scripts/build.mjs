@@ -90,6 +90,7 @@ function compose(book, toc, folios = {}) {
   const out = [];
   const openings = {};                        // essay title -> folio of its title page
   let n = 0;                                  // interior page counter
+  let stage = 1;                              // observe → notice → understand → expand → integrate
   const nextSide = () => ((n + 1) % 2 === 1 ? 'recto' : 'verso');
 
   const emit = (p, { standalone = false, sideOverride = null } = {}) => {
@@ -101,7 +102,7 @@ function compose(book, toc, folios = {}) {
       rubric: p.rubric,
       spread: p.spread,
       label: p.label,
-      className: p.cls,
+      className: `stage-${stage} ${p.cls}`,
       body: p.html,
     }));
   };
@@ -143,12 +144,14 @@ function compose(book, toc, folios = {}) {
         break;
       case 'divider': {
         const { data } = loadDoc(item.source);
+        if (data.stage) stage = data.stage;
         place(L.divider(data, ctxBase));
         break;
       }
       case 'essay': {
         const doc = loadDoc(item.source);
         const essay = doc.data;
+        if (essay.stage) stage = essay.stage;
         const ctx = { ...ctxBase, blocks: doc.blocks };
         openings[essay.title] = n + 2;        // opener is a pair: verso, then the title recto
         for (const spread of essay.spreads) {
@@ -253,12 +256,123 @@ ${['geometry.css', ...STYLES].map((h) => `<link rel="stylesheet" href="${h}">`).
   <a href="preview.html"><b>Spread preview</b><span>${count} pp &nbsp;·&nbsp; guides &amp; navigation</span></a>
   <a href="book.html"><b>Print document</b><span>raw pages &nbsp;·&nbsp; no chrome</span></a>
   <a href="cover-wrap.html"><b>Cover wrap</b><span>back | spine | front</span></a>
+  <a href="direction.html"><b>Art direction</b><span>acts · spectrum · three voices</span></a>
   <footer>
     ${geometry.trimWidth} × ${geometry.trimHeight} mm trim &nbsp;·&nbsp; ${geometry.bleed} mm bleed
     &nbsp;·&nbsp; spine <b>${spineWidth()} mm</b> provisional.<br>
     Printer geometry is not final. Everything comes from <b>book.config.js</b>.
   </footer>
 </div></body></html>
+`;
+}
+
+/* ---- Direction plates ----------------------------------------------------
+   The art direction, built at true trim size with the book's own page model,
+   so the palette and the type are shown at the scale they will be printed.
+   Not part of the book — a working document that happens to be a 12" object. */
+
+const ACTS = [
+  { n: 1, name: 'Calm · observational',  ground: 'var(--paper)',      cue: 'Cream paper, soft light, sparse photography, restrained annotation, a great deal of breathing room.' },
+  { n: 2, name: 'Discovery · hidden systems', ground: 'var(--bone)',  cue: 'Diagrams, overlays, specimens, cutaways. More colour. The book opens up and starts showing its work.' },
+  { n: 3, name: 'Perceptual expansion', ground: 'var(--paper-deep)',  cue: 'Deeper contrast, spectral colour, larger spreads, bolder type, layered image systems. The most adventurous zone.' },
+  { n: 4, name: 'Return · integration', ground: 'var(--paper)',       cue: 'Less density, calmer pages, fewer overlays, warmer tones, emotionally direct photography. The exhale.' },
+];
+
+const SPECTRUM = [
+  ['Warm paper', '--paper'], ['Bone', '--bone'], ['Charcoal', '--ink'],
+  ['Moss', '--moss'], ['Algae', '--algae'], ['Lake', '--lake'],
+  ['Oxidised rust', '--rust'], ['Amber', '--amber'], ['Bioluminescent teal', '--biolume'],
+  ['Ultraviolet', '--ultraviolet'], ['Coral', '--coral'], ['Signal orange', '--signal'],
+  ['Acid', '--acid'],
+];
+
+function directionDoc(book) {
+  const pg = (side, act, body) =>
+    `<section class="page page--${side} act-${act} dir" data-side="${side}" data-spread="direction" data-label="direction">${body}</section>`;
+
+  const actRow = (a) => `
+    <div class="dir-act act-${a.n}">
+      <div class="dir-act__chip" style="background:${a.ground}"><span>${a.n}</span></div>
+      <div class="dir-act__body">
+        <p class="label"><b>Act ${a.n}</b> ${esc(a.name)}</p>
+        <p class="caption">${esc(a.cue)}</p>
+        <div class="dir-act__accents">
+          <i style="background:var(--accent-1)"></i>
+          <i style="background:var(--accent-2)"></i>
+          <i style="background:var(--accent-3)"></i>
+        </div>
+      </div>
+    </div>`;
+
+  const pages = [
+    pg('verso', 1, `
+      <div class="page__block dir-open">
+        <p class="label"><b>Art direction</b> locked</p>
+        <h1 class="essay-title">Field Notes &amp;<br>Hidden Systems</h1>
+        <p class="deck">A 300 mm square hardcover that begins as a quiet observational field
+          journal and opens, act by act, into a vivid exploration of hidden systems, perception
+          and ordinary life.</p>
+        <p class="specimen">Natural-history elegance · editorial collage · spectral, ecological
+          and microscopic colour. Handmade, curious, alive. Never corporate, never cliché.</p>
+      </div>`),
+
+    pg('recto', 1, `
+      <div class="page__block dir-block">
+        <p class="label"><b>Fig. 1</b> The progression</p>
+        <div class="dir-acts">${ACTS.map(actRow).join('')}</div>
+        <p class="specimen dir-foot">An act is declared once, on a section or an essay.
+          Every page inside it inherits its ground, its three accents and how dense the
+          annotation layer may become.</p>
+      </div>`),
+
+    pg('verso', 2, `
+      <div class="page__block dir-block">
+        <p class="label"><b>Fig. 2</b> The spectrum</p>
+        <div class="dir-spectrum">
+          ${SPECTRUM.map(([name, v]) => `
+            <div class="dir-swatch">
+              <div class="dir-swatch__field" style="background:var(${v})"></div>
+              <p class="specimen">${esc(name)}</p>
+            </div>`).join('')}
+        </div>
+        <p class="specimen dir-foot">Not a rainbow. The colour system of stained slides, algae
+          blooms, topographic and thermal charts, old field guides and risograph overprints.
+          Which accents are in play is decided by the act, never by the spread.</p>
+      </div>`),
+
+    pg('recto', 2, `
+      <div class="page__block dir-block">
+        <p class="label"><b>Fig. 3</b> Three voices, and the hand</p>
+        <div class="dir-voice">
+          <p class="specimen">One · display serif</p>
+          <p class="essay-title" style="font-size:34pt">The Ground Is Alive</p>
+        </div>
+        <div class="dir-voice">
+          <p class="specimen">Two · text sans</p>
+          <p class="prose" style="font-size:12pt;max-width:118mm">Body copy, captions, folios.
+            It carries the reading and gets out of the way, which is the whole job.</p>
+        </div>
+        <div class="dir-voice">
+          <p class="specimen">Three · systems voice</p>
+          <p class="label"><b>Plate 14</b> Root network, 1:4</p>
+          <p class="marginalia">Marginalia sits in the margin and stays there. It is a hand,
+            not a second column.</p>
+          <p class="specimen">Specimen 0114 · <span class="struck">overprint</span> · index<span class="index-mark">7</span></p>
+        </div>
+        <p class="specimen dir-foot">Named families in the brief are licensed. These are
+          substitutes; all three swap in <b>tokens.css</b> and nowhere else.</p>
+      </div>`),
+  ];
+
+  return `<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><title>Art direction — Field Notes &amp; Hidden Systems</title>
+${['geometry.css', ...STYLES].map((h) => `<link rel="stylesheet" href="${h}">`).join('\n')}
+<link rel="stylesheet" href="styles/preview.css">
+</head>
+<body class="preview is-proof-screen">
+${pages.join('\n')}
+<script src="scripts/preview.js"></script>
+</body></html>
 `;
 }
 
@@ -328,6 +442,7 @@ export function build() {
   fs.writeFileSync(path.join(out, 'preview.html'),
     document_({ title: `${book.title} — preview`, body, preview: true }));
   fs.writeFileSync(path.join(out, 'cover-wrap.html'), coverWrapDoc(book));
+  fs.writeFileSync(path.join(out, 'direction.html'), directionDoc(book));
   fs.writeFileSync(path.join(out, 'index.html'), indexDoc(book, count));
   writeManifest();
 

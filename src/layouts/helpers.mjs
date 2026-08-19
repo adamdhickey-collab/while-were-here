@@ -18,7 +18,7 @@ const KIND_DIR = { photography: 'photography', illustration: 'illustration', per
  * therefore also the shot list.
  */
 export function figure(image, opts = {}) {
-  const { className = '', inverse = false, half = null, root = process.cwd() } = opts;
+  const { className = '', inverse = false, half = null, compact = false, root = process.cwd() } = opts;
   const classes = ['figure', className, half ? `figure--spread-${half}` : ''].filter(Boolean).join(' ');
 
   if (!image) {
@@ -32,7 +32,7 @@ export function figure(image, opts = {}) {
   }
 
   return `<div class="${classes}">
-      <div class="plate plate--${esc(image.kind)}${inverse ? ' plate--inverse' : ''}">
+      <div class="plate plate--${esc(image.kind)}${inverse ? ' plate--inverse' : ''}${compact ? ' plate--compact' : ''}">
         <div class="plate__top">
           <p class="plate__id">${esc(image.id)}</p>
           <p class="plate__kind">${esc(image.kind)}</p>
@@ -52,6 +52,29 @@ export const ring = (size = 17) => `
   <svg class="ring" viewBox="0 0 40 40" aria-hidden="true" style="width:${size}mm;height:${size}mm">
     <circle cx="20" cy="20" r="16.4" pathLength="100" stroke-dasharray="97 3" transform="rotate(-24 20 20)"/>
   </svg>`;
+
+/**
+ * The cover mark: a dot with rays. Half compass rose, half dandelion, half
+ * diagram of something radiating outward from an ordinary point — which is
+ * the argument of the book in one figure.
+ */
+export const radiant = (size = 22, rays = 32) => {
+  const rand = seeded(31415);
+  let d = '';
+  for (let i = 0; i < rays; i++) {
+    const a = (i / rays) * Math.PI * 2 - Math.PI / 2;
+    const inner = 3.4;
+    const outer = i % 4 === 0 ? 19 : 13.5 + rand() * 4.5;
+    d += `M${(20 + Math.cos(a) * inner).toFixed(2)} ${(20 + Math.sin(a) * inner).toFixed(2)}`
+       + `L${(20 + Math.cos(a) * outer).toFixed(2)} ${(20 + Math.sin(a) * outer).toFixed(2)}`;
+  }
+  return `
+  <svg class="radiant" viewBox="0 0 40 40" aria-hidden="true"
+       style="width:${size}mm;height:${size}mm">
+    <path d="${d}" stroke="currentColor" stroke-width="0.42" stroke-linecap="round" fill="none"/>
+    <circle cx="20" cy="20" r="1.5" fill="currentColor"/>
+  </svg>`;
+};
 
 /** Page wrapper. Sides, folios and spread type are set by the compositor. */
 export function page({ side, folio: n, rubric, spread, label, className = '', body }) {

@@ -29,6 +29,7 @@ Then open <http://localhost:4321/> — a small hub linking the three views.
 | `npm run preview` | Open the real Vivliostyle paginator on `build/book.html`. |
 | `npm run pdf` | Proof PDF → `dist/while-were-here.pdf` (trimmed, no marks). |
 | `npm run pdf:press` | Press PDF → `dist/while-were-here-press.pdf` (bleed + crop marks). |
+| `npm run prompts` | Regenerate `prompts/image-prompts.md` from the manifest. |
 | `npm run clean` | Remove `build/` and `dist/`. |
 
 `npm run pdf` downloads a Chromium build the first time it runs (~130 MB, via
@@ -44,6 +45,9 @@ Playwright). Everything after that is offline.
   so nothing can leak into the PDF.
 - **`cover-wrap.html`** — back | spine | front as one surface, for checking the
   wrap. The spine width shown is provisional.
+- **`direction.html`** — the art direction at true trim size: the four acts, the
+  spectrum, and the three type voices, built with the book's own page model so
+  colour and type are judged at the scale they will print.
 
 ---
 
@@ -145,8 +149,11 @@ therefore also the shot list. Drop a real file into
 `public/images/<kind>/<filename>` and the plate is replaced automatically on the
 next build. No layout change, no code change.
 
-Prompt libraries live in `prompts/photography-prompts.md` (QUIET SURREAL
-DOCUMENTARY) and `prompts/illustration-prompts.md` (PHILOSOPHICAL FIELD NOTES).
+`npm run prompts` writes **`prompts/image-prompts.md`** — one self-contained,
+copy-paste-ready prompt per image, with the filename to save it under. The
+house styles behind those prompts are documented in
+`prompts/photography-prompts.md` (QUIET SURREAL DOCUMENTARY) and
+`prompts/illustration-prompts.md` (PHILOSOPHICAL FIELD NOTES).
 `public/images/personal` is reserved and empty; personal photographs can replace
 generated ones one at a time.
 
@@ -156,18 +163,33 @@ generated, so they inherit the book's exact ink colours and stay vector-sharp at
 
 ---
 
+## The five stages
+
+The book is a progression, not a collection: observe, notice, understand,
+expand, integrate. A stage is declared once — `stage: 3` on a section or an
+essay — and every page inside it inherits its ground, the ink that survives on
+that ground, its three accents, and how dense the annotation layer may become.
+Stages III and IV invert to a dark page.
+
+A spread never names a colour. It uses `--accent-1/2/3` and the act decides what
+those resolve to, so re-pacing the book is a frontmatter change, not a redesign.
+Full direction in [`content/plan/art-direction.md`](content/plan/art-direction.md).
+
 ## Typography
 
-Two families, set once in `src/styles/tokens.css` and referenced nowhere else:
+Three voices, set once in `src/styles/tokens.css` and referenced nowhere else:
 
 - `--font-display` — an expressive serif for titles, dividers, pull quotes.
 - `--font-text` — a restrained sans for body, captions, folios, metadata.
+- `--font-note` — a systems voice for specimen labels, diagram callouts and
+  field notations. This is where the book gets its personality.
 
-They currently resolve to **Hoefler Text** and **Avenir Next**, which are the
-strongest faces guaranteed present on the authoring Mac, so the build stays
-hermetic. These are placeholders for licensed families. To swap: change the two
-variables, add `@font-face` rules pointing at files in `public/fonts`, and
-rebuild. Nothing else in the project names a typeface.
+They currently resolve to **Hoefler Text**, **Avenir Next** and **Menlo**, which
+are the strongest faces guaranteed present on the authoring Mac, so the build
+stays hermetic. All three are substitutes for licensed families — the intended
+pairings are listed in the art direction. To swap: change the three variables,
+add `@font-face` rules pointing at files in `public/fonts`, and rebuild. Nothing
+else in the project names a typeface.
 
 ---
 

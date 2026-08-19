@@ -79,6 +79,8 @@
     pages.forEach((page) => {
       page.classList.remove('has-overflow');
       page.querySelector('.overflow-flag')?.remove();
+      // A hidden page measures as zero and would flag everything on it.
+      if (!page.offsetParent || page.getBoundingClientRect().height < 1) return;
       const blocks = page.querySelectorAll('.page__block, .prose, .plate__bottom');
       let bad = false;
       blocks.forEach((b) => {
@@ -87,6 +89,7 @@
       const pr = page.getBoundingClientRect();
       page.querySelectorAll('.page__block > *').forEach((child) => {
         const cr = child.getBoundingClientRect();
+        if (cr.width < 1 && cr.height < 1) return;   // not rendered
         if (cr.bottom > pr.bottom + 1 || cr.top < pr.top - 1) bad = true;
       });
       if (bad) {

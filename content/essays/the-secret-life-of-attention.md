@@ -2,6 +2,7 @@
 id: attention
 number: "03"
 part: I
+stage: 1
 partTitle: Look Again
 title: The Secret Life of Attention
 deck: Attention is not a beam you point at the world. It is the thing quietly deciding what the world is going to be.
@@ -14,6 +15,7 @@ spreads:
     blocks: [open]
   - type: reading
     variant: two
+    dropCap: true
     blocks: [flow-1a, flow-1b]
     bandImage: attention-05-crosswalk-strangers
     marginNote: >-
@@ -31,6 +33,20 @@ spreads:
     caption: >-
       <b>Plate 3.</b> A dog tracking a rectangle of afternoon light across a
       floor, ten minutes at a time, for nine years.
+    specimen:
+      Subject: Domestic dog, 11 yrs
+      Location: East-facing room
+      Observed: 16:20 – 16:50
+      Method: Unaided, seated
+      notes: Moved four times, each time to the leading edge of the light. No apparent effort.
+    sidebar:
+      title: Field notes
+      lines:
+        - The animal is not concentrating. Concentration is effortful and this is not.
+        - It tracks the light without ever appearing to decide to.
+        - Nine years of the same square yard and no evidence of boredom.
+        - Whatever this is, it is not available to me by trying harder.
+    hand: it isn't trying
   - type: full-bleed
     image: attention-04-lake-weather
     caption: Late light, north shore. Nothing happening, at length.

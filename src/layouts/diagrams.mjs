@@ -125,7 +125,80 @@ export function dayField(half = 0) {
 </svg>`;
 }
 
+/** A small taped-in card figure: a life as a line, with the peaks as ticks. */
+export function punctuation() {
+  const rand = seeded(88101);
+  let ticks = '';
+  const xs = [];
+  for (let i = 0; i < 7; i++) xs.push(18 + rand() * 164);
+  xs.sort((a, b) => a - b).forEach((x) => {
+    ticks += `<path class="fn-rust" d="M${x.toFixed(1)} 26v14"/>`;
+  });
+  return `
+<svg class="fieldnote" viewBox="0 0 200 62" role="img"
+     aria-label="A line with seven marks on it.">
+  <path class="fn-ink" d="M8 33h184"/>
+  <circle class="fn-fill-ink" cx="8" cy="33" r="2"/>
+  <circle class="fn-fill-ink" cx="192" cy="33" r="2"/>
+  ${ticks}
+  <text x="8" y="58" font-size="7">birth</text>
+  <text x="192" y="58" font-size="7" text-anchor="end">not birth</text>
+</svg>`;
+}
+
+/** Ripples at the edge of the lake, drawn the way you would draw them in a
+    notebook while trying to work out what they are doing. */
+export function observational() {
+  const rand = seeded(4242);
+  let arcs = '';
+  for (let i = 0; i < 7; i++) {
+    const r = 10 + i * 13.5;
+    const wob = 1 + (rand() - 0.5) * 0.10;
+    arcs += `<ellipse class="fn-hair" cx="100" cy="86" rx="${(r * 1.9 * wob).toFixed(1)}" ry="${(r * wob).toFixed(1)}"/>`;
+  }
+  return `
+<svg class="fieldnote" viewBox="0 0 200 140" role="img"
+     aria-label="Concentric ripples spreading from a point.">
+  ${arcs}
+  <circle class="fn-fill-rust" cx="100" cy="86" r="2.6"/>
+  <path class="fn-rust" d="M100 83V56"/>
+  <text x="100" y="50" font-size="7" text-anchor="middle">point of entry</text>
+  <path class="fn-hair" d="M14 128h172"/>
+  <text x="14" y="138" font-size="6">0</text>
+  <text x="186" y="138" font-size="6" text-anchor="end">≈ 4 s</text>
+</svg>`;
+}
+
+/** One step, four systems — the amount of work a body does to cross a room. */
+export function walking() {
+  const stack = [
+    ['balance', 'inner ear'],
+    ['vision', 'horizon held still'],
+    ['placement', 'foot finds ground'],
+    ['correction', 'continuous, unasked'],
+  ];
+  return `
+<svg class="fieldnote" viewBox="0 0 200 132" role="img"
+     aria-label="Four systems working during a single step.">
+  <g class="fn-ink" transform="translate(26 34)">
+    <circle cx="0" cy="0" r="5"/>
+    <path d="M0 5v26 M0 12l-11 9 M0 12l11 9 M0 31l-9 20 M0 31l10 20"/>
+  </g>
+  ${stack.map(([k, v], i) => {
+    const y = 20 + i * 27;
+    return `<path class="fn-hair fn-dash" d="M40 ${y + 4}H86"/>
+            <text x="92" y="${y + 7}" font-size="7.5">${k}</text>
+            <text x="92" y="${y + 17}" font-size="6" fill="#8C8679">${v}</text>`;
+  }).join('')}
+  <path class="fn-rust" d="M18 106q10 -9 18 0t18 0"/>
+  <text x="60" y="110" font-size="6.5">weight, transferred</text>
+</svg>`;
+}
+
 export const diagrams = {
+  observational,
+  walking,
+  punctuation,
   'attention-diagram': attentionDiagram,
   'day-field': dayField,
 };

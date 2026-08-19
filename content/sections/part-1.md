@@ -1,6 +1,7 @@
 ---
 id: part-1
 number: "I"
+stage: 1
 title: Look Again
 image: part-1-divider-sidewalk-birds
 theme: light

@@ -180,3 +180,252 @@
   width: 2.4mm; height: 2.4mm; border-radius: 50%;
   background: var(--rust); display: block;
 }
+
+/* ==========================================================================
+   The third voice — specimen labels, diagram callouts, field notations.
+   Restrained by design: this layer is allowed to be odd, never decorative.
+   Its density is governed by --annotation, which the act sets.
+   ========================================================================== */
+
+.specimen {
+  font-family: var(--font-note);
+  font-size: var(--t-specimen);
+  line-height: 1.44;
+  letter-spacing: 0.02em;
+  color: var(--ink-faint);
+  margin: 0;
+  font-variant-numeric: tabular-nums;
+}
+.specimen--accent { color: var(--accent-1); }
+
+/* A specimen label: the small tag that says what a thing is and what it is
+   filed under. Used on plates, diagrams and field-note sequences. */
+.label {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 2.5mm;
+  font-family: var(--font-note);
+  font-size: var(--t-specimen);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+.label::before {
+  content: "";
+  width: 4mm;
+  height: 0.6pt;
+  background: var(--accent-1);
+  transform: translateY(-0.8mm);
+}
+.label b { font-weight: 400; color: var(--ink); }
+
+/* An index mark — the tiny numeral that ties a plate to a note. */
+.index-mark {
+  font-family: var(--font-note);
+  font-size: 6.5pt;
+  letter-spacing: 0.08em;
+  color: var(--accent-1);
+  vertical-align: super;
+}
+
+/* Marginalia: a hand in the margin, not a second column of text. */
+.marginalia {
+  font-family: var(--font-note);
+  font-size: 7pt;
+  line-height: 1.5;
+  color: var(--ink-faint);
+  border-left: 0.6pt solid var(--accent-1);
+  padding-left: 3mm;
+  margin: 0;
+  max-width: 52mm;
+}
+
+/* An underline drawn by hand rather than set by a typesetter. */
+.struck {
+  background-image: linear-gradient(var(--accent-1), var(--accent-1));
+  background-size: 100% 0.5pt;
+  background-repeat: no-repeat;
+  background-position: 0 88%;
+}
+
+/* ==========================================================================
+   Devices taken from the interior direction boards
+   ========================================================================== */
+
+/* ---- Drop cap -----------------------------------------------------------
+   A large serif initial with three lines of text set beside it. This is the
+   single strongest signal that a page belongs to this book.                 */
+.prose--drop > p:first-child::first-letter {
+  float: left;
+  font-family: var(--font-display);
+  font-size: 3.9em;
+  line-height: 0.80;
+  font-weight: var(--w-text);
+  padding: 0.06em 0.09em 0 0;
+  color: var(--ink);
+}
+.prose--drop > p:first-child { text-indent: 0; }
+
+/* ---- The hand -----------------------------------------------------------
+   Script in the margin. Never load-bearing: if it were removed the spread
+   would still read.                                                         */
+.hand {
+  font-family: var(--font-hand);
+  font-size: 11.5pt;
+  line-height: 1.42;
+  color: var(--accent-1);
+  margin: 0;
+  max-width: 48mm;
+  transform: rotate(-1.4deg);
+}
+.hand--under { text-decoration: underline; text-decoration-thickness: 0.4pt; text-underline-offset: 2px; }
+
+/* ---- NOTICE THIS --------------------------------------------------------
+   Redrawn as a bordered panel with a numbered sequence — an instrument, not
+   a pull quote. Understated, optional, and clearly not homework.            */
+.notice {
+  break-inside: avoid;
+  border: 0.5pt solid var(--ink);
+  padding: 7mm 7mm 8mm;
+  max-width: 96mm;
+  background: transparent;
+  display: block;
+}
+.notice__label {
+  font-family: var(--font-note);
+  font-size: 7.5pt;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  font-weight: var(--w-text);
+  color: var(--ink);
+  margin: 0 0 1.5mm;
+}
+.notice__lede {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 10pt;
+  line-height: 1.4;
+  color: var(--ink-soft);
+  margin: 0 0 5mm;
+}
+.notice__body {
+  font-family: var(--font-text);
+  font-size: 9.5pt;
+  line-height: 1.5;
+  color: var(--ink-soft);
+  margin: 0;
+  text-wrap: pretty;
+}
+.notice__steps { margin: 0; padding: 0; display: grid; gap: 3.4mm; counter-reset: step; }
+.notice__steps li {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 9mm 1fr;
+  align-items: baseline;
+  font-size: 9.5pt;
+  line-height: 1.44;
+  color: var(--ink-soft);
+}
+.notice__steps li::before {
+  counter-increment: step;
+  content: counter(step, decimal-leading-zero);
+  font-family: var(--font-note);
+  font-size: 8pt;
+  letter-spacing: 0.1em;
+  color: var(--accent-1);
+}
+
+/* ---- Sidebar ------------------------------------------------------------
+   A narrow outer column of short observations beside an image. Fragments,
+   not sentences — the notes you would actually write in a field book.       */
+.sidebar__title {
+  font-family: var(--font-note);
+  font-size: 8pt;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--ink);
+  margin: 0 0 4mm;
+  padding-bottom: 2.5mm;
+  border-bottom: 0.5pt solid var(--ink);
+}
+.sidebar__list { margin: 0; padding: 0; display: grid; gap: 4mm; }
+.sidebar__list li {
+  list-style: none;
+  font-size: 8.5pt;
+  line-height: 1.46;
+  color: var(--ink-soft);
+}
+
+/* ---- Stage statement ----------------------------------------------------
+   The recurring device that carries the progression: one declarative line,
+   one imperative under it, and nothing else on the page.                    */
+.statement {
+  font-family: var(--font-display);
+  font-size: 34pt;
+  line-height: 1.16;
+  letter-spacing: -0.012em;
+  font-weight: var(--w-text);
+  margin: 0;
+  max-width: 132mm;
+  text-wrap: balance;
+}
+.imperative {
+  font-family: var(--font-note);
+  font-size: 8.5pt;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--accent-1);
+  margin: 0;
+}
+.stage-mark {
+  font-family: var(--font-display);
+  font-size: 12pt;
+  letter-spacing: 0.16em;
+  color: var(--ink-faint);
+  margin: 0;
+}
+
+/* ---- Stanza -------------------------------------------------------------
+   A run of short lines set as one paragraph with hard breaks. It reads as a
+   list without being one, and it never takes a first-line indent.           */
+.prose p:has(br) {
+  text-indent: 0;
+  margin-block: 5mm;
+  line-height: 1.5;
+}
+
+/* ---- Subhead ------------------------------------------------------------ */
+.subhead {
+  font-family: var(--font-display);
+  font-size: 19pt;
+  line-height: 1.14;
+  letter-spacing: var(--ls-title);
+  font-weight: var(--w-text);
+  margin: 0;
+  max-width: 120mm;
+}
+
+/* ---- Ledger: visible / present ------------------------------------------
+   What a place is showing you, next to what it is actually doing. A quiet
+   foreshadow of the stages where the book goes inside the systems.          */
+.ledger { border-top: 0.6pt solid var(--ink); padding-top: 4mm; }
+.ledger__title {
+  font-family: var(--font-note);
+  font-size: 7.5pt;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--ink);
+  margin: 0 0 4mm;
+}
+.ledger__row {
+  display: grid;
+  grid-template-columns: 20mm 1fr;
+  gap: 3mm;
+  margin: 0 0 3mm;
+  font-family: var(--font-note);
+  font-size: 7.5pt;
+  line-height: 1.5;
+}
+.ledger__row dt { text-transform: uppercase; letter-spacing: 0.1em; color: var(--ink-faint); }
+.ledger__row dd { margin: 0; color: var(--ink-soft); }
+.ledger__row--present dd { color: var(--accent-1); }

@@ -18,7 +18,7 @@ html, body {
   position: relative;
   width: var(--trim-w);
   height: var(--trim-h);
-  background: var(--paper);
+  background: var(--ground);
   break-after: page;
   break-inside: avoid;
   overflow: visible;      /* the engine clips at the bleed box */
@@ -124,6 +124,7 @@ html, body {
 
 /* ---- Colour fields ------------------------------------------------------ */
 .field-deep  { background: var(--paper-deep); }
+.field-ground{ background: var(--ground); }
 .field-pale  { background: var(--paper-pale); }
 .field-ink   { background: var(--ink); color: var(--paper); }
 .field-ink .meta,

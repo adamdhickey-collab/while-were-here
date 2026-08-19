@@ -110,3 +110,110 @@
    same image continuing, and two copies of the caption read as a mistake. */
 .figure--spread-right .plate__bottom,
 .figure--spread-right .plate__top { visibility: hidden; }
+
+/* ==========================================================================
+   The handmade layer
+   Taped-in photographs, specimen tags, rough edges. Composed, never messy —
+   the imperfection is placed on purpose and the grid is still underneath it.
+   ========================================================================== */
+
+.taped { position: relative; }
+.taped::before,
+.taped::after {
+  content: "";
+  position: absolute;
+  width: 22mm;
+  height: 7mm;
+  background: rgba(233, 226, 208, 0.72);
+  border: 0.3pt solid rgba(140, 134, 121, 0.28);
+  z-index: 3;
+}
+.taped::before { top: -3mm; left: -6mm;  transform: rotate(-4deg); }
+.taped::after  { bottom: -3mm; right: -6mm; transform: rotate(-3deg); }
+
+/* A specimen tag pinned to the corner of a plate. */
+.tag {
+  position: absolute;
+  z-index: 4;
+  background: var(--paper-pale);
+  border: 0.3pt solid var(--rule);
+  padding: 1.6mm 2.6mm;
+  font-family: var(--font-note);
+  font-size: 6.5pt;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  white-space: nowrap;
+}
+.tag--tl { top: 5mm; left: 5mm; }
+.tag--br { bottom: 5mm; right: 5mm; }
+.tag b { font-weight: 400; color: var(--accent-1); }
+
+/* Overprint: two inks meeting on the same paper. Multiply is the only blend
+   mode that survives the print path intact — anything else gets rasterised. */
+.overprint { mix-blend-mode: multiply; }
+
+/* ---- Specimen card ------------------------------------------------------
+   The archival tag laid over a photograph: what it is, where it was, when,
+   and one line of notes. Structured like a real collection record.          */
+.specimen-card {
+  position: absolute;
+  z-index: 4;
+  background: var(--paper-pale);
+  border: 0.4pt solid rgba(140, 134, 121, 0.5);
+  padding: 5mm 6mm;
+  width: 66mm;
+  box-shadow: 0 0.6mm 2mm rgba(25, 25, 25, 0.12);
+  transform: rotate(-0.7deg);
+}
+.specimen-card__row {
+  display: grid;
+  grid-template-columns: 22mm 1fr;
+  gap: 2mm;
+  font-family: var(--font-note);
+  font-size: 6.8pt;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #4A4741;
+  margin: 0;
+}
+.specimen-card__row dt { text-transform: uppercase; color: #8C8679; }
+.specimen-card__row dd { margin: 0; }
+.specimen-card__notes {
+  margin: 3mm 0 0;
+  padding-top: 2.5mm;
+  border-top: 0.3pt solid rgba(140, 134, 121, 0.4);
+  font-family: var(--font-note);
+  font-size: 6.8pt;
+  line-height: 1.5;
+  color: #4A4741;
+}
+
+/* A small diagram card taped into a reading spread. */
+.inset-card {
+  position: relative;
+  background: var(--paper-pale);
+  border: 0.4pt solid rgba(140, 134, 121, 0.45);
+  padding: 6mm;
+  display: grid;
+  gap: 3.5mm;
+  justify-items: center;
+}
+.inset-card__title {
+  font-family: var(--font-note);
+  font-size: 6.8pt;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #4A4741;
+  margin: 0;
+  text-align: center;
+}
+
+/* A plate too small to carry its own description shows only its ID. */
+.plate--compact { padding: 4mm; }
+.plate--compact .plate__kind,
+.plate--compact .plate__subject,
+.plate--compact .plate__spec { display: none; }
+.plate--compact .plate__id { font-size: 5.6pt; letter-spacing: 0.1em; }
+.plate--compact::before { width: 8mm; }
+.plate--compact::after { height: 8mm; }

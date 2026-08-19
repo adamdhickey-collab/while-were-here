@@ -29,7 +29,7 @@
    into the PDF as Type 3 glyph procedures, which prepress cannot subset. */
 .cover__title, .titlespread__title, .display,
 .essay-title, .pull-quote, .statement, .closing__line { font-weight: 900; }
-.cover-back__line { font-weight: 700; }
+.cover-back__line, .material-break__line { font-weight: 700; }
 .subhead, .diagram__title, .contents__part-title { font-weight: 700; }
 .prose--drop > p:first-child::first-letter { font-weight: 900; }
 
@@ -41,7 +41,8 @@
   letter-spacing: var(--ls-display);
   font-feature-settings: "kern" 1, "liga" 1;
 }
-.subhead, .diagram__title, .contents__part-title { letter-spacing: var(--ls-title); }
+.subhead, .diagram__title, .contents__part-title,
+.material-break__line { letter-spacing: var(--ls-title); }
 
 /* ---- Display: section dividers, cover ----------------------------------- */
 .display {
@@ -56,7 +57,7 @@
 /* ---- Essay title -------------------------------------------------------- */
 .essay-title {
   font-family: var(--font-display);
-  font-size: var(--t-essay-title);
+  font-size: var(--t-title);
   line-height: 1.02;
   letter-spacing: var(--ls-title);
   margin: 0;
@@ -75,6 +76,21 @@
   max-width: 74mm;
   text-wrap: pretty;
 }
+
+/* ---- Measure -------------------------------------------------------------
+   Line length is capped in `ch`, so it holds whatever grid columns a spread
+   later decides to use. Multi-column prose is excluded — there the column
+   count already sets the measure, and a cap would halve it.
+
+   Calibrated, not assumed: `ch` is the advance of "0", which in Archivo runs
+   narrower than the average lowercase letter, so a 68ch cap actually delivers
+   about 79 characters. The value below is set from measurement against real
+   copy, not from the nominal number. Re-measure if the body face changes.
+
+   Measured across the book: two-column reading 51, decks and prompts ~50,
+   single-column prose 68, captions 63. All inside the 45–75 band. */
+.prose:not(.prose--cols) { max-width: 58ch; }
+.prose--cols { max-width: none; }
 
 /* ---- Body --------------------------------------------------------------- */
 .prose p {
@@ -98,7 +114,7 @@
   letter-spacing: 0.06em;
 }
 .prose--generous {
-  font-size: var(--t-body-lg);
+  font-size: var(--t-body);
   line-height: var(--lh-body-lg);
 }
 .prose em { font-style: italic; }
@@ -107,7 +123,7 @@
 /* A paragraph promoted to a statement inside running text. */
 .prose .beat {
   font-family: var(--font-display);
-  font-size: 17pt;
+  font-size: var(--t-sub);
   line-height: 1.28;
   text-indent: 0;
   margin-block: 6mm;
@@ -125,16 +141,16 @@
   hanging-punctuation: first;
   text-wrap: balance;
 }
-.pull-quote--lg { font-size: var(--t-quote-lg); }
+.pull-quote--lg { font-size: var(--t-quote); }
 
 /* ---- Caption ------------------------------------------------------------ */
 .caption {
   font-family: var(--font-text);
-  font-size: var(--t-caption);
+  font-size: var(--t-small);
   line-height: var(--lh-caption);
   color: var(--ink-faint);
   margin: 0;
-  max-width: 62mm;
+  max-width: 62ch;
 }
 .caption b {
   font-weight: var(--w-medium);
@@ -144,7 +160,7 @@
 /* ---- Marginal note ------------------------------------------------------ */
 .margin-note {
   font-family: var(--font-text);
-  font-size: var(--t-margin-note);
+  font-size: var(--t-fine);
   line-height: 1.44;
   color: var(--ink-faint);
   margin: 0;
@@ -155,7 +171,7 @@
 /* ---- Metadata: eyebrows, section numbers, folios ------------------------ */
 .meta {
   font-family: var(--font-text);
-  font-size: var(--t-meta);
+  font-size: var(--t-fine);
   letter-spacing: var(--ls-meta);
   text-transform: uppercase;
   font-weight: var(--w-medium);
@@ -167,7 +183,7 @@
 
 .numeral {
   font-family: var(--font-display);
-  font-size: 13pt;
+  font-size: var(--t-deck);
   letter-spacing: 0.04em;
   color: var(--rust);
 }
@@ -183,7 +199,7 @@
 }
 .notice__label {
   font-family: var(--font-text);
-  font-size: 7pt;
+  font-size: var(--t-micro);
   letter-spacing: 0.22em;
   text-transform: uppercase;
   font-weight: var(--w-demi);
@@ -192,7 +208,7 @@
 }
 .notice__body {
   font-family: var(--font-text);
-  font-size: 9.5pt;
+  font-size: var(--t-small);
   line-height: 1.5;
   color: var(--ink-soft);
   margin: 0;
@@ -214,7 +230,7 @@
 
 .specimen {
   font-family: var(--font-note);
-  font-size: var(--t-specimen);
+  font-size: var(--t-micro);
   line-height: 1.44;
   letter-spacing: 0.02em;
   color: var(--ink-faint);
@@ -230,7 +246,7 @@
   align-items: baseline;
   gap: 2.5mm;
   font-family: var(--font-note);
-  font-size: var(--t-specimen);
+  font-size: var(--t-micro);
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--ink-soft);
@@ -247,7 +263,7 @@
 /* An index mark — the tiny numeral that ties a plate to a note. */
 .index-mark {
   font-family: var(--font-note);
-  font-size: 6.5pt;
+  font-size: var(--t-micro);
   letter-spacing: 0.08em;
   color: var(--accent-1);
   vertical-align: super;
@@ -256,7 +272,7 @@
 /* Marginalia: a hand in the margin, not a second column of text. */
 .marginalia {
   font-family: var(--font-note);
-  font-size: 7pt;
+  font-size: var(--t-micro);
   line-height: 1.5;
   color: var(--ink-faint);
   border-left: 0.6pt solid var(--accent-1);
@@ -295,7 +311,7 @@
    would still read.                                                         */
 .hand {
   font-family: var(--font-hand);
-  font-size: 11.5pt;
+  font-size: var(--t-body);
   line-height: 1.42;
   color: var(--accent-1);
   margin: 0;
@@ -317,7 +333,7 @@
 }
 .notice__label {
   font-family: var(--font-note);
-  font-size: 7.5pt;
+  font-size: var(--t-fine);
   letter-spacing: 0.24em;
   text-transform: uppercase;
   font-weight: var(--w-text);
@@ -327,14 +343,14 @@
 .notice__lede {
   font-family: var(--font-display);
   font-style: italic;
-  font-size: 10pt;
+  font-size: var(--t-small);
   line-height: 1.4;
   color: var(--ink-soft);
   margin: 0 0 5mm;
 }
 .notice__body {
   font-family: var(--font-text);
-  font-size: 9.5pt;
+  font-size: var(--t-small);
   line-height: 1.5;
   color: var(--ink-soft);
   margin: 0;
@@ -346,7 +362,7 @@
   display: grid;
   grid-template-columns: 9mm 1fr;
   align-items: baseline;
-  font-size: 9.5pt;
+  font-size: var(--t-small);
   line-height: 1.44;
   color: var(--ink-soft);
 }
@@ -354,7 +370,7 @@
   counter-increment: step;
   content: counter(step, decimal-leading-zero);
   font-family: var(--font-note);
-  font-size: 8pt;
+  font-size: var(--t-fine);
   letter-spacing: 0.1em;
   color: var(--accent-1);
 }
@@ -364,7 +380,7 @@
    not sentences — the notes you would actually write in a field book.       */
 .sidebar__title {
   font-family: var(--font-note);
-  font-size: 8pt;
+  font-size: var(--t-fine);
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--ink);
@@ -375,7 +391,7 @@
 .sidebar__list { margin: 0; padding: 0; display: grid; gap: 4mm; }
 .sidebar__list li {
   list-style: none;
-  font-size: 8.5pt;
+  font-size: var(--t-fine);
   line-height: 1.46;
   color: var(--ink-soft);
 }
@@ -385,7 +401,7 @@
    one imperative under it, and nothing else on the page.                    */
 .statement {
   font-family: var(--font-display);
-  font-size: 34pt;
+  font-size: var(--t-statement);
   line-height: 1.16;
   letter-spacing: -0.012em;
   margin: 0;
@@ -394,7 +410,7 @@
 }
 .imperative {
   font-family: var(--font-note);
-  font-size: 8.5pt;
+  font-size: var(--t-fine);
   letter-spacing: 0.3em;
   text-transform: uppercase;
   color: var(--accent-1);
@@ -402,7 +418,7 @@
 }
 .stage-mark {
   font-family: var(--font-display);
-  font-size: 12pt;
+  font-size: var(--t-body);
   letter-spacing: 0.16em;
   color: var(--ink-faint);
   margin: 0;
@@ -420,7 +436,7 @@
 /* ---- Subhead ------------------------------------------------------------ */
 .subhead {
   font-family: var(--font-display);
-  font-size: 19pt;
+  font-size: var(--t-sub);
   line-height: 1.14;
   letter-spacing: var(--ls-title);
   margin: 0;
@@ -433,7 +449,7 @@
 .ledger { border-top: 0.6pt solid var(--ink); padding-top: 4mm; }
 .ledger__title {
   font-family: var(--font-note);
-  font-size: 7.5pt;
+  font-size: var(--t-fine);
   letter-spacing: 0.22em;
   text-transform: uppercase;
   color: var(--ink);
@@ -445,7 +461,7 @@
   gap: 3mm;
   margin: 0 0 3mm;
   font-family: var(--font-note);
-  font-size: 7.5pt;
+  font-size: var(--t-fine);
   line-height: 1.5;
 }
 .ledger__row dt { text-transform: uppercase; letter-spacing: 0.1em; color: var(--ink-faint); }

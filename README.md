@@ -186,7 +186,29 @@ Full direction in [`content/plan/art-direction.md`](content/plan/art-direction.m
 
 ## Typography
 
-Three voices, set once in `src/styles/tokens.css` and referenced nowhere else:
+### The scale
+
+Two ratios, because one cannot serve both a 104 pt divider and an 8 pt folio
+without producing sizes nobody needs: **display ×1.25** anchored on the 84 pt
+cover, **text ×1.2** anchored on 11.5 pt body. Fourteen steps, and every size in
+the book resolves through one of them — 77 references, zero hardcoded values.
+
+Sizes are in **points, not rem**. This is a paged document with a physical trim:
+there is no viewport to scale against and no reader font preference to respect,
+and a millimetre on press is a millimetre. The 16 px screen minimum is a rule
+about a backlit display; 11.5 pt is mid-range for a book.
+
+**Line length is capped in `ch` and calibrated against real copy**, not against
+the nominal number — `ch` is the advance of "0", which in Archivo runs narrower
+than the average lowercase letter, so a 68ch cap actually delivers about 79
+characters. Measured across the book, every text style now falls inside 45–75.
+
+**Weight and tracking for display elements live in exactly one block** in
+`typography.css`. `layouts.css` and `cover.css` load after it, so a stray
+`font-weight` in a component silently wins and the headline quietly reverts —
+this happened three times before the rule was made explicit.
+
+### Four voices, set once in `src/styles/tokens.css` and referenced nowhere else:
 
 - `--font-display` — an expressive serif for titles, dividers, pull quotes.
 - `--font-text` — a restrained sans for body, captions, folios, metadata.

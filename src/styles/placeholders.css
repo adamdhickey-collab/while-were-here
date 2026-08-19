@@ -46,7 +46,7 @@
   gap: 6mm;
 }
 .plate__id {
-  font-size: 7pt;
+  font-size: var(--t-micro);
   letter-spacing: 0.16em;
   text-transform: uppercase;
   font-weight: var(--w-demi);
@@ -54,7 +54,7 @@
   margin: 0;
 }
 .plate__kind {
-  font-size: 6.5pt;
+  font-size: var(--t-micro);
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--ink-faint);
@@ -66,13 +66,13 @@
 .plate__bottom { display: grid; gap: 2mm; max-width: 120mm; }
 .plate__subject {
   font-family: var(--font-display);
-  font-size: 12pt;
+  font-size: var(--t-body);
   line-height: 1.24;
   color: var(--ink);
   margin: 0;
 }
 .plate__spec {
-  font-size: 6.5pt;
+  font-size: var(--t-micro);
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--ink-faint);
@@ -139,7 +139,7 @@
   border: 0.3pt solid var(--rule);
   padding: 1.6mm 2.6mm;
   font-family: var(--font-note);
-  font-size: 6.5pt;
+  font-size: var(--t-micro);
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--ink-soft);
@@ -171,7 +171,7 @@
   grid-template-columns: 22mm 1fr;
   gap: 2mm;
   font-family: var(--font-note);
-  font-size: 6.8pt;
+  font-size: var(--t-micro);
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #4A4741;
@@ -184,7 +184,7 @@
   padding-top: 2.5mm;
   border-top: 0.3pt solid rgba(140, 134, 121, 0.4);
   font-family: var(--font-note);
-  font-size: 6.8pt;
+  font-size: var(--t-micro);
   line-height: 1.5;
   color: #4A4741;
 }
@@ -201,7 +201,7 @@
 }
 .inset-card__title {
   font-family: var(--font-note);
-  font-size: 6.8pt;
+  font-size: var(--t-micro);
   letter-spacing: 0.18em;
   text-transform: uppercase;
   color: #4A4741;
@@ -214,6 +214,6 @@
 .plate--compact .plate__kind,
 .plate--compact .plate__subject,
 .plate--compact .plate__spec { display: none; }
-.plate--compact .plate__id { font-size: 5.6pt; letter-spacing: 0.1em; }
+.plate--compact .plate__id { font-size: var(--t-micro); letter-spacing: 0.1em; }
 .plate--compact::before { width: 8mm; }
 .plate--compact::after { height: 8mm; }

@@ -69,20 +69,39 @@
      for anything the reader has to read. */
   --font-hand:    "Caveat", "Bradley Hand", Noteworthy, cursive;
 
-  /* ---- Type scale (points — this is a print document) -------------------- */
-  --t-cover:         84pt;
-  --t-display:       96pt;   /* section dividers                             */
-  --t-essay-title:   54pt;
-  --t-quote:         52pt;   /* pull-quote spreads                           */
-  --t-quote-lg:      64pt;
-  --t-deck:        15.5pt;
-  --t-body:        10.5pt;
-  --t-body-lg:     11.5pt;   /* single-column reading spreads                */
-  --t-caption:        8pt;
-  --t-margin-note:  7.5pt;
-  --t-folio:          8pt;
-  --t-meta:         7.5pt;
-  --t-specimen:       7pt;   /* the systems voice                            */
+  /* ---- Type scale -------------------------------------------------------
+     Two ratios, because one cannot serve both a 104 pt divider and an 8 pt
+     folio without producing sizes nobody needs.
+
+       Display  ×1.25 from 84pt — the cover, which is the fixed point
+       Text     ×1.2  from 11.5pt — the body, which is the other fixed point
+
+     Points, not rem: this is a paged document with a physical trim size. There
+     is no viewport to scale against and no reader font setting to respect, and
+     a millimetre on press is a millimetre. Body at 11.5 pt is mid-range for a
+     book — the 16 px screen minimum is a rule about a backlit display at
+     arm's length, not about ink at 300 dpi.
+
+     Every size in the book comes from this ladder. If a spread needs a size
+     that is not here, the spread is wrong or the ladder is missing a step —
+     resolve it here, not in a component. */
+
+  /* Display */
+  --t-display:      104pt;   /* section dividers                             */
+  --t-cover:         84pt;   /* cover                                        */
+  --t-quote:         67pt;   /* pull-quote spreads                           */
+  --t-title:         54pt;   /* essay titles                                 */
+  --t-statement:     34pt;   /* stage statements                             */
+  --t-title-sm:      28pt;   /* diagram titles, contents parts               */
+  --t-title-xs:      22pt;   /* closing lines, material lines                */
+  --t-sub:           18pt;   /* subheads                                     */
+
+  /* Text */
+  --t-deck:          14pt;   /* decks and lead-ins                           */
+  --t-body:        11.5pt;   /* body copy                                    */
+  --t-small:        9.5pt;   /* captions, prompts, secondary                 */
+  --t-fine:           8pt;   /* folios, metadata, sidebars                   */
+  --t-micro:       6.75pt;   /* specimen labels, plate ids, legends          */
 
   /* ---- Leading ----------------------------------------------------------- */
   --lh-body:        1.62;

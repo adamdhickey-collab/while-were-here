@@ -83,7 +83,7 @@ html, body {
   position: absolute;
   bottom: calc(var(--m-bottom) - 13mm);
   font-family: var(--font-text);
-  font-size: var(--t-folio);
+  font-size: var(--t-fine);
   letter-spacing: var(--ls-folio);
   color: var(--ink-faint);
   font-variant-numeric: lining-nums tabular-nums;
@@ -93,7 +93,7 @@ html, body {
 
 .folio__rubric {
   display: block;
-  font-size: 6.5pt;
+  font-size: var(--t-micro);
   letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--rule);

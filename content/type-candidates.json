@@ -1,50 +1,107 @@
 {
-  "$comment": "Candidate type systems. Add a stack here and it appears in build/type.html. `have` lists the families the tester probes for — if you activate a family locally (Adobe Fonts, Monotype, a Fontstand trial), the tester detects it and renders it for real. Anything not present falls back and is marked missing.",
+  "$comment": "Candidate type systems. Add a stack here and it appears in build/type.html. `have` lists the families the tester probes for \u2014 if you activate a family locally (Adobe Fonts, Monotype, a Fontstand trial), the tester detects it and renders it for real. Anything not present falls back and is marked missing.",
   "stacks": [
     {
-      "name": "Current — vendored, open licence",
-      "source": "Fontsource (npm) · self-hosted · embeds in the PDF",
+      "name": "Current \u2014 vendored, open licence",
+      "source": "Fontsource (npm) \u00b7 self-hosted \u00b7 embeds in the PDF",
       "display": "\"Fraunces\", serif",
       "text": "\"Archivo\", sans-serif",
       "note": "\"IBM Plex Mono\", monospace",
       "hand": "\"Caveat\", cursive",
-      "have": ["Fraunces", "Archivo", "IBM Plex Mono", "Caveat"]
+      "have": [
+        "Fraunces",
+        "Archivo",
+        "IBM Plex Mono",
+        "Caveat"
+      ]
+    },
+    {
+      "name": "Future Fonts \u2014 Mirta + Tuplet (recommended)",
+      "source": "Mirta $60 \u00b7 Tuplet $65 \u00b7 both v0.3 in progress \u00b7 desktop + web + app",
+      "display": "\"Mirta\", serif",
+      "text": "\"Archivo\", sans-serif",
+      "note": "\"Tuplet\", monospace",
+      "hand": "\"Caveat\", cursive",
+      "have": [
+        "Mirta",
+        "Tuplet"
+      ]
+    },
+    {
+      "name": "Future Fonts \u2014 Mara des Bois + Tuplet",
+      "source": "Mara des Bois $95 \u00b7 Chez Panisse lineage \u00b7 warmer, more botanical",
+      "display": "\"Mara des Bois\", serif",
+      "text": "\"Archivo\", sans-serif",
+      "note": "\"Tuplet\", monospace",
+      "hand": "\"Caveat\", cursive",
+      "have": [
+        "Mara des Bois",
+        "Tuplet"
+      ]
+    },
+    {
+      "name": "Falutin \u2014 finished, sold direct",
+      "source": "plattnertype.com \u00b7 no longer on Future Fonts \u00b7 7 weights, 3 optical sizes",
+      "display": "\"Falutin\", \"Falutin Display\", serif",
+      "text": "\"Archivo\", sans-serif",
+      "note": "\"IBM Plex Mono\", monospace",
+      "hand": "\"Caveat\", cursive",
+      "have": [
+        "Falutin"
+      ]
     },
     {
       "name": "The boards' own choice",
-      "source": "Grilli Type + Klim · direct licence only · not on Adobe Fonts",
+      "source": "Grilli Type + Klim \u00b7 direct licence only \u00b7 not on Adobe Fonts",
       "display": "\"GT Super\", \"GT Super Text\", serif",
-      "text": "\"Söhne\", \"Soehne\", sans-serif",
+      "text": "\"S\u00f6hne\", \"Soehne\", sans-serif",
       "note": "\"GT America Mono\", monospace",
       "hand": "\"Reckless Neue\", cursive",
-      "have": ["GT Super", "Söhne", "GT America Mono", "Reckless Neue"]
+      "have": [
+        "GT Super",
+        "S\u00f6hne",
+        "GT America Mono",
+        "Reckless Neue"
+      ]
     },
     {
       "name": "Adobe Fonts path",
-      "source": "Creative Cloud · activate desktop fonts and this renders for real",
+      "source": "Creative Cloud \u00b7 activate desktop fonts and this renders for real",
       "display": "\"freight-text-pro\", \"Freight Text Pro\", serif",
       "text": "\"neue-haas-grotesk-text\", \"Neue Haas Grotesk Text\", sans-serif",
       "note": "\"din-2014\", \"DIN 2014\", monospace",
       "hand": "\"kalam\", cursive",
-      "have": ["freight-text-pro", "neue-haas-grotesk-text", "din-2014"]
+      "have": [
+        "freight-text-pro",
+        "neue-haas-grotesk-text",
+        "din-2014"
+      ]
     },
     {
-      "name": "Fontshare — free for commercial use",
-      "source": "Indian Type Foundry · self-hostable · embeds in the PDF",
+      "name": "Fontshare \u2014 free for commercial use",
+      "source": "Indian Type Foundry \u00b7 self-hostable \u00b7 embeds in the PDF",
       "display": "\"Gambetta\", \"Bespoke Serif\", serif",
       "text": "\"Switzer\", \"General Sans\", sans-serif",
       "note": "\"IBM Plex Mono\", monospace",
       "hand": "\"Caveat\", cursive",
-      "have": ["Gambetta", "Switzer"]
+      "have": [
+        "Gambetta",
+        "Switzer"
+      ]
     },
     {
-      "name": "System — the old placeholder",
-      "source": "macOS · no licence needed · will not survive a different machine",
+      "name": "System \u2014 the old placeholder",
+      "source": "macOS \u00b7 no licence needed \u00b7 will not survive a different machine",
       "display": "\"Hoefler Text\", serif",
       "text": "\"Avenir Next\", sans-serif",
       "note": "Menlo, monospace",
       "hand": "\"Bradley Hand\", cursive",
-      "have": ["Hoefler Text", "Avenir Next", "Menlo", "Bradley Hand"]
+      "have": [
+        "Hoefler Text",
+        "Avenir Next",
+        "Menlo",
+        "Bradley Hand"
+      ]
     }
   ]
 }

@@ -329,3 +329,28 @@ one sits. Three things are needed before it can be laid in: a `.mark` class
 (distinct from `.index-mark`, which is already the superscript numeral), a
 `mark:` key on essay front-matter, and a back-matter sequence type for the index
 page itself. None of it blocks the imagery.
+
+---
+
+## Future Fonts shortlist
+
+Five faces looked at properly. All are sold as works in progress — you buy a
+version and get free updates as it develops, which for a book going to press is
+both the appeal and the risk: freeze the version you buy, and re-proof if you
+take an update.
+
+| | Version | Price | What it is | Verdict |
+| --- | --- | --- | --- | --- |
+| **Mirta** — Michelangelo Nigra | 0.3 | **$60** | Roman inscriptional proportions crossed with early-transitional Caslon. Sharp flared serifs, high contrast, genuinely odd in the details. | **Best display fit.** Literary authority with the strangeness the direction asked for, and it does not read as fashion. |
+| **Tuplet** — Jakob Fangmeier | 0.3 | **$65** | A slab-serif **monospace** with a swashy italic and arrow / sunburst ornaments. Regular and double-width alternates. | **Best annotation fit.** Turns every specimen card and plate label into a nineteenth-century catalogue while staying monospaced, so tabular data still aligns. |
+| **Mara des Bois** — A+ | 0.3 | **$95** | Drawn from David Lance Goines' Chez Panisse lettering: inscriptional Roman, Art Nouveau gesture, triangular serifs, linocut warmth. Works at label size as well as display. | The warm alternative. Most on-theme conceptually — botanical poster heritage — but less strange than Mirta. |
+| **Falutin** — James Plattner | 1.0 | — | Didone with fluid curves and teardrop terminals. 7 weights across 3 optical sizes. | Beautiful and the most complete family, but **no longer sold on Future Fonts** — plattnertype.com — and its register is closer to fashion than natural history. |
+| **Lifted** — Regan Fred Johnson | 0.2 | $30 | Serif and sans pair built around oversized dots and ball terminals. | Charming and cheap, but hairline-thin and one-note. A short-burst personality face, not a system. |
+
+**Recommendation: Mirta for display, Tuplet for annotations — about $125 together.**
+That pairing changes the book more than anything else on the list: Mirta carries
+the titles and pull quotes, Tuplet makes the entire specimen layer feel found
+rather than set. Body copy stays on Archivo, and the hand stays on Caveat.
+
+All five are wired into `build/type.html` as candidate stacks. They render as
+soon as the fonts are installed on the machine — no code change.

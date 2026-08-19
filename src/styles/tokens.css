@@ -1,0 +1,62 @@
+/* ==========================================================================
+   WHILE WE'RE HERE — design tokens
+   Print geometry lives in build/geometry.css (generated from book.config.js).
+   ========================================================================== */
+
+:root {
+  /* ---- Color ------------------------------------------------------------ */
+  --paper:        #F3EFE5;  /* warm paper                                    */
+  --paper-deep:   #EAE4D6;  /* a half-tone down, for panels and interludes   */
+  --paper-pale:   #F8F5EE;  /* lifted paper, for quiet spreads               */
+  --ink:          #191919;  /* near-black                                    */
+  --ink-soft:     #4A4741;  /* secondary text                                */
+  --ink-faint:    #8C8679;  /* captions, folios, metadata                    */
+  --rule:         #CFC7B5;  /* hairlines                                     */
+
+  --rust:         #A95738;
+  --cobalt:       #536D8E;
+  --moss:         #68735B;
+  --flare:        #E44E2D;  /* used sparingly, once or twice per section     */
+
+  --linen:        #EFE9DC;  /* cover field                                   */
+
+  /* ---- Type families ----------------------------------------------------
+     Substitutions are deliberate: these are the strongest faces guaranteed to
+     be present on the authoring machine. Swap in licensed families here and
+     nowhere else — see README > Typography.                                 */
+  --font-display: "Hoefler Text", "Iowan Old Style", Baskerville, "Times New Roman", serif;
+  --font-text:    "Avenir Next", Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+  /* ---- Type scale (points — this is a print document) -------------------- */
+  --t-cover:        108pt;
+  --t-display:       96pt;   /* section dividers                             */
+  --t-essay-title:   54pt;
+  --t-quote:         52pt;   /* pull-quote spreads                           */
+  --t-quote-lg:      64pt;
+  --t-deck:        15.5pt;
+  --t-body:        10.5pt;
+  --t-body-lg:       13pt;   /* single-column reading spreads                */
+  --t-caption:        8pt;
+  --t-margin-note:  7.5pt;
+  --t-folio:          8pt;
+  --t-meta:         7.5pt;
+
+  /* ---- Leading ----------------------------------------------------------- */
+  --lh-body:        1.62;
+  --lh-body-lg:     1.66;
+  --lh-display:     0.94;
+  --lh-quote:       1.08;
+  --lh-caption:     1.38;
+
+  /* ---- Letterspacing ----------------------------------------------------- */
+  --ls-display:   -0.02em;
+  --ls-title:     -0.015em;
+  --ls-body:       0.002em;
+  --ls-meta:       0.16em;   /* small caps-ish metadata                      */
+  --ls-folio:      0.1em;
+
+  /* ---- Weights ----------------------------------------------------------- */
+  --w-text:        400;
+  --w-medium:      500;
+  --w-demi:        600;
+}

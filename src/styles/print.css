@@ -1,0 +1,130 @@
+/* ==========================================================================
+   Page model
+   Every page is a fixed-size composed box, not a flowed column. Spreads are
+   authored; the engine is asked only to place one page box per sheet. This is
+   what lets a spread be dense, or hold six words, without fighting the flow.
+   ========================================================================== */
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+.page {
+  position: relative;
+  width: var(--trim-w);
+  height: var(--trim-h);
+  background: var(--paper);
+  break-after: page;
+  break-inside: avoid;
+  overflow: visible;      /* the engine clips at the bleed box */
+}
+.page:last-of-type { break-after: auto; }
+
+/* Screen preview shows the trimmed page, so anything past trim is clipped. */
+.is-proof-screen .page { overflow: hidden; }
+
+/* ---- The text block and its grid ---------------------------------------- */
+.page__block {
+  position: absolute;
+  top: var(--m-top);
+  bottom: var(--m-bottom);
+  display: grid;
+  grid-template-columns: repeat(var(--grid-cols), 1fr);
+  column-gap: var(--gutter);
+  align-content: start;
+}
+.page--recto .page__block { left: var(--m-inside);  right: var(--m-outside); }
+.page--verso .page__block { left: var(--m-outside); right: var(--m-inside);  }
+
+/* Column helpers — `c3-9` means "start at column 3, end before column 9". */
+.c1-13 { grid-column: 1 / 13; }
+.c1-7  { grid-column: 1 / 7;  }
+.c7-13 { grid-column: 7 / 13; }
+.c1-6  { grid-column: 1 / 6;  }
+.c6-13 { grid-column: 6 / 13; }
+.c1-9  { grid-column: 1 / 9;  }
+.c3-13 { grid-column: 3 / 13; }
+.c2-10 { grid-column: 2 / 10; }
+.c3-11 { grid-column: 3 / 11; }
+.c4-12 { grid-column: 4 / 12; }
+.c1-4  { grid-column: 1 / 4;  }
+.c5-13 { grid-column: 5 / 13; }
+.c1-5  { grid-column: 1 / 5;  }
+.c8-13 { grid-column: 8 / 13; }
+.c10-13{ grid-column: 10 / 13;}
+
+/* ---- Bleed -------------------------------------------------------------- */
+/* --bleed-out is 0 on a proof and the real bleed on a press build, so the same
+   markup produces a trimmed proof and a press file with live bleed.          */
+.bleed {
+  position: absolute;
+  top:    calc(-1 * var(--bleed-out));
+  left:   calc(-1 * var(--bleed-out));
+  right:  calc(-1 * var(--bleed-out));
+  bottom: calc(-1 * var(--bleed-out));
+}
+/* Bleed on the three outer edges only; the fourth runs into the fold. */
+.page--verso .bleed--crossover { right: 0; }
+.page--recto .bleed--crossover { left: 0; }
+
+/* ---- Safe area ---------------------------------------------------------- */
+.safe {
+  position: absolute;
+  inset: var(--safe);
+}
+
+/* ---- Folio -------------------------------------------------------------- */
+.folio {
+  position: absolute;
+  bottom: calc(var(--m-bottom) - 13mm);
+  font-family: var(--font-text);
+  font-size: var(--t-folio);
+  letter-spacing: var(--ls-folio);
+  color: var(--ink-faint);
+  font-variant-numeric: lining-nums tabular-nums;
+}
+.page--recto .folio { right: var(--m-outside); text-align: right; }
+.page--verso .folio { left:  var(--m-outside); }
+
+.folio__rubric {
+  display: block;
+  font-size: 6.5pt;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--rule);
+  margin-top: 1.6mm;
+}
+
+/* Spread types that carry no folio simply do not render one. */
+
+/* ---- Full-bleed media --------------------------------------------------- */
+.figure {
+  position: relative;
+  overflow: hidden;
+  background: var(--paper-deep);
+}
+.figure img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.figure--contain img { object-fit: contain; }
+
+/* A single image spanning both pages: each page shows one half of it. */
+.figure--spread-left img,
+.figure--spread-right img { width: 200%; height: 100%; object-fit: cover; }
+.figure--spread-left img  { object-position: left center; }
+.figure--spread-right img { margin-left: -100%; object-position: left center; }
+
+/* ---- Colour fields ------------------------------------------------------ */
+.field-deep  { background: var(--paper-deep); }
+.field-pale  { background: var(--paper-pale); }
+.field-ink   { background: var(--ink); color: var(--paper); }
+.field-ink .meta,
+.field-ink .caption { color: rgba(243, 239, 229, 0.62); }

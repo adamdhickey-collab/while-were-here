@@ -1,0 +1,54 @@
+/**
+ * WHILE WE'RE HERE — physical book configuration.
+ *
+ * This file is the single source of truth for print geometry. `scripts/build.mjs`
+ * compiles it into `build/geometry.css`, emitting both CSS custom properties
+ * (for layout code) and literal values inside `@page` rules (because paged-media
+ * engines cannot reliably resolve `var()` inside `size`, `bleed` or `marks`).
+ *
+ * NOTHING printer-specific is hard-coded anywhere else in the project. When the
+ * Saal Digital production template arrives, change the numbers here only.
+ */
+
+export const geometry = {
+  // ---- Finished trim -------------------------------------------------------
+  trimWidth: 300,      // mm
+  trimHeight: 300,     // mm
+
+  // ---- Production allowances (provisional — confirm against printer template)
+  bleed: 3,            // mm of image beyond trim on all four sides
+  safeArea: 8,         // mm inside trim where no critical content may sit
+  crossoverGutter: 6,  // mm swallowed either side of the fold by the binding
+
+  // ---- Page margins (text block) ------------------------------------------
+  marginInside: 30,    // mm — spine side
+  marginOutside: 34,   // mm — fore edge
+  marginTop: 30,       // mm
+  marginBottom: 34,    // mm
+
+  // ---- Typographic grid ----------------------------------------------------
+  columns: 12,
+  gutter: 6,           // mm between grid columns
+  baseline: 5.5,       // mm vertical rhythm unit
+
+  // ---- Cover wrap (PROVISIONAL — do not send to press) ---------------------
+  // Spine width cannot be calculated until final page count and paper stock are
+  // fixed. Formula: pages / 2 * caliper + boardAllowance.
+  cover: {
+    pageCount: 120,        // running estimate
+    paperCaliper: 0.14,    // mm per leaf — placeholder for a 170gsm silk
+    boardAllowance: 4,     // mm added for hardcover board and hinge
+    wrapTurnIn: 15,        // mm folded around the board
+    hingeGap: 8,           // mm groove either side of the spine
+  },
+};
+
+export const spineWidth = () => {
+  const { pageCount, paperCaliper, boardAllowance } = geometry.cover;
+  return Number(((pageCount / 2) * paperCaliper + boardAllowance).toFixed(2));
+};
+
+/** Press build adds bleed + printer marks; screen/proof build is trim-only. */
+export const press = process.env.BOOK_PRESS === '1';
+
+export default geometry;

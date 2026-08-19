@@ -1,0 +1,182 @@
+/* ==========================================================================
+   Typographic hierarchy
+   display > section title > essay title > deck > body > pull quote >
+   caption > marginal note > folio
+   ========================================================================== */
+
+.page {
+  font-family: var(--font-text);
+  font-size: var(--t-body);
+  line-height: var(--lh-body);
+  letter-spacing: var(--ls-body);
+  color: var(--ink);
+  font-weight: var(--w-text);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: geometricPrecision;
+}
+
+/* ---- Display: section dividers, cover ----------------------------------- */
+.display {
+  font-family: var(--font-display);
+  font-size: var(--t-display);
+  line-height: var(--lh-display);
+  letter-spacing: var(--ls-display);
+  font-weight: var(--w-text);
+  margin: 0;
+  text-wrap: balance;
+}
+
+/* ---- Essay title -------------------------------------------------------- */
+.essay-title {
+  font-family: var(--font-display);
+  font-size: var(--t-essay-title);
+  line-height: 1.02;
+  letter-spacing: var(--ls-title);
+  font-weight: var(--w-text);
+  margin: 0;
+  text-wrap: balance;
+  hanging-punctuation: first;
+}
+
+/* ---- Deck: the short line under an essay title -------------------------- */
+.deck {
+  font-family: var(--font-text);
+  font-size: var(--t-deck);
+  line-height: 1.42;
+  font-weight: var(--w-text);
+  color: var(--ink-soft);
+  margin: 0;
+  max-width: 74mm;
+  text-wrap: pretty;
+}
+
+/* ---- Body --------------------------------------------------------------- */
+.prose p {
+  margin: 0;
+  orphans: 3;
+  widows: 3;
+  hyphens: auto;
+  hyphenate-limit-chars: 8 4 4;
+  -webkit-hyphenate-limit-lines: 2;
+  text-wrap: pretty;
+}
+.prose p + p {
+  text-indent: 5mm;
+}
+/* First paragraph of a flow never indents, and opens with a raised initial. */
+.prose > p:first-child {
+  text-indent: 0;
+}
+.prose--lead > p:first-child::first-line {
+  font-variant-caps: all-small-caps;
+  letter-spacing: 0.06em;
+}
+.prose--generous {
+  font-size: var(--t-body-lg);
+  line-height: var(--lh-body-lg);
+}
+.prose em { font-style: italic; }
+.prose strong { font-weight: var(--w-demi); }
+
+/* A paragraph promoted to a statement inside running text. */
+.prose .beat {
+  font-family: var(--font-display);
+  font-size: 17pt;
+  line-height: 1.28;
+  text-indent: 0;
+  margin-block: 6mm;
+  color: var(--ink);
+  break-inside: avoid;
+}
+
+/* ---- Pull quote --------------------------------------------------------- */
+.pull-quote {
+  font-family: var(--font-display);
+  font-size: var(--t-quote);
+  line-height: var(--lh-quote);
+  letter-spacing: var(--ls-display);
+  font-weight: var(--w-text);
+  margin: 0;
+  hanging-punctuation: first;
+  text-wrap: balance;
+}
+.pull-quote--lg { font-size: var(--t-quote-lg); }
+
+/* ---- Caption ------------------------------------------------------------ */
+.caption {
+  font-family: var(--font-text);
+  font-size: var(--t-caption);
+  line-height: var(--lh-caption);
+  color: var(--ink-faint);
+  margin: 0;
+  max-width: 62mm;
+}
+.caption b {
+  font-weight: var(--w-medium);
+  color: var(--ink-soft);
+}
+
+/* ---- Marginal note ------------------------------------------------------ */
+.margin-note {
+  font-family: var(--font-text);
+  font-size: var(--t-margin-note);
+  line-height: 1.44;
+  color: var(--ink-faint);
+  margin: 0;
+  border-top: 0.3pt solid var(--rule);
+  padding-top: 2.5mm;
+}
+
+/* ---- Metadata: eyebrows, section numbers, folios ------------------------ */
+.meta {
+  font-family: var(--font-text);
+  font-size: var(--t-meta);
+  letter-spacing: var(--ls-meta);
+  text-transform: uppercase;
+  font-weight: var(--w-medium);
+  color: var(--ink-faint);
+  margin: 0;
+}
+.meta--ink { color: var(--ink); }
+.meta--rust { color: var(--rust); }
+
+.numeral {
+  font-family: var(--font-display);
+  font-size: 13pt;
+  letter-spacing: 0.04em;
+  color: var(--rust);
+}
+
+/* ---- NOTICE THIS -------------------------------------------------------- */
+.notice {
+  break-inside: avoid;
+  display: grid;
+  gap: 3mm;
+  padding-top: 4mm;
+  border-top: 0.6pt solid var(--ink);
+  max-width: 82mm;
+}
+.notice__label {
+  font-family: var(--font-text);
+  font-size: 7pt;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  font-weight: var(--w-demi);
+  color: var(--rust);
+  margin: 0;
+}
+.notice__body {
+  font-family: var(--font-text);
+  font-size: 9.5pt;
+  line-height: 1.5;
+  color: var(--ink-soft);
+  margin: 0;
+  text-wrap: pretty;
+}
+
+/* ---- Small shared marks ------------------------------------------------- */
+.rule-hair { border: 0; border-top: 0.3pt solid var(--rule); margin: 0; }
+.dot {
+  width: 2.4mm; height: 2.4mm; border-radius: 50%;
+  background: var(--rust); display: block;
+}

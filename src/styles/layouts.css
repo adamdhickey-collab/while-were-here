@@ -1,0 +1,276 @@
+/* ==========================================================================
+   Spread layouts
+   A modular set, not a template. Eight compositions, each answering a
+   different editorial need. Recto and verso are handled by flipping the
+   inside/outside margin, never by duplicating a layout.
+   ========================================================================== */
+
+/* A figure asked to bleed sits outside the trim by exactly --bleed-out, which
+   is zero on a proof and the real allowance on a press build. */
+.figure--bleed {
+  position: absolute;
+  top:    calc(-1 * var(--bleed-out));
+  left:   calc(-1 * var(--bleed-out));
+  right:  calc(-1 * var(--bleed-out));
+  bottom: calc(-1 * var(--bleed-out));
+}
+/* The fold edge takes no bleed — the crossover is continuous. */
+.page--verso .figure--spread-left  { right: 0; }
+.page--recto .figure--spread-right { left: 0; }
+
+/* ---- 1. ESSAY OPENER ----------------------------------------------------
+   Verso: one image, full bleed, no words at all.
+   Recto: eyebrow, title, deck at the top; the first paragraphs held low.     */
+
+.opener__verso .figure { position: absolute; inset: 0; }
+
+.opener__recto .page__block { align-content: space-between; }
+.opener__eyebrow {
+  grid-column: 1 / 13;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 6mm;
+  padding-bottom: 3.5mm;
+  border-bottom: 0.6pt solid var(--ink);
+}
+.opener__head { grid-column: 1 / 12; }
+.opener__head .essay-title { max-width: 172mm; }
+.opener__head .deck { margin-top: 12mm; max-width: 126mm; }
+.opener__foot {
+  grid-column: 1 / 13;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 12mm;
+}
+.opener__lede { max-width: 104mm; font-size: 10.5pt; }
+.opener__foot .meta { white-space: nowrap; padding-bottom: 1mm; }
+
+/* Title reversed out of the image, when an opener wants it. */
+.opener--over .essay-title,
+.opener--over .deck,
+.opener--over .meta { color: var(--paper); }
+.opener--over .opener__eyebrow { border-color: rgba(243, 239, 229, 0.4); }
+
+/* ---- 2. READING · TWO COLUMN -------------------------------------------- */
+
+.reading .page__block { align-content: start; grid-template-rows: auto auto 1fr; }
+.reading__running {
+  grid-column: 1 / 13;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-bottom: 3.5mm;
+  margin-bottom: 14mm;
+  border-bottom: 0.3pt solid var(--rule);
+}
+.prose--cols {
+  grid-column: 1 / 12;
+  column-count: 2;
+  column-gap: calc(var(--gutter) * 2);
+  font-size: 13pt;
+  line-height: 1.68;
+}
+.prose--cols > p + p { text-indent: 5mm; }
+.reading__note { grid-column: 8 / 13; grid-row: 3; align-self: end; }
+
+/* An image interrupting the text, held on the bottom edge of the verso. */
+.reading__band { grid-column: 1 / 13; grid-row: 3; align-self: end; position: relative; height: 82mm; }
+.reading__band .figure { position: absolute; inset: 0; }
+
+/* ---- 3. READING · ASYMMETRIC -------------------------------------------- */
+/* Narrow measure, deliberate air, and the NOTICE THIS prompt held in the
+   lower outer corner where a reader finds it on the way past.               */
+
+.reading--aside .prose--generous { grid-column: 1 / 8; }
+.page--verso.reading--aside .prose--generous { grid-column: 6 / 13; }
+.reading--aside .notice { grid-column: 1 / 7; grid-row: 3; align-self: end; }
+.page--verso.reading--aside .notice { grid-column: 7 / 13; }
+
+/* ---- 4. PULL QUOTE ------------------------------------------------------
+   Verso: one plate, held high, and three words of label.
+   Recto: the sentence, and nothing else.                                    */
+
+.quote-spread .page__block { align-content: end; }
+.quote-spread__figure {
+  position: absolute;
+  top: var(--m-top);
+  height: 54%;
+}
+.quote-spread__figure .figure { position: absolute; inset: 0; }
+.page--verso .quote-spread__figure { left: var(--m-outside); right: var(--m-inside); }
+.page--recto .quote-spread__figure { left: var(--m-inside);  right: var(--m-outside); }
+.quote-spread__lede { grid-column: 1 / 13; }
+
+.quote-spread:not(.quote-spread--verso) .page__block { align-content: center; }
+.quote-spread .pull-quote { grid-column: 1 / 13; font-size: var(--t-quote-lg); }
+.quote-mark {
+  grid-column: 1 / 13;
+  display: block;
+  width: 26mm;
+  height: 0.9pt;
+  background: var(--rust);
+  margin-bottom: 14mm;
+}
+
+/* ---- 5. IMAGE + ESSAY ---------------------------------------------------
+   The image takes roughly 55% of the two-page composition and runs to the
+   fold; the text is placed against it, not beneath it.                      */
+
+.image-essay--tall .image-essay__figure {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 64%;
+}
+.page--verso.image-essay--tall .image-essay__figure { right: 0; }
+.page--recto.image-essay--tall .image-essay__figure { left: 0; }
+.image-essay--tall .figure { position: absolute; inset: 0; }
+
+.image-essay__caption { position: absolute; bottom: var(--m-bottom); width: 26%; }
+.page--verso .image-essay__caption { left: var(--m-outside); }
+.page--recto .image-essay__caption { right: var(--m-outside); }
+
+.image-essay--text .page__block { align-content: start; grid-template-rows: auto 1fr; }
+.image-essay--text .image-essay__text { grid-column: 1 / 8; }
+.image-essay__mark { grid-column: 1 / 13; grid-row: 2; align-self: end; }
+
+/* ---- 6. FULL-BLEED SPREAD ----------------------------------------------- */
+
+.bleed-spread__caption {
+  position: absolute;
+  bottom: var(--m-bottom);
+  color: rgba(243, 239, 229, 0.72);
+  max-width: 78mm;
+}
+.page--verso .bleed-spread__caption { left: var(--m-outside); }
+.page--recto .bleed-spread__caption { right: var(--m-outside); text-align: right; }
+
+/* ---- 7. DIAGRAM ---------------------------------------------------------
+   A philosophical claim drawn rather than asserted. Verso argues, recto
+   measures.                                                                 */
+
+.diagram-spread { background: var(--paper-pale); }
+.diagram__head {
+  grid-column: 1 / 12;
+  padding-bottom: 5mm;
+  margin-bottom: 16mm;
+  border-bottom: 0.6pt solid var(--ink);
+}
+.diagram__title {
+  font-family: var(--font-display);
+  font-size: 30pt;
+  line-height: 1.06;
+  letter-spacing: var(--ls-title);
+  font-weight: var(--w-text);
+  margin: 5mm 0 0;
+  max-width: 130mm;
+}
+.diagram-spread .page__block { grid-template-rows: auto 1fr; }
+.diagram__note { grid-column: 1 / 8; grid-row: 2; align-self: end; }
+
+.diagram__stage {
+  position: absolute;
+  top: var(--m-top);
+  bottom: calc(var(--m-bottom) + 30mm);
+  display: grid;
+  align-content: center;
+}
+.page--recto .diagram__stage { left: var(--m-inside);  right: var(--m-outside); }
+.page--verso .diagram__stage { left: var(--m-outside); right: var(--m-inside); }
+
+.diagram__legend {
+  position: absolute;
+  bottom: var(--m-bottom);
+  display: flex;
+  gap: 9mm;
+}
+.page--recto .diagram__legend { left: var(--m-inside);  right: var(--m-outside); }
+.page--verso .diagram__legend { left: var(--m-outside); right: var(--m-inside); }
+.diagram__legend .caption { flex: 1 1 0; max-width: none; }
+
+/* ---- 8. CLOSING ---------------------------------------------------------
+   The last thought gets a page of its own, and the last sentence gets the
+   page after it.                                                            */
+
+.closing .page__block { align-content: center; }
+.closing .prose { grid-column: 1 / 8; }
+.closing .prose > p:first-child {
+  font-family: var(--font-display);
+  font-size: 19pt;
+  line-height: 1.26;
+  margin-bottom: 8mm;
+}
+.closing--line .closing__line { grid-column: 1 / 12; }
+.closing__mark {
+  grid-column: 1 / 13;
+  margin-top: 22mm;
+  display: flex;
+  align-items: center;
+  gap: 5mm;
+}
+
+/* ---- Section divider ---------------------------------------------------- */
+
+.divider__figure { position: absolute; inset: 0; }
+.divider .page__block { align-content: end; }
+.divider__num { grid-column: 1 / 13; margin-bottom: 12mm; }
+.divider .display { grid-column: 1 / 13; max-width: 190mm; }
+.divider__list { grid-column: 1 / 9; margin: 20mm 0 0; padding: 0; display: grid; gap: 3mm; }
+.divider__list li { list-style: none; }
+.divider__list .caption { font-size: 10pt; line-height: 1.5; color: var(--ink-soft); max-width: none; }
+
+/* ---- Front matter ------------------------------------------------------- */
+
+.halftitle .page__block { align-content: center; }
+.halftitle__mark { grid-column: 1 / 13; text-align: center; }
+
+.titlespread .page__block { align-content: end; }
+.titlespread__title {
+  grid-column: 1 / 13;
+  font-family: var(--font-display);
+  font-size: 82pt;
+  line-height: 0.94;
+  letter-spacing: -0.025em;
+  font-weight: var(--w-text);
+  margin: 0;
+}
+.titlespread__sub { grid-column: 1 / 10; margin-top: 16mm; max-width: 148mm; }
+.titlespread__foot { grid-column: 1 / 13; margin-top: 34mm; }
+
+.note-page .page__block { align-content: center; }
+.note-page .prose { grid-column: 2 / 11; }
+.note-page .prose p + p { margin-top: 6mm; text-indent: 0; }
+
+.contents .page__block { align-content: start; }
+.contents__head {
+  grid-column: 1 / 13;
+  padding-bottom: 5mm;
+  margin-bottom: 16mm;
+  border-bottom: 0.6pt solid var(--ink);
+}
+.contents__part { grid-column: 1 / 12; margin-bottom: 24mm; break-inside: avoid; }
+.contents__part-title {
+  font-family: var(--font-display);
+  font-size: 27pt;
+  font-weight: var(--w-text);
+  margin: 5mm 0 9mm;
+  letter-spacing: var(--ls-title);
+}
+.contents__essays { margin: 0; padding: 0; display: grid; gap: 4.2mm; }
+.contents__essays li {
+  list-style: none;
+  display: flex;
+  align-items: baseline;
+  gap: 3mm;
+  font-size: 11.5pt;
+  color: var(--ink-soft);
+}
+.contents__dots { flex: 1; border-bottom: 0.3pt dotted var(--rule); transform: translateY(-1mm); }
+.contents__folio { font-variant-numeric: tabular-nums; color: var(--ink-faint); font-size: 8.5pt; }
+.contents__essays li.is-forthcoming { color: var(--ink-faint); }
+.contents__essays li.is-forthcoming span:first-child { font-style: italic; }
+
+/* ---- Blank -------------------------------------------------------------- */
+.page--blank { background: var(--paper); }

@@ -1,0 +1,107 @@
+/* ==========================================================================
+   Image placeholders
+   Every unshot image renders as a labelled plate carrying its manifest ID, so
+   a proof PDF doubles as the shot list. Drop a real file into /public/images
+   with the manifest filename and the plate is replaced automatically.
+   ========================================================================== */
+
+.plate {
+  position: absolute;
+  inset: 0;
+  background-color: var(--paper-deep);
+  background-image:
+    repeating-linear-gradient(
+      135deg,
+      transparent 0 7px,
+      rgba(25, 25, 25, 0.035) 7px 8px
+    );
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 9mm;
+  color: var(--ink-soft);
+  font-family: var(--font-text);
+  overflow: hidden;
+}
+.plate--photography { --plate-accent: var(--cobalt); }
+.plate--illustration { --plate-accent: var(--rust); }
+.plate--diagram { --plate-accent: var(--moss); }
+.plate { --plate-accent: var(--ink-faint); }
+
+.plate::before,
+.plate::after {
+  content: "";
+  position: absolute;
+  background: var(--plate-accent);
+  opacity: 0.5;
+}
+/* a centred crosshair, so cropping decisions are visible on a proof */
+.plate::before { left: 50%; top: 50%; width: 14mm; height: 0.3pt; transform: translate(-50%, -50%); }
+.plate::after  { left: 50%; top: 50%; width: 0.3pt; height: 14mm; transform: translate(-50%, -50%); }
+
+.plate__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 6mm;
+}
+.plate__id {
+  font-size: 7pt;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  font-weight: var(--w-demi);
+  color: var(--plate-accent);
+  margin: 0;
+}
+.plate__kind {
+  font-size: 6.5pt;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  margin: 0;
+  border: 0.3pt solid var(--rule);
+  padding: 1mm 2mm;
+  white-space: nowrap;
+}
+.plate__bottom { display: grid; gap: 2mm; max-width: 120mm; }
+.plate__subject {
+  font-family: var(--font-display);
+  font-size: 12pt;
+  line-height: 1.24;
+  color: var(--ink);
+  margin: 0;
+}
+.plate__spec {
+  font-size: 6.5pt;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  margin: 0;
+}
+
+/* Plates sitting on a dark or full-bleed spread read lighter. */
+.plate--inverse {
+  background-color: #2A2823;
+  background-image: repeating-linear-gradient(135deg, transparent 0 7px, rgba(243,239,229,0.05) 7px 8px);
+  color: rgba(243, 239, 229, 0.7);
+}
+.plate--inverse .plate__subject { color: rgba(243, 239, 229, 0.92); }
+.plate--inverse .plate__kind { border-color: rgba(243,239,229,0.25); color: rgba(243,239,229,0.55); }
+.plate--inverse .plate__spec { color: rgba(243,239,229,0.5); }
+
+/* ---- Field-notes diagram styling ---------------------------------------- */
+.fieldnote { width: 100%; height: 100%; overflow: visible; }
+.fieldnote text {
+  font-family: var(--font-text);
+  fill: var(--ink-soft);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.fn-ink   { stroke: var(--ink); fill: none; stroke-width: 0.9; stroke-linecap: round; }
+.fn-hair  { stroke: var(--ink-faint); fill: none; stroke-width: 0.5; }
+.fn-rust  { stroke: var(--rust); fill: none; stroke-width: 1.1; stroke-linecap: round; }
+.fn-cobalt{ stroke: var(--cobalt); fill: none; stroke-width: 0.9; }
+.fn-moss  { stroke: var(--moss); fill: none; stroke-width: 0.9; }
+.fn-fill-rust { fill: var(--rust); stroke: none; }
+.fn-fill-ink  { fill: var(--ink); stroke: none; }
+.fn-dash  { stroke-dasharray: 3 3; }

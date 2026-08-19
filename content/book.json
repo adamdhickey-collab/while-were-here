@@ -1,0 +1,45 @@
+{
+  "title": "While We’re Here",
+  "subtitle": "Small essays about attention, technology, beauty, time, and being alive",
+  "author": "Adam Hickey",
+  "backCoverLine": "Some things become ordinary only because we have stopped looking at them.",
+  "backCoverBlurb": "Eighteen short essays on paying attention \u2014 to weather, to strangers, to machines that are learning to think, to the people who will not always be here. A book for reading straight through, or for opening at random on a Tuesday.",
+  "sequence": [
+    {
+      "type": "cover-front"
+    },
+    {
+      "type": "blank"
+    },
+    {
+      "type": "half-title"
+    },
+    {
+      "type": "title-spread"
+    },
+    {
+      "type": "blank"
+    },
+    {
+      "type": "opening-note",
+      "source": "front-matter/opening-note.md"
+    },
+    {
+      "type": "contents"
+    },
+    {
+      "type": "divider",
+      "source": "sections/part-1.md"
+    },
+    {
+      "type": "essay",
+      "source": "essays/the-secret-life-of-attention.md"
+    },
+    {
+      "type": "blank"
+    },
+    {
+      "type": "cover-back"
+    }
+  ]
+}

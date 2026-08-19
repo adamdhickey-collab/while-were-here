@@ -1,0 +1,25 @@
+{
+  "name": "while-were-here",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "WHILE WE'RE HERE — a print-first coffee-table book built with HTML, CSS and Vivliostyle.",
+  "author": "Adam Hickey",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "watch": "node scripts/build.mjs --watch",
+    "dev": "npm run build && concurrently -k -n build,serve \"node scripts/build.mjs --watch\" \"http-server build -p 4321 -c-1 -s\"",
+    "preview": "npm run build && vivliostyle preview build/book.html",
+    "pdf": "npm run build && vivliostyle build build/book.html -o dist/while-were-here.pdf",
+    "pdf:press": "npm run build && vivliostyle build build/book.html -o dist/while-were-here-press.pdf --preflight press-ready --preflight-option gray-scale=false --preflight-option pdfx=true",
+    "clean": "rm -rf build dist"
+  },
+  "devDependencies": {
+    "@vivliostyle/cli": "^9.5.0",
+    "chokidar": "^4.0.3",
+    "concurrently": "^9.2.1",
+    "gray-matter": "^4.0.3",
+    "http-server": "^14.1.1",
+    "markdown-it": "^14.1.0"
+  }
+}

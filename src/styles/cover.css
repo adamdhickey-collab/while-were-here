@@ -1,0 +1,161 @@
+/* ==========================================================================
+   Cover
+   Quieter than everything inside it. A cream field, three words, one mark.
+   The physical edition may be bound in real cloth; the texture here exists
+   only so screen mockups do not read as flat digital cream.
+   ========================================================================== */
+
+.cover {
+  background: var(--linen);
+  color: var(--ink);
+}
+.cover::before {
+  content: "";
+  position: absolute;
+  inset: calc(-1 * var(--bleed-out));
+  background-image:
+    radial-gradient(120% 90% at 50% 8%, rgba(255,255,255,0.55), transparent 62%),
+    radial-gradient(100% 80% at 50% 104%, rgba(150,138,116,0.16), transparent 60%),
+    var(--texture-linen);
+  background-size: auto, auto, 190px 190px;
+  opacity: 0.9;
+  pointer-events: none;
+}
+
+.cover__inner {
+  position: absolute;
+  inset: var(--m-top) var(--m-outside);
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  justify-items: center;
+  text-align: center;
+}
+
+.cover__mark { margin-top: 26mm; }
+
+.cover__title {
+  align-self: center;
+  font-family: var(--font-display);
+  font-size: var(--t-cover);
+  line-height: 0.92;
+  letter-spacing: -0.025em;
+  font-weight: var(--w-text);
+  margin: 0;
+  text-transform: uppercase;
+}
+.cover__title span { display: block; }
+.cover__title span:nth-child(2) { letter-spacing: -0.018em; }
+
+.cover__author {
+  align-self: end;
+  font-family: var(--font-text);
+  font-size: 10pt;
+  letter-spacing: 0.34em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  margin: 0 0 8mm;
+  text-indent: 0.34em;
+}
+
+/* The one geometric symbol: a ring drawn slightly out of true. */
+.ring {
+  display: block;
+  width: 17mm;
+  height: 17mm;
+}
+.ring circle {
+  fill: none;
+  stroke: var(--rust);
+  stroke-width: 1.1;
+  stroke-linecap: round;
+}
+
+/* ---- Back cover --------------------------------------------------------- */
+.cover-back .cover__inner {
+  grid-template-rows: 1fr auto auto;
+  justify-items: start;
+  text-align: left;
+}
+.cover-back__line {
+  align-self: center;
+  font-family: var(--font-display);
+  font-size: 25pt;
+  line-height: 1.32;
+  letter-spacing: -0.01em;
+  margin: 0;
+  max-width: 178mm;
+  text-wrap: pretty;
+}
+.cover-back__meta {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 40mm;
+  gap: 10mm;
+}
+.cover-back__blurb {
+  font-size: 9.5pt;
+  line-height: 1.56;
+  color: var(--ink-soft);
+  max-width: 108mm;
+  margin: 0;
+}
+.cover-back__isbn {
+  width: 38mm; height: 24mm;
+  border: 0.4pt solid var(--rule);
+  display: grid; place-items: center;
+  font-size: 6pt; letter-spacing: 0.14em; text-transform: uppercase;
+  color: var(--ink-faint);
+  text-align: center;
+  padding: 2mm;
+}
+
+/* ---- Spine -------------------------------------------------------------- */
+/* Width is provisional until page count and stock are fixed — see book.config.js */
+.spine {
+  background: var(--linen);
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+.spine__text {
+  writing-mode: vertical-rl;
+  font-family: var(--font-display);
+  font-size: 19pt;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  margin: 0;
+}
+.spine__author {
+  writing-mode: vertical-rl;
+  font-family: var(--font-text);
+  font-size: 8.5pt;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  margin: 0;
+}
+.spine__stack {
+  display: flex; flex-direction: column; align-items: center; gap: 14mm;
+  height: 100%; justify-content: center;
+}
+
+/* ---- Full wrap mockup (back | spine | front) ---------------------------- */
+.wrap {
+  position: relative;
+  display: grid;
+  grid-template-columns: var(--trim-w) var(--spine-w) var(--trim-w);
+  width: calc(var(--trim-w) * 2 + var(--spine-w));
+  height: var(--trim-h);
+  background: var(--linen);
+}
+.wrap > * { position: relative; overflow: hidden; }
+.wrap .cover, .wrap .cover-back { width: auto; height: auto; }
+.wrap__fold {
+  position: absolute;
+  top: 0; bottom: 0;
+  width: 0;
+  border-left: 0.3pt dashed rgba(169, 87, 56, 0.5);
+}

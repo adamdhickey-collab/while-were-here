@@ -40,14 +40,14 @@
       ]
     },
     {
-      "name": "Falutin \u2014 finished, sold direct",
-      "source": "plattnertype.com \u00b7 no longer on Future Fonts \u00b7 7 weights, 3 optical sizes",
-      "display": "\"Falutin\", \"Falutin Display\", serif",
+      "name": "Falutin Title \u2014 purchased, in use",
+      "source": "Plattner Type \u00b7 desktop licence \u00b7 7 weights \u00b7 not in this repo (see LICENSING.md)",
+      "display": "\"Falutin Title\", serif",
       "text": "\"Archivo\", sans-serif",
       "note": "\"IBM Plex Mono\", monospace",
       "hand": "\"Caveat\", cursive",
       "have": [
-        "Falutin"
+        "Falutin Title"
       ]
     },
     {

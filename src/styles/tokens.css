@@ -58,7 +58,9 @@
      Substitutions are deliberate: these are the strongest faces guaranteed to
      be present on the authoring machine. Swap in licensed families here and
      nowhere else — see README > Typography.                                 */
-  --font-display: "Fraunces", "Hoefler Text", "Iowan Old Style", Baskerville, serif;
+  /* Resolved by build/fonts.css, which knows whether the licensed display face
+     is present on this machine. The fallback here is what a fresh clone gets. */
+  --font-display: var(--display-family, "Fraunces", "Hoefler Text", serif);
   --font-text:    "Archivo", "Avenir Next", "Helvetica Neue", Helvetica, Arial, sans-serif;
   /* The third voice: specimen labels, diagram callouts, field notations.
      This is where the book gets its personality. */

@@ -30,6 +30,9 @@ Then open <http://localhost:4321/> — a small hub linking the three views.
 | `npm run pdf` | Proof PDF → `dist/while-were-here.pdf` (trimmed, no marks). |
 | `npm run pdf:press` | Press PDF → `dist/while-were-here-press.pdf` (bleed + crop marks). |
 | `npm run prompts` | Regenerate `prompts/image-prompts.md` from the manifest. |
+| `npm run place` | Put a generated image into the book; bare, it lists what is missing. |
+| `npm run fonts:setup` | One-time: venv + convert the licensed OTFs for press. |
+| `npm run credits` | Rebuild the attribution page from the manifest. |
 | `npm run clean` | Remove `build/` and `dist/`. |
 
 `npm run pdf` downloads a Chromium build the first time it runs (~130 MB, via
@@ -190,7 +193,7 @@ embeds exactly these faces:
 
 | Voice | Board specifies | Currently | Why |
 | --- | --- | --- | --- |
-| Display | GT Super Bold | **Fraunces** (variable) | Same high-contrast literary serif register; its optical-size, softness and "wonk" axes are driven explicitly in `typography.css`. |
+| Display | GT Super Bold | **Falutin Title** (purchased), Fraunces fallback | A Didone display cut with teardrop terminals, 7 weights. Licensed from Plattner Type and **not in this repo** — see [LICENSING.md](LICENSING.md). Builds without it fall back to Fraunces automatically. |
 | Body | Söhne Buch | **Archivo** | Grotesque in the Akzidenz/Franklin line that Söhne descends from, drawn for text. |
 | Annotations | GT America Mono | **IBM Plex Mono** | Neo-grotesque mono, warmer than Roboto Mono. |
 | Hand | script accent | **Caveat** | Natural handwriting, closest to the board's sample. |

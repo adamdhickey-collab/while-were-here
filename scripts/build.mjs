@@ -256,7 +256,8 @@ ${['geometry.css', ...STYLES].map((h) => `<link rel="stylesheet" href="${h}">`).
   <a href="preview.html"><b>Spread preview</b><span>${count} pp &nbsp;·&nbsp; guides &amp; navigation</span></a>
   <a href="book.html"><b>Print document</b><span>raw pages &nbsp;·&nbsp; no chrome</span></a>
   <a href="cover-wrap.html"><b>Cover wrap</b><span>back | spine | front</span></a>
-  <a href="direction.html"><b>Art direction</b><span>acts · spectrum · three voices</span></a>
+  <a href="direction.html"><b>Art direction</b><span>stages · spectrum · voices</span></a>
+  <a href="type.html"><b>Type tester</b><span>candidate stacks at trim size</span></a>
   <footer>
     ${geometry.trimWidth} × ${geometry.trimHeight} mm trim &nbsp;·&nbsp; ${geometry.bleed} mm bleed
     &nbsp;·&nbsp; spine <b>${spineWidth()} mm</b> provisional.<br>
@@ -371,6 +372,92 @@ ${['geometry.css', ...STYLES].map((h) => `<link rel="stylesheet" href="${h}">`).
 </head>
 <body class="preview is-proof-screen">
 ${pages.join('\n')}
+<script src="scripts/preview.js"></script>
+</body></html>
+`;
+}
+
+/* ---- Type tester ---------------------------------------------------------
+   The same specimen in every candidate stack, at true trim width. Families
+   that are not installed are detected and flagged, so activating a family
+   locally — Adobe Fonts, Monotype, a Fontstand trial — makes it render here
+   immediately with no code change. */
+
+function typeDoc(book) {
+  const { stacks } = json('content/type-candidates.json');
+  /* Family names carry double quotes; an inline style attribute is delimited by
+     them, so swap to single quotes or the attribute terminates early and the
+     whole stack silently falls back. */
+  const q = (stack) => String(stack).replace(/"/g, "'");
+  const specimen = (s, i) => `
+    <section class="page page--recto stage-1 typespec" data-side="recto"
+             data-spread="type specimen" data-label="${esc(s.name)}"
+             style="--font-display:${q(s.display)};--font-text:${q(s.text)};--font-note:${q(s.note)};--font-hand:${q(s.hand)}">
+      <div class="page__block">
+        <div class="typespec__head">
+          <p class="label"><b>${String(i + 1).padStart(2, '0')}</b> ${esc(s.name)}</p>
+          <p class="specimen typespec__source">${esc(s.source)}</p>
+          <p class="specimen typespec__probe" data-probe='${JSON.stringify(s.have)}'></p>
+        </div>
+        <h2 class="essay-title">Why Ordinary Days May Be the Point of Life</h2>
+        <p class="deck">Most of life happens between the moments we think are important.</p>
+        <div class="prose prose--drop typespec__body">
+          <p>Most of life does not happen during the big moments. It happens in between
+          them. Not at the wedding, but on a Tuesday night years later when you are both
+          tired and deciding what to eat. Not on the vacation, but while making coffee
+          before work.</p>
+        </div>
+        <div class="typespec__foot">
+          <p class="label"><b>Plate 14</b> Root network, 1:4</p>
+          <p class="specimen">SPECIMEN 0114 · MAG 400X · 06.12.24 09:48</p>
+          <p class="hand">wind off the lake, geese heading north</p>
+        </div>
+      </div>
+    </section>`;
+
+  return `<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><title>Type tester — ${esc(book.title)}</title>
+${['geometry.css', ...STYLES].map((h) => `<link rel="stylesheet" href="${h}">`).join('\n')}
+<link rel="stylesheet" href="styles/preview.css">
+</head>
+<body class="preview is-proof-screen">
+${stacks.map(specimen).join('\n')}
+<script>
+  /* document.fonts.check() is not an availability test — it reports true when
+     the browser can fall back, which is always. Measure instead: set the same
+     string in the candidate stack and in the bare fallback, and compare widths.
+     Identical widths mean the family never loaded. */
+  (function () {
+    const probe = document.createElement('span');
+    probe.textContent = 'Handgloves 0123456789 mmmiiiwww';
+    probe.style.cssText = 'position:absolute;left:-9999px;top:0;font-size:96px;white-space:nowrap;';
+    document.body.appendChild(probe);
+
+    const widthIn = (stack) => { probe.style.fontFamily = stack; return probe.offsetWidth; };
+
+    const run = () => {
+      const bases = { monospace: widthIn('monospace'), serif: widthIn('serif'), 'sans-serif': widthIn('sans-serif') };
+      document.querySelectorAll('[data-probe]').forEach((el) => {
+        const missing = JSON.parse(el.dataset.probe).filter((f) =>
+          Object.entries(bases).every(([base, w]) => widthIn('"' + f + '",' + base) === w));
+        el.textContent = missing.length ? 'not installed — ' + missing.join(', ') : 'all families present';
+        el.classList.add(missing.length ? 'is-missing' : 'is-present');
+      });
+      probe.remove();
+    };
+
+    /* A declared @font-face is only fetched when something uses it, so ask for
+       every probed family at the probe's own size before measuring — otherwise
+       a font that is present but not yet loaded reads as missing. */
+    const families = [...document.querySelectorAll('[data-probe]')]
+      .flatMap((el) => JSON.parse(el.dataset.probe));
+    const warm = () => Promise.all(
+      families.map((f) => document.fonts.load('96px \"' + f + '\"').catch(() => {})));
+
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(warm).then(run);
+    else window.addEventListener('load', run);
+  })();
+</script>
 <script src="scripts/preview.js"></script>
 </body></html>
 `;
@@ -497,6 +584,7 @@ export function build() {
     document_({ title: `${book.title} — preview`, body, preview: true }));
   fs.writeFileSync(path.join(out, 'cover-wrap.html'), coverWrapDoc(book));
   fs.writeFileSync(path.join(out, 'direction.html'), directionDoc(book));
+  fs.writeFileSync(path.join(out, 'type.html'), typeDoc(book));
   fs.writeFileSync(path.join(out, 'index.html'), indexDoc(book, count));
   writeManifest();
 

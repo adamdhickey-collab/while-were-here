@@ -1,0 +1,50 @@
+{
+  "$comment": "Candidate type systems. Add a stack here and it appears in build/type.html. `have` lists the families the tester probes for — if you activate a family locally (Adobe Fonts, Monotype, a Fontstand trial), the tester detects it and renders it for real. Anything not present falls back and is marked missing.",
+  "stacks": [
+    {
+      "name": "Current — vendored, open licence",
+      "source": "Fontsource (npm) · self-hosted · embeds in the PDF",
+      "display": "\"Fraunces\", serif",
+      "text": "\"Archivo\", sans-serif",
+      "note": "\"IBM Plex Mono\", monospace",
+      "hand": "\"Caveat\", cursive",
+      "have": ["Fraunces", "Archivo", "IBM Plex Mono", "Caveat"]
+    },
+    {
+      "name": "The boards' own choice",
+      "source": "Grilli Type + Klim · direct licence only · not on Adobe Fonts",
+      "display": "\"GT Super\", \"GT Super Text\", serif",
+      "text": "\"Söhne\", \"Soehne\", sans-serif",
+      "note": "\"GT America Mono\", monospace",
+      "hand": "\"Reckless Neue\", cursive",
+      "have": ["GT Super", "Söhne", "GT America Mono", "Reckless Neue"]
+    },
+    {
+      "name": "Adobe Fonts path",
+      "source": "Creative Cloud · activate desktop fonts and this renders for real",
+      "display": "\"freight-text-pro\", \"Freight Text Pro\", serif",
+      "text": "\"neue-haas-grotesk-text\", \"Neue Haas Grotesk Text\", sans-serif",
+      "note": "\"din-2014\", \"DIN 2014\", monospace",
+      "hand": "\"kalam\", cursive",
+      "have": ["freight-text-pro", "neue-haas-grotesk-text", "din-2014"]
+    },
+    {
+      "name": "Fontshare — free for commercial use",
+      "source": "Indian Type Foundry · self-hostable · embeds in the PDF",
+      "display": "\"Gambetta\", \"Bespoke Serif\", serif",
+      "text": "\"Switzer\", \"General Sans\", sans-serif",
+      "note": "\"IBM Plex Mono\", monospace",
+      "hand": "\"Caveat\", cursive",
+      "have": ["Gambetta", "Switzer"]
+    },
+    {
+      "name": "System — the old placeholder",
+      "source": "macOS · no licence needed · will not survive a different machine",
+      "display": "\"Hoefler Text\", serif",
+      "text": "\"Avenir Next\", sans-serif",
+      "note": "Menlo, monospace",
+      "hand": "\"Bradley Hand\", cursive",
+      "have": ["Hoefler Text", "Avenir Next", "Menlo", "Bradley Hand"]
+    }
+  ]
+}

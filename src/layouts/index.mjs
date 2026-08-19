@@ -279,6 +279,15 @@ const noticeBlock = (spread) => {
     </aside>`;
 };
 
+const contactSheet = (cs, ctx) => cs ? `
+  <div class="contact-sheet">
+    ${cs.images.map((id, i) => `
+      <figure class="contact-sheet__cell">
+        <div class="contact-sheet__plate">${figure(ctx.image(id), { root: ctx.root, compact: true })}</div>
+        <figcaption class="specimen">${esc(cs.captions[i] || '')}</figcaption>
+      </figure>`).join('')}
+  </div>` : '';
+
 const readingTwo = (spread, essay, ctx) => ({
   pair: true,
   pages: [
@@ -310,14 +319,7 @@ const readingTwo = (spread, essay, ctx) => ({
             <p class="meta">${esc(essay.partTitle)}</p>
           </div>
           <div class="prose prose--cols">${block(ctx.blocks, spread.blocks[1])}</div>
-          ${spread.contactSheet ? `
-            <div class="contact-sheet">
-              ${spread.contactSheet.images.map((id, i) => `
-                <figure class="contact-sheet__cell">
-                  <div class="contact-sheet__plate">${figure(ctx.image(id), { root: ctx.root, compact: true })}</div>
-                  <figcaption class="specimen">${esc(spread.contactSheet.captions[i] || '')}</figcaption>
-                </figure>`).join('')}
-            </div>` : ''}
+          ${contactSheet(spread.contactSheet, ctx)}
           ${spread.insetOn === 'recto' ? insetCard(spread.inset, ctx) : ''}
           ${spread.noteOn === 'verso' || !spread.marginNote ? '' : `<div class="reading__note"><p class="margin-note">${spread.marginNote}</p></div>`}
         </div>`,
@@ -371,7 +373,10 @@ const pullQuote = (spread, essay, ctx) => ({
       html: `
         ${spread.image ? `<div class="quote-spread__figure">${figure(ctx.image(spread.image), { root: ctx.root })}</div>` : ''}
         <div class="page__block">
-          ${spread.variant === 'bare' ? `<div class="quote-spread__mark">${radiant(16, 24)}</div>` : ''}
+          ${spread.variant === 'bare' && !spread.notice && !spread.noticeSteps
+            ? `<div class="quote-spread__mark">${radiant(16, 24)}</div>` : ''}
+          ${noticeBlock(spread)}
+          ${contactSheet(spread.contactSheet, ctx)}
           <p class="quote-spread__lede meta">${esc(spread.lede)}</p>
         </div>`,
     },
@@ -588,32 +593,32 @@ const diagramSpread = (spread, essay, ctx) => ({
   ],
 });
 
+/* The closer: the last words on the verso, one photograph facing them. Text
+   left, image right — the return-to-calm cadence. */
 const closing = (spread, essay, ctx) => ({
   pair: true,
   pages: [
     {
       spread: 'closing',
       folio: true,
-      cls: 'closing' + (spread.image ? ' closing--plate' : ''),
+      cls: 'closing closing--words',
       html: `
-        ${spread.image ? `<div class="closing__figure">${figure(ctx.image(spread.image), { className: 'figure--bleed', inverse: true, root: ctx.root })}</div>` : ''}
         <div class="page__block">
+          ${subhead(spread)}
           <div class="prose prose--generous">${(spread.blocks || []).map((b) => block(ctx.blocks, b)).join('')}</div>
+          <div class="closing__end">
+            <p class="closing__line">${nb(esc(spread.line))}</p>
+            ${spread.coda ? `<p class="closing__coda">${esc(spread.coda)}</p>` : ''}
+          </div>
         </div>`,
     },
     {
       spread: 'closing',
       folio: false,
-      cls: 'closing closing--line',
-      html: `
-        <div class="page__block">
-          <p class="closing__line pull-quote">${nb(esc(spread.line))}</p>
-          ${spread.coda ? `<p class="closing__coda">${esc(spread.coda)}</p>` : ''}
-          <div class="closing__mark">
-            <span class="dot"></span>
-            <p class="meta">${esc(essay.title)}</p>
-          </div>
-        </div>`,
+      cls: 'closing closing--plate',
+      html: `${spread.image
+        ? `<div class="closing__figure">${figure(ctx.image(spread.image), { className: 'figure--bleed', inverse: true, root: ctx.root })}</div>`
+        : ''}`,
     },
   ],
 });

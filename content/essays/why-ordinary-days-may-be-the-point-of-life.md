@@ -40,24 +40,11 @@ spreads:
       The extraordinary becomes ordinary not because it stopped being
       extraordinary, but because we stopped noticing it.
     lede: There is always more
-  - type: reading
-    variant: two
-    subhead: The Future Will Make Today Look Precious
-    blocks: [s6a+s6b, s7a+s7b]
-    insetOn: recto
-    inset:
-      figure: walking
-      title: One step, four systems
-      hand: none of this was decided
     noticeLede: Choose one thing on a familiar walk.
     notice: >-
       Look at it as though you need to explain it to someone who has never seen
       it before. A tree. A storm drain. The edge of the lake. A bird. Your own
       hand.
-  - type: reading
-    variant: two
-    subhead: Why Repetition Isn’t Emptiness
-    blocks: [s8a+s8b, s9a+s9b]
     contactSheet:
       images:
         - ordinary-days-01f1-pavement-shadow
@@ -67,9 +54,13 @@ spreads:
         - 3:42 PM / wind from west
         - 4:05 PM / shoreline, low water
         - 4:20 PM / first cicadas
+  - type: reading
+    variant: two
+    subhead: The Ordinary Is Not the Interruption
+    blocks: [s6a+s6b+s7a+s7b, s8a+s8b+s9a+s9b]
+    noteOn: verso
     marginNote: The route repeats. The world does not.
   - type: closing
-    subhead: The Important Parts
     line: Maybe the ordinary days were the important parts.
     coda: We just didn’t know what they were worth yet.
     image: ordinary-days-01j-quiet-close
@@ -110,8 +101,7 @@ If you live for eighty years, only a tiny fraction of that time will contain any
 
 Most mornings will be ordinary mornings.  
 Most dinners will not be memorable.  
-Most conversations will disappear.  
-Most walks will not produce revelations.
+Most conversations will disappear.
 
 That can initially sound disappointing.  
 Until you realize what it means.
@@ -140,7 +130,6 @@ Children seem to understand something adults gradually forget.
 
 A child can spend twenty minutes watching water move through a gutter.  
 A stick becomes an object worth carrying home.  
-A hill becomes an adventure.  
 Snow is an event.  
 A dog walking past deserves full attention.
 
@@ -155,7 +144,6 @@ But familiarity also makes reality disappear. The more certain we become that we
 Travel can make us feel unusually alive for exactly this reason. Everything becomes visible again.
 
 Street signs.  
-Architecture.  
 Breakfast.  
 People walking to work.  
 The way grocery stores are arranged.
@@ -186,7 +174,7 @@ And familiarity can masquerade as insignificance.
 
 Walking is a good example.
 
-You shift your weight forward. One leg catches you. Then the other. Your brain performs an enormous amount of calculation without asking permission. Your eyes stabilize the world. Your inner ear maintains balance. Muscles throughout your body continuously correct your position.
+You shift your weight forward. One leg catches you. Then the other. Your brain performs an enormous amount of calculation without asking permission.
 
 You move across the ground while thinking about something completely unrelated.
 
@@ -200,12 +188,11 @@ This pattern appears everywhere.
 
 Health becomes vivid during illness.  
 Home becomes meaningful when you're away.  
-A person's voice becomes precious after they're gone.  
-Time becomes valuable when there is less of it.
+A person's voice becomes precious after they're gone.
 
 We often recognize value most clearly when something is threatened. Perhaps wisdom is learning to perform that restoration of attention before loss requires it. Not in a gloomy way. In a clarifying way.
 
-Imagine seeing today's life through your own eyes thirty years from now. The car you currently consider uninteresting. The neighborhood you barely notice. The face you see every morning. The dog's familiar movements around the house. Your own body at its current age.
+Imagine seeing today's life through your own eyes thirty years from now. The car you currently consider uninteresting. The face you see every morning. Your own body at its current age.
 
 Would any of it still look ordinary? Probably not. It might look impossibly alive.
 
@@ -215,9 +202,7 @@ This doesn't mean forcing yourself to appreciate every second. That would become
 
 Ordinary life includes irritation.  
 Boredom.  
-Bad moods.  
 Laundry.  
-Traffic.  
 Work you don't want to do.  
 Arguments.
 
@@ -243,9 +228,7 @@ But repetition may be what allows subtle differences to become visible.
 
 You walk the same path.  
 The light changes.  
-The water changes.  
 Birds arrive and leave.  
-A tree loses leaves.  
 A house gets painted.  
 Someone who used to walk beside you no longer does.
 
@@ -258,8 +241,6 @@ Perhaps this is what makes ordinary routines more interesting than they initiall
 The morning coffee is similar. You aren't. The neighborhood looks similar. It isn't. Even your body is continuously rebuilding itself.
 
 The apparently static world is moving everywhere. Just slowly enough that distraction mistakes it for stillness.
-
-Nature works this way beautifully. There are no truly identical mornings. Clouds move. Leaves change. Birds migrate. Light angles differently. Temperatures shift.
 
 Pay attention long enough and ordinary reality becomes almost impossibly complex.
 
@@ -276,15 +257,15 @@ Coworker.
 
 The label makes someone familiar enough that we occasionally stop seeing the person underneath it.
 
-But every person around us contains an entire private universe. Memories you'll never see. Things they notice when you're not there. Childhood versions of themselves. Fears. Embarrassments. Dreams. Internal conversations.
+But every person around us contains an entire private universe. Memories you'll never see. Things they notice when you're not there. Childhood versions of themselves. Internal conversations.
 
 <!-- block: s9b -->
 
 A person you've known for thirty years remains fundamentally mysterious. That mystery can disappear beneath routine.
 
-Perhaps love depends partly on resisting that disappearance. Not merely loving what is new. Loving what has become familiar without allowing familiarity to make it invisible.
+Perhaps love depends partly on resisting that disappearance — loving what has become familiar without allowing familiarity to make it invisible.
 
-Romantic love often begins with novelty. Everything about the person is interesting. How they laugh. What they eat. Their stories. Their gestures.
+Romantic love often begins with novelty. Everything about the person is interesting. How they laugh. What they eat.
 
 Then years pass. The extraordinary person becomes the person standing in the kitchen. And maybe mature love is partly remembering that those are the same person.
 

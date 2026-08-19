@@ -24,8 +24,8 @@ layer may become. `--annotation` is `0` quiet, `1` present, `2` dense.
 
 | | Imperative | Ground | Accents | Visual cues |
 | --- | --- | --- | --- | --- |
-| **I** Observe the surface | OBSERVE | warm paper | rust · moss · lake | Cream paper, soft light, sparse photography, smaller moments, restrained annotation, breathing room. |
-| **II** Notice the patterns | NOTICE | bone | lake · algae · amber | Specimen plates, repetition across scales, the first diagrams. |
+| **I** Observe the surface | OBSERVE | warm paper | rust · moss · lake | Cream paper and real air between things — but the plates are already in full colour. Specimen cards, annotated diagrams, one saturated microscopy plate per essay. Quiet *pages*, loud *evidence*. |
+| **II** Notice the patterns | NOTICE | bone | lake · algae · amber | Specimen plates multiply and start repeating across scales. Diagrams gain keys and callouts. The first crossover plate. |
 | **III** Enter the systems | UNDERSTAND | **charcoal** | bioluminescent teal · lake · amber | The page inverts. Layered system diagrams, microscopy, luminous line work on a dark ground. |
 | **IV** Expand awareness | EXPAND | **void** | coral · ultraviolet · acid | The most vivid zone in the book. Spectral colour, larger spreads, bolder type, immersive full bleeds. |
 | **V** Return with wonder | INTEGRATE | warm paper | rust · amber · moss | Less density, calmer pages, warmer tones, emotionally direct photography. |
@@ -33,6 +33,16 @@ layer may become. `--annotation` is `0` quiet, `1` present, `2` dense.
 Stages III and IV invert to a dark page — this is where the book stops
 describing systems and puts you inside one. Stage V has to earn its quiet by
 following them, not by avoiding them.
+
+**Stage I is quiet in layout, not in colour.** This changed after the first
+generated set came back: twenty photographs of a lake in almost the same light,
+mean saturation 0·26, with no blue, green, violet or magenta anywhere in them.
+They were a faithful reading of "soft light, sparse photography" and they made
+the opening of the book look like a different, smaller book than the one the
+spectrum describes. The restraint in Stage I now belongs to the *page* — wide
+margins, few elements, one idea at a time — while the plates that sit on it
+carry the same colour they would carry anywhere else. A reader should be able to
+open to page 20 and see the palette, not wait until Part III for permission.
 
 The recurring device that carries the progression is the **statement spread**:
 one declarative line, one imperative beneath it, one image facing it. Built as
@@ -66,6 +76,103 @@ risograph overprints.
 A spread never picks a colour. It uses `--accent-1/2/3`, and the act decides
 what those resolve to. Signal orange stays an event, not a colour.
 
+## The turn
+
+An image in this book is not an illustration of the sentence beside it. It is
+the sentence taken **completely literally, by someone with instruments**.
+
+The essays keep making small throwaway claims — that walking is an astonishing
+biological achievement, that a circular walk accomplishes nothing economically,
+that your body is rebuilding itself while you read. Each one is offered as a
+figure of speech and each one happens to be true. The graphic is what happens
+when somebody refuses to treat it as a figure of speech: it measures the thing,
+labels it, gives it a key and a scale bar, and files it as evidence.
+
+That is the joke, and the joke is the argument. The reader smiles at the
+over-seriousness, and a half second later notices the diagram is not exaggerating.
+
+Three rules keep it from becoming a gag:
+
+**Deadpan, always.** The plate never winks. No comic exaggeration, no cartoon,
+no jokey caption. It is drafted with the same care as a real scientific figure,
+and its humour comes entirely from the mismatch between that care and its
+subject. A P&L statement for a walk around a lake is funny because it balances.
+
+**The reveal comes after the line, never before.** The text makes its modest
+claim; the reader turns, or drops to the foot of the page, and finds it
+substantiated at absurd length. Placing the plate first spoils it — the reader
+reads the sentence already knowing where it is going, and the turn is gone.
+
+**Never explain it.** The caption is a specimen label: dry, factual, shorter
+than feels comfortable. Anything that nudges the reader toward the joke kills
+it. Trust the reader to arrive.
+
+The register to aim at is a very calm person telling you something enormous
+while doing the washing up. Wonder delivered dry. Never whimsy, never awe as a
+performance, and never the cosmic-sounding sentence that congratulates itself.
+
+Worked examples, all from Essay 01:
+
+| The line | The plate |
+| --- | --- |
+| "Your brain performs an enormous amount of calculation without asking permission." | A patent-style mechanical schematic of one step across a kitchen: vectors, centre-of-mass arc, the firing order of eleven muscles, a control-loop block diagram, fig. numbers. |
+| "Economically, almost nothing has happened." | A ledger for a forty-minute walk, ruled and totalled: energy in, energy out, distance closed, net displacement 0 m. It balances. |
+| "You would be overwhelmed if every hum, texture, face, smell and background sound felt as intense on the thousandth encounter." | One second of an ordinary room, drawn unfiltered — every sound, wavelength, air current and surface labelled at once, packed to the edges. The plate is exhausting to look at. That is the finding. |
+| "A child can spend twenty minutes watching water move through a gutter." | A rigorous fluid-dynamics plate of gutter flow — Reynolds numbers, vortex shedding, a real scale bar. The child was doing science. |
+| "Even your body is continuously rebuilding itself." | A shipping manifest of the atoms replaced since the reader started the essay, with tonnage, drawn as a customs form. |
+
+## The colour key
+
+Every essay is a specimen, and specimens are catalogued by colour.
+
+Each essay owns one colour from the spectrum. It is not decoration and it is not
+applied evenly — it appears in exactly four places, so it reads as a filing
+system rather than a theme:
+
+1. the essay number and the hairline rule under the running head,
+2. the specimen-label chip on every plate in that essay,
+3. the key line and callout leaders in that essay's diagrams,
+4. the wash behind the essay's opener.
+
+Everything else on the page stays in the stage's own accents. One colour, four
+jobs, and the reader learns it without being told.
+
+**The order is the argument.** Read the assignments straight down and they run
+cool to hot to deep — moss and lake through teal and acid, into amber and signal
+orange, out to coral, ultraviolet and indigo. That is the same journey the stages
+describe, which means **the contents page is a colour key**: nineteen chips in
+spectrum order, and the shape of the whole book visible before a word of it.
+
+| # | Essay | Part | Specimen colour | |
+| --- | --- | --- | --- | --- |
+| 01 | Why Ordinary Days May Be the Point of Life | I | Moss | `#68735B` |
+| 02 | Why We Cry at Beauty | I | Sage | `#8A9A7B` |
+| 03 | The Secret Life of Attention | I | Lake | `#3E6B87` |
+| 04 | The Lost Art of Wandering | I | Algae | `#4E6B4A` |
+| 05 | The Psychology of Enough | I | Slate green | `#5D7D72` |
+| 06 | The Intelligence Outside Your Head | II | Bioluminescent teal | `#2AA79B` |
+| 07 | What If Consciousness Isn't the Most Important Thing About Us? | II | Cyan | `#2E8FA8` |
+| 08 | The Beauty of Systems Nobody Designed | II | Cobalt | `#2B5EA8` |
+| 09 | The Most Important Things Are Impossible to Measure | II | Acid | `#B5C334` |
+| 10 | Your Body Is a Civilization | II | Viridian | `#1F7A5E` |
+| 11 | The Strange Privilege of Being Alive During a Technological Revolution | III | Amber | `#C8862F` |
+| 12 | When Your Career Stops Being Your Identity | III | Oxidised rust | `#A95738` |
+| 13 | The Last Generation That Remembers the Before-Time | III | Ochre | `#B9932B` |
+| 14 | Why We Need Things That Are Useless | III | Signal orange | `#E44E2D` |
+| 15 | Why Humans Need Pilgrimages | IV | Coral | `#E8705A` |
+| 16 | The People You Love Are Temporary | IV | Magenta | `#C8437E` |
+| 17 | The Strange Gift of Getting Older | IV | Ultraviolet | `#6B4E9B` |
+| 18 | Can You Become Wiser Without Becoming Smarter? | IV | Iris | `#5A5BA8` |
+| 19 | While We're Here | IV | Deep indigo | `#1B2C4E` |
+
+Eight of these are new — sage, slate green, cyan, cobalt, viridian, ochre,
+magenta and iris — added because nineteen essays need nineteen distinguishable
+chips and the spectrum held thirteen. They are steps inside bands the spectrum already
+had, not new territory.
+
+Signal orange keeps its old rule and gains a reason: it belongs to essay 14 and
+nowhere else, so the one time the book shouts, it is a catalogued shout.
+
 ## The handmade layer
 
 Taped-in photographs, handwritten notes, marginalia, underlines, index marks,
@@ -86,6 +193,19 @@ Eight categories the imagery is drawn from, per board three. Every image in the
 manifest should be identifiable as one of these:
 
 **Field notes · Diagrams · Specimens · Maps · Microscopy · Overlays · Collage · Archival**
+
+`photography` is not one of them. A photograph reaches the book only *inside* a
+category — taped into a field note, printed as a specimen card, overprinted with
+a diagram, cut into a collage — and the manifest records the category, never the
+camera. The first image plan ignored this: 20 of its 23 entries were typed
+`photography`, which is why what came back was a mood board for a quieter book.
+An entry whose `kind` is not one of the eight is a planning error, not a style
+choice. The two cover artworks are the only exemption — they are typed
+`illustration` because they belong to the object, not to an essay, and they
+answer to the cover brief instead.
+
+No essay should be built from a single category. **Four of the eight, minimum,
+per essay**, and at least one of them saturated.
 
 ## Layout rhythm
 
@@ -124,6 +244,9 @@ Taken directly from the interior direction boards and built as reusable parts:
 | Seasonal sequence, one frame repeated | progression strip | spread type `sequence` |
 | Image pair, broad and close crop | attention spread | spread type `image-pair` |
 | Statement + imperative | stage progression | spread type `statement` |
+| Essay mark, opener and running head | the index of marks | `.mark` + `mark:` |
+| Concept mark in the margin | the index of marks | `.mark.mark--margin` |
+| Index of marks, back matter | the index of marks | sequence type `index-of-marks` |
 
 ## Four voices
 
@@ -199,3 +322,10 @@ moved below it as the boards show. **Worth deciding.**
   comfortable CMYK gamut. On a photo-book press they will shift. Either accept
   the shift, restrict Act III's saturation, or plan for a printer that can hit
   them.
+
+**The index of marks is unbuilt.** `prompts/icon-prompts.md` specifies thirty-five
+hairline marks — nineteen essay marks and sixteen concept marks — and where each
+one sits. Three things are needed before it can be laid in: a `.mark` class
+(distinct from `.index-mark`, which is already the superscript numeral), a
+`mark:` key on essay front-matter, and a back-matter sequence type for the index
+page itself. None of it blocks the imagery.

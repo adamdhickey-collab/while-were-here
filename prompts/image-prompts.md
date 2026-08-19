@@ -50,14 +50,15 @@ Avoid: gradients; glossy 3D or rendered lighting; generic vector people; corpora
 
 ### part-1-divider-sidewalk-birds
 
-**Save as** `public/images/photography/part-1-divider-sidewalk-birds.jpg` · 1:1 · target 4000 × 4000 px
+**Save as** `public/images/collage/part-1-divider-sidewalk-birds.jpg` · 1:1 · target 4000 × 4000 px
 **Where it goes** Section divider (verso, full bleed)
-**Why it is there** Opens Part I on an image of a pattern that was always there.
+**Why it is there** Opens Part I on a pattern that was always there, and on the book's method: notice, trace, compare, say nothing.
+**Watch for** Specimen colour lake #3E6B87. The three elements must be the same width and stacked, so the resemblance does the arguing. No caption points it out.
 
 ```text
 A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
 
-Wet sidewalk after rain, a scatter of starlings on a wire above it, arranged by accident into something that reads like handwriting.
+Starlings scattered on a wire above a wet sidewalk, arranged by accident into something that reads like handwriting — presented as a comparison: the photograph, the birds traced off it as pure marks, and a line of real handwriting set beneath at matching scale, with a small key. Assembled on cream, taped.
 
 Square frame (1:1).
 
@@ -70,15 +71,15 @@ Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glo
 
 ### ordinary-days-01a-dog-afternoon-light
 
-**Save as** `public/images/photography/ordinary-days-01a-dog-afternoon-light.jpg` · 1:1 · target 4000 × 4000 px
+**Save as** `public/images/overlays/ordinary-days-01a-dog-afternoon-light.jpg` · 1:1 · target 4000 × 4000 px
 **Where it goes** Essay opener (verso, full page) · 01A
-**Why it is there** Hero. Sets the emotional temperature of the book.
-**Watch for** Negative space is the point — the dog should occupy less of the frame than feels comfortable.
+**Why it is there** Essay opener. Establishes on page one that this book measures things, and that the first thing it measures is a dog asleep.
+**Watch for** Specimen colour moss #68735B on the key lines and the label chip. The overlay must be drafted, not sketched — real angles, real units. It should take a beat before the reader realises the diagram is serious.
 
 ```text
 A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
 
-A dog asleep in a rectangle of afternoon light in an ordinary room. Quiet, natural, slightly cinematic, a great deal of empty floor.
+A photograph of a dog asleep in a rectangle of afternoon light on a bare floor, overprinted with the full solar geometry that produced it: sun altitude and azimuth for the hour, the window aperture in plan, the projected parallelogram of light plotted on the floorboards with its dimensions in millimetres, and the dog's position marked as the optimum. Survey linework in moss over a warm photograph, the light patch itself glowing amber.
 
 Square frame (1:1).
 
@@ -87,14 +88,15 @@ Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glo
 
 ### ordinary-days-01b-tabletop-object
 
-**Save as** `public/images/photography/ordinary-days-01b-tabletop-object.jpg` · 4:3 · target 3200 × 2400 px
+**Save as** `public/images/field notes/ordinary-days-01b-tabletop-object.png` · 4:3 · target 3200 × 2400 px
 **Where it goes** Reading · two column (verso, taped inset) · 01B
-**Why it is there** Small taped inset. Interrupts the first text spread at a conceptual turn, not for decoration.
+**Why it is there** Taped inset. Interrupts the first text spread at a conceptual turn, not for decoration.
+**Watch for** Specimen colour moss #68735B. Handwriting only in the annotations; the form itself is printed. No legible paragraph text.
 
 ```text
 A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
 
-A coffee mug, keys or a pair of glasses sitting exactly where someone put them down. Nothing arranged.
+A specimen card for a coffee mug left where it was put down: catalogue number, date, time, a small measured elevation drawing of the mug, and dry entries — 'displacement since Tuesday: 4 cm', 'contents: cold', 'placed without decision'. Ruled card stock, ink, one moss chip.
 
 Horizontal frame (4:3).
 
@@ -103,14 +105,15 @@ Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glo
 
 ### ordinary-days-01c-lake-quiet
 
-**Save as** `public/images/photography/ordinary-days-01c-lake-quiet.jpg` · 3:2 · target 6000 × 4000 px
+**Save as** `public/images/maps/ordinary-days-01c-lake-quiet.png` · 3:2 · target 6000 × 4000 px
 **Where it goes** Reading · asymmetric (verso, plate) · 01C
-**Why it is there** Pairs with the observational drawing opposite it.
+**Why it is there** Reading spread plate. Pairs with the observational drawing opposite.
+**Watch for** Specimen colour moss #68735B on the walked path and the chip; the water carries lake and algae. The cross gets no explanation anywhere on the plate.
 
 ```text
 A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
 
-A quiet lakeside in flat light. Familiar rather than beautiful — the kind of view someone passes daily.
+A bathymetric map of an ordinary lake — depth contours in lake blue with soundings, algae-green shallows, a dashed line tracing the path walked around it, and one small cross where the walker always stops without knowing why. Printed like a mid-century survey sheet, with a legend and a north arrow.
 
 Horizontal frame (3:2).
 
@@ -119,15 +122,15 @@ Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glo
 
 ### ordinary-days-01c2-location-broad
 
-**Save as** `public/images/photography/ordinary-days-01c2-location-broad.jpg` · 3:2 · target 6000 × 4000 px
+**Save as** `public/images/collage/ordinary-days-01c2-location-broad.jpg` · 3:2 · target 6000 × 4000 px
 **Where it goes** Image pair (verso, broad) · 01C
-**Why it is there** Left half of the pair. Must be genuinely unremarkable.
-**Watch for** Shoot the detail frame at the same location, same hour, so the pairing is truthful.
+**Why it is there** Left half of the pair. Must be genuinely dull, and framed as though it were not.
+**Watch for** Specimen colour moss #68735B. The mounting is immaculate; the photograph is not. That contrast is the whole left-hand page.
 
 ```text
 A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
 
-A broad, ordinary view of a path beside water. The photograph anyone would take and nobody would keep.
+The ordinary photograph nobody would keep — a broad, flat view of a path beside water — corner-mounted on cream card with a pencil note beneath it and a torn strip of the previous week's tide table taped alongside. Deliberately unremarkable, deliberately well presented.
 
 Horizontal frame (3:2).
 
@@ -136,14 +139,15 @@ Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glo
 
 ### ordinary-days-01c3-location-detail
 
-**Save as** `public/images/photography/ordinary-days-01c3-location-detail.jpg` · 3:2 · target 6000 × 4000 px
+**Save as** `public/images/microscopy/ordinary-days-01c3-location-detail.png` · 3:2 · target 6000 × 4000 px
 **Where it goes** Image pair (recto, close crop) · 01C
-**Why it is there** Right half of the pair. The payoff.
+**Why it is there** Right half of the pair, and the loudest plate in Part I. The payoff for a page of politeness.
+**Watch for** Specimen colour moss #68735B on the chip only — the plate itself is full spectrum and must be the most saturated thing in the first forty pages. This is the image that proves Stage I is quiet in layout, not in colour.
 
 ```text
 A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
 
-A close crop from inside the same view revealing an unexpected pattern: clouds reflected in water, insects on the surface, tree roots, light through leaves.
+One drop of water from the view opposite, at 400×: diatoms, rotifers, desmids and a ciliate mid-turn, in saturated bioluminescent teal, acid green, coral and cobalt against a dark ground. A real scale bar reading 50 µm, and a small key numbering four organisms.
 
 Horizontal frame (3:2).
 
@@ -152,14 +156,15 @@ Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glo
 
 ### ordinary-days-01e-two-walking
 
-**Save as** `public/images/photography/ordinary-days-01h-two-walking.jpg` · 2:3 · target 4000 × 6000 px
+**Save as** `public/images/diagrams/ordinary-days-01e-two-walking.png` · 2:3 · target 4000 × 6000 px
 **Where it goes** Image + essay · tall (verso) · 01H
-**Why it is there** Carries the walking passage. Ideal future personal-photo slot.
+**Why it is there** Carries the walking passage. The essay calls it astonishing in one sentence; this spends a whole page proving it.
+**Watch for** Specimen colour moss #68735B on the key lines, amber on the force vectors. Deadpan — no cartoon figure, no exaggeration. It should look like it was filed with a patent office.
 
 ```text
 A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
 
-Two people from behind, walking beside water. Unposed, mid-stride, faces not visible.
+A patent-style mechanical schematic of one step taken across a kitchen: centre-of-mass arc, ground reaction vectors, the firing order of eleven muscles numbered in sequence, ankle and hip moments, and an inset control-loop block diagram labelled 'balance, closed loop, unattended'. Fig. numbers throughout. Drafted in hairline ink on bone.
 
 Vertical frame (2:3), subject low, generous empty space above.
 
@@ -168,14 +173,15 @@ Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glo
 
 ### ordinary-days-01f1-pavement-shadow
 
-**Save as** `public/images/photography/ordinary-days-01f1-pavement-shadow.jpg` · 1:1 · target 3000 × 3000 px
+**Save as** `public/images/specimens/ordinary-days-01f1-pavement-shadow.png` · 1:1 · target 3000 × 3000 px
 **Where it goes** Contact sheet (recto) · 01F
-**Why it is there** First of three. Captions record only what was noticed.
+**Why it is there** One of three on the contact sheet. The labels record what was noticed and nothing else.
+**Watch for** Specimen colour moss #68735B. The label must be shorter than feels comfortable. No caption anywhere explains why the thing was worth mounting.
 
 ```text
 A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
 
-A shadow falling across pavement — a railing, a branch, a person out of frame.
+A pinned specimen card of something that cannot be pinned: a shadow across pavement — a railing, a branch, a person out of frame, printed small and mounted on ruled card with an entomologist's label carrying only the time and the condition — '3:42 PM / wind from west'. Two brass pins, a ruled border, one moss chip.
 
 Square frame (1:1).
 
@@ -184,14 +190,15 @@ Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glo
 
 ### ordinary-days-01f2-bird-shoreline
 
-**Save as** `public/images/photography/ordinary-days-01f2-bird-shoreline.jpg` · 1:1 · target 3000 × 3000 px
+**Save as** `public/images/specimens/ordinary-days-01f2-bird-shoreline.png` · 1:1 · target 3000 × 3000 px
 **Where it goes** Contact sheet (recto) · 01F
-**Why it is there** Second of three.
+**Why it is there** One of three on the contact sheet. The labels record what was noticed and nothing else.
+**Watch for** Specimen colour moss #68735B. The label must be shorter than feels comfortable. No caption anywhere explains why the thing was worth mounting.
 
 ```text
 A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
 
-A single bird near a shoreline, small in the frame, doing nothing of consequence.
+A pinned specimen card of something that cannot be pinned: a single bird near a shoreline, small, doing nothing of consequence, printed small and mounted on ruled card with an entomologist's label carrying only the time and the condition — '4:05 PM / shoreline, low water'. Two brass pins, a ruled border, one moss chip.
 
 Square frame (1:1).
 
@@ -200,14 +207,15 @@ Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glo
 
 ### ordinary-days-01f3-dog-nose-grass
 
-**Save as** `public/images/photography/ordinary-days-01f3-dog-nose-grass.jpg` · 1:1 · target 3000 × 3000 px
+**Save as** `public/images/specimens/ordinary-days-01f3-dog-nose-grass.png` · 1:1 · target 3000 × 3000 px
 **Where it goes** Contact sheet (recto) · 01F
-**Why it is there** Third of three.
+**Why it is there** One of three on the contact sheet. The labels record what was noticed and nothing else.
+**Watch for** Specimen colour moss #68735B. The label must be shorter than feels comfortable. No caption anywhere explains why the thing was worth mounting.
 
 ```text
 A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
 
-A dog's nose deep in grass, close and slightly out of focus.
+A pinned specimen card of something that cannot be pinned: a dog's nose deep in grass, close and slightly out of focus, printed small and mounted on ruled card with an entomologist's label carrying only the time and the condition — '4:20 PM / first cicadas'. Two brass pins, a ruled border, one moss chip.
 
 Square frame (1:1).
 
@@ -216,15 +224,15 @@ Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glo
 
 ### ordinary-days-01g1-tree-spring
 
-**Save as** `public/images/photography/ordinary-days-01g1-tree-spring.jpg` · 3:4 · target 3600 × 4800 px
+**Save as** `public/images/overlays/ordinary-days-01g1-tree-spring.jpg` · 3:4 · target 3600 × 4800 px
 **Where it goes** Sequence (recto, strip of four) · 01G
-**Why it is there** Frame 1 of four. The frame must not move between visits.
-**Watch for** Shot from a marked position. If the framing drifts, the spread stops working.
+**Why it is there** Frame of four in the sequence strip. The frame must not move between visits — the data is the only thing allowed to change.
+**Watch for** Specimen colour moss #68735B on the chip; the overlay block shifts to moss for this frame, so the strip reads as a colour ramp across the seasons before a single figure is read.
 
 ```text
 A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
 
-The same tree, or the same stretch of lakeshore, in spring — bare branches breaking. Identical framing, identical position.
+The same stretch of lakeshore in spring, identical framing, overprinted with that visit's measurements set in a small ruled block: leaf area 0.4 · day length 12h 41m · water 7 °C · 3 species calling. The photograph is unremarkable; the data is exact.
 
 Vertical frame (3:4).
 
@@ -233,15 +241,15 @@ Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glo
 
 ### ordinary-days-01g2-tree-summer
 
-**Save as** `public/images/photography/ordinary-days-01g2-tree-summer.jpg` · 3:4 · target 3600 × 4800 px
+**Save as** `public/images/overlays/ordinary-days-01g2-tree-summer.jpg` · 3:4 · target 3600 × 4800 px
 **Where it goes** Sequence (recto, strip of four) · 01G
-**Why it is there** Frame 2 of four. The frame must not move between visits.
-**Watch for** Shot from a marked position. If the framing drifts, the spread stops working.
+**Why it is there** Frame of four in the sequence strip. The frame must not move between visits — the data is the only thing allowed to change.
+**Watch for** Specimen colour moss #68735B on the chip; the overlay block shifts to algae for this frame, so the strip reads as a colour ramp across the seasons before a single figure is read.
 
 ```text
 A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
 
-The same tree, or the same stretch of lakeshore, in summer — full canopy, hard light. Identical framing, identical position.
+The same stretch of lakeshore in summer, identical framing, overprinted with that visit's measurements set in a small ruled block: leaf area 4.1 · day length 15h 02m · water 21 °C · 11 species calling. The photograph is unremarkable; the data is exact.
 
 Vertical frame (3:4).
 
@@ -250,15 +258,15 @@ Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glo
 
 ### ordinary-days-01g3-tree-autumn
 
-**Save as** `public/images/photography/ordinary-days-01g3-tree-autumn.jpg` · 3:4 · target 3600 × 4800 px
+**Save as** `public/images/overlays/ordinary-days-01g3-tree-autumn.jpg` · 3:4 · target 3600 × 4800 px
 **Where it goes** Sequence (recto, strip of four) · 01G
-**Why it is there** Frame 3 of four. The frame must not move between visits.
-**Watch for** Shot from a marked position. If the framing drifts, the spread stops working.
+**Why it is there** Frame of four in the sequence strip. The frame must not move between visits — the data is the only thing allowed to change.
+**Watch for** Specimen colour moss #68735B on the chip; the overlay block shifts to amber for this frame, so the strip reads as a colour ramp across the seasons before a single figure is read.
 
 ```text
 A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
 
-The same tree, or the same stretch of lakeshore, in autumn — thinning, warm. Identical framing, identical position.
+The same stretch of lakeshore in autumn, identical framing, overprinted with that visit's measurements set in a small ruled block: leaf area 2.2 · day length 11h 18m · water 14 °C · 2 species calling. The photograph is unremarkable; the data is exact.
 
 Vertical frame (3:4).
 
@@ -267,15 +275,15 @@ Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glo
 
 ### ordinary-days-01g4-tree-winter
 
-**Save as** `public/images/photography/ordinary-days-01g4-tree-winter.jpg` · 3:4 · target 3600 × 4800 px
+**Save as** `public/images/overlays/ordinary-days-01g4-tree-winter.jpg` · 3:4 · target 3600 × 4800 px
 **Where it goes** Sequence (recto, strip of four) · 01G
-**Why it is there** Frame 4 of four. The frame must not move between visits.
-**Watch for** Shot from a marked position. If the framing drifts, the spread stops working.
+**Why it is there** Frame of four in the sequence strip. The frame must not move between visits — the data is the only thing allowed to change.
+**Watch for** Specimen colour moss #68735B on the chip; the overlay block shifts to rust for this frame, so the strip reads as a colour ramp across the seasons before a single figure is read.
 
 ```text
 A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
 
-The same tree, or the same stretch of lakeshore, in winter — bare, flat light. Identical framing, identical position.
+The same stretch of lakeshore in winter, identical framing, overprinted with that visit's measurements set in a small ruled block: leaf area 0.0 · day length 8h 54m · water 2 °C · silence. The photograph is unremarkable; the data is exact.
 
 Vertical frame (3:4).
 
@@ -284,15 +292,15 @@ Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glo
 
 ### ordinary-days-01i-kitchen-light
 
-**Save as** `public/images/photography/ordinary-days-01i-kitchen-light.jpg` · 2:1 · target 8000 × 4000 px
+**Save as** `public/images/archival/ordinary-days-01i-kitchen-light.jpg` · 2:1 · target 8000 × 4000 px
 **Where it goes** Image + essay · band (crossover) · 01H
-**Why it is there** Crossover band. Ideal future personal-photo slot — this one especially.
-**Watch for** Keep the figure fully on one page. Nothing of interest within 15 mm of the fold.
+**Why it is there** Crossover band. The one place in the essay where the apparatus stops and the book just looks at somebody.
+**Watch for** Specimen colour moss #68735B. Keep the figure fully on one page; nothing of interest within 15 mm of the fold. No measurement, no key, no diagram anywhere on this spread — it earns its silence by following six pages of instruments.
 
 ```text
 A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
 
-Someone standing in kitchen light, seen naturally from behind or partly obscured. Intimate without being staged.
+An album leaf: one photograph of someone standing in kitchen light, corner-mounted, surrounded by the residue of an ordinary life — a grocery receipt, a note in handwriting, a pressed leaf, a ticket stub — arranged with care on aged cream. Nothing legible enough to read as text.
 
 Wide panoramic frame (2:1). This runs across a two-page spread, so keep the centre calm and place nothing important in the middle 30 mm.
 
@@ -301,14 +309,15 @@ Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glo
 
 ### ordinary-days-01j-quiet-close
 
-**Save as** `public/images/photography/ordinary-days-01j-quiet-close.jpg` · 1:1 · target 4000 × 4000 px
+**Save as** `public/images/field notes/ordinary-days-01j-quiet-close.jpg` · 1:1 · target 4000 × 4000 px
 **Where it goes** Closing spread (verso, full bleed) · 01I
-**Why it is there** Closing image. Not spectacular — that is the requirement, not a limitation.
+**Why it is there** Closing image. Not spectacular; that is the requirement, not a limitation.
+**Watch for** Specimen colour moss #68735B, used once, small. The blank is doing the work — do not fill it.
 
 ```text
 A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
 
-Late-afternoon lake, an empty path, a familiar room, or a dog walking away. Inhabited rather than monumental.
+The last leaf of a field notebook: one photograph taped in — late-afternoon lake, an empty path, or a dog walking away — with a single line of handwriting beneath it and three-quarters of the page left blank. The ruling shows through.
 
 Square frame (1:1).
 
@@ -321,14 +330,15 @@ Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glo
 
 ### attention-01-window-reflection
 
-**Save as** `public/images/photography/attention-01-window-reflection.jpg` · 1:1 · target 4000 × 4000 px
+**Save as** `public/images/overlays/attention-01-window-reflection.jpg` · 1:1 · target 4000 × 4000 px
 **Where it goes** Essay opener (verso, full page)
-**Why it is there** Sets the essay's premise before a word of it is read.
+**Why it is there** Essay opener. States the premise as an optical fact before the essay states it as a sentence.
+**Watch for** Specimen colour lake #3E6B87 for the room trace, coral for the reflection trace, equal weight — if one recedes the plate has failed. No caption tells the reader to try.
 
 ```text
 A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
 
-A second-floor apartment window at dusk, one of many, the only one lit; the glass carries a faint reflection of the street trees behind the viewer.
+A lit second-floor window at dusk, its glass carrying the reflection of the street trees behind the viewer, overprinted with two complete figure-ground diagrams keyed to the same surface: one tracing the room, one tracing the reflection, in two colours at the same weight. Both are correct. The eye cannot hold them at once.
 
 Square frame (1:1).
 
@@ -337,30 +347,32 @@ Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glo
 
 ### attention-02-field-notes
 
-**Save as** `public/images/illustration/attention-02-field-notes.png` · 1:1 · target 4000 × 4000 px
+**Save as** `public/images/field notes/attention-02-field-notes.png` · 1:1 · target 4000 × 4000 px
 **Where it goes** Pull quote (verso, half page)
 **Why it is there** Gives the pull quote something to argue with rather than decorate.
-
-```text
-An illustrated plate from a vintage scientific field guide, hand-drawn in ink on warm cream paper. Imperfect geometry — circles slightly out of true, lines drawn by hand, everything a degree or two off square. Field-guide illustration crossed with vintage scientific diagram, cartography and marginalia: arrows, rings, timelines, measure scales, tiny human figures. Screenprint and risograph texture with visible ink density variation and slight misregistration. Charcoal near-black ink on a warm cream ground (#F3EFE5), with restrained accents of muted rust (#A95738), faded cobalt (#536D8E) and moss green (#68735B). Intelligent, tactile, playful, handmade.
-
-A field-guide plate of a single room, drawn twice: once complete in fine hairline ink, once as the four or five marks that survived being looked at.
-
-Square frame (1:1).
-
-Avoid: gradients; glossy 3D or rendered lighting; generic vector people; corporate infographic style; SaaS or explainer-video illustration; polished icon sets; decorative complexity with no conceptual purpose; fake handwritten paragraphs or invented lettering; any legible text; psychedelic imagery; symmetry for its own sake.
-```
-
-### attention-03-dog-sunlight
-
-**Save as** `public/images/photography/attention-03-dog-sunlight.jpg` · 2:3 (vertical) · target 4000 × 6000 px
-**Where it goes** Image + essay (verso, 62% width)
-**Why it is there** Carries the essay's central practical claim: noticing is a matter of speed, not will.
+**Watch for** Specimen colour lake #3E6B87 on the complete drawing; the surviving marks print in signal-bright so the eye finds them first. Same scale, same position — the comparison is the plate.
 
 ```text
 A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
 
-An old dog lying at the edge of a rectangle of afternoon light on a wood floor, having moved with it; the previous position still visible as a dent in a rug.
+A field-guide plate of a single room drawn twice on one card: once complete in fine hairline ink, once as the four or five marks that survived being looked at. The second drawing sits beside the first at the same scale, mostly empty.
+
+Square frame (1:1).
+
+Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
+```
+
+### attention-03-dog-sunlight
+
+**Save as** `public/images/diagrams/attention-03-dog-sunlight.png` · 2:3 (vertical) · target 4000 × 6000 px
+**Where it goes** Image + essay (verso, 62% width)
+**Why it is there** Carries the essay's central practical claim: noticing is a matter of speed, not will.
+**Watch for** Specimen colour lake #3E6B87 on the key lines, amber for the six light patches so the sequence reads as time. Absolutely straight-faced — this is a real figure about a dog being better at the subject than the author.
+
+```text
+A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
+
+A time-motion plate of an old dog and a rectangle of afternoon light: the light patch plotted at six successive times in tinted outline, the dog's position at each, displacement arrows in centimetres per hour, and the dent left in a rug marked as the datum. Ethological in tone, with a legend and a scale.
 
 Frame 2:3 (vertical).
 
@@ -369,15 +381,15 @@ Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glo
 
 ### attention-04-lake-weather
 
-**Save as** `public/images/photography/attention-04-lake-weather.jpg` · 2:1 · target 8000 × 4000 px
+**Save as** `public/images/overlays/attention-04-lake-weather.jpg` · 2:1 · target 8000 × 4000 px
 **Where it goes** Full-bleed spread (crossover, two pages)
 **Why it is there** The book's first long exhale. No text, no folio.
-**Watch for** Keep the horizon clear of the fold; the figure must sit fully on the recto.
+**Watch for** Specimen colour lake #3E6B87, at the lowest weight anywhere in the book. If the overlay is noticed before the figure, it is too strong. Keep the horizon clear of the fold; the figure sits fully on the recto.
 
 ```text
 A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
 
-An enormous flat bank of weather over a grey lake, with one very small figure standing on a breakwater far right of centre.
+An enormous flat bank of weather over a grey lake, one very small figure standing on a breakwater far right of centre, overprinted with the faintest possible synoptic layer: two isobars and a frontal boundary crossing the sky, drawn so lightly they could be missed on the first pass.
 
 Wide panoramic frame (2:1). This runs across a two-page spread, so keep the centre calm and place nothing important in the middle 30 mm.
 
@@ -386,14 +398,15 @@ Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glo
 
 ### attention-05-crosswalk-strangers
 
-**Save as** `public/images/photography/attention-05-crosswalk-strangers.jpg` · 3:1 · target 6000 × 2000 px
+**Save as** `public/images/maps/attention-05-crosswalk-strangers.png` · 3:1 · target 6000 × 2000 px
 **Where it goes** Reading · two column (verso, bottom band)
 **Why it is there** Interrupts the text at the foot of the verso, so the spread has weight where it would otherwise trail off.
+**Watch for** Specimen colour lake #3E6B87 on the sight-lines. The corner is surveyed with the seriousness of a battlefield plan. The label reading 'nothing in particular' is the only joke and it is not flagged.
 
 ```text
 A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
 
-Four strangers at a crosswalk, all looking at four different things, their shadows overlapping into a single shape.
+A plan-view survey of one street corner: four figures at a crosswalk drawn from above, each sight-line plotted to a different object and labelled — a phone, a pigeon, a shop sign, nothing in particular — with their overlapping shadows outlined as a single shape and given its own hatch. Legend, scale bar, north arrow.
 
 Very wide band (3:1), figures small in the frame.
 

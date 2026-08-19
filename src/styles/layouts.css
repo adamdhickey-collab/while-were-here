@@ -662,3 +662,66 @@
 .opener__verso .figure--composite img,
 .divider__figure .figure--composite img,
 .closing__figure .figure--composite img { object-fit: cover; }
+
+/* ---- 20. THE HAND -------------------------------------------------------
+   Real handwriting, scanned, placed as a layer. Everything else typographic in
+   this book is machine-set — monospace, engraved labels, printed tables — and
+   without this there is no evidence of the person doing the noticing.
+   It is ink on transparent ground, so it sits on the book's own paper.        */
+
+.hand-scan {
+  position: absolute;
+  z-index: 5;
+  width: var(--hand-width, 46mm);
+  transform: rotate(var(--hand-rotate, -1.5deg));
+  pointer-events: none;
+  mix-blend-mode: multiply;
+}
+.hand-scan .figure { position: static; background: none; }
+.hand-scan img { width: 100%; height: auto; object-fit: contain; }
+
+/* Positions, named for where a hand actually lands on a page. */
+.hand-scan--margin { bottom: calc(var(--m-bottom) + 6mm); }
+.page--recto .hand-scan--margin { right: calc(var(--m-outside) - 12mm); }
+.page--verso .hand-scan--margin { left: calc(var(--m-outside) - 12mm); }
+
+.hand-scan--corner { top: calc(var(--m-top) - 4mm); }
+.page--recto .hand-scan--corner { right: calc(var(--m-outside) - 8mm); }
+.page--verso .hand-scan--corner { left: calc(var(--m-outside) - 8mm); }
+
+.hand-scan--over {
+  top: 46%;
+  left: 12%;
+  width: var(--hand-width, 70%);
+  transform: rotate(var(--hand-rotate, -2deg));
+}
+
+/* ---- 21. MATERIAL BREAK -------------------------------------------------
+   One surface across the fold that is not paper. Placed on a stage turn so the
+   change of substance and the change of register arrive together — and so the
+   paper everywhere else reads as chosen rather than defaulted.                */
+
+.material-break { background: var(--ink); }
+.material-break .figure { position: absolute; inset: 0; }
+.material-break__line {
+  position: absolute;
+  right: var(--m-outside);
+  bottom: var(--m-bottom);
+  z-index: 2;
+  max-width: 118mm;
+  text-align: right;
+  font-family: var(--font-display);
+  font-size: 21pt;
+  line-height: 1.2;
+  letter-spacing: var(--ls-title);
+  font-weight: 700;
+  color: var(--paper);
+  margin: 0;
+}
+.material-break__label {
+  position: absolute;
+  left: var(--m-outside);
+  bottom: var(--m-bottom);
+  z-index: 2;
+  color: rgba(243, 239, 229, 0.6);
+}

@@ -233,6 +233,15 @@ const openerSpread = (spread, essay, ctx) => {
   };
 };
 
+/* A scanned hand, laid over the page by the layout rather than baked into a
+   picture — so it can sit in a margin on one spread and across a figure on the
+   next, and so it can be moved without regenerating an image. */
+const handScan = (h, ctx) => h ? `
+  <div class="hand-scan hand-scan--${esc(h.at || 'margin')}"
+       style="${h.rotate ? `--hand-rotate:${h.rotate}deg;` : ''}${h.width ? `--hand-width:${h.width};` : ''}">
+    ${figure(ctx.image(h.image), { root: ctx.root })}
+  </div>` : '';
+
 const subhead = (s) => s.subhead ? `<h3 class="subhead">${esc(s.subhead)}</h3>` : '';
 
 /* The taped card, whether it holds a drawn figure or a small photograph. */
@@ -305,6 +314,7 @@ const readingTwo = (spread, essay, ctx) => ({
           <div class="prose prose--cols${spread.dropCap ? ' prose--drop' : ''}">${block(ctx.blocks, spread.blocks[0])}</div>
           ${spread.bandImage ? `<div class="reading__band">${figure(ctx.image(spread.bandImage), { root: ctx.root })}</div>` : ''}
           ${spread.insetOn === 'recto' ? '' : insetCard(spread.inset, ctx)}
+          ${spread.handOn === 'recto' ? '' : handScan(spread.hand, ctx)}
           ${spread.noteOn === 'verso' && spread.marginNote ? `<div class="reading__note"><p class="margin-note">${spread.marginNote}</p></div>` : ''}
         </div>`,
     },
@@ -321,6 +331,7 @@ const readingTwo = (spread, essay, ctx) => ({
           <div class="prose prose--cols">${block(ctx.blocks, spread.blocks[1])}</div>
           ${contactSheet(spread.contactSheet, ctx)}
           ${spread.insetOn === 'recto' ? insetCard(spread.inset, ctx) : ''}
+          ${spread.handOn === 'recto' ? handScan(spread.hand, ctx) : ''}
           ${spread.noteOn === 'verso' || !spread.marginNote ? '' : `<div class="reading__note"><p class="margin-note">${spread.marginNote}</p></div>`}
         </div>`,
     },
@@ -710,8 +721,29 @@ const sequence = (spread, essay, ctx) => ({
   ],
 });
 
+/* A material break. Everything else in the book is pigment on paper; this is a
+   spread of something that is not. Placed on a stage turn, so the change of
+   substance and the change of register land together. */
+const materialBreak = (spread, essay, ctx) => {
+  const img = ctx.image(spread.image);
+  return {
+    pair: true,
+    pages: ['left', 'right'].map((half) => ({
+      spread: 'material break',
+      folio: false,
+      cls: 'material-break',
+      html: `${figure(img, { className: 'figure--bleed', half, inverse: true, root: ctx.root })}
+        ${half === 'right' && spread.line
+          ? `<p class="material-break__line">${esc(spread.line)}</p>` : ''}
+        ${half === 'left' && spread.label
+          ? `<p class="material-break__label specimen">${esc(spread.label)}</p>` : ''}`,
+    })),
+  };
+};
+
 export const essaySpreads = {
   statement,
+  'material-break': materialBreak,
   'image-pair': imagePair,
   sequence,
   opener: openerSpread,

@@ -65,6 +65,91 @@ Square frame (1:1).
 Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
 ```
 
+### hand-01-marginalia-set
+
+**Save as** `public/images/illustration/hand-01-marginalia-set.png` · 1:2 · target 3000 × 6000 px
+**Where it goes** Margin overlay — any reading spread
+**Why it is there** The set is otherwise entirely machine-set — monospace, engraved labels, printed tables. A real hand introduces the person doing the noticing.
+**Watch for** Transparent PNG, ink only, no paper ground — it sits on the book's own paper. Must NOT be legible as sentences; it reads as a gesture.
+
+```text
+An illustrated plate from a vintage scientific field guide, hand-drawn in ink on warm cream paper. Imperfect geometry — circles slightly out of true, lines drawn by hand, everything a degree or two off square. Field-guide illustration crossed with vintage scientific diagram, cartography and marginalia: arrows, rings, timelines, measure scales, tiny human figures. Screenprint and risograph texture with visible ink density variation and slight misregistration. Charcoal near-black ink on a warm cream ground (#F3EFE5), with restrained accents of muted rust (#A95738), faded cobalt (#536D8E) and moss green (#68735B). Intelligent, tactile, playful, handmade.
+
+A set of six to eight short handwritten annotations in brown-black iron-gall ink on transparent ground, cut from a nineteenth-century manuscript or field notebook. Two or three words each, plus an underline, a bracket, a caret and a small pointing arrow. Visible pressure variation, a blot, one crossing-out.
+
+Frame 1:2.
+
+Avoid: gradients; glossy 3D or rendered lighting; generic vector people; corporate infographic style; SaaS or explainer-video illustration; polished icon sets; decorative complexity with no conceptual purpose; fake handwritten paragraphs or invented lettering; any legible text; psychedelic imagery; symmetry for its own sake.
+```
+
+### hand-02-overwriting-diagram
+
+**Save as** `public/images/illustration/hand-02-overwriting-diagram.png` · 3:2 · target 6000 × 4000 px
+**Where it goes** Overlay across a diagram or plate
+**Why it is there** Breaks the authority of a printed figure — the book is observation, not instruction.
+**Watch for** Transparent PNG. Angle no more than 3°. Illegible as text at reading distance.
+
+```text
+An illustrated plate from a vintage scientific field guide, hand-drawn in ink on warm cream paper. Imperfect geometry — circles slightly out of true, lines drawn by hand, everything a degree or two off square. Field-guide illustration crossed with vintage scientific diagram, cartography and marginalia: arrows, rings, timelines, measure scales, tiny human figures. Screenprint and risograph texture with visible ink density variation and slight misregistration. Charcoal near-black ink on a warm cream ground (#F3EFE5), with restrained accents of muted rust (#A95738), faded cobalt (#536D8E) and moss green (#68735B). Intelligent, tactile, playful, handmade.
+
+A single longer handwritten passage, four or five lines, running at a slight angle across the frame, as though written over a printed figure after the fact. Same iron-gall ink, transparent ground.
+
+Horizontal frame (3:2).
+
+Avoid: gradients; glossy 3D or rendered lighting; generic vector people; corporate infographic style; SaaS or explainer-video illustration; polished icon sets; decorative complexity with no conceptual purpose; fake handwritten paragraphs or invented lettering; any legible text; psychedelic imagery; symmetry for its own sake.
+```
+
+### material-01-linen-weave
+
+**Save as** `public/images/photography/material-01-linen-weave.jpg` · 2:1 · target 8000 × 4000 px
+**Where it goes** Material break, full bleed crossover
+**Why it is there** The set is entirely pigment on cellulose. One genuinely different material makes the paper read as chosen rather than defaulted — and linen rhymes with the binding.
+**Watch for** Warm neutral, close to the book's paper in value so the break is tactile rather than tonal.
+
+```text
+A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
+
+Raw undyed linen at macro scale, lit raking from one side so the weave throws its own shadows. Individual slubs and thread irregularities clearly visible. No hem, no edge, no object — only surface.
+
+Wide panoramic frame (2:1). This runs across a two-page spread, so keep the centre calm and place nothing important in the middle 30 mm.
+
+Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
+```
+
+### material-02-oxidised-metal
+
+**Save as** `public/images/photography/material-02-oxidised-metal.jpg` · 2:1 · target 8000 × 4000 px
+**Where it goes** Material break, full bleed crossover
+**Why it is there** The hardest material break in the book, placed where the book is most vivid.
+**Watch for** Let the rust carry the accent colours of Stage IV — coral, ultraviolet — rather than importing them.
+
+```text
+A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
+
+Oxidised copper or weathered steel at macro scale — rust bloom, verdigris, mineral crust. Raking light. Reads as a landscape until you realise the scale is wrong.
+
+Wide panoramic frame (2:1). This runs across a two-page spread, so keep the centre calm and place nothing important in the middle 30 mm.
+
+Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
+```
+
+### material-03-glass-condensation
+
+**Save as** `public/images/photography/material-03-glass-condensation.jpg` · 2:1 · target 8000 × 4000 px
+**Where it goes** Material break, full bleed crossover
+**Why it is there** The turn back to calm. Transparent material after opaque ones.
+**Watch for** The out-of-focus world must be unreadable — the moment it resolves into a scene it stops being a material.
+
+```text
+A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
+
+Condensation on a cold window at macro scale, with the world beyond it entirely out of focus. Droplets holding tiny inverted images of whatever is outside.
+
+Wide panoramic frame (2:1). This runs across a two-page spread, so keep the centre calm and place nothing important in the middle 30 mm.
+
+Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
+```
+
 ---
 
 ## Why Ordinary Days May Be the Point of Life

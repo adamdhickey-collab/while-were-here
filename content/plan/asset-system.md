@@ -82,7 +82,40 @@ Paper grain, risograph misregistration, halftone, ink density, photocopy noise.
 - **Rule** Texture is a property of the paper, not of the picture. If you find
   yourself choosing a texture for one image, you are decorating.
 
-### 8 · PERSONAL
+### 8 · HANDWRITING
+Real scanned handwriting — marginalia, a caret, an underline, a crossing-out —
+in iron-gall ink on transparent ground.
+
+- **Lives in** margins of reading spreads · across a diagram or plate
+- **Stages** all
+- **Treatment** Placed by the layout, never baked into a picture, so it can move
+  between spreads without regenerating anything. `mix-blend-mode: multiply`, so
+  it sits on the book's own paper rather than carrying its own.
+- **Rule** **It must not be legible as sentences.** It is a gesture, not content.
+  The moment a reader can read it, they stop noticing it and start decoding it.
+- **Why it exists** Everything else typographic in this book is machine-set —
+  monospace, engraved labels, printed tables. Without a real hand there is no
+  evidence anywhere of the person doing the noticing.
+
+Built as `.hand-scan`, positioned `margin`, `corner` or `over`.
+
+### 9 · MATERIAL
+A surface that is not paper. Linen, oxidised metal, glass, stone — photographed
+at macro scale so it reads as terrain before it reads as substance.
+
+- **Lives in** a full-bleed crossover, on a stage turn
+- **Stages** placed at the II→III, III→IV and IV→V turns
+- **Treatment** One surface, edge to edge, and almost nothing else. A short line
+  reversed out on the recto at most.
+- **Rule** **Two or three in the whole book.** More and it becomes a texture
+  library; fewer and the paper still reads as a default rather than a decision.
+- **Why it exists** Every other asset is pigment on cellulose. One genuinely
+  different material makes the paper deliberate, and landing it on a stage turn
+  means the change of substance and the change of register arrive together.
+
+Built as spread type `material-break`.
+
+### 10 · PERSONAL
 Real photographs. Family, dogs, the lake, old objects, places with meaning.
 
 - **Lives in** Field Notes · closing spreads · the domestic slots
@@ -115,13 +148,16 @@ The composition rules matter more than the individual choices:
 Roughly, per stage, so the arc is built into the asset plan rather than applied
 afterwards:
 
-| Stage | Plates | Specimens | Figures | Maps | Micrographs | Ephemera |
-| --- | --- | --- | --- | --- | --- | --- |
-| **I** Observe | — | 2–3 | 1 | — | — | light |
-| **II** Notice | 2–3 | 4–6 | 3–4 | 1–2 | — | moderate |
-| **III** Understand | 2–3 | 2–3 | 4–5 | 1–2 | 3–4 | moderate |
-| **IV** Expand | 1–2 | 1 | 3–4 | — | 4–6 | light |
-| **V** Integrate | 1 | 2–3 | 1 | — | — | light |
+| Stage | Plates | Specimens | Figures | Maps | Micrographs | Ephemera | Hand |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| **I** Observe | — | 2–3 | 1 | — | — | light | 2–3 |
+| **II** Notice | 2–3 | 4–6 | 3–4 | 1–2 | — | moderate | 2–3 |
+| **III** Understand | 2–3 | 2–3 | 4–5 | 1–2 | 3–4 | moderate | 1–2 |
+| **IV** Expand | 1–2 | 1 | 3–4 | — | 4–6 | light | 1 |
+| **V** Integrate | 1 | 2–3 | 1 | — | — | light | 2–3 |
+
+**Material breaks** sit between stages, not inside them: one at II→III, one at
+III→IV, one at IV→V. Three in the book, or two if one of them is weak.
 
 ---
 

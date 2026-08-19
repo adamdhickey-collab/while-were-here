@@ -24,6 +24,12 @@ spreads:
       caption: Left where it was left.
     noteOn: verso
     marginNote: Most of life is not a highlight reel.
+    handOn: recto
+    hand:
+      image: hand-01-marginalia-set
+      at: margin
+      rotate: -2
+      width: 44mm
   - type: image-pair
     subhead: Attention Changes the World
     images:
@@ -60,6 +66,12 @@ spreads:
     blocks: [s6a+s6b+s7a+s7b, s8a+s8b+s9a+s9b]
     noteOn: verso
     marginNote: The route repeats. The world does not.
+    handOn: verso
+    hand:
+      image: hand-02-overwriting-diagram
+      at: over
+      rotate: -2.5
+      width: 62%
   - type: closing
     line: Maybe the ordinary days were the important parts.
     coda: We just didn’t know what they were worth yet.

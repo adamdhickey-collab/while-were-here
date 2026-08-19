@@ -41,6 +41,24 @@ across ninety images does not work.**
 | **Old Book Illustrations** | Curated Victorian engravings, searchable, cleaned. |
 | **Flickr Commons** | Aggregates institutional public-domain collections in one search. |
 
+## Handwriting and non-paper material
+
+Two registers the first pass missed entirely.
+
+**Handwriting.** Rawpixel carries manuscript and letter scans; the Biodiversity
+Heritage Library is full of annotated specimen sheets where a collector wrote on
+the plate; Wellcome has notebooks. What is wanted is **ink on transparent
+ground**, not a photograph of a page — the hand has to sit on this book's paper,
+not bring its own. A handwriting *font* will not do the job at 300 mm: pressure
+variation, ink pooling and a genuine crossing-out are exactly what a font cannot
+fake at that size.
+
+**Non-paper material.** Linen, oxidised copper, weathered steel, stone,
+condensation on glass — macro, raking light, no object and no edge, only
+surface. Adobe Stock is the right place to spend credits here; searches that
+land: `linen weave macro raking light`, `oxidised copper patina macro`,
+`condensation window macro bokeh`, `weathered steel rust texture macro`.
+
 ## Texture and overprint
 
 The handmade layer — risograph misregistration, halftone, ink density, paper

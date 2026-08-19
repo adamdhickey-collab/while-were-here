@@ -15,19 +15,33 @@
   text-rendering: geometricPrecision;
 }
 
-/* The display voice is a high-contrast Didone cut for titles, so weight runs
-   the opposite way to instinct: lighter as the type gets bigger, heavier as it
-   gets smaller, because hairlines thin out at scale and thicken up close.
-   Fraunces, the open-licence fallback, behaves well on the same scale.
+/* ---- The display hierarchy is owned here --------------------------------
+   Weight and tracking for every display element live in this block and nowhere
+   else. Component stylesheets set size and placement only — layouts.css and
+   cover.css load after this one, so a stray `font-weight` there silently wins
+   and the headline quietly goes back to regular.
 
-   These are static weights, not a variable axis: a variable instance is
-   written into the PDF as Type 3 glyph procedures, which prepress cannot
-   subset. */
-.cover__title, .titlespread__title, .display { font-weight: 400; }
-.essay-title, .pull-quote, .statement, .closing__line { font-weight: 500; }
-.cover-back__line { font-weight: 400; }
-.subhead, .diagram__title, .contents__part-title { font-weight: 600; }
-.prose--drop > p:first-child::first-letter { font-weight: 500; }
+   Headlines run heavy and closed up. Falutin Title carries real weights at 700
+   and 900, so nothing here is synthesised — a faux-bold on a high-contrast face
+   thickens the hairlines and the whole thing goes muddy.
+
+   These are static weights, not a variable axis: a variable instance is written
+   into the PDF as Type 3 glyph procedures, which prepress cannot subset. */
+.cover__title, .titlespread__title, .display,
+.essay-title, .pull-quote, .statement, .closing__line { font-weight: 900; }
+.cover-back__line { font-weight: 700; }
+.subhead, .diagram__title, .contents__part-title { font-weight: 700; }
+.prose--drop > p:first-child::first-letter { font-weight: 900; }
+
+/* Tight tracking is a headline property, not a global one. Anything below about
+   20pt gets its tracking back, because closed-up small type stops being
+   readable and starts being a texture. */
+.cover__title, .titlespread__title, .display, .essay-title,
+.pull-quote, .statement, .closing__line {
+  letter-spacing: var(--ls-display);
+  font-feature-settings: "kern" 1, "liga" 1;
+}
+.subhead, .diagram__title, .contents__part-title { letter-spacing: var(--ls-title); }
 
 /* ---- Display: section dividers, cover ----------------------------------- */
 .display {
@@ -35,7 +49,6 @@
   font-size: var(--t-display);
   line-height: var(--lh-display);
   letter-spacing: var(--ls-display);
-  font-weight: var(--w-text);
   margin: 0;
   text-wrap: balance;
 }
@@ -46,7 +59,6 @@
   font-size: var(--t-essay-title);
   line-height: 1.02;
   letter-spacing: var(--ls-title);
-  font-weight: var(--w-text);
   margin: 0;
   text-wrap: balance;
   hanging-punctuation: first;
@@ -109,7 +121,6 @@
   font-size: var(--t-quote);
   line-height: var(--lh-quote);
   letter-spacing: var(--ls-display);
-  font-weight: var(--w-text);
   margin: 0;
   hanging-punctuation: first;
   text-wrap: balance;
@@ -274,7 +285,6 @@
   font-family: var(--font-display);
   font-size: 3.9em;
   line-height: 0.80;
-  font-weight: var(--w-text);
   padding: 0.06em 0.09em 0 0;
   color: var(--ink);
 }
@@ -378,7 +388,6 @@
   font-size: 34pt;
   line-height: 1.16;
   letter-spacing: -0.012em;
-  font-weight: var(--w-text);
   margin: 0;
   max-width: 132mm;
   text-wrap: balance;
@@ -414,7 +423,6 @@
   font-size: 19pt;
   line-height: 1.14;
   letter-spacing: var(--ls-title);
-  font-weight: var(--w-text);
   margin: 0;
   max-width: 120mm;
 }

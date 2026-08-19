@@ -20,6 +20,21 @@ const manifestPath = path.join(root, 'content/images.json');
 const manifest = JSON.parse(fs.readFileSync(manifestPath, 'utf8'));
 
 const KIND_DIR = { photography: 'photography', illustration: 'illustration', personal: 'personal' };
+
+/* The asset roles, and what each one requires. See content/plan/asset-system.md.
+   These checks are cheap and they catch the two mistakes that turn a field
+   guide into a scrapbook: a specimen with no label, and a micrograph spent
+   before the book has earned it. */
+const ROLES = {
+  plate:      { stages: [2, 3, 4],    note: 'used whole, never cut out or taped; one per spread' },
+  specimen:   { stages: [1, 2, 3, 4, 5], note: 'cut out, no drop shadow, must carry a label' },
+  figure:     { stages: [2, 3, 4],    note: 'recoloured to the stage; must argue something the prose does not' },
+  map:        { stages: [2, 3],       note: 'full bleed or 12–18% ground, nothing between; never beside a plate' },
+  micrograph: { stages: [3, 4],       note: 'dark ground, type reversed out, always a scale bar' },
+  ephemera:   { stages: [1, 2, 3, 4, 5], note: 'applied to specimen or personal only, never to a plate' },
+  texture:    { stages: [1, 2, 3, 4, 5], note: 'set per stage, not per asset; multiply blend' },
+  personal:   { stages: [1, 5],       note: 'do not retouch; use sparingly so it carries weight' },
+};
 const dest = (img) => path.join(root, 'public/images', KIND_DIR[img.kind] || 'photography', img.filename);
 const exists = (img) => fs.existsSync(dest(img));
 
@@ -95,6 +110,17 @@ if (dim) {
   }
   const [tw, th] = (img.target.match(/\d+/g) || []).map(Number);
   if (tw && dim.w < tw * 0.9) warn.push(`${dim.w}×${dim.h} px is under the ${img.target} target`);
+}
+
+if (img.role && ROLES[img.role]) {
+  console.log(`  role: ${img.role} — ${ROLES[img.role].note}`);
+} else if (img.role) {
+  warn.push(`unknown role "${img.role}" — see content/plan/asset-system.md`);
+} else {
+  warn.push('no role set; add one to content/images.json so the asset rules apply');
+}
+if (img.origin === 'archive' && (!img.source || !img.license)) {
+  warn.push('archival asset with no source or licence — record it now, not at press');
 }
 
 img.status = 'generated';

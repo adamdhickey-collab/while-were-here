@@ -4,7 +4,7 @@
 
 **Book:** *While We're Here* — Adam Hickey. A 300 × 300 mm hardcover of short
 essays on attention, ordinary life, hidden systems and being alive. Twenty-three
-images are already made and placed. These 14 are what remain, and they
+images are already made and placed. These 9 are what remain, and they
 are the two registers the set is currently missing entirely.
 
 ## What the book already looks like
@@ -44,110 +44,6 @@ thing. Nothing in frame should let a viewer work out the scale.
 - File format and filename exactly as given, or the build will not pick it up.
 
 ---
-
-## Recurring assets
-
-### hand-01-marginalia-set
-
-**Save as** `public/images/illustration/hand-01-marginalia-set.png` · 1:2 · target 3000 × 6000 px
-**Where it goes** Margin overlay — any reading spread
-**Why it is there** The set is otherwise entirely machine-set — monospace, engraved labels, printed tables. A real hand introduces the person doing the noticing.
-**Watch for** Transparent PNG, ink only, no paper ground — it sits on the book's own paper. Must NOT be legible as sentences; it reads as a gesture.
-
-```text
-A set of genuine handwritten annotations in brown-black iron-gall ink, photographed or scanned from a nineteenth-century manuscript or field notebook and cut out onto a fully transparent background. Real ink behaviour is the whole point: pressure variation through each stroke, thick and thin where the nib turned, one small blot, ink pooling at a stroke end, and one genuine crossing-out. Slightly irregular baselines. Nothing typeset, nothing traced, nothing even in weight.
-
-A set of six to eight short handwritten annotations in brown-black iron-gall ink on transparent ground, cut from a nineteenth-century manuscript or field notebook. Two or three words each, plus an underline, a bracket, a caret and a small pointing arrow. Visible pressure variation, a blot, one crossing-out.
-
-Tall narrow frame (1:2) — the annotations are arranged down the strip with clear space between them, so each one can be cut out and placed separately.
-
-Avoid: any paper, card or background — the ink must sit on full transparency; legible words or readable sentences; even, uniform stroke weight; calligraphy-practice regularity; a handwriting font or anything that looks digitally traced; drop shadows; modern ballpoint or marker; colour other than iron-gall brown-black.
-```
-
-### hand-02-overwriting-diagram
-
-**Save as** `public/images/illustration/hand-02-overwriting-diagram.png` · 3:2 · target 6000 × 4000 px
-**Where it goes** Overlay across a diagram or plate
-**Why it is there** Breaks the authority of a printed figure — the book is observation, not instruction.
-**Watch for** Transparent PNG. Angle no more than 3°. Illegible as text at reading distance.
-
-```text
-A set of genuine handwritten annotations in brown-black iron-gall ink, photographed or scanned from a nineteenth-century manuscript or field notebook and cut out onto a fully transparent background. Real ink behaviour is the whole point: pressure variation through each stroke, thick and thin where the nib turned, one small blot, ink pooling at a stroke end, and one genuine crossing-out. Slightly irregular baselines. Nothing typeset, nothing traced, nothing even in weight.
-
-A single longer handwritten passage, four or five lines, running at a slight angle across the frame, as though written over a printed figure after the fact. Same iron-gall ink, transparent ground.
-
-Horizontal frame (3:2).
-
-Avoid: any paper, card or background — the ink must sit on full transparency; legible words or readable sentences; even, uniform stroke weight; calligraphy-practice regularity; a handwriting font or anything that looks digitally traced; drop shadows; modern ballpoint or marker; colour other than iron-gall brown-black.
-```
-
-### material-01-linen-weave
-
-**Save as** `public/images/photography/material-01-linen-weave.jpg` · 2:1 · target 8000 × 4000 px
-**Where it goes** Material break, full bleed crossover
-**Why it is there** The set is entirely pigment on cellulose. One genuinely different material makes the paper read as chosen rather than defaulted — and linen rhymes with the binding.
-**Watch for** Warm neutral, close to the book's paper in value so the break is tactile rather than tonal.
-
-```text
-A macro photograph of a single material surface, lit with raking light from one side so the surface throws its own shadows and its texture reads as terrain. Fills the entire frame edge to edge. Shallow but honest depth of field. Muted, true colour with no grading. Real photographic texture and fine grain.
-
-Raw undyed linen at macro scale, lit raking from one side so the weave throws its own shadows. Individual slubs and thread irregularities clearly visible. No hem, no edge, no object — only surface.
-
-Wide panoramic frame (2:1). This runs across a two-page spread, so keep the centre calm and place nothing important in the middle 30 mm.
-
-Avoid: any object, edge, hem, seam or boundary — only surface; anything that lets the viewer work out the scale; styled or arranged compositions; props; studio seamless backgrounds; heavy grading or HDR; vignettes; visible text or watermarks; symmetry; a recognisable scene resolving out of the texture.
-```
-
-### material-02-oxidised-metal
-
-**Save as** `public/images/photography/material-02-oxidised-metal.jpg` · 2:1 · target 8000 × 4000 px
-**Where it goes** Material break, full bleed crossover
-**Why it is there** The hardest material break in the book, placed where the book is most vivid.
-**Watch for** Let the rust carry the accent colours of Stage IV — coral, ultraviolet — rather than importing them.
-
-```text
-A macro photograph of a single material surface, lit with raking light from one side so the surface throws its own shadows and its texture reads as terrain. Fills the entire frame edge to edge. Shallow but honest depth of field. Muted, true colour with no grading. Real photographic texture and fine grain.
-
-Oxidised copper or weathered steel at macro scale — rust bloom, verdigris, mineral crust. Raking light. Reads as a landscape until you realise the scale is wrong.
-
-Wide panoramic frame (2:1). This runs across a two-page spread, so keep the centre calm and place nothing important in the middle 30 mm.
-
-Avoid: any object, edge, hem, seam or boundary — only surface; anything that lets the viewer work out the scale; styled or arranged compositions; props; studio seamless backgrounds; heavy grading or HDR; vignettes; visible text or watermarks; symmetry; a recognisable scene resolving out of the texture.
-```
-
-### material-03-glass-condensation
-
-**Save as** `public/images/photography/material-03-glass-condensation.jpg` · 2:1 · target 8000 × 4000 px
-**Where it goes** Material break, full bleed crossover
-**Why it is there** The turn back to calm. Transparent material after opaque ones.
-**Watch for** The out-of-focus world must be unreadable — the moment it resolves into a scene it stops being a material.
-
-```text
-A macro photograph of a single material surface, lit with raking light from one side so the surface throws its own shadows and its texture reads as terrain. Fills the entire frame edge to edge. Shallow but honest depth of field. Muted, true colour with no grading. Real photographic texture and fine grain.
-
-Condensation on a cold window at macro scale, with the world beyond it entirely out of focus. Droplets holding tiny inverted images of whatever is outside.
-
-Wide panoramic frame (2:1). This runs across a two-page spread, so keep the centre calm and place nothing important in the middle 30 mm.
-
-Avoid: any object, edge, hem, seam or boundary — only surface; anything that lets the viewer work out the scale; styled or arranged compositions; props; studio seamless backgrounds; heavy grading or HDR; vignettes; visible text or watermarks; symmetry; a recognisable scene resolving out of the texture.
-```
-
-### cover-03-circular-systems
-
-**Save as** `public/images/illustration/cover-03-circular-systems.png` · 1:1 · target 6000 × 6000 px
-**Where it goes** Front cover — the `orb` variant
-**Why it is there** An alternative cover artwork for the `orb` treatment. A circle on a square is the strongest graphic move available on a 300 mm cover, and it makes the title's 'here' mean somewhere.
-**Watch for** Transparent PNG or warm cream ground. **Not the Earth**: no recognisable continents, no coastlines, no blue-marble colouring, no latitude/longitude graticule, no space, no stars, no glow or lens flare, no terminator line dividing day from night. The circle is drawn — very slightly out of true, with a hand-inked edge — not rendered as a lit sphere. Keep the upper third of the circle quieter: on the `orb` cover the title sits above and slightly over it.
-
-```text
-An illustrated plate from a vintage scientific field guide, hand-drawn in ink on warm cream paper. Imperfect geometry — circles slightly out of true, lines drawn by hand, everything a degree or two off square. Field-guide illustration crossed with vintage scientific diagram, cartography and marginalia: arrows, rings, timelines, measure scales, tiny human figures. Screenprint and risograph texture with visible ink density variation and slight misregistration. Charcoal near-black ink on a warm cream ground (#F3EFE5), with restrained accents of muted rust (#A95738), faded cobalt (#536D8E) and moss green (#68735B). Intelligent, tactile, playful, handmade.
-
-The same watercolour-and-ink systems drawing as the existing cover artwork, but composed inside a single circle: a bounded circular field of view, hard-edged, sitting on warm cream paper with nothing outside it. Inside the circle, read as a whole world without ever resolving into the Earth — broad atmospheric bands of teal and slate curving with the sphere near one limb; a swirl of current or weather blooming in rust, amber and coral across the middle; fine contour lines banding the surface the way isobars band a planet; a branching network of hairlines running through it like root systems or river deltas or blood vessels, deliberately impossible to say which. Small plotted points and connecting lines scattered across it. Two or three tiny human figures standing at the very edge of the circle, at the scale of a millimetre, so the size of the thing is unmistakable. A few small circular inset diagrams outside the main circle, in the cream, like detail figures from the same study.
-
-Square frame (1:1).
-
-Avoid: gradients; glossy 3D or rendered lighting; generic vector people; corporate infographic style; SaaS or explainer-video illustration; polished icon sets; decorative complexity with no conceptual purpose; fake handwritten paragraphs or invented lettering; any legible text; psychedelic imagery; symmetry for its own sake.
-```
 
 ## Why Ordinary Days May Be the Point of Life
 
@@ -299,4 +195,23 @@ Nested systems drawn as concentric irregular rings — six of them, each a diffe
 Square frame (1:1).
 
 Avoid: any paper, card or background colour — the artwork must sit on full transparency; variable or heavy line weight; hard-edged washes; fills, hatching or shading; text, numerals, labels, scale bars or legends of any kind; frames or borders; drop shadows; a dense area that would darken into a blotch under body copy; perfect radial symmetry; a repeated or tiling motif; infographic or corporate-diagram styling; anything resolving into a recognisable scene or object.
+```
+
+## Recurring assets
+
+### cover-03-circular-systems
+
+**Save as** `public/images/illustration/cover-03-circular-systems.png` · 1:1 · target 6000 × 6000 px
+**Where it goes** Front cover — the `orb` variant
+**Why it is there** An alternative cover artwork for the `orb` treatment. A circle on a square is the strongest graphic move available on a 300 mm cover, and it makes the title's 'here' mean somewhere.
+**Watch for** Transparent PNG or warm cream ground. **Not the Earth**: no recognisable continents, no coastlines, no blue-marble colouring, no latitude/longitude graticule, no space, no stars, no glow or lens flare, no terminator line dividing day from night. The circle is drawn — very slightly out of true, with a hand-inked edge — not rendered as a lit sphere. Keep the upper third of the circle quieter: on the `orb` cover the title sits above and slightly over it.
+
+```text
+An illustrated plate from a vintage scientific field guide, hand-drawn in ink on warm cream paper. Imperfect geometry — circles slightly out of true, lines drawn by hand, everything a degree or two off square. Field-guide illustration crossed with vintage scientific diagram, cartography and marginalia: arrows, rings, timelines, measure scales, tiny human figures. Screenprint and risograph texture with visible ink density variation and slight misregistration. Charcoal near-black ink on a warm cream ground (#F3EFE5), with restrained accents of muted rust (#A95738), faded cobalt (#536D8E) and moss green (#68735B). Intelligent, tactile, playful, handmade.
+
+The same watercolour-and-ink systems drawing as the existing cover artwork, but composed inside a single circle: a bounded circular field of view, hard-edged, sitting on warm cream paper with nothing outside it. Inside the circle, read as a whole world without ever resolving into the Earth — broad atmospheric bands of teal and slate curving with the sphere near one limb; a swirl of current or weather blooming in rust, amber and coral across the middle; fine contour lines banding the surface the way isobars band a planet; a branching network of hairlines running through it like root systems or river deltas or blood vessels, deliberately impossible to say which. Small plotted points and connecting lines scattered across it. Two or three tiny human figures standing at the very edge of the circle, at the scale of a millimetre, so the size of the thing is unmistakable. A few small circular inset diagrams outside the main circle, in the cream, like detail figures from the same study.
+
+Square frame (1:1).
+
+Avoid: gradients; glossy 3D or rendered lighting; generic vector people; corporate infographic style; SaaS or explainer-video illustration; polished icon sets; decorative complexity with no conceptual purpose; fake handwritten paragraphs or invented lettering; any legible text; psychedelic imagery; symmetry for its own sake.
 ```

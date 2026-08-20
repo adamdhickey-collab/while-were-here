@@ -234,16 +234,23 @@ function coverOptionsDoc(book) {
     return `<section class="page page--recto stage-1 ${p.cls}" data-side="recto"
               data-spread="cover · ${v}" data-label="${v}">${p.html}</section>`;
   });
-  return `<!DOCTYPE html>
+  /* Two documents from one set of pages, for the same reason the book has two:
+     the screen version carries the preview chrome, and the print version
+     carries none of it. PDF-ing the screen page emitted a fifth sheet from the
+     preview body's own padding. */
+  const doc = (preview) => `<!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8"><title>Cover options — ${esc(book.title)}</title>
 ${['geometry.css', ...STYLES].map((h) => `<link rel="stylesheet" href="${h}">`).join('\n')}
-<link rel="stylesheet" href="styles/preview.css">
+${preview ? '<link rel="stylesheet" href="styles/preview.css">' : ''}
 <style>
-  .cover-note { position:absolute; left:0; top:-46px; width:100%; color:#8B8477;
-    font:500 11px/1.5 var(--font-note); letter-spacing:.08em; }
-  .cover-note b { color:#E4DCC9; text-transform:uppercase; letter-spacing:.18em; }
+  /* Inside the page, not above it: a label sitting outside the page box makes
+     the paginator emit an extra sheet for the overflow. */
+  .cover-note { position:absolute; left:0; right:0; bottom:0; z-index:9;
+    padding:4mm 6mm; background:rgba(20,19,17,.88); color:#C9C1B0;
+    font:400 8pt/1.5 var(--font-note); letter-spacing:.04em; }
+  .cover-note b { color:#F0E9D9; text-transform:uppercase; letter-spacing:.16em; }
 </style></head>
-<body class="preview is-proof-screen">
+<body class="${preview ? 'preview is-proof-screen' : 'book'}">
 ${pages.join('\n')}
 <script>
   document.querySelectorAll('.page').forEach((p) => {
@@ -253,9 +260,10 @@ ${pages.join('\n')}
     p.appendChild(n);
   });
 </script>
-<script src="scripts/preview.js"></script>
+${preview ? '<script src="scripts/preview.js"></script>' : ''}
 </body></html>
 `;
+  return { screen: doc(true), print: doc(false) };
 }
 
 function coverWrapDoc(book) {
@@ -759,7 +767,9 @@ export async function build() {
   fs.writeFileSync(path.join(out, 'preview.html'),
     document_({ title: `${book.title} — preview`, body, preview: true }));
   fs.writeFileSync(path.join(out, 'cover-wrap.html'), coverWrapDoc(book));
-  fs.writeFileSync(path.join(out, 'cover-options.html'), coverOptionsDoc(book));
+  const covers = coverOptionsDoc(book);
+  fs.writeFileSync(path.join(out, 'cover-options.html'), covers.screen);
+  fs.writeFileSync(path.join(out, 'cover-options-print.html'), covers.print);
   fs.writeFileSync(path.join(out, 'direction.html'), directionDoc(book));
   fs.writeFileSync(path.join(out, 'type.html'), typeDoc(book));
   fs.writeFileSync(path.join(out, 'index.html'), indexDoc(book, count));

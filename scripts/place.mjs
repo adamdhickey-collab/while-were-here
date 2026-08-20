@@ -33,6 +33,9 @@ const ROLES = {
   micrograph: { stages: [3, 4],       note: 'dark ground, type reversed out, always a scale bar' },
   ephemera:   { stages: [1, 2, 3, 4, 5], note: 'applied to specimen or personal only, never to a plate' },
   texture:    { stages: [1, 2, 3, 4, 5], note: 'set per stage, not per asset; multiply blend' },
+  handwriting:{ stages: [1, 2, 3, 4, 5], note: 'placed by the layout, never baked in; multiply blend; must not be legible as sentences' },
+  material:   { stages: [2, 3, 4, 5],  note: 'full-bleed crossover on a stage turn; two or three in the whole book' },
+  ground:     { stages: [1, 2, 3, 4, 5], note: '8% on cream, 14% on dark; only under pages that are mostly type' },
   personal:   { stages: [1, 5],       note: 'do not retouch; use sparingly so it carries weight' },
 };
 const dest = (img) => path.join(root, 'public/images', KIND_DIR[img.kind] || 'photography', img.filename);

@@ -2,13 +2,36 @@
 
 # Credits and permissions
 
-_No sourced material yet._
 
-
+- **material-01-linen-weave** — Composited from Poly Haven's “Rough Linen” diffuse, displacement and ambient-occlusion maps, relit from the side for this book. Source: https://polyhaven.com/a/rough_linen. Licence: CC0.
+- **material-02-oxidised-metal** — Composited from Poly Haven's “Rusty Metal 04” PBR maps and a photograph of weathered copper by Lana on Unsplash, relit and rebalanced for this book. Source: https://polyhaven.com/a/rusty_metal_04 · https://unsplash.com/photos/bP2tnerweOc. Licence: CC0 · Unsplash License.
+- **material-03-glass-condensation** — Composited from glass-droplet photography by Petri R on Unsplash, over a heavily blurred atmosphere layer from a condensation photograph by Lana on Unsplash; no scene from either remains legible. Source: https://unsplash.com/photos/-ojlrE-LxWQ · https://unsplash.com/photos/_gCDTmrSHKA. Licence: Unsplash License.
+- **ground-01-habituation-decay** — _credit missing_. Source: _missing_. Licence: _missing_.
+- **ground-02-attention-filter** — _credit missing_. Source: _missing_. Licence: _missing_.
+- **ground-03-local-rules-flocking** — _credit missing_. Source: _missing_. Licence: _missing_.
+- **ground-04-extended-cognition** — _credit missing_. Source: _missing_. Licence: _missing_.
+- **ground-05-imagine-to-make** — _credit missing_. Source: _missing_. Licence: _missing_.
+- **ground-06-density-thinning** — _credit missing_. Source: _missing_. Licence: _missing_.
+- **ground-07-convergent-routes** — _credit missing_. Source: _missing_. Licence: _missing_.
+- **ground-08-nested-systems** — _credit missing_. Source: _missing_. Licence: _missing_.
+- **cover-03-circular-systems** — _credit missing_. Source: _missing_. Licence: _missing_.
 
 ## Generated and original material
 
-23 images in this book are
+25 images in this book are
 generated or original and need no third-party attribution. Original diagrams are
 drawn in code — see `src/layouts/diagrams.mjs`.
 
+## ⚠ Incomplete
+
+- ground-01-habituation-decay
+- ground-02-attention-filter
+- ground-03-local-rules-flocking
+- ground-04-extended-cognition
+- ground-05-imagine-to-make
+- ground-06-density-thinning
+- ground-07-convergent-routes
+- ground-08-nested-systems
+- cover-03-circular-systems
+
+Every sourced asset needs `source` and `license` before this book goes to press.

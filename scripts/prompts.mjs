@@ -66,7 +66,13 @@ const outstandingOnly = process.argv.includes('--outstanding');
 const groundsOnly = process.argv.includes('--grounds');
 
 const KIND_DIR = { photography: 'photography', illustration: 'illustration', personal: 'personal' };
-const made = (i) => fs.existsSync(path.join(root, 'public/images', KIND_DIR[i.kind] || 'photography', i.filename));
+/* A screen print is a stack of plates resolved by SLUG — those entries carry
+   "—" as their filename because no single file is ever named. Asking only about
+   the filename reports a finished print as still outstanding, and the brief
+   then asks someone to make a picture the book already has. */
+const made = (i) =>
+  fs.existsSync(path.join(root, 'public/images/plates', `${i.slug || i.id}-plate-1.png`)) ||
+  fs.existsSync(path.join(root, 'public/images', KIND_DIR[i.kind] || 'photography', i.filename));
 
 const byEssay = new Map();
 const pool = groundsOnly ? images.filter((i) => i.role === 'ground')

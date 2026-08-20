@@ -39,7 +39,11 @@ const ROLES = {
   personal:   { stages: [1, 5],       note: 'do not retouch; use sparingly so it carries weight' },
 };
 const dest = (img) => path.join(root, 'public/images', KIND_DIR[img.kind] || 'photography', img.filename);
-const exists = (img) => fs.existsSync(dest(img));
+/* Screen prints resolve by slug to a stack of plates and carry "—" as their
+   filename, so the filename alone would report a finished print as waiting. */
+const exists = (img) =>
+  fs.existsSync(path.join(root, 'public/images/plates', `${img.slug || img.id}-plate-1.png`)) ||
+  fs.existsSync(dest(img));
 
 /** macOS ships sips; if it is missing we simply skip the dimension check. */
 function dimensions(file) {

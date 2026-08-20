@@ -962,8 +962,20 @@
   top: var(--m-top);
   height: 54%;
   display: grid;
-  grid-template-rows: auto 1fr auto;
+  /* series · head · list · source — every record carries a series line now,
+     stamped by the compositor, so the row is unconditional. The list keeps
+     the flexible row. */
+  grid-template-rows: auto auto 1fr auto;
   gap: var(--sp-4);
+}
+/* The exhibit announces its return: same voice as every specimen label, one
+   shade quieter than the title it sits above. The tightened gap keeps the
+   series and the head reading as one header, not two rows. */
+.record__series {
+  color: var(--ink-faint);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin-bottom: calc(-1 * var(--sp-3));
 }
 .page--verso .quote-spread__record { left: var(--m-outside); right: var(--m-inside); }
 .page--recto .quote-spread__record { left: var(--m-inside);  right: var(--m-outside); }

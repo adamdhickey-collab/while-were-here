@@ -115,6 +115,17 @@ const ctxBase = { root, image: (id) => imagesById[id] };
 function compose(book, toc, folios = {}) {
   const out = [];
   const openings = {};                        // essay title -> folio of its title page
+  /* The reproduced records are one exhibit returning, and the pages say so —
+     "Record 1 of 3" — with both numbers derived here, never typed, for the same
+     reason the contents page derives its counts: re-pacing the book must not be
+     able to leave a page lying. */
+  let recordTotal = 0;
+  for (const item of book.sequence) {
+    if (item.type !== 'essay') continue;
+    const { data } = loadDoc(item.source);
+    for (const sp of data.spreads || []) if (sp.record) recordTotal += 1;
+  }
+  let recordN = 0;
   let n = 0;                                  // interior page counter
   let stage = 1;                              // observe → notice → understand → expand → integrate
   const nextSide = () => ((n + 1) % 2 === 1 ? 'recto' : 'verso');
@@ -187,6 +198,7 @@ function compose(book, toc, folios = {}) {
         const ctx = { ...ctxBase, blocks: doc.blocks, stage };
         openings[L.titleKey(essay.title)] = n + 2;   // opener is a pair: verso, then the title recto
         for (const spread of essay.spreads) {
+          if (spread.record) spread.record.series = `Record ${++recordN} of ${recordTotal}`;
           const variantKey = spread.variant ? `${spread.type}-${spread.variant}` : null;
           const key = variantKey && L.essaySpreads[variantKey] ? variantKey : spread.type;
           const renderer = L.essaySpreads[key];

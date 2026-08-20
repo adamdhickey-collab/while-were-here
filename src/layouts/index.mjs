@@ -553,6 +553,7 @@ const record = (r) => {
   if (!r) return '';
   return `
     <div class="quote-spread__record record${r.variant ? ` record--${esc(r.variant)}` : ''}">
+      ${r.series ? `<p class="record__series specimen">${esc(r.series)}</p>` : ''}
       <div class="record__head">
         <p class="label">${esc(r.title)}</p>
         <p class="record__count">${esc(r.count)}</p>

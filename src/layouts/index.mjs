@@ -273,9 +273,7 @@ export const divider = (section, ctx) => ({
     {
       spread: 'section divider',
       folio: false,
-      /* `divider--text` gates the collision treatment AND its overflow clip —
-         the facing verso must never clip, its figure carries the bleed. */
-      cls: 'divider divider--text',
+      cls: 'divider',
       html: `
         <div class="page__block">
           <div class="divider__stage">
@@ -825,28 +823,17 @@ const closing = (spread, essay, ctx) => ({
     {
       spread: 'closing',
       folio: false,
-      cls: `closing closing--plate${spread.quote ? ' closing--quote' : ''}${
-        spread.emphasis === 'off-trim' ? ' closing--offtrim' : ''}`,
+      cls: `closing closing--plate${spread.quote ? ' closing--quote' : ''}`,
       /* The recto of a closing spread is otherwise blank. An essay that has no
          pull-quote spread of its own puts its sentence here, which is the
          treatment a pull quote wanted anyway — one line alone on a page — at no
-         cost in extent.
-
-         `emphasis: off-trim` sets the quote's final word large, italic, in the
-         stage's third accent, running off the fore-edge — the one word in the
-         book that refuses the measure. Declared in frontmatter so it stays a
-         decision about one spread, not a property of closings. The class also
-         clips the page, which is safe here only because an off-trim closing
-         must not carry an image: nothing on the page owns the bleed. */
+         cost in extent. */
       html: `${spread.image
         ? `<div class="closing__figure">${figure(ctx.image(spread.image), { className: 'figure--bleed', inverse: true, root: ctx.root })}</div>`
         : ''}${spread.quote ? `
         <div class="page__block">
           <span class="quote-mark"></span>
-          <blockquote class="pull-quote">${spread.emphasis === 'off-trim'
-            ? (() => { const w = spread.quote.trim().split(/\s+/); const last = w.pop();
-                return `${esc(w.join(' '))} <span class="offtrim">${esc(last)}</span>`; })()
-            : esc(spread.quote)}</blockquote>
+          <blockquote class="pull-quote">${esc(spread.quote)}</blockquote>
         </div>` : ''}`,
     },
   ],

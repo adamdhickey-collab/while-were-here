@@ -102,6 +102,18 @@ distance a cover gets one shape, one colour and one word cluster.
 - The other three variants stay in the codebase and in `cover-options.html`.
   They cost nothing, and the comparison is worth being able to re-run. They are
   not live: `coverVariant` in `content/book.json` is the single switch.
+- **The Carson experiment is out, 20 August 2026, the day it went in.** The
+  dividers briefly carried a colliding part numeral (340–430pt, tilted, cropped
+  by the trim, second impression out of register) and the last essay's closing
+  quote ran its final word off the fore-edge. Adam's verdict: not feeling the
+  direction — too hard to steer without specific art direction behind it. Both
+  reverts are clean (`git log --grep=collision`), so the treatment is fully
+  recoverable if a directed version of the idea ever earns its way back. What
+  survives from the attempt: the overflow detector's honesty (it flagged the
+  intentional overflow, correctly), and the lesson that a borrowed energy needs
+  its own art-direction page in `content/plan/` before it touches layouts —
+  the same discipline every other visual system in this book already has.
+
 - **The cover is `bleed`, re-decided 20 August 2026, the same day `orb` was
   tried.** With the drawing finally made, `orb` went live for a few hours and
   Adam's verdict on seeing it against the proof was unambiguous: the old cover

@@ -81,11 +81,6 @@
       page.querySelector('.overflow-flag')?.remove();
       // A hidden page measures as zero and would flag everything on it.
       if (!page.offsetParent || page.getBoundingClientRect().height < 1) return;
-      /* Two spread types overflow the trim ON PURPOSE — the divider's terrain
-         numeral and the off-trim closing word are cropped by design, and the
-         page clips them itself. Flagging them every session would teach
-         everyone to ignore the flag, which is how a real overflow ships. */
-      if (page.matches('.divider--text, .closing--offtrim')) return;
       const blocks = page.querySelectorAll('.page__block, .prose, .plate__bottom');
       let bad = false;
       blocks.forEach((b) => {

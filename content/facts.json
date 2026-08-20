@@ -174,6 +174,264 @@
         "url": "https://www.nature.com/articles/srep28341"
       },
       "note": "The groove rule is a proposed behavioural mechanism supported by observation and simulation, not a settled result. Keep the hedge. The competing account is that wax flows and surface tension do the shaping, and the essay must not pick a winner."
+    },
+    {
+      "id": "working-memory-four-chunks",
+      "claim": "Under conditions that block rehearsal and grouping, research on working memory finds a central capacity averaging about four chunks.",
+      "status": "verified",
+      "usedIn": [
+        "essays/intelligence-outside-your-head.md — marginNote"
+      ],
+      "source": {
+        "authors": "Cowan N",
+        "title": "The magical number 4 in short-term memory: A reconsideration of mental storage capacity",
+        "publication": "Behavioral and Brain Sciences 24(1): 87-114",
+        "year": 2001,
+        "url": "https://doi.org/10.1017/S0140525X01003922"
+      },
+      "note": "Four is an AVERAGE under constrained experimental conditions, not a fixed capacity for every person or task. Do not write \"the brain can hold four things\". The conditions that block rehearsal and chunking are what make the number mean anything.",
+      "replaces": "The popular \"seven plus or minus two\" from Miller 1956. Cowan's reconsideration is the reason the figure here is four, not seven. Do not reintroduce the older number."
+    },
+    {
+      "id": "london-taxi-hippocampus",
+      "claim": "In a 2000 MRI study, licensed London taxi drivers had greater posterior hippocampal grey-matter volume than controls, and the difference correlated with years spent navigating.",
+      "status": "verified",
+      "usedIn": [
+        "essays/intelligence-outside-your-head.md — marginNote"
+      ],
+      "source": {
+        "authors": "Maguire EA, Gadian DG, Johnsrude IS, Good CD, Ashburner J, Frackowiak RSJ, Frith CD",
+        "title": "Navigation-related structural change in the hippocampi of taxi drivers",
+        "publication": "PNAS 97(8): 4398-4403",
+        "year": 2000,
+        "url": "https://www.pnas.org/doi/10.1073/pnas.070039597"
+      },
+      "note": "The study is OBSERVATIONAL. Write \"associated with\" or \"correlated with\", never \"caused by\". Self-selection cannot be ruled out from this design alone."
+    },
+    {
+      "id": "google-effects-on-memory",
+      "claim": "Four experiments published in 2011 found that people expecting later computer access recalled where information was stored better than the information itself.",
+      "status": "verified",
+      "usedIn": [
+        "essays/intelligence-outside-your-head.md — marginNote"
+      ],
+      "source": {
+        "authors": "Sparrow B, Liu J, Wegner DM",
+        "title": "Google Effects on Memory: Cognitive Consequences of Having Information at Our Fingertips",
+        "publication": "Science 333(6043): 776-778",
+        "year": 2011,
+        "url": "https://www.science.org/doi/10.1126/science.1207745"
+      },
+      "note": "This is a description of four reported experiments about WHAT people encode, not evidence that internet use damages memory. Do not expand it into a claim about harm. The finding is a shift toward retrieval, not a loss."
+    },
+    {
+      "id": "spider-web-sensory-extension",
+      "claim": "An orb web transmits vibration and tension to the spider at its hub, extending the animal's sensing beyond its body.",
+      "status": "verified",
+      "usedIn": [
+        "essays/intelligence-outside-your-head.md — flow-2c",
+        "intelligence-03-orb-web — figure caption"
+      ],
+      "source": {
+        "authors": "Japyassú HF, Laland KN",
+        "title": "Extended spider cognition",
+        "publication": "Animal Cognition 20: 375-395",
+        "year": 2017,
+        "url": "https://doi.org/10.1007/s10071-017-1069-7"
+      },
+      "note": "The vibration, tension and sensory extension are well supported. Calling the web part of COGNITION is the authors' theoretical interpretation and is contested. Stay with the observable mechanism, which is what the essay does."
+    },
+    {
+      "id": "intel-4004",
+      "claim": "Intel introduced the 4004 microprocessor in 1971 with 2,300 transistors on a chip smaller than a fingernail.",
+      "status": "verified",
+      "usedIn": [
+        "essays/strange-privilege-technological-revolution.md — marginNote"
+      ],
+      "source": {
+        "authors": "Intel Corporation",
+        "title": "The First Programmable Microprocessor: The 4004",
+        "publication": "Intel company timeline",
+        "year": 1971,
+        "url": "https://timeline.intel.com/1971/the-first-programmable-microprocessor%3A-the-4004"
+      },
+      "note": "Announced 15 November 1971. First-party historical record. The transistor count is exact; the \"smaller than a fingernail\" comparison is the essay's, not Intel's."
+    },
+    {
+      "id": "transformer-paper-2017",
+      "claim": "The 2017 transformer paper described a network based on attention rather than recurrence. Its larger model trained for 3.5 days on eight P100 GPUs and set new reported results on two translation tasks.",
+      "status": "verified",
+      "usedIn": [
+        "essays/strange-privilege-technological-revolution.md — marginNote"
+      ],
+      "source": {
+        "authors": "Vaswani A, Shazeer N, Parmar N, Uszkoreit J, Jones L, Gomez AN, Kaiser L, Polosukhin I",
+        "title": "Attention Is All You Need",
+        "publication": "Advances in Neural Information Processing Systems 30",
+        "year": 2017,
+        "url": "https://proceedings.neurips.cc/paper_files/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf"
+      },
+      "note": "The two tasks are WMT 2014 English-to-German and English-to-French machine translation, and nothing else. Do not rewrite this as the paper already doing the generative work that came later. The 3.5 days and eight P100s are the big model, not the base."
+    },
+    {
+      "id": "alphafold-database-scale",
+      "claim": "The AlphaFold Protein Structure Database provides over 200 million predicted protein structures.",
+      "status": "verified",
+      "usedIn": [
+        "essays/strange-privilege-technological-revolution.md — marginNote"
+      ],
+      "source": {
+        "authors": "EMBL-EBI and Google DeepMind",
+        "title": "AlphaFold Protein Structure Database",
+        "publication": "Public database",
+        "year": 2024,
+        "url": "https://alphafold.ebi.ac.uk/"
+      },
+      "note": "Keep the word PREDICTED visible. These are computational predictions and a research starting point; they do not replace experimental structure determination. Dropping \"predicted\" turns a real achievement into a false one."
+    },
+    {
+      "id": "us-internet-and-broadband-adoption",
+      "claim": "Pew found 52 percent of U.S. adults used the internet in 2000 and 96 percent in 2025. Home broadband was reported by 1 percent of U.S. adults in March 2000.",
+      "status": "verified",
+      "usedIn": [
+        "essays/last-generation-before-time.md — marginNote"
+      ],
+      "source": {
+        "authors": "Pew Research Center",
+        "title": "Internet, Broadband Fact Sheet",
+        "publication": "Pew Research Center",
+        "year": 2025,
+        "url": "https://www.pewresearch.org/internet/fact-sheet/internet-broadband/"
+      },
+      "note": "Pew changed survey mode from 2023, so the 2000 and 2025 figures are not a clean like-for-like series. Keep the methodology caution in the note. The broadband figure is dated 31 March 2000 specifically."
+    },
+    {
+      "id": "us-smartphone-ownership",
+      "claim": "Smartphone ownership among U.S. adults rose from 35 percent in Pew's first 2011 measurement to 91 percent in 2025.",
+      "status": "verified",
+      "usedIn": [
+        "essays/last-generation-before-time.md — marginNote"
+      ],
+      "source": {
+        "authors": "Pew Research Center",
+        "title": "Mobile Fact Sheet",
+        "publication": "Pew Research Center",
+        "year": 2025,
+        "url": "https://www.pewresearch.org/internet/fact-sheet/mobile/"
+      },
+      "note": "2011 is Pew's FIRST measurement of smartphone ownership, not the year smartphones appeared. Do not imply the technology began then."
+    },
+    {
+      "id": "first-sms-and-character-limit",
+      "claim": "The first SMS message was sent from a computer on 3 December 1992. Early text messages carried a 160-character limit.",
+      "status": "verified",
+      "usedIn": [
+        "essays/last-generation-before-time.md — marginNote"
+      ],
+      "source": {
+        "authors": "Vodafone",
+        "title": "25 years since the world's first text message",
+        "publication": "Vodafone newsroom",
+        "year": 2017,
+        "url": "https://www.vodafone.com/news/newsroom/technology/25-anniversary-text-message"
+      },
+      "note": "Sent by Neil Papworth, from a computer to a phone, reading \"Merry Christmas\". The 160-character limit is a real technical boundary. The sentence about it shaping a compressed style is an editorial inference, not a measured effect, and must not be written as one."
+    },
+    {
+      "id": "shikoku-henro",
+      "claim": "The Shikoku Henro links 88 temples across Japan's four Shikoku prefectures, covers approximately 1,200 kilometres, and generally takes more than 40 days on foot.",
+      "status": "verified",
+      "usedIn": [
+        "essays/why-humans-need-pilgrimages.md — marginNote"
+      ],
+      "source": {
+        "authors": "Japan National Tourism Organization",
+        "title": "Experience an Authentic Pilgrimage in Shikoku",
+        "publication": "japan.travel",
+        "year": 2024,
+        "url": "https://www.japan.travel/en/japans-local-treasures/experience-authentic-pilgrimage-shikoku-2024/"
+      },
+      "note": "Official tourism body. The 40 days is a typical walking duration, not a rule, and the route order is not fixed."
+    },
+    {
+      "id": "camino-frances-and-compostela",
+      "claim": "Roughly 800 kilometres separate the Pyrenean starting routes from Santiago de Compostela. The Compostela requires stated spiritual or religious motivation and at least the final 100 continuous kilometres on foot.",
+      "status": "verified",
+      "usedIn": [
+        "essays/why-humans-need-pilgrimages.md — marginNote"
+      ],
+      "source": {
+        "authors": "Turespaña",
+        "title": "Camino Francés",
+        "publication": "spain.info, official tourism portal",
+        "year": 2024,
+        "url": "https://www.spain.info/es/ruta/camino-frances-santiago/"
+      },
+      "note": "The 100 km minimum applies to walking; by bicycle it is 200 km. The essay uses the walking figure only, and the motivation requirement is a stated declaration rather than anything tested."
+    },
+    {
+      "id": "unesco-santiago-routes-france",
+      "claim": "UNESCO's French Santiago property includes 71 selected monuments and seven sections of the Chemin du Puy totalling nearly 160 kilometres.",
+      "status": "verified",
+      "usedIn": [
+        "essays/why-humans-need-pilgrimages.md — marginNote"
+      ],
+      "source": {
+        "authors": "UNESCO World Heritage Centre",
+        "title": "Routes of Santiago de Compostela in France",
+        "publication": "World Heritage List, ref. 868",
+        "year": 1998,
+        "url": "https://whc.unesco.org/en/list/868/"
+      },
+      "note": "The inscription covers four symbolic routes; the 71 monuments and seven sections are the selected components, not the whole network. Churches, hospitals and bridges are named as pilgrim infrastructure."
+    },
+    {
+      "id": "sunlight-travel-time",
+      "claim": "Sunlight takes about 8 minutes and 20 seconds to reach Earth.",
+      "status": "verified",
+      "usedIn": [
+        "essays/while-were-here.md — marginNote"
+      ],
+      "source": {
+        "authors": "NASA Space Place",
+        "title": "All About the Sun",
+        "publication": "NASA",
+        "year": 2024,
+        "url": "https://spaceplace.nasa.gov/all-about-the-sun/en/"
+      },
+      "note": "A mean figure. Earth's distance varies over the year, so the light-time varies by a few seconds either side. \"About\" is doing real work."
+    },
+    {
+      "id": "earth-rotation-and-orbital-speed",
+      "claim": "Earth turns once relative to the Sun in 24 hours and travels around the Sun at roughly 29 to 30 kilometres per second.",
+      "status": "verified",
+      "usedIn": [
+        "essays/while-were-here.md — marginNote"
+      ],
+      "source": {
+        "authors": "NASA Science",
+        "title": "Basics of Space Flight, Chapter 2: Reference Systems",
+        "publication": "NASA",
+        "year": 2024,
+        "url": "https://science.nasa.gov/learn/basics-of-space-flight/chapter2-1/"
+      },
+      "note": "24 hours is the mean SOLAR day, not the sidereal day, which is about 4 minutes shorter. Orbital speed ranges roughly 29.29 to 30.29 km/s between aphelion and perihelion, which is why the note gives a range."
+    },
+    {
+      "id": "resting-respiration-rate",
+      "claim": "A healthy adult at rest typically breathes 12 to 20 times each minute, moving about 500 millilitres of air per breath.",
+      "status": "verified",
+      "usedIn": [
+        "essays/while-were-here.md — marginNote"
+      ],
+      "source": {
+        "authors": "StatPearls",
+        "title": "Abnormal Respirations",
+        "publication": "NCBI Bookshelf",
+        "year": 2023,
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK470309/"
+      },
+      "note": "A typical clinical range for a healthy resting adult, not a constant and not a value for any individual. Tidal volume of ~500 ml is likewise an approximation for an average adult."
     }
   ]
 }

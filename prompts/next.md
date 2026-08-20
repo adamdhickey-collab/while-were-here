@@ -10,49 +10,50 @@ Three jobs for ChatGPT. Job 1 is the one that unblocks pages. Job 4 is done.
 | Print geometry | 300 × 300 mm, settled, provisional on the printer's own template. |
 | Type | Settled. Falutin Title / Familjen Grotesk / IBM Plex Mono / Caveat. |
 | Cover | Settled: `bleed`. Subtitle settled. Both closed, see `content/plan/decisions.md`. |
-| Essays | **3 of 8** laid out. Essay 03 is in, with a Part II divider. 04 to 08 are being drafted. |
-| Field notes | All four written. One is in the sequence; the other three land as their parts arrive. |
-| Images | 33 made and placed, including all four field-note photographs. **9 unmade** (8 grounds + the orb cover). |
-| Current extent | 58 interior pages. Target is 128. |
+| Essays | **All eight laid out.** Four parts, four dividers, four field notes. |
+| Field notes | All four written and all four placed, one per part. |
+| Images | 33 made and placed. **42 unmade**, which is now the book's largest open job. |
+| Current extent | **138 interior pages. The printer's ceiling is 130.** |
 
 The gap between 42 and 128 is almost entirely essays 3 to 8. Everything else is
 finishing work.
 
 ---
 
-## Job 1 — draft the next essay
+## Job 1 — decide where eight pages come from
 
-The fastest path is one essay at a time: paste the block below, get the draft,
-save it to `content/essays/`, run `npm run dev`, and look at the overflow
-outlines before commissioning the next one. Do essay 3 first and check the
-pacing holds; then the remaining five can go out in a batch.
+The whole book is laid out and it is **138 pages against a 130 ceiling**. That
+is the binding problem now, and it is a decision rather than a task.
 
-Each essay has its own file, already filled in with its title, part, stage and
-frontmatter values. Open one and paste the whole fenced block into ChatGPT:
+Every essay runs seven spreads: opener, reading, pull quote, reading, image
+essay, asymmetric reading, closing. Essays 01 and 02 run six and eight. The
+arithmetic:
 
-| # | File | Essay | Part |
-| --- | --- | --- | --- |
-| 03 | `prompts/essays/03-systems-nobody-designed.md` | The Beauty of Systems Nobody Designed | II |
-| 04 | `prompts/essays/04-intelligence-outside.md` | The Intelligence Outside Your Head | II |
-| 05 | `prompts/essays/05-strange-privilege.md` | The Strange Privilege of Being Alive During a Technological Revolution | III |
-| 06 | `prompts/essays/06-before-time.md` | The Last Generation That Remembers the Before-Time | III |
-| 07 | `prompts/essays/07-pilgrimages.md` | Why Humans Need Pilgrimages | IV |
-| 08 | `prompts/essays/08-while-were-here.md` | While We're Here | IV |
+| Change | Pages saved |
+| --- | --- |
+| Drop one reading spread from four of the six new essays | 8 |
+| Drop the second band spread from every new essay | 10 |
+| Cut one field note | 2 |
+| Merge the two Part IV essays into one closing sequence | 4 |
 
-They regenerate from [`content/plan/drafting-brief.md`](../content/plan/drafting-brief.md)
-with `npm run draft`, so the brief stays the one place to change how all six ask.
-Essays 05 and 06 carry an extra line about writing for a dark ground, because
-those two are where the page inverts.
+Dropping a reading spread means folding two prose blocks onto one spread, which
+the fixed-page model will refuse if the copy does not fit. The overflow detector
+will tell you immediately, so this is cheap to try.
 
-When it comes back, save it as `content/essays/<id>.md` using the `id` from its
-own frontmatter, add it to `sequence` in `content/book.json`, then run
-`npm run dev`. Spreads get assigned in the repo, not by ChatGPT.
+**The other option is a different printer.** Nothing in the build is
+Saal-specific; 130 is their Professional Line maximum, not a law.
 
 ---
 
-## Job 2 — generate the eight grounds
+## Job 2 — generate the images
 
-These are the faint scientific plates that sit under body copy at 8 percent.
+**42 images are unmade**, up from nine, because five essays arrived and each one
+brought its own shot list. `prompts/image-prompts.md` carries a paste-ready
+prompt for every one; `prompts/outstanding-brief.md` carries the same list with
+the production rules at the top.
+
+Start with the eight grounds. They are the faint scientific plates that sit
+under body copy at 8 percent.
 Every prompt is already written and copy-paste ready in
 **`prompts/outstanding-brief.md`** — one fenced block per image. Read the two
 rules at the top of that file once, then work down the list.
@@ -208,3 +209,13 @@ seasons.
   and correct anything that did not happen. They are marked
   `status: written`, which means they set as prose rather than as a brief, not
   that they have been checked.
+
+- **Part II now ends on a dark page and nothing warns the reader.** Essay 04 is
+  Part II but stage 3, so the ground inverts halfway through a part whose
+  divider is cream. Either move the inversion to the Part III divider by making
+  essay 04 stage 2, or accept it as a deliberate mid-part turn. It is currently
+  the second, by accident rather than by decision.
+- **The two dark stages have now rendered.** Stage III sets cream on charcoal
+  and Stage IV on near-black, both legible at trim size, with the display serif
+  holding up at quote size. This was the risk carried in decisions.md and it is
+  discharged.

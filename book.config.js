@@ -39,6 +39,10 @@ export const geometry = {
     // and a MAXIMUM OF 130. 128 is the working target: eight essays at the
     // density Part I already proves, plus front matter, dividers, material
     // breaks and credits, with a spread of slack.
+    // MEASURED 19 Aug 2026: the full eight-essay book builds to 138 pages,
+    // which is EIGHT OVER the printer's ceiling. This number is still the
+    // target rather than the actual, because 138 is not a shippable count.
+    // See prompts/next.md for where the eight pages could come from.
     pageCount: 128,        // working target, ceiling is 130 at this printer
     paperCaliper: 0.17,    // mm per leaf — PROVISIONAL AND ALMOST CERTAINLY LOW.
                            // Saal prints this book on FUJIFILM Crystal Archive HD

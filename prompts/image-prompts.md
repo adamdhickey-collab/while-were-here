@@ -266,6 +266,38 @@ Square frame (1:1).
 Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
 ```
 
+### part-3-divider-machine-dark
+
+**Save as** `public/images/illustration/part-3-divider-machine-dark.png` · 1:1 · target 6000 × 6000 px
+**Where it goes** Part divider (verso, full bleed)
+**Why it is there** The divider where the book inverts. Pale ink on charcoal, and the first page that is not cream.
+
+```text
+An illustrated plate from a vintage scientific field guide, hand-drawn in ink on warm cream paper. Imperfect geometry — circles slightly out of true, lines drawn by hand, everything a degree or two off square. Field-guide illustration crossed with vintage scientific diagram, cartography and marginalia: arrows, rings, timelines, measure scales, tiny human figures. Screenprint and risograph texture with visible ink density variation and slight misregistration. Charcoal near-black ink on a warm cream ground (#F3EFE5), with restrained accents of muted rust (#A95738), faded cobalt (#536D8E) and moss green (#68735B). Intelligent, tactile, playful, handmade.
+
+A room-sized computer, a fingernail-sized chip and a blinking cursor, drawn at one line weight on a dark ground.
+
+Square frame (1:1).
+
+Avoid: gradients; glossy 3D or rendered lighting; generic vector people; corporate infographic style; SaaS or explainer-video illustration; polished icon sets; decorative complexity with no conceptual purpose; fake handwritten paragraphs or invented lettering; any legible text; psychedelic imagery; symmetry for its own sake.
+```
+
+### part-4-divider-return
+
+**Save as** `public/images/illustration/part-4-divider-return.png` · 1:1 · target 6000 × 6000 px
+**Where it goes** Part divider (verso, full bleed)
+**Why it is there** The divider that returns the book to warm paper after two dark parts.
+
+```text
+An illustrated plate from a vintage scientific field guide, hand-drawn in ink on warm cream paper. Imperfect geometry — circles slightly out of true, lines drawn by hand, everything a degree or two off square. Field-guide illustration crossed with vintage scientific diagram, cartography and marginalia: arrows, rings, timelines, measure scales, tiny human figures. Screenprint and risograph texture with visible ink density variation and slight misregistration. Charcoal near-black ink on a warm cream ground (#F3EFE5), with restrained accents of muted rust (#A95738), faded cobalt (#536D8E) and moss green (#68735B). Intelligent, tactile, playful, handmade.
+
+One walked line crossing contours, towns and a shoreline, ending at a small unmarked point.
+
+Square frame (1:1).
+
+Avoid: gradients; glossy 3D or rendered lighting; generic vector people; corporate infographic style; SaaS or explainer-video illustration; polished icon sets; decorative complexity with no conceptual purpose; fake handwritten paragraphs or invented lettering; any legible text; psychedelic imagery; symmetry for its own sake.
+```
+
 ## Why Ordinary Days May Be the Point of Life
 
 ### ordinary-days-01a-dog-afternoon-light
@@ -762,6 +794,86 @@ Square frame (1:1).
 Avoid: any paper, card or background colour — the artwork must sit on full transparency; variable or heavy line weight; hard-edged washes; fills, hatching or shading; text, numerals, labels, scale bars or legends of any kind; frames or borders; drop shadows; a dense area that would darken into a blotch under body copy; perfect radial symmetry; a repeated or tiling motif; infographic or corporate-diagram styling; anything resolving into a recognisable scene or object.
 ```
 
+### intelligence-01-pencil-mark
+
+**Save as** `public/images/photography/intelligence-01-pencil-mark.png` · 1:1 · target 6000 × 6000 px
+**Where it goes** Opener (verso, full bleed)
+**Why it is there** The essay opens on this. Thinking that is on the wood, not in the head.
+
+```text
+A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
+
+A carpenter’s pencil line on a board, a tape measure beside it, the saw cut a few millimetres past the mark.
+
+Square frame (1:1).
+
+Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
+```
+
+### intelligence-02-cards-table
+
+**Save as** `public/images/photography/intelligence-02-cards-table.png` · 3:1 · target 9000 × 3000 px
+**Where it goes** Reading band, across the fold
+**Why it is there** Band under the working-memory margin note. The arrangement has to look mid-move, not finished.
+
+```text
+A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
+
+Index cards being rearranged across a table, shot from directly above, one hand entering the frame.
+
+Very wide band (3:1), figures small in the frame.
+
+Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
+```
+
+### intelligence-03-orb-web
+
+**Save as** `public/images/illustration/intelligence-03-orb-web.png` · 1:1 · target 6000 × 6000 px
+**Where it goes** Pull quote (facing)
+**Why it is there** Faces the pull quote. Drawn, because the vibration paths are the subject and a photograph cannot show them.
+
+```text
+An illustrated plate from a vintage scientific field guide, hand-drawn in ink on warm cream paper. Imperfect geometry — circles slightly out of true, lines drawn by hand, everything a degree or two off square. Field-guide illustration crossed with vintage scientific diagram, cartography and marginalia: arrows, rings, timelines, measure scales, tiny human figures. Screenprint and risograph texture with visible ink density variation and slight misregistration. Charcoal near-black ink on a warm cream ground (#F3EFE5), with restrained accents of muted rust (#A95738), faded cobalt (#536D8E) and moss green (#68735B). Intelligent, tactile, playful, handmade.
+
+A technical drawing of an orb web with vibration paths marked along the radial threads and one spider at the hub.
+
+Square frame (1:1).
+
+Avoid: gradients; glossy 3D or rendered lighting; generic vector people; corporate infographic style; SaaS or explainer-video illustration; polished icon sets; decorative complexity with no conceptual purpose; fake handwritten paragraphs or invented lettering; any legible text; psychedelic imagery; symmetry for its own sake.
+```
+
+### intelligence-04-route-line
+
+**Save as** `public/images/photography/intelligence-04-route-line.png` · 3:1 · target 9000 × 3000 px
+**Where it goes** Reading band, across the fold
+**Why it is there** Band beside the taxi-driver margin note. No faces, no hands on the wheel if it can be avoided.
+
+```text
+A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
+
+A driver’s view: wet road ahead, a blue route line on a screen at the edge of frame, the turn not yet named.
+
+Very wide band (3:1), figures small in the frame.
+
+Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
+```
+
+### intelligence-05-tools-ready
+
+**Save as** `public/images/photography/intelligence-05-tools-ready.png` · 2:3 · target 4000 × 6000 px
+**Where it goes** Image essay (tall)
+**Why it is there** The tall plate. It has to read as waiting, not as tidy.
+
+```text
+A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
+
+A workbench with tools laid out ready for use, nobody present, the work half done.
+
+Vertical frame (2:3), subject low, generous empty space above.
+
+Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
+```
+
 ## The Strange Privilege of Being Alive During a Technological Revolution
 
 ### ground-05-imagine-to-make
@@ -819,6 +931,86 @@ Wide panoramic frame (2:1). This runs across a two-page spread, so keep the cent
 Avoid: any paper, card or background colour — the artwork must sit on full transparency; variable or heavy line weight; hard-edged washes; fills, hatching or shading; text, numerals, labels, scale bars or legends of any kind; frames or borders; drop shadows; a dense area that would darken into a blotch under body copy; perfect radial symmetry; a repeated or tiling motif; infographic or corporate-diagram styling; anything resolving into a recognisable scene or object.
 ```
 
+### pilgrimage-01-worn-threshold
+
+**Save as** `public/images/photography/pilgrimage-01-worn-threshold.png` · 1:1 · target 6000 × 6000 px
+**Where it goes** Opener (verso, full bleed)
+**Why it is there** The opener. Nothing else in frame; the wear is the whole subject.
+
+```text
+A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
+
+A stone threshold worn into a shallow bowl at its centre, raking light across the dip.
+
+Square frame (1:1).
+
+Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
+```
+
+### pilgrimage-02-yellow-arrow
+
+**Save as** `public/images/photography/pilgrimage-02-yellow-arrow.png` · 3:1 · target 9000 × 3000 px
+**Where it goes** Reading band, across the fold
+**Why it is there** Band under the Shikoku margin note. The banality of the lane is the point.
+
+```text
+A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
+
+A painted yellow arrow on a kerb, pointing down an ordinary lane between parked cars.
+
+Very wide band (3:1), figures small in the frame.
+
+Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
+```
+
+### pilgrimage-03-route-map
+
+**Save as** `public/images/illustration/pilgrimage-03-route-map.png` · 1:1 · target 6000 × 6000 px
+**Where it goes** Pull quote (facing)
+**Why it is there** Faces the pull quote. No scale bar, no place names, no legend.
+
+```text
+An illustrated plate from a vintage scientific field guide, hand-drawn in ink on warm cream paper. Imperfect geometry — circles slightly out of true, lines drawn by hand, everything a degree or two off square. Field-guide illustration crossed with vintage scientific diagram, cartography and marginalia: arrows, rings, timelines, measure scales, tiny human figures. Screenprint and risograph texture with visible ink density variation and slight misregistration. Charcoal near-black ink on a warm cream ground (#F3EFE5), with restrained accents of muted rust (#A95738), faded cobalt (#536D8E) and moss green (#68735B). Intelligent, tactile, playful, handmade.
+
+One continuous footpath crossing towns, fields and contour lines toward a small final mark, drawn at a single hairline weight.
+
+Square frame (1:1).
+
+Avoid: gradients; glossy 3D or rendered lighting; generic vector people; corporate infographic style; SaaS or explainer-video illustration; polished icon sets; decorative complexity with no conceptual purpose; fake handwritten paragraphs or invented lettering; any legible text; psychedelic imagery; symmetry for its own sake.
+```
+
+### pilgrimage-04-tending-feet
+
+**Save as** `public/images/photography/pilgrimage-04-tending-feet.png` · 3:1 · target 9000 × 3000 px
+**Where it goes** Reading band, across the fold
+**Why it is there** Band beside the Camino margin note. Photo-selection-04 has real candidates for this row.
+
+```text
+A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
+
+Two walkers sitting against a plain roadside wall, boots off, tending their feet.
+
+Very wide band (3:1), figures small in the frame.
+
+Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
+```
+
+### pilgrimage-05-stamped-booklet
+
+**Save as** `public/images/photography/pilgrimage-05-stamped-booklet.png` · 2:3 · target 4000 × 6000 px
+**Where it goes** Image essay (tall)
+**Why it is there** The tall plate. Real stamps, uneven pressure, one of them upside down.
+
+```text
+A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
+
+A folded paper credential open across a table, each stop stamped in a different ink.
+
+Vertical frame (2:3), subject low, generous empty space above.
+
+Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
+```
+
 ## While We’re Here
 
 ### ground-08-nested-systems
@@ -836,4 +1028,248 @@ Nested systems drawn as concentric irregular rings — six of them, each a diffe
 Square frame (1:1).
 
 Avoid: any paper, card or background colour — the artwork must sit on full transparency; variable or heavy line weight; hard-edged washes; fills, hatching or shading; text, numerals, labels, scale bars or legends of any kind; frames or borders; drop shadows; a dense area that would darken into a blotch under body copy; perfect radial symmetry; a repeated or tiling motif; infographic or corporate-diagram styling; anything resolving into a recognisable scene or object.
+```
+
+### here-01-dog-late-light
+
+**Save as** `public/images/photography/here-01-dog-late-light.png` · 1:1 · target 6000 × 6000 px
+**Where it goes** Opener (verso, full bleed)
+**Why it is there** The closing essay opens where the book opened, which is the point.
+
+```text
+A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
+
+A dog crossing from shadow into a narrow band of late light on a floor.
+
+Square frame (1:1).
+
+Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
+```
+
+### here-02-house-section
+
+**Save as** `public/images/illustration/here-02-house-section.png` · 3:1 · target 9000 × 3000 px
+**Where it goes** Reading band, across the fold
+**Why it is there** Band under the sunlight margin note. The house must be plain and the systems hairline.
+
+```text
+An illustrated plate from a vintage scientific field guide, hand-drawn in ink on warm cream paper. Imperfect geometry — circles slightly out of true, lines drawn by hand, everything a degree or two off square. Field-guide illustration crossed with vintage scientific diagram, cartography and marginalia: arrows, rings, timelines, measure scales, tiny human figures. Screenprint and risograph texture with visible ink density variation and slight misregistration. Charcoal near-black ink on a warm cream ground (#F3EFE5), with restrained accents of muted rust (#A95738), faded cobalt (#536D8E) and moss green (#68735B). Intelligent, tactile, playful, handmade.
+
+A sectional drawing of an ordinary house with the paths of sunlight, airflow, water, power and data running through it.
+
+Very wide band (3:1), figures small in the frame.
+
+Avoid: gradients; glossy 3D or rendered lighting; generic vector people; corporate infographic style; SaaS or explainer-video illustration; polished icon sets; decorative complexity with no conceptual purpose; fake handwritten paragraphs or invented lettering; any legible text; psychedelic imagery; symmetry for its own sake.
+```
+
+### here-03-two-rooms
+
+**Save as** `public/images/photography/here-03-two-rooms.png` · 1:1 · target 6000 × 6000 px
+**Where it goes** Pull quote (facing)
+**Why it is there** Faces the pull quote, and is the closest the book comes to a portrait.
+
+```text
+A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
+
+Two people in separate rooms connected by an open doorway, neither looking at the camera, neither aware of the other being photographed.
+
+Square frame (1:1).
+
+Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
+```
+
+### here-04-window-water
+
+**Save as** `public/images/photography/here-04-window-water.png` · 3:1 · target 9000 × 3000 px
+**Where it goes** Reading band, across the fold
+**Why it is there** Band beside the Earth-motion margin note. Nothing beyond the glass may resolve.
+
+```text
+A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
+
+Rain on a window: one drop meeting another and changing direction, the view behind entirely out of focus.
+
+Very wide band (3:1), figures small in the frame.
+
+Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
+```
+
+### here-05-evening-wall
+
+**Save as** `public/images/photography/here-05-evening-wall.png` · 2:3 · target 4000 × 6000 px
+**Where it goes** Image essay (tall)
+**Why it is there** The last tall plate in the book. It should be the quietest.
+
+```text
+A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
+
+The last of the evening light on a far interior wall, under a minute from gone.
+
+Vertical frame (2:3), subject low, generous empty space above.
+
+Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
+```
+
+## The Strange Privilege
+
+### privilege-01-kitchen-laptop
+
+**Save as** `public/images/photography/privilege-01-kitchen-laptop.png` · 1:1 · target 6000 × 6000 px
+**Where it goes** Opener (verso, full bleed)
+**Why it is there** On the shoot list in photo-selection-04. The library has nothing like it.
+
+```text
+A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
+
+A kitchen table with an open laptop while domestic life continues around it: dishes, a chair pushed out, afternoon light.
+
+Square frame (1:1).
+
+Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
+```
+
+### privilege-02-machine-timeline
+
+**Save as** `public/images/illustration/privilege-02-machine-timeline.png` · 3:1 · target 9000 × 3000 px
+**Where it goes** Reading band, across the fold
+**Why it is there** Band under the 4004 margin note. Not an infographic, and no arrows between the three.
+
+```text
+An illustrated plate from a vintage scientific field guide, hand-drawn in ink on warm cream paper. Imperfect geometry — circles slightly out of true, lines drawn by hand, everything a degree or two off square. Field-guide illustration crossed with vintage scientific diagram, cartography and marginalia: arrows, rings, timelines, measure scales, tiny human figures. Screenprint and risograph texture with visible ink density variation and slight misregistration. Charcoal near-black ink on a warm cream ground (#F3EFE5), with restrained accents of muted rust (#A95738), faded cobalt (#536D8E) and moss green (#68735B). Intelligent, tactile, playful, handmade.
+
+A room-sized computer, a microprocessor at fingernail scale and a plain chat window, each drawn as a found artefact rather than a timeline.
+
+Very wide band (3:1), figures small in the frame.
+
+Avoid: gradients; glossy 3D or rendered lighting; generic vector people; corporate infographic style; SaaS or explainer-video illustration; polished icon sets; decorative complexity with no conceptual purpose; fake handwritten paragraphs or invented lettering; any legible text; psychedelic imagery; symmetry for its own sake.
+```
+
+### privilege-03-unfinished-paragraph
+
+**Save as** `public/images/photography/privilege-03-unfinished-paragraph.png` · 1:1 · target 6000 × 6000 px
+**Where it goes** Pull quote (facing)
+**Why it is there** Faces the pull quote. The handwriting must be legible as correction without being readable as content.
+
+```text
+A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
+
+A laptop showing a generated paragraph that stops mid-sentence, a printed page beside it marked up by hand.
+
+Square frame (1:1).
+
+Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
+```
+
+### privilege-04-two-reviewing
+
+**Save as** `public/images/photography/privilege-04-two-reviewing.png` · 3:1 · target 9000 × 3000 px
+**Where it goes** Reading band, across the fold
+**Why it is there** Band beside the transformer margin note. Candid rule applies; this is the one that will be tempting to stage.
+
+```text
+A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
+
+Two people comparing machine-generated options on a screen, neither looking at the camera, mid-disagreement.
+
+Very wide band (3:1), figures small in the frame.
+
+Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
+```
+
+### privilege-05-dog-under-desk
+
+**Save as** `public/images/photography/privilege-05-dog-under-desk.png` · 2:3 · target 4000 × 6000 px
+**Where it goes** Image essay (tall)
+**Why it is there** On the shoot list in photo-selection-04, and the one image in the storyboard that is purely Adam’s to take.
+
+```text
+A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
+
+A dog asleep under a desk, cables and feet above her, the screen out of frame.
+
+Vertical frame (2:3), subject low, generous empty space above.
+
+Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
+```
+
+## The Last Generation
+
+### before-time-01-road-atlas
+
+**Save as** `public/images/photography/before-time-01-road-atlas.png` · 1:1 · target 6000 × 6000 px
+**Where it goes** Opener (verso, full bleed)
+**Why it is there** The opener. It has to look used rather than collected.
+
+```text
+A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
+
+A folded road atlas open across a passenger seat, one fold split white, a coffee ring on the index.
+
+Square frame (1:1).
+
+Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
+```
+
+### before-time-02-answering-machine
+
+**Save as** `public/images/photography/before-time-02-answering-machine.png` · 3:1 · target 9000 × 3000 px
+**Where it goes** Reading band, across the fold
+**Why it is there** Band under the adoption margin note. No hand, no person; the room has to be empty.
+
+```text
+A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
+
+An answering machine beside a landline in an empty room, one red digit lit.
+
+Very wide band (3:1), figures small in the frame.
+
+Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
+```
+
+### before-time-03-contact-sheet
+
+**Save as** `public/images/photography/before-time-03-contact-sheet.png` · 1:1 · target 6000 × 6000 px
+**Where it goes** Pull quote (facing)
+**Why it is there** Faces the pull quote. The failures are the picture. Do not select good frames.
+
+```text
+A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
+
+A contact sheet of six film frames, at least two of them failed: a thumb, a closed eye, a blur.
+
+Square frame (1:1).
+
+Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
+```
+
+### before-time-04-waiting-clock
+
+**Save as** `public/images/photography/before-time-04-waiting-clock.png` · 3:1 · target 9000 × 3000 px
+**Where it goes** Reading band, across the fold
+**Why it is there** Band beside the SMS margin note. If anyone in frame is holding a phone the picture is about something else.
+
+```text
+A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
+
+Three people waiting under a station clock, none of them holding anything, none of them able to find out why the bus is late.
+
+Very wide band (3:1), figures small in the frame.
+
+Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
+```
+
+### before-time-05-artifact-array
+
+**Save as** `public/images/photography/before-time-05-artifact-array.png` · 2:3 · target 4000 × 6000 px
+**Where it goes** Image essay (tall)
+**Why it is there** The tall plate. Every function here now lives in one object in a pocket, and the caption says so.
+
+```text
+A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
+
+A phone book, a cassette, a paper ticket and a page of handwritten numbers, laid out without arrangement.
+
+Vertical frame (2:3), subject low, generous empty space above.
+
+Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
 ```

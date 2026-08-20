@@ -5,7 +5,7 @@
 Every technical number in this book is listed here with the source it came from.
 Where a figure is contested, small-sample or easy to misstate, the note says so.
 
-10 verified · 1 outstanding
+26 verified · 1 outstanding
 
 ---
 
@@ -108,6 +108,167 @@ Nazzi F. *The hexagonal shape of the honeycomb cells depends on the construction
 **Note.** The groove rule is a proposed behavioural mechanism supported by observation and simulation, not a settled result. Keep the hedge. The competing account is that wax flows and surface tension do the shaping, and the essay must not pick a winner.
 
 *Used in essays/beauty-of-systems-nobody-designed.md — flow-2c.*
+
+---
+
+### Under conditions that block rehearsal and grouping, research on working memory finds a central capacity averaging about four chunks.
+
+Cowan N. *The magical number 4 in short-term memory: A reconsideration of mental storage capacity*. Behavioral and Brain Sciences 24(1): 87-114. 2001. <https://doi.org/10.1017/S0140525X01003922>
+
+**Note.** Four is an AVERAGE under constrained experimental conditions, not a fixed capacity for every person or task. Do not write "the brain can hold four things". The conditions that block rehearsal and chunking are what make the number mean anything.
+**Replaces.** The popular "seven plus or minus two" from Miller 1956. Cowan's reconsideration is the reason the figure here is four, not seven. Do not reintroduce the older number.
+
+*Used in essays/intelligence-outside-your-head.md — marginNote.*
+
+---
+
+### In a 2000 MRI study, licensed London taxi drivers had greater posterior hippocampal grey-matter volume than controls, and the difference correlated with years spent navigating.
+
+Maguire EA, Gadian DG, Johnsrude IS, Good CD, Ashburner J, Frackowiak RSJ, Frith CD. *Navigation-related structural change in the hippocampi of taxi drivers*. PNAS 97(8): 4398-4403. 2000. <https://www.pnas.org/doi/10.1073/pnas.070039597>
+
+**Note.** The study is OBSERVATIONAL. Write "associated with" or "correlated with", never "caused by". Self-selection cannot be ruled out from this design alone.
+
+*Used in essays/intelligence-outside-your-head.md — marginNote.*
+
+---
+
+### Four experiments published in 2011 found that people expecting later computer access recalled where information was stored better than the information itself.
+
+Sparrow B, Liu J, Wegner DM. *Google Effects on Memory: Cognitive Consequences of Having Information at Our Fingertips*. Science 333(6043): 776-778. 2011. <https://www.science.org/doi/10.1126/science.1207745>
+
+**Note.** This is a description of four reported experiments about WHAT people encode, not evidence that internet use damages memory. Do not expand it into a claim about harm. The finding is a shift toward retrieval, not a loss.
+
+*Used in essays/intelligence-outside-your-head.md — marginNote.*
+
+---
+
+### An orb web transmits vibration and tension to the spider at its hub, extending the animal's sensing beyond its body.
+
+Japyassú HF, Laland KN. *Extended spider cognition*. Animal Cognition 20: 375-395. 2017. <https://doi.org/10.1007/s10071-017-1069-7>
+
+**Note.** The vibration, tension and sensory extension are well supported. Calling the web part of COGNITION is the authors' theoretical interpretation and is contested. Stay with the observable mechanism, which is what the essay does.
+
+*Used in essays/intelligence-outside-your-head.md — flow-2c; intelligence-03-orb-web — figure caption.*
+
+---
+
+### Intel introduced the 4004 microprocessor in 1971 with 2,300 transistors on a chip smaller than a fingernail.
+
+Intel Corporation. *The First Programmable Microprocessor: The 4004*. Intel company timeline. 1971. <https://timeline.intel.com/1971/the-first-programmable-microprocessor%3A-the-4004>
+
+**Note.** Announced 15 November 1971. First-party historical record. The transistor count is exact; the "smaller than a fingernail" comparison is the essay's, not Intel's.
+
+*Used in essays/strange-privilege-technological-revolution.md — marginNote.*
+
+---
+
+### The 2017 transformer paper described a network based on attention rather than recurrence. Its larger model trained for 3.5 days on eight P100 GPUs and set new reported results on two translation tasks.
+
+Vaswani A, Shazeer N, Parmar N, Uszkoreit J, Jones L, Gomez AN, Kaiser L, Polosukhin I. *Attention Is All You Need*. Advances in Neural Information Processing Systems 30. 2017. <https://proceedings.neurips.cc/paper_files/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf>
+
+**Note.** The two tasks are WMT 2014 English-to-German and English-to-French machine translation, and nothing else. Do not rewrite this as the paper already doing the generative work that came later. The 3.5 days and eight P100s are the big model, not the base.
+
+*Used in essays/strange-privilege-technological-revolution.md — marginNote.*
+
+---
+
+### The AlphaFold Protein Structure Database provides over 200 million predicted protein structures.
+
+EMBL-EBI and Google DeepMind. *AlphaFold Protein Structure Database*. Public database. 2024. <https://alphafold.ebi.ac.uk/>
+
+**Note.** Keep the word PREDICTED visible. These are computational predictions and a research starting point; they do not replace experimental structure determination. Dropping "predicted" turns a real achievement into a false one.
+
+*Used in essays/strange-privilege-technological-revolution.md — marginNote.*
+
+---
+
+### Pew found 52 percent of U.S. adults used the internet in 2000 and 96 percent in 2025. Home broadband was reported by 1 percent of U.S. adults in March 2000.
+
+Pew Research Center. *Internet, Broadband Fact Sheet*. Pew Research Center. 2025. <https://www.pewresearch.org/internet/fact-sheet/internet-broadband/>
+
+**Note.** Pew changed survey mode from 2023, so the 2000 and 2025 figures are not a clean like-for-like series. Keep the methodology caution in the note. The broadband figure is dated 31 March 2000 specifically.
+
+*Used in essays/last-generation-before-time.md — marginNote.*
+
+---
+
+### Smartphone ownership among U.S. adults rose from 35 percent in Pew's first 2011 measurement to 91 percent in 2025.
+
+Pew Research Center. *Mobile Fact Sheet*. Pew Research Center. 2025. <https://www.pewresearch.org/internet/fact-sheet/mobile/>
+
+**Note.** 2011 is Pew's FIRST measurement of smartphone ownership, not the year smartphones appeared. Do not imply the technology began then.
+
+*Used in essays/last-generation-before-time.md — marginNote.*
+
+---
+
+### The first SMS message was sent from a computer on 3 December 1992. Early text messages carried a 160-character limit.
+
+Vodafone. *25 years since the world's first text message*. Vodafone newsroom. 2017. <https://www.vodafone.com/news/newsroom/technology/25-anniversary-text-message>
+
+**Note.** Sent by Neil Papworth, from a computer to a phone, reading "Merry Christmas". The 160-character limit is a real technical boundary. The sentence about it shaping a compressed style is an editorial inference, not a measured effect, and must not be written as one.
+
+*Used in essays/last-generation-before-time.md — marginNote.*
+
+---
+
+### The Shikoku Henro links 88 temples across Japan's four Shikoku prefectures, covers approximately 1,200 kilometres, and generally takes more than 40 days on foot.
+
+Japan National Tourism Organization. *Experience an Authentic Pilgrimage in Shikoku*. japan.travel. 2024. <https://www.japan.travel/en/japans-local-treasures/experience-authentic-pilgrimage-shikoku-2024/>
+
+**Note.** Official tourism body. The 40 days is a typical walking duration, not a rule, and the route order is not fixed.
+
+*Used in essays/why-humans-need-pilgrimages.md — marginNote.*
+
+---
+
+### Roughly 800 kilometres separate the Pyrenean starting routes from Santiago de Compostela. The Compostela requires stated spiritual or religious motivation and at least the final 100 continuous kilometres on foot.
+
+Turespaña. *Camino Francés*. spain.info, official tourism portal. 2024. <https://www.spain.info/es/ruta/camino-frances-santiago/>
+
+**Note.** The 100 km minimum applies to walking; by bicycle it is 200 km. The essay uses the walking figure only, and the motivation requirement is a stated declaration rather than anything tested.
+
+*Used in essays/why-humans-need-pilgrimages.md — marginNote.*
+
+---
+
+### UNESCO's French Santiago property includes 71 selected monuments and seven sections of the Chemin du Puy totalling nearly 160 kilometres.
+
+UNESCO World Heritage Centre. *Routes of Santiago de Compostela in France*. World Heritage List, ref. 868. 1998. <https://whc.unesco.org/en/list/868/>
+
+**Note.** The inscription covers four symbolic routes; the 71 monuments and seven sections are the selected components, not the whole network. Churches, hospitals and bridges are named as pilgrim infrastructure.
+
+*Used in essays/why-humans-need-pilgrimages.md — marginNote.*
+
+---
+
+### Sunlight takes about 8 minutes and 20 seconds to reach Earth.
+
+NASA Space Place. *All About the Sun*. NASA. 2024. <https://spaceplace.nasa.gov/all-about-the-sun/en/>
+
+**Note.** A mean figure. Earth's distance varies over the year, so the light-time varies by a few seconds either side. "About" is doing real work.
+
+*Used in essays/while-were-here.md — marginNote.*
+
+---
+
+### Earth turns once relative to the Sun in 24 hours and travels around the Sun at roughly 29 to 30 kilometres per second.
+
+NASA Science. *Basics of Space Flight, Chapter 2: Reference Systems*. NASA. 2024. <https://science.nasa.gov/learn/basics-of-space-flight/chapter2-1/>
+
+**Note.** 24 hours is the mean SOLAR day, not the sidereal day, which is about 4 minutes shorter. Orbital speed ranges roughly 29.29 to 30.29 km/s between aphelion and perihelion, which is why the note gives a range.
+
+*Used in essays/while-were-here.md — marginNote.*
+
+---
+
+### A healthy adult at rest typically breathes 12 to 20 times each minute, moving about 500 millilitres of air per breath.
+
+StatPearls. *Abnormal Respirations*. NCBI Bookshelf. 2023. <https://www.ncbi.nlm.nih.gov/books/NBK470309/>
+
+**Note.** A typical clinical range for a healthy resting adult, not a constant and not a value for any individual. Tidal volume of ~500 ml is likewise an approximation for an average adult.
+
+*Used in essays/while-were-here.md — marginNote.*
 
 
 ---

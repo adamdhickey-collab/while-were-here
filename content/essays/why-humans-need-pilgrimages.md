@@ -94,6 +94,7 @@ spreads:
       what is needed and do not shorten the last section. Let arrival occur
       only after the distance has been crossed.
   - type: closing
+    image: pilgrimage-06-closing-stone
     line: Tomorrow the body will turn back toward ordinary rooms, carrying the route in its feet.
     blocks: [flow-4a, flow-4b]
 ---

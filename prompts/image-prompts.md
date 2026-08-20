@@ -252,17 +252,17 @@ Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glo
 
 ### field-note-04-firepit
 
-**Save as** `public/images/personal/field-note-04-firepit.jpg` · 1:1 · target 2268 × 2268 px
-**Where it goes** Field note (verso, full bleed)
+**Save as** `public/images/personal/field-note-04-firepit.jpg` · 16:9 · target 4032 × 2268 px (native)
+**Where it goes** Field note (verso, wide band, bleeding left and right)
 **Why it is there** Field note verso. The only place in the book where a real photograph of this life appears at size.
-**Watch for** Square crop of the 4032 × 2268 original, offset 705 px to hold the dog and the lounger. Shadows not lifted. 192 dpi at 300 mm, which is under the 300 dpi ideal and acceptable for a dark, soft-edged frame.
+**Watch for** SWAPPED 19 Aug 2026. The frame previously placed here (IMG_5259) had her looking straight into the lens, lit from below, filling a full-bleed square — the exact thing the candid rule forbids, and photo-selection-02 justified that frame by describing her as seated in profile watching the fire, which she was not. This is the frame that description actually fits. Uncropped, unretouched, 341 dpi across a 300 mm band.
 
 ```text
 A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
 
-A fire pit at dusk, a figure seated in profile watching it, trees behind.
+The deck at dusk: the fire lit in its bowl, a figure seated in profile on a lounger with the dog beside her, trees and a fence behind, split logs stacked at the right.
 
-Square frame (1:1).
+Frame 16:9.
 
 Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
 ```
@@ -630,9 +630,9 @@ Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glo
 ### attention-04-lake-weather
 
 **Save as** `public/images/overlays/attention-04-lake-weather.jpg` · 2:1 · target 8000 × 4000 px
-**Where it goes** Unplaced. Freed 19 Aug 2026 when a spread was cut to bring the book to 130 pages.
+**Where it goes** Closing spread (recto, full bleed)
 **Why it is there** The book's first long exhale. No text, no folio.
-**Watch for** No longer needed: the essay 02 spread it sat on is gone. Kept in the manifest because the subject is still good and the page budget may move again.
+**Watch for** Displaced when essay 02 lost its full-bleed spread to the page budget, then placed on that essay's closing recto, which was blank. It is the familiar lake the back cover promises, and it is already made.
 
 ```text
 A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
@@ -914,6 +914,22 @@ Horizontal frame (4:3).
 Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
 ```
 
+### intelligence-06-closing-hands
+
+**Save as** `public/images/photography/intelligence-06-closing-hands.png` · 1:1 · target 6000 × 6000 px
+**Where it goes** Closing spread (recto, full bleed)
+**Why it is there** The closing recto. The essay ends on tools left ready, and this is that, photographed quietly and full bleed.
+
+```text
+A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
+
+A workbench after the work: tools set down where they were used, a pencil, a rule, sawdust, nobody in frame.
+
+Square frame (1:1).
+
+Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
+```
+
 ## The Strange Privilege of Being Alive During a Technological Revolution
 
 ### ground-05-imagine-to-make
@@ -1058,6 +1074,22 @@ Vertical frame (2:3), subject low, generous empty space above.
 Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
 ```
 
+### pilgrimage-06-closing-stone
+
+**Save as** `public/images/photography/pilgrimage-06-closing-stone.png` · 1:1 · target 6000 × 6000 px
+**Where it goes** Closing spread (recto, full bleed)
+**Why it is there** The closing recto. The essay ends on exactly this gesture, so the picture is the last sentence and needs no caption.
+
+```text
+A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
+
+One hand flat against cold worn stone, close, the wear of other hands visible in the surface around it.
+
+Square frame (1:1).
+
+Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
+```
+
 ## While We're Here
 
 ### ground-08-nested-systems
@@ -1158,6 +1190,22 @@ A believable documentary photograph of the real world — quiet, contemplative, 
 A dog asleep under a desk, cables and feet above her, the screen out of frame.
 
 Vertical frame (2:3), subject low, generous empty space above.
+
+Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
+```
+
+### privilege-06-closing-cursor
+
+**Save as** `public/images/photography/privilege-06-closing-cursor.png` · 1:1 · target 6000 × 6000 px
+**Where it goes** Closing spread (recto, full bleed)
+**Why it is there** The closing recto. The essay ends on the cursor continuing to blink and somebody still having to decide.
+
+```text
+A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
+
+A dim room, a screen out of focus, and a cursor still blinking in an empty field after the answer has been read.
+
+Square frame (1:1).
 
 Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
 ```

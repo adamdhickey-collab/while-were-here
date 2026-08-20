@@ -75,6 +75,7 @@ spreads:
       becomes visible. Notice which part of the answer appears in the
       arrangement rather than in memory.
   - type: closing
+    image: intelligence-06-closing-hands
     line: Restore them and the unfinished work begins again.
     blocks: [flow-4a, flow-4b]
 ---

@@ -95,6 +95,7 @@ spreads:
       Walk five minutes of a route you know by heart. Find one thing you have
       never seen before. It is there. It has been there the whole time.
   - type: closing
+    image: attention-04-lake-weather
     line: It is not, as far as I can tell, too long.
     blocks: [close]
 ---
@@ -111,7 +112,7 @@ Nothing about the tree had changed. Something about me had.
 
 We talk about attention as though it were a flashlight. You point it, it illuminates, and the world sits there patiently waiting to be lit. The model is flattering. It is also mostly wrong.
 
-Attention isn’t a beam. It is closer to an editor. It decides, thousands of times a minute and almost entirely without consulting you, what gets to count as the world. The room you are sitting in contains more information than you could process in a year — the temperature of the air on the back of your hands, the particular pitch of the refrigerator, the fact that the light has moved four inches since you sat down. Your attention is not receiving that room. It is writing a very short summary of it and handing you the summary.
+Attention isn’t a beam. It is closer to an editor. It decides, thousands of times a minute and almost entirely without consulting you, what gets to count as the world. The room you are sitting in contains more information than you could process in a year: the temperature of the air on the back of your hands, the particular pitch of the refrigerator, the fact that the light has moved four inches since you sat down. Your attention is not receiving that room. It is writing a very short summary of it and handing you the summary.
 
 You have never once experienced a room. You have experienced a paraphrase.
 
@@ -123,7 +124,7 @@ Which raises a question I find genuinely uncomfortable. If attention is doing th
 
 For most of human history the answer was: your body, and the weather. Hunger. Cold. Movement at the edge of a field. Another person’s face.
 
-In the last twenty years an entire industry has been built on the discovery that the editor takes suggestions. Not orders — suggestions. A notification is a suggestion. An autoplay is a suggestion. A feed is ten thousand suggestions arranged in the order most likely to be taken.
+In the last twenty years an entire industry has been built on the discovery that the editor takes suggestions. Not orders. Suggestions. A notification is a suggestion. An autoplay is a suggestion. A feed is ten thousand suggestions arranged in the order most likely to be taken.
 
 I don’t think this is evil, exactly. I think it is the most successful engineering project of our lifetime, and I think it worked. The evidence isn’t that we are distracted; distraction is ancient, and monks complained about it in writing. The evidence is that we have stopped noticing what we are distracted *from*.
 
@@ -155,7 +156,7 @@ This should probably produce anxiety. Mostly it produces the opposite in me.
 
 <!-- block: flow-3b -->
 
-If attention is the currency, then the price of a good day is far lower than I was led to believe. I have had genuinely extraordinary experiences that I barely registered — arranged at expense, photographed carefully, and gone. I have also had ten minutes on a back step with a cup of coffee, watching a bird do something idiotic in a gutter, that I can still see with total clarity a decade later.
+If attention is the currency, then the price of a good day is far lower than I was led to believe. I have had genuinely extraordinary experiences that I barely registered. Arranged at expense, photographed carefully, and gone. I have also had ten minutes on a back step with a cup of coffee, watching a bird do something idiotic in a gutter, that I can still see with total clarity a decade later.
 
 The difference was not the quality of the events. It was whether I showed up for them.
 
@@ -165,6 +166,6 @@ We spend enormous effort trying to make our lives more interesting. Very little 
 
 The world didn’t change. Your attention did.
 
-I think about that most days now — usually badly, usually while checking something I do not need to check. But I know where the maple is, and some mornings I look up.
+I think about that most days now, usually badly, usually while checking something I do not need to check. But I know where the maple is, and some mornings I look up.
 
 Eleven years is a long time to walk under something beautiful.

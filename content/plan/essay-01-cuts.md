@@ -209,3 +209,43 @@ Perhaps love depends partly on resisting that disappearance. Not merely loving w
 ```
 Perhaps love depends partly on resisting that disappearance — loving what has become familiar without allowing familiarity to make it invisible.
 ```
+
+---
+
+## Second pass — 19 Aug 2026
+
+**56 more words removed. 1,389 → 1,330.**
+
+Ink coverage was measured across all 130 pages of the proof. Essay 01 ran at
+**42 percent** where every other essay ran at **25 to 27**. The reader opened on
+the densest essay in the book and then found everything after it half as full.
+
+Same method as the first pass: repetition, a list that ran long, a line another
+line was already making. Nothing conceptual removed.
+
+- The fourth *Not at the...* line, which listed three abstractions where the
+  other three lines are concrete.
+- *A text from someone you love*, the least sensory item in a six-item list.
+- *That can initially sound disappointing. Until you realize what it means.* —
+  a two-line setup for a sentence that does its own setup.
+- *We understand what happens at the grocery store*, a third example where two
+  were enough.
+- *The car you currently consider uninteresting*, the weakest of three.
+- *One more ridiculous conversation*, one of six.
+- *We'll want something far less dramatic*, which the list immediately says.
+
+**This does not close the gap, and it was never going to.** The density is
+structural. Essay 01 carries 1,330 words across six spreads, and its second
+reading spread alone holds 589 of them, four blocks to a column, because the
+essay was squeezed from seven spreads to six under the old four-to-six board
+rhythm. Essays 03 to 08 put one block per column.
+
+The real fix is giving essay 01 its seventh spread back. That costs two pages
+and the book is at 130, which is the printer's ceiling. **It is a decision, not
+a task**, and the options are:
+
+1. Restore the seventh spread and find two pages elsewhere.
+2. Cut a further two hundred words, which would mean cutting argument rather
+   than repetition.
+3. Accept that Part I reads denser than the rest, and treat it as the book
+   warming up.

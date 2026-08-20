@@ -288,3 +288,33 @@ that. They have to be shot.
   wants, and there is not one in 672 frames. It is a five-minute walk.
 - **A repeated view across four seasons.** The generated set has one; a real one
   would carry more, and it costs a year, so it starts now or not at all.
+
+
+---
+
+## Field note 4 was the wrong frame — corrected 19 Aug 2026
+
+`B039 · IMG_5259` was placed as the fire-pit verso on the strength of this
+description in [photo-selection-02](photo-selection-02.md):
+
+> The person is looking at the fire, which is what makes it a photograph of an
+> evening rather than a photograph of a person.
+
+**She is not.** In that frame she is looking straight into the lens, lit from
+below, and cropped to a full-bleed square she fills a large part of the page. It
+is the same failure field note 3 had, and worse, because the face is larger and
+lit. The description was written from memory of the evening rather than from the
+frame.
+
+**`B038 · IMG_5258` is the photograph that description fits.** The deck, the
+fire lit in its bowl, a figure seated in profile on a lounger with the dog
+beside her, on the phone, looking away. Trees and a fence behind, split logs
+stacked at the right. Nobody looking at the lens.
+
+It runs as a wide band, like field note 3, at 341 dpi across a 300 mm page. Both
+personal field notes now use the same treatment, which is an accident of two
+separate corrections and is better than what either of them replaced.
+
+**The lesson, recorded because it will recur:** a selection note written from
+memory is not a caption. Check the description against the frame before the
+frame goes on a page.

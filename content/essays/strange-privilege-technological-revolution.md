@@ -231,6 +231,7 @@ spreads:
       Save one result that would have seemed impossible ten years ago. Record
       the exact part that still required judgment. Keep both pieces together.
   - type: closing
+    image: privilege-06-closing-cursor
     line: It is the brief chance to watch the new machinery become ordinary while its choices can still be seen.
     blocks: [flow-4a, flow-4b]
 ---

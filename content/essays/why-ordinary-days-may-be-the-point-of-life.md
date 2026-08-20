@@ -88,15 +88,12 @@ It happens in between them.
 Not at the wedding, but on a Tuesday night years later when you’re both tired and deciding what to eat.  
 Not on the vacation, but while making coffee before work.  
 Not at the graduation, but during the thousands of ordinary mornings that follow.  
-Not during the breakthrough, the promotion, the revelation, or the moment everything suddenly makes sense.
-
 Most of life is quieter than that.
 
 A walk.  
 A meal.  
 A familiar room.  
 A dog sleeping nearby.  
-A text from someone you love.  
 The light changing across the floor.
 
 And yet we have a strange habit of treating these moments as filler, as though the real life is somewhere else.
@@ -116,9 +113,6 @@ Most mornings will be ordinary mornings.
 Most dinners will not be memorable.  
 Most conversations will disappear.
 
-That can initially sound disappointing.  
-Until you realize what it means.
-
 If happiness requires extraordinary circumstances, then happiness is necessarily rare. But if ordinary experience can become meaningful, almost your entire life becomes available.
 
 <!-- block: s3a -->
@@ -133,7 +127,7 @@ Take the trip.
 Retire.  
 Finally have enough time.
 
-The future contains the life you’re trying to reach. And the present becomes transportation — a bridge between where you are and where you’re supposed to be.
+The future contains the life you’re trying to reach. And the present becomes transportation, a bridge between where you are and where you’re supposed to be.
 
 The danger is that you can spend decades crossing bridges. Because every destination eventually becomes another starting point. You arrive. The mind adjusts. And almost immediately, life begins pointing somewhere else.
 
@@ -148,7 +142,7 @@ A dog walking past deserves full attention.
 
 The world hasn’t yet been divided so aggressively into important and unimportant things.
 
-Adults become efficient. We’ve seen the tree before. We know what rain is. We understand what happens at the grocery store. Familiarity allows us to move faster.
+Adults become efficient. We’ve seen the tree before. We know what rain is. Familiarity allows us to move faster.
 
 But familiarity also makes reality disappear. The more certain we become that we know what something is, the less closely we look at it.
 
@@ -205,13 +199,13 @@ A person’s voice becomes precious after they’re gone.
 
 We often recognize value most clearly when something is threatened. Perhaps wisdom is learning to perform that restoration of attention before loss requires it. Not in a gloomy way. In a clarifying way.
 
-Imagine seeing today’s life through your own eyes thirty years from now. The car you currently consider uninteresting. The face you see every morning. Your own body at its current age.
+Imagine seeing today’s life through your own eyes thirty years from now. The face you see every morning. Your own body at its current age.
 
 Would any of it still look ordinary? Probably not. It might look impossibly alive.
 
 <!-- block: s7a -->
 
-This doesn’t mean forcing yourself to appreciate every second. That would become another form of self-improvement — now you must optimize gratitude too. That misses the point.
+This doesn’t mean forcing yourself to appreciate every second. That would become another form of self-improvement. Now you must optimize gratitude too. That misses the point.
 
 Ordinary life includes irritation.  
 Boredom.  
@@ -276,7 +270,7 @@ But every person around us contains an entire private universe. Memories you’l
 
 A person you’ve known for thirty years remains fundamentally mysterious. That mystery can disappear beneath routine.
 
-Perhaps love depends partly on resisting that disappearance — loving what has become familiar without allowing familiarity to make it invisible.
+Perhaps love depends partly on resisting that disappearance, loving what has become familiar without allowing familiarity to make it invisible.
 
 Romantic love often begins with novelty. Everything about the person is interesting. How they laugh. What they eat.
 
@@ -302,12 +296,11 @@ Perhaps a good life isn’t one containing the maximum number of extraordinary e
 
 A life where a quiet morning can be enough. Where walking somewhere familiar still occasionally surprises you. Where the people you’ve known longest don’t become invisible. Where nothing remarkable needs to happen for you to feel that the day counted.
 
-Because eventually, when we look backward, I suspect much of what we’ll want won’t be another accomplishment. We’ll want something far less dramatic.
+Because eventually, when we look backward, I suspect much of what we’ll want won’t be another accomplishment.
 
 One more dinner.  
 One more walk.  
 One more morning in the old house.  
-One more ridiculous conversation.  
 One more chance to hear somebody come through the door.  
 One more afternoon when nothing happened.
 

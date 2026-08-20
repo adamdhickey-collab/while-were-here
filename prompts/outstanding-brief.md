@@ -4,7 +4,7 @@
 
 **Book:** *While We're Here* — Adam Hickey. A 300 × 300 mm hardcover of short
 essays on attention, ordinary life, hidden systems and being alive. Twenty-three
-images are already made and placed. These 42 are what remain, and they
+images are already made and placed. These 45 are what remain, and they
 are the two registers the set is currently missing entirely.
 
 ## What the book already looks like
@@ -354,6 +354,22 @@ Vertical frame (2:3), subject low, generous empty space above.
 Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
 ```
 
+### intelligence-06-closing-hands
+
+**Save as** `public/images/photography/intelligence-06-closing-hands.png` · 1:1 · target 6000 × 6000 px
+**Where it goes** Closing spread (recto, full bleed)
+**Why it is there** The closing recto. The essay ends on tools left ready, and this is that, photographed quietly and full bleed.
+
+```text
+A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
+
+A workbench after the work: tools set down where they were used, a pencil, a rule, sawdust, nobody in frame.
+
+Square frame (1:1).
+
+Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
+```
+
 ## The Strange Privilege of Being Alive During a Technological Revolution
 
 ### ground-05-imagine-to-make
@@ -498,6 +514,22 @@ Vertical frame (2:3), subject low, generous empty space above.
 Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
 ```
 
+### pilgrimage-06-closing-stone
+
+**Save as** `public/images/photography/pilgrimage-06-closing-stone.png` · 1:1 · target 6000 × 6000 px
+**Where it goes** Closing spread (recto, full bleed)
+**Why it is there** The closing recto. The essay ends on exactly this gesture, so the picture is the last sentence and needs no caption.
+
+```text
+A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
+
+One hand flat against cold worn stone, close, the wear of other hands visible in the surface around it.
+
+Square frame (1:1).
+
+Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
+```
+
 ## While We're Here
 
 ### ground-08-nested-systems
@@ -598,6 +630,22 @@ A believable documentary photograph of the real world — quiet, contemplative, 
 A dog asleep under a desk, cables and feet above her, the screen out of frame.
 
 Vertical frame (2:3), subject low, generous empty space above.
+
+Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
+```
+
+### privilege-06-closing-cursor
+
+**Save as** `public/images/photography/privilege-06-closing-cursor.png` · 1:1 · target 6000 × 6000 px
+**Where it goes** Closing spread (recto, full bleed)
+**Why it is there** The closing recto. The essay ends on the cursor continuing to blink and somebody still having to decide.
+
+```text
+A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
+
+A dim room, a screen out of focus, and a cursor still blinking in an empty field after the answer has been read.
+
+Square frame (1:1).
 
 Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
 ```

@@ -4,6 +4,7 @@ place: The back deck
 date: October
 stage: 5
 image: field-note-04-firepit
+variant: band
 hand: the last warm night
 status: written
 brief: >-

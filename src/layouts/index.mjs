@@ -188,11 +188,21 @@ export const divider = (section, ctx) => ({
       cls: 'divider',
       html: `
         <div class="page__block">
-          <p class="divider__num numeral">Part ${esc(section.number)}</p>
-          <h2 class="display">${esc(section.title)}</h2>
-          <ul class="divider__list">
-            <li><p class="caption">${esc(section.blurb)}</p></li>
-          </ul>
+          <div class="divider__stage">
+            <p class="label"><b>Stage ${esc(section.number)}</b> ${esc(section.imperative || '')}${
+              section.stageTitle ? ' ' + esc(section.stageTitle) : ''}</p>
+          </div>
+          <div class="divider__head">
+            <p class="divider__num numeral">Part ${esc(section.number)}</p>
+            <h2 class="display">${esc(section.title)}</h2>
+            ${section.statement ? `<p class="divider__statement">${esc(section.statement)}</p>` : ''}
+          </div>
+          <div class="divider__foot">
+            <p class="specimen divider__blurb">${esc(section.blurb)}</p>
+            <ol class="divider__essays">
+              ${(section.essays || []).map((e) => `<li><span class="divider__essay-n"></span>${esc(e)}</li>`).join('')}
+            </ol>
+          </div>
         </div>`,
     },
   ],

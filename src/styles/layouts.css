@@ -205,15 +205,73 @@
   gap: var(--sp-3);
 }
 
-/* ---- Section divider ---------------------------------------------------- */
+/* ---- Section divider ----------------------------------------------------
+   A threshold, and the only page that can tell the reader where they are in
+   the arc. The stage and its imperative are announced here and nowhere else;
+   without them the progression is a thing the book does to the reader rather
+   than something the reader can follow. The essays of the part are listed
+   because a divider that promises and then lists is a door, and one that only
+   promises is a poster.                                                      */
 
 .divider__figure { position: absolute; inset: 0; }
-.divider .page__block { align-content: end; }
-.divider__num { grid-column: 1 / 13; margin-bottom: var(--sp-6); }
-.divider .display { grid-column: 1 / 13; max-width: 190mm; }
-.divider__list { grid-column: 1 / 9; margin: var(--sp-7) 0 0; padding: 0; display: grid; gap: var(--sp-2); }
-.divider__list li { list-style: none; }
-.divider__list .caption { font-size: var(--t-small); line-height: 1.5; color: var(--ink-soft); max-width: 54ch; }
+.divider .page__block { align-content: space-between; }
+.divider__stage,
+.divider__head,
+.divider__foot { grid-column: 1 / 13; }
+
+.divider__stage { padding-bottom: var(--sp-3); border-bottom: 0.6pt solid var(--ink); }
+
+.divider__num { margin-bottom: var(--sp-4); }
+.divider .display { max-width: 190mm; }
+.divider__statement {
+  font-family: var(--font-display);
+  font-size: var(--t-title-xs);
+  line-height: 1.24;
+  letter-spacing: var(--ls-title);
+  word-spacing: 0.05em;
+  font-weight: 400;
+  color: var(--ink-soft);
+  margin: var(--sp-6) 0 0;
+  max-width: 132mm;
+  text-wrap: balance;
+}
+
+.divider__blurb { max-width: 96mm; margin-bottom: var(--sp-5); }
+.divider__essays {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: var(--sp-2);
+  counter-reset: essay;
+  border-top: 0.3pt solid var(--rule);
+  padding-top: var(--sp-3);
+}
+.divider__essays li {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 11mm 1fr;
+  align-items: baseline;
+  font-family: var(--font-display);
+  font-size: var(--t-sub);
+  line-height: 1.2;
+  letter-spacing: var(--ls-title);
+  word-spacing: 0.05em;
+  font-weight: 400;
+  color: var(--ink);
+  max-width: 172mm;
+}
+.divider__essay-n::before {
+  counter-increment: essay;
+  content: counter(essay, decimal-leading-zero);
+  font-family: var(--font-note);
+  font-size: var(--t-micro);
+  letter-spacing: 0.1em;
+  color: var(--accent-1);
+}
+
+.divider--dark { background: var(--ink); }
+.divider--dark .display,
+.divider--dark .meta { color: var(--paper); }
 
 /* ---- Front matter ------------------------------------------------------- */
 

@@ -28,6 +28,21 @@ html, body {
 /* Screen preview shows the trimmed page, so anything past trim is clipped. */
 .is-proof-screen .page { overflow: hidden; }
 
+/* ---- Ground ---------------------------------------------------------------
+   A hairline drawing under the page, at an opacity set by the stage: lighter on
+   cream, stronger on a dark ground because light lines on dark read weaker than
+   dark lines on light. It sits below everything and is hidden from assistive
+   technology — it carries no information, it carries depth. */
+.ground {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  opacity: var(--ground-opacity, 0.08);
+  pointer-events: none;
+}
+.ground img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.page__block, .folio { position: relative; z-index: 1; }
+
 /* ---- The text block and its grid ---------------------------------------- */
 .page__block {
   position: absolute;

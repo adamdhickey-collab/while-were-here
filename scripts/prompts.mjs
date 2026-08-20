@@ -97,10 +97,27 @@ const MATERIAL_AVOID =
   'heavy grading or HDR; vignettes; visible text or watermarks; symmetry; a recognisable scene ' +
   'resolving out of the texture.';
 
+const GROUND_STYLE =
+  'A minimal line drawing made entirely of single-weight hairlines on a fully transparent ' +
+  'background. No fills, no shading, no gradients, no weight variation anywhere — every line ' +
+  'in the image is exactly the same thinness. No text, no numbers, no labels, no legend, no ' +
+  'key, no border. Composed to be looked through rather than at: it will be laid underneath ' +
+  'body copy at roughly 8 to 14 percent opacity, so it has to survive being almost invisible ' +
+  'and must never resolve into a subject. Vector-clean, printed-map precision, no sketchiness.';
+
+const GROUND_AVOID =
+  'Avoid: any paper, card or background colour — the lines must sit on full transparency; ' +
+  'variable line weight; a heavier accent line every few lines; fills, tints, hatching or ' +
+  'shading; gradients; text, numerals, labels, scale bars, north arrows or legends; frames or ' +
+  'borders; drop shadows; a dense area that would darken into a blotch under text; perfect ' +
+  'radial symmetry; tiling seams or an obviously repeated motif; anything that reads as a ' +
+  'recognisable object or scene.';
+
 const promptFor = (i) => {
   const byRole = {
     handwriting: [HAND_STYLE, HAND_AVOID],
     material: [MATERIAL_STYLE, MATERIAL_AVOID],
+    ground: [GROUND_STYLE, GROUND_AVOID],
   };
   const [style, avoid] = byRole[i.role] ||
     (i.kind === 'illustration' ? [ILLO_STYLE, ILLO_AVOID] : [PHOTO_STYLE, PHOTO_AVOID]);

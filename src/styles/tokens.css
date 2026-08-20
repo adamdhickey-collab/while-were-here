@@ -192,6 +192,7 @@
   --accent-2: var(--lake);
   --accent-3: var(--amber);
   --annotation: 2;
+  --ground-opacity: 0.14;
 }
 
 /* IV — Expand awareness. The most vivid zone in the book. */
@@ -207,6 +208,7 @@
   --accent-2: var(--lavender);
   --accent-3: var(--acid);
   --annotation: 2;
+  --ground-opacity: 0.14;
 }
 
 /* V — Return with wonder. The book exhales, warmer than it began. */

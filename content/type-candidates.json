@@ -16,6 +16,54 @@
       ]
     },
     {
+      "name": "Body: Familjen Grotesk",
+      "source": "Swedish editorial grotesque \u00b7 open licence \u00b7 distinctive a, g, R \u2014 the most character of the four",
+      "display": "\"Falutin Title\", serif",
+      "text": "\"Familjen Grotesk\", sans-serif",
+      "note": "\"IBM Plex Mono\", monospace",
+      "hand": "\"Caveat\", cursive",
+      "have": [
+        "Falutin Title",
+        "Familjen Grotesk"
+      ]
+    },
+    {
+      "name": "Body: Schibsted Grotesk",
+      "source": "Drawn for a newspaper group \u00b7 open licence \u00b7 editorial, clean, warmer than Archivo",
+      "display": "\"Falutin Title\", serif",
+      "text": "\"Schibsted Grotesk\", sans-serif",
+      "note": "\"IBM Plex Mono\", monospace",
+      "hand": "\"Caveat\", cursive",
+      "have": [
+        "Falutin Title",
+        "Schibsted Grotesk"
+      ]
+    },
+    {
+      "name": "Body: Hanken Grotesk",
+      "source": "Humanist grotesque \u00b7 open licence \u00b7 warmest of the four, calligraphic residue in the letterforms",
+      "display": "\"Falutin Title\", serif",
+      "text": "\"Hanken Grotesk\", sans-serif",
+      "note": "\"IBM Plex Mono\", monospace",
+      "hand": "\"Caveat\", cursive",
+      "have": [
+        "Falutin Title",
+        "Hanken Grotesk"
+      ]
+    },
+    {
+      "name": "Body: Epilogue",
+      "source": "Grotesque with quirk in the details \u00b7 open licence \u00b7 sharpest, most contemporary",
+      "display": "\"Falutin Title\", serif",
+      "text": "\"Epilogue\", sans-serif",
+      "note": "\"IBM Plex Mono\", monospace",
+      "hand": "\"Caveat\", cursive",
+      "have": [
+        "Falutin Title",
+        "Epilogue"
+      ]
+    },
+    {
       "name": "Future Fonts \u2014 Mirta + Tuplet (recommended)",
       "source": "Mirta $60 \u00b7 Tuplet $65 \u00b7 both v0.3 in progress \u00b7 desktop + web + app",
       "display": "\"Mirta\", serif",

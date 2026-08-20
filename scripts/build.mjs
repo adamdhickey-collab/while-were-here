@@ -427,11 +427,21 @@ function typeDoc(book) {
         </div>
         <h2 class="essay-title">Why Ordinary Days May Be the Point of Life</h2>
         <p class="deck">Most of life happens between the moments we think are important.</p>
-        <div class="prose prose--drop typespec__body">
+        <div class="prose prose--cols prose--drop typespec__body">
           <p>Most of life does not happen during the big moments. It happens in between
           them. Not at the wedding, but on a Tuesday night years later when you are both
           tired and deciding what to eat. Not on the vacation, but while making coffee
-          before work.</p>
+          before work. Not at the graduation, but during the thousands of ordinary
+          mornings that follow.</p>
+          <p>We organise our memories around events. Birthdays, trips, weddings, new
+          jobs, moves, achievements. These become the chapter headings. But chapter
+          headings are not the book — the book is everything that happens between them.</p>
+          <p>If you live for eighty years, only a tiny fraction of that time will contain
+          anything you would call extraordinary. Most mornings will be ordinary mornings.
+          Most dinners will not be memorable. That can sound disappointing, until you
+          realise what it means: if happiness requires extraordinary circumstances then
+          happiness is necessarily rare, but if ordinary experience can become meaningful,
+          almost your entire life becomes available.</p>
         </div>
         <div class="typespec__foot">
           <p class="label"><b>Plate 14</b> Root network, 1:4</p>
@@ -553,6 +563,19 @@ const FONTS = [
     family: 'Caveat', weight: '500', style: 'normal' },
 ];
 
+/* Body-face candidates, loaded for the type tester only so they can be judged
+   at trim size against real copy rather than from a specimen card. Static
+   instances, for the same reason as everything else here: a variable instance
+   is written into the PDF as Type 3 glyph procedures. Delete the ones that lose. */
+const CANDIDATES = ['familjen-grotesk', 'schibsted-grotesk', 'hanken-grotesk', 'epilogue']
+  .flatMap((name) => [
+    ['400', 'normal'], ['400', 'italic'], ['500', 'normal'], ['600', 'normal'],
+  ].map(([weight, style]) => ({
+    file: `@fontsource/${name}/files/${name}-latin-${weight}-${style}.woff2`,
+    family: name.split('-').map((w) => w[0].toUpperCase() + w.slice(1)).join(' '),
+    weight, style,
+  })));
+
 /* Licensed faces live outside the repo in fonts-licensed/ and are never
    committed — the Plattner Type EULA prohibits redistribution and prohibits
    serving the desktop OTFs from a website, and this repo is public. When the
@@ -624,6 +647,20 @@ async function installFonts(out) {
     const src = path.join(root, 'node_modules', f.file);
     const name = path.basename(f.file);
     if (!fs.existsSync(src)) { console.warn(`  ! missing font ${f.file}`); continue; }
+    fs.copyFileSync(src, path.join(dir, name));
+    css += `@font-face {
+  font-family: "${f.family}";
+  src: url("fonts/${name}") format("woff2");
+  font-weight: ${f.weight};
+  font-style: ${f.style};
+  font-display: block;
+}\n`;
+  }
+
+  for (const f of CANDIDATES) {
+    const src = path.join(root, 'node_modules', f.file);
+    if (!fs.existsSync(src)) continue;
+    const name = path.basename(f.file);
     fs.copyFileSync(src, path.join(dir, name));
     css += `@font-face {
   font-family: "${f.family}";

@@ -4,7 +4,7 @@
 
 **Book:** *While We're Here* — Adam Hickey. A 300 × 300 mm hardcover of short
 essays on attention, ordinary life, hidden systems and being alive. Twenty-three
-images are already made and placed. These 5 are what remain, and they
+images are already made and placed. These 13 are what remain, and they
 are the two registers the set is currently missing entirely.
 
 ## What the book already looks like
@@ -130,4 +130,140 @@ Condensation on a cold window at macro scale, with the world beyond it entirely 
 Wide panoramic frame (2:1). This runs across a two-page spread, so keep the centre calm and place nothing important in the middle 30 mm.
 
 Avoid: any object, edge, hem, seam or boundary — only surface; anything that lets the viewer work out the scale; styled or arranged compositions; props; studio seamless backgrounds; heavy grading or HDR; vignettes; visible text or watermarks; symmetry; a recognisable scene resolving out of the texture.
+```
+
+### ground-01-contour-quiet
+
+**Save as** `public/images/illustration/ground-01-contour-quiet.png` · 1:1 · target 6000 × 6000 px
+**Where it goes** Under a two-column reading spread
+**Why it is there** Stage I reading spreads. The one cartographic ground in the book.
+**Watch for** Transparent PNG, hairlines only — the book supplies the paper. Uniform single weight throughout: no heavier accent lines, no shading. Laid in at 8% — anything heavier than a hairline turns to mud.
+
+```text
+A minimal line drawing made entirely of single-weight hairlines on a fully transparent background. No fills, no shading, no gradients, no weight variation anywhere — every line in the image is exactly the same thinness. No text, no numbers, no labels, no legend, no key, no border. Composed to be looked through rather than at: it will be laid underneath body copy at roughly 8 to 14 percent opacity, so it has to survive being almost invisible and must never resolve into a subject. Vector-clean, printed-map precision, no sketchiness.
+
+Fine topographic contour lines describing very gentle terrain. **Composition: the upper two-thirds of the frame is almost flat — three or four long, widely spaced lines and a great deal of empty space — because two columns of body copy sit there. The terrain gathers only in the bottom third and along the outer edge, where the contours nest closer together.** Long slow curves, never crowding into dense bands.
+
+Square frame (1:1).
+
+Avoid: any paper, card or background colour — the lines must sit on full transparency; variable line weight; a heavier accent line every few lines; fills, tints, hatching or shading; gradients; text, numerals, labels, scale bars, north arrows or legends; frames or borders; drop shadows; a dense area that would darken into a blotch under text; perfect radial symmetry; tiling seams or an obviously repeated motif; anything that reads as a recognisable object or scene.
+```
+
+### ground-02-grain-rings
+
+**Save as** `public/images/illustration/ground-02-grain-rings.png` · 1:1 · target 6000 × 6000 px
+**Where it goes** Under an essay opener
+**Why it is there** Openers. A texture, not a map — and it rhymes with the tree sequence.
+**Watch for** Transparent PNG, hairlines only — the book supplies the paper. Uniform single weight throughout: no heavier accent lines, no shading. The knot must not fall near the centre, where the fold or the title would land on it.
+
+```text
+A minimal line drawing made entirely of single-weight hairlines on a fully transparent background. No fills, no shading, no gradients, no weight variation anywhere — every line in the image is exactly the same thinness. No text, no numbers, no labels, no legend, no key, no border. Composed to be looked through rather than at: it will be laid underneath body copy at roughly 8 to 14 percent opacity, so it has to survive being almost invisible and must never resolve into a subject. Vector-clean, printed-map precision, no sketchiness.
+
+The grain of a sawn plank: long near-parallel hairlines running the full height of the frame, wandering slightly as real grain does, with the concentric distortion of a single knot. **Composition: the knot sits low and to one side, in the outer third. The upper half is quiet, near-parallel grain, because a title and deck sit there.** No board edge, no bark, no object.
+
+Square frame (1:1).
+
+Avoid: any paper, card or background colour — the lines must sit on full transparency; variable line weight; a heavier accent line every few lines; fills, tints, hatching or shading; gradients; text, numerals, labels, scale bars, north arrows or legends; frames or borders; drop shadows; a dense area that would darken into a blotch under text; perfect radial symmetry; tiling seams or an obviously repeated motif; anything that reads as a recognisable object or scene.
+```
+
+### ground-03-ripple-interference
+
+**Save as** `public/images/illustration/ground-03-ripple-interference.png` · 2:1 · target 8000 × 4000 px
+**Where it goes** Under an image-pair or reading spread
+**Why it is there** Stage II. Carries the essay's argument about noticing without illustrating it.
+**Watch for** Transparent PNG, hairlines only — the book supplies the paper. Uniform single weight throughout: no heavier accent lines, no shading. Runs across the fold: keep the interference away from the centre 30 mm, where it would read as a printing fault.
+
+```text
+A minimal line drawing made entirely of single-weight hairlines on a fully transparent background. No fills, no shading, no gradients, no weight variation anywhere — every line in the image is exactly the same thinness. No text, no numbers, no labels, no legend, no key, no border. Composed to be looked through rather than at: it will be laid underneath body copy at roughly 8 to 14 percent opacity, so it has to survive being almost invisible and must never resolve into a subject. Vector-clean, printed-map precision, no sketchiness.
+
+Concentric ripples spreading from two separate points, as on still water struck twice. Where the two sets meet they cross into a fine interference pattern. **Composition: the two entry points sit low, near the bottom corners; the rings open upward and have largely dissipated by the top third, which stays open for text.**
+
+Wide panoramic frame (2:1). This runs across a two-page spread, so keep the centre calm and place nothing important in the middle 30 mm.
+
+Avoid: any paper, card or background colour — the lines must sit on full transparency; variable line weight; a heavier accent line every few lines; fills, tints, hatching or shading; gradients; text, numerals, labels, scale bars, north arrows or legends; frames or borders; drop shadows; a dense area that would darken into a blotch under text; perfect radial symmetry; tiling seams or an obviously repeated motif; anything that reads as a recognisable object or scene.
+```
+
+### ground-04-rain-trace
+
+**Save as** `public/images/illustration/ground-04-rain-trace.png` · 1:1 · target 6000 × 6000 px
+**Where it goes** Under a full-bleed or opener
+**Why it is there** The most placement-flexible ground — use it where the type position is not yet settled.
+**Watch for** Transparent PNG, hairlines only — the book supplies the paper. Uniform single weight throughout: no heavier accent lines, no shading. No convergence, no perspective, no vanishing point — the lines stay parallel.
+
+```text
+A minimal line drawing made entirely of single-weight hairlines on a fully transparent background. No fills, no shading, no gradients, no weight variation anywhere — every line in the image is exactly the same thinness. No text, no numbers, no labels, no legend, no key, no border. Composed to be looked through rather than at: it will be laid underneath body copy at roughly 8 to 14 percent opacity, so it has to survive being almost invisible and must never resolve into a subject. Vector-clean, printed-map precision, no sketchiness.
+
+Long parallel hairlines leaning about twelve degrees off vertical and running off all four edges — rain, or a seismograph that ran all night. Spacing varies irregularly; some lines break and restart; a few run the full height uninterrupted. **Composition: even across the whole frame with no focal point at all, so type can be placed anywhere on it.**
+
+Square frame (1:1).
+
+Avoid: any paper, card or background colour — the lines must sit on full transparency; variable line weight; a heavier accent line every few lines; fills, tints, hatching or shading; gradients; text, numerals, labels, scale bars, north arrows or legends; frames or borders; drop shadows; a dense area that would darken into a blotch under text; perfect radial symmetry; tiling seams or an obviously repeated motif; anything that reads as a recognisable object or scene.
+```
+
+### ground-05-venation
+
+**Save as** `public/images/illustration/ground-05-venation.png` · 1:1 · target 6000 × 6000 px
+**Where it goes** Under a dark-ground spread
+**Why it is there** Stage III. Pairs across the book with the stitched ground in Stage V.
+**Watch for** Transparent PNG with WHITE or pale hairlines — this one sits on a dark page, not cream. Laid in at 14%, because light on dark reads weaker than dark on light.
+
+```text
+A minimal line drawing made entirely of single-weight hairlines on a fully transparent background. No fills, no shading, no gradients, no weight variation anywhere — every line in the image is exactly the same thinness. No text, no numbers, no labels, no legend, no key, no border. Composed to be looked through rather than at: it will be laid underneath body copy at roughly 8 to 14 percent opacity, so it has to survive being almost invisible and must never resolve into a subject. Vector-clean, printed-map precision, no sketchiness.
+
+The vein structure of a single leaf with the leaf removed: a midrib entering from one edge, secondary veins branching from it, and the fine reticulated net between them. **Composition: the midrib enters at the outer edge and the branching is dense there, thinning steadily across the frame until it fades out entirely two-thirds of the way over — that cleared area is where reversed-out text sits.** No leaf outline, no stem.
+
+Square frame (1:1).
+
+Avoid: any paper, card or background colour — the lines must sit on full transparency; variable line weight; a heavier accent line every few lines; fills, tints, hatching or shading; gradients; text, numerals, labels, scale bars, north arrows or legends; frames or borders; drop shadows; a dense area that would darken into a blotch under text; perfect radial symmetry; tiling seams or an obviously repeated motif; anything that reads as a recognisable object or scene.
+```
+
+### ground-06-frost-dendrite
+
+**Save as** `public/images/illustration/ground-06-frost-dendrite.png` · 2:1 · target 8000 × 4000 px
+**Where it goes** Under the most vivid spread in the book
+**Why it is there** Stage IV. The most elaborate ground, at the point the book is most vivid.
+**Watch for** Transparent PNG, WHITE or pale hairlines for a dark page. Crystals must interlock irregularly — a repeated snowflake motif kills it.
+
+```text
+A minimal line drawing made entirely of single-weight hairlines on a fully transparent background. No fills, no shading, no gradients, no weight variation anywhere — every line in the image is exactly the same thinness. No text, no numbers, no labels, no legend, no key, no border. Composed to be looked through rather than at: it will be laid underneath body copy at roughly 8 to 14 percent opacity, so it has to survive being almost invisible and must never resolve into a subject. Vector-clean, printed-map precision, no sketchiness.
+
+Frost growing on cold glass: dendritic crystals radiating from several separate nucleation points, each throwing out fine branching arms that interlock with its neighbours. **Composition: the nucleation points sit along the bottom edge and the growth climbs upward, thinning as it goes, so the upper half is nearly clear for large reversed type.**
+
+Wide panoramic frame (2:1). This runs across a two-page spread, so keep the centre calm and place nothing important in the middle 30 mm.
+
+Avoid: any paper, card or background colour — the lines must sit on full transparency; variable line weight; a heavier accent line every few lines; fills, tints, hatching or shading; gradients; text, numerals, labels, scale bars, north arrows or legends; frames or borders; drop shadows; a dense area that would darken into a blotch under text; perfect radial symmetry; tiling seams or an obviously repeated motif; anything that reads as a recognisable object or scene.
+```
+
+### ground-07-stitch-weave
+
+**Save as** `public/images/illustration/ground-07-stitch-weave.png` · 1:1 · target 6000 × 6000 px
+**Where it goes** Under a closing spread
+**Why it is there** Stage V, and the rhyme that closes against the venation in Stage III — nature's branching line, then the human grid, seventy pages apart.
+**Watch for** Transparent PNG, hairlines only — the book supplies the paper. Uniform single weight throughout: no heavier accent lines, no shading. The unfinished corner is the whole idea. A perfectly even weave is wallpaper.
+
+```text
+A minimal line drawing made entirely of single-weight hairlines on a fully transparent background. No fills, no shading, no gradients, no weight variation anywhere — every line in the image is exactly the same thinness. No text, no numbers, no labels, no legend, no key, no border. Composed to be looked through rather than at: it will be laid underneath body copy at roughly 8 to 14 percent opacity, so it has to survive being almost invisible and must never resolve into a subject. Vector-clean, printed-map precision, no sketchiness.
+
+Warp and weft drawn as hairlines: a plain weave with the irregularity of something made by hand — threads slightly off-parallel, tension varying, a few crossing points pulled tighter than the rest. **Composition: the weave is complete and even across most of the frame, but at one corner the threads run out and the grid simply stops, leaving open paper.** No cloth edge, no hem, no needle.
+
+Square frame (1:1).
+
+Avoid: any paper, card or background colour — the lines must sit on full transparency; variable line weight; a heavier accent line every few lines; fills, tints, hatching or shading; gradients; text, numerals, labels, scale bars, north arrows or legends; frames or borders; drop shadows; a dense area that would darken into a blotch under text; perfect radial symmetry; tiling seams or an obviously repeated motif; anything that reads as a recognisable object or scene.
+```
+
+### ground-08-harmonograph
+
+**Save as** `public/images/illustration/ground-08-harmonograph.png` · 2:1 · target 8000 × 4000 px
+**Where it goes** Under a pull-quote spread
+**Why it is there** Pull-quote spreads, where the centre must stay clear and the edges can carry weight.
+**Watch for** Transparent PNG, hairlines only — the book supplies the paper. Uniform single weight throughout: no heavier accent lines, no shading. One unbroken line, not many separate ovals. Off-centre, so it never reads as a target.
+
+```text
+A minimal line drawing made entirely of single-weight hairlines on a fully transparent background. No fills, no shading, no gradients, no weight variation anywhere — every line in the image is exactly the same thinness. No text, no numbers, no labels, no legend, no key, no border. Composed to be looked through rather than at: it will be laid underneath body copy at roughly 8 to 14 percent opacity, so it has to survive being almost invisible and must never resolve into a subject. Vector-clean, printed-map precision, no sketchiness.
+
+The trace of a harmonograph: one single continuous line looping thousands of times, each pass falling slightly inside the last as the pendulum decays, so the figure is densest at its outer envelope and opens out toward the middle. **Composition: the dense envelope rings the outer edges of the frame and the centre is nearly empty, because a very large pull quote sits there.**
+
+Wide panoramic frame (2:1). This runs across a two-page spread, so keep the centre calm and place nothing important in the middle 30 mm.
+
+Avoid: any paper, card or background colour — the lines must sit on full transparency; variable line weight; a heavier accent line every few lines; fills, tints, hatching or shading; gradients; text, numerals, labels, scale bars, north arrows or legends; frames or borders; drop shadows; a dense area that would darken into a blotch under text; perfect radial symmetry; tiling seams or an obviously repeated motif; anything that reads as a recognisable object or scene.
 ```

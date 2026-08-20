@@ -5,7 +5,7 @@
    No essay copy lives here — only composition.
    ========================================================================== */
 
-import { esc, figure, ring, radiant, block } from './helpers.mjs';
+import { esc, figure, ground, ring, radiant, block } from './helpers.mjs';
 import { diagrams } from './diagrams.mjs';
 
 const nb = (s = '') => String(s).replace(/ (\w{1,3})$/, '&nbsp;$1');
@@ -324,6 +324,7 @@ const readingTwo = (spread, essay, ctx) => ({
       folio: true,
       cls: 'reading reading--two',
       html: `
+        ${ground(ctx.image(spread.ground), { root: ctx.root })}
         <div class="page__block">
           <div class="reading__running">
             <p class="meta">${esc(essay.runningHead)}</p>
@@ -342,6 +343,7 @@ const readingTwo = (spread, essay, ctx) => ({
       folio: true,
       cls: 'reading reading--two',
       html: `
+        ${ground(ctx.image(spread.ground), { root: ctx.root })}
         <div class="page__block">
           <div class="reading__running">
             <p class="meta">&nbsp;</p>
@@ -365,6 +367,7 @@ const readingAside = (spread, essay, ctx) => ({
       folio: true,
       cls: 'reading reading--aside',
       html: `
+        ${ground(ctx.image(spread.ground), { root: ctx.root })}
         <div class="page__block">
           <div class="reading__running">
             <p class="meta">${esc(essay.runningHead)}</p>
@@ -380,6 +383,7 @@ const readingAside = (spread, essay, ctx) => ({
       folio: true,
       cls: 'reading reading--aside',
       html: `
+        ${ground(ctx.image(spread.ground), { root: ctx.root })}
         <div class="page__block">
           <div class="prose prose--generous">${block(ctx.blocks, spread.blocks[1])}</div>
           ${spread.figure ? `

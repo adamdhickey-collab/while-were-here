@@ -115,7 +115,41 @@ at macro scale so it reads as terrain before it reads as substance.
 
 Built as spread type `material-break`.
 
-### 10 · PERSONAL
+### 10 · GROUND
+A hairline line-drawing laid underneath a spread at very low opacity — contour,
+bathymetric, isobar, root network, celestial graticule, watershed.
+
+- **Lives in** behind a reading, opener or full-bleed spread
+- **Stages** matched to the stage, and **only one of the eight is a map** —
+  contour at I; grain, ripple and rain through I–II; venation on the dark pages
+  of III; frost and harmonograph at IV; stitched weave at V.
+- **Treatment** 8% opacity on cream, 14% on a dark ground because light on dark
+  reads weaker. Single hairline weight throughout, on transparency — the book
+  supplies the paper.
+- **Rules**
+  - **Never under a plate, a specimen or a photograph.** A ground is for pages
+    that are mostly type. Two layers of image is not depth, it is noise.
+  - **One per spread, and not on consecutive spreads.** The effect works by
+    being noticed second and only sometimes.
+  - **No weight variation.** The usual cartographic habit of a heavier line
+    every fifth contour is exactly wrong here — at 8% it turns to mud.
+  - **It must not resolve into a subject.** The moment a reader identifies it as
+    a lake or a night sky, it stops being ground and starts competing.
+  - **Each one is drawn for a slot.** The density is placed where the type is
+    not: contour goes flat across its top two-thirds because two columns sit
+    there; the harmonograph is dense at its edges and empty in the middle
+    because a pull quote sits there; frost climbs from the bottom because large
+    reversed type sits above it. A ground that ignores the composition it is
+    going under is wallpaper, however well drawn.
+- **Why it exists** The book is about what is underneath the ordinary surface of
+  things. A layer that is genuinely there and genuinely easy to miss is the one
+  piece of the design that argues the thesis rather than describing it.
+
+**Venation (III) and the stitched weave (V) are the pair that closes.** One is
+the way a living thing distributes; the other is the way a person makes a grid
+by hand. Nature's branching line, then the human one, seventy pages apart.
+
+### 11 · PERSONAL
 Real photographs. Family, dogs, the lake, old objects, places with meaning.
 
 - **Lives in** Field Notes · closing spreads · the domestic slots

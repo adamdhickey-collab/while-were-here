@@ -48,6 +48,19 @@ export function figure(image, opts = {}) {
     </div>`;
 }
 
+/**
+ * A ground layer: a hairline drawing laid under the page at very low opacity.
+ * Unlike every other figure this one renders NOTHING when the file is missing —
+ * a labelled placeholder plate at 8% opacity would be an invisible smudge, and a
+ * ground is the one layer whose absence is better than a stand-in for it.
+ */
+export function ground(image, { root = process.cwd() } = {}) {
+  if (!image) return '';
+  const rel = path.join('images', KIND_DIR[image.kind] || 'illustration', image.filename);
+  if (!fs.existsSync(path.join(root, 'public', rel))) return '';
+  return `<div class="ground" aria-hidden="true"><img src="${esc(rel)}" alt=""></div>`;
+}
+
 export const folio = (n, rubric) =>
   `<div class="folio">${n}${rubric ? `<span class="folio__rubric">${esc(rubric)}</span>` : ''}</div>`;
 

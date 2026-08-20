@@ -30,7 +30,8 @@ Then open <http://localhost:4321/> — a small hub linking the three views.
 | `npm run pdf` | Full-resolution PDF → `dist/while-were-here.pdf`. Around 200 MB with real imagery — correct for a printer, unwieldy on a laptop. |
 | `npm run pdf:proof` | Review PDF at screen resolution → `dist/while-were-here-proof.pdf`, roughly 30 MB. |
 | `npm run pdf:press` | Press PDF → `dist/while-were-here-press.pdf` (bleed + crop marks). |
-| `npm run prompts` | Regenerate `prompts/image-prompts.md` from the manifest. |
+| `npm run prompts` | Regenerate the full prompt library from the manifest. |
+| `npm run brief` | Write a self-contained brief for the assets not yet made. |
 | `npm run place` | Put a generated image into the book; bare, it lists what is missing. |
 | `npm run fonts:setup` | One-time: venv + convert the licensed OTFs for press. |
 | `npm run credits` | Rebuild the attribution page from the manifest. |

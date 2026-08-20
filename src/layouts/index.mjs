@@ -194,7 +194,8 @@ export const divider = (section, ctx) => ({
           </div>
           <div class="divider__head">
             <p class="divider__num numeral">Part ${esc(section.number)}</p>
-            <h2 class="display">${esc(section.title)}</h2>
+            <h2 class="display divider__title${section.title.split(/\s+/).length > 3 ? ' display--long' : ''}">${
+              section.title.split(/\s+/).map((w) => `<span>${esc(w)}</span>`).join('')}</h2>
             ${section.statement ? `<p class="divider__statement">${esc(section.statement)}</p>` : ''}
           </div>
           <div class="divider__foot">

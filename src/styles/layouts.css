@@ -222,7 +222,17 @@
 .divider__stage { padding-bottom: var(--sp-3); border-bottom: 0.6pt solid var(--ink); }
 
 .divider__num { margin-bottom: var(--sp-4); }
-.divider .display { max-width: 190mm; }
+
+/* Part titles stack one word per line, deliberately rather than because they
+   happen not to fit. Left to wrap on its own, "Look Again" sat on one line at
+   the old tracking and on two at the new one, and a four-word title would have
+   broken somewhere else again — the stack has to be a decision, not a
+   by-product of the current measure. */
+.divider__title { max-width: none; }
+.divider__title span { display: block; }
+/* Four words at 104pt would run past the block, so a long title steps down a
+   rung on the display scale rather than being allowed to overflow. */
+.divider__title.display--long { font-size: var(--t-cover); }
 .divider__statement {
   font-family: var(--font-display);
   font-size: var(--t-title-xs);

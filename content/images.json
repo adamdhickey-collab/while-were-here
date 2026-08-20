@@ -395,7 +395,7 @@
       "purpose": "The divider for Part II. It has to say \"look at the pattern, not the thing\" before a single essay does.",
       "aspect": "1:1",
       "target": "1024 × 1024 px (ChatGPT's largest for 1:1 — 85 dpi at 306 mm)",
-      "status": "not generated",
+      "status": "generated",
       "composite": false,
       "revision": "A screen print of a forest horizon was tried here and pulled. See content/plan/screen-print.md. Target lowered 20 Aug 2026 to the largest canvas ChatGPT actually produces. The previous figure asked for a resolution no available generator could reach."
     },
@@ -412,7 +412,7 @@
       "purpose": "The essay opens on this. Evidence that a route can be held by contact alone.",
       "aspect": "1:1",
       "target": "1024 × 1024 px (ChatGPT's largest for 1:1 — 85 dpi at 306 mm)",
-      "status": "not generated",
+      "status": "generated",
       "composite": false,
       "revision": "Target lowered 20 Aug 2026 to the largest canvas ChatGPT actually produces. The previous figure asked for a resolution no available generator could reach."
     },
@@ -429,9 +429,13 @@
       "purpose": "Band under a two-column reading spread. The margin note beside it is the topological-distance finding.",
       "aspect": "3:1",
       "target": "1536 × 512 px (ChatGPT's largest for 3:1 — 165 dpi at 236 mm)",
-      "status": "not generated",
+      "status": "generated",
       "composite": false,
-      "revision": "Target lowered 20 Aug 2026 to the largest canvas ChatGPT actually produces. The previous figure asked for a resolution no available generator could reach. Spread description corrected 20 Aug 2026. It read “across the fold”, but .reading__band spans the twelve-column grid inside one page's text block — the band is 236 × 82 mm on the verso and has never crossed the fold. The wrong width had been used to compute this entry's resolution target."
+      "revision": "Target lowered 20 Aug 2026 to the largest canvas ChatGPT actually produces. The previous figure asked for a resolution no available generator could reach. Spread description corrected 20 Aug 2026. It read “across the fold”, but .reading__band spans the twelve-column grid inside one page's text block — the band is 236 × 82 mm on the verso and has never crossed the fold. The wrong width had been used to compute this entry's resolution target.",
+      "origin": "archive",
+      "source": "Pexels photo 38305943 (Yuri Elizegi); bare-tree foreground from Pexels photo 10545719 (Vera Emilie A Bomstad)",
+      "license": "Pexels License",
+      "credit": "Adapted from a photograph by Yuri Elizegi, with the bare-tree foreground from a photograph by Vera Emilie A Bomstad, both via Pexels. Composited and colour-graded for this book"
     },
     {
       "id": "systems-05-physarum-network",
@@ -446,9 +450,13 @@
       "purpose": "Band under the spread that carries the Tokyo experiment. The picture has to make the network legible as a network, not as mold.",
       "aspect": "3:1",
       "target": "1536 × 512 px (ChatGPT's largest for 3:1 — 165 dpi at 236 mm)",
-      "status": "not generated",
+      "status": "generated",
       "composite": false,
-      "revision": "Target lowered 20 Aug 2026 to the largest canvas ChatGPT actually produces. The previous figure asked for a resolution no available generator could reach. Spread description corrected 20 Aug 2026. It read “across the fold”, but .reading__band spans the twelve-column grid inside one page's text block — the band is 236 × 82 mm on the verso and has never crossed the fold. The wrong width had been used to compute this entry's resolution target."
+      "revision": "Target lowered 20 Aug 2026 to the largest canvas ChatGPT actually produces. The previous figure asked for a resolution no available generator could reach. Spread description corrected 20 Aug 2026. It read “across the fold”, but .reading__band spans the twelve-column grid inside one page's text block — the band is 236 × 82 mm on the verso and has never crossed the fold. The wrong width had been used to compute this entry's resolution target.",
+      "origin": "archive",
+      "source": "https://commons.wikimedia.org/wiki/File:Slime_mould_(P._polycephalum).jpg",
+      "license": "CC BY 2.0",
+      "credit": "Rob Cruickshank, “Slime mould (P. polycephalum)”, via Wikimedia Commons. Cropped, masked, composited and colour-graded for this book"
     },
     {
       "id": "systems-03-termite-section",
@@ -463,7 +471,7 @@
       "purpose": "Drawn rather than photographed, because the whole point is a section nobody can stand back and see.",
       "aspect": "2:3",
       "target": "1024 × 1536 px (ChatGPT's largest for 2:3 — 135 dpi at 192 mm)",
-      "status": "not generated",
+      "status": "generated",
       "composite": false,
       "revision": "Target lowered 20 Aug 2026 to the largest canvas ChatGPT actually produces. The previous figure asked for a resolution no available generator could reach."
     },
@@ -781,7 +789,7 @@
       "purpose": "An alternative cover artwork for the `orb` treatment. A circle on a square is the strongest graphic move available on a 300 mm cover, and it makes the title's 'here' mean somewhere.",
       "aspect": "1:1",
       "target": "1024 × 1024 px (ChatGPT's largest for 1:1 — 82 dpi at 318 mm)",
-      "status": "not generated",
+      "status": "generated",
       "selection": "—",
       "revision": "Transparent PNG or warm cream ground. **Not the Earth**: no recognisable continents, no coastlines, no blue-marble colouring, no latitude/longitude graticule, no space, no stars, no glow or lens flare, no terminator line dividing day from night. The circle is drawn — very slightly out of true, with a hand-inked edge — not rendered as a lit sphere. Keep the upper third of the circle quieter: on the `orb` cover the title sits above and slightly over it. Target lowered 20 Aug 2026 to the largest canvas ChatGPT actually produces. The previous figure asked for a resolution no available generator could reach."
     },
@@ -887,7 +895,7 @@
       "purpose": "The divider where the book inverts. Pale ink on charcoal, and the first page that is not cream.",
       "aspect": "1:1",
       "target": "1024 × 1024 px (ChatGPT's largest for 1:1 — 85 dpi at 306 mm)",
-      "status": "not generated",
+      "status": "generated",
       "composite": false,
       "revision": "Target lowered 20 Aug 2026 to the largest canvas ChatGPT actually produces. The previous figure asked for a resolution no available generator could reach."
     },
@@ -1392,9 +1400,13 @@
       "purpose": "The closing recto. The essay ends on tools left ready, and this is that, photographed quietly and full bleed.",
       "aspect": "1:1",
       "target": "1024 × 1024 px (ChatGPT's largest for 1:1 — 85 dpi at 306 mm)",
-      "status": "not generated",
+      "status": "generated",
       "composite": false,
-      "revision": "Target lowered 20 Aug 2026 to the largest canvas ChatGPT actually produces. The previous figure asked for a resolution no available generator could reach."
+      "revision": "Target lowered 20 Aug 2026 to the largest canvas ChatGPT actually produces. The previous figure asked for a resolution no available generator could reach.",
+      "origin": "archive",
+      "source": "Pexels photo 6790754 (Tima Miroshnichenko)",
+      "license": "Pexels License",
+      "credit": "Adapted from a photograph by Tima Miroshnichenko via Pexels. Colour-graded and composited for this book"
     },
     {
       "id": "privilege-06-closing-cursor",
@@ -1409,9 +1421,13 @@
       "purpose": "The closing recto. The essay ends on the cursor continuing to blink and somebody still having to decide.",
       "aspect": "1:1",
       "target": "1024 × 1024 px (ChatGPT's largest for 1:1 — 85 dpi at 306 mm)",
-      "status": "not generated",
+      "status": "generated",
       "composite": false,
-      "revision": "Target lowered 20 Aug 2026 to the largest canvas ChatGPT actually produces. The previous figure asked for a resolution no available generator could reach."
+      "revision": "Target lowered 20 Aug 2026 to the largest canvas ChatGPT actually produces. The previous figure asked for a resolution no available generator could reach.",
+      "origin": "archive",
+      "source": "Pexels photo 6279111 (Artem Podrez)",
+      "license": "Pexels License",
+      "credit": "Adapted from a photograph by Artem Podrez via Pexels. Colour-graded and composited for this book"
     },
     {
       "id": "pilgrimage-06-closing-stone",
@@ -1426,9 +1442,13 @@
       "purpose": "The closing recto. The essay ends on exactly this gesture, so the picture is the last sentence and needs no caption.",
       "aspect": "1:1",
       "target": "1024 × 1024 px (ChatGPT's largest for 1:1 — 85 dpi at 306 mm)",
-      "status": "not generated",
+      "status": "generated",
       "composite": false,
-      "revision": "Target lowered 20 Aug 2026 to the largest canvas ChatGPT actually produces. The previous figure asked for a resolution no available generator could reach."
+      "revision": "Target lowered 20 Aug 2026 to the largest canvas ChatGPT actually produces. The previous figure asked for a resolution no available generator could reach.",
+      "origin": "archive",
+      "source": "Pexels photo 1537811 (Elle Hughes)",
+      "license": "Pexels License",
+      "credit": "Adapted from a photograph by Elle Hughes via Pexels. Colour-graded and composited for this book"
     }
   ]
 }

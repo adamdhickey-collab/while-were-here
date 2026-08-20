@@ -102,12 +102,28 @@ distance a cover gets one shape, one colour and one word cluster.
 - The other three variants stay in the codebase and in `cover-options.html`.
   They cost nothing, and the comparison is worth being able to re-run. They are
   not live: `coverVariant` in `content/book.json` is the single switch.
-- `cover-03-circular-systems` **was made on 20 August 2026**, so the condition
-  this note set is now met: `orb` was judged on the square plate clipped to a
-  circle, which is enough to judge a composition and not enough to judge a
-  drawing, and the drawing now exists. The comparison is worth re-running at
-  trim in `cover-options.html` before the cover is called final. `bleed` stays
-  live until it is.
+- **The cover is `orb`, decided 20 August 2026.** `cover-03-circular-systems`
+  was made, the comparison was re-run at trim, and the circle won. This note
+  had said `orb` could not be judged until the drawing existed, because it had
+  only ever been seen as the square plate clipped to a circle. That was right:
+  the drawing changes the treatment completely.
+
+  Re-running it turned up a fault the fallback had hidden. `.cover__orb` clips
+  to a circle, which is how a square plate became one. The drawn artwork is
+  already a circle, and its circle fills only 71% of its canvas, with the inset
+  figures and the millimetre-high scale figures outside it in the cream. Clipped,
+  those figures are cropped and a ring of the artwork's own cream shows between
+  the drawing and the clip edge as a pale disc. So the drawn artwork is not
+  clipped: `cover__orb--drawn`, set by the layout when the purpose-made file is
+  the one in use, so the fallback keeps the clip it needs.
+
+  **One thing is still owed.** The artwork's cream averages (243, 239, 229)
+  against a page of (239, 233, 220) — four, six and nine values light — so
+  unclipped it reads as a faint lighter panel on the board. Cropping it away
+  was the alternative and it costs the scale figures, which are the only thing
+  telling a reader the sphere is planet-sized rather than dish-sized. The fix
+  belongs in the asset: regenerate the drawing on `#EFE9DC`, the page's own
+  cream, and the panel disappears with nothing lost.
 
 ## Stages III–IV stay unproven until an essay needs them — 19 Aug 2026
 

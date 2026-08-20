@@ -373,6 +373,16 @@
 .cover__orb .figure { position: absolute; inset: 0; background: transparent; }
 .cover__orb img { width: 100%; height: 100%; object-fit: cover; }
 
+/* The purpose-drawn artwork, which is already a circle and carries its inset
+   figures and its scale figures OUTSIDE that circle in the cream. The clip
+   above exists to make a circle out of the square fallback plate; applied to
+   this one it crops those figures away and, because the drawn circle fills
+   only 71% of the canvas, leaves a ring of the artwork's own cream between the
+   drawing and the clip edge — a pale disc the design never asked for. So this
+   one is not clipped and not cropped. */
+.cover__orb--drawn { border-radius: 0; overflow: visible; }
+.cover__orb--drawn img { object-fit: contain; }
+
 .cover__inner--orb {
   grid-template-rows: auto 1fr auto;
   justify-items: start;

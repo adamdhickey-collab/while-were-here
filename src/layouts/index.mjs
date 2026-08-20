@@ -59,13 +59,20 @@ export const coverVariants = {
   /* ORB — the artwork as a single circle low on the page, with the title
      sitting above and just over its upper limb. A circle on a square is the
      strongest graphic move a cover has, and it gives the title's "here" a
-     somewhere. Falls back to the existing artwork until the circular one is
-     made, which is enough to judge the composition. */
-  orb: (b, ctx) => `
-    <div class="cover__orb">${figure(firstMade([
-      ctx.image('cover-03-circular-systems'),
-      ctx.image('cover-01-watercolor-systems'),
-    ], { root: ctx.root }), { root: ctx.root })}</div>
+     somewhere.
+     Two artworks can land here and they need opposite handling. The fallback is
+     the SQUARE cover plate, which only becomes a circle because the container
+     clips it. cover-03 is drawn AS a circle, with inset figures and scale
+     figures outside it in the cream, and its own circle fills only 71% of its
+     canvas — so clipping that one crops the figures and leaves a ring of the
+     artwork's cream showing as a pale disc. `--drawn` turns the clip off for
+     it. See content/plan/decisions.md. */
+  orb: (b, ctx) => {
+    const drawn = ctx.image('cover-03-circular-systems');
+    const art = firstMade([drawn, ctx.image('cover-01-watercolor-systems')], { root: ctx.root });
+    const isDrawn = art && drawn && art.id === drawn.id;
+    return `
+    <div class="cover__orb${isDrawn ? ' cover__orb--drawn' : ''}">${figure(art, { root: ctx.root })}</div>
     <div class="cover__inner cover__inner--orb">
       <div class="cover__head">
         <h1 class="cover__title cover__title--orb"><span>While</span><span>We’re</span><span>Here</span></h1>
@@ -74,7 +81,8 @@ export const coverVariants = {
         <p class="cover__sub">${esc(b.subtitle)}</p>
         <p class="cover__author">${esc(b.author)}</p>
       </div>
-    </div>`,
+    </div>`;
+  },
 
   /* WINDOW — the artwork shows only through the letterforms. The title stops
      being type on top of a picture and becomes the aperture onto it, which is

@@ -5,7 +5,7 @@
 Every technical number in this book is listed here with the source it came from.
 Where a figure is contested, small-sample or easy to misstate, the note says so.
 
-32 verified · 0 outstanding
+34 verified · 0 outstanding
 
 ---
 
@@ -330,5 +330,25 @@ Meta Platforms. *Cities you have checked into*. Download Your Information, perso
 **Note.** Reproduced in full in export order, which is NOT the order they were visited and the page says so. This is a record of where a phone reported a check-in, not a record of where a life was lived, and the essay must not blur the two. Egg Harbor, Baileys Harbor, Fish Creek, Ephraim and Sister Bay are the Door County five.
 
 *Used in essays/why-humans-need-pilgrimages.md — reproduced record.*
+
+---
+
+### Distraction is not new: fourth- and fifth-century monastic writers described it at length, naming it acedia — the noonday restlessness that makes a person unable to stay with the task or the cell.
+
+John Cassian. *De institutis coenobiorum, Book X (On the Spirit of Acedia)*. Written c. 420 CE; standard English text in Boniface Ramsey trans., The Institutes, Newman Press 2000. 420. <https://www.newadvent.org/fathers/350710.htm>
+
+**Note.** Cassian devotes a whole book to it, and Evagrius Ponticus lists it among the eight thoughts a generation earlier. The prose claim is deliberately modest — that monks complained about distraction in writing — and that is exactly what the source supports. Do not inflate it into a claim that acedia and modern distraction are the same condition; the essay's argument does not need that and the sources do not carry it.
+
+*Used in essays/the-secret-life-of-attention.md — flow-1b.*
+
+---
+
+### Habituation — a declining response to a stimulus that repeats without consequence — is one of the most widely observed forms of learning, found across species from single-celled organisms to humans, and it reverses when the stimulus changes.
+
+Rankin CH, Abrams T, Barry RJ, Bhatnagar S, Clayton DF, Colombo J, et al.. *Habituation revisited: An updated and revised description of the behavioral characteristics of habituation*. Neurobiology of Learning and Memory 92(2): 135–138. 2009. <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2754195/>
+
+**Note.** A consensus paper by seventeen authors setting out habituation's defining characteristics, which is why it can carry a general claim where a single study could not. The essay uses only the two properties the paper is unambiguous about: the response declines with harmless repetition, and it recovers when the stimulus changes. Do not extend it into a claim about meaning, attention or relationships — the paper describes a response curve, not a life. That extension is the essay's own argument and must stay visibly the essay's.
+
+*Used in essays/why-ordinary-days-may-be-the-point-of-life.md — marginNote.*
 
 

@@ -130,7 +130,7 @@ Nothing about the tree had changed. Something about me had.
 
 We talk about attention as though it were a flashlight. You point it, it illuminates, and the world sits there patiently waiting to be lit. The model is flattering. It is also mostly wrong.
 
-Attention isn’t a beam. It is closer to an editor. It decides, thousands of times a minute and almost entirely without consulting you, what gets to count as the world. The room you are sitting in contains more information than you could process in a year: the temperature of the air on the back of your hands, the particular pitch of the refrigerator, the fact that the light has moved four inches since you sat down. Your attention is not receiving that room. It is writing a very short summary of it and handing you the summary.
+Attention isn’t a beam. It is closer to an editor. It decides, many times a second and almost entirely without consulting you, what gets to count as the world. The room you are sitting in contains more than you could ever process: the temperature of the air on the back of your hands, the particular pitch of the refrigerator, the fact that the light has moved four inches since you sat down. Your attention is not receiving that room. It is writing a very short summary of it and handing you the summary.
 
 You have never once experienced a room. You have experienced a paraphrase.
 
@@ -162,7 +162,7 @@ The maple was not a revelation. It was the ordinary result of standing still for
 
 <!-- block: diagram-note -->
 
-Almost everything that happens near you is discarded before you meet it. This is not a flaw. A version of you that admitted the whole room would be unable to cross a street. But the ratios are worth looking at once, because they are the actual dimensions of a life.
+Almost everything that happens near you is discarded before you meet it. This is not a flaw. A version of you that admitted the whole room would be unable to cross a street. But the ratios are worth looking at once, because something like them is the shape of a life.
 
 <!-- block: flow-3a -->
 

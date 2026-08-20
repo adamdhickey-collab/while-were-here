@@ -80,6 +80,12 @@ spreads:
   - type: reading
     variant: two
     blocks: [s8a+s8b, s9a+s9b]
+    noteOn: recto
+    marginNote: >-
+      A response that declines to something harmless repeating is called
+      habituation, and it is one of the most widely observed forms of learning
+      there is — described in animals with no brain at all. It also reverses.
+      Change the stimulus and the response comes back.
     insetOn: verso
     inset:
       image: ordinary-days-01k-room-survey

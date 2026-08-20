@@ -504,7 +504,7 @@
         "year": 2026,
         "url": "https://www.facebook.com/dyi"
       },
-      "note": "Counted twice by independent extractions of the same file, agreeing to within thirteen entries: 7,499 entries and 7,325 unique names. The page prints the first 160 in export order, unsorted, and says so. Six entries were withheld on 20 August 2026 at the author\u2019s request \u2014 four named \"Mushrooms\" and two named \"Zoomies\" \u2014 so the page now shows 154 and states that six are withheld. Nothing else is sorted, curated or dropped: names such as \"Non ddtc 1 zocket manager\" are in the record and are part of what it shows. Do not restore the six, and do not let the page go back to claiming it is unedited. Re-count if the export is regenerated."
+      "note": "Counted twice by independent extractions of the same file, agreeing to within thirteen entries: 7,499 entries and 7,325 unique names. The page prints the first 160 in export order, unsorted, and says so. Six entries were withheld on 20 August 2026 at the author’s request — four named \"Mushrooms\" and two named \"Zoomies\" — so the page now shows 154 and states that six are withheld. Nothing else is sorted, curated or dropped: names such as \"Non ddtc 1 zocket manager\" are in the record and are part of what it shows. Do not restore the six, and do not let the page go back to claiming it is unedited. Re-count if the export is regenerated."
     },
     {
       "id": "cities-checked-into",
@@ -521,6 +521,38 @@
         "url": "https://www.facebook.com/dyi"
       },
       "note": "Reproduced in full in export order, which is NOT the order they were visited and the page says so. This is a record of where a phone reported a check-in, not a record of where a life was lived, and the essay must not blur the two. Egg Harbor, Baileys Harbor, Fish Creek, Ephraim and Sister Bay are the Door County five."
+    },
+    {
+      "id": "monastic-acedia",
+      "claim": "Distraction is not new: fourth- and fifth-century monastic writers described it at length, naming it acedia — the noonday restlessness that makes a person unable to stay with the task or the cell.",
+      "status": "verified",
+      "usedIn": [
+        "essays/the-secret-life-of-attention.md — flow-1b"
+      ],
+      "source": {
+        "authors": "John Cassian",
+        "title": "De institutis coenobiorum, Book X (On the Spirit of Acedia)",
+        "publication": "Written c. 420 CE; standard English text in Boniface Ramsey trans., The Institutes, Newman Press 2000",
+        "year": 420,
+        "url": "https://www.newadvent.org/fathers/350710.htm"
+      },
+      "note": "Cassian devotes a whole book to it, and Evagrius Ponticus lists it among the eight thoughts a generation earlier. The prose claim is deliberately modest — that monks complained about distraction in writing — and that is exactly what the source supports. Do not inflate it into a claim that acedia and modern distraction are the same condition; the essay's argument does not need that and the sources do not carry it."
+    },
+    {
+      "id": "habituation",
+      "claim": "Habituation — a declining response to a stimulus that repeats without consequence — is one of the most widely observed forms of learning, found across species from single-celled organisms to humans, and it reverses when the stimulus changes.",
+      "status": "verified",
+      "usedIn": [
+        "essays/why-ordinary-days-may-be-the-point-of-life.md — marginNote"
+      ],
+      "source": {
+        "authors": "Rankin CH, Abrams T, Barry RJ, Bhatnagar S, Clayton DF, Colombo J, et al.",
+        "title": "Habituation revisited: An updated and revised description of the behavioral characteristics of habituation",
+        "publication": "Neurobiology of Learning and Memory 92(2): 135–138",
+        "year": 2009,
+        "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2754195/"
+      },
+      "note": "A consensus paper by seventeen authors setting out habituation's defining characteristics, which is why it can carry a general claim where a single study could not. The essay uses only the two properties the paper is unambiguous about: the response declines with harmless repetition, and it recovers when the stimulus changes. Do not extend it into a claim about meaning, attention or relationships — the paper describes a response curve, not a life. That extension is the essay's own argument and must stay visibly the essay's."
     }
   ]
 }

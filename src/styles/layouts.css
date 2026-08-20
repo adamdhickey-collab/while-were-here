@@ -269,15 +269,31 @@
   right: -8%;
   top: -2%;
   margin: 0;
-  font-size: 340pt;
+  font-size: var(--collision-size, 340pt);
   line-height: 0.78;
   letter-spacing: -0.05em;
   white-space: nowrap;
   color: var(--accent-1);
-  opacity: 0.34;
-  transform: rotate(-4deg);
+  opacity: var(--collision-opacity, 0.34);
+  transform: rotate(var(--collision-tilt, -4deg));
   z-index: 0;
+  /* The second impression: the same numeral again in the stage's second
+     accent, 1.2mm out of register — the misregistration the screen prints
+     already carry (scripts/separate.py: "each plate takes a 3 to 5 px offset").
+     A press printing a numeral this size would need two passes, and the book
+     says so. */
+  text-shadow: 1.2mm 0.9mm 0 color-mix(in srgb, var(--accent-2) 38%, transparent);
 }
+
+/* The collision performs the arc. One recipe four times is a sticker; the
+   stages are a progression and the terrain obeys it — barely tilted where the
+   book observes, loudest in the dark peak zone, settling on the return. The
+   numbers live here, not per-divider, so re-pacing the book re-paces these. */
+.stage-1.divider--text { --collision-size: 260pt; --collision-tilt: -2deg; --collision-opacity: 0.26; }
+.stage-2.divider--text { --collision-size: 340pt; --collision-tilt: -4deg; --collision-opacity: 0.34; }
+.stage-3.divider--text { --collision-size: 430pt; --collision-tilt: -6deg; --collision-opacity: 0.55; }
+.stage-4.divider--text { --collision-size: 430pt; --collision-tilt: -6deg; --collision-opacity: 0.55; }
+.stage-5.divider--text { --collision-size: 300pt; --collision-tilt: -3deg; --collision-opacity: 0.30; }
 .divider--text .divider__head,
 .divider--text .divider__foot { position: relative; z-index: 1; }
 .divider--text .divider__title { mix-blend-mode: multiply; }

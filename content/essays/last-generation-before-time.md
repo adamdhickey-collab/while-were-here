@@ -23,6 +23,10 @@ spreads:
       Pew Research Center surveys found that 52 percent of U.S. adults used
       the internet in 2000. By 2025 the figure was 96 percent, though survey
       methods changed during that span.
+    insetOn: verso
+    inset:
+      image: north-03-lake-horizon
+      caption: Nothing in the frame has a date.
   - type: reading
     variant: two
     blocks: [flow-2a, flow-2b]

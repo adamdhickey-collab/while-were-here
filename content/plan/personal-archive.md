@@ -91,6 +91,22 @@ argues for and does not yet own.
 
 ---
 
+## Resolution is not uniform across the albums — check before selecting
+
+The median hides a spread wide enough to change what an album is for. Measured
+on the 20 Aug 2026 export:
+
+| Album | Long edge | At 70 mm |
+| --- | --- | --- |
+| **NorthShoreFall2017** | 1,280–**2,048** | 464–**743 dpi** — the best files in the archive |
+| Zoo2014, DogParkFall2018, NorthShoreTrip | 1,280 | 464 dpi — the working default |
+| **UrbanFarming** | **240–480** | **116–174 dpi — unusable at any size** |
+
+UrbanFarming is a 2013 album and was downscaled far harder than the rest. It
+contains the hands-in-soil frames the systems essay wants and it cannot supply
+one of them. Check the pixel dimensions of a specific frame before planning a
+slot around it; the album average will mislead.
+
 ## What the albums actually give the book
 
 Mapped against slots that are currently unmade plates.

@@ -14,7 +14,7 @@
 
 ## Generated and original material
 
-82 images in this book are
+85 images in this book are
 generated or original and need no third-party attribution. Original diagrams are
 drawn in code — see `src/layouts/diagrams.mjs`.
 

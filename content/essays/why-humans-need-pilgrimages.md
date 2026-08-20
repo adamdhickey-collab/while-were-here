@@ -23,6 +23,10 @@ spreads:
       The Shikoku Henro links 88 temples across Japan’s four Shikoku
       prefectures. The full circuit covers approximately 1,200 kilometers and
       generally takes more than 40 days to complete on foot.
+    insetOn: verso
+    inset:
+      image: north-01-gorge-cut
+      caption: Worn by something that only went one way.
   - type: pull-quote
     quote: Distance gives an intention enough time to become physical.
     lede: On what distance does to an intention

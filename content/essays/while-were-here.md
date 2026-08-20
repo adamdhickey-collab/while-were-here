@@ -23,6 +23,10 @@ spreads:
       Sunlight takes about 8 minutes and 20 seconds to reach Earth. The bright
       rectangle on a floor is made from energy that left the Sun before anyone
       in the room noticed it.
+    insetOn: verso
+    inset:
+      image: north-02-aspen-up
+      caption: The angle that requires stopping.
   - type: reading
     variant: two
     blocks: [flow-2a, flow-2b]

@@ -43,6 +43,18 @@ dead, and it still runs for any non-composite image. Do not delete it, and do no
 The consequence to accept knowingly: baked type cannot be corrected, restyled or
 translated later, and it will not match the book's faces at 300 mm.
 
+## The subtitle is "Essays on ordinary days and hidden worlds" — 19 Aug 2026
+
+Board three specified it. It had been reverted at some point to "Small essays on
+attention, time, and being alive" — the change landed inside one of my own
+commits and I could not account for how, which is the only reason it is written
+down here rather than just fixed.
+
+**It appears in exactly two places**, both driven from `subtitle` in
+`content/book.json`: the cover footer and the title spread. If it ever reads
+differently in those two places, something has edited a template instead of the
+data.
+
 ## The cover is `bleed` — 19 Aug 2026
 
 Four treatments were built and compared at full trim size: `plate` (artwork as a

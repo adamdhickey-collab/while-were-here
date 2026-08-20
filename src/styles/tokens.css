@@ -103,6 +103,31 @@
   --t-fine:           8pt;   /* folios, metadata, sidebars                   */
   --t-micro:       6.75pt;   /* specimen labels, plate ids, legends          */
 
+  /* ---- Spacing -----------------------------------------------------------
+     Two families, because spacing in a book does two different jobs and one
+     ladder blurs them:
+
+       Micro — inside a component. Label to value, caption to plate, the gap
+               between a rule and the text under it.
+       Macro — between elements on the page. What actually builds the rhythm
+               of a spread.
+
+     Page geometry (margins, gutter, trim) is not on this scale — it comes from
+     book.config.js, because it is a property of the object, not of the design.
+
+     Sizes of things — a band 82mm tall, a card 92mm wide — are not spacing and
+     do not belong here either. */
+
+  --sp-1:         1.5mm;   /* micro                                          */
+  --sp-2:         2.5mm;
+  --sp-3:           4mm;
+  --sp-4:           6mm;
+  --sp-5:           8mm;   /* macro                                          */
+  --sp-6:          12mm;
+  --sp-7:          16mm;
+  --sp-8:          24mm;
+  --sp-9:          34mm;
+
   /* ---- Leading ----------------------------------------------------------- */
   --lh-body:        1.62;
   --lh-body-lg:     1.66;

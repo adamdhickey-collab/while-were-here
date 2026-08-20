@@ -97,7 +97,7 @@ html, body {
   letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--rule);
-  margin-top: 1.6mm;
+  margin-top: var(--sp-1);
 }
 
 /* Spread types that carry no folio simply do not render one. */

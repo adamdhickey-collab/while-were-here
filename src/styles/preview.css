@@ -135,6 +135,13 @@ body.show-baseline .guides { display: block; }
   text-transform: uppercase;
 }
 .bar button:hover { color: #E4DCC9; border-color: #565046; }
+/* Keyboard users get the same affordance as the mouse, and a visible ring —
+   :focus-visible so a click does not leave one behind. */
+.bar button:focus-visible {
+  outline: 2px solid var(--rust);
+  outline-offset: 2px;
+  color: #E4DCC9;
+}
 .bar button[aria-pressed="true"] { color: #141311; background: #E4DCC9; border-color: #E4DCC9; }
 .bar__spacer { flex: 1; }
 .bar__zoom { color: #C9C1B0; min-width: 42px; text-align: right; font-variant-numeric: tabular-nums; }
@@ -148,3 +155,10 @@ body.mode-one .stage { min-height: 60vh; justify-content: center; }
 /* ---- Page mode: no facing pairing --------------------------------------- */
 body.mode-pages .spread--pair::after { display: none; }
 body.mode-pages .spread { gap: 48px; }
+
+/* Respect a reduced-motion preference: the spread-to-spread scroll is the only
+   motion in the tool, and it is navigation, not decoration. */
+@media (prefers-reduced-motion: reduce) {
+  .stage, .spread { scroll-behavior: auto; }
+  .bar button { transition: none; }
+}

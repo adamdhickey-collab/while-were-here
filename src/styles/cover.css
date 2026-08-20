@@ -32,7 +32,7 @@
   align-content: center;
 }
 
-.cover__mark { margin-top: 30mm; color: var(--ink-soft); }
+.cover__mark { margin-top: var(--sp-9); color: var(--ink-soft); }
 
 /* Blind deboss reads as a very slight depression, not a colour. */
 .radiant { display: block; }
@@ -82,7 +82,7 @@
   justify-items: start;
   text-align: left;
 }
-.cover-back__mark { align-self: start; margin-top: 8mm; color: var(--ink-faint); }
+.cover-back__mark { align-self: start; margin-top: var(--sp-5); color: var(--ink-faint); }
 .cover-back__line {
   align-self: center;
   font-family: var(--font-display);
@@ -98,8 +98,8 @@
   align-items: flex-end;
   justify-content: space-between;
   width: 100%;
-  margin-top: 40mm;
-  gap: 10mm;
+  margin-top: var(--sp-9);
+  gap: var(--sp-5);
 }
 .cover-back__blurb {
   font-size: var(--t-small);
@@ -115,7 +115,7 @@
   font-size: var(--t-micro); letter-spacing: 0.14em; text-transform: uppercase;
   color: var(--ink-faint);
   text-align: center;
-  padding: 2mm;
+  padding: var(--sp-1);
 }
 
 /* ---- Spine -------------------------------------------------------------- */
@@ -145,7 +145,7 @@
   margin: 0;
 }
 .spine__stack {
-  display: flex; flex-direction: column; align-items: center; gap: 14mm;
+  display: flex; flex-direction: column; align-items: center; gap: var(--sp-6);
   height: 100%; justify-content: center;
 }
 
@@ -170,7 +170,7 @@
 .cover-back__coda {
   align-self: end;
   justify-self: start;
-  margin: 14mm 0 0;
+  margin: var(--sp-6) 0 0;
   font-family: var(--font-note);
   font-size: var(--t-fine);
   letter-spacing: 0.26em;
@@ -201,7 +201,7 @@
 .cover__head { align-self: start; position: relative; z-index: 3; }
 .cover__title { align-self: start; }
 .cover__sub {
-  margin: 7mm 0 0;
+  margin: var(--sp-4) 0 0;
   font-family: var(--font-text);
   font-size: var(--t-small);
   letter-spacing: 0.28em;
@@ -224,7 +224,7 @@
   position: relative;
   width: 92mm;
   height: 70mm;
-  margin-top: 12mm;
+  margin-top: var(--sp-6);
 }
 .cover-back__art .figure { position: absolute; inset: 0; background: transparent; }
 .cover-back__art img { object-fit: contain; object-position: left bottom; }

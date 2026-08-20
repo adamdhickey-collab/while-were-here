@@ -66,6 +66,32 @@ function geometryCss() {
 
 const BLOCK_RE = /<!--\s*block:\s*([a-z0-9-]+)\s*-->/gi;
 
+/**
+ * Bind the last two words of every paragraph with a non-breaking space, so no
+ * line ends up carrying a single word. This is the typesetter's fix, applied at
+ * build time rather than by editing the prose — it survives copy edits and it
+ * cannot be forgotten on the essay nobody re-read.
+ *
+ * `text-wrap: pretty` is set as well, but it is a hint the engine may decline;
+ * this is not. Stanza lines (separated by <br>) are handled individually, and a
+ * segment of one or two words is left alone because there is nothing to bind.
+ */
+function bindWidows(html) {
+  const bind = (seg) => {
+    const words = seg.trimEnd().split(/(\s+)/);
+    if (words.filter((w) => w.trim()).length < 3) return seg;
+    for (let i = words.length - 1; i > 0; i--) {
+      if (/^\s+$/.test(words[i]) && words[i + 1] && words[i + 1].trim()) {
+        words[i] = '\u00A0';
+        return words.join('') + seg.slice(seg.trimEnd().length);
+      }
+    }
+    return seg;
+  };
+  return html.replace(/<p([^>]*)>([\s\S]*?)<\/p>/g, (all, attrs, inner) =>
+    `<p${attrs}>${inner.split(/(<br\s*\/?>)/).map((s) => (s.startsWith('<br') ? s : bind(s))).join('')}</p>`);
+}
+
 function loadDoc(rel) {
   const raw = read(path.join('content', rel));
   const { data, content } = matter(raw);
@@ -73,9 +99,9 @@ function loadDoc(rel) {
   const parts = content.split(BLOCK_RE);
   // parts = [preamble, id, body, id, body, ...]
   for (let i = 1; i < parts.length; i += 2) {
-    blocks[parts[i]] = md.render(parts[i + 1].trim());
+    blocks[parts[i]] = bindWidows(md.render(parts[i + 1].trim()));
   }
-  return { data, html: md.render(parts[0].trim()), blocks };
+  return { data, html: bindWidows(md.render(parts[0].trim())), blocks };
 }
 
 const imagesById = Object.fromEntries(json('content/images.json').images.map((i) => [i.id, i]));

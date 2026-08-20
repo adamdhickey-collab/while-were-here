@@ -30,22 +30,22 @@
   display: flex;
   align-items: baseline;
   justify-content: space-between;
-  gap: 6mm;
-  padding-bottom: 3.5mm;
+  gap: var(--sp-4);
+  padding-bottom: var(--sp-3);
   border-bottom: 0.6pt solid var(--ink);
 }
 .opener__head { grid-column: 1 / 12; }
 .opener__head .essay-title { max-width: 172mm; }
-.opener__head .deck { margin-top: 12mm; max-width: 126mm; }
+.opener__head .deck { margin-top: var(--sp-6); max-width: 126mm; }
 .opener__foot {
   grid-column: 1 / 13;
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  gap: 12mm;
+  gap: var(--sp-6);
 }
 .opener__lede { max-width: 104mm; font-size: var(--t-body); }
-.opener__foot .meta { white-space: nowrap; padding-bottom: 1mm; }
+.opener__foot .meta { white-space: nowrap; padding-bottom: var(--sp-1); }
 
 /* The `over` variant — image across both pages, title reversed out — is in §9. */
 
@@ -57,8 +57,8 @@
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  padding-bottom: 3.5mm;
-  margin-bottom: 14mm;
+  padding-bottom: var(--sp-3);
+  margin-bottom: var(--sp-6);
   border-bottom: 0.3pt solid var(--rule);
 }
 .prose--cols {
@@ -107,7 +107,7 @@
   width: 26mm;
   height: 0.9pt;
   background: var(--rust);
-  margin-bottom: 14mm;
+  margin-bottom: var(--sp-6);
 }
 
 /* ---- 5. IMAGE + ESSAY ---------------------------------------------------
@@ -150,15 +150,15 @@
 .diagram-spread { background: var(--paper-pale); }
 .diagram__head {
   grid-column: 1 / 12;
-  padding-bottom: 5mm;
-  margin-bottom: 16mm;
+  padding-bottom: var(--sp-3);
+  margin-bottom: var(--sp-7);
   border-bottom: 0.6pt solid var(--ink);
 }
 .diagram__title {
   font-family: var(--font-display);
   font-size: var(--t-title-sm);
   line-height: 1.02;
-  margin: 5mm 0 0;
+  margin: var(--sp-3) 0 0;
   max-width: 130mm;
 }
 .diagram-spread .page__block { grid-template-rows: auto 1fr; }
@@ -178,7 +178,7 @@
   position: absolute;
   bottom: var(--m-bottom);
   display: flex;
-  gap: 9mm;
+  gap: var(--sp-5);
 }
 .page--recto .diagram__legend { left: var(--m-inside);  right: var(--m-outside); }
 .page--verso .diagram__legend { left: var(--m-outside); right: var(--m-inside); }
@@ -194,24 +194,24 @@
   font-family: var(--font-display);
   font-size: var(--t-sub);
   line-height: 1.26;
-  margin-bottom: 8mm;
+  margin-bottom: var(--sp-5);
 }
 .closing--line .closing__line { grid-column: 1 / 12; }
 .closing__mark {
   grid-column: 1 / 13;
-  margin-top: 22mm;
+  margin-top: var(--sp-8);
   display: flex;
   align-items: center;
-  gap: 5mm;
+  gap: var(--sp-3);
 }
 
 /* ---- Section divider ---------------------------------------------------- */
 
 .divider__figure { position: absolute; inset: 0; }
 .divider .page__block { align-content: end; }
-.divider__num { grid-column: 1 / 13; margin-bottom: 12mm; }
+.divider__num { grid-column: 1 / 13; margin-bottom: var(--sp-6); }
 .divider .display { grid-column: 1 / 13; max-width: 190mm; }
-.divider__list { grid-column: 1 / 9; margin: 20mm 0 0; padding: 0; display: grid; gap: 3mm; }
+.divider__list { grid-column: 1 / 9; margin: var(--sp-7) 0 0; padding: 0; display: grid; gap: var(--sp-2); }
 .divider__list li { list-style: none; }
 .divider__list .caption { font-size: var(--t-small); line-height: 1.5; color: var(--ink-soft); max-width: 54ch; }
 
@@ -228,32 +228,32 @@
   line-height: 0.86;
   margin: 0;
 }
-.titlespread__sub { grid-column: 1 / 10; margin-top: 16mm; max-width: 148mm; }
-.titlespread__foot { grid-column: 1 / 13; margin-top: 34mm; }
+.titlespread__sub { grid-column: 1 / 10; margin-top: var(--sp-7); max-width: 148mm; }
+.titlespread__foot { grid-column: 1 / 13; margin-top: var(--sp-9); }
 
 .note-page .page__block { align-content: center; }
 .note-page .prose { grid-column: 2 / 11; }
-.note-page .prose p + p { margin-top: 6mm; text-indent: 0; }
+.note-page .prose p + p { margin-top: var(--sp-4); text-indent: 0; }
 
 .contents .page__block { align-content: start; }
 .contents__head {
   grid-column: 1 / 13;
-  padding-bottom: 5mm;
-  margin-bottom: 16mm;
+  padding-bottom: var(--sp-3);
+  margin-bottom: var(--sp-7);
   border-bottom: 0.6pt solid var(--ink);
 }
-.contents__part { grid-column: 1 / 12; margin-bottom: 24mm; break-inside: avoid; }
+.contents__part { grid-column: 1 / 12; margin-bottom: var(--sp-8); break-inside: avoid; }
 .contents__part-title {
   font-family: var(--font-display);
   font-size: var(--t-title-sm);
-  margin: 5mm 0 9mm;
+  margin: var(--sp-3) 0 var(--sp-5);
 }
-.contents__essays { margin: 0; padding: 0; display: grid; gap: 4.2mm; }
+.contents__essays { margin: 0; padding: 0; display: grid; gap: var(--sp-3); }
 .contents__essays li {
   list-style: none;
   display: flex;
   align-items: baseline;
-  gap: 3mm;
+  gap: var(--sp-2);
   font-size: var(--t-body);
   color: var(--ink-soft);
 }
@@ -305,12 +305,12 @@
 .page--recto.mark-field .mark-field__foot { left: var(--m-inside); right: var(--m-outside); }
 .mark-field__note { max-width: 96mm; font-size: var(--t-small); line-height: 1.54; color: var(--ink-soft); }
 .mark-field__note p + p { text-indent: 0; }
-.mark-field__legend { display: flex; flex-direction: column; align-items: flex-end; gap: 3mm; text-align: right; }
+.mark-field__legend { display: flex; flex-direction: column; align-items: flex-end; gap: var(--sp-2); text-align: right; }
 .mark-field__swatch {
   display: inline-block;
   width: 0.5mm; height: 3.4mm;
   background: var(--rust);
-  margin-right: 2.5mm;
+  margin-right: var(--sp-2);
   transform: translateY(0.6mm);
 }
 
@@ -334,7 +334,7 @@
 .visual-essay__grid .figure { position: absolute; inset: 0; }
 
 .ve-note { grid-column: 1 / 7;  grid-row: 1 / 3; align-self: start; }
-.ve-note .caption { margin-top: 4mm; max-width: 74mm; }
+.ve-note .caption { margin-top: var(--sp-3); max-width: 74mm; }
 .ve-a    { grid-column: 8 / 13; grid-row: 1 / 5; }
 .ve-b    { grid-column: 1 / 6;  grid-row: 4 / 8; }
 .ve-c    { grid-column: 1 / 13; grid-row: 1 / 4; }
@@ -373,17 +373,17 @@
 .dir .page__block { align-content: start; }
 .dir-open { align-content: center !important; }
 .dir-open > * { grid-column: 1 / 11; }
-.dir-open .essay-title { margin: 9mm 0 12mm; }
+.dir-open .essay-title { margin: var(--sp-5) 0 var(--sp-6); }
 .dir-open .deck { max-width: 150mm; }
-.dir-open .specimen { margin-top: 14mm; max-width: 132mm; }
+.dir-open .specimen { margin-top: var(--sp-6); max-width: 132mm; }
 
 .dir-block > * { grid-column: 1 / 13; }
-.dir-block .label { margin-bottom: 11mm; }
-.dir-foot { margin-top: auto; padding-top: 12mm; max-width: 150mm; color: var(--ink-faint); }
+.dir-block .label { margin-bottom: var(--sp-6); }
+.dir-foot { margin-top: auto; padding-top: var(--sp-6); max-width: 150mm; color: var(--ink-faint); }
 
 /* Fig. 1 — the four acts */
-.dir-acts { display: grid; gap: 8mm; }
-.dir-act { display: grid; grid-template-columns: 38mm 1fr; gap: 9mm; align-items: start; }
+.dir-acts { display: grid; gap: var(--sp-5); }
+.dir-act { display: grid; grid-template-columns: 38mm 1fr; gap: var(--sp-5); align-items: start; }
 .dir-act__chip {
   height: 38mm;
   border: 0.3pt solid var(--rule);
@@ -393,9 +393,9 @@
   font-size: var(--t-deck);
   color: var(--ink-faint);
 }
-.dir-act__body .label { margin-bottom: 3.5mm; }
+.dir-act__body .label { margin-bottom: var(--sp-3); }
 .dir-act__body .caption { max-width: 128mm; font-size: var(--t-small); }
-.dir-act__accents { display: flex; gap: 2.5mm; margin-top: 5mm; }
+.dir-act__accents { display: flex; gap: var(--sp-2); margin-top: var(--sp-3); }
 .dir-act__accents i { width: 13mm; height: 4mm; display: block; }
 
 /* Fig. 2 — the spectrum */
@@ -403,19 +403,19 @@
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   column-gap: var(--gutter);
-  row-gap: 8mm;
+  row-gap: var(--sp-5);
 }
 .dir-swatch__field {
   height: 30mm;
   border: 0.3pt solid rgba(140, 134, 121, 0.3);
-  margin-bottom: 2.5mm;
+  margin-bottom: var(--sp-2);
 }
 
 /* Fig. 3 — three voices */
-.dir-voice { padding-bottom: 11mm; margin-bottom: 11mm; border-bottom: 0.3pt solid var(--rule); }
-.dir-voice > .specimen:first-child { color: var(--accent-1); margin-bottom: 5mm; }
-.dir-voice .label { margin: 0 0 5mm; }
-.dir-voice .marginalia { margin-bottom: 5mm; }
+.dir-voice { padding-bottom: var(--sp-6); margin-bottom: var(--sp-6); border-bottom: 0.3pt solid var(--rule); }
+.dir-voice > .specimen:first-child { color: var(--accent-1); margin-bottom: var(--sp-3); }
+.dir-voice .label { margin: 0 0 var(--sp-3); }
+.dir-voice .marginalia { margin-bottom: var(--sp-3); }
 
 /* ---- 13. STAGE STATEMENT ------------------------------------------------
    The recurring device that carries the progression. One line, one
@@ -423,8 +423,8 @@
 
 .statement-spread .page__block { align-content: center; }
 .statement-spread .page__block > * { grid-column: 1 / 12; }
-.statement-spread .stage-mark { margin-bottom: 16mm; }
-.statement-spread .imperative { margin-top: 14mm; }
+.statement-spread .stage-mark { margin-bottom: var(--sp-7); }
+.statement-spread .imperative { margin-top: var(--sp-6); }
 .statement-spread--figure .figure { position: absolute; inset: 0; }
 .statement__caption {
   position: absolute;
@@ -436,8 +436,8 @@
 
 /* ---- Sidebar and specimen placement ------------------------------------- */
 
-.image-essay--text .sidebar { grid-column: 9 / 13; grid-row: 2; align-self: start; margin-top: 16mm; }
-.image-essay--text .hand { grid-column: 1 / 6; grid-row: 2; align-self: end; margin-bottom: 4mm; }
+.image-essay--text .sidebar { grid-column: 9 / 13; grid-row: 2; align-self: start; margin-top: var(--sp-7); }
+.image-essay--text .hand { grid-column: 1 / 6; grid-row: 2; align-self: end; margin-bottom: var(--sp-3); }
 
 .specimen-card--br { right: 7mm; bottom: 7mm; }
 .specimen-card--bl { left: 7mm; bottom: 7mm; }
@@ -450,17 +450,17 @@
   align-self: end;
   display: flex;
   align-items: flex-end;
-  gap: 9mm;
-  margin-bottom: 6mm;
+  gap: var(--sp-5);
+  margin-bottom: var(--sp-4);
 }
 .reading__inset .inset-card { width: 92mm; }
 .reading__inset .fieldnote { width: 100%; height: auto; }
-.reading__inset .hand { margin-bottom: 4mm; }
+.reading__inset .hand { margin-bottom: var(--sp-3); }
 
 /* ---- 14. DEVICES FOR THE ESSAY 01 SPREAD PLAN ---------------------------- */
 
 /* Subheads sit in the running-head row of a reading spread. */
-.reading .subhead { grid-column: 1 / 10; margin-bottom: 9mm; }
+.reading .subhead { grid-column: 1 / 10; margin-bottom: var(--sp-5); }
 .reading .page__block { grid-template-rows: auto auto auto 1fr; }
 .reading__note,
 .reading__band,
@@ -485,12 +485,12 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: var(--gutter);
-  margin-bottom: 4mm;
+  margin-bottom: var(--sp-3);
 }
 .contact-sheet__cell { margin: 0; }
 .contact-sheet__plate { position: relative; aspect-ratio: 1 / 1; }
 .contact-sheet__plate .figure { position: absolute; inset: 0; }
-.contact-sheet figcaption { margin-top: 2.5mm; }
+.contact-sheet figcaption { margin-top: var(--sp-2); }
 
 /* A photograph held in the air below an asymmetric reading page. */
 .reading--aside .page__block { grid-template-rows: auto auto auto 1fr; }
@@ -500,18 +500,18 @@
   align-self: end;
   position: relative;
   height: 74mm;
-  margin-bottom: 4mm;
+  margin-bottom: var(--sp-3);
 }
 .page--verso.reading--aside .reading__plate { grid-column: 5 / 13; }
 .reading__plate .figure { position: absolute; inset: 0; }
 
 .reading__figure { grid-column: 8 / 13; grid-row: 3; align-self: start; }
-.reading__figure .label { margin-bottom: 5mm; }
+.reading__figure .label { margin-bottom: var(--sp-3); }
 .reading__figure .fieldnote { width: 100%; height: auto; }
 .reading--aside .notice { grid-row: 4; }
 
 /* A pull quote with nothing on the facing page but a mark. */
-.quote-spread__mark { grid-column: 1 / 13; margin-bottom: 14mm; color: var(--accent-1); }
+.quote-spread__mark { grid-column: 1 / 13; margin-bottom: var(--sp-6); color: var(--accent-1); }
 .quote-spread--verso .page__block { align-content: end; }
 
 /* ---- 15. IMAGE PAIR -----------------------------------------------------
@@ -523,7 +523,7 @@
 .image-pair__figure--detail { height: 36%; }
 .image-pair__figure .figure { position: absolute; inset: 0; }
 .image-pair .page__block { top: calc(36% + 12mm); align-content: start; grid-template-rows: auto auto 1fr; }
-.image-pair .subhead { grid-column: 1 / 11; margin-bottom: 7mm; }
+.image-pair .subhead { grid-column: 1 / 11; margin-bottom: var(--sp-4); }
 .image-pair .prose { grid-column: 1 / 10; }
 .image-pair .ledger { grid-column: 1 / 11; grid-row: 3; align-self: end; }
 
@@ -532,7 +532,7 @@
    moving.                                                                   */
 
 .sequence-spread .page__block { align-content: start; grid-template-rows: auto auto 1fr; }
-.sequence-spread .subhead { grid-column: 1 / 11; margin-bottom: 10mm; }
+.sequence-spread .subhead { grid-column: 1 / 11; margin-bottom: var(--sp-5); }
 .sequence-spread .prose { grid-column: 1 / 10; }
 .sequence__pull {
   grid-column: 1 / 9;
@@ -553,7 +553,7 @@
   right: var(--m-outside);
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 2.5mm;
+  gap: var(--sp-2);
 }
 .sequence__cell { position: relative; }
 .sequence__cell .figure { position: absolute; inset: 0; }
@@ -566,25 +566,25 @@
 .closing--plate .page__block { display: none; }
 .closing__coda {
   grid-column: 1 / 10;
-  margin-top: 10mm;
+  margin-top: var(--sp-5);
   font-family: var(--font-text);
   font-size: var(--t-body);
   color: var(--ink-soft);
 }
 
 /* A drawn figure alongside an image + essay page. */
-.image-essay__figure-note { grid-column: 1 / 7; grid-row: 2; align-self: end; margin-bottom: 4mm; }
-.image-essay__figure-note .label { margin-bottom: 4mm; }
+.image-essay__figure-note { grid-column: 1 / 7; grid-row: 2; align-self: end; margin-bottom: var(--sp-3); }
+.image-essay__figure-note .label { margin-bottom: var(--sp-3); }
 .image-essay__figure-note .fieldnote { width: 100%; height: auto; }
-.image-essay--tall .subhead { grid-column: 1 / 9; margin-bottom: 8mm; }
-.image-essay--band .subhead { grid-column: 1 / 9; margin-bottom: 7mm; }
+.image-essay--tall .subhead { grid-column: 1 / 9; margin-bottom: var(--sp-5); }
+.image-essay--band .subhead { grid-column: 1 / 9; margin-bottom: var(--sp-4); }
 
 /* The tall image + essay, split: the verso carries a column of text beside the
    photograph instead of leaving it to the caption alone. */
 .image-essay--split .image-essay__figure { width: 56%; }
 .image-essay--split .page__block { align-content: start; grid-template-rows: auto auto 1fr; }
 .page--verso.image-essay--split .image-essay__text { grid-column: 1 / 6; }
-.page--verso.image-essay--split .subhead { grid-column: 1 / 6; margin-bottom: 8mm; }
+.page--verso.image-essay--split .subhead { grid-column: 1 / 6; margin-bottom: var(--sp-5); }
 .image-essay--split .image-essay__text { font-size: var(--t-body); line-height: 1.6; }
 .image-essay--split .image-essay__caption { display: none; }
 
@@ -594,7 +594,7 @@
 .reading--aside .prose--generous { font-size: var(--t-body); }
 .page--recto.reading--aside .prose--generous { grid-column: 1 / 7; grid-row: 1 / 5; }
 .page--recto.reading--aside .reading__figure { grid-column: 8 / 13; }
-.page--recto.reading--aside .notice { grid-column: 8 / 13; max-width: none; padding: 6mm 6mm 7mm; }
+.page--recto.reading--aside .notice { grid-column: 8 / 13; max-width: none; padding: var(--sp-4) var(--sp-4) var(--sp-4); }
 
 /* ---- 18. SIX-SPREAD PACING ----------------------------------------------
    With essays cut to 4–6 spreads, the pause spread earns its keep by carrying
@@ -607,7 +607,7 @@
 .quote-spread--verso .quote-spread__lede { align-self: end; }
 
 .closing--words .page__block { align-content: start; grid-template-rows: auto auto 1fr; }
-.closing--words .subhead { grid-column: 1 / 10; margin-bottom: 8mm; }
+.closing--words .subhead { grid-column: 1 / 10; margin-bottom: var(--sp-5); }
 /* The closer carries one block of text and nothing competing with it, so it
    takes the wide end of the measure band rather than the narrow end. */
 .closing--words .prose { grid-column: 1 / 11; max-width: 68ch; }
@@ -619,21 +619,21 @@
   margin: 0;
   max-width: 152mm;
 }
-.closing--words .closing__coda { grid-column: auto; margin-top: 7mm; }
+.closing--words .closing__coda { grid-column: auto; margin-top: var(--sp-4); }
 .closing--plate .page__block { display: none; }
 
 /* ---- Type tester --------------------------------------------------------- */
 .typespec .page__block { align-content: start; grid-template-rows: auto auto auto auto 1fr; }
 .typespec > .page__block > * { grid-column: 1 / 11; }
-.typespec__head { padding-bottom: 5mm; margin-bottom: 16mm; border-bottom: 0.6pt solid var(--ink); }
-.typespec__head .label { margin-bottom: 3mm; }
+.typespec__head { padding-bottom: var(--sp-3); margin-bottom: var(--sp-7); border-bottom: 0.6pt solid var(--ink); }
+.typespec__head .label { margin-bottom: var(--sp-2); }
 .typespec__source { color: var(--ink-faint); }
 .typespec__probe.is-missing { color: var(--signal); }
 .typespec__probe.is-present { color: var(--moss); }
 .typespec .essay-title { max-width: 190mm; }
-.typespec .deck { margin-top: 9mm; max-width: 140mm; }
-.typespec__body { margin-top: 16mm; grid-column: 1 / 9; font-size: var(--t-body); }
-.typespec__foot { grid-row: 5; align-self: end; display: grid; gap: 5mm; }
+.typespec .deck { margin-top: var(--sp-5); max-width: 140mm; }
+.typespec__body { margin-top: var(--sp-7); grid-column: 1 / 9; font-size: var(--t-body); }
+.typespec__foot { grid-row: 5; align-self: end; display: grid; gap: var(--sp-3); }
 
 /* ---- 19. COMPOSITES -----------------------------------------------------
    Some images arrive already mounted on a card, taped down, captioned or

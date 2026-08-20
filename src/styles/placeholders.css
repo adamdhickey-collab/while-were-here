@@ -18,7 +18,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 9mm;
+  padding: var(--sp-5);
   color: var(--ink-soft);
   font-family: var(--font-text);
   overflow: hidden;
@@ -43,7 +43,7 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  gap: 6mm;
+  gap: var(--sp-4);
 }
 .plate__id {
   font-size: var(--t-micro);
@@ -60,10 +60,10 @@
   color: var(--ink-faint);
   margin: 0;
   border: 0.3pt solid var(--rule);
-  padding: 1mm 2mm;
+  padding: var(--sp-1) var(--sp-1);
   white-space: nowrap;
 }
-.plate__bottom { display: grid; gap: 2mm; max-width: 120mm; }
+.plate__bottom { display: grid; gap: var(--sp-1); max-width: 120mm; }
 .plate__subject {
   font-family: var(--font-display);
   font-size: var(--t-body);
@@ -137,7 +137,7 @@
   z-index: 4;
   background: var(--paper-pale);
   border: 0.3pt solid var(--rule);
-  padding: 1.6mm 2.6mm;
+  padding: var(--sp-1) var(--sp-2);
   font-family: var(--font-note);
   font-size: var(--t-micro);
   letter-spacing: 0.06em;
@@ -161,7 +161,7 @@
   z-index: 4;
   background: var(--paper-pale);
   border: 0.4pt solid rgba(140, 134, 121, 0.5);
-  padding: 5mm 6mm;
+  padding: var(--sp-3) var(--sp-4);
   width: 66mm;
   box-shadow: 0 0.6mm 2mm rgba(25, 25, 25, 0.12);
   transform: rotate(-0.7deg);
@@ -169,24 +169,24 @@
 .specimen-card__row {
   display: grid;
   grid-template-columns: 22mm 1fr;
-  gap: 2mm;
+  gap: var(--sp-1);
   font-family: var(--font-note);
   font-size: var(--t-micro);
   line-height: 1.5;
   letter-spacing: 0.04em;
-  color: #4A4741;
+  color: var(--ink-soft);
   margin: 0;
 }
-.specimen-card__row dt { text-transform: uppercase; color: #8C8679; }
+.specimen-card__row dt { text-transform: uppercase; color: var(--ink-faint); }
 .specimen-card__row dd { margin: 0; }
 .specimen-card__notes {
-  margin: 3mm 0 0;
-  padding-top: 2.5mm;
+  margin: var(--sp-2) 0 0;
+  padding-top: var(--sp-2);
   border-top: 0.3pt solid rgba(140, 134, 121, 0.4);
   font-family: var(--font-note);
   font-size: var(--t-micro);
   line-height: 1.5;
-  color: #4A4741;
+  color: var(--ink-soft);
 }
 
 /* A small diagram card taped into a reading spread. */
@@ -194,9 +194,9 @@
   position: relative;
   background: var(--paper-pale);
   border: 0.4pt solid rgba(140, 134, 121, 0.45);
-  padding: 6mm;
+  padding: var(--sp-4);
   display: grid;
-  gap: 3.5mm;
+  gap: var(--sp-3);
   justify-items: center;
 }
 .inset-card__title {
@@ -204,13 +204,13 @@
   font-size: var(--t-micro);
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: #4A4741;
+  color: var(--ink-soft);
   margin: 0;
   text-align: center;
 }
 
 /* A plate too small to carry its own description shows only its ID. */
-.plate--compact { padding: 4mm; }
+.plate--compact { padding: var(--sp-3); }
 .plate--compact .plate__kind,
 .plate--compact .plate__subject,
 .plate--compact .plate__spec { display: none; }

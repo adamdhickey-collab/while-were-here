@@ -103,8 +103,9 @@
   };
 
   /* ---- Control bar ------------------------------------------------------- */
-  const bar = document.createElement('div');
+  const bar = document.createElement('nav');
   bar.className = 'bar';
+  bar.setAttribute('aria-label', 'Proof controls');
   bar.innerHTML = `
     <span class="bar__brand">While We’re Here</span>
     <span class="bar__sep"></span>
@@ -145,7 +146,8 @@
   const setCurrent = () => {
     spreads.forEach((s, i) => s.classList.toggle('is-current', i === index));
     if (!body.classList.contains('mode-one')) {
-      spreads[index]?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      spreads[index]?.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'center' });
     }
   };
 

@@ -10,9 +10,7 @@ Ask for the largest size the model will produce, then keep the original. Do not
 upscale a weak generation to hit the target; regenerate instead.
 
 
----
-
-## —
+## Recurring assets
 
 ### cover-01-watercolor-systems
 
@@ -73,13 +71,13 @@ Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glo
 **Watch for** Transparent PNG, ink only, no paper ground — it sits on the book's own paper. Must NOT be legible as sentences; it reads as a gesture.
 
 ```text
-An illustrated plate from a vintage scientific field guide, hand-drawn in ink on warm cream paper. Imperfect geometry — circles slightly out of true, lines drawn by hand, everything a degree or two off square. Field-guide illustration crossed with vintage scientific diagram, cartography and marginalia: arrows, rings, timelines, measure scales, tiny human figures. Screenprint and risograph texture with visible ink density variation and slight misregistration. Charcoal near-black ink on a warm cream ground (#F3EFE5), with restrained accents of muted rust (#A95738), faded cobalt (#536D8E) and moss green (#68735B). Intelligent, tactile, playful, handmade.
+A set of genuine handwritten annotations in brown-black iron-gall ink, photographed or scanned from a nineteenth-century manuscript or field notebook and cut out onto a fully transparent background. Real ink behaviour is the whole point: pressure variation through each stroke, thick and thin where the nib turned, one small blot, ink pooling at a stroke end, and one genuine crossing-out. Slightly irregular baselines. Nothing typeset, nothing traced, nothing even in weight.
 
 A set of six to eight short handwritten annotations in brown-black iron-gall ink on transparent ground, cut from a nineteenth-century manuscript or field notebook. Two or three words each, plus an underline, a bracket, a caret and a small pointing arrow. Visible pressure variation, a blot, one crossing-out.
 
-Frame 1:2.
+Tall narrow frame (1:2) — the annotations are arranged down the strip with clear space between them, so each one can be cut out and placed separately.
 
-Avoid: gradients; glossy 3D or rendered lighting; generic vector people; corporate infographic style; SaaS or explainer-video illustration; polished icon sets; decorative complexity with no conceptual purpose; fake handwritten paragraphs or invented lettering; any legible text; psychedelic imagery; symmetry for its own sake.
+Avoid: any paper, card or background — the ink must sit on full transparency; legible words or readable sentences; even, uniform stroke weight; calligraphy-practice regularity; a handwriting font or anything that looks digitally traced; drop shadows; modern ballpoint or marker; colour other than iron-gall brown-black.
 ```
 
 ### hand-02-overwriting-diagram
@@ -90,13 +88,13 @@ Avoid: gradients; glossy 3D or rendered lighting; generic vector people; corpora
 **Watch for** Transparent PNG. Angle no more than 3°. Illegible as text at reading distance.
 
 ```text
-An illustrated plate from a vintage scientific field guide, hand-drawn in ink on warm cream paper. Imperfect geometry — circles slightly out of true, lines drawn by hand, everything a degree or two off square. Field-guide illustration crossed with vintage scientific diagram, cartography and marginalia: arrows, rings, timelines, measure scales, tiny human figures. Screenprint and risograph texture with visible ink density variation and slight misregistration. Charcoal near-black ink on a warm cream ground (#F3EFE5), with restrained accents of muted rust (#A95738), faded cobalt (#536D8E) and moss green (#68735B). Intelligent, tactile, playful, handmade.
+A set of genuine handwritten annotations in brown-black iron-gall ink, photographed or scanned from a nineteenth-century manuscript or field notebook and cut out onto a fully transparent background. Real ink behaviour is the whole point: pressure variation through each stroke, thick and thin where the nib turned, one small blot, ink pooling at a stroke end, and one genuine crossing-out. Slightly irregular baselines. Nothing typeset, nothing traced, nothing even in weight.
 
 A single longer handwritten passage, four or five lines, running at a slight angle across the frame, as though written over a printed figure after the fact. Same iron-gall ink, transparent ground.
 
 Horizontal frame (3:2).
 
-Avoid: gradients; glossy 3D or rendered lighting; generic vector people; corporate infographic style; SaaS or explainer-video illustration; polished icon sets; decorative complexity with no conceptual purpose; fake handwritten paragraphs or invented lettering; any legible text; psychedelic imagery; symmetry for its own sake.
+Avoid: any paper, card or background — the ink must sit on full transparency; legible words or readable sentences; even, uniform stroke weight; calligraphy-practice regularity; a handwriting font or anything that looks digitally traced; drop shadows; modern ballpoint or marker; colour other than iron-gall brown-black.
 ```
 
 ### material-01-linen-weave
@@ -107,13 +105,13 @@ Avoid: gradients; glossy 3D or rendered lighting; generic vector people; corpora
 **Watch for** Warm neutral, close to the book's paper in value so the break is tactile rather than tonal.
 
 ```text
-A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
+A macro photograph of a single material surface, lit with raking light from one side so the surface throws its own shadows and its texture reads as terrain. Fills the entire frame edge to edge. Shallow but honest depth of field. Muted, true colour with no grading. Real photographic texture and fine grain.
 
 Raw undyed linen at macro scale, lit raking from one side so the weave throws its own shadows. Individual slubs and thread irregularities clearly visible. No hem, no edge, no object — only surface.
 
 Wide panoramic frame (2:1). This runs across a two-page spread, so keep the centre calm and place nothing important in the middle 30 mm.
 
-Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
+Avoid: any object, edge, hem, seam or boundary — only surface; anything that lets the viewer work out the scale; styled or arranged compositions; props; studio seamless backgrounds; heavy grading or HDR; vignettes; visible text or watermarks; symmetry; a recognisable scene resolving out of the texture.
 ```
 
 ### material-02-oxidised-metal
@@ -124,13 +122,13 @@ Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glo
 **Watch for** Let the rust carry the accent colours of Stage IV — coral, ultraviolet — rather than importing them.
 
 ```text
-A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
+A macro photograph of a single material surface, lit with raking light from one side so the surface throws its own shadows and its texture reads as terrain. Fills the entire frame edge to edge. Shallow but honest depth of field. Muted, true colour with no grading. Real photographic texture and fine grain.
 
 Oxidised copper or weathered steel at macro scale — rust bloom, verdigris, mineral crust. Raking light. Reads as a landscape until you realise the scale is wrong.
 
 Wide panoramic frame (2:1). This runs across a two-page spread, so keep the centre calm and place nothing important in the middle 30 mm.
 
-Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
+Avoid: any object, edge, hem, seam or boundary — only surface; anything that lets the viewer work out the scale; styled or arranged compositions; props; studio seamless backgrounds; heavy grading or HDR; vignettes; visible text or watermarks; symmetry; a recognisable scene resolving out of the texture.
 ```
 
 ### material-03-glass-condensation
@@ -141,16 +139,14 @@ Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glo
 **Watch for** The out-of-focus world must be unreadable — the moment it resolves into a scene it stops being a material.
 
 ```text
-A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
+A macro photograph of a single material surface, lit with raking light from one side so the surface throws its own shadows and its texture reads as terrain. Fills the entire frame edge to edge. Shallow but honest depth of field. Muted, true colour with no grading. Real photographic texture and fine grain.
 
 Condensation on a cold window at macro scale, with the world beyond it entirely out of focus. Droplets holding tiny inverted images of whatever is outside.
 
 Wide panoramic frame (2:1). This runs across a two-page spread, so keep the centre calm and place nothing important in the middle 30 mm.
 
-Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
+Avoid: any object, edge, hem, seam or boundary — only surface; anything that lets the viewer work out the scale; styled or arranged compositions; props; studio seamless backgrounds; heavy grading or HDR; vignettes; visible text or watermarks; symmetry; a recognisable scene resolving out of the texture.
 ```
-
----
 
 ## Why Ordinary Days May Be the Point of Life
 
@@ -408,8 +404,6 @@ Square frame (1:1).
 
 Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
 ```
-
----
 
 ## The Secret Life of Attention
 

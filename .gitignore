@@ -5,6 +5,12 @@ build/
 dist/
 .DS_Store
 
+# Claude Code's scratch space. `worktrees/` holds whole checkouts of this repo —
+# nearly a gigabyte of them at the time of writing — so ignore everything here
+# except the dev-server config, which is small and worth sharing.
+.claude/*
+!.claude/launch.json
+
 # Licensed fonts — NEVER commit these.
 # The Plattner Type EULA prohibits redistribution and prohibits serving the
 # desktop OTFs from a website. This repo is public. See LICENSING.md.

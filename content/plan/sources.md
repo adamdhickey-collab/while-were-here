@@ -5,7 +5,7 @@
 Every technical number in this book is listed here with the source it came from.
 Where a figure is contested, small-sample or easy to misstate, the note says so.
 
-31 verified · 1 outstanding
+32 verified · 0 outstanding
 
 ---
 
@@ -37,6 +37,16 @@ Volkov AG, Foster JC, Ashby TA, Walker RK, Johnson JA, Markin VS. *Mimosa pudica
 **Note.** Timings vary by which pulvinus is triggered: a pinnule folds in roughly two to seven seconds, a whole compound leaf droops in about two to five. Do NOT write 'no electrical signal is involved'. Mimosa propagates genuine action potentials; what it has no trace of is neurons. That distinction is the whole interest of the picture and getting it backwards would be the exact failure this file exists to prevent.
 
 *Used in photo 358 — figure caption, The Intelligence Outside Your Head.*
+
+---
+
+### The 4x4 square beside the Kiss of Judas on the Passion facade sums to 33 in every row, column and diagonal. It is adapted from the square in Durer's Melencolia I, repeating 14 and 10 and omitting 12 and 16, so it is not a true magic square.
+
+Basilica de la Sagrada Familia. *The magic square on the Passion facade: keys to understanding it*. Official Sagrada Familia blog. 2024. <https://blog.sagradafamilia.org/en/the-magic-square-on-the-passion-facade/>
+
+**Note.** The basilica's own account. Two things must both be said or the caption is wrong in one direction or the other. The constant is 33, the age traditionally given for Christ at his death, and that is the entire point of the object. And it is NOT a magic square by the standard definition: a 4x4 running 1 to 16 has a constant of 34, and this one omits 12 and 16 and repeats 14 and 10 to reach 33. Do not call it a magic square without the qualification, and do not call it a mistake either. It is a deliberate departure by Subirachs.
+
+*Used in photo 365 — figure caption.*
 
 ---
 
@@ -322,11 +332,3 @@ Meta Platforms. *Cities you have checked into*. Download Your Information, perso
 *Used in essays/why-humans-need-pilgrimages.md — reproduced record.*
 
 
----
-
-## Outstanding
-
-These are not settled and must not appear on a page until they are.
-
-- **sagrada-magic-square** (unverified) — The magic square on the Passion façade sums to 33 in every row, column and diagonal, and reaches that total by repeating four numbers, so it is not a true magic square.
-  Needs a primary source on Subirachs' square: which numbers are repeated, and the standard 4x4 constant it departs from. Do not set this caption until sourced.

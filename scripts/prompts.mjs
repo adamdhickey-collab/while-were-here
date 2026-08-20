@@ -127,11 +127,33 @@ const GROUND_AVOID =
   'repeated or tiling motif; infographic or corporate-diagram styling; anything resolving into ' +
   'a recognisable scene or object.';
 
+const SURVEY_STYLE =
+  'A large plate in the exact manner of this book\'s cover artwork, and in no other manner: a single ' +
+  'organic form built from many fine contour lines, like a topographic survey of something that is not ' +
+  'a landscape, with loose watercolour blooms washing through and past the linework in teal, slate ' +
+  'blue, amber, coral and magenta. The washes behave like real watercolour on damp paper — soft edges, ' +
+  'pooling where they settle, one colour bleeding into the next — and they are the point of the image, ' +
+  'not a tint over it. Over the top, a scatter of small ink dots joined by hairlines, as if a network ' +
+  'had been traced across the whole thing afterwards. Warm cream ground (#EFE9DC). It should read at ' +
+  'once as weather, as a cell, as a root system and as a map, without ever settling into one of them.';
+
+const SURVEY_AVOID =
+  'Avoid: legible text, numerals, labels or a legend of any kind; anything resolving into a literal ' +
+  'recognisable scene — no drawn trees, houses, roads or figures, only the systems beneath them; a ' +
+  'white or blue-white ground; flat digital fills or vector gradients in place of real watercolour ' +
+  'behaviour; neon or fluorescent colour; heavy black masses; perfect radial symmetry; a repeated or ' +
+  'tiling motif; infographic, corporate-diagram or explainer-video styling; drop shadows; a frame or ' +
+  'border around the artwork.';
+
 const promptFor = (i) => {
   const byRole = {
     handwriting: [HAND_STYLE, HAND_AVOID],
     material: [MATERIAL_STYLE, MATERIAL_AVOID],
     ground: [GROUND_STYLE, GROUND_AVOID],
+    /* The cover's own language. Distinct from the field-guide plate style in
+       the one way that matters: the watercolour is the subject, not an accent,
+       and the avoid-list must therefore stop forbidding gradients. */
+    survey: [SURVEY_STYLE, SURVEY_AVOID],
   };
   const [style, avoid] = byRole[i.role] ||
     (i.kind === 'illustration' ? [ILLO_STYLE, ILLO_AVOID] : [PHOTO_STYLE, PHOTO_AVOID]);

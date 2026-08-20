@@ -303,6 +303,23 @@ Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glo
 
 ## Most of Life Is a Tuesday
 
+### survey-01-familiar-lake
+
+**Save as** `public/images/illustration/survey-01-familiar-lake.png` · 1:1 · target 1024 × 1024 px (ChatGPT's largest for 1:1 — 283 dpi at 92 mm)
+**Where it goes** Reading · two column (verso, inset card)
+**Why it is there** Essay 01 argues most of a life is unmarked repetition. This is the unmarked repetition surveyed as though it were weather — the same lake as the field note, seen from a height nobody stands at.
+**Watch for** Must sit in the cover's visual language, not the field-guide plate language: watercolour blooms are the point, and this is the one role besides the cover that may use them at full strength. Warm cream ground #EFE9DC — the page's own paper, not a lighter one. No legible text anywhere in the artwork.
+
+```text
+A large plate in the exact manner of this book's cover artwork, and in no other manner: a single organic form built from many fine contour lines, like a topographic survey of something that is not a landscape, with loose watercolour blooms washing through and past the linework in teal, slate blue, amber, coral and magenta. The washes behave like real watercolour on damp paper — soft edges, pooling where they settle, one colour bleeding into the next — and they are the point of the image, not a tint over it. Over the top, a scatter of small ink dots joined by hairlines, as if a network had been traced across the whole thing afterwards. Warm cream ground (#EFE9DC). It should read at once as weather, as a cell, as a root system and as a map, without ever settling into one of them.
+
+The form here is one lake and the path that circles it, surveyed as weather and as a body at once: the shoreline as closed contours, the walking route as a single hairline returning to itself, the small dots gathered where a person stops without deciding to.
+
+Square frame (1:1).
+
+Avoid: legible text, numerals, labels or a legend of any kind; anything resolving into a literal recognisable scene — no drawn trees, houses, roads or figures, only the systems beneath them; a white or blue-white ground; flat digital fills or vector gradients in place of real watercolour behaviour; neon or fluorescent colour; heavy black masses; perfect radial symmetry; a repeated or tiling motif; infographic, corporate-diagram or explainer-video styling; drop shadows; a frame or border around the artwork.
+```
+
 ### ordinary-days-01a-dog-afternoon-light
 
 **Save as** `public/images/overlays/ordinary-days-01a-dog-afternoon-light.jpg` · 1:1 · target 4000 × 4000 px
@@ -645,6 +662,23 @@ Avoid: any paper, card or background colour — the artwork must sit on full tra
 
 ## The Secret Life of Attention
 
+### survey-02-corner-maple
+
+**Save as** `public/images/illustration/survey-02-corner-maple.png` · 1:1 · target 1024 × 1024 px (ChatGPT's largest for 1:1 — 283 dpi at 92 mm)
+**Where it goes** Reading · two column (verso, inset card)
+**Why it is there** The essay opens on a maple the author walked under for eleven years without seeing. The plate draws all eleven years at once, which is the one view the essay says attention never gives you.
+**Watch for** Must sit in the cover's visual language, not the field-guide plate language: watercolour blooms are the point, and this is the one role besides the cover that may use them at full strength. Warm cream ground #EFE9DC — the page's own paper, not a lighter one. No legible text anywhere in the artwork.
+
+```text
+A large plate in the exact manner of this book's cover artwork, and in no other manner: a single organic form built from many fine contour lines, like a topographic survey of something that is not a landscape, with loose watercolour blooms washing through and past the linework in teal, slate blue, amber, coral and magenta. The washes behave like real watercolour on damp paper — soft edges, pooling where they settle, one colour bleeding into the next — and they are the point of the image, not a tint over it. Over the top, a scatter of small ink dots joined by hairlines, as if a network had been traced across the whole thing afterwards. Warm cream ground (#EFE9DC). It should read at once as weather, as a cell, as a root system and as a map, without ever settling into one of them.
+
+The form here is one street tree: the crown as concentric contour, the root mass mirroring it below the line, and eleven faint rings of the same shape offset behind it, as if the tree had been drawn once a year and the drawings left stacked.
+
+Square frame (1:1).
+
+Avoid: legible text, numerals, labels or a legend of any kind; anything resolving into a literal recognisable scene — no drawn trees, houses, roads or figures, only the systems beneath them; a white or blue-white ground; flat digital fills or vector gradients in place of real watercolour behaviour; neon or fluorescent colour; heavy black masses; perfect radial symmetry; a repeated or tiling motif; infographic, corporate-diagram or explainer-video styling; drop shadows; a frame or border around the artwork.
+```
+
 ### ephemera-01-window-plant
 
 **Save as** `public/images/personal/ephemera-01-window-plant.jpg` · 1:1 · target 1200 × 1200 px (native — 435 dpi at 70 mm, and nothing larger)
@@ -775,6 +809,235 @@ Avoid: any paper, card or background colour — the artwork must sit on full tra
 A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
 
 An Amur tiger stepping through summer growth, head low, whiskers forward, following something at ground level.
+
+Horizontal frame (4:3).
+
+Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
+```
+
+## The Intelligence Outside Your Head
+
+### survey-03-workbench-field
+
+**Save as** `public/images/illustration/survey-03-workbench-field.png` · 1:1 · target 1024 × 1024 px (ChatGPT's largest for 1:1 — 283 dpi at 92 mm)
+**Where it goes** Reading · two column (verso, inset card)
+**Why it is there** Essay 04 argues the mind is distributed into marks, tools, rooms. Its closing image is a workbench after the work. This plate is that bench drawn as the thought it actually was.
+**Watch for** Must sit in the cover's visual language, not the field-guide plate language: watercolour blooms are the point, and this is the one role besides the cover that may use them at full strength. Warm cream ground #EFE9DC — the page's own paper, not a lighter one. No legible text anywhere in the artwork.
+
+```text
+A large plate in the exact manner of this book's cover artwork, and in no other manner: a single organic form built from many fine contour lines, like a topographic survey of something that is not a landscape, with loose watercolour blooms washing through and past the linework in teal, slate blue, amber, coral and magenta. The washes behave like real watercolour on damp paper — soft edges, pooling where they settle, one colour bleeding into the next — and they are the point of the image, not a tint over it. Over the top, a scatter of small ink dots joined by hairlines, as if a network had been traced across the whole thing afterwards. Warm cream ground (#EFE9DC). It should read at once as weather, as a cell, as a root system and as a map, without ever settling into one of them.
+
+The form here is a workbench seen from directly above and treated as terrain: tools as small dense masses joined by the hairline network of the hand's route between them, the sawdust as a diffuse bloom, the whole thing reading as a map of a decision rather than a picture of a table.
+
+Square frame (1:1).
+
+Avoid: legible text, numerals, labels or a legend of any kind; anything resolving into a literal recognisable scene — no drawn trees, houses, roads or figures, only the systems beneath them; a white or blue-white ground; flat digital fills or vector gradients in place of real watercolour behaviour; neon or fluorescent colour; heavy black masses; perfect radial symmetry; a repeated or tiling motif; infographic, corporate-diagram or explainer-video styling; drop shadows; a frame or border around the artwork.
+```
+
+### ground-04-extended-cognition
+
+**Save as** `public/images/illustration/ground-04-extended-cognition.png` · 2:1 · target 8000 × 4000 px
+**Where it goes** Under the first two-column reading spread, across both pages
+**Why it is there** The essay argues intelligence is not what a brain does alone. The centre is deliberately the smallest node.
+**Watch for** Every ground sits on a two-column reading spread, which is TWO pages, so it is 2:1 and the layout gives each page its half. Verified in the paginator 19 Aug 2026. STAGE 3: this page is a DARK ground, so the ink must be PALE — white or near-white, never charcoal.
+
+```text
+A scientific plate in the manner of the cover artwork for this book: fine ink linework, plotted points, small circular inset diagrams, delicate annotation arcs, and occasionally a tiny human figure for scale — everything drawn at a single hairline weight, on a fully transparent background. At most one very diffuse wash of a single colour, soft-edged, behaving like watercolour that has spread into damp paper. It reads as a real study of a real system, drawn by someone who was measuring something. This is a GROUND: it will be laid underneath body copy at roughly 8 to 14 percent opacity, so it must survive being almost invisible, must never fight the text, and must have its density placed where the type is not.
+
+THIS ONE IS DRAWN IN PALE INK. The page it sits on is a dark charcoal or near-black ground and the type reverses out of it, so every line, point and inset in this drawing must be WHITE or near-white, never charcoal and never black. The single colour wash stays, but it must be a luminous version of itself. On a transparent background, pale ink can look like almost nothing while you are drawing it. That is correct.
+
+A distributed-system plate: one small node drawn as a tiny human figure, with fine lines radiating out to a dozen external nodes of varying size — each node a small circular diagram in its own right, some plotted with points, some with concentric rings. Every line is a hairline; none is weighted more than another. A diffuse amber wash pooling at the outer nodes and never at the figure. **Composition, and this is the part that matters most.** The drawing runs across a two-page spread, so it is one continuous field 8000 px wide. Two columns of body copy sit in the UPPER HALF of BOTH pages, so the upper half must be nearly empty — a few stray marks at most. Put the density in the LOWER HALF. Keep the middle 400 px calm, because that is the fold. The bottom-left quarter is covered by a photograph on the page, so anything you put there will not be seen: weight the drawing toward the lower right. The figure sits low and left of the fold. The network fans out and DOWN into the lower right, not upward, because upward is where the text is.
+
+Wide panoramic frame (2:1). This runs across a two-page spread, so keep the centre calm and place nothing important in the middle 30 mm.
+
+Avoid: any paper, card or background colour — the artwork must sit on full transparency; variable or heavy line weight; hard-edged washes; fills, hatching or shading; text, numerals, labels, scale bars or legends of any kind; frames or borders; drop shadows; a dense area that would darken into a blotch under body copy; perfect radial symmetry; a repeated or tiling motif; infographic or corporate-diagram styling; anything resolving into a recognisable scene or object.
+```
+
+### intelligence-01-pencil-mark
+
+**Save as** `public/images/photography/intelligence-01-pencil-mark.png` · 1:1 · target 1024 × 1024 px (ChatGPT's largest for 1:1 — 85 dpi at 306 mm)
+**Where it goes** Opener (verso, full bleed)
+**Why it is there** The essay opens on this. Thinking that is on the wood, not in the head.
+**Watch for** Target lowered 20 Aug 2026 to the largest canvas ChatGPT actually produces. The previous figure asked for a resolution no available generator could reach.
+
+```text
+A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
+
+A carpenter’s pencil line on a board, a tape measure beside it, the saw cut a few millimetres past the mark.
+
+Square frame (1:1).
+
+Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
+```
+
+### intelligence-02-cards-table
+
+**Save as** `public/images/photography/intelligence-02-cards-table.png` · 3:1 · target 1536 × 512 px (ChatGPT's largest for 3:1 — 165 dpi at 236 mm)
+**Where it goes** Reading · two column (verso, bottom band at 236 mm)
+**Why it is there** Band under the working-memory margin note. The arrangement has to look mid-move, not finished.
+**Watch for** Target lowered 20 Aug 2026 to the largest canvas ChatGPT actually produces. The previous figure asked for a resolution no available generator could reach. Spread description corrected 20 Aug 2026. It read “across the fold”, but .reading__band spans the twelve-column grid inside one page's text block — the band is 236 × 82 mm on the verso and has never crossed the fold. The wrong width had been used to compute this entry's resolution target.
+
+```text
+A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
+
+Index cards being rearranged across a table, shot from directly above, one hand entering the frame.
+
+Very wide band (3:1), figures small in the frame.
+
+Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
+```
+
+### intelligence-03-orb-web
+
+**Save as** `public/images/plates/—` · 1:1 · target 3000 × 2250 px per plate
+**Where it goes** Pull quote (facing)
+**Why it is there** Faces the pull quote. On a dark stage the plates composite normally and lay largest first.
+**Watch for** Separated at --simplify 700. Replaces the orb-web drawing, which stays a good idea for a diagram spread.
+
+```text
+A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
+
+A penguin underwater, wings out, against a field of light. Separated into three plates.
+
+Square frame (1:1).
+
+Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
+```
+
+### intelligence-04-route-line
+
+**Save as** `public/images/photography/intelligence-04-route-line.png` · 3:1 · target 1536 × 512 px (ChatGPT's largest for 3:1 — 165 dpi at 236 mm)
+**Where it goes** Reading · two column (verso, bottom band at 236 mm)
+**Why it is there** Band beside the taxi-driver margin note. No faces, no hands on the wheel if it can be avoided.
+**Watch for** Target lowered 20 Aug 2026 to the largest canvas ChatGPT actually produces. The previous figure asked for a resolution no available generator could reach. Spread description corrected 20 Aug 2026. It read “across the fold”, but .reading__band spans the twelve-column grid inside one page's text block — the band is 236 × 82 mm on the verso and has never crossed the fold. The wrong width had been used to compute this entry's resolution target.
+
+```text
+A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
+
+A driver’s view: wet road ahead, a blue route line on a screen at the edge of frame, the turn not yet named.
+
+Very wide band (3:1), figures small in the frame.
+
+Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
+```
+
+### intelligence-05-tools-ready
+
+**Save as** `public/images/photography/intelligence-05-tools-ready.png` · 2:3 · target 1024 × 1536 px (ChatGPT's largest for 2:3 — 135 dpi at 192 mm)
+**Where it goes** Image essay (tall)
+**Why it is there** The tall plate. It has to read as waiting, not as tidy.
+**Watch for** Target lowered 20 Aug 2026 to the largest canvas ChatGPT actually produces. The previous figure asked for a resolution no available generator could reach.
+
+```text
+A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
+
+A workbench with tools laid out ready for use, nobody present, the work half done.
+
+Vertical frame (2:3), subject low, generous empty space above.
+
+Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
+```
+
+### specimen-01-komodo-tongue
+
+**Save as** `public/images/photography/specimen-01-komodo-tongue.jpg` · 4:3 · target 1280 × 960 px (native — 493 dpi at 66 mm, and nothing larger)
+**Where it goes** Image essay, specimen card at 66 mm
+**Why it is there** A real record on a page that argues thinking happens outside the skull. Photographed by Adam, 2014. A captive animal — do not caption it as wild.
+**Watch for** Not retouched, not upscaled. It is used at the only size its resolution supports.
+
+```text
+A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
+
+The head of a Komodo dragon at rest on sand, one eye open, nostril and jawline in raking light.
+
+Horizontal frame (4:3).
+
+Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
+```
+
+### intelligence-06-closing-hands
+
+**Save as** `public/images/photography/intelligence-06-closing-hands.png` · 1:1 · target 1024 × 1024 px (ChatGPT's largest for 1:1 — 85 dpi at 306 mm)
+**Where it goes** Closing spread (recto, full bleed)
+**Why it is there** The closing recto. The essay ends on tools left ready, and this is that, photographed quietly and full bleed.
+**Watch for** Target lowered 20 Aug 2026 to the largest canvas ChatGPT actually produces. The previous figure asked for a resolution no available generator could reach.
+
+```text
+A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
+
+A workbench after the work: tools set down where they were used, a pencil, a rule, sawdust, nobody in frame.
+
+Square frame (1:1).
+
+Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
+```
+
+## The Last Generation That Remembers the Before-Time
+
+### survey-04-two-roads
+
+**Save as** `public/images/illustration/survey-04-two-roads.png` · 1:1 · target 1024 × 1024 px (ChatGPT's largest for 1:1 — 283 dpi at 92 mm)
+**Where it goes** Reading · two column (verso, inset card)
+**Why it is there** The essay ends on a driver following the phone past a field the old road never reached. Two systems that agree almost everywhere and diverge once, drawn as one map.
+**Watch for** Must sit in the cover's visual language, not the field-guide plate language: watercolour blooms are the point, and this is the one role besides the cover that may use them at full strength. Warm cream ground #EFE9DC — the page's own paper, not a lighter one. No legible text anywhere in the artwork.
+
+```text
+A large plate in the exact manner of this book's cover artwork, and in no other manner: a single organic form built from many fine contour lines, like a topographic survey of something that is not a landscape, with loose watercolour blooms washing through and past the linework in teal, slate blue, amber, coral and magenta. The washes behave like real watercolour on damp paper — soft edges, pooling where they settle, one colour bleeding into the next — and they are the point of the image, not a tint over it. Over the top, a scatter of small ink dots joined by hairlines, as if a network had been traced across the whole thing afterwards. Warm cream ground (#EFE9DC). It should read at once as weather, as a cell, as a root system and as a map, without ever settling into one of them.
+
+The form here is two routes across the same country: one drawn as a folded, creased and annotated network of hairlines, the other as a single clean line laid over it, agreeing for most of the distance and parting once. Contours behind both. No labels, no legible text.
+
+Square frame (1:1).
+
+Avoid: legible text, numerals, labels or a legend of any kind; anything resolving into a literal recognisable scene — no drawn trees, houses, roads or figures, only the systems beneath them; a white or blue-white ground; flat digital fills or vector gradients in place of real watercolour behaviour; neon or fluorescent colour; heavy black masses; perfect radial symmetry; a repeated or tiling motif; infographic, corporate-diagram or explainer-video styling; drop shadows; a frame or border around the artwork.
+```
+
+### north-03-lake-horizon
+
+**Save as** `public/images/personal/north-03-lake-horizon.jpg` · 1:1 · target 1024 × 1024 px (native — 372 dpi at 70 mm, and nothing larger)
+**Where it goes** Reading · two column (verso, inset card)
+**Why it is there** On a page about a world ending without a closing date. Nothing in the frame belongs to any decade — which is the essay’s point about what will and will not be missed.
+**Watch for** Not retouched, not upscaled. EXIF stripped on upload, so the captions carry the season, which is recorded, and no clock time, which is not.
+
+```text
+A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
+
+Autumn forest falling away to a flat grey lake, the horizon and the cloud band almost the same value, no shore visible on the far side.
+
+Square frame (1:1).
+
+Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
+```
+
+### ground-06-density-thinning
+
+**Save as** `public/images/illustration/ground-06-density-thinning.png` · 2:1 · target 8000 × 4000 px
+**Where it goes** Under the first two-column reading spread, across both pages
+**Why it is there** The essay is a count of what disappeared. This is the count.
+**Watch for** Every ground sits on a two-column reading spread, which is TWO pages, so it is 2:1 and the layout gives each page its half. Verified in the paginator 19 Aug 2026. STAGE 4: this page is a DARK ground, so the ink must be PALE — white or near-white, never charcoal.
+
+```text
+A scientific plate in the manner of the cover artwork for this book: fine ink linework, plotted points, small circular inset diagrams, delicate annotation arcs, and occasionally a tiny human figure for scale — everything drawn at a single hairline weight, on a fully transparent background. At most one very diffuse wash of a single colour, soft-edged, behaving like watercolour that has spread into damp paper. It reads as a real study of a real system, drawn by someone who was measuring something. This is a GROUND: it will be laid underneath body copy at roughly 8 to 14 percent opacity, so it must survive being almost invisible, must never fight the text, and must have its density placed where the type is not.
+
+THIS ONE IS DRAWN IN PALE INK. The page it sits on is a dark charcoal or near-black ground and the type reverses out of it, so every line, point and inset in this drawing must be WHITE or near-white, never charcoal and never black. The single colour wash stays, but it must be a luminous version of itself. On a transparent background, pale ink can look like almost nothing while you are drawing it. That is correct.
+
+A density plot: a scatter of several hundred tiny outlined objects — rectangles, discs, spools, spirals, drawn small enough to read as marks rather than as things — crowded densely at one edge and thinning steadily across the frame until only three or four remain. One tiny human figure standing at the point where the density breaks. A diffuse ultraviolet wash at the dense edge. **Composition, and this is the part that matters most.** The drawing runs across a two-page spread, so it is one continuous field 8000 px wide. Two columns of body copy sit in the UPPER HALF of BOTH pages, so the upper half must be nearly empty — a few stray marks at most. Put the density in the LOWER HALF. Keep the middle 400 px calm, because that is the fold. The bottom-left quarter is covered by a photograph on the page, so anything you put there will not be seen: weight the drawing toward the lower right. Crowd the lower right and thin toward the lower left, with the figure just left of where the density gives out. Nothing in the upper half at all.
+
+Wide panoramic frame (2:1). This runs across a two-page spread, so keep the centre calm and place nothing important in the middle 30 mm.
+
+Avoid: any paper, card or background colour — the artwork must sit on full transparency; variable or heavy line weight; hard-edged washes; fills, hatching or shading; text, numerals, labels, scale bars or legends of any kind; frames or borders; drop shadows; a dense area that would darken into a blotch under body copy; perfect radial symmetry; a repeated or tiling motif; infographic or corporate-diagram styling; anything resolving into a recognisable scene or object.
+```
+
+### specimen-03-eagle-owl
+
+**Save as** `public/images/photography/specimen-03-eagle-owl.jpg` · 4:3 · target 980 × 735 px cropped from 1280 × 960 (native — 377 dpi at 66 mm)
+**Where it goes** Image essay, specimen card at 66 mm
+**Why it is there** On a page about a default that is disappearing. The owl carries a map of a world that has not changed. Photographed by Adam, 2014. A captive bird — do not caption it as wild.
+**Watch for** Cropped from the original frame to remove a handler and a legible staff shirt: a person who has not consented to appear in a book intended for sale, and branding the plate rules forbid. Not retouched, not upscaled.
+
+```text
+A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
+
+A Eurasian eagle-owl from behind, ear tufts up, the barred pattern of the back running to the wing.
 
 Horizontal frame (4:3).
 
@@ -1059,61 +1322,6 @@ Horizontal frame (4:3).
 Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
 ```
 
-## The Last Generation That Remembers the Before-Time
-
-### north-03-lake-horizon
-
-**Save as** `public/images/personal/north-03-lake-horizon.jpg` · 1:1 · target 1024 × 1024 px (native — 372 dpi at 70 mm, and nothing larger)
-**Where it goes** Reading · two column (verso, inset card)
-**Why it is there** On a page about a world ending without a closing date. Nothing in the frame belongs to any decade — which is the essay’s point about what will and will not be missed.
-**Watch for** Not retouched, not upscaled. EXIF stripped on upload, so the captions carry the season, which is recorded, and no clock time, which is not.
-
-```text
-A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
-
-Autumn forest falling away to a flat grey lake, the horizon and the cloud band almost the same value, no shore visible on the far side.
-
-Square frame (1:1).
-
-Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
-```
-
-### ground-06-density-thinning
-
-**Save as** `public/images/illustration/ground-06-density-thinning.png` · 2:1 · target 8000 × 4000 px
-**Where it goes** Under the first two-column reading spread, across both pages
-**Why it is there** The essay is a count of what disappeared. This is the count.
-**Watch for** Every ground sits on a two-column reading spread, which is TWO pages, so it is 2:1 and the layout gives each page its half. Verified in the paginator 19 Aug 2026. STAGE 4: this page is a DARK ground, so the ink must be PALE — white or near-white, never charcoal.
-
-```text
-A scientific plate in the manner of the cover artwork for this book: fine ink linework, plotted points, small circular inset diagrams, delicate annotation arcs, and occasionally a tiny human figure for scale — everything drawn at a single hairline weight, on a fully transparent background. At most one very diffuse wash of a single colour, soft-edged, behaving like watercolour that has spread into damp paper. It reads as a real study of a real system, drawn by someone who was measuring something. This is a GROUND: it will be laid underneath body copy at roughly 8 to 14 percent opacity, so it must survive being almost invisible, must never fight the text, and must have its density placed where the type is not.
-
-THIS ONE IS DRAWN IN PALE INK. The page it sits on is a dark charcoal or near-black ground and the type reverses out of it, so every line, point and inset in this drawing must be WHITE or near-white, never charcoal and never black. The single colour wash stays, but it must be a luminous version of itself. On a transparent background, pale ink can look like almost nothing while you are drawing it. That is correct.
-
-A density plot: a scatter of several hundred tiny outlined objects — rectangles, discs, spools, spirals, drawn small enough to read as marks rather than as things — crowded densely at one edge and thinning steadily across the frame until only three or four remain. One tiny human figure standing at the point where the density breaks. A diffuse ultraviolet wash at the dense edge. **Composition, and this is the part that matters most.** The drawing runs across a two-page spread, so it is one continuous field 8000 px wide. Two columns of body copy sit in the UPPER HALF of BOTH pages, so the upper half must be nearly empty — a few stray marks at most. Put the density in the LOWER HALF. Keep the middle 400 px calm, because that is the fold. The bottom-left quarter is covered by a photograph on the page, so anything you put there will not be seen: weight the drawing toward the lower right. Crowd the lower right and thin toward the lower left, with the figure just left of where the density gives out. Nothing in the upper half at all.
-
-Wide panoramic frame (2:1). This runs across a two-page spread, so keep the centre calm and place nothing important in the middle 30 mm.
-
-Avoid: any paper, card or background colour — the artwork must sit on full transparency; variable or heavy line weight; hard-edged washes; fills, hatching or shading; text, numerals, labels, scale bars or legends of any kind; frames or borders; drop shadows; a dense area that would darken into a blotch under body copy; perfect radial symmetry; a repeated or tiling motif; infographic or corporate-diagram styling; anything resolving into a recognisable scene or object.
-```
-
-### specimen-03-eagle-owl
-
-**Save as** `public/images/photography/specimen-03-eagle-owl.jpg` · 4:3 · target 980 × 735 px cropped from 1280 × 960 (native — 377 dpi at 66 mm)
-**Where it goes** Image essay, specimen card at 66 mm
-**Why it is there** On a page about a default that is disappearing. The owl carries a map of a world that has not changed. Photographed by Adam, 2014. A captive bird — do not caption it as wild.
-**Watch for** Cropped from the original frame to remove a handler and a legible staff shirt: a person who has not consented to appear in a book intended for sale, and branding the plate rules forbid. Not retouched, not upscaled.
-
-```text
-A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
-
-A Eurasian eagle-owl from behind, ear tufts up, the barred pattern of the back running to the wing.
-
-Horizontal frame (4:3).
-
-Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
-```
-
 ## The Beauty of Systems Nobody Designed
 
 ### systems-01-ants-pavement
@@ -1231,146 +1439,6 @@ A believable documentary photograph of the real world — quiet, contemplative, 
 A queen butterfly, Danaus gilippus, closed on a grass stem: chestnut ground, white spots scattered across the forewing, fine veins.
 
 Horizontal frame (4:3).
-
-Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
-```
-
-## The Intelligence Outside Your Head
-
-### ground-04-extended-cognition
-
-**Save as** `public/images/illustration/ground-04-extended-cognition.png` · 2:1 · target 8000 × 4000 px
-**Where it goes** Under the first two-column reading spread, across both pages
-**Why it is there** The essay argues intelligence is not what a brain does alone. The centre is deliberately the smallest node.
-**Watch for** Every ground sits on a two-column reading spread, which is TWO pages, so it is 2:1 and the layout gives each page its half. Verified in the paginator 19 Aug 2026. STAGE 3: this page is a DARK ground, so the ink must be PALE — white or near-white, never charcoal.
-
-```text
-A scientific plate in the manner of the cover artwork for this book: fine ink linework, plotted points, small circular inset diagrams, delicate annotation arcs, and occasionally a tiny human figure for scale — everything drawn at a single hairline weight, on a fully transparent background. At most one very diffuse wash of a single colour, soft-edged, behaving like watercolour that has spread into damp paper. It reads as a real study of a real system, drawn by someone who was measuring something. This is a GROUND: it will be laid underneath body copy at roughly 8 to 14 percent opacity, so it must survive being almost invisible, must never fight the text, and must have its density placed where the type is not.
-
-THIS ONE IS DRAWN IN PALE INK. The page it sits on is a dark charcoal or near-black ground and the type reverses out of it, so every line, point and inset in this drawing must be WHITE or near-white, never charcoal and never black. The single colour wash stays, but it must be a luminous version of itself. On a transparent background, pale ink can look like almost nothing while you are drawing it. That is correct.
-
-A distributed-system plate: one small node drawn as a tiny human figure, with fine lines radiating out to a dozen external nodes of varying size — each node a small circular diagram in its own right, some plotted with points, some with concentric rings. Every line is a hairline; none is weighted more than another. A diffuse amber wash pooling at the outer nodes and never at the figure. **Composition, and this is the part that matters most.** The drawing runs across a two-page spread, so it is one continuous field 8000 px wide. Two columns of body copy sit in the UPPER HALF of BOTH pages, so the upper half must be nearly empty — a few stray marks at most. Put the density in the LOWER HALF. Keep the middle 400 px calm, because that is the fold. The bottom-left quarter is covered by a photograph on the page, so anything you put there will not be seen: weight the drawing toward the lower right. The figure sits low and left of the fold. The network fans out and DOWN into the lower right, not upward, because upward is where the text is.
-
-Wide panoramic frame (2:1). This runs across a two-page spread, so keep the centre calm and place nothing important in the middle 30 mm.
-
-Avoid: any paper, card or background colour — the artwork must sit on full transparency; variable or heavy line weight; hard-edged washes; fills, hatching or shading; text, numerals, labels, scale bars or legends of any kind; frames or borders; drop shadows; a dense area that would darken into a blotch under body copy; perfect radial symmetry; a repeated or tiling motif; infographic or corporate-diagram styling; anything resolving into a recognisable scene or object.
-```
-
-### intelligence-01-pencil-mark
-
-**Save as** `public/images/photography/intelligence-01-pencil-mark.png` · 1:1 · target 1024 × 1024 px (ChatGPT's largest for 1:1 — 85 dpi at 306 mm)
-**Where it goes** Opener (verso, full bleed)
-**Why it is there** The essay opens on this. Thinking that is on the wood, not in the head.
-**Watch for** Target lowered 20 Aug 2026 to the largest canvas ChatGPT actually produces. The previous figure asked for a resolution no available generator could reach.
-
-```text
-A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
-
-A carpenter’s pencil line on a board, a tape measure beside it, the saw cut a few millimetres past the mark.
-
-Square frame (1:1).
-
-Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
-```
-
-### intelligence-02-cards-table
-
-**Save as** `public/images/photography/intelligence-02-cards-table.png` · 3:1 · target 1536 × 512 px (ChatGPT's largest for 3:1 — 165 dpi at 236 mm)
-**Where it goes** Reading · two column (verso, bottom band at 236 mm)
-**Why it is there** Band under the working-memory margin note. The arrangement has to look mid-move, not finished.
-**Watch for** Target lowered 20 Aug 2026 to the largest canvas ChatGPT actually produces. The previous figure asked for a resolution no available generator could reach. Spread description corrected 20 Aug 2026. It read “across the fold”, but .reading__band spans the twelve-column grid inside one page's text block — the band is 236 × 82 mm on the verso and has never crossed the fold. The wrong width had been used to compute this entry's resolution target.
-
-```text
-A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
-
-Index cards being rearranged across a table, shot from directly above, one hand entering the frame.
-
-Very wide band (3:1), figures small in the frame.
-
-Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
-```
-
-### intelligence-03-orb-web
-
-**Save as** `public/images/plates/—` · 1:1 · target 3000 × 2250 px per plate
-**Where it goes** Pull quote (facing)
-**Why it is there** Faces the pull quote. On a dark stage the plates composite normally and lay largest first.
-**Watch for** Separated at --simplify 700. Replaces the orb-web drawing, which stays a good idea for a diagram spread.
-
-```text
-A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
-
-A penguin underwater, wings out, against a field of light. Separated into three plates.
-
-Square frame (1:1).
-
-Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
-```
-
-### intelligence-04-route-line
-
-**Save as** `public/images/photography/intelligence-04-route-line.png` · 3:1 · target 1536 × 512 px (ChatGPT's largest for 3:1 — 165 dpi at 236 mm)
-**Where it goes** Reading · two column (verso, bottom band at 236 mm)
-**Why it is there** Band beside the taxi-driver margin note. No faces, no hands on the wheel if it can be avoided.
-**Watch for** Target lowered 20 Aug 2026 to the largest canvas ChatGPT actually produces. The previous figure asked for a resolution no available generator could reach. Spread description corrected 20 Aug 2026. It read “across the fold”, but .reading__band spans the twelve-column grid inside one page's text block — the band is 236 × 82 mm on the verso and has never crossed the fold. The wrong width had been used to compute this entry's resolution target.
-
-```text
-A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
-
-A driver’s view: wet road ahead, a blue route line on a screen at the edge of frame, the turn not yet named.
-
-Very wide band (3:1), figures small in the frame.
-
-Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
-```
-
-### intelligence-05-tools-ready
-
-**Save as** `public/images/photography/intelligence-05-tools-ready.png` · 2:3 · target 1024 × 1536 px (ChatGPT's largest for 2:3 — 135 dpi at 192 mm)
-**Where it goes** Image essay (tall)
-**Why it is there** The tall plate. It has to read as waiting, not as tidy.
-**Watch for** Target lowered 20 Aug 2026 to the largest canvas ChatGPT actually produces. The previous figure asked for a resolution no available generator could reach.
-
-```text
-A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
-
-A workbench with tools laid out ready for use, nobody present, the work half done.
-
-Vertical frame (2:3), subject low, generous empty space above.
-
-Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
-```
-
-### specimen-01-komodo-tongue
-
-**Save as** `public/images/photography/specimen-01-komodo-tongue.jpg` · 4:3 · target 1280 × 960 px (native — 493 dpi at 66 mm, and nothing larger)
-**Where it goes** Image essay, specimen card at 66 mm
-**Why it is there** A real record on a page that argues thinking happens outside the skull. Photographed by Adam, 2014. A captive animal — do not caption it as wild.
-**Watch for** Not retouched, not upscaled. It is used at the only size its resolution supports.
-
-```text
-A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
-
-The head of a Komodo dragon at rest on sand, one eye open, nostril and jawline in raking light.
-
-Horizontal frame (4:3).
-
-Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
-```
-
-### intelligence-06-closing-hands
-
-**Save as** `public/images/photography/intelligence-06-closing-hands.png` · 1:1 · target 1024 × 1024 px (ChatGPT's largest for 1:1 — 85 dpi at 306 mm)
-**Where it goes** Closing spread (recto, full bleed)
-**Why it is there** The closing recto. The essay ends on tools left ready, and this is that, photographed quietly and full bleed.
-**Watch for** Target lowered 20 Aug 2026 to the largest canvas ChatGPT actually produces. The previous figure asked for a resolution no available generator could reach.
-
-```text
-A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
-
-A workbench after the work: tools set down where they were used, a pencil, a rule, sawdust, nobody in frame.
-
-Square frame (1:1).
 
 Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
 ```

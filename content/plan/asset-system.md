@@ -167,6 +167,25 @@ system the other seven drew separately — cell, vessel, street, ecology, circui
 orbit — with one very small figure inside them. It sits under the final spread
 and it is the only ground a reader is meant to consciously notice.
 
+### 12 · SURVEY
+
+The cover's own language, used inside the book. A single organic form built from
+contour lines with real watercolour blooms washing through it, plotted points and
+a hairline network traced over the top — the artwork on the front board, applied
+to one subject at a time.
+
+- **Lives in** the inset card on a reading spread · 92 mm
+- **Treatment** Watercolour at full strength. This is the ONLY role besides the
+  cover permitted to use it that way; everywhere else in the book, colour is a
+  restrained accent on charcoal linework.
+- **Rule** It surveys something real from this life — a lake that is walked, a
+  tree on a corner, a bench after the work — and it never draws that thing
+  literally. No trees, no houses, no roads, no figures: only the systems under
+  them. A reader should find it beautiful before they find out what it is, and
+  the caption is where they find out.
+- **Budget** One per essay at most, and not in every essay. Four is a series;
+  eight is wallpaper.
+
 ### 11 · PERSONAL
 Real photographs. Family, dogs, the lake, old objects, places with meaning.
 

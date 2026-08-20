@@ -4,7 +4,7 @@
 
 **Book:** *While We're Here* — Adam Hickey. A 300 × 300 mm hardcover of short
 essays on attention, ordinary life, hidden systems and being alive. Twenty-three
-images are already made and placed. These 5 are what remain, and they
+images are already made and placed. These 9 are what remain, and they
 are the two registers the set is currently missing entirely.
 
 ## What the book already looks like
@@ -44,6 +44,82 @@ thing. Nothing in frame should let a viewer work out the scale.
 - File format and filename exactly as given, or the build will not pick it up.
 
 ---
+
+## Most of Life Is a Tuesday
+
+### survey-01-familiar-lake
+
+**Save as** `public/images/illustration/survey-01-familiar-lake.png` · 1:1 · target 1024 × 1024 px (ChatGPT's largest for 1:1 — 283 dpi at 92 mm)
+**Where it goes** Reading · two column (verso, inset card)
+**Why it is there** Essay 01 argues most of a life is unmarked repetition. This is the unmarked repetition surveyed as though it were weather — the same lake as the field note, seen from a height nobody stands at.
+**Watch for** Must sit in the cover's visual language, not the field-guide plate language: watercolour blooms are the point, and this is the one role besides the cover that may use them at full strength. Warm cream ground #EFE9DC — the page's own paper, not a lighter one. No legible text anywhere in the artwork.
+
+```text
+A large plate in the exact manner of this book's cover artwork, and in no other manner: a single organic form built from many fine contour lines, like a topographic survey of something that is not a landscape, with loose watercolour blooms washing through and past the linework in teal, slate blue, amber, coral and magenta. The washes behave like real watercolour on damp paper — soft edges, pooling where they settle, one colour bleeding into the next — and they are the point of the image, not a tint over it. Over the top, a scatter of small ink dots joined by hairlines, as if a network had been traced across the whole thing afterwards. Warm cream ground (#EFE9DC). It should read at once as weather, as a cell, as a root system and as a map, without ever settling into one of them.
+
+The form here is one lake and the path that circles it, surveyed as weather and as a body at once: the shoreline as closed contours, the walking route as a single hairline returning to itself, the small dots gathered where a person stops without deciding to.
+
+Square frame (1:1).
+
+Avoid: legible text, numerals, labels or a legend of any kind; anything resolving into a literal recognisable scene — no drawn trees, houses, roads or figures, only the systems beneath them; a white or blue-white ground; flat digital fills or vector gradients in place of real watercolour behaviour; neon or fluorescent colour; heavy black masses; perfect radial symmetry; a repeated or tiling motif; infographic, corporate-diagram or explainer-video styling; drop shadows; a frame or border around the artwork.
+```
+
+## The Secret Life of Attention
+
+### survey-02-corner-maple
+
+**Save as** `public/images/illustration/survey-02-corner-maple.png` · 1:1 · target 1024 × 1024 px (ChatGPT's largest for 1:1 — 283 dpi at 92 mm)
+**Where it goes** Reading · two column (verso, inset card)
+**Why it is there** The essay opens on a maple the author walked under for eleven years without seeing. The plate draws all eleven years at once, which is the one view the essay says attention never gives you.
+**Watch for** Must sit in the cover's visual language, not the field-guide plate language: watercolour blooms are the point, and this is the one role besides the cover that may use them at full strength. Warm cream ground #EFE9DC — the page's own paper, not a lighter one. No legible text anywhere in the artwork.
+
+```text
+A large plate in the exact manner of this book's cover artwork, and in no other manner: a single organic form built from many fine contour lines, like a topographic survey of something that is not a landscape, with loose watercolour blooms washing through and past the linework in teal, slate blue, amber, coral and magenta. The washes behave like real watercolour on damp paper — soft edges, pooling where they settle, one colour bleeding into the next — and they are the point of the image, not a tint over it. Over the top, a scatter of small ink dots joined by hairlines, as if a network had been traced across the whole thing afterwards. Warm cream ground (#EFE9DC). It should read at once as weather, as a cell, as a root system and as a map, without ever settling into one of them.
+
+The form here is one street tree: the crown as concentric contour, the root mass mirroring it below the line, and eleven faint rings of the same shape offset behind it, as if the tree had been drawn once a year and the drawings left stacked.
+
+Square frame (1:1).
+
+Avoid: legible text, numerals, labels or a legend of any kind; anything resolving into a literal recognisable scene — no drawn trees, houses, roads or figures, only the systems beneath them; a white or blue-white ground; flat digital fills or vector gradients in place of real watercolour behaviour; neon or fluorescent colour; heavy black masses; perfect radial symmetry; a repeated or tiling motif; infographic, corporate-diagram or explainer-video styling; drop shadows; a frame or border around the artwork.
+```
+
+## The Intelligence Outside Your Head
+
+### survey-03-workbench-field
+
+**Save as** `public/images/illustration/survey-03-workbench-field.png` · 1:1 · target 1024 × 1024 px (ChatGPT's largest for 1:1 — 283 dpi at 92 mm)
+**Where it goes** Reading · two column (verso, inset card)
+**Why it is there** Essay 04 argues the mind is distributed into marks, tools, rooms. Its closing image is a workbench after the work. This plate is that bench drawn as the thought it actually was.
+**Watch for** Must sit in the cover's visual language, not the field-guide plate language: watercolour blooms are the point, and this is the one role besides the cover that may use them at full strength. Warm cream ground #EFE9DC — the page's own paper, not a lighter one. No legible text anywhere in the artwork.
+
+```text
+A large plate in the exact manner of this book's cover artwork, and in no other manner: a single organic form built from many fine contour lines, like a topographic survey of something that is not a landscape, with loose watercolour blooms washing through and past the linework in teal, slate blue, amber, coral and magenta. The washes behave like real watercolour on damp paper — soft edges, pooling where they settle, one colour bleeding into the next — and they are the point of the image, not a tint over it. Over the top, a scatter of small ink dots joined by hairlines, as if a network had been traced across the whole thing afterwards. Warm cream ground (#EFE9DC). It should read at once as weather, as a cell, as a root system and as a map, without ever settling into one of them.
+
+The form here is a workbench seen from directly above and treated as terrain: tools as small dense masses joined by the hairline network of the hand's route between them, the sawdust as a diffuse bloom, the whole thing reading as a map of a decision rather than a picture of a table.
+
+Square frame (1:1).
+
+Avoid: legible text, numerals, labels or a legend of any kind; anything resolving into a literal recognisable scene — no drawn trees, houses, roads or figures, only the systems beneath them; a white or blue-white ground; flat digital fills or vector gradients in place of real watercolour behaviour; neon or fluorescent colour; heavy black masses; perfect radial symmetry; a repeated or tiling motif; infographic, corporate-diagram or explainer-video styling; drop shadows; a frame or border around the artwork.
+```
+
+## The Last Generation That Remembers the Before-Time
+
+### survey-04-two-roads
+
+**Save as** `public/images/illustration/survey-04-two-roads.png` · 1:1 · target 1024 × 1024 px (ChatGPT's largest for 1:1 — 283 dpi at 92 mm)
+**Where it goes** Reading · two column (verso, inset card)
+**Why it is there** The essay ends on a driver following the phone past a field the old road never reached. Two systems that agree almost everywhere and diverge once, drawn as one map.
+**Watch for** Must sit in the cover's visual language, not the field-guide plate language: watercolour blooms are the point, and this is the one role besides the cover that may use them at full strength. Warm cream ground #EFE9DC — the page's own paper, not a lighter one. No legible text anywhere in the artwork.
+
+```text
+A large plate in the exact manner of this book's cover artwork, and in no other manner: a single organic form built from many fine contour lines, like a topographic survey of something that is not a landscape, with loose watercolour blooms washing through and past the linework in teal, slate blue, amber, coral and magenta. The washes behave like real watercolour on damp paper — soft edges, pooling where they settle, one colour bleeding into the next — and they are the point of the image, not a tint over it. Over the top, a scatter of small ink dots joined by hairlines, as if a network had been traced across the whole thing afterwards. Warm cream ground (#EFE9DC). It should read at once as weather, as a cell, as a root system and as a map, without ever settling into one of them.
+
+The form here is two routes across the same country: one drawn as a folded, creased and annotated network of hairlines, the other as a single clean line laid over it, agreeing for most of the distance and parting once. Contours behind both. No labels, no legible text.
+
+Square frame (1:1).
+
+Avoid: legible text, numerals, labels or a legend of any kind; anything resolving into a literal recognisable scene — no drawn trees, houses, roads or figures, only the systems beneath them; a white or blue-white ground; flat digital fills or vector gradients in place of real watercolour behaviour; neon or fluorescent colour; heavy black masses; perfect radial symmetry; a repeated or tiling motif; infographic, corporate-diagram or explainer-video styling; drop shadows; a frame or border around the artwork.
+```
 
 ## The Beauty of Systems Nobody Designed
 

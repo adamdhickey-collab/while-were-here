@@ -3,7 +3,13 @@
 52 stills across five days, Sep 30 to Oct 9 2025. Source:
 `~/Desktop/more photos`, organized by date.
 
-**16 selected. 2 blocked on rights. The rest out.**
+**14 selected. 2 blocked on rights. The rest out.**
+
+**Standing rule, confirmed 19 Aug:** everything candid. No group shots, no
+portraits, nobody looking at the lens and smiling. This is already the
+storyboard's photography rule and it applies to PERSONAL too, which is where the
+temptation lives. Applying it strictly cost three of my own first picks: two
+couch portraits and a standing shot at the fire pit, all cut below.
 
 Numbers in the labels below are registered in [facts.json](../facts.json) or
 marked "do not set yet." Same rule as [photo-selection-01](photo-selection-01.md).
@@ -21,8 +27,8 @@ view**. It is not a trip. It is a fortnight of somebody's actual life, which is
 the only thing that can carry the PERSONAL role.
 
 The hit rate is also completely different. The travel folder yielded 26 usable
-frames out of 456, about six percent. This one yields 16 out of 52, about
-thirty. Small, close, unremarkable subjects photographed near home are simply
+frames out of 456, about six percent. This one yields 14 out of 52, about
+twenty-seven percent. Small, close, unremarkable subjects photographed near home are simply
 better raw material for this book than anything with a monument in it.
 
 **One thing it establishes.** The back cover promises "a familiar lake" and
@@ -69,38 +75,40 @@ Role PLATE · Ordinary Days, **opener candidate** · Stage I · 5712 × 3213
 - **Why** The strongest frame in this folder and a genuine rival to the cumulus
   for the Essay 01 opener. It is 48 MP, so it can go full-bleed.
 
-**B043 · IMG_5263** · fire pit on a deck at night, figure reclined beside it,
-grill at the left edge
+**B039 · IMG_5259** · fire pit at dusk, a figure seated in profile watching it,
+trees and open sky behind
 Role PERSONAL · While We're Here, closing spread · Stage V · 4032 × 2268
-- **Crop** Keep the deck boards and the grill. Cropping to the flame makes it a
-  stock fire.
+- **Crop** Wide. Keep the trees and the sky. The figure should stay small.
 - **Color** As shot. Do not lift the shadows.
-- **Texture** None. Global paper on a near-black frame turns to mud.
+- **Texture** None. Global paper over a near-black frame turns to mud.
 - **Label** Handwritten, short.
-- **Why** Dark ground, luminous subject, and it is domestic rather than sublime.
-  Stage V wants exactly this and the book currently has nothing like it.
+- **Why** Dark ground, luminous subject, and nobody performing. The person is
+  looking at the fire, which is what makes it a photograph of an evening rather
+  than a photograph of a person. Stage V wants exactly this.
 
-**B040 · IMG_5260** · the same fire, figure seated upright against trees
-Role PERSONAL · **reserve** for B043 · Stage V · 2268 × 4032
-- Portrait alternative if the closing spread wants a vertical.
+**B038 · IMG_5258** · the same fire earlier, figure on a lounger with the dog,
+head down
+Role PERSONAL · **reserve** for B039 · Stage V · alternate if the spread wants
+the dog in it
 
-**B014 · IMG_5222** · person on a couch with a dog asleep against them
+**B027 · IMG_5241** · a lap, a dog stretched across it in a red harness, a glass
+on a side table. No face in frame.
 Role PERSONAL · Ordinary Days, domestic slot · Stage I
-- **Crop** Tight. Cut the room, keep the two of them and the cushion.
+- **Crop** Keep the whole lap and the side table. The framing is the point: the
+  camera is where the person's eyes are, so the reader gets the view rather than
+  the portrait.
 - **Color** As shot. **Do not retouch.** Indoor white balance and all.
 - **Texture** Global paper, and ephemera is allowed here.
-- **Why** The domestic frame the whole first folder was missing.
+- **Why** The domestic frame the first folder was missing, and it passes the
+  candid rule by construction because nobody is visible to look at the lens.
 
-**B025 · IMG_5237** · the dog standing on grass in low sun, leash slack
-Role PERSONAL or SPECIMEN · Ordinary Days · Stage I
-- **Crop** Cut to the dog and its shadow. Candidate for a silhouette cut, though
-  the coat is dark against dark grass so the matte will need checking.
-- **Why** You already have two generated dog plates. One real dog makes both of
-  them read differently, which is the argument for it and also the argument for
-  using only one.
-
-**B008 · IMG_5211** · the dog on a grass slope, trees behind
-Role PERSONAL · **reserve** for B025
+**B008 · IMG_5209** · the dog on a grass slope, head turned off-frame, mid-lick
+Role PERSONAL · Ordinary Days · Stage I
+- **Crop** Cut to the dog and its shadow on the slope.
+- **Why** The only dog frame in the folder where the animal is not addressing the
+  camera. The parking-lot and sidewalk frames are all portraits and are out.
+- **Note** Marginal even so. If the lake shoot produces a dog frame with the
+  animal doing something rather than sitting for the lens, replace this.
 
 ### Ordinary sky, repeated
 
@@ -111,9 +119,9 @@ Role PLATE · Ordinary Days or a stage turn · Stage I · 4032 × 2268
 - **Label** **Do not set yet.** Any note about cloud type needs identifying, and
   I am not going to guess a species from a photograph.
 
-**B006 · IMG_5202** · thin cloud against olive-grey, quiet
-**B030 · IMG_5246** · high cirrus over blue
-**B031 · IMG_5247** · broken cloud, mid-morning
+**B006 · IMG_5200** · thin cloud against olive-grey, quiet
+**B030 · IMG_5245** · high cirrus over blue
+**B031 · IMG_5246** · broken cloud, mid-morning
 Role PLATE, as a **set of three** · Attention, a contact-sheet spread · Stage I
 - **Crop** Identical square crops, gridded, same size, captioned only with time.
 - **Color** As shot, no matching. The point is that they differ.
@@ -156,7 +164,7 @@ Role SPECIMEN · The Strange Privilege, or Systems · Stage III · 883 × 597
   and here is a real one made by a manufacturer for a machine. A found specimen
   card. "Data Rates apply" on a mower is the joke and it is not one I wrote.
 
-**B004 · IMG_5198** · the mower itself, from above
+**B004 · IMG_5197** · the mower itself, from above
 Role PLATE · **reserve**, pairs with B005 as object and its label
 
 ---
@@ -184,7 +192,11 @@ films with their promotional artwork
 
 ## Out
 
-About 34 frames. Near-duplicate fire-pit and dog frames where one has been
+About 36 frames, including three I had selected before the candid rule was made
+explicit: **B014** and **B015**, both couch portraits looking straight at the
+lens, and **B034**, standing at the fire pit facing the camera. **B025** and
+**B022** go with them: the dog is charming and it is looking directly down the
+barrel in both. Near-duplicate fire-pit and dog frames where one has been
 picked, restaurant meals, a hotel conference room, screenshots of personal
 messages, and the sequences where the dog is looking straight down the lens.
 

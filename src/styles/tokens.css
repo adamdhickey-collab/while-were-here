@@ -136,8 +136,8 @@
   --lh-caption:     1.38;
 
   /* ---- Letterspacing ----------------------------------------------------- */
-  --ls-display:  -0.045em;   /* headline tracking: tight, closed up          */
-  --ls-title:    -0.032em;
+  --ls-display:   -0.03em;   /* headline tracking: tight, but still breathing */
+  --ls-title:    -0.022em;
   --ls-body:       0.002em;
   --ls-meta:       0.16em;   /* small caps-ish metadata                      */
   --ls-folio:      0.1em;

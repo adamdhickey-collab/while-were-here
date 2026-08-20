@@ -37,19 +37,21 @@
    20pt gets its tracking back, because closed-up small type stops being
    readable and starts being a texture. */
 /* Negative tracking closes the word space along with the letter space, and the
-   word space has much less to give: at −0.045em the divider was rendering a
-   0.15em space where a normal one is about 0.25em, and "Look Again" set as
-   "LookAgain". Every negative tracking value is compensated here. */
+   word space has much less to give: at −0.045em the divider rendered a 0.15em
+   space where a normal one is about 0.25em, and "Look Again" set as "LookAgain".
+   Every negative tracking value is compensated here, and the compensation moves
+   with it — loosen the tracking and this comes down too, or the words drift
+   apart while the letters relax. */
 .cover__title, .titlespread__title, .display, .essay-title,
 .pull-quote, .statement, .closing__line {
   letter-spacing: var(--ls-display);
-  word-spacing: 0.075em;
+  word-spacing: 0.05em;
   font-feature-settings: "kern" 1, "liga" 1;
 }
 .subhead, .diagram__title, .contents__part-title,
 .material-break__line {
   letter-spacing: var(--ls-title);
-  word-spacing: 0.05em;
+  word-spacing: 0.035em;
 }
 
 /* ---- Display: section dividers, cover ----------------------------------- */

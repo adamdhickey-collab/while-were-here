@@ -303,7 +303,7 @@
       "role": "figure",
       "essay": "Most of Life Is a Tuesday",
       "section": "I — Look Again",
-      "spread": "Unplaced. Held in reserve — no spread assigned.",
+      "spread": "Reading · two column (verso, inset card) · fourth reading spread",
       "subject": "A sunlit living room surveyed in two inks: proportional rectangles, construction circles and dimension lines in faded cobalt over the window, sofa and table; branching rust hairlines following the monstera's growth and the light's path. A dog asleep in its bed at the right edge, measured like everything else.",
       "concept": "A whole ordinary room, taken seriously enough to measure.",
       "purpose": "Companion to 01A's surveyed dog — the same joke told at room scale. Generated 20 Aug 2026 from the room-survey prompt; kept with an ID so it is ready the day a spread wants it.",
@@ -311,7 +311,7 @@
       "target": "1254 × 1254 px (native — not upscaled)",
       "status": "generated",
       "composite": true,
-      "revision": "Second generation. The first ran its survey at watermark strength and the linework vanished over bright areas; the prompt now names the two inks (cobalt #536D8E structure, rust #A95738 organic traces), demands full opacity and drafting rather than sketching, and forbids the fade over bright areas. Note the units came back imperial — if this is ever placed beside 01A, which is dimensioned in millimetres, regenerate with units named."
+      "revision": "Second generation. The first ran its survey at watermark strength and the linework vanished over bright areas; the prompt now names the two inks (cobalt #536D8E structure, rust #A95738 organic traces), demands full opacity and drafting rather than sketching, and forbids the fade over bright areas. Note the units came back imperial — if this is ever placed beside 01A, which is dimensioned in millimetres, regenerate with units named. Placed 20 Aug 2026 as the inset on the spread whose prose says ordinary reality becomes almost impossibly complex — the caption owns the imperial units instead of apologising for them."
     },
     {
       "id": "attention-01-window-reflection",

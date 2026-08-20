@@ -76,6 +76,10 @@ spreads:
   - type: reading
     variant: two
     blocks: [s8a+s8b, s9a+s9b]
+    insetOn: verso
+    inset:
+      image: ordinary-days-01k-room-survey
+      caption: Nothing happening, to the nearest inch.
   - type: closing
     line: Maybe the ordinary days were the important parts.
     coda: We just didn’t know what they were worth yet.
@@ -85,7 +89,7 @@ spreads:
 
 <!-- block: s2a -->
 
-The dog moved twice this afternoon and never woke. The sun came in low and crossed half the floor between two and five, and the dog crossed with it — a slow pursuit conducted entirely in sleep. I measured it once, out of curiosity. About a metre an hour. That is the honest record of the day, and I have started to suspect that days like this one are not the packaging around my life. They are the substance.
+The dog moved twice this afternoon and never woke. The sun came in low and crossed half the floor between two and five, and the dog crossed with it — a slow pursuit conducted entirely in sleep. I measured it once, out of curiosity. About a meter an hour. That is the honest record of the day, and I have started to suspect that days like this one are not the packaging around my life. They are the substance.
 
 Most of life does not happen during the big moments.  
 It happens in between them.
@@ -166,7 +170,7 @@ Which raises an uncomfortable question: how much of everyday life are we simply 
 
 <!-- block: s5b -->
 
-Brains economise. Whatever repeats and stays harmless gets filed as background — the refrigerator hum, the commute, eventually the whole street.
+Brains economize. Whatever repeats and stays harmless gets filed as background — the refrigerator hum, the commute, eventually the whole street.
 
 This is useful. You would be overwhelmed if every hum, texture, face, smell, and background sound felt as intense on the thousandth encounter as it did on the first.
 

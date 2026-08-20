@@ -49,10 +49,10 @@ thing. Nothing in frame should let a viewer work out the scale.
 
 ### part-2-divider-branching
 
-**Save as** `public/images/illustration/part-2-divider-branching.png` · 1:1 · target 6000 × 6000 px
+**Save as** `public/images/illustration/part-2-divider-branching.png` · 1:1 · target 1024 × 1024 px (ChatGPT's largest for 1:1 — 85 dpi at 306 mm)
 **Where it goes** Part divider (verso, full bleed)
 **Why it is there** The divider for Part II. It has to say "look at the pattern, not the thing" before a single essay does.
-**Watch for** A screen print of a forest horizon was tried here and pulled. See content/plan/screen-print.md.
+**Watch for** A screen print of a forest horizon was tried here and pulled. See content/plan/screen-print.md. Target lowered 20 Aug 2026 to the largest canvas ChatGPT actually produces. The previous figure asked for a resolution no available generator could reach.
 
 ```text
 An illustrated plate from a vintage scientific field guide, hand-drawn in ink on warm cream paper. Imperfect geometry — circles slightly out of true, lines drawn by hand, everything a degree or two off square. Field-guide illustration crossed with vintage scientific diagram, cartography and marginalia: arrows, rings, timelines, measure scales, tiny human figures. Screenprint and risograph texture with visible ink density variation and slight misregistration. Charcoal near-black ink on a warm cream ground (#F3EFE5), with restrained accents of muted rust (#A95738), faded cobalt (#536D8E) and moss green (#68735B). Intelligent, tactile, playful, handmade.
@@ -66,10 +66,10 @@ Avoid: gradients; glossy 3D or rendered lighting; generic vector people; corpora
 
 ### cover-03-circular-systems
 
-**Save as** `public/images/illustration/cover-03-circular-systems.png` · 1:1 · target 6000 × 6000 px
+**Save as** `public/images/illustration/cover-03-circular-systems.png` · 1:1 · target 1024 × 1024 px (ChatGPT's largest for 1:1 — 82 dpi at 318 mm)
 **Where it goes** Front cover — the `orb` variant
 **Why it is there** An alternative cover artwork for the `orb` treatment. A circle on a square is the strongest graphic move available on a 300 mm cover, and it makes the title's 'here' mean somewhere.
-**Watch for** Transparent PNG or warm cream ground. **Not the Earth**: no recognisable continents, no coastlines, no blue-marble colouring, no latitude/longitude graticule, no space, no stars, no glow or lens flare, no terminator line dividing day from night. The circle is drawn — very slightly out of true, with a hand-inked edge — not rendered as a lit sphere. Keep the upper third of the circle quieter: on the `orb` cover the title sits above and slightly over it.
+**Watch for** Transparent PNG or warm cream ground. **Not the Earth**: no recognisable continents, no coastlines, no blue-marble colouring, no latitude/longitude graticule, no space, no stars, no glow or lens flare, no terminator line dividing day from night. The circle is drawn — very slightly out of true, with a hand-inked edge — not rendered as a lit sphere. Keep the upper third of the circle quieter: on the `orb` cover the title sits above and slightly over it. Target lowered 20 Aug 2026 to the largest canvas ChatGPT actually produces. The previous figure asked for a resolution no available generator could reach.
 
 ```text
 An illustrated plate from a vintage scientific field guide, hand-drawn in ink on warm cream paper. Imperfect geometry — circles slightly out of true, lines drawn by hand, everything a degree or two off square. Field-guide illustration crossed with vintage scientific diagram, cartography and marginalia: arrows, rings, timelines, measure scales, tiny human figures. Screenprint and risograph texture with visible ink density variation and slight misregistration. Charcoal near-black ink on a warm cream ground (#F3EFE5), with restrained accents of muted rust (#A95738), faded cobalt (#536D8E) and moss green (#68735B). Intelligent, tactile, playful, handmade.
@@ -83,9 +83,10 @@ Avoid: gradients; glossy 3D or rendered lighting; generic vector people; corpora
 
 ### part-3-divider-machine-dark
 
-**Save as** `public/images/illustration/part-3-divider-machine-dark.png` · 1:1 · target 6000 × 6000 px
+**Save as** `public/images/illustration/part-3-divider-machine-dark.png` · 1:1 · target 1024 × 1024 px (ChatGPT's largest for 1:1 — 85 dpi at 306 mm)
 **Where it goes** Part divider (verso, full bleed)
 **Why it is there** The divider where the book inverts. Pale ink on charcoal, and the first page that is not cream.
+**Watch for** Target lowered 20 Aug 2026 to the largest canvas ChatGPT actually produces. The previous figure asked for a resolution no available generator could reach.
 
 ```text
 An illustrated plate from a vintage scientific field guide, hand-drawn in ink on warm cream paper. Imperfect geometry — circles slightly out of true, lines drawn by hand, everything a degree or two off square. Field-guide illustration crossed with vintage scientific diagram, cartography and marginalia: arrows, rings, timelines, measure scales, tiny human figures. Screenprint and risograph texture with visible ink density variation and slight misregistration. Charcoal near-black ink on a warm cream ground (#F3EFE5), with restrained accents of muted rust (#A95738), faded cobalt (#536D8E) and moss green (#68735B). Intelligent, tactile, playful, handmade.
@@ -101,9 +102,10 @@ Avoid: gradients; glossy 3D or rendered lighting; generic vector people; corpora
 
 ### systems-01-ants-pavement
 
-**Save as** `public/images/photography/systems-01-ants-pavement.png` · 1:1 · target 6000 × 6000 px
+**Save as** `public/images/photography/systems-01-ants-pavement.png` · 1:1 · target 1024 × 1024 px (ChatGPT's largest for 1:1 — 85 dpi at 306 mm)
 **Where it goes** Opener (verso, full bleed)
 **Why it is there** The essay opens on this. Evidence that a route can be held by contact alone.
+**Watch for** Target lowered 20 Aug 2026 to the largest canvas ChatGPT actually produces. The previous figure asked for a resolution no available generator could reach.
 
 ```text
 A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
@@ -117,9 +119,10 @@ Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glo
 
 ### systems-02-starling-flock
 
-**Save as** `public/images/photography/systems-02-starling-flock.png` · 3:1 · target 9000 × 3000 px
+**Save as** `public/images/photography/systems-02-starling-flock.png` · 3:1 · target 1536 × 512 px (ChatGPT's largest for 3:1 — 165 dpi at 236 mm)
 **Where it goes** Reading band, across the fold
 **Why it is there** Band under a two-column reading spread. The margin note beside it is the topological-distance finding.
+**Watch for** Target lowered 20 Aug 2026 to the largest canvas ChatGPT actually produces. The previous figure asked for a resolution no available generator could reach.
 
 ```text
 A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
@@ -133,9 +136,10 @@ Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glo
 
 ### systems-05-physarum-network
 
-**Save as** `public/images/photography/systems-05-physarum-network.png` · 3:1 · target 9000 × 3000 px
+**Save as** `public/images/photography/systems-05-physarum-network.png` · 3:1 · target 1536 × 512 px (ChatGPT's largest for 3:1 — 165 dpi at 236 mm)
 **Where it goes** Reading band, across the fold
 **Why it is there** Band under the spread that carries the Tokyo experiment. The picture has to make the network legible as a network, not as mold.
+**Watch for** Target lowered 20 Aug 2026 to the largest canvas ChatGPT actually produces. The previous figure asked for a resolution no available generator could reach.
 
 ```text
 A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
@@ -149,9 +153,10 @@ Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glo
 
 ### systems-03-termite-section
 
-**Save as** `public/images/illustration/systems-03-termite-section.png` · 2:3 · target 4000 × 6000 px
+**Save as** `public/images/illustration/systems-03-termite-section.png` · 2:3 · target 1024 × 1536 px (ChatGPT's largest for 2:3 — 135 dpi at 192 mm)
 **Where it goes** Image essay (tall)
 **Why it is there** Drawn rather than photographed, because the whole point is a section nobody can stand back and see.
+**Watch for** Target lowered 20 Aug 2026 to the largest canvas ChatGPT actually produces. The previous figure asked for a resolution no available generator could reach.
 
 ```text
 An illustrated plate from a vintage scientific field guide, hand-drawn in ink on warm cream paper. Imperfect geometry — circles slightly out of true, lines drawn by hand, everything a degree or two off square. Field-guide illustration crossed with vintage scientific diagram, cartography and marginalia: arrows, rings, timelines, measure scales, tiny human figures. Screenprint and risograph texture with visible ink density variation and slight misregistration. Charcoal near-black ink on a warm cream ground (#F3EFE5), with restrained accents of muted rust (#A95738), faded cobalt (#536D8E) and moss green (#68735B). Intelligent, tactile, playful, handmade.
@@ -165,10 +170,10 @@ Avoid: gradients; glossy 3D or rendered lighting; generic vector people; corpora
 
 ### systems-04-desire-path
 
-**Save as** `public/images/photography/systems-04-desire-path.png` · 1:1 · target 6000 × 6000 px
+**Save as** `public/images/photography/systems-04-desire-path.png` · 1:1 · target 1024 × 1024 px (ChatGPT's largest for 1:1 — 85 dpi at 306 mm)
 **Where it goes** Unplaced. Freed 19 Aug 2026 when a spread was cut to bring the book to 130 pages.
 **Why it is there** Faces the pull quote. See content/plan/photo-selection-04.md — this is on the shoot list.
-**Watch for** No longer needed: the essay 03 spread it sat on is gone. Kept in the manifest because the subject is still good and the page budget may move again. DO NOT GENERATE THIS unless it is placed again.
+**Watch for** No longer needed: the essay 03 spread it sat on is gone. Kept in the manifest because the subject is still good and the page budget may move again. DO NOT GENERATE THIS unless it is placed again. Target lowered 20 Aug 2026 to the largest canvas ChatGPT actually produces. The previous figure asked for a resolution no available generator could reach.
 
 ```text
 A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
@@ -184,10 +189,10 @@ Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glo
 
 ### privilege-03-unfinished-paragraph
 
-**Save as** `public/images/photography/privilege-03-unfinished-paragraph.png` · 1:1 · target 6000 × 6000 px
+**Save as** `public/images/photography/privilege-03-unfinished-paragraph.png` · 1:1 · target 1024 × 1024 px (ChatGPT's largest for 1:1 — 85 dpi at 306 mm)
 **Where it goes** Unplaced. Freed when a reproduced record took the pull-quote verso.
 **Why it is there** Faces the pull quote. The handwriting must be legible as correction without being readable as content.
-**Watch for** Not needed for now: that verso carries the 7,325 advertisers instead. Kept in the manifest because the idea is still good elsewhere.
+**Watch for** Not needed for now: that verso carries the 7,325 advertisers instead. Kept in the manifest because the idea is still good elsewhere. Target lowered 20 Aug 2026 to the largest canvas ChatGPT actually produces. The previous figure asked for a resolution no available generator could reach.
 
 ```text
 A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
@@ -201,9 +206,10 @@ Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glo
 
 ### privilege-06-closing-cursor
 
-**Save as** `public/images/photography/privilege-06-closing-cursor.png` · 1:1 · target 6000 × 6000 px
+**Save as** `public/images/photography/privilege-06-closing-cursor.png` · 1:1 · target 1024 × 1024 px (ChatGPT's largest for 1:1 — 85 dpi at 306 mm)
 **Where it goes** Closing spread (recto, full bleed)
 **Why it is there** The closing recto. The essay ends on the cursor continuing to blink and somebody still having to decide.
+**Watch for** Target lowered 20 Aug 2026 to the largest canvas ChatGPT actually produces. The previous figure asked for a resolution no available generator could reach.
 
 ```text
 A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
@@ -219,10 +225,10 @@ Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glo
 
 ### before-time-03-contact-sheet
 
-**Save as** `public/images/photography/before-time-03-contact-sheet.png` · 1:1 · target 6000 × 6000 px
+**Save as** `public/images/photography/before-time-03-contact-sheet.png` · 1:1 · target 1024 × 1024 px (ChatGPT's largest for 1:1 — 85 dpi at 306 mm)
 **Where it goes** Unplaced. Freed 19 Aug 2026 when a spread was cut to bring the book to 130 pages.
 **Why it is there** Faces the pull quote. The failures are the picture. Do not select good frames.
-**Watch for** No longer needed: the essay 06 spread it sat on is gone. Kept in the manifest because the subject is still good and the page budget may move again. DO NOT GENERATE THIS unless it is placed again.
+**Watch for** No longer needed: the essay 06 spread it sat on is gone. Kept in the manifest because the subject is still good and the page budget may move again. DO NOT GENERATE THIS unless it is placed again. Target lowered 20 Aug 2026 to the largest canvas ChatGPT actually produces. The previous figure asked for a resolution no available generator could reach.
 
 ```text
 A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
@@ -238,10 +244,10 @@ Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glo
 
 ### pilgrimage-03-route-map
 
-**Save as** `public/images/illustration/pilgrimage-03-route-map.png` · 1:1 · target 6000 × 6000 px
+**Save as** `public/images/illustration/pilgrimage-03-route-map.png` · 1:1 · target 1024 × 1024 px (ChatGPT's largest for 1:1 — 85 dpi at 306 mm)
 **Where it goes** Unplaced. Freed when a reproduced record took the pull-quote verso.
 **Why it is there** Faces the pull quote. No scale bar, no place names, no legend.
-**Watch for** Not needed for now: that verso carries the 23 checked-in cities instead. Kept in the manifest because the idea is still good elsewhere.
+**Watch for** Not needed for now: that verso carries the 23 checked-in cities instead. Kept in the manifest because the idea is still good elsewhere. Target lowered 20 Aug 2026 to the largest canvas ChatGPT actually produces. The previous figure asked for a resolution no available generator could reach.
 
 ```text
 An illustrated plate from a vintage scientific field guide, hand-drawn in ink on warm cream paper. Imperfect geometry — circles slightly out of true, lines drawn by hand, everything a degree or two off square. Field-guide illustration crossed with vintage scientific diagram, cartography and marginalia: arrows, rings, timelines, measure scales, tiny human figures. Screenprint and risograph texture with visible ink density variation and slight misregistration. Charcoal near-black ink on a warm cream ground (#F3EFE5), with restrained accents of muted rust (#A95738), faded cobalt (#536D8E) and moss green (#68735B). Intelligent, tactile, playful, handmade.
@@ -255,9 +261,10 @@ Avoid: gradients; glossy 3D or rendered lighting; generic vector people; corpora
 
 ### pilgrimage-06-closing-stone
 
-**Save as** `public/images/photography/pilgrimage-06-closing-stone.png` · 1:1 · target 6000 × 6000 px
+**Save as** `public/images/photography/pilgrimage-06-closing-stone.png` · 1:1 · target 1024 × 1024 px (ChatGPT's largest for 1:1 — 85 dpi at 306 mm)
 **Where it goes** Closing spread (recto, full bleed)
 **Why it is there** The closing recto. The essay ends on exactly this gesture, so the picture is the last sentence and needs no caption.
+**Watch for** Target lowered 20 Aug 2026 to the largest canvas ChatGPT actually produces. The previous figure asked for a resolution no available generator could reach.
 
 ```text
 A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
@@ -273,10 +280,10 @@ Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glo
 
 ### here-03-two-rooms
 
-**Save as** `public/images/photography/here-03-two-rooms.png` · 1:1 · target 6000 × 6000 px
+**Save as** `public/images/photography/here-03-two-rooms.png` · 1:1 · target 1024 × 1024 px (ChatGPT's largest for 1:1 — 85 dpi at 306 mm)
 **Where it goes** Unplaced. Freed 19 Aug 2026 when a spread was cut to bring the book to 130 pages.
 **Why it is there** Faces the pull quote, and is the closest the book comes to a portrait.
-**Watch for** No longer needed: the essay 08 spread it sat on is gone. Kept in the manifest because the subject is still good and the page budget may move again. DO NOT GENERATE THIS unless it is placed again.
+**Watch for** No longer needed: the essay 08 spread it sat on is gone. Kept in the manifest because the subject is still good and the page budget may move again. DO NOT GENERATE THIS unless it is placed again. Target lowered 20 Aug 2026 to the largest canvas ChatGPT actually produces. The previous figure asked for a resolution no available generator could reach.
 
 ```text
 A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
@@ -292,9 +299,10 @@ Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glo
 
 ### intelligence-06-closing-hands
 
-**Save as** `public/images/photography/intelligence-06-closing-hands.png` · 1:1 · target 6000 × 6000 px
+**Save as** `public/images/photography/intelligence-06-closing-hands.png` · 1:1 · target 1024 × 1024 px (ChatGPT's largest for 1:1 — 85 dpi at 306 mm)
 **Where it goes** Closing spread (recto, full bleed)
 **Why it is there** The closing recto. The essay ends on tools left ready, and this is that, photographed quietly and full bleed.
+**Watch for** Target lowered 20 Aug 2026 to the largest canvas ChatGPT actually produces. The previous figure asked for a resolution no available generator could reach.
 
 ```text
 A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.

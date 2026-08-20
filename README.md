@@ -284,3 +284,25 @@ run `npm run dev` and watch the overflow outlines before trusting a swap.
   sets the copy-to-page ratio for the whole book; worth deciding deliberately.
 - The prototype is 28 interior pages for one essay. Eighteen essays at that
   density would overshoot 130 pp, so essay pacing needs a target spread count.
+- **Image resolution is now set by the generator, not by the press.** Thirty-two
+  manifest targets were lowered on 20 August 2026 to the largest canvas ChatGPT
+  actually produces — 1024 × 1024, 1536 × 1024, 1024 × 1536 — because the
+  previous figures asked for a resolution no available generator could reach.
+  The cost, at the sizes these pictures actually print:
+
+  | Placement | Canvas | Effective |
+  | --- | --- | --- |
+  | Full-bleed page, 306 mm | 1024 × 1024 | **85 dpi** |
+  | Image essay, tall, 192 mm | 1024 × 1536 | **135 dpi** |
+  | Reading band, 236 mm | 1536 × 512 | **165 dpi** |
+
+  Press work normally wants 300 dpi. Lowering the target changed what the
+  manifest asks for, not what the paper will show, so a full-bleed opener is
+  the one to revisit first — either upscale a generation already judged good,
+  or place it smaller. Note the band was never the problem it looked like: its
+  old 9000 px target implied 969 dpi across a 236 mm placement, because it was
+  spec'd as though it ran the full 600 mm across the fold. It does not —
+  `.reading__band` sits inside one page's text block.
+
+  Screen prints are exempt. They are separated from personal photographs by
+  `scripts/separate.py` at 3000 px and never touch a generator.

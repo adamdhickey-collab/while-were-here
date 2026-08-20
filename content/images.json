@@ -394,10 +394,10 @@
       "concept": "The same structural logic arriving in four unrelated materials.",
       "purpose": "The divider for Part II. It has to say \"look at the pattern, not the thing\" before a single essay does.",
       "aspect": "1:1",
-      "target": "6000 × 6000 px",
+      "target": "1024 × 1024 px (ChatGPT's largest for 1:1 — 85 dpi at 306 mm)",
       "status": "not generated",
       "composite": false,
-      "revision": "A screen print of a forest horizon was tried here and pulled. See content/plan/screen-print.md."
+      "revision": "A screen print of a forest horizon was tried here and pulled. See content/plan/screen-print.md. Target lowered 20 Aug 2026 to the largest canvas ChatGPT actually produces. The previous figure asked for a resolution no available generator could reach."
     },
     {
       "id": "systems-01-ants-pavement",
@@ -411,9 +411,10 @@
       "concept": "A path maintained without a map.",
       "purpose": "The essay opens on this. Evidence that a route can be held by contact alone.",
       "aspect": "1:1",
-      "target": "6000 × 6000 px",
+      "target": "1024 × 1024 px (ChatGPT's largest for 1:1 — 85 dpi at 306 mm)",
       "status": "not generated",
-      "composite": false
+      "composite": false,
+      "revision": "Target lowered 20 Aug 2026 to the largest canvas ChatGPT actually produces. The previous figure asked for a resolution no available generator could reach."
     },
     {
       "id": "systems-02-starling-flock",
@@ -427,9 +428,10 @@
       "concept": "Local corrections producing a single shape.",
       "purpose": "Band under a two-column reading spread. The margin note beside it is the topological-distance finding.",
       "aspect": "3:1",
-      "target": "9000 × 3000 px",
+      "target": "1536 × 512 px (ChatGPT's largest for 3:1 — 165 dpi at 236 mm)",
       "status": "not generated",
-      "composite": false
+      "composite": false,
+      "revision": "Target lowered 20 Aug 2026 to the largest canvas ChatGPT actually produces. The previous figure asked for a resolution no available generator could reach."
     },
     {
       "id": "systems-05-physarum-network",
@@ -443,9 +445,10 @@
       "concept": "A useful map made by something with no brain and no nervous system.",
       "purpose": "Band under the spread that carries the Tokyo experiment. The picture has to make the network legible as a network, not as mold.",
       "aspect": "3:1",
-      "target": "9000 × 3000 px",
+      "target": "1536 × 512 px (ChatGPT's largest for 3:1 — 165 dpi at 236 mm)",
       "status": "not generated",
-      "composite": false
+      "composite": false,
+      "revision": "Target lowered 20 Aug 2026 to the largest canvas ChatGPT actually produces. The previous figure asked for a resolution no available generator could reach."
     },
     {
       "id": "systems-03-termite-section",
@@ -459,9 +462,10 @@
       "concept": "Colony-scale architecture from local building acts.",
       "purpose": "Drawn rather than photographed, because the whole point is a section nobody can stand back and see.",
       "aspect": "2:3",
-      "target": "4000 × 6000 px",
+      "target": "1024 × 1536 px (ChatGPT's largest for 2:3 — 135 dpi at 192 mm)",
       "status": "not generated",
-      "composite": false
+      "composite": false,
+      "revision": "Target lowered 20 Aug 2026 to the largest canvas ChatGPT actually produces. The previous figure asked for a resolution no available generator could reach."
     },
     {
       "id": "systems-04-desire-path",
@@ -475,10 +479,10 @@
       "concept": "The most literal case in the essay, and the one the photo library does not contain.",
       "purpose": "Faces the pull quote. See content/plan/photo-selection-04.md — this is on the shoot list.",
       "aspect": "1:1",
-      "target": "6000 × 6000 px",
+      "target": "1024 × 1024 px (ChatGPT's largest for 1:1 — 85 dpi at 306 mm)",
       "status": "not generated",
       "composite": false,
-      "revision": "No longer needed: the essay 03 spread it sat on is gone. Kept in the manifest because the subject is still good and the page budget may move again. DO NOT GENERATE THIS unless it is placed again."
+      "revision": "No longer needed: the essay 03 spread it sat on is gone. Kept in the manifest because the subject is still good and the page budget may move again. DO NOT GENERATE THIS unless it is placed again. Target lowered 20 Aug 2026 to the largest canvas ChatGPT actually produces. The previous figure asked for a resolution no available generator could reach."
     },
     {
       "id": "attention-05-crosswalk-strangers",
@@ -776,10 +780,10 @@
       "concept": "A circular field of view is the drawing an astronomer and a microscopist both make. At this scale it could be a planet or it could be a single drop of pond water, and the book cannot tell you which — which is the argument: the scale is arbitrary, the attention is what changes.",
       "purpose": "An alternative cover artwork for the `orb` treatment. A circle on a square is the strongest graphic move available on a 300 mm cover, and it makes the title's 'here' mean somewhere.",
       "aspect": "1:1",
-      "target": "6000 × 6000 px",
+      "target": "1024 × 1024 px (ChatGPT's largest for 1:1 — 82 dpi at 318 mm)",
       "status": "not generated",
       "selection": "—",
-      "revision": "Transparent PNG or warm cream ground. **Not the Earth**: no recognisable continents, no coastlines, no blue-marble colouring, no latitude/longitude graticule, no space, no stars, no glow or lens flare, no terminator line dividing day from night. The circle is drawn — very slightly out of true, with a hand-inked edge — not rendered as a lit sphere. Keep the upper third of the circle quieter: on the `orb` cover the title sits above and slightly over it."
+      "revision": "Transparent PNG or warm cream ground. **Not the Earth**: no recognisable continents, no coastlines, no blue-marble colouring, no latitude/longitude graticule, no space, no stars, no glow or lens flare, no terminator line dividing day from night. The circle is drawn — very slightly out of true, with a hand-inked edge — not rendered as a lit sphere. Keep the upper third of the circle quieter: on the `orb` cover the title sits above and slightly over it. Target lowered 20 Aug 2026 to the largest canvas ChatGPT actually produces. The previous figure asked for a resolution no available generator could reach."
     },
     {
       "id": "field-note-01-lake",
@@ -882,9 +886,10 @@
       "concept": "Fifty years of the same machine getting quieter.",
       "purpose": "The divider where the book inverts. Pale ink on charcoal, and the first page that is not cream.",
       "aspect": "1:1",
-      "target": "6000 × 6000 px",
+      "target": "1024 × 1024 px (ChatGPT's largest for 1:1 — 85 dpi at 306 mm)",
       "status": "not generated",
-      "composite": false
+      "composite": false,
+      "revision": "Target lowered 20 Aug 2026 to the largest canvas ChatGPT actually produces. The previous figure asked for a resolution no available generator could reach."
     },
     {
       "id": "part-4-divider-return",
@@ -919,9 +924,10 @@
       "concept": "A surface holding a decision after the number is forgotten.",
       "purpose": "The essay opens on this. Thinking that is on the wood, not in the head.",
       "aspect": "1:1",
-      "target": "6000 × 6000 px",
+      "target": "1024 × 1024 px (ChatGPT's largest for 1:1 — 85 dpi at 306 mm)",
       "status": "generated",
-      "composite": false
+      "composite": false,
+      "revision": "Target lowered 20 Aug 2026 to the largest canvas ChatGPT actually produces. The previous figure asked for a resolution no available generator could reach."
     },
     {
       "id": "intelligence-02-cards-table",
@@ -935,9 +941,10 @@
       "concept": "Position performing part of the thinking.",
       "purpose": "Band under the working-memory margin note. The arrangement has to look mid-move, not finished.",
       "aspect": "3:1",
-      "target": "9000 × 3000 px",
+      "target": "1536 × 512 px (ChatGPT's largest for 3:1 — 165 dpi at 236 mm)",
       "status": "generated",
-      "composite": false
+      "composite": false,
+      "revision": "Target lowered 20 Aug 2026 to the largest canvas ChatGPT actually produces. The previous figure asked for a resolution no available generator could reach."
     },
     {
       "id": "intelligence-03-orb-web",
@@ -972,9 +979,10 @@
       "concept": "Navigation held by the device and the road together.",
       "purpose": "Band beside the taxi-driver margin note. No faces, no hands on the wheel if it can be avoided.",
       "aspect": "3:1",
-      "target": "9000 × 3000 px",
+      "target": "1536 × 512 px (ChatGPT's largest for 3:1 — 165 dpi at 236 mm)",
       "status": "generated",
-      "composite": false
+      "composite": false,
+      "revision": "Target lowered 20 Aug 2026 to the largest canvas ChatGPT actually produces. The previous figure asked for a resolution no available generator could reach."
     },
     {
       "id": "intelligence-05-tools-ready",
@@ -988,9 +996,10 @@
       "concept": "A room that is holding the next step.",
       "purpose": "The tall plate. It has to read as waiting, not as tidy.",
       "aspect": "2:3",
-      "target": "4000 × 6000 px",
+      "target": "1024 × 1536 px (ChatGPT's largest for 2:3 — 135 dpi at 192 mm)",
       "status": "generated",
-      "composite": false
+      "composite": false,
+      "revision": "Target lowered 20 Aug 2026 to the largest canvas ChatGPT actually produces. The previous figure asked for a resolution no available generator could reach."
     },
     {
       "id": "privilege-01-kitchen-laptop",
@@ -1004,9 +1013,10 @@
       "concept": "History happening inside an ordinary afternoon.",
       "purpose": "On the shoot list in photo-selection-04. The library has nothing like it.",
       "aspect": "1:1",
-      "target": "6000 × 6000 px",
+      "target": "1024 × 1024 px (ChatGPT's largest for 1:1 — 85 dpi at 306 mm)",
       "status": "generated",
-      "composite": false
+      "composite": false,
+      "revision": "Target lowered 20 Aug 2026 to the largest canvas ChatGPT actually produces. The previous figure asked for a resolution no available generator could reach."
     },
     {
       "id": "privilege-02-machine-timeline",
@@ -1020,9 +1030,10 @@
       "concept": "A revolution ending in an ordinary interface.",
       "purpose": "Band under the 4004 margin note. Not an infographic, and no arrows between the three.",
       "aspect": "3:1",
-      "target": "9000 × 3000 px",
+      "target": "1536 × 512 px (ChatGPT's largest for 3:1 — 165 dpi at 236 mm)",
       "status": "generated",
-      "composite": false
+      "composite": false,
+      "revision": "Target lowered 20 Aug 2026 to the largest canvas ChatGPT actually produces. The previous figure asked for a resolution no available generator could reach."
     },
     {
       "id": "privilege-03-unfinished-paragraph",
@@ -1036,10 +1047,10 @@
       "concept": "New capability and old judgment on the same desk.",
       "purpose": "Faces the pull quote. The handwriting must be legible as correction without being readable as content.",
       "aspect": "1:1",
-      "target": "6000 × 6000 px",
+      "target": "1024 × 1024 px (ChatGPT's largest for 1:1 — 85 dpi at 306 mm)",
       "status": "not generated",
       "composite": false,
-      "revision": "Not needed for now: that verso carries the 7,325 advertisers instead. Kept in the manifest because the idea is still good elsewhere."
+      "revision": "Not needed for now: that verso carries the 7,325 advertisers instead. Kept in the manifest because the idea is still good elsewhere. Target lowered 20 Aug 2026 to the largest canvas ChatGPT actually produces. The previous figure asked for a resolution no available generator could reach."
     },
     {
       "id": "privilege-04-two-reviewing",
@@ -1053,9 +1064,10 @@
       "concept": "Adoption happening through comparison rather than spectacle.",
       "purpose": "Band beside the transformer margin note. Candid rule applies; this is the one that will be tempting to stage.",
       "aspect": "3:1",
-      "target": "9000 × 3000 px",
+      "target": "1536 × 512 px (ChatGPT's largest for 3:1 — 165 dpi at 236 mm)",
       "status": "generated",
-      "composite": false
+      "composite": false,
+      "revision": "Target lowered 20 Aug 2026 to the largest canvas ChatGPT actually produces. The previous figure asked for a resolution no available generator could reach."
     },
     {
       "id": "privilege-05-dog-under-desk",
@@ -1069,9 +1081,10 @@
       "concept": "From the floor, an extraordinary afternoon is a Tuesday.",
       "purpose": "On the shoot list in photo-selection-04, and the one image in the storyboard that is purely Adam’s to take.",
       "aspect": "2:3",
-      "target": "4000 × 6000 px",
+      "target": "1024 × 1536 px (ChatGPT's largest for 2:3 — 135 dpi at 192 mm)",
       "status": "generated",
-      "composite": false
+      "composite": false,
+      "revision": "Target lowered 20 Aug 2026 to the largest canvas ChatGPT actually produces. The previous figure asked for a resolution no available generator could reach."
     },
     {
       "id": "before-time-01-road-atlas",
@@ -1085,9 +1098,10 @@
       "concept": "A route that had to stay visible without knowing where you were.",
       "purpose": "The opener. It has to look used rather than collected.",
       "aspect": "1:1",
-      "target": "6000 × 6000 px",
+      "target": "1024 × 1024 px (ChatGPT's largest for 1:1 — 85 dpi at 306 mm)",
       "status": "generated",
-      "composite": false
+      "composite": false,
+      "revision": "Target lowered 20 Aug 2026 to the largest canvas ChatGPT actually produces. The previous figure asked for a resolution no available generator could reach."
     },
     {
       "id": "before-time-02-answering-machine",
@@ -1101,9 +1115,10 @@
       "concept": "Absence with a physical sound and a fixed place.",
       "purpose": "Band under the adoption margin note. No hand, no person; the room has to be empty.",
       "aspect": "3:1",
-      "target": "9000 × 3000 px",
+      "target": "1536 × 512 px (ChatGPT's largest for 3:1 — 165 dpi at 236 mm)",
       "status": "generated",
-      "composite": false
+      "composite": false,
+      "revision": "Target lowered 20 Aug 2026 to the largest canvas ChatGPT actually produces. The previous figure asked for a resolution no available generator could reach."
     },
     {
       "id": "before-time-03-contact-sheet",
@@ -1117,10 +1132,10 @@
       "concept": "An image that arrived after the moment could no longer be corrected.",
       "purpose": "Faces the pull quote. The failures are the picture. Do not select good frames.",
       "aspect": "1:1",
-      "target": "6000 × 6000 px",
+      "target": "1024 × 1024 px (ChatGPT's largest for 1:1 — 85 dpi at 306 mm)",
       "status": "not generated",
       "composite": false,
-      "revision": "No longer needed: the essay 06 spread it sat on is gone. Kept in the manifest because the subject is still good and the page budget may move again. DO NOT GENERATE THIS unless it is placed again."
+      "revision": "No longer needed: the essay 06 spread it sat on is gone. Kept in the manifest because the subject is still good and the page budget may move again. DO NOT GENERATE THIS unless it is placed again. Target lowered 20 Aug 2026 to the largest canvas ChatGPT actually produces. The previous figure asked for a resolution no available generator could reach."
     },
     {
       "id": "before-time-04-waiting-clock",
@@ -1134,9 +1149,10 @@
       "concept": "Waiting with nothing to do.",
       "purpose": "Band beside the SMS margin note. If anyone in frame is holding a phone the picture is about something else.",
       "aspect": "3:1",
-      "target": "9000 × 3000 px",
+      "target": "1536 × 512 px (ChatGPT's largest for 3:1 — 165 dpi at 236 mm)",
       "status": "generated",
-      "composite": false
+      "composite": false,
+      "revision": "Target lowered 20 Aug 2026 to the largest canvas ChatGPT actually produces. The previous figure asked for a resolution no available generator could reach."
     },
     {
       "id": "before-time-05-artifact-array",
@@ -1150,9 +1166,10 @@
       "concept": "Things that each did one thing.",
       "purpose": "The tall plate. Every function here now lives in one object in a pocket, and the caption says so.",
       "aspect": "2:3",
-      "target": "4000 × 6000 px",
+      "target": "1024 × 1536 px (ChatGPT's largest for 2:3 — 135 dpi at 192 mm)",
       "status": "generated",
-      "composite": false
+      "composite": false,
+      "revision": "Target lowered 20 Aug 2026 to the largest canvas ChatGPT actually produces. The previous figure asked for a resolution no available generator could reach."
     },
     {
       "id": "pilgrimage-01-worn-threshold",
@@ -1166,9 +1183,10 @@
       "concept": "Repetition become visible in architecture.",
       "purpose": "The opener. Nothing else in frame; the wear is the whole subject.",
       "aspect": "1:1",
-      "target": "6000 × 6000 px",
+      "target": "1024 × 1024 px (ChatGPT's largest for 1:1 — 85 dpi at 306 mm)",
       "status": "generated",
-      "composite": false
+      "composite": false,
+      "revision": "Target lowered 20 Aug 2026 to the largest canvas ChatGPT actually produces. The previous figure asked for a resolution no available generator could reach."
     },
     {
       "id": "pilgrimage-02-yellow-arrow",
@@ -1182,9 +1200,10 @@
       "concept": "A sacred route running through somewhere unremarkable.",
       "purpose": "Band under the Shikoku margin note. The banality of the lane is the point.",
       "aspect": "3:1",
-      "target": "9000 × 3000 px",
+      "target": "1536 × 512 px (ChatGPT's largest for 3:1 — 165 dpi at 236 mm)",
       "status": "generated",
-      "composite": false
+      "composite": false,
+      "revision": "Target lowered 20 Aug 2026 to the largest canvas ChatGPT actually produces. The previous figure asked for a resolution no available generator could reach."
     },
     {
       "id": "pilgrimage-03-route-map",
@@ -1198,10 +1217,10 @@
       "concept": "Destination and duration held in one line.",
       "purpose": "Faces the pull quote. No scale bar, no place names, no legend.",
       "aspect": "1:1",
-      "target": "6000 × 6000 px",
+      "target": "1024 × 1024 px (ChatGPT's largest for 1:1 — 85 dpi at 306 mm)",
       "status": "not generated",
       "composite": false,
-      "revision": "Not needed for now: that verso carries the 23 checked-in cities instead. Kept in the manifest because the idea is still good elsewhere."
+      "revision": "Not needed for now: that verso carries the 23 checked-in cities instead. Kept in the manifest because the idea is still good elsewhere. Target lowered 20 Aug 2026 to the largest canvas ChatGPT actually produces. The previous figure asked for a resolution no available generator could reach."
     },
     {
       "id": "pilgrimage-04-tending-feet",
@@ -1215,9 +1234,10 @@
       "concept": "A meaningful route as a bodily task.",
       "purpose": "Band beside the Camino margin note. Photo-selection-04 has real candidates for this row.",
       "aspect": "3:1",
-      "target": "9000 × 3000 px",
+      "target": "1536 × 512 px (ChatGPT's largest for 3:1 — 165 dpi at 236 mm)",
       "status": "generated",
-      "composite": false
+      "composite": false,
+      "revision": "Target lowered 20 Aug 2026 to the largest canvas ChatGPT actually produces. The previous figure asked for a resolution no available generator could reach."
     },
     {
       "id": "pilgrimage-05-stamped-booklet",
@@ -1231,9 +1251,10 @@
       "concept": "The proof of a walk is a document nobody checks.",
       "purpose": "The tall plate. Real stamps, uneven pressure, one of them upside down.",
       "aspect": "2:3",
-      "target": "4000 × 6000 px",
+      "target": "1024 × 1536 px (ChatGPT's largest for 2:3 — 135 dpi at 192 mm)",
       "status": "generated",
-      "composite": false
+      "composite": false,
+      "revision": "Target lowered 20 Aug 2026 to the largest canvas ChatGPT actually produces. The previous figure asked for a resolution no available generator could reach."
     },
     {
       "id": "here-01-dog-late-light",
@@ -1247,9 +1268,10 @@
       "concept": "An ordinary room changing continuously.",
       "purpose": "The closing essay opens where the book opened, which is the point.",
       "aspect": "1:1",
-      "target": "6000 × 6000 px",
+      "target": "1024 × 1024 px (ChatGPT's largest for 1:1 — 85 dpi at 306 mm)",
       "status": "generated",
-      "composite": false
+      "composite": false,
+      "revision": "Target lowered 20 Aug 2026 to the largest canvas ChatGPT actually produces. The previous figure asked for a resolution no available generator could reach."
     },
     {
       "id": "here-02-house-section",
@@ -1279,10 +1301,10 @@
       "concept": "A shared life continuing without performance.",
       "purpose": "Faces the pull quote, and is the closest the book comes to a portrait.",
       "aspect": "1:1",
-      "target": "6000 × 6000 px",
+      "target": "1024 × 1024 px (ChatGPT's largest for 1:1 — 85 dpi at 306 mm)",
       "status": "not generated",
       "composite": false,
-      "revision": "No longer needed: the essay 08 spread it sat on is gone. Kept in the manifest because the subject is still good and the page budget may move again. DO NOT GENERATE THIS unless it is placed again."
+      "revision": "No longer needed: the essay 08 spread it sat on is gone. Kept in the manifest because the subject is still good and the page budget may move again. DO NOT GENERATE THIS unless it is placed again. Target lowered 20 Aug 2026 to the largest canvas ChatGPT actually produces. The previous figure asked for a resolution no available generator could reach."
     },
     {
       "id": "here-04-window-water",
@@ -1367,9 +1389,10 @@
       "concept": "The room still holding the shape of a decision after the person has gone.",
       "purpose": "The closing recto. The essay ends on tools left ready, and this is that, photographed quietly and full bleed.",
       "aspect": "1:1",
-      "target": "6000 × 6000 px",
+      "target": "1024 × 1024 px (ChatGPT's largest for 1:1 — 85 dpi at 306 mm)",
       "status": "not generated",
-      "composite": false
+      "composite": false,
+      "revision": "Target lowered 20 Aug 2026 to the largest canvas ChatGPT actually produces. The previous figure asked for a resolution no available generator could reach."
     },
     {
       "id": "privilege-06-closing-cursor",
@@ -1383,9 +1406,10 @@
       "concept": "The part that does not move to the machine.",
       "purpose": "The closing recto. The essay ends on the cursor continuing to blink and somebody still having to decide.",
       "aspect": "1:1",
-      "target": "6000 × 6000 px",
+      "target": "1024 × 1024 px (ChatGPT's largest for 1:1 — 85 dpi at 306 mm)",
       "status": "not generated",
-      "composite": false
+      "composite": false,
+      "revision": "Target lowered 20 Aug 2026 to the largest canvas ChatGPT actually produces. The previous figure asked for a resolution no available generator could reach."
     },
     {
       "id": "pilgrimage-06-closing-stone",
@@ -1399,9 +1423,10 @@
       "concept": "Arrival as a thing the body does rather than a thing the mind concludes.",
       "purpose": "The closing recto. The essay ends on exactly this gesture, so the picture is the last sentence and needs no caption.",
       "aspect": "1:1",
-      "target": "6000 × 6000 px",
+      "target": "1024 × 1024 px (ChatGPT's largest for 1:1 — 85 dpi at 306 mm)",
       "status": "not generated",
-      "composite": false
+      "composite": false,
+      "revision": "Target lowered 20 Aug 2026 to the largest canvas ChatGPT actually produces. The previous figure asked for a resolution no available generator could reach."
     }
   ]
 }

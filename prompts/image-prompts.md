@@ -165,6 +165,74 @@ Square frame (1:1).
 Avoid: gradients; glossy 3D or rendered lighting; generic vector people; corporate infographic style; SaaS or explainer-video illustration; polished icon sets; decorative complexity with no conceptual purpose; fake handwritten paragraphs or invented lettering; any legible text; psychedelic imagery; symmetry for its own sake.
 ```
 
+### field-note-01-lake
+
+**Save as** `public/images/personal/field-note-01-lake.jpg` · 1:1 · target 3213 × 3213 px
+**Where it goes** Field note (verso, full bleed)
+**Why it is there** Field note verso. The only place in the book where a real photograph of this life appears at size.
+**Watch for** Square centre-left crop of the 5712 × 3213 original, offset 349 px. Not retouched, not upscaled. 272 dpi at 300 mm.
+
+```text
+A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
+
+The lake, on an ordinary afternoon. Boats moored, nothing happening at length.
+
+Square frame (1:1).
+
+Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
+```
+
+### field-note-02-engine-plate
+
+**Save as** `public/images/personal/field-note-02-engine-plate.jpg` · 1:1 · target 3600 × 3600 px
+**Where it goes** Field note (verso, full bleed)
+**Why it is there** Field note verso. The only place in the book where a real photograph of this life appears at size.
+**Watch for** CANNOT be a full-bleed verso. A square crop is 597 px, which is 50 dpi at 300 mm. photo-selection-02 always said to use this one small, at 60 to 75 mm. Either reshoot the plate, or change this field note so the photograph is a small specimen card rather than the full page.
+
+```text
+A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
+
+The serial plate on a lawnmower engine: model number, barcode, QR, and the words “Data Rates apply.”
+
+Square frame (1:1).
+
+Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
+```
+
+### field-note-03-street-and-dog
+
+**Save as** `public/images/personal/field-note-03-street-and-dog.jpg` · 1:1 · target 3213 × 3213 px
+**Where it goes** Field note (verso, full bleed)
+**Why it is there** Field note verso. The only place in the book where a real photograph of this life appears at size.
+**Watch for** Centre square crop of the 5712 × 3213 original. Not retouched, not upscaled. 272 dpi at 300 mm. OPEN: at square the two figures are large enough to read as a posed portrait facing the lens, which the candid rule forbids. See decisions.md.
+
+```text
+A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
+
+An empty suburban street, wires overhead, two small figures stopped on the sidewalk.
+
+Square frame (1:1).
+
+Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
+```
+
+### field-note-04-firepit
+
+**Save as** `public/images/personal/field-note-04-firepit.jpg` · 1:1 · target 2268 × 2268 px
+**Where it goes** Field note (verso, full bleed)
+**Why it is there** Field note verso. The only place in the book where a real photograph of this life appears at size.
+**Watch for** Square crop of the 4032 × 2268 original, offset 705 px to hold the dog and the lounger. Shadows not lifted. 192 dpi at 300 mm, which is under the 300 dpi ideal and acceptable for a dark, soft-edged frame.
+
+```text
+A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
+
+A fire pit at dusk, a figure seated in profile watching it, trees behind.
+
+Square frame (1:1).
+
+Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
+```
+
 ## Why Ordinary Days May Be the Point of Life
 
 ### ordinary-days-01a-dog-afternoon-light

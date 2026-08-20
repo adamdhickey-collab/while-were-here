@@ -679,10 +679,10 @@
       "concept": "A personal interlude between parts.",
       "purpose": "Field note verso. The only place in the book where a real photograph of this life appears at size.",
       "aspect": "1:1",
-      "target": "3600 × 3600 px",
-      "status": "selected",
-      "selection": "See content/plan/photo-selection-02.md",
-      "revision": "Do not retouch. Preserve imperfection, per the PERSONAL role.",
+      "target": "3213 × 3213 px",
+      "status": "placed",
+      "selection": "B011 · IMG_5212, Oct 4 2025. See content/plan/photo-selection-02.md",
+      "revision": "Square centre-left crop of the 5712 × 3213 original, offset 349 px. Not retouched, not upscaled. 272 dpi at 300 mm.",
       "composite": false
     },
     {
@@ -698,9 +698,9 @@
       "purpose": "Field note verso. The only place in the book where a real photograph of this life appears at size.",
       "aspect": "1:1",
       "target": "3600 × 3600 px",
-      "status": "selected",
-      "selection": "See content/plan/photo-selection-02.md",
-      "revision": "Do not retouch. Preserve imperfection, per the PERSONAL role.",
+      "status": "blocked on resolution",
+      "selection": "B005 · IMG_5199, Oct 2 2025 is only 883 × 597 px. See content/plan/photo-selection-02.md",
+      "revision": "CANNOT be a full-bleed verso. A square crop is 597 px, which is 50 dpi at 300 mm. photo-selection-02 always said to use this one small, at 60 to 75 mm. Either reshoot the plate, or change this field note so the photograph is a small specimen card rather than the full page.",
       "composite": false
     },
     {
@@ -715,10 +715,10 @@
       "concept": "A personal interlude between parts.",
       "purpose": "Field note verso. The only place in the book where a real photograph of this life appears at size.",
       "aspect": "1:1",
-      "target": "3600 × 3600 px",
-      "status": "selected",
-      "selection": "See content/plan/photo-selection-02.md",
-      "revision": "Do not retouch. Preserve imperfection, per the PERSONAL role.",
+      "target": "3213 × 3213 px",
+      "status": "placed",
+      "selection": "B032 · IMG_5248, Oct 9 2025. See content/plan/photo-selection-02.md",
+      "revision": "Centre square crop of the 5712 × 3213 original. Not retouched, not upscaled. 272 dpi at 300 mm. OPEN: at square the two figures are large enough to read as a posed portrait facing the lens, which the candid rule forbids. See decisions.md.",
       "composite": false
     },
     {
@@ -733,10 +733,10 @@
       "concept": "A personal interlude between parts.",
       "purpose": "Field note verso. The only place in the book where a real photograph of this life appears at size.",
       "aspect": "1:1",
-      "target": "3600 × 3600 px",
-      "status": "selected",
-      "selection": "See content/plan/photo-selection-02.md",
-      "revision": "Do not retouch. Preserve imperfection, per the PERSONAL role.",
+      "target": "2268 × 2268 px",
+      "status": "placed",
+      "selection": "B039 · IMG_5259, Oct 9 2025. See content/plan/photo-selection-02.md",
+      "revision": "Square crop of the 4032 × 2268 original, offset 705 px to hold the dog and the lounger. Shadows not lifted. 192 dpi at 300 mm, which is under the 300 dpi ideal and acceptable for a dark, soft-edged frame.",
       "composite": false
     }
   ]

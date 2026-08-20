@@ -797,10 +797,18 @@ const closing = (spread, essay, ctx) => ({
     {
       spread: 'closing',
       folio: false,
-      cls: 'closing closing--plate',
+      cls: `closing closing--plate${spread.quote ? ' closing--quote' : ''}`,
+      /* The recto of a closing spread is otherwise blank. An essay that has no
+         pull-quote spread of its own puts its sentence here, which is the
+         treatment a pull quote wanted anyway — one line alone on a page — at no
+         cost in extent. */
       html: `${spread.image
         ? `<div class="closing__figure">${figure(ctx.image(spread.image), { className: 'figure--bleed', inverse: true, root: ctx.root })}</div>`
-        : ''}`,
+        : ''}${spread.quote ? `
+        <div class="page__block">
+          <span class="quote-mark"></span>
+          <blockquote class="pull-quote">${esc(spread.quote)}</blockquote>
+        </div>` : ''}`,
     },
   ],
 });

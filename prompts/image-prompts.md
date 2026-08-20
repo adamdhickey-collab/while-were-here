@@ -630,9 +630,9 @@ Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glo
 ### attention-04-lake-weather
 
 **Save as** `public/images/overlays/attention-04-lake-weather.jpg` · 2:1 · target 8000 × 4000 px
-**Where it goes** Full-bleed spread (crossover, two pages)
+**Where it goes** Unplaced. Freed 19 Aug 2026 when a spread was cut to bring the book to 130 pages.
 **Why it is there** The book's first long exhale. No text, no folio.
-**Watch for** Specimen colour lake #3E6B87, at the lowest weight anywhere in the book. If the overlay is noticed before the figure, it is too strong. Keep the horizon clear of the fold; the figure sits fully on the recto.
+**Watch for** No longer needed: the essay 02 spread it sat on is gone. Kept in the manifest because the subject is still good and the page budget may move again.
 
 ```text
 A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
@@ -747,8 +747,9 @@ Avoid: gradients; glossy 3D or rendered lighting; generic vector people; corpora
 ### systems-04-desire-path
 
 **Save as** `public/images/photography/systems-04-desire-path.png` · 1:1 · target 6000 × 6000 px
-**Where it goes** Pull quote (facing)
+**Where it goes** Unplaced. Freed 19 Aug 2026 when a spread was cut to bring the book to 130 pages.
 **Why it is there** Faces the pull quote. See content/plan/photo-selection-04.md — this is on the shoot list.
+**Watch for** No longer needed: the essay 03 spread it sat on is gone. Kept in the manifest because the subject is still good and the page budget may move again. DO NOT GENERATE THIS unless it is placed again.
 
 ```text
 A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
@@ -1198,8 +1199,9 @@ Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glo
 ### before-time-03-contact-sheet
 
 **Save as** `public/images/photography/before-time-03-contact-sheet.png` · 1:1 · target 6000 × 6000 px
-**Where it goes** Pull quote (facing)
+**Where it goes** Unplaced. Freed 19 Aug 2026 when a spread was cut to bring the book to 130 pages.
 **Why it is there** Faces the pull quote. The failures are the picture. Do not select good frames.
+**Watch for** No longer needed: the essay 06 spread it sat on is gone. Kept in the manifest because the subject is still good and the page budget may move again. DO NOT GENERATE THIS unless it is placed again.
 
 ```text
 A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
@@ -1280,8 +1282,9 @@ Avoid: gradients; glossy 3D or rendered lighting; generic vector people; corpora
 ### here-03-two-rooms
 
 **Save as** `public/images/photography/here-03-two-rooms.png` · 1:1 · target 6000 × 6000 px
-**Where it goes** Pull quote (facing)
+**Where it goes** Unplaced. Freed 19 Aug 2026 when a spread was cut to bring the book to 130 pages.
 **Why it is there** Faces the pull quote, and is the closest the book comes to a portrait.
+**Watch for** No longer needed: the essay 08 spread it sat on is gone. Kept in the manifest because the subject is still good and the page budget may move again. DO NOT GENERATE THIS unless it is placed again.
 
 ```text
 A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.

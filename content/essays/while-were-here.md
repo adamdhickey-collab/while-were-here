@@ -23,10 +23,6 @@ spreads:
       Sunlight takes about 8 minutes and 20 seconds to reach Earth. The bright
       rectangle on a floor is made from energy that left the Sun before anyone
       in the room noticed it.
-  - type: pull-quote
-    quote: The temporary thing is not less real. It is the only kind we have.
-    lede: On the only kind there is
-    image: here-03-two-rooms
   - type: reading
     variant: two
     blocks: [flow-2a, flow-2b]
@@ -61,6 +57,7 @@ spreads:
       Stand where an ordinary room meets daylight. Stay until one visible
       condition changes. Do not name the lesson. Record only what moved.
   - type: closing
+    quote: The temporary thing is not less real. It is the only kind we have.
     line: For now, that is where we are.
     blocks: [flow-4a, flow-4b]
 ---

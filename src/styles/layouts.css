@@ -986,3 +986,17 @@
   line-height: 1.45;
 }
 .record--dense .record__list li { hyphens: auto; overflow-wrap: anywhere; }
+
+/* A closing spread carrying an essay's pull quote on its otherwise blank recto.
+   Same treatment as the quote spread, because it is the same job: one sentence,
+   alone, with nothing to read it against. */
+.closing--quote .page__block { display: grid; align-content: center; }
+.closing--quote .pull-quote { grid-column: 1 / 13; font-size: var(--t-quote); }
+.closing--quote .quote-mark {
+  grid-column: 1 / 13;
+  display: block;
+  width: 26mm;
+  height: 0.9pt;
+  background: var(--rust);
+  margin-bottom: var(--sp-6);
+}

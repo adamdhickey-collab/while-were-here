@@ -80,9 +80,6 @@ spreads:
         - Nine years of the same square yard and no evidence of boredom.
         - Whatever this is, it is not available to me by trying harder.
     hand: it isn't trying
-  - type: full-bleed
-    image: attention-04-lake-weather
-    caption: Late light, north shore. Nothing happening, at length.
   - type: diagram
     figure: attention-diagram
     title: What the editor kept

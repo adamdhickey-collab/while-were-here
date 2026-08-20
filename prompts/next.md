@@ -12,36 +12,37 @@ Three jobs for ChatGPT. Job 1 is the one that unblocks pages. Job 4 is done.
 | Cover | Settled: `bleed`. Subtitle settled. Both closed, see `content/plan/decisions.md`. |
 | Essays | **All eight laid out.** Four parts, four dividers, four field notes. |
 | Field notes | All four written and all four placed, one per part. |
-| Images | 33 made and placed. **42 unmade**, which is now the book's largest open job. |
-| Current extent | **138 interior pages. The printer's ceiling is 130.** |
+| Images | 37 made and placed. **35 unmade and placed**, plus 5 unmade and unplaced that should not be generated. |
+| Current extent | **130 interior pages, exactly at the printer's ceiling.** No slack. |
 
 The gap between 42 and 128 is almost entirely essays 3 to 8. Everything else is
 finishing work.
 
 ---
 
-## Job 1 — decide where eight pages come from
+## Job 1 — done. The book fits.
 
-The whole book is laid out and it is **138 pages against a 130 ceiling**. That
-is the binding problem now, and it is a decision rather than a task.
+138 pages became **130**, which is exactly the Saal Professional Line ceiling.
+Four spreads came out:
 
-Every essay runs seven spreads: opener, reading, pull quote, reading, image
-essay, asymmetric reading, closing. Essays 01 and 02 run six and eight. The
-arithmetic:
-
-| Change | Pages saved |
+| Cut | Pages |
 | --- | --- |
-| Drop one reading spread from four of the six new essays | 8 |
-| Drop the second band spread from every new essay | 10 |
-| Cut one field note | 2 |
-| Merge the two Part IV essays into one closing sequence | 4 |
+| Pull-quote spread, *The Beauty of Systems Nobody Designed* | 2 |
+| Pull-quote spread, *The Last Generation That Remembers the Before-Time* | 2 |
+| Pull-quote spread, *While We're Here* | 2 |
+| Full-bleed spread, *The Secret Life of Attention* | 2 |
 
-Dropping a reading spread means folding two prose blocks onto one spread, which
-the fixed-page model will refuse if the copy does not fit. The overflow detector
-will tell you immediately, so this is cheap to try.
+**The three pull quotes did not go with them.** A closing spread's recto was
+already blank, so each sentence now sits there alone, which is the treatment a
+pull quote wanted in the first place. It reads better than it did: the essay's
+aphorism is the last thing on the page instead of something passed halfway
+through.
 
-**The other option is a different printer.** Nothing in the build is
-Saal-specific; 130 is their Professional Line maximum, not a law.
+The pull-quote spreads that survive are the three carrying real material — the
+penguin print, the advertisers and the cities. Those were never candidates.
+
+**There is now no slack.** Any spread added has to take another one out, and
+`book.config.js` records 130 as an actual count rather than a target.
 
 ---
 

@@ -347,7 +347,7 @@
       "kind": "overlays",
       "essay": "The Secret Life of Attention",
       "section": "I — Look Again",
-      "spread": "Full-bleed spread (crossover, two pages)",
+      "spread": "Unplaced. Freed 19 Aug 2026 when a spread was cut to bring the book to 130 pages.",
       "subject": "An enormous flat bank of weather over a grey lake, one very small figure standing on a breakwater far right of centre, overprinted with the faintest possible synoptic layer: two isobars and a frontal boundary crossing the sky, drawn so lightly they could be missed on the first pass.",
       "concept": "Scale as an attention device. The eye has to travel to find the person, and then travel again to find the weather map.",
       "purpose": "The book's first long exhale. No text, no folio.",
@@ -355,7 +355,7 @@
       "target": "8000 × 4000 px",
       "status": "generated",
       "selection": "—",
-      "revision": "Specimen colour lake #3E6B87, at the lowest weight anywhere in the book. If the overlay is noticed before the figure, it is too strong. Keep the horizon clear of the fold; the figure sits fully on the recto.",
+      "revision": "No longer needed: the essay 02 spread it sat on is gone. Kept in the manifest because the subject is still good and the page budget may move again.",
       "composite": false
     },
     {
@@ -463,14 +463,15 @@
       "role": "plate",
       "essay": "The Beauty of Systems Nobody Designed",
       "section": "Part II · What Are We?",
-      "spread": "Pull quote (facing)",
+      "spread": "Unplaced. Freed 19 Aug 2026 when a spread was cut to bring the book to 130 pages.",
       "subject": "A worn track cutting a corner across grass, beside the paved path it ignores.",
       "concept": "The most literal case in the essay, and the one the photo library does not contain.",
       "purpose": "Faces the pull quote. See content/plan/photo-selection-04.md — this is on the shoot list.",
       "aspect": "1:1",
       "target": "6000 × 6000 px",
       "status": "not generated",
-      "composite": false
+      "composite": false,
+      "revision": "No longer needed: the essay 03 spread it sat on is gone. Kept in the manifest because the subject is still good and the page budget may move again. DO NOT GENERATE THIS unless it is placed again."
     },
     {
       "id": "attention-05-crosswalk-strangers",
@@ -1103,14 +1104,15 @@
       "role": "plate",
       "essay": "The Last Generation",
       "section": "Part III · The World Is Changing",
-      "spread": "Pull quote (facing)",
+      "spread": "Unplaced. Freed 19 Aug 2026 when a spread was cut to bring the book to 130 pages.",
       "subject": "A contact sheet of six film frames, at least two of them failed: a thumb, a closed eye, a blur.",
       "concept": "An image that arrived after the moment could no longer be corrected.",
       "purpose": "Faces the pull quote. The failures are the picture. Do not select good frames.",
       "aspect": "1:1",
       "target": "6000 × 6000 px",
       "status": "not generated",
-      "composite": false
+      "composite": false,
+      "revision": "No longer needed: the essay 06 spread it sat on is gone. Kept in the manifest because the subject is still good and the page budget may move again. DO NOT GENERATE THIS unless it is placed again."
     },
     {
       "id": "before-time-04-waiting-clock",
@@ -1264,14 +1266,15 @@
       "role": "plate",
       "essay": "While We’re Here",
       "section": "Part IV · While We’re Here",
-      "spread": "Pull quote (facing)",
+      "spread": "Unplaced. Freed 19 Aug 2026 when a spread was cut to bring the book to 130 pages.",
       "subject": "Two people in separate rooms connected by an open doorway, neither looking at the camera, neither aware of the other being photographed.",
       "concept": "A shared life continuing without performance.",
       "purpose": "Faces the pull quote, and is the closest the book comes to a portrait.",
       "aspect": "1:1",
       "target": "6000 × 6000 px",
       "status": "not generated",
-      "composite": false
+      "composite": false,
+      "revision": "No longer needed: the essay 08 spread it sat on is gone. Kept in the manifest because the subject is still good and the page budget may move again. DO NOT GENERATE THIS unless it is placed again."
     },
     {
       "id": "here-04-window-water",

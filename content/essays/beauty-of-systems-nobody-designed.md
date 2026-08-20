@@ -23,10 +23,6 @@ spreads:
       European starlings in a large flock interact with about six or seven
       nearby birds, whatever the physical distance between them. A turn can
       cross the whole flock through local updates, with nobody giving an order.
-  - type: pull-quote
-    quote: Order is sometimes a verb performed by many small things.
-    lede: On what happens without a plan
-    image: systems-04-desire-path
   - type: reading
     variant: two
     blocks: [flow-2a, flow-2b]
@@ -74,6 +70,7 @@ spreads:
       interactions. Mark the moment a pattern appears without anyone announcing
       it.
   - type: closing
+    quote: Order is sometimes a verb performed by many small things.
     line: The next pattern is already taking shape at the edge of what each part can sense.
     blocks: [flow-4a, flow-4b]
 ---

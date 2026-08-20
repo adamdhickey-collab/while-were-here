@@ -23,10 +23,6 @@ spreads:
       Pew Research Center surveys found that 52 percent of U.S. adults used
       the internet in 2000. By 2025 the figure was 96 percent, though survey
       methods changed during that span.
-  - type: pull-quote
-    quote: Memory can preserve a former rule after the world stops using it.
-    lede: On a rule the world stopped using
-    image: before-time-03-contact-sheet
   - type: reading
     variant: two
     blocks: [flow-2a, flow-2b]
@@ -62,6 +58,7 @@ spreads:
       the sequence exactly as printed. Notice which delays and decisions the
       object expects a person to manage.
   - type: closing
+    quote: Memory can preserve a former rule after the world stops using it.
     line: For a little while, one generation can still describe both worlds from inside them.
     blocks: [flow-4a, flow-4b]
 ---

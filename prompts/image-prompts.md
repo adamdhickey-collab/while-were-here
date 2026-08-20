@@ -558,6 +558,23 @@ Square frame (1:1).
 Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
 ```
 
+### ordinary-days-01k-room-survey
+
+**Save as** `public/images/overlays/ordinary-days-01k-room-survey.png` · 1:1 · target 1254 × 1254 px (native — not upscaled)
+**Where it goes** Unplaced. Held in reserve — no spread assigned.
+**Why it is there** Companion to 01A's surveyed dog — the same joke told at room scale. Generated 20 Aug 2026 from the room-survey prompt; kept with an ID so it is ready the day a spread wants it.
+**Watch for** Second generation. The first ran its survey at watermark strength and the linework vanished over bright areas; the prompt now names the two inks (cobalt #536D8E structure, rust #A95738 organic traces), demands full opacity and drafting rather than sketching, and forbids the fade over bright areas. Note the units came back imperial — if this is ever placed beside 01A, which is dimensioned in millimetres, regenerate with units named.
+
+```text
+A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
+
+A sunlit living room surveyed in two inks: proportional rectangles, construction circles and dimension lines in faded cobalt over the window, sofa and table; branching rust hairlines following the monstera's growth and the light's path. A dog asleep in its bed at the right edge, measured like everything else.
+
+Square frame (1:1).
+
+Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
+```
+
 ### ground-01-habituation-decay
 
 **Save as** `public/images/illustration/ground-01-habituation-decay.png` · 2:1 · target 8000 × 4000 px

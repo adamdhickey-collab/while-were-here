@@ -134,7 +134,7 @@ img.status = 'generated';
 fs.writeFileSync(manifestPath, JSON.stringify(manifest, null, 2) + '\n');
 
 console.log(`✓ ${img.id}`);
-console.log(`  → public/images/${KIND_DIR[img.kind]}/${img.filename}${dim ? `  (${dim.w}×${dim.h})` : ''}`);
+console.log(`  → public/images/${KIND_DIR[img.kind] || 'photography'}/${img.filename}${dim ? `  (${dim.w}×${dim.h})` : ''}`);
 console.log(`  ${img.spread}`);
 for (const w of warn) console.log(`  ! ${w}`);
 console.log(`\n  npm run build   to see it in place\n`);

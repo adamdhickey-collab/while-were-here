@@ -297,6 +297,23 @@
       "composite": true
     },
     {
+      "id": "ordinary-days-01k-room-survey",
+      "filename": "ordinary-days-01k-room-survey.png",
+      "kind": "overlays",
+      "role": "figure",
+      "essay": "Why Ordinary Days May Be the Point of Life",
+      "section": "I — Look Again",
+      "spread": "Unplaced. Held in reserve — no spread assigned.",
+      "subject": "A sunlit living room surveyed in two inks: proportional rectangles, construction circles and dimension lines in faded cobalt over the window, sofa and table; branching rust hairlines following the monstera's growth and the light's path. A dog asleep in its bed at the right edge, measured like everything else.",
+      "concept": "A whole ordinary room, taken seriously enough to measure.",
+      "purpose": "Companion to 01A's surveyed dog — the same joke told at room scale. Generated 20 Aug 2026 from the room-survey prompt; kept with an ID so it is ready the day a spread wants it.",
+      "aspect": "1:1",
+      "target": "1254 × 1254 px (native — not upscaled)",
+      "status": "generated",
+      "composite": true,
+      "revision": "Second generation. The first ran its survey at watermark strength and the linework vanished over bright areas; the prompt now names the two inks (cobalt #536D8E structure, rust #A95738 organic traces), demands full opacity and drafting rather than sketching, and forbids the fade over bright areas. Note the units came back imperial — if this is ever placed beside 01A, which is dimensioned in millimetres, regenerate with units named."
+    },
+    {
       "id": "attention-01-window-reflection",
       "filename": "attention-01-window-reflection.jpg",
       "kind": "overlays",

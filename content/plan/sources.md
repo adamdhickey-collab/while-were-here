@@ -317,7 +317,7 @@ Meta Platforms. *Other categories used to reach you*. Download Your Information,
 
 Meta Platforms. *Advertisers using your activity or information*. Download Your Information, personal export for Adam Hickey. 2026. <https://www.facebook.com/dyi>
 
-**Note.** Counted twice by independent extractions of the same file, agreeing to within thirteen entries: 7,499 entries and 7,325 unique names. The page prints the FIRST 160 in export order, unedited and unsorted, and says so. Do not sort, curate or drop the entries that look like nonsense; names such as "Non ddtc 1 zocket manager" and "Mushrooms 3" are in the record and are part of what it shows. Re-count if the export is regenerated.
+**Note.** Counted twice by independent extractions of the same file, agreeing to within thirteen entries: 7,499 entries and 7,325 unique names. The page prints the first 160 in export order, unsorted, and says so. Six entries were withheld on 20 August 2026 at the author’s request — four named "Mushrooms" and two named "Zoomies" — so the page now shows 154 and states that six are withheld. Nothing else is sorted, curated or dropped: names such as "Non ddtc 1 zocket manager" are in the record and are part of what it shows. Do not restore the six, and do not let the page go back to claiming it is unedited. Re-count if the export is regenerated.
 
 *Used in essays/strange-privilege-technological-revolution.md — reproduced record.*
 

@@ -29,12 +29,12 @@ spreads:
     record:
       variant: dense
       title: Advertisers holding your activity or information
-      count: 7,325 unique · 160 shown
+      count: 7,325 unique · 154 shown
       source: >-
         Meta Platforms, "Advertisers using your activity or information".
         Personal data export generated 19 August 2026. The first 160 entries in
-        export order, unedited and unsorted. The remaining 7,165 are not printed
-        because they would fill eleven more pages.
+        export order, unsorted; six are withheld and the rest are unedited. The
+        remaining 7,165 are not printed because they would fill eleven more pages.
       items:
         - "Uniagency"
         - "LEGO"
@@ -70,7 +70,6 @@ spreads:
         - "Sonos"
         - "Huntington National Bank"
         - "Virgin Voyages"
-        - "Mushrooms 3"
         - "Perplexity AI"
         - "Dyson"
         - "King"
@@ -90,7 +89,6 @@ spreads:
         - "Suno"
         - "IKEA Austria"
         - "iHeartRadio"
-        - "Zoomies 9"
         - "Chris May 2"
         - "Wildsam Field Guides"
         - "Serpentine Account"
@@ -112,7 +110,6 @@ spreads:
         - "Doctoralia Colombia"
         - "Assembly APAC"
         - "Sioux digital 1:1"
-        - "Mushrooms 2"
         - "Life360"
         - "Lenovo EMEA Marketing"
         - "Publicis Media Indonesia"
@@ -132,7 +129,6 @@ spreads:
         - "Advertising Srbija"
         - "Lenovo Italia"
         - "Zorba’s Coney Island"
-        - "Zoomies 11"
         - "Strike Social"
         - "Expedia"
         - "Digital Adverting 2024"
@@ -152,9 +148,7 @@ spreads:
         - "Performics"
         - "MPlatform Romania"
         - "RingCentral"
-        - "Mushrooms 1 - Pixel Base"
         - "BuzzFeed Branded Distribution"
-        - "Mushrooms 5"
         - "That Lot"
         - "Sabre Corporation"
         - "IG Ads Identity"

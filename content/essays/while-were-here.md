@@ -3,10 +3,10 @@ id: while-were-here
 number: "08"
 part: IV
 stage: 5
-partTitle: While We're Here
-title: While We're Here
+partTitle: While We’re Here
+title: While We’re Here
 deck: The world does not become ordinary when it is understood. It becomes more fully present.
-runningHead: While We're Here
+runningHead: While We’re Here
 readingTime: 6
 spreads:
   - type: opener

@@ -193,6 +193,13 @@ export const openingNote = (note) => ({
   }],
 });
 
+/* Contents folios are looked up by title, which means a curly apostrophe on one
+   side and a straight one on the other silently prints an em dash instead of a
+   page number. That is exactly what happened to "While We're Here". Both sides
+   go through this. */
+export const titleKey = (s = '') =>
+  String(s).replace(/[\u2018\u2019]/g, "'").replace(/\s+/g, ' ').trim().toLowerCase();
+
 export const contents = (bookData, toc, folios = {}) => {
   const essayCount = toc.parts.reduce((n, p) => n + p.essays.length, 0);
   const half = (parts) => parts.map((p) => `
@@ -204,7 +211,7 @@ export const contents = (bookData, toc, folios = {}) => {
             <li class="${e.status === 'planned' ? 'is-forthcoming' : ''}">
               <span>${esc(e.title)}</span>
               <span class="contents__dots"></span>
-              <span class="contents__folio">${folios[e.title] ? String(folios[e.title]).padStart(3, '0') : '—'}</span>
+              <span class="contents__folio">${folios[titleKey(e.title)] ? String(folios[titleKey(e.title)]).padStart(3, '0') : '—'}</span>
             </li>`).join('')}
         </ul>
       </section>`).join('');

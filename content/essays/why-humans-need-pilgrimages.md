@@ -3,7 +3,7 @@ id: why-humans-need-pilgrimages
 number: "07"
 part: IV
 stage: 5
-partTitle: While We're Here
+partTitle: While We’re Here
 title: Why Humans Need Pilgrimages
 deck: A destination changes when the body has to carry time all the way to it.
 runningHead: Pilgrimages

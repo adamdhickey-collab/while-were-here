@@ -85,7 +85,7 @@ spreads:
 Most of life does not happen during the big moments.  
 It happens in between them.
 
-Not at the wedding, but on a Tuesday night years later when you're both tired and deciding what to eat.  
+Not at the wedding, but on a Tuesday night years later when you’re both tired and deciding what to eat.  
 Not on the vacation, but while making coffee before work.  
 Not at the graduation, but during the thousands of ordinary mornings that follow.  
 Not during the breakthrough, the promotion, the revelation, or the moment everything suddenly makes sense.
@@ -133,7 +133,7 @@ Take the trip.
 Retire.  
 Finally have enough time.
 
-The future contains the life you're trying to reach. And the present becomes transportation — a bridge between where you are and where you're supposed to be.
+The future contains the life you’re trying to reach. And the present becomes transportation — a bridge between where you are and where you’re supposed to be.
 
 The danger is that you can spend decades crossing bridges. Because every destination eventually becomes another starting point. You arrive. The mind adjusts. And almost immediately, life begins pointing somewhere else.
 
@@ -146,9 +146,9 @@ A stick becomes an object worth carrying home.
 Snow is an event.  
 A dog walking past deserves full attention.
 
-The world hasn't yet been divided so aggressively into important and unimportant things.
+The world hasn’t yet been divided so aggressively into important and unimportant things.
 
-Adults become efficient. We've seen the tree before. We know what rain is. We understand what happens at the grocery store. Familiarity allows us to move faster.
+Adults become efficient. We’ve seen the tree before. We know what rain is. We understand what happens at the grocery store. Familiarity allows us to move faster.
 
 But familiarity also makes reality disappear. The more certain we become that we know what something is, the less closely we look at it.
 
@@ -200,38 +200,38 @@ Unless they lose the ability to do it. Then suddenly crossing a room becomes pre
 This pattern appears everywhere.
 
 Health becomes vivid during illness.  
-Home becomes meaningful when you're away.  
-A person's voice becomes precious after they're gone.
+Home becomes meaningful when you’re away.  
+A person’s voice becomes precious after they’re gone.
 
 We often recognize value most clearly when something is threatened. Perhaps wisdom is learning to perform that restoration of attention before loss requires it. Not in a gloomy way. In a clarifying way.
 
-Imagine seeing today's life through your own eyes thirty years from now. The car you currently consider uninteresting. The face you see every morning. Your own body at its current age.
+Imagine seeing today’s life through your own eyes thirty years from now. The car you currently consider uninteresting. The face you see every morning. Your own body at its current age.
 
 Would any of it still look ordinary? Probably not. It might look impossibly alive.
 
 <!-- block: s7a -->
 
-This doesn't mean forcing yourself to appreciate every second. That would become another form of self-improvement — now you must optimize gratitude too. That misses the point.
+This doesn’t mean forcing yourself to appreciate every second. That would become another form of self-improvement — now you must optimize gratitude too. That misses the point.
 
 Ordinary life includes irritation.  
 Boredom.  
 Laundry.  
-Work you don't want to do.  
+Work you don’t want to do.  
 Arguments.
 
-A meaningful life doesn't need every moment to feel meaningful. It may simply require understanding that these moments belong to the same life as the extraordinary ones.
+A meaningful life doesn’t need every moment to feel meaningful. It may simply require understanding that these moments belong to the same life as the extraordinary ones.
 
-The boring afternoon isn't interrupting your life. It is your life.
+The boring afternoon isn’t interrupting your life. It is your life.
 
 <!-- block: s7b -->
 
 Maybe this is why walking can feel different from other activities.
 
-Walking doesn't necessarily accomplish much. You can walk in a circle and finish exactly where you started. Economically, almost nothing has happened.
+Walking doesn’t necessarily accomplish much. You can walk in a circle and finish exactly where you started. Economically, almost nothing has happened.
 
 But internally, things often rearrange themselves. Thought loosens. Attention widens. Weather, trees, people, smells, animals, and light start entering awareness again. The world resumes having texture.
 
-The activity doesn't transport you out of ordinary life. It pushes you deeper into it.
+The activity doesn’t transport you out of ordinary life. It pushes you deeper into it.
 
 <!-- block: s8a -->
 
@@ -251,7 +251,7 @@ The route repeats. The world does not.
 
 Perhaps this is what makes ordinary routines more interesting than they initially appear. They provide a stable frame around constant change.
 
-The morning coffee is similar. You aren't. The neighborhood looks similar. It isn't. Even your body is continuously rebuilding itself.
+The morning coffee is similar. You aren’t. The neighborhood looks similar. It isn’t. Even your body is continuously rebuilding itself.
 
 The apparently static world is moving everywhere. Just slowly enough that distraction mistakes it for stillness.
 
@@ -270,11 +270,11 @@ Coworker.
 
 The label makes someone familiar enough that we occasionally stop seeing the person underneath it.
 
-But every person around us contains an entire private universe. Memories you'll never see. Things they notice when you're not there. Childhood versions of themselves. Internal conversations.
+But every person around us contains an entire private universe. Memories you’ll never see. Things they notice when you’re not there. Childhood versions of themselves. Internal conversations.
 
 <!-- block: s9b -->
 
-A person you've known for thirty years remains fundamentally mysterious. That mystery can disappear beneath routine.
+A person you’ve known for thirty years remains fundamentally mysterious. That mystery can disappear beneath routine.
 
 Perhaps love depends partly on resisting that disappearance — loving what has become familiar without allowing familiarity to make it invisible.
 
@@ -288,21 +288,21 @@ There will always be extraordinary moments. And they matter.
 
 Travel somewhere beautiful.  
 Fall in love.  
-Make something you're proud of.  
+Make something you’re proud of.  
 Have the adventure.  
 Celebrate the milestone.
 
 Those moments give life peaks.
 
-But mountains are mostly made of everything below the summit. You don't live on the peak. You visit it. Then you come down. And you make breakfast.
+But mountains are mostly made of everything below the summit. You don’t live on the peak. You visit it. Then you come down. And you make breakfast.
 
 <!-- block: s10b -->
 
-Perhaps a good life isn't one containing the maximum number of extraordinary experiences. Maybe it is one in which ordinary experience stops feeling like something you need to escape.
+Perhaps a good life isn’t one containing the maximum number of extraordinary experiences. Maybe it is one in which ordinary experience stops feeling like something you need to escape.
 
-A life where a quiet morning can be enough. Where walking somewhere familiar still occasionally surprises you. Where the people you've known longest don't become invisible. Where nothing remarkable needs to happen for you to feel that the day counted.
+A life where a quiet morning can be enough. Where walking somewhere familiar still occasionally surprises you. Where the people you’ve known longest don’t become invisible. Where nothing remarkable needs to happen for you to feel that the day counted.
 
-Because eventually, when we look backward, I suspect much of what we'll want won't be another accomplishment. We'll want something far less dramatic.
+Because eventually, when we look backward, I suspect much of what we’ll want won’t be another accomplishment. We’ll want something far less dramatic.
 
 One more dinner.  
 One more walk.  
@@ -311,4 +311,4 @@ One more ridiculous conversation.
 One more chance to hear somebody come through the door.  
 One more afternoon when nothing happened.
 
-Maybe the ordinary days weren't the space between the important parts.
+Maybe the ordinary days weren’t the space between the important parts.

@@ -185,7 +185,7 @@ function compose(book, toc, folios = {}) {
         const essay = doc.data;
         if (essay.stage) stage = essay.stage;
         const ctx = { ...ctxBase, blocks: doc.blocks, stage };
-        openings[essay.title] = n + 2;        // opener is a pair: verso, then the title recto
+        openings[L.titleKey(essay.title)] = n + 2;   // opener is a pair: verso, then the title recto
         for (const spread of essay.spreads) {
           const variantKey = spread.variant ? `${spread.type}-${spread.variant}` : null;
           const key = variantKey && L.essaySpreads[variantKey] ? variantKey : spread.type;

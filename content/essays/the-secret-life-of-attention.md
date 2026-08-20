@@ -79,7 +79,7 @@ spreads:
         - It tracks the light without ever appearing to decide to.
         - Nine years of the same square yard and no evidence of boredom.
         - Whatever this is, it is not available to me by trying harder.
-    hand: it isn't trying
+    hand: it isn’t trying
   - type: diagram
     figure: attention-diagram
     title: What the editor kept
@@ -103,7 +103,7 @@ spreads:
 
 There is a maple on the corner of my street that I did not see for eleven years.
 
-I don't mean I never looked at it. I walked under it most mornings. I would have told you, if you had asked, that I knew the street well. Then one October afternoon I stopped in front of it, and it was enormous, and it had been enormous the entire time.
+I don’t mean I never looked at it. I walked under it most mornings. I would have told you, if you had asked, that I knew the street well. Then one October afternoon I stopped in front of it, and it was enormous, and it had been enormous the entire time.
 
 Nothing about the tree had changed. Something about me had.
 
@@ -111,7 +111,7 @@ Nothing about the tree had changed. Something about me had.
 
 We talk about attention as though it were a flashlight. You point it, it illuminates, and the world sits there patiently waiting to be lit. The model is flattering. It is also mostly wrong.
 
-Attention isn't a beam. It is closer to an editor. It decides, thousands of times a minute and almost entirely without consulting you, what gets to count as the world. The room you are sitting in contains more information than you could process in a year — the temperature of the air on the back of your hands, the particular pitch of the refrigerator, the fact that the light has moved four inches since you sat down. Your attention is not receiving that room. It is writing a very short summary of it and handing you the summary.
+Attention isn’t a beam. It is closer to an editor. It decides, thousands of times a minute and almost entirely without consulting you, what gets to count as the world. The room you are sitting in contains more information than you could process in a year — the temperature of the air on the back of your hands, the particular pitch of the refrigerator, the fact that the light has moved four inches since you sat down. Your attention is not receiving that room. It is writing a very short summary of it and handing you the summary.
 
 You have never once experienced a room. You have experienced a paraphrase.
 
@@ -121,19 +121,19 @@ Which raises a question I find genuinely uncomfortable. If attention is doing th
 
 <!-- block: flow-1b -->
 
-For most of human history the answer was: your body, and the weather. Hunger. Cold. Movement at the edge of a field. Another person's face.
+For most of human history the answer was: your body, and the weather. Hunger. Cold. Movement at the edge of a field. Another person’s face.
 
 In the last twenty years an entire industry has been built on the discovery that the editor takes suggestions. Not orders — suggestions. A notification is a suggestion. An autoplay is a suggestion. A feed is ten thousand suggestions arranged in the order most likely to be taken.
 
-I don't think this is evil, exactly. I think it is the most successful engineering project of our lifetime, and I think it worked. The evidence isn't that we are distracted; distraction is ancient, and monks complained about it in writing. The evidence is that we have stopped noticing what we are distracted *from*.
+I don’t think this is evil, exactly. I think it is the most successful engineering project of our lifetime, and I think it worked. The evidence isn’t that we are distracted; distraction is ancient, and monks complained about it in writing. The evidence is that we have stopped noticing what we are distracted *from*.
 
-There is a particular exhaustion that comes at the end of a day of total engagement with nothing. You put the phone down at eleven and cannot name one thing you actually attended to. It wasn't rest and it wasn't work. It was consumption without digestion.
+There is a particular exhaustion that comes at the end of a day of total engagement with nothing. You put the phone down at eleven and cannot name one thing you actually attended to. It wasn’t rest and it wasn’t work. It was consumption without digestion.
 
 <!-- block: flow-2 -->
 
 Here is the part I keep returning to. Attention is trainable, but not by force.
 
-You cannot decide to notice more the way you decide to answer an email. I have tried, with the enthusiasm of a man who solves things. Concentration can be forced; it responds to deadlines and coffee and fear. Noticing cannot. It arrives or it doesn't. What you can do is arrange the conditions in which it becomes likely, and nearly all of those conditions turn out to be versions of the same thing, which is slowness.
+You cannot decide to notice more the way you decide to answer an email. I have tried, with the enthusiasm of a man who solves things. Concentration can be forced; it responds to deadlines and coffee and fear. Noticing cannot. It arrives or it doesn’t. What you can do is arrange the conditions in which it becomes likely, and nearly all of those conditions turn out to be versions of the same thing, which is slowness.
 
 Walking works. Sitting still works. Ten minutes in front of one painting works better than a museum. Boredom works, though nobody wants to hear it. Grief works, unfortunately, and thoroughly. So does a dog, who will stop at the same square yard of grass every day for nine years and never once find it uninteresting.
 
@@ -163,7 +163,7 @@ We spend enormous effort trying to make our lives more interesting. Very little 
 
 <!-- block: close -->
 
-The world didn't change. Your attention did.
+The world didn’t change. Your attention did.
 
 I think about that most days now — usually badly, usually while checking something I do not need to check. But I know where the maple is, and some mornings I look up.
 

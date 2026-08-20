@@ -2,7 +2,7 @@
 id: part-4
 number: "IV"
 stage: 5
-title: While We're Here
+title: While We’re Here
 image: part-4-divider-return
 theme: light
 imperative: Integrate
@@ -13,5 +13,5 @@ statement: >-
 blurb: Distance, arrival, ordinary rooms, and the people who will not always be here.
 essays:
   - Why Humans Need Pilgrimages
-  - While We're Here
+  - While We’re Here
 ---

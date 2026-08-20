@@ -789,11 +789,17 @@
 .page--recto .hand-scan--corner { right: calc(var(--m-outside) - 8mm); }
 .page--verso .hand-scan--corner { left: calc(var(--m-outside) - 8mm); }
 
+/* The `over` variant lies ACROSS the page, which is the point: it is an
+   annotation written on top of printed matter. At full strength it stopped
+   being that and became a redaction — measured at eleven lines of body copy
+   struck through on one page. Real ink over real print leaves the print
+   legible, so this does too. */
 .hand-scan--over {
   top: 46%;
   left: 12%;
   width: var(--hand-width, 70%);
   transform: rotate(var(--hand-rotate, -2deg));
+  opacity: var(--hand-over-opacity, 0.42);
 }
 
 /* ---- 21. MATERIAL BREAK -------------------------------------------------

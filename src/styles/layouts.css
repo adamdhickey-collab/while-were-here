@@ -826,11 +826,18 @@
 
 .field-note { background: var(--ground); }
 
+/* The recto is one column, not twelve. `.page__block` carries the book's
+   12-column grid; overriding only `grid-template-rows` left every child
+   auto-placed into column 1, about 20 mm wide, which set the dateline and the
+   paragraph as a ribbon down the left margin. */
 .field-note .page__block {
   display: grid;
+  grid-template-columns: 1fr;
   grid-template-rows: auto 1fr auto;
-  height: 100%;
 }
+/* No `height: 100%` here. `.page__block` is absolutely positioned against the
+   margin box by top/bottom, and a percentage height resolves against the page
+   instead, which pushed the block a full top margin past the trim. */
 
 .field-note__head {
   display: flex;
@@ -848,6 +855,17 @@
 }
 
 .field-note__body .prose { max-width: 44ch; }
+
+/* A found specimen card. The plate is only 883 px wide, so it is sized in
+   millimetres rather than in columns and must never be asked to grow. */
+/* The bottom strip of tape hangs 3 mm below the card, so the row it sits in has
+   to carry room for it or the overflow detector reads it as copy running off. */
+.field-note__inset { display: flex; justify-content: flex-start; padding-bottom: 5mm; }
+.field-note__inset .inset-card { width: 70mm; }
+/* Sized in millimetres, not in percent: the card is a centred grid item, so a
+   percentage width resolves against a track that the plate itself is sizing. */
+.field-note__inset .inset-card__plate { width: 58mm; aspect-ratio: 3 / 2; }
+.field-note__inset .inset-card__caption { max-width: 58mm; }
 
 .field-note__brief {
   width: 100%;

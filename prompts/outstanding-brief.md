@@ -4,7 +4,7 @@
 
 **Book:** *While We're Here* — Adam Hickey. A 300 × 300 mm hardcover of short
 essays on attention, ordinary life, hidden systems and being alive. Twenty-three
-images are already made and placed. These 10 are what remain, and they
+images are already made and placed. These 9 are what remain, and they
 are the two registers the set is currently missing entirely.
 
 ## What the book already looks like
@@ -214,21 +214,4 @@ The same watercolour-and-ink systems drawing as the existing cover artwork, but 
 Square frame (1:1).
 
 Avoid: gradients; glossy 3D or rendered lighting; generic vector people; corporate infographic style; SaaS or explainer-video illustration; polished icon sets; decorative complexity with no conceptual purpose; fake handwritten paragraphs or invented lettering; any legible text; psychedelic imagery; symmetry for its own sake.
-```
-
-### field-note-02-engine-plate
-
-**Save as** `public/images/personal/field-note-02-engine-plate.jpg` · 1:1 · target 3600 × 3600 px
-**Where it goes** Field note (verso, full bleed)
-**Why it is there** Field note verso. The only place in the book where a real photograph of this life appears at size.
-**Watch for** CANNOT be a full-bleed verso. A square crop is 597 px, which is 50 dpi at 300 mm. photo-selection-02 always said to use this one small, at 60 to 75 mm. Either reshoot the plate, or change this field note so the photograph is a small specimen card rather than the full page.
-
-```text
-A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
-
-The serial plate on a lawnmower engine: model number, barcode, QR, and the words “Data Rates apply.”
-
-Square frame (1:1).
-
-Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
 ```

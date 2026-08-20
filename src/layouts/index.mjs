@@ -309,6 +309,14 @@ export const fieldNote = (note, ctx) => ({
                  </div>`
               : `<div class="prose prose--generous">${note.html}</div>`}
           </div>
+          ${note.inset
+            ? `<div class="field-note__inset">
+                 <div class="inset-card taped">
+                   <div class="inset-card__plate">${figure(ctx.image(note.inset), { root: ctx.root, compact: true })}</div>
+                   ${note.insetCaption ? `<p class="inset-card__caption">${esc(note.insetCaption)}</p>` : ''}
+                 </div>
+               </div>`
+            : ''}
           ${note.hand ? `<p class="hand-scan hand-scan--corner">${esc(note.hand)}</p>` : ''}
         </div>`,
     },

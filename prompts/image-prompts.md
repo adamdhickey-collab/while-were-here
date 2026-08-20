@@ -456,6 +456,57 @@ Square frame (1:1).
 Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
 ```
 
+### walk-01-leaf-light
+
+**Save as** `public/images/personal/walk-01-leaf-light.jpg` · 4:3 · target 1280 × 960 px (native — 464 dpi at 70 mm, and nothing larger)
+**Where it goes** Contact sheet, cell 1 of 3
+**Why it is there** First cell. A real walk, on the spread that asks the reader to look again at one.
+**Watch for** Not retouched, not upscaled. Facebook stripped the EXIF, so no capture time survives — the captions carry the season, which is recorded, and claim no clock time, which is not.
+
+```text
+A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
+
+A black dog crossing a floor of yellow leaves between bare trunks, low autumn sun throwing long shadows across the ground.
+
+Horizontal frame (4:3).
+
+Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
+```
+
+### walk-02-same-woods
+
+**Save as** `public/images/personal/walk-02-same-woods.jpg` · 4:3 · target 1280 × 960 px (native — 464 dpi at 70 mm, and nothing larger)
+**Where it goes** Contact sheet, cell 2 of 3
+**Why it is there** Second cell. Nearly the same photograph, which is the point.
+**Watch for** Not retouched, not upscaled. Facebook stripped the EXIF, so no capture time survives — the captions carry the season, which is recorded, and claim no clock time, which is not.
+
+```text
+A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
+
+The same woods, the same dog, standing still in the middle distance where the light comes through.
+
+Horizontal frame (4:3).
+
+Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
+```
+
+### walk-03-long-shadows
+
+**Save as** `public/images/personal/walk-03-long-shadows.jpg` · 4:3 · target 1280 × 960 px (native — 464 dpi at 70 mm, and nothing larger)
+**Where it goes** Contact sheet, cell 3 of 3
+**Why it is there** Third cell. Same walk, later; the light has moved and so has everything else.
+**Watch for** Not retouched, not upscaled. Facebook stripped the EXIF, so no capture time survives — the captions carry the season, which is recorded, and claim no clock time, which is not.
+
+```text
+A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
+
+Deeper leaf litter, the shadows longer, the dog small and far off at the left edge.
+
+Horizontal frame (4:3).
+
+Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
+```
+
 ### ordinary-days-01g1-tree-spring
 
 **Save as** `public/images/overlays/ordinary-days-01g1-tree-spring.jpg` · 3:4 · target 3600 × 4800 px
@@ -593,6 +644,23 @@ Avoid: any paper, card or background colour — the artwork must sit on full tra
 ```
 
 ## The Secret Life of Attention
+
+### ephemera-01-window-plant
+
+**Save as** `public/images/personal/ephemera-01-window-plant.jpg` · 1:1 · target 1200 × 1200 px (native — 435 dpi at 70 mm, and nothing larger)
+**Where it goes** Reading · two column (verso, inset card)
+**Why it is there** The essay says attention hands you a summary rather than the room. This is a photograph that did the same thing in 2011 and shows its work: a cheap plastic lens threw away most of the window and kept the plant. It arrives already framed, already toned, already a print.
+**Watch for** Not retouched, not cropped. The white border is part of the photograph and the layout must not add a second one — composite: true stands the treatment layer down.
+
+```text
+A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
+
+A toy-camera print: a plant on a sill against a lit window blind, everything else dropped to black by the lens, the white print border intact.
+
+Square frame (1:1).
+
+Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
+```
 
 ### attention-01-window-reflection
 

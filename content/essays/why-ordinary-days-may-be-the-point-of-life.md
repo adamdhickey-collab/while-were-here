@@ -54,13 +54,13 @@ spreads:
       hand.
     contactSheet:
       images:
-        - ordinary-days-01f1-pavement-shadow
-        - ordinary-days-01f2-bird-shoreline
-        - ordinary-days-01f3-dog-nose-grass
+        - walk-01-leaf-light
+        - walk-02-same-woods
+        - walk-03-long-shadows
       captions:
-        - 3:42 PM / wind from west
-        - 4:05 PM / shoreline, low water
-        - 4:20 PM / first cicadas
+        - Fall 2018 / the leaves came down all week
+        - Fall 2018 / same corner, twenty minutes later
+        - Fall 2018 / the shadows had doubled
   - type: reading
     variant: two
     subhead: The Ordinary Is Not the Interruption

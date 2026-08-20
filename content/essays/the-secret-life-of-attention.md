@@ -18,6 +18,10 @@ spreads:
     dropCap: true
     ground: ground-02-attention-filter
     blocks: [flow-1a, flow-1b]
+    insetOn: verso
+    inset:
+      image: ephemera-01-window-plant
+      caption: A plastic lens, deciding.
     bandImage: attention-05-crosswalk-strangers
     marginNote: >-
       In a study that logged real use for two weeks rather than asking about it,

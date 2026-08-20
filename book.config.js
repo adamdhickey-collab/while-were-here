@@ -63,4 +63,16 @@ export const spineWidth = () => {
 /** Press build adds bleed + printer marks; screen/proof build is trim-only. */
 export const press = process.env.BOOK_PRESS === '1';
 
+/**
+ * Web build reads the committed screen-resolution derivatives in
+ * `public/images-web` instead of the press masters in `public/images`.
+ *
+ * The masters live in Git LFS and run to hundreds of megabytes, which is two
+ * problems for the hosted preview and not one: a Pages site is capped at 1 GB,
+ * and every CI checkout that fetches LFS spends the account's monthly LFS
+ * bandwidth. The derivatives are ordinary git objects, so a web build needs no
+ * LFS at all. Run `npm run derive` after placing images to refresh them.
+ */
+export const web = process.env.BOOK_WEB === '1';
+
 export default geometry;

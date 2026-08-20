@@ -15,7 +15,7 @@ import { fileURLToPath } from 'node:url';
 import matter from 'gray-matter';
 import MarkdownIt from 'markdown-it';
 
-import { geometry, spineWidth, press } from '../book.config.js';
+import { geometry, spineWidth, press, web } from '../book.config.js';
 import * as L from '../src/layouts/index.mjs';
 import { esc, page as wrapPage } from '../src/layouts/helpers.mjs';
 
@@ -750,6 +750,44 @@ function copyDir(from, to) {
   }
 }
 
+/**
+ * Copy `public/` into the build.
+ *
+ * A web build swaps the press masters for the committed derivatives in
+ * `public/images-web` (see `npm run derive`). It must SKIP `public/images`
+ * entirely rather than copy it and overwrite: on a checkout that did not fetch
+ * LFS the masters are pointer files, and any master without a derivative would
+ * otherwise survive into build/ as a 130-byte text file pretending to be a
+ * picture. A missing image draws a labelled plate and is obvious; a pointer
+ * file draws nothing and is not.
+ */
+function copyAssets(out) {
+  const pub = path.join(root, 'public');
+
+  /* `images-web` is never copied under its own name. It is the source for a web
+     build's `images`, and in a press build it is not wanted at all — shipping it
+     verbatim would put a second, redundant copy of every picture in build/. */
+  for (const entry of fs.readdirSync(pub, { withFileTypes: true })) {
+    if (entry.name === 'images-web') continue;
+    if (entry.name === 'images' && web) continue;
+    const s = path.join(pub, entry.name);
+    const d = path.join(out, entry.name);
+    if (entry.isDirectory()) copyDir(s, d);
+    else fs.copyFileSync(s, d);
+  }
+
+  if (!web) return;
+
+  const derived = path.join(pub, 'images-web');
+  if (!fs.existsSync(derived)) {
+    throw new Error('BOOK_WEB=1 but public/images-web does not exist — run `npm run derive`.');
+  }
+  /* Replace rather than merge: a leftover master from an earlier press build
+     would otherwise survive into the deployed site at full resolution. */
+  fs.rmSync(path.join(out, 'images'), { recursive: true, force: true });
+  copyDir(derived, path.join(out, 'images'));
+}
+
 /* ---- Build --------------------------------------------------------------- */
 
 export async function build() {
@@ -762,7 +800,7 @@ export async function build() {
   const licensedCount = await installFonts(out);
   copyDir(path.join(root, 'src/styles'), path.join(out, 'styles'));
   copyDir(path.join(root, 'src/scripts'), path.join(out, 'scripts'));
-  copyDir(path.join(root, 'public'), out);
+  copyAssets(out);
 
   const { openings } = compose(book, toc);            // pass 1: find the folios
   const { pages, count } = compose(book, toc, openings); // pass 2: print them

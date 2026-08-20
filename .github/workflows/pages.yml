@@ -18,20 +18,20 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      # Images live in Git LFS (see .gitattributes). Without lfs: true the
-      # checkout gets 130-byte pointer files, the build copies those into
-      # build/ as if they were pictures, and every image on the deployed
-      # preview is silently broken. The build itself cannot detect this —
-      # a pointer file exists, so the placeholder plate is never drawn.
+      # Deliberately WITHOUT lfs: true. The press masters in public/images are
+      # LFS objects running to hundreds of megabytes; fetching them here would
+      # spend the account's monthly LFS bandwidth on every push and push the
+      # published site towards the 1 GB Pages cap. `npm run build:web` reads
+      # the committed screen-resolution derivatives in public/images-web
+      # instead, so this job needs no LFS at all. Refresh them with
+      # `npm run derive` after placing images.
       - uses: actions/checkout@v4
-        with:
-          lfs: true
       - uses: actions/setup-node@v4
         with:
           node-version: 22
           cache: npm
       - run: npm ci
-      - run: npm run build
+      - run: npm run build:web
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

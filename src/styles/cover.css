@@ -264,8 +264,25 @@
   object-position: top center;
 }
 
-/* A scrim only where the footer sits. The artwork is pale enough almost
-   everywhere else that type survives on it unaided. */
+/* The title sits over the busiest part of the drawing, and a 150 pt Didone has
+   large counters that fill with whatever is behind them. A broad, very soft
+   veil quiets the artwork under the type without hiding any of it — the whole
+   plate is still legible, it is just no longer competing letter by letter. */
+.cover--bleed .cover__art--bleed::after {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 62%;
+  background: linear-gradient(to bottom,
+    rgba(243, 239, 229, 0.82) 0%,
+    rgba(243, 239, 229, 0.66) 46%,
+    rgba(243, 239, 229, 0) 100%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* A second, harder scrim where the footer sits — that band of the artwork is
+   the spectrum strip, which no amount of veiling makes quiet. */
 .cover--bleed .cover__inner--bleed::before {
   content: "";
   position: absolute;

@@ -276,14 +276,14 @@ ${['geometry.css', ...STYLES].map((h) => `<link rel="stylesheet" href="${h}">`).
     Spine <b>${spineWidth()} mm</b> — provisional, from ${geometry.cover.pageCount} pp at
     ${geometry.cover.paperCaliper} mm/leaf. Replace with the printer's template before press.</p>
   <div class="wrap">
-    <div class="cover cover-back page--verso">${back.html}</div>
+    <div class="${back.cls} page--verso">${back.html}</div>
     <div class="spine">
       <div class="spine__stack">
         <p class="spine__text">While We’re Here</p>
         <p class="spine__author">${esc(book.author)}</p>
       </div>
     </div>
-    <div class="cover page--recto">${front.html}</div>
+    <div class="${front.cls} page--recto">${front.html}</div>
     <div class="wrap__fold" style="left: var(--trim-w)"></div>
     <div class="wrap__fold" style="left: calc(var(--trim-w) + var(--spine-w))"></div>
   </div>

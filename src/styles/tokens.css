@@ -16,14 +16,26 @@
   /* ---- Ink --------------------------------------------------------------- */
   --ink:          #191919;  /* near-black                                    */
   --ink-soft:     #4A4741;  /* secondary text                                */
-  --ink-faint:    #8C8679;  /* captions, folios, metadata                    */
+  --ink-faint:    #6A6559;  /* captions, folios, metadata                    */
+                            /* 4.69:1 on paper. Was #8C8679 at 3.15:1, which
+                               failed AA and carried nearly every piece of small
+                               type in the book — captions, folios, specimen
+                               labels, margin notes, contents folios. Measured
+                               against rendered pages, not eyeballed. 4.80:1
+                               on the linen cover ground, which is the darkest
+                               paper in the book and therefore the binding
+                               case. */
   --rule:         #CFC7B5;  /* hairlines                                     */
 
   /* ---- Spectrum ----------------------------------------------------------
      A field-guide palette, not a rainbow: stained slides, algae blooms,
      topographic and thermal charts, spectral bands, risograph overprints.
      Which of these an act may use is decided below, not here.               */
-  --rust:         #A95738;  /* oxidised iron                                 */
+  --rust:         #A95738;  /* oxidised iron — marks, rules, swatches         */
+  --rust-ink:     #96482C;  /* the same colour, darkened for TEXT. Rust at its
+                               full value is 4.23:1 on linen and 4.45:1 on
+                               paper: it reads as an accent and fails as type.
+                               Use --rust for anything that is not read. */
   --moss:         #68735B;
   --algae:        #4E6B4A;
   --cobalt:       #536D8E;
@@ -184,8 +196,8 @@
   --ground: var(--charcoal);
   --ink: var(--paper);
   --ink-soft: rgba(243, 239, 229, 0.78);
-  --ink-faint: rgba(243, 239, 229, 0.52);
-  --rule: rgba(243, 239, 229, 0.22);
+  --ink-faint: rgba(243, 239, 229, 0.62);
+  --rule: rgba(243, 239, 229, 0.24);
   --paper-deep: #23262A;
   --paper-pale: #1F2226;
   --accent-1: var(--biolume);
@@ -200,8 +212,8 @@
   --ground: var(--void);
   --ink: var(--paper);
   --ink-soft: rgba(243, 239, 229, 0.80);
-  --ink-faint: rgba(243, 239, 229, 0.55);
-  --rule: rgba(243, 239, 229, 0.24);
+  --ink-faint: rgba(243, 239, 229, 0.64);
+  --rule: rgba(243, 239, 229, 0.26);
   --paper-deep: #1B1622;
   --paper-pale: #171320;
   --accent-1: var(--magenta);

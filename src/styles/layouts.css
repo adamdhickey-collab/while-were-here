@@ -134,10 +134,34 @@
 
 /* ---- 6. FULL-BLEED SPREAD ----------------------------------------------- */
 
+/* A caption on a full-bleed photograph cannot be contrast-checked, because the
+   value behind it is whatever the photograph happens to be doing there. It
+   therefore carries its own ground: a gradient across the foot of the page,
+   strong enough that cream type clears 4.5:1 even against a white sky.
+
+   A pill behind the words was tried first and is not enough — at 42% it still
+   failed on a light image, and at the 70% needed to pass it looked like a
+   label stuck on the picture. A gradient reads as the photograph darkening
+   into the page, which is a thing photographs do. */
+.bleed-spread::after {
+  content: "";
+  position: absolute;
+  left: calc(-1 * var(--bleed-out));
+  right: calc(-1 * var(--bleed-out));
+  bottom: calc(-1 * var(--bleed-out));
+  height: 34%;
+  background: linear-gradient(to top,
+    rgba(18, 17, 15, 0.76) 0%,
+    rgba(18, 17, 15, 0.52) 38%,
+    rgba(18, 17, 15, 0) 100%);
+  pointer-events: none;
+  z-index: 1;
+}
 .bleed-spread__caption {
   position: absolute;
   bottom: var(--m-bottom);
-  color: rgba(243, 239, 229, 0.72);
+  z-index: 2;
+  color: var(--paper);
   max-width: 78mm;
 }
 .page--verso .bleed-spread__caption { left: var(--m-outside); }

@@ -204,13 +204,13 @@
   margin: 0;
 }
 .meta--ink { color: var(--ink); }
-.meta--rust { color: var(--rust); }
+.meta--rust { color: var(--rust-ink); }
 
 .numeral {
   font-family: var(--font-text);
   font-size: var(--t-deck);
   letter-spacing: 0.04em;
-  color: var(--rust);
+  color: var(--rust-ink);
 }
 
 /* ---- NOTICE THIS -------------------------------------------------------- */
@@ -228,7 +228,7 @@
   letter-spacing: 0.22em;
   text-transform: uppercase;
   font-weight: var(--w-demi);
-  color: var(--rust);
+  color: var(--rust-ink);
   margin: 0;
 }
 .notice__body {
@@ -262,7 +262,7 @@
   margin: 0;
   font-variant-numeric: tabular-nums;
 }
-.specimen--accent { color: var(--accent-1); }
+.specimen--accent { color: var(--rust-ink); }
 
 /* A specimen label: the small tag that says what a thing is and what it is
    filed under. Used on plates, diagrams and field-note sequences. */
@@ -338,7 +338,7 @@
   font-family: var(--font-hand);
   font-size: var(--t-body);
   line-height: 1.42;
-  color: var(--accent-1);
+  color: var(--rust-ink);
   margin: 0;
   max-width: 48mm;
   transform: rotate(-1.4deg);
@@ -491,4 +491,4 @@
 }
 .ledger__row dt { text-transform: uppercase; letter-spacing: 0.1em; color: var(--ink-faint); }
 .ledger__row dd { margin: 0; color: var(--ink-soft); }
-.ledger__row--present dd { color: var(--accent-1); }
+.ledger__row--present dd { color: var(--rust-ink); }

@@ -155,7 +155,7 @@
   border-bottom: 0.6pt solid var(--ink);
 }
 .diagram__title {
-  font-family: var(--font-display);
+  font-family: var(--font-text);
   font-size: var(--t-title-sm);
   line-height: 1.02;
   margin: var(--sp-3) 0 0;
@@ -191,7 +191,7 @@
 .closing .page__block { align-content: center; }
 .closing .prose { grid-column: 1 / 8; }
 .closing .prose > p:first-child {
-  font-family: var(--font-display);
+  font-family: var(--font-text);
   font-size: var(--t-sub);
   line-height: 1.26;
   margin-bottom: var(--sp-5);
@@ -234,12 +234,11 @@
    rung on the display scale rather than being allowed to overflow. */
 .divider__title.display--long { font-size: var(--t-cover); }
 .divider__statement {
-  font-family: var(--font-display);
+  font-family: var(--font-text);
   font-size: var(--t-title-xs);
   line-height: 1.24;
   letter-spacing: var(--ls-title);
   word-spacing: 0.05em;
-  font-weight: 400;
   color: var(--ink-soft);
   margin: var(--sp-6) 0 0;
   max-width: 132mm;
@@ -261,12 +260,11 @@
   display: grid;
   grid-template-columns: 11mm 1fr;
   align-items: baseline;
-  font-family: var(--font-display);
+  font-family: var(--font-text);
   font-size: var(--t-sub);
   line-height: 1.2;
   letter-spacing: var(--ls-title);
   word-spacing: 0.05em;
-  font-weight: 400;
   color: var(--ink);
   max-width: 172mm;
 }
@@ -312,7 +310,7 @@
 }
 .contents__part { grid-column: 1 / 12; margin-bottom: var(--sp-8); break-inside: avoid; }
 .contents__part-title {
-  font-family: var(--font-display);
+  font-family: var(--font-text);
   font-size: var(--t-title-sm);
   margin: var(--sp-3) 0 var(--sp-5);
 }
@@ -606,7 +604,7 @@
   grid-column: 1 / 9;
   grid-row: 3;
   align-self: end;
-  font-family: var(--font-display);
+  font-family: var(--font-text);
   font-size: var(--t-title-xs);
   line-height: 1.2;
   letter-spacing: var(--ls-title);
@@ -779,7 +777,7 @@
   z-index: 2;
   max-width: 118mm;
   text-align: right;
-  font-family: var(--font-display);
+  font-family: var(--font-text);
   font-size: var(--t-title-xs);
   line-height: 1.2;
   color: var(--paper);

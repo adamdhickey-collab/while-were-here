@@ -21,17 +21,27 @@
    cover.css load after this one, so a stray `font-weight` there silently wins
    and the headline quietly goes back to regular.
 
-   Headlines run heavy and closed up. Falutin Title carries real weights at 700
-   and 900, so nothing here is synthesised — a faux-bold on a high-contrast face
-   thickens the hairlines and the whole thing goes muddy.
+   THE RULE: the display serif appears at 900 and at no other weight. Anything
+   that is not black is set in the text face. Falutin is a Didone display cut —
+   below 900 its thick-thin contrast reads as a lighter, blurrier version of
+   itself rather than as a different voice, and the book ends up with two serifs
+   saying almost the same thing. One voice, one weight, used rarely. If a new
+   element needs the serif it needs to be black; if it cannot be black it
+   belongs to the text face.
 
    These are static weights, not a variable axis: a variable instance is written
    into the PDF as Type 3 glyph procedures, which prepress cannot subset. */
-.cover__title, .titlespread__title, .display,
-.essay-title, .pull-quote, .statement, .closing__line { font-weight: 900; }
-.cover-back__line, .material-break__line { font-weight: 700; }
-.subhead, .diagram__title, .contents__part-title { font-weight: 700; }
+.cover__title, .titlespread__title, .display, .spine__text,
+.essay-title, .pull-quote, .statement, .closing__line,
 .prose--drop > p:first-child::first-letter { font-weight: 900; }
+
+/* The text face doing the work the serif used to do. Weight carries the
+   hierarchy now that the family cannot. */
+.subhead, .diagram__title, .contents__part-title { font-weight: 600; }
+.cover-back__line, .material-break__line, .divider__statement,
+.sequence__pull, .prose .beat, .closing .prose > p:first-child { font-weight: 500; }
+.numeral, .stage-mark, .plate__subject { font-weight: 500; }
+.divider__essays li { font-weight: 400; }
 
 /* Tight tracking is a headline property, not a global one. Anything below about
    20pt gets its tracking back, because closed-up small type stops being
@@ -137,7 +147,7 @@
 
 /* A paragraph promoted to a statement inside running text. */
 .prose .beat {
-  font-family: var(--font-display);
+  font-family: var(--font-text);
   font-size: var(--t-sub);
   line-height: 1.28;
   text-indent: 0;
@@ -197,7 +207,7 @@
 .meta--rust { color: var(--rust); }
 
 .numeral {
-  font-family: var(--font-display);
+  font-family: var(--font-text);
   font-size: var(--t-deck);
   letter-spacing: 0.04em;
   color: var(--rust);
@@ -356,7 +366,7 @@
   margin: 0 0 var(--sp-1);
 }
 .notice__lede {
-  font-family: var(--font-display);
+  font-family: var(--font-text);
   font-style: italic;
   font-size: var(--t-small);
   line-height: 1.4;
@@ -432,7 +442,7 @@
   margin: 0;
 }
 .stage-mark {
-  font-family: var(--font-display);
+  font-family: var(--font-text);
   font-size: var(--t-body);
   letter-spacing: 0.16em;
   color: var(--ink-faint);
@@ -450,7 +460,7 @@
 
 /* ---- Subhead ------------------------------------------------------------ */
 .subhead {
-  font-family: var(--font-display);
+  font-family: var(--font-text);
   font-size: var(--t-sub);
   line-height: 1.14;
   letter-spacing: var(--ls-title);

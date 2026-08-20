@@ -9,6 +9,23 @@ private conversations, and no slot in the book needs it.
 
 ---
 
+## The resolution may be fixable at source
+
+**This export was almost certainly not requested at High media quality.**
+Facebook's Download Your Information offers High, Medium and Low, and the
+setting governs the resolution of every photograph in the archive. A median long
+edge of 1,280 px with a cluster at exactly 960 px is what a downscale looks
+like, not what a phone camera produces.
+
+**Re-request the export with media quality set to High before writing this
+archive off.** If the originals come back at 2,048 px or more, a large part of
+what is below stops being true: 2,048 px is 173 dpi at 300 mm, still not a full
+bleed, but a real photograph at 150 mm and a comfortable one at 100 mm. It would
+move this material from "abstract it or lose it" into the same category as the
+rest of the library.
+
+The numbers below describe the export as it actually arrived on 19 August 2026.
+
 ## The one number that decides everything
 
 | | Long edge |

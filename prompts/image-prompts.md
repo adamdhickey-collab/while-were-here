@@ -305,10 +305,10 @@ Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glo
 
 ### survey-01-familiar-lake
 
-**Save as** `public/images/illustration/survey-01-familiar-lake.png` · 1:1 · target 1024 × 1024 px (ChatGPT's largest for 1:1 — 283 dpi at 92 mm)
+**Save as** `public/images/illustration/survey-01-familiar-lake.png` · 1:1 · target 1600 × 1600 px (442 dpi at 92 mm — regenerate larger with scripts/survey.py if the slot grows)
 **Where it goes** Reading · two column (verso, inset card)
 **Why it is there** Essay 01 argues most of a life is unmarked repetition. This is the unmarked repetition surveyed as though it were weather — the same lake as the field note, seen from a height nobody stands at.
-**Watch for** Must sit in the cover's visual language, not the field-guide plate language: watercolour blooms are the point, and this is the one role besides the cover that may use them at full strength. Warm cream ground #EFE9DC — the page's own paper, not a lighter one. No legible text anywhere in the artwork.
+**Watch for** Must sit in the cover's visual language, not the field-guide plate language: watercolour blooms are the point, and this is the one role besides the cover that may use them at full strength. Warm cream ground #EFE9DC — the page's own paper, not a lighter one. No legible text anywhere in the artwork. Drawn in code by scripts/survey.py, not generated: preset and seed are recorded below, so the plate is reproducible at any size. Same preset, same seed, same plate.
 
 ```text
 A large plate in the exact manner of this book's cover artwork, and in no other manner: a single organic form built from many fine contour lines, like a topographic survey of something that is not a landscape, with loose watercolour blooms washing through and past the linework in teal, slate blue, amber, coral and magenta. The washes behave like real watercolour on damp paper — soft edges, pooling where they settle, one colour bleeding into the next — and they are the point of the image, not a tint over it. Over the top, a scatter of small ink dots joined by hairlines, as if a network had been traced across the whole thing afterwards. Warm cream ground (#EFE9DC). It should read at once as weather, as a cell, as a root system and as a map, without ever settling into one of them.
@@ -664,10 +664,10 @@ Avoid: any paper, card or background colour — the artwork must sit on full tra
 
 ### survey-02-corner-maple
 
-**Save as** `public/images/illustration/survey-02-corner-maple.png` · 1:1 · target 1024 × 1024 px (ChatGPT's largest for 1:1 — 283 dpi at 92 mm)
+**Save as** `public/images/illustration/survey-02-corner-maple.png` · 1:1 · target 1600 × 1600 px (442 dpi at 92 mm — regenerate larger with scripts/survey.py if the slot grows)
 **Where it goes** Reading · two column (verso, inset card)
 **Why it is there** The essay opens on a maple the author walked under for eleven years without seeing. The plate draws all eleven years at once, which is the one view the essay says attention never gives you.
-**Watch for** Must sit in the cover's visual language, not the field-guide plate language: watercolour blooms are the point, and this is the one role besides the cover that may use them at full strength. Warm cream ground #EFE9DC — the page's own paper, not a lighter one. No legible text anywhere in the artwork.
+**Watch for** Must sit in the cover's visual language, not the field-guide plate language: watercolour blooms are the point, and this is the one role besides the cover that may use them at full strength. Warm cream ground #EFE9DC — the page's own paper, not a lighter one. No legible text anywhere in the artwork. Drawn in code by scripts/survey.py, not generated: preset and seed are recorded below, so the plate is reproducible at any size. Same preset, same seed, same plate.
 
 ```text
 A large plate in the exact manner of this book's cover artwork, and in no other manner: a single organic form built from many fine contour lines, like a topographic survey of something that is not a landscape, with loose watercolour blooms washing through and past the linework in teal, slate blue, amber, coral and magenta. The washes behave like real watercolour on damp paper — soft edges, pooling where they settle, one colour bleeding into the next — and they are the point of the image, not a tint over it. Over the top, a scatter of small ink dots joined by hairlines, as if a network had been traced across the whole thing afterwards. Warm cream ground (#EFE9DC). It should read at once as weather, as a cell, as a root system and as a map, without ever settling into one of them.
@@ -819,10 +819,10 @@ Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glo
 
 ### survey-03-workbench-field
 
-**Save as** `public/images/illustration/survey-03-workbench-field.png` · 1:1 · target 1024 × 1024 px (ChatGPT's largest for 1:1 — 283 dpi at 92 mm)
+**Save as** `public/images/illustration/survey-03-workbench-field.png` · 1:1 · target 1600 × 1600 px (442 dpi at 92 mm — regenerate larger with scripts/survey.py if the slot grows)
 **Where it goes** Reading · two column (verso, inset card)
 **Why it is there** Essay 04 argues the mind is distributed into marks, tools, rooms. Its closing image is a workbench after the work. This plate is that bench drawn as the thought it actually was.
-**Watch for** Must sit in the cover's visual language, not the field-guide plate language: watercolour blooms are the point, and this is the one role besides the cover that may use them at full strength. Warm cream ground #EFE9DC — the page's own paper, not a lighter one. No legible text anywhere in the artwork.
+**Watch for** Must sit in the cover's visual language, not the field-guide plate language: watercolour blooms are the point, and this is the one role besides the cover that may use them at full strength. Warm cream ground #EFE9DC — the page's own paper, not a lighter one. No legible text anywhere in the artwork. Drawn in code by scripts/survey.py, not generated: preset and seed are recorded below, so the plate is reproducible at any size. Same preset, same seed, same plate.
 
 ```text
 A large plate in the exact manner of this book's cover artwork, and in no other manner: a single organic form built from many fine contour lines, like a topographic survey of something that is not a landscape, with loose watercolour blooms washing through and past the linework in teal, slate blue, amber, coral and magenta. The washes behave like real watercolour on damp paper — soft edges, pooling where they settle, one colour bleeding into the next — and they are the point of the image, not a tint over it. Over the top, a scatter of small ink dots joined by hairlines, as if a network had been traced across the whole thing afterwards. Warm cream ground (#EFE9DC). It should read at once as weather, as a cell, as a root system and as a map, without ever settling into one of them.
@@ -976,10 +976,10 @@ Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glo
 
 ### survey-04-two-roads
 
-**Save as** `public/images/illustration/survey-04-two-roads.png` · 1:1 · target 1024 × 1024 px (ChatGPT's largest for 1:1 — 283 dpi at 92 mm)
+**Save as** `public/images/illustration/survey-04-two-roads.png` · 1:1 · target 1600 × 1600 px (442 dpi at 92 mm — regenerate larger with scripts/survey.py if the slot grows)
 **Where it goes** Reading · two column (verso, inset card)
 **Why it is there** The essay ends on a driver following the phone past a field the old road never reached. Two systems that agree almost everywhere and diverge once, drawn as one map.
-**Watch for** Must sit in the cover's visual language, not the field-guide plate language: watercolour blooms are the point, and this is the one role besides the cover that may use them at full strength. Warm cream ground #EFE9DC — the page's own paper, not a lighter one. No legible text anywhere in the artwork.
+**Watch for** Must sit in the cover's visual language, not the field-guide plate language: watercolour blooms are the point, and this is the one role besides the cover that may use them at full strength. Warm cream ground #EFE9DC — the page's own paper, not a lighter one. No legible text anywhere in the artwork. Drawn in code by scripts/survey.py, not generated: preset and seed are recorded below, so the plate is reproducible at any size. Same preset, same seed, same plate.
 
 ```text
 A large plate in the exact manner of this book's cover artwork, and in no other manner: a single organic form built from many fine contour lines, like a topographic survey of something that is not a landscape, with loose watercolour blooms washing through and past the linework in teal, slate blue, amber, coral and magenta. The washes behave like real watercolour on damp paper — soft edges, pooling where they settle, one colour bleeding into the next — and they are the point of the image, not a tint over it. Over the top, a scatter of small ink dots joined by hairlines, as if a network had been traced across the whole thing afterwards. Warm cream ground (#EFE9DC). It should read at once as weather, as a cell, as a root system and as a map, without ever settling into one of them.

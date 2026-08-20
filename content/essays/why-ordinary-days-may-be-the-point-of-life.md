@@ -73,6 +73,10 @@ spreads:
       at: over
       rotate: -2.5
       width: 62%
+    insetOn: verso
+    inset:
+      image: survey-01-familiar-lake
+      caption: The lake, surveyed as weather.
   - type: reading
     variant: two
     blocks: [s8a+s8b, s9a+s9b]

@@ -548,6 +548,7 @@ const readingAside = (spread, essay, ctx) => ({
           </div>
           ${subhead(spread)}
           <div class="prose prose--generous${spread.dropCap ? ' prose--drop' : ''}">${block(ctx.blocks, spread.blocks[0])}</div>
+          ${spread.insetOn === 'recto' ? '' : insetCard(spread.inset, ctx)}
           ${spread.image ? `<div class="reading__plate">${figure(ctx.image(spread.image), { root: ctx.root })}</div>` : ''}
         </div>`,
     },
@@ -559,6 +560,7 @@ const readingAside = (spread, essay, ctx) => ({
         ${ground(ctx.image(spread.ground), { root: ctx.root })}
         <div class="page__block">
           <div class="prose prose--generous">${block(ctx.blocks, spread.blocks[1])}</div>
+          ${spread.insetOn === 'recto' ? insetCard(spread.inset, ctx) : ''}
           ${spread.figure ? `
             <div class="reading__figure">
               <p class="label"><b>Fig.</b> ${esc(spread.figureTitle || '')}</p>

@@ -565,6 +565,14 @@
 .reading__inset .fieldnote { width: 100%; height: auto; }
 .reading__inset .hand { margin-bottom: var(--sp-3); }
 
+/* An inset on the asymmetric spread. This layout leaves its outer margin
+   deliberately empty, which is exactly where a card belongs — but the margin
+   note owns row 1 and the notice owns row 3, so the card takes row 2 and the
+   outer columns, and flips with the page like everything else here. */
+.reading--aside .reading__inset { grid-column: 9 / 13; grid-row: 2; align-self: center; margin-bottom: 0; }
+.page--verso.reading--aside .reading__inset { grid-column: 1 / 5; }
+.reading--aside .reading__inset .inset-card { width: 100%; }
+
 /* ---- 14. DEVICES FOR THE ESSAY 01 SPREAD PLAN ---------------------------- */
 
 /* Subheads sit in the running-head row of a reading spread. */

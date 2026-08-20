@@ -35,6 +35,10 @@ spreads:
       Home broadband was reported by 1 percent of U.S. adults in March 2000.
       Smartphone ownership rose from 35 percent in Pew’s first 2011 survey to
       91 percent in 2025.
+    insetOn: verso
+    inset:
+      image: survey-04-two-roads
+      caption: Two systems, one sheet.
   - type: image-essay
     variant: tall
     image: before-time-05-artifact-array

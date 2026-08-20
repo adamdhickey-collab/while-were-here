@@ -24,6 +24,10 @@ spreads:
       memory finds a central capacity averaging about four chunks. Lists,
       notes, diagrams, and arranged objects let a task hold more structure
       than attention can keep active at once.
+    insetOn: verso
+    inset:
+      image: survey-03-workbench-field
+      caption: The bench, as the thought it was.
   - type: reading
     variant: two
     blocks: [flow-2a, flow-2b]

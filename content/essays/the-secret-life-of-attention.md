@@ -108,6 +108,10 @@ spreads:
     notice: >-
       Walk five minutes of a route you know by heart. Find one thing you have
       never seen before. It is there. It has been there the whole time.
+    insetOn: verso
+    inset:
+      image: survey-02-corner-maple
+      caption: Eleven years, drawn at once.
   - type: closing
     image: attention-04-lake-weather
     line: It is not, as far as I can tell, too long.

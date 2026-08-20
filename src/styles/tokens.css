@@ -61,7 +61,7 @@
   /* Resolved by build/fonts.css, which knows whether the licensed display face
      is present on this machine. The fallback here is what a fresh clone gets. */
   --font-display: var(--display-family, "Fraunces", "Hoefler Text", serif);
-  --font-text:    "Archivo", "Avenir Next", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-text:    "Familjen Grotesk", "Avenir Next", "Helvetica Neue", Helvetica, sans-serif;
   /* The third voice: specimen labels, diagram callouts, field notations.
      This is where the book gets its personality. */
   --font-note:    "IBM Plex Mono", Menlo, "SF Mono", monospace;

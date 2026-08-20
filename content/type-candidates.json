@@ -2,29 +2,29 @@
   "$comment": "Candidate type systems. Add a stack here and it appears in build/type.html. `have` lists the families the tester probes for \u2014 if you activate a family locally (Adobe Fonts, Monotype, a Fontstand trial), the tester detects it and renders it for real. Anything not present falls back and is marked missing.",
   "stacks": [
     {
-      "name": "Current \u2014 vendored, open licence",
-      "source": "Fontsource (npm) \u00b7 self-hosted \u00b7 embeds in the PDF",
-      "display": "\"Fraunces\", serif",
-      "text": "\"Archivo\", sans-serif",
-      "note": "\"IBM Plex Mono\", monospace",
-      "hand": "\"Caveat\", cursive",
-      "have": [
-        "Fraunces",
-        "Archivo",
-        "IBM Plex Mono",
-        "Caveat"
-      ]
-    },
-    {
-      "name": "Body: Familjen Grotesk",
-      "source": "Swedish editorial grotesque \u00b7 open licence \u00b7 distinctive a, g, R \u2014 the most character of the four",
-      "display": "\"Falutin Title\", serif",
+      "name": "Current \u2014 Falutin Title + Familjen Grotesk",
+      "source": "Falutin licensed from Plattner Type; the rest open licence, vendored from npm",
+      "display": "\"Falutin Title\", \"Fraunces\", serif",
       "text": "\"Familjen Grotesk\", sans-serif",
       "note": "\"IBM Plex Mono\", monospace",
       "hand": "\"Caveat\", cursive",
       "have": [
         "Falutin Title",
-        "Familjen Grotesk"
+        "Familjen Grotesk",
+        "IBM Plex Mono",
+        "Caveat"
+      ]
+    },
+    {
+      "name": "Body: Archivo (previous)",
+      "source": "The neutral grotesque this replaced \u2014 kept for comparison",
+      "display": "\"Falutin Title\", serif",
+      "text": "\"Archivo\", sans-serif",
+      "note": "\"IBM Plex Mono\", monospace",
+      "hand": "\"Caveat\", cursive",
+      "have": [
+        "Falutin Title",
+        "Archivo"
       ]
     },
     {

@@ -200,9 +200,10 @@ and a millimetre on press is a millimetre. The 16 px screen minimum is a rule
 about a backlit display; 11.5 pt is mid-range for a book.
 
 **Line length is capped in `ch` and calibrated against real copy**, not against
-the nominal number — `ch` is the advance of "0", which in Archivo runs narrower
-than the average lowercase letter, so a 68ch cap actually delivers about 79
-characters. Measured across the book, every text style now falls inside 45–75.
+the nominal number. `ch` is the advance of "0", and how that relates to the
+average lowercase letter is a property of the face: Archivo's ran narrower,
+Familjen's runs 1.23× wider. Same cap, different result. Re-probe on any body
+face change. Every text style currently falls inside 45–75.
 
 **Weight and tracking for display elements live in exactly one block** in
 `typography.css`. `layouts.css` and `cover.css` load after it, so a stray
@@ -223,7 +224,7 @@ embeds exactly these faces:
 | Voice | Board specifies | Currently | Why |
 | --- | --- | --- | --- |
 | Display | GT Super Bold | **Falutin Title** (purchased), Fraunces fallback | A Didone display cut with teardrop terminals, 7 weights. Licensed from Plattner Type and **not in this repo** — see [LICENSING.md](LICENSING.md). Builds without it fall back to Fraunces automatically. |
-| Body | Söhne Buch | **Archivo** | Grotesque in the Akzidenz/Franklin line that Söhne descends from, drawn for text. |
+| Body | Söhne Buch | **Familjen Grotesk** | A Swedish editorial grotesque. Chosen over Archivo, which was correct and characterless — this one has the same cleanliness with letterforms that carry some of the display face's personality. |
 | Annotations | GT America Mono | **IBM Plex Mono** | Neo-grotesque mono, warmer than Roboto Mono. |
 | Hand | script accent | **Caveat** | Natural handwriting, closest to the board's sample. |
 

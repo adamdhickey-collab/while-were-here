@@ -92,13 +92,18 @@
    later decides to use. Multi-column prose is excluded — there the column
    count already sets the measure, and a cap would halve it.
 
-   Calibrated, not assumed: `ch` is the advance of "0", which in Archivo runs
-   narrower than the average lowercase letter, so a 68ch cap actually delivers
-   about 79 characters. The value below is set from measurement against real
-   copy, not from the nominal number. Re-measure if the body face changes.
+   Calibrated, not assumed. `ch` is the advance of "0", and its relationship to
+   the average lowercase letter is a property of the face, not a constant: in
+   Archivo the zero ran narrower, so a 68ch cap delivered 79 characters; in
+   Familjen Grotesk it runs 1.23× wider, so the same 58ch cap now delivers 69.
+   The number below is right for the current face and would be wrong for the
+   next one.
 
-   Measured across the book: two-column reading 51, decks and prompts ~50,
-   single-column prose 68, captions 63. All inside the 45–75 band. */
+   **Re-measure on any body-face change** — set the cap by probing rendered
+   copy, not by reasoning about the unit.
+
+   Measured across the book in Familjen Grotesk: two-column reading 53, decks
+   and prompts ~52, single-column prose 69, captions 49. All inside 45–75. */
 .prose:not(.prose--cols) { max-width: 58ch; }
 .prose--cols { max-width: none; }
 

@@ -15,9 +15,9 @@ const body = brief.slice(brief.indexOf('\n---\n') + 5).trimStart();
 const ESSAYS = [
   { n: '03', id: 'systems-nobody-designed', title: 'The Beauty of Systems Nobody Designed', part: 'II', partTitle: 'What Are We?', stage: 2, ground: 'ground-03-local-rules-flocking' },
   { n: '04', id: 'intelligence-outside', title: 'The Intelligence Outside Your Head', part: 'II', partTitle: 'What Are We?', stage: 2, ground: 'ground-04-extended-cognition' },
-  { n: '05', id: 'strange-privilege', title: 'The Strange Privilege of Being Alive During a Technological Revolution', part: 'III', partTitle: 'The World Is Changing', stage: 3, ground: 'ground-05-imagine-to-make' },
-  { n: '06', id: 'before-time', title: 'The Last Generation That Remembers the Before-Time', part: 'III', partTitle: 'The World Is Changing', stage: 4, ground: 'ground-06-density-thinning' },
-  { n: '07', id: 'pilgrimages', title: 'Why Humans Need Pilgrimages', part: 'IV', partTitle: 'While We’re Here', stage: 5, ground: 'ground-07-convergent-routes' },
+  { n: '05', id: 'strange-privilege', title: 'The Strange Privilege', part: 'III', partTitle: 'The World Is Changing', stage: 3, ground: 'ground-05-imagine-to-make' },
+  { n: '06', id: 'before-time', title: 'The Last People Who Remember Waiting', part: 'III', partTitle: 'The World Is Changing', stage: 4, ground: 'ground-06-density-thinning' },
+  { n: '07', id: 'pilgrimages', title: 'The Body Cannot Skip the Hill', part: 'IV', partTitle: 'While We’re Here', stage: 5, ground: 'ground-07-convergent-routes' },
   { n: '08', id: 'while-were-here', title: 'While We’re Here', part: 'IV', partTitle: 'While We’re Here', stage: 5, ground: 'ground-08-nested-systems' },
 ];
 

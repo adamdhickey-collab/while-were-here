@@ -4,9 +4,9 @@ number: "05"
 part: III
 stage: 3
 partTitle: The World Is Changing
-title: The Strange Privilege of Being Alive During a Technological Revolution
+title: The Strange Privilege
 deck: The rare condition is not living after a transformation, but living while its rules are still unsettled.
-runningHead: Technological Revolution
+runningHead: The Strange Privilege
 readingTime: 6
 spreads:
   - type: opener

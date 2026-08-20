@@ -4,9 +4,9 @@ number: "06"
 part: III
 stage: 4
 partTitle: The World Is Changing
-title: The Last Generation That Remembers the Before-Time
+title: The Last People Who Remember Waiting
 deck: A vanished default survives for a while in the people who once expected it.
-runningHead: The Before-Time
+runningHead: The Last People Who Remember Waiting
 readingTime: 6
 spreads:
   - type: opener

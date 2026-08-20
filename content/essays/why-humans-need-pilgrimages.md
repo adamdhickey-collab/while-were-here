@@ -4,9 +4,9 @@ number: "07"
 part: IV
 stage: 5
 partTitle: While We’re Here
-title: Why Humans Need Pilgrimages
+title: The Body Cannot Skip the Hill
 deck: A destination changes when the body has to carry time all the way to it.
-runningHead: Pilgrimages
+runningHead: The Body Cannot Skip the Hill
 readingTime: 6
 spreads:
   - type: opener

@@ -276,7 +276,7 @@ is invisible in the book and has to be redone.
 | 04 | The Intelligence Outside Your Head | **charcoal** | **pale** |
 | 05 | The Strange Privilege of Being Alive... | **charcoal** | **pale** |
 | 06 | The Last Generation That Remembers... | **near-black** | **pale** |
-| 07 | Why Humans Need Pilgrimages | warm paper | charcoal |
+| 07 | The Body Cannot Skip the Hill | warm paper | charcoal |
 | 08 | While We're Here | warm paper | charcoal |
 
 ---

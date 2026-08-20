@@ -12,6 +12,6 @@ statement: >-
   Nothing here is therefore smaller.
 blurb: Distance, arrival, ordinary rooms, and the people who will not always be here.
 essays:
-  - Why Humans Need Pilgrimages
+  - The Body Cannot Skip the Hill
   - While We’re Here
 ---

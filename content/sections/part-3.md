@@ -12,6 +12,6 @@ statement: >-
   That is the only vantage point that ever exists.
 blurb: Machines that are learning to think, and a world that has already stopped being the previous one.
 essays:
-  - The Strange Privilege of Being Alive During a Technological Revolution
-  - The Last Generation That Remembers the Before-Time
+  - The Strange Privilege
+  - The Last People Who Remember Waiting
 ---

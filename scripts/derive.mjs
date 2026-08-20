@@ -53,6 +53,17 @@ function isPointer(file) {
   return fs.readFileSync(file, 'utf8').startsWith('version https://git-lfs');
 }
 
+/** Longest edge in px, or Infinity if sips cannot read it — so an unreadable
+    file falls through to the resize path and reports its failure there. */
+function longEdge(file) {
+  try {
+    const out = execFileSync('sips', ['-g', 'pixelWidth', '-g', 'pixelHeight', file], { encoding: 'utf8' });
+    const w = /pixelWidth:\s*(\d+)/.exec(out);
+    const h = /pixelHeight:\s*(\d+)/.exec(out);
+    return w && h ? Math.max(+w[1], +h[1]) : Infinity;
+  } catch { return Infinity; }
+}
+
 const images = walk(src).filter((f) => /\.(png|jpe?g|tiff?)$/i.test(f));
 if (!images.length) {
   console.error(`✗ No images under ${path.relative(root, src)}.`);
@@ -77,6 +88,11 @@ for (const rel of images) {
 
   fs.mkdirSync(path.dirname(to), { recursive: true });
   fs.copyFileSync(from, to);
+  /* `sips -Z` resamples in BOTH directions, so a master already under the cap
+     would be blown up to it — more bytes, no more detail. Since the targets came
+     down to what a generator actually produces, most masters are now smaller
+     than this cap, so the guard matters more than it used to. */
+  if (longEdge(to) <= MAX) { made += 1; continue; }
   try {
     execFileSync('sips', ['-Z', String(MAX), to], { stdio: 'ignore' });
   } catch {

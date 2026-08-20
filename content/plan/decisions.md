@@ -117,13 +117,23 @@ distance a cover gets one shape, one colour and one word cluster.
   clipped: `cover__orb--drawn`, set by the layout when the purpose-made file is
   the one in use, so the fallback keeps the clip it needs.
 
-  **One thing is still owed.** The artwork's cream averages (243, 239, 229)
+  **Settled the same day.** The artwork's cream came in at (243, 239, 229)
   against a page of (239, 233, 220) — four, six and nine values light — so
-  unclipped it reads as a faint lighter panel on the board. Cropping it away
-  was the alternative and it costs the scale figures, which are the only thing
-  telling a reader the sphere is planet-sized rather than dish-sized. The fix
-  belongs in the asset: regenerate the drawing on `#EFE9DC`, the page's own
-  cream, and the panel disappears with nothing lost.
+  unclipped it read as a faint lighter panel. Cropping it away was the
+  alternative and it costs the scale figures, which are the only thing telling a
+  reader the sphere is planet-sized rather than dish-sized.
+
+  So the paper was moved instead of the drawing, with `npm run reground`. The
+  correction is weighted by each pixel's distance from the paper colour, so the
+  page's cream lands exactly and the artwork does not follow it: measured across
+  the file, the drawing inside the sphere moved by 0.1 of a value and **the rust
+  bloom moved by zero**. The paper now reads (239, 233, 220) uniformly from the
+  circle's edge to the trim.
+
+  A flat shift would have been the obvious way to do this and it is the wrong
+  one: it regrades the artwork to fix its margin. `scripts/reground.py` explains
+  the rest, and it is worth reaching for whenever an opaque asset arrives on
+  somebody else's paper.
 
 ## Stages III–IV stay unproven until an essay needs them — 19 Aug 2026
 

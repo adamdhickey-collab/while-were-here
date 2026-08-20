@@ -3,7 +3,7 @@
 182 stills across two trips: Maui, April 2015, and Washington DC, May 2016.
 Source: `~/Desktop/trips`. No duplicates.
 
-**18 selected. 1 declined on ethical grounds. About 20 blocked on rights.**
+**18 selected. 1 declined on ethical grounds, decided. About 20 blocked on rights.**
 
 Candid rule applies throughout. Numbers in the captions below are registered in
 [facts.json](../facts.json) with sources.
@@ -169,13 +169,15 @@ Role PLATE · reserves for the Stage I sequence.
 
 ---
 
-## Declined
+## Declined — decided, not open
 
 **T095 and T096 · the Tower of Faces, United States Holocaust Memorial Museum.**
 Two frames of the shaft of family photographs from Eišiškės.
 
-These are the most powerful images in the folder and I am recommending against
-using them. The book's argument about ordinary days and temporary people is
+**Decision, 19 August: out of the book.** Agreed, so this is settled rather than
+a recommendation. Do not re-propose these in a later selection pass.
+
+They are the most powerful images in the folder and they are still out. The book's argument about ordinary days and temporary people is
 genuinely adjacent to what that room is, and that adjacency is exactly the
 problem. Those photographs are evidence of a specific genocide and of one town
 whose Jewish community was murdered in two days in September 1941. Lifting the
@@ -184,9 +186,8 @@ engage with the Holocaust at all, would be borrowing that weight rather than
 earning it.
 
 If the book ever does address it directly, with the town named and the history
-stated, that changes. As an atmospheric note about how everyone is temporary, no.
-
-Your call and not mine, but I would want the reason on the record either way.
+stated, that would be a different question and would need asking again from
+scratch. As an atmospheric note about how everyone is temporary, no.
 
 ---
 

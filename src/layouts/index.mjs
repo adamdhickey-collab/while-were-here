@@ -526,7 +526,7 @@ const readingAside = (spread, essay, ctx) => ({
 const record = (r) => {
   if (!r) return '';
   return `
-    <div class="quote-spread__record record">
+    <div class="quote-spread__record record${r.variant ? ` record--${esc(r.variant)}` : ''}">
       <div class="record__head">
         <p class="label">${esc(r.title)}</p>
         <p class="record__count">${esc(r.count)}</p>

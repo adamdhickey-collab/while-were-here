@@ -443,8 +443,9 @@ Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glo
 ### pilgrimage-03-route-map
 
 **Save as** `public/images/illustration/pilgrimage-03-route-map.png` · 1:1 · target 6000 × 6000 px
-**Where it goes** Pull quote (facing)
+**Where it goes** Unplaced. Freed when a reproduced record took the pull-quote verso.
 **Why it is there** Faces the pull quote. No scale bar, no place names, no legend.
+**Watch for** Not needed for now: that verso carries the 23 checked-in cities instead. Kept in the manifest because the idea is still good elsewhere.
 
 ```text
 An illustrated plate from a vintage scientific field guide, hand-drawn in ink on warm cream paper. Imperfect geometry — circles slightly out of true, lines drawn by hand, everything a degree or two off square. Field-guide illustration crossed with vintage scientific diagram, cartography and marginalia: arrows, rings, timelines, measure scales, tiny human figures. Screenprint and risograph texture with visible ink density variation and slight misregistration. Charcoal near-black ink on a warm cream ground (#F3EFE5), with restrained accents of muted rust (#A95738), faded cobalt (#536D8E) and moss green (#68735B). Intelligent, tactile, playful, handmade.
@@ -625,8 +626,9 @@ Avoid: gradients; glossy 3D or rendered lighting; generic vector people; corpora
 ### privilege-03-unfinished-paragraph
 
 **Save as** `public/images/photography/privilege-03-unfinished-paragraph.png` · 1:1 · target 6000 × 6000 px
-**Where it goes** Pull quote (facing)
+**Where it goes** Unplaced. Freed when a reproduced record took the pull-quote verso.
 **Why it is there** Faces the pull quote. The handwriting must be legible as correction without being readable as content.
+**Watch for** Not needed for now: that verso carries the 7,325 advertisers instead. Kept in the manifest because the idea is still good elsewhere.
 
 ```text
 A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.

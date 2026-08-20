@@ -975,3 +975,14 @@
 }
 .record__list li { break-inside: avoid; }
 .record__source { padding-top: var(--sp-2); border-top: 0.3pt solid var(--rule); }
+
+/* DENSE — a list too long to read, printed so its shape can be seen. Six
+   columns of 6 pt mono is deliberately past the point of legibility: the
+   reader is meant to register the mass and give up, which is the argument. */
+.record--dense .record__list {
+  column-count: 6;
+  column-gap: var(--sp-4);
+  font-size: 6pt;
+  line-height: 1.45;
+}
+.record--dense .record__list li { hyphens: auto; overflow-wrap: anywhere; }

@@ -5,7 +5,7 @@
 Every technical number in this book is listed here with the source it came from.
 Where a figure is contested, small-sample or easy to misstate, the note says so.
 
-29 verified · 1 outstanding
+31 verified · 1 outstanding
 
 ---
 
@@ -300,6 +300,26 @@ Meta Platforms. *Other categories used to reach you*. Download Your Information,
 **Replaces.** Nothing. This is the first record in the book that is a real document about its own author rather than a published study or an invented plate.
 
 *Used in essays/the-secret-life-of-attention.md — reproduced record.*
+
+---
+
+### A personal Facebook data export generated on 19 August 2026 lists 7,325 unique advertisers holding or having used the author's activity or information, across 7,499 entries.
+
+Meta Platforms. *Advertisers using your activity or information*. Download Your Information, personal export for Adam Hickey. 2026. <https://www.facebook.com/dyi>
+
+**Note.** Counted twice by independent extractions of the same file, agreeing to within thirteen entries: 7,499 entries and 7,325 unique names. The page prints the FIRST 160 in export order, unedited and unsorted, and says so. Do not sort, curate or drop the entries that look like nonsense; names such as "Non ddtc 1 zocket manager" and "Mushrooms 3" are in the record and are part of what it shows. Re-count if the export is regenerated.
+
+*Used in essays/strange-privilege-technological-revolution.md — reproduced record.*
+
+---
+
+### A personal Facebook data export generated on 19 August 2026 lists 23 cities the author has checked into, five of them in Door County, Wisconsin.
+
+Meta Platforms. *Cities you have checked into*. Download Your Information, personal export for Adam Hickey. 2026. <https://www.facebook.com/dyi>
+
+**Note.** Reproduced in full in export order, which is NOT the order they were visited and the page says so. This is a record of where a phone reported a check-in, not a record of where a life was lived, and the essay must not blur the two. Egg Harbor, Baileys Harbor, Fish Creek, Ephraim and Sister Bay are the Door County five.
+
+*Used in essays/why-humans-need-pilgrimages.md — reproduced record.*
 
 
 ---

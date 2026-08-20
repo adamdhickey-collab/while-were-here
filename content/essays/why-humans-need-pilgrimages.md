@@ -26,7 +26,37 @@ spreads:
   - type: pull-quote
     quote: Distance gives an intention enough time to become physical.
     lede: On what distance does to an intention
-    image: pilgrimage-03-route-map
+    record:
+      title: Cities you have checked into
+      count: 23 entries
+      source: >-
+        Meta Platforms, "Cities you have checked into". Personal data export
+        generated 19 August 2026. Reproduced in full, unedited, in export order
+        rather than in the order they were walked.
+      items:
+        - "Bloomington, Minnesota"
+        - "Dubai, United Arab Emirates"
+        - "Egg Harbor, Wisconsin"
+        - "Johnson Creek, Wisconsin"
+        - "Wayzata, Minnesota"
+        - "Baileys Harbor, Wisconsin"
+        - "Waukesha, Wisconsin"
+        - "Fish Creek, Wisconsin"
+        - "Taylors Falls, Minnesota"
+        - "Little Falls, Minnesota"
+        - "Afton, Minnesota"
+        - "Edina, Minnesota"
+        - "Ephraim, Wisconsin"
+        - "Sister Bay, Wisconsin"
+        - "Milwaukee, Wisconsin"
+        - "Ramsey, Minnesota"
+        - "Grand Marais, Minnesota"
+        - "Richfield, Minnesota"
+        - "Oconomowoc, Wisconsin"
+        - "Ellison Bay, Wisconsin"
+        - "Lutsen, Minnesota"
+        - "Minneapolis, Minnesota"
+        - "Seattle, Washington"
   - type: reading
     variant: two
     blocks: [flow-2a, flow-2b]

@@ -1014,14 +1014,15 @@
       "role": "plate",
       "essay": "The Strange Privilege",
       "section": "Part III · The World Is Changing",
-      "spread": "Pull quote (facing)",
+      "spread": "Unplaced. Freed when a reproduced record took the pull-quote verso.",
       "subject": "A laptop showing a generated paragraph that stops mid-sentence, a printed page beside it marked up by hand.",
       "concept": "New capability and old judgment on the same desk.",
       "purpose": "Faces the pull quote. The handwriting must be legible as correction without being readable as content.",
       "aspect": "1:1",
       "target": "6000 × 6000 px",
       "status": "not generated",
-      "composite": false
+      "composite": false,
+      "revision": "Not needed for now: that verso carries the 7,325 advertisers instead. Kept in the manifest because the idea is still good elsewhere."
     },
     {
       "id": "privilege-04-two-reviewing",
@@ -1174,14 +1175,15 @@
       "role": "diagram",
       "essay": "Why Humans Need Pilgrimages",
       "section": "Part IV · While We’re Here",
-      "spread": "Pull quote (facing)",
+      "spread": "Unplaced. Freed when a reproduced record took the pull-quote verso.",
       "subject": "One continuous footpath crossing towns, fields and contour lines toward a small final mark, drawn at a single hairline weight.",
       "concept": "Destination and duration held in one line.",
       "purpose": "Faces the pull quote. No scale bar, no place names, no legend.",
       "aspect": "1:1",
       "target": "6000 × 6000 px",
       "status": "not generated",
-      "composite": false
+      "composite": false,
+      "revision": "Not needed for now: that verso carries the 23 checked-in cities instead. Kept in the manifest because the idea is still good elsewhere."
     },
     {
       "id": "pilgrimage-04-tending-feet",

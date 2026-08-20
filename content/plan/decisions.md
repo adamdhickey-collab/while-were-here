@@ -62,6 +62,15 @@ The principle worth keeping: **when the graphic is lush, the words go plain.**
 > change was an unexplained revert inside an unrelated commit. It was not. It was
 > a deliberate choice with a stated reason, and it is restored. Do not revert it
 > without asking Adam directly.
+>
+> **Challenged and upheld, same day.** Another session was told in isolation to
+> use board three's line, set it, and was then shown this record. Adam confirmed
+> this version stands. The line has now survived being changed twice, which is
+> the strongest evidence in this file — treat it as closed.
+>
+> The argument only got stronger in between: the cover was settled as `bleed`,
+> which puts the artwork edge to edge at full strength. "When the graphic is
+> lush, the words go plain" applies more now than it did when it was written.
 
 **It appears in exactly two places**, both driven from `subtitle` in
 `content/book.json`: the cover footer and the title spread. If it ever reads

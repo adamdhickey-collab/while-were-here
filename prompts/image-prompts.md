@@ -647,10 +647,10 @@ Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glo
 
 ### attention-05-crosswalk-strangers
 
-**Save as** `public/images/maps/attention-05-crosswalk-strangers.png` · 3:1 · target 6000 × 2000 px
+**Save as** `public/images/maps/attention-05-crosswalk-strangers.png` · 3:1 · target 3000 × 1000 px (323 dpi at 236 mm)
 **Where it goes** Reading · two column (verso, bottom band at 236 mm)
 **Why it is there** Interrupts the text at the foot of the verso, so the spread has weight where it would otherwise trail off.
-**Watch for** Specimen colour lake #3E6B87 on the sight-lines. The corner is surveyed with the seriousness of a battlefield plan. The label reading 'nothing in particular' is the only joke and it is not flagged.
+**Watch for** Specimen colour lake #3E6B87 on the sight-lines. The corner is surveyed with the seriousness of a battlefield plan. The label reading 'nothing in particular' is the only joke and it is not flagged. Reduced to 3000 px on 20 Aug 2026. It had been sized for a 600 mm crossover that does not exist — at the band's real 236 mm the old file resolved 969 dpi and the three together took 69 MB of the repository. 3000 px is 323 dpi at that width.
 
 ```text
 A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
@@ -1338,10 +1338,10 @@ Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glo
 
 ### here-02-house-section
 
-**Save as** `public/images/illustration/here-02-house-section.png` · 3:1 · target 9000 × 3000 px
+**Save as** `public/images/illustration/here-02-house-section.png` · 3:1 · target 3000 × 1000 px (323 dpi at 236 mm)
 **Where it goes** Reading · two column (verso, bottom band at 236 mm)
 **Why it is there** Band under the sunlight margin note. The house must be plain and the systems hairline.
-**Watch for** Spread description corrected 20 Aug 2026. It read “across the fold”, but .reading__band spans the twelve-column grid inside one page's text block — the band is 236 × 82 mm on the verso and has never crossed the fold. The wrong width had been used to compute this entry's resolution target.
+**Watch for** Spread description corrected 20 Aug 2026. It read “across the fold”, but .reading__band spans the twelve-column grid inside one page's text block — the band is 236 × 82 mm on the verso and has never crossed the fold. The wrong width had been used to compute this entry's resolution target. Reduced to 3000 px on 20 Aug 2026. It had been sized for a 600 mm crossover that does not exist — at the band's real 236 mm the old file resolved 969 dpi and the three together took 69 MB of the repository. 3000 px is 323 dpi at that width.
 
 ```text
 An illustrated plate from a vintage scientific field guide, hand-drawn in ink on warm cream paper. Imperfect geometry — circles slightly out of true, lines drawn by hand, everything a degree or two off square. Field-guide illustration crossed with vintage scientific diagram, cartography and marginalia: arrows, rings, timelines, measure scales, tiny human figures. Screenprint and risograph texture with visible ink density variation and slight misregistration. Charcoal near-black ink on a warm cream ground (#F3EFE5), with restrained accents of muted rust (#A95738), faded cobalt (#536D8E) and moss green (#68735B). Intelligent, tactile, playful, handmade.
@@ -1372,10 +1372,10 @@ Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glo
 
 ### here-04-window-water
 
-**Save as** `public/images/photography/here-04-window-water.png` · 3:1 · target 9000 × 3000 px
+**Save as** `public/images/photography/here-04-window-water.png` · 3:1 · target 3000 × 1000 px (323 dpi at 236 mm)
 **Where it goes** Reading · two column (verso, bottom band at 236 mm)
 **Why it is there** Band beside the Earth-motion margin note. Nothing beyond the glass may resolve.
-**Watch for** Spread description corrected 20 Aug 2026. It read “across the fold”, but .reading__band spans the twelve-column grid inside one page's text block — the band is 236 × 82 mm on the verso and has never crossed the fold. The wrong width had been used to compute this entry's resolution target.
+**Watch for** Spread description corrected 20 Aug 2026. It read “across the fold”, but .reading__band spans the twelve-column grid inside one page's text block — the band is 236 × 82 mm on the verso and has never crossed the fold. The wrong width had been used to compute this entry's resolution target. Reduced to 3000 px on 20 Aug 2026. It had been sized for a 600 mm crossover that does not exist — at the band's real 236 mm the old file resolved 969 dpi and the three together took 69 MB of the repository. 3000 px is 323 dpi at that width.
 
 ```text
 A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.

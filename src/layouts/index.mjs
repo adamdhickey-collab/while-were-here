@@ -115,9 +115,13 @@ export const coverBack = (bookData, ctx) => ({
     folio: false,
     cls: 'cover cover-back',
     label: 'back cover',
+    /* The line in the hand, then the botanical, then the mark. cover.css sets
+       five rows for exactly this order — `auto auto 1fr auto auto` — so the
+       mark takes the flexible middle and the coda stays pinned to the foot. */
     html: `
       <div class="cover__inner">
-        <p class="cover-back__line">${esc(bookData.backCoverLine)}</p>
+        <p class="cover-back__line hand">${esc(bookData.backCoverLine)}</p>
+        <div class="cover-back__art">${figure(ctx.image('cover-02-back-botanical'), { root: ctx.root })}</div>
         <div class="cover-back__mark">${radiant(15)}</div>
         <div class="cover-back__meta">
           <p class="cover-back__blurb">${esc(bookData.backCoverBlurb)}</p>

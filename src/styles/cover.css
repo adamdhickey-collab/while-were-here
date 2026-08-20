@@ -227,6 +227,12 @@
   margin-top: var(--sp-6);
 }
 .cover-back__art .figure { position: absolute; inset: 0; background: transparent; }
+/* The botanical is opaque, but it was drawn on this book's own paper: its ground
+   averages within one value of --ground, varying ±8 as the drawing's own tone.
+   So it needs no blend. Do not add mix-blend-mode here — `darken` snaps the
+   lighter lower band flat to the page and costs the drawing that tone, and
+   nothing would apply anyway while .cover__inner holds a z-index and seals the
+   page's background out of the stacking context. */
 .cover-back__art img { object-fit: contain; object-position: left bottom; }
 .cover-back .cover__inner { grid-template-rows: auto auto 1fr auto auto; }
 

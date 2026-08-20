@@ -17,8 +17,16 @@ setting governs the resolution of every photograph in the archive. A median long
 edge of 1,280 px with a cluster at exactly 960 px is what a downscale looks
 like, not what a phone camera produces.
 
-**Re-request the export with media quality set to High before writing this
-archive off.** If the originals come back at 2,048 px or more, a large part of
+**ANSWERED, 20 Aug 2026: the re-request changed nothing.** A second export at
+High media quality (Posts only, all time — `~/Desktop/
+facebook-adamdhickey-2026-08-20-0OOro33q`) returned 1,459 images with the
+identical distribution: median 1,280 px, 90th percentile 1,450, the same four
+files over 2,400. The downscale is in Facebook's storage, applied at upload,
+and no export setting can restore pixels the platform never kept. The archive
+is what it is; the three routes below are the whole plan, permanently.
+
+The original recommendation, kept for the record: **Re-request the export with
+media quality set to High before writing this archive off.** If the originals come back at 2,048 px or more, a large part of
 what is below stops being true: 2,048 px is 173 dpi at 300 mm, still not a full
 bleed, but a real photograph at 150 mm and a comfortable one at 100 mm. It would
 move this material from "abstract it or lose it" into the same category as the

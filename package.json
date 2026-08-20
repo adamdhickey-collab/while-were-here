@@ -23,7 +23,8 @@
     "facts": "node scripts/facts.mjs",
     "facts:strict": "node scripts/facts.mjs --strict",
     "separate": "./.venv/bin/python scripts/separate.py",
-    "draft": "node scripts/draft.mjs"
+    "draft": "node scripts/draft.mjs",
+    "grounds": "node scripts/prompts.mjs --grounds"
   },
   "devDependencies": {
     "@fontsource-variable/fraunces": "^5.3.0",

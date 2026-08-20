@@ -47,19 +47,15 @@ Saal-specific; 130 is their Professional Line maximum, not a law.
 
 ## Job 2 — generate the images
 
-**42 images are unmade**, up from nine, because five essays arrived and each one
-brought its own shot list. `prompts/image-prompts.md` carries a paste-ready
-prompt for every one; `prompts/outstanding-brief.md` carries the same list with
-the production rules at the top.
+**The eight grounds have their own sheet: [`prompts/ground-prompts.md`](ground-prompts.md).**
+Regenerate it with `npm run grounds`. Read the four rules at the top once, then
+work down. All eight are now **2:1 at 8000 x 4000**, and three of them are drawn
+in pale ink because their pages invert.
 
-Start with the eight grounds. They are the faint scientific plates that sit
-under body copy at 8 percent.
-Every prompt is already written and copy-paste ready in
-**`prompts/outstanding-brief.md`** — one fenced block per image. Read the two
-rules at the top of that file once, then work down the list.
+The other 34 unmade images are in `prompts/image-prompts.md`, with the same
+list plus production rules in `prompts/outstanding-brief.md`.
 
-| Image | Aspect | Save as |
-| --- | --- | --- |
+--- | --- | --- |
 | ground-01-habituation-decay | 1:1 | `public/images/illustration/ground-01-habituation-decay.png` |
 | ground-02-attention-filter | 1:1 | `public/images/illustration/ground-02-attention-filter.png` |
 | ground-03-local-rules-flocking | 2:1 | `public/images/illustration/ground-03-local-rules-flocking.png` |

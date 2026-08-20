@@ -16,6 +16,7 @@ spreads:
   - type: reading
     variant: two
     dropCap: true
+    ground: ground-02-attention-filter
     blocks: [flow-1a, flow-1b]
     bandImage: attention-05-crosswalk-strangers
     marginNote: >-

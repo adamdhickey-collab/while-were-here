@@ -445,7 +445,7 @@ const readingTwo = (spread, essay, ctx) => ({
       folio: true,
       cls: 'reading reading--two',
       html: `
-        ${ground(ctx.image(spread.ground), { root: ctx.root })}
+        ${ground(ctx.image(spread.ground), { root: ctx.root, side: 'left' })}
         <div class="page__block">
           <div class="reading__running">
             <p class="meta">${esc(essay.runningHead)}</p>
@@ -464,7 +464,7 @@ const readingTwo = (spread, essay, ctx) => ({
       folio: true,
       cls: 'reading reading--two',
       html: `
-        ${ground(ctx.image(spread.ground), { root: ctx.root })}
+        ${ground(ctx.image(spread.ground), { root: ctx.root, side: 'right' })}
         <div class="page__block">
           <div class="reading__running">
             <p class="meta">&nbsp;</p>

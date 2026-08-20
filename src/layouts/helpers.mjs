@@ -90,11 +90,16 @@ export function figure(image, opts = {}) {
  * a labelled placeholder plate at 8% opacity would be an invisible smudge, and a
  * ground is the one layer whose absence is better than a stand-in for it.
  */
-export function ground(image, { root = process.cwd() } = {}) {
+export function ground(image, { root = process.cwd(), side = null } = {}) {
   if (!image) return '';
   const rel = path.join('images', KIND_DIR[image.kind] || 'illustration', image.filename);
   if (!fs.existsSync(path.join(root, 'public', rel))) return '';
-  return `<div class="ground" aria-hidden="true"><img src="${esc(rel)}" alt=""></div>`;
+  /* A 2:1 ground is ONE field under TWO pages. Without this it renders whole on
+     each page, object-fit crops it to a square twice, and the reader gets the
+     same half-image mirrored at the fold instead of a crossover. */
+  const half = image.aspect === '2:1' && (side === 'left' || side === 'right')
+    ? ` ground--${side}` : '';
+  return `<div class="ground${half}" aria-hidden="true"><img src="${esc(rel)}" alt=""></div>`;
 }
 
 /**

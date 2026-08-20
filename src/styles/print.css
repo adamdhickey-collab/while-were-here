@@ -144,3 +144,11 @@ html, body {
 .field-ink   { background: var(--ink); color: var(--paper); }
 .field-ink .meta,
 .field-ink .caption { color: rgba(243, 239, 229, 0.62); }
+
+/* A 2:1 ground is one field under a two-page spread. Each page shows its own
+   half at full height, so the drawing continues across the fold instead of
+   repeating. A 1:1 ground keeps the old behaviour and covers each page. */
+.ground--left  img,
+.ground--right img { width: 200%; height: 100%; object-fit: cover; }
+.ground--left  img { object-position: left center; }
+.ground--right img { object-position: right center; margin-left: -100%; }

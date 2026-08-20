@@ -17,6 +17,7 @@ spreads:
     variant: two
     subhead: The Life Between the Milestones
     dropCap: true
+    ground: ground-01-habituation-decay
     blocks: [s2a+s2b, s3a+s3b]
     insetOn: recto
     inset:

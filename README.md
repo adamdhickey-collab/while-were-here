@@ -261,6 +261,7 @@ embeds exactly these faces:
 | Body | Söhne Buch | **Hanken Grotesk** | A humanist grotesque, the warmest of the four candidates — calligraphic residue in the letterforms. Chosen 20 Aug 2026 for friendliness over Familjen Grotesk, which stays in the type tester for comparison. Body copy re-measured at 65 characters per line after the swap. |
 | Annotations | GT America Mono | **IBM Plex Mono** | Neo-grotesque mono, warmer than Roboto Mono. |
 | Hand | script accent | **Caveat** | Natural handwriting, closest to the board's sample. |
+| CJK | — | **Noto Sans JP / KR** | Last resort in every stack, for the Korean, Japanese and Chinese entries in the advertiser record. Only the unicode-range subsets carrying characters the book actually prints are embedded — 27 characters, 131 KB. Without them the print path writes those glyphs as Type 3 outlines or drops them. |
 
 ### Moving to Adobe Fonts
 

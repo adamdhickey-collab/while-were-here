@@ -61,6 +61,21 @@ export function ground(image, { root = process.cwd() } = {}) {
   return `<div class="ground" aria-hidden="true"><img src="${esc(rel)}" alt=""></div>`;
 }
 
+/**
+ * The first of these images whose file actually exists. A manifest entry is not
+ * evidence that anything has been made — `ctx.image(id)` returns the record
+ * either way — so anywhere that wants to fall back to a stand-in has to ask
+ * about the file, not the entry.
+ */
+export function firstMade(images, { root = process.cwd() } = {}) {
+  for (const img of images) {
+    if (!img) continue;
+    const rel = path.join('images', KIND_DIR[img.kind] || 'photography', img.filename);
+    if (fs.existsSync(path.join(root, 'public', rel))) return img;
+  }
+  return images.find(Boolean) || null;
+}
+
 export const folio = (n, rubric) =>
   `<div class="folio">${n}${rubric ? `<span class="folio__rubric">${esc(rubric)}</span>` : ''}</div>`;
 

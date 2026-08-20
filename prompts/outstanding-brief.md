@@ -4,7 +4,7 @@
 
 **Book:** *While We're Here* — Adam Hickey. A 300 × 300 mm hardcover of short
 essays on attention, ordinary life, hidden systems and being alive. Twenty-three
-images are already made and placed. These 13 are what remain, and they
+images are already made and placed. These 14 are what remain, and they
 are the two registers the set is currently missing entirely.
 
 ## What the book already looks like
@@ -130,6 +130,23 @@ Condensation on a cold window at macro scale, with the world beyond it entirely 
 Wide panoramic frame (2:1). This runs across a two-page spread, so keep the centre calm and place nothing important in the middle 30 mm.
 
 Avoid: any object, edge, hem, seam or boundary — only surface; anything that lets the viewer work out the scale; styled or arranged compositions; props; studio seamless backgrounds; heavy grading or HDR; vignettes; visible text or watermarks; symmetry; a recognisable scene resolving out of the texture.
+```
+
+### cover-03-circular-systems
+
+**Save as** `public/images/illustration/cover-03-circular-systems.png` · 1:1 · target 6000 × 6000 px
+**Where it goes** Front cover — the `orb` variant
+**Why it is there** An alternative cover artwork for the `orb` treatment. A circle on a square is the strongest graphic move available on a 300 mm cover, and it makes the title's 'here' mean somewhere.
+**Watch for** Transparent PNG or warm cream ground. **Not the Earth**: no recognisable continents, no coastlines, no blue-marble colouring, no latitude/longitude graticule, no space, no stars, no glow or lens flare, no terminator line dividing day from night. The circle is drawn — very slightly out of true, with a hand-inked edge — not rendered as a lit sphere. Keep the upper third of the circle quieter: on the `orb` cover the title sits above and slightly over it.
+
+```text
+An illustrated plate from a vintage scientific field guide, hand-drawn in ink on warm cream paper. Imperfect geometry — circles slightly out of true, lines drawn by hand, everything a degree or two off square. Field-guide illustration crossed with vintage scientific diagram, cartography and marginalia: arrows, rings, timelines, measure scales, tiny human figures. Screenprint and risograph texture with visible ink density variation and slight misregistration. Charcoal near-black ink on a warm cream ground (#F3EFE5), with restrained accents of muted rust (#A95738), faded cobalt (#536D8E) and moss green (#68735B). Intelligent, tactile, playful, handmade.
+
+The same watercolour-and-ink systems drawing as the existing cover artwork, but composed inside a single circle: a bounded circular field of view, hard-edged, sitting on warm cream paper with nothing outside it. Inside the circle, read as a whole world without ever resolving into the Earth — broad atmospheric bands of teal and slate curving with the sphere near one limb; a swirl of current or weather blooming in rust, amber and coral across the middle; fine contour lines banding the surface the way isobars band a planet; a branching network of hairlines running through it like root systems or river deltas or blood vessels, deliberately impossible to say which. Small plotted points and connecting lines scattered across it. Two or three tiny human figures standing at the very edge of the circle, at the scale of a millimetre, so the size of the thing is unmistakable. A few small circular inset diagrams outside the main circle, in the cream, like detail figures from the same study.
+
+Square frame (1:1).
+
+Avoid: gradients; glossy 3D or rendered lighting; generic vector people; corporate infographic style; SaaS or explainer-video illustration; polished icon sets; decorative complexity with no conceptual purpose; fake handwritten paragraphs or invented lettering; any legible text; psychedelic imagery; symmetry for its own sake.
 ```
 
 ## Why Ordinary Days May Be the Point of Life

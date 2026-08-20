@@ -677,6 +677,28 @@
       "composite": false,
       "status": "not generated",
       "selection": "\u2014"
+    },
+    {
+      "id": "cover-03-circular-systems",
+      "filename": "cover-03-circular-systems.png",
+      "kind": "illustration",
+      "role": "plate",
+      "origin": "archive",
+      "source": "",
+      "license": "",
+      "credit": "",
+      "essay": "\u2014",
+      "section": "Cover",
+      "spread": "Front cover \u2014 the `orb` variant",
+      "composite": false,
+      "subject": "The same watercolour-and-ink systems drawing as the existing cover artwork, but composed inside a single circle: a bounded circular field of view, hard-edged, sitting on warm cream paper with nothing outside it. Inside the circle, read as a whole world without ever resolving into the Earth \u2014 broad atmospheric bands of teal and slate curving with the sphere near one limb; a swirl of current or weather blooming in rust, amber and coral across the middle; fine contour lines banding the surface the way isobars band a planet; a branching network of hairlines running through it like root systems or river deltas or blood vessels, deliberately impossible to say which. Small plotted points and connecting lines scattered across it. Two or three tiny human figures standing at the very edge of the circle, at the scale of a millimetre, so the size of the thing is unmistakable. A few small circular inset diagrams outside the main circle, in the cream, like detail figures from the same study.",
+      "concept": "A circular field of view is the drawing an astronomer and a microscopist both make. At this scale it could be a planet or it could be a single drop of pond water, and the book cannot tell you which \u2014 which is the argument: the scale is arbitrary, the attention is what changes.",
+      "purpose": "An alternative cover artwork for the `orb` treatment. A circle on a square is the strongest graphic move available on a 300 mm cover, and it makes the title's 'here' mean somewhere.",
+      "aspect": "1:1",
+      "target": "6000 \u00d7 6000 px",
+      "status": "not generated",
+      "selection": "\u2014",
+      "revision": "Transparent PNG or warm cream ground. **Not the Earth**: no recognisable continents, no coastlines, no blue-marble colouring, no latitude/longitude graticule, no space, no stars, no glow or lens flare, no terminator line dividing day from night. The circle is drawn \u2014 very slightly out of true, with a hand-inked edge \u2014 not rendered as a lit sphere. Keep the upper third of the circle quieter: on the `orb` cover the title sits above and slightly over it."
     }
   ]
 }

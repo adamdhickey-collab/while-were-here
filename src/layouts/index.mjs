@@ -5,7 +5,7 @@
    No essay copy lives here — only composition.
    ========================================================================== */
 
-import { esc, figure, ground, ring, radiant, block } from './helpers.mjs';
+import { esc, figure, ground, firstMade, ring, radiant, block } from './helpers.mjs';
 import { diagrams } from './diagrams.mjs';
 
 const nb = (s = '') => String(s).replace(/ (\w{1,3})$/, '&nbsp;$1');
@@ -44,6 +44,26 @@ export const coverVariants = {
     <div class="cover__art cover__art--bleed">${figure(ctx.image('cover-01-watercolor-systems'), { className: 'figure--bleed', root: ctx.root })}</div>
     <div class="cover__inner cover__inner--bleed">
       <h1 class="cover__title cover__title--huge"><span>While</span><span>We’re</span><span>Here</span></h1>
+      <div class="cover__foot">
+        <p class="cover__sub">${esc(b.subtitle)}</p>
+        <p class="cover__author">${esc(b.author)}</p>
+      </div>
+    </div>`,
+
+  /* ORB — the artwork as a single circle low on the page, with the title
+     sitting above and just over its upper limb. A circle on a square is the
+     strongest graphic move a cover has, and it gives the title's "here" a
+     somewhere. Falls back to the existing artwork until the circular one is
+     made, which is enough to judge the composition. */
+  orb: (b, ctx) => `
+    <div class="cover__orb">${figure(firstMade([
+      ctx.image('cover-03-circular-systems'),
+      ctx.image('cover-01-watercolor-systems'),
+    ], { root: ctx.root }), { root: ctx.root })}</div>
+    <div class="cover__inner cover__inner--orb">
+      <div class="cover__head">
+        <h1 class="cover__title cover__title--orb"><span>While</span><span>We’re</span><span>Here</span></h1>
+      </div>
       <div class="cover__foot">
         <p class="cover__sub">${esc(b.subtitle)}</p>
         <p class="cover__author">${esc(b.author)}</p>

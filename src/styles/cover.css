@@ -328,3 +328,40 @@
 .cover--window .cover__foot { align-self: end; display: grid; gap: var(--sp-4); }
 .cover--window .cover__sub { margin: 0; text-align: left; text-indent: 0; }
 .cover--window .cover__author { margin: 0; text-align: left; }
+
+/* ---- ORB ----------------------------------------------------------------
+   The artwork as one circle, low and slightly off centre, with the title
+   overlapping its upper limb. Until the circular artwork exists this clips the
+   square plate to a circle, which is enough to judge the composition but not
+   the drawing — a square plate masked to a circle loses its corners, where the
+   inset diagrams live. */
+
+.cover__orb {
+  position: absolute;
+  left: 50%;
+  bottom: 6%;
+  width: 82%;
+  aspect-ratio: 1;
+  transform: translateX(-51%);
+  overflow: hidden;
+  border-radius: 50%;
+  z-index: 1;
+}
+.cover__orb .figure { position: absolute; inset: 0; background: transparent; }
+.cover__orb img { width: 100%; height: 100%; object-fit: cover; }
+
+.cover__inner--orb {
+  grid-template-rows: auto 1fr auto;
+  justify-items: start;
+  text-align: left;
+  z-index: 2;
+}
+.cover__title--orb {
+  align-self: start;
+  font-size: 116pt;
+  line-height: 0.82;
+  margin-left: -3mm;
+}
+.cover--orb .cover__foot { align-self: end; display: grid; gap: var(--sp-4); }
+.cover--orb .cover__sub { margin: 0; text-align: left; text-indent: 0; }
+.cover--orb .cover__author { margin: 0; text-align: left; }

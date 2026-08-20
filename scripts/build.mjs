@@ -227,6 +227,7 @@ function coverOptionsDoc(book) {
     plate: 'Artwork as a specimen inside the page. Quiet, bookish — and the one that disappears on a shelf.',
     bleed: 'Artwork edge to edge, title running off the trim. One colour and one word at two metres.',
     window: 'Artwork only inside the letterforms. The title becomes the aperture onto the systems.',
+    orb: 'The artwork as one circle, title over its upper limb. Shown with the square plate clipped — the real circular artwork is still to be made.',
   };
   const pages = Object.keys(L.coverVariants).map((v) => {
     const p = L.coverFront(book, ctxBase, v).pages[0];

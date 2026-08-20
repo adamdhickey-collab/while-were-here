@@ -79,9 +79,17 @@ and the build says so. That is exactly what happens on the GitHub Pages runner.
 
 ## Imagery
 
-Nothing sourced yet. Every archival asset must record `source`, `license` and
-`credit` in `content/images.json` at the moment it is downloaded.
-`npm run credits` builds the attribution page and flags anything incomplete.
+Three assets are sourced so far, all of them the material breaks. They are
+composites: Poly Haven PBR scans released CC0 (`rough_linen`, `rusty_metal_04`)
+and three Unsplash photographs, relit and rebalanced so that no original scene
+remains legible. CC0 asks nothing; the Unsplash License permits commercial use
+including print and does not require attribution, and this book credits anyway.
+Neither licence covers resale of the source file itself, which is not what a
+material break does.
+
+Every archival asset must record `source`, `license` and `credit` in
+`content/images.json` at the moment it is downloaded. `npm run credits` builds
+the attribution page and flags anything incomplete.
 See `content/plan/asset-sources.md` for the licence rules per service — in
 particular, Envato's terms for physical products offered for sale are tighter
 than Adobe Stock's, which matters for a book.

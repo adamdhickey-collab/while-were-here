@@ -596,9 +596,9 @@ Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glo
 ### attention-02-field-notes
 
 **Save as** `public/images/field notes/attention-02-field-notes.png` · 1:1 · target 4000 × 4000 px
-**Where it goes** Pull quote (verso, half page)
+**Where it goes** Unplaced. Freed when the reproduced record took the pull-quote verso.
 **Why it is there** Gives the pull quote something to argue with rather than decorate.
-**Watch for** Specimen colour lake #3E6B87 on the complete drawing; the surviving marks print in signal-bright so the eye finds them first. Same scale, same position — the comparison is the plate.
+**Watch for** Specimen colour lake #3E6B87 on the complete drawing; the surviving marks print in signal-bright so the eye finds them first. Same scale, same position — the comparison is the plate. Made and in the repo, currently not on any page. The pull-quote spread it held now carries the 31 inferred ad categories instead.
 
 ```text
 A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.

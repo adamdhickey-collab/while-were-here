@@ -5,7 +5,7 @@
 Every technical number in this book is listed here with the source it came from.
 Where a figure is contested, small-sample or easy to misstate, the note says so.
 
-28 verified · 1 outstanding
+29 verified · 1 outstanding
 
 ---
 
@@ -289,6 +289,17 @@ Ritland DB. *Variation in Palatability of Queen Butterflies (Danaus gilippus) an
 **Note.** Palatability VARIES with the host plant: queens reared on high-cardenolide Asclepias curassavica are as distasteful as monarchs, and queens reared on low-cardenolide hosts are not. Do not write that queens are uniformly toxic. The Mullerian rather than Batesian reading is Ritland's, and the same author's 1991 Nature paper made the parallel case for the viceroy, which is the classic textbook example that turned out to be wrong the other way.
 
 *Used in essays/beauty-of-systems-nobody-designed.md — specimen card; specimen-02-queen-butterfly — label.*
+
+---
+
+### A personal Facebook data export generated on 19 August 2026 lists 31 categories the platform used to reach the author, among them "Away from family", "Away from hometown" and "Family of those who live abroad".
+
+Meta Platforms. *Other categories used to reach you*. Download Your Information, personal export for Adam Hickey. 2026. <https://www.facebook.com/dyi>
+
+**Note.** The primary document is on disk and is reproduced in the book in full and unedited, which is the only honest way to print it. The count is 31 and must be re-checked if the export is ever regenerated, because these categories change. Do not characterise them as accurate or inaccurate on the page; the interest is that a system wrote a description of a person and this is the description.
+**Replaces.** Nothing. This is the first record in the book that is a real document about its own author rather than a published study or an invented plate.
+
+*Used in essays/the-secret-life-of-attention.md — reproduced record.*
 
 
 ---

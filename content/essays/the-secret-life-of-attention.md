@@ -26,7 +26,44 @@ spreads:
   - type: pull-quote
     quote: You have never once experienced a room. You have experienced a paraphrase.
     lede: On what the editor leaves out
-    image: attention-02-field-notes
+    record:
+      title: Categories used to reach you
+      count: 31 entries
+      source: >-
+        Meta Platforms, "Other categories used to reach you". Personal data
+        export generated 19 August 2026. Reproduced in full, unedited.
+      items:
+        - "Large business-to-business enterprise employees (500+ employees)"
+        - "Away from family"
+        - "Away from hometown"
+        - "Birthday in November"
+        - "Console gamers"
+        - "Engaged Shoppers"
+        - "Facebook access (browser): Chrome"
+        - "Facebook access (mobile): Android devices"
+        - "Facebook access (mobile): Apple (iOS) devices"
+        - "Facebook access (mobile): all mobile devices"
+        - "Facebook access (mobile): smartphones and tablets"
+        - "Facebook access (mobile): tablets"
+        - "Facebook access (network type): WiFi"
+        - "Family of those who live abroad"
+        - "Frequent Travelers"
+        - "Frequent international travelers"
+        - "Friends of Men with a Birthday in 0-7 days"
+        - "Friends of Men with a Birthday in 7-30 days"
+        - "Friends of Recently Moved"
+        - "Friends of Soccer fans"
+        - "Friends of Women with a Birthday in 0-7 days"
+        - "Friends of Women with a Birthday in 7-30 days"
+        - "Friends of people with birthdays in a month"
+        - "Friends of people with birthdays in a week"
+        - "Friends of those who live abroad"
+        - "Household income: top 25%-50% of ZIP codes (US)"
+        - "Mobile network or device users"
+        - "Potential mobile network or device change"
+        - "Recent mobile network or device change"
+        - "Uses a mobile device (25 months+)"
+        - "Wi-Fi Usage"
   - type: image-essay
     variant: tall
     image: attention-03-dog-sunlight

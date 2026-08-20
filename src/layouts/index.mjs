@@ -519,6 +519,25 @@ const readingAside = (spread, essay, ctx) => ({
   ],
 });
 
+/* A real record, reproduced. The book sets its own specimen labels in mono with
+   codes and dates; this is one that already existed, about the reader's author,
+   made by something else. It carries its source the way a fact does, because it
+   IS a fact and it is registered as one. */
+const record = (r) => {
+  if (!r) return '';
+  return `
+    <div class="quote-spread__record record">
+      <div class="record__head">
+        <p class="label">${esc(r.title)}</p>
+        <p class="record__count">${esc(r.count)}</p>
+      </div>
+      <ul class="record__list">
+        ${(r.items || []).map((i) => `<li>${esc(i)}</li>`).join('')}
+      </ul>
+      <p class="record__source">${esc(r.source)}</p>
+    </div>`;
+};
+
 const pullQuote = (spread, essay, ctx) => ({
   pair: true,
   pages: [
@@ -527,7 +546,8 @@ const pullQuote = (spread, essay, ctx) => ({
       folio: false,
       cls: 'quote-spread quote-spread--verso',
       html: `
-        ${spread.image ? `<div class="quote-spread__figure">${figure(ctx.image(spread.image), { root: ctx.root, dark: (ctx.stage || 1) >= 3 })}</div>` : ''}
+        ${record(spread.record)}
+        ${spread.image && !spread.record ? `<div class="quote-spread__figure">${figure(ctx.image(spread.image), { root: ctx.root, dark: (ctx.stage || 1) >= 3 })}</div>` : ''}
         <div class="page__block">
           ${spread.variant === 'bare' && !spread.notice && !spread.noticeSteps
             ? `<div class="quote-spread__mark">${radiant(16, 24)}</div>` : ''}

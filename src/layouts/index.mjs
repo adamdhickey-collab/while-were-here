@@ -272,6 +272,49 @@ export const divider = (section, ctx) => ({
   ],
 });
 
+/* ---- Field note ----------------------------------------------------------
+   A personal interlude between parts. Deliberately the quietest pair in the
+   book: one real photograph at size, one short paragraph, a dateline, and a
+   hand. No folio, no running head, nothing to navigate by.
+
+   Until the paragraph is written the recto renders as a labelled brief, the
+   same way an unmade image renders as a labelled plate. A proof PDF is the
+   shot list; now it is the writing list too. */
+
+export const fieldNote = (note, ctx) => ({
+  pair: true,
+  pages: [
+    {
+      spread: 'field note',
+      folio: false,
+      cls: 'field-note field-note--plate',
+      html: figure(ctx.image(note.image), { className: 'figure--bleed', root: ctx.root }),
+    },
+    {
+      spread: 'field note',
+      folio: false,
+      cls: 'field-note',
+      html: `
+        <div class="page__block">
+          <div class="field-note__head">
+            <p class="meta meta--rust">Field note</p>
+            <p class="meta">${esc(note.place)}${note.date ? ` &nbsp;·&nbsp; ${esc(note.date)}` : ''}</p>
+          </div>
+          <div class="field-note__body">
+            ${note.status === 'unwritten'
+              ? `<div class="field-note__brief">
+                   <p class="plate__id">${esc(note.id)}</p>
+                   <p class="field-note__brief-text">${esc(note.brief || 'Not written yet.')}</p>
+                   <p class="plate__spec">unwritten</p>
+                 </div>`
+              : `<div class="prose prose--generous">${note.html}</div>`}
+          </div>
+          ${note.hand ? `<p class="hand-scan hand-scan--corner">${esc(note.hand)}</p>` : ''}
+        </div>`,
+    },
+  ],
+});
+
 /* ---- Essay spreads ------------------------------------------------------- */
 
 const openerSpread = (spread, essay, ctx) => {

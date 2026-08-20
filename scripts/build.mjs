@@ -168,6 +168,12 @@ function compose(book, toc, folios = {}) {
       case 'contents':
         place(L.contents(book, toc, folios));
         break;
+      case 'field-note': {
+        const doc = loadDoc(item.source);
+        if (doc.data.stage) stage = doc.data.stage;
+        place(L.fieldNote({ ...doc.data, html: doc.html }, ctxBase));
+        break;
+      }
       case 'divider': {
         const { data } = loadDoc(item.source);
         if (data.stage) stage = data.stage;

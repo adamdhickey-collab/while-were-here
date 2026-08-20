@@ -814,3 +814,53 @@
   z-index: 2;
   color: rgba(243, 239, 229, 0.6);
 }
+
+/* ---- Field note ----------------------------------------------------------
+   A personal interlude between parts. The quietest pair in the book: one real
+   photograph at size on the verso, one short paragraph on the recto, a
+   dateline, and a hand. No folio and no running head, because a field note is
+   not somewhere you navigate to.
+
+   Until the paragraph exists the recto carries a labelled brief instead, on the
+   same principle as an unmade image's labelled plate. */
+
+.field-note { background: var(--ground); }
+
+.field-note .page__block {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  height: 100%;
+}
+
+.field-note__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: var(--sp-4);
+  padding-bottom: var(--sp-3);
+  border-bottom: 0.2mm solid var(--rule);
+}
+
+.field-note__body {
+  display: flex;
+  align-items: center;
+  padding-block: var(--sp-7);
+}
+
+.field-note__body .prose { max-width: 44ch; }
+
+.field-note__brief {
+  width: 100%;
+  padding: var(--sp-6);
+  border: 0.2mm dashed var(--rule);
+  display: grid;
+  gap: var(--sp-4);
+}
+
+.field-note__brief-text {
+  font-family: var(--font-text);
+  font-size: var(--t-small);
+  line-height: 1.5;
+  color: var(--ink-soft);
+  max-width: 42ch;
+}

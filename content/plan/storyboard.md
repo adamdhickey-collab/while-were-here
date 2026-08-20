@@ -5,13 +5,25 @@ intent* — `content/images.json` is where an entry becomes a real asset with an
 ID, filename and status. Nothing here is committed to layout until it moves into
 an essay's `spreads:` frontmatter.
 
-> **Open conflict — part numbering.** The storyboard below numbers the sections
-> III / IV plus a coda; the original book brief and `content/contents.json` use
-> I Look Again · II What Are We? · III The World Is Changing · IV While We’re
-> Here. The storyboard also introduces two structures the brief did not have:
-> **Field Notes** (personal interludes) and an essay, **Recovery Is More Than
-> Stopping**. Needs one decision before Part II is laid out. Everything below is
-> recorded as written.
+> **Resolved, 19 Aug.** **Field Notes are in.** They exist as a real page type
+> (`field-note` in the sequence, rendered by `fieldNote` in
+> `src/layouts/index.mjs`), one personal interlude per part, four in the book.
+> Each is a pair: a real photograph at size on the verso, a short paragraph and a
+> dateline on the recto, no folio and no running head. Until the paragraph is
+> written the recto carries a labelled brief, the same way an unmade image
+> carries a labelled plate, so a proof PDF is the writing list as well as the
+> shot list. Drafts live in `content/field-notes/`.
+>
+> **Page budget consequence.** Four field notes cost 8 pages out of 128, so the
+> essay allocation drops from 49 spreads to **45**. That is the trade and it was
+> made knowingly: Field Notes are where the PERSONAL role lives, and without
+> them the personal photographs have nowhere to be.
+>
+> **Still open — part numbering.** The storyboard below numbers the sections
+> III / IV plus a coda; the brief and `content/contents.json` use I Look Again ·
+> II What Are We? · III The World Is Changing · IV While We're Here. The
+> storyboard also introduces an essay, **Recovery Is More Than Stopping**, which
+> is not in the eight-essay slate. Everything below is recorded as written.
 
 ---
 

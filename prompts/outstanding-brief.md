@@ -120,9 +120,9 @@ Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glo
 ### systems-02-starling-flock
 
 **Save as** `public/images/photography/systems-02-starling-flock.png` · 3:1 · target 1536 × 512 px (ChatGPT's largest for 3:1 — 165 dpi at 236 mm)
-**Where it goes** Reading band, across the fold
+**Where it goes** Reading · two column (verso, bottom band at 236 mm)
 **Why it is there** Band under a two-column reading spread. The margin note beside it is the topological-distance finding.
-**Watch for** Target lowered 20 Aug 2026 to the largest canvas ChatGPT actually produces. The previous figure asked for a resolution no available generator could reach.
+**Watch for** Target lowered 20 Aug 2026 to the largest canvas ChatGPT actually produces. The previous figure asked for a resolution no available generator could reach. Spread description corrected 20 Aug 2026. It read “across the fold”, but .reading__band spans the twelve-column grid inside one page's text block — the band is 236 × 82 mm on the verso and has never crossed the fold. The wrong width had been used to compute this entry's resolution target.
 
 ```text
 A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
@@ -137,9 +137,9 @@ Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glo
 ### systems-05-physarum-network
 
 **Save as** `public/images/photography/systems-05-physarum-network.png` · 3:1 · target 1536 × 512 px (ChatGPT's largest for 3:1 — 165 dpi at 236 mm)
-**Where it goes** Reading band, across the fold
+**Where it goes** Reading · two column (verso, bottom band at 236 mm)
 **Why it is there** Band under the spread that carries the Tokyo experiment. The picture has to make the network legible as a network, not as mold.
-**Watch for** Target lowered 20 Aug 2026 to the largest canvas ChatGPT actually produces. The previous figure asked for a resolution no available generator could reach.
+**Watch for** Target lowered 20 Aug 2026 to the largest canvas ChatGPT actually produces. The previous figure asked for a resolution no available generator could reach. Spread description corrected 20 Aug 2026. It read “across the fold”, but .reading__band spans the twelve-column grid inside one page's text block — the band is 236 × 82 mm on the verso and has never crossed the fold. The wrong width had been used to compute this entry's resolution target.
 
 ```text
 A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.

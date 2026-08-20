@@ -648,7 +648,7 @@ Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glo
 ### attention-05-crosswalk-strangers
 
 **Save as** `public/images/maps/attention-05-crosswalk-strangers.png` · 3:1 · target 6000 × 2000 px
-**Where it goes** Reading · two column (verso, bottom band)
+**Where it goes** Reading · two column (verso, bottom band at 236 mm)
 **Why it is there** Interrupts the text at the foot of the verso, so the spread has weight where it would otherwise trail off.
 **Watch for** Specimen colour lake #3E6B87 on the sight-lines. The corner is surveyed with the seriousness of a battlefield plan. The label reading 'nothing in particular' is the only joke and it is not flagged.
 
@@ -701,9 +701,9 @@ Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glo
 ### systems-02-starling-flock
 
 **Save as** `public/images/photography/systems-02-starling-flock.png` · 3:1 · target 1536 × 512 px (ChatGPT's largest for 3:1 — 165 dpi at 236 mm)
-**Where it goes** Reading band, across the fold
+**Where it goes** Reading · two column (verso, bottom band at 236 mm)
 **Why it is there** Band under a two-column reading spread. The margin note beside it is the topological-distance finding.
-**Watch for** Target lowered 20 Aug 2026 to the largest canvas ChatGPT actually produces. The previous figure asked for a resolution no available generator could reach.
+**Watch for** Target lowered 20 Aug 2026 to the largest canvas ChatGPT actually produces. The previous figure asked for a resolution no available generator could reach. Spread description corrected 20 Aug 2026. It read “across the fold”, but .reading__band spans the twelve-column grid inside one page's text block — the band is 236 × 82 mm on the verso and has never crossed the fold. The wrong width had been used to compute this entry's resolution target.
 
 ```text
 A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
@@ -718,9 +718,9 @@ Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glo
 ### systems-05-physarum-network
 
 **Save as** `public/images/photography/systems-05-physarum-network.png` · 3:1 · target 1536 × 512 px (ChatGPT's largest for 3:1 — 165 dpi at 236 mm)
-**Where it goes** Reading band, across the fold
+**Where it goes** Reading · two column (verso, bottom band at 236 mm)
 **Why it is there** Band under the spread that carries the Tokyo experiment. The picture has to make the network legible as a network, not as mold.
-**Watch for** Target lowered 20 Aug 2026 to the largest canvas ChatGPT actually produces. The previous figure asked for a resolution no available generator could reach.
+**Watch for** Target lowered 20 Aug 2026 to the largest canvas ChatGPT actually produces. The previous figure asked for a resolution no available generator could reach. Spread description corrected 20 Aug 2026. It read “across the fold”, but .reading__band spans the twelve-column grid inside one page's text block — the band is 236 × 82 mm on the verso and has never crossed the fold. The wrong width had been used to compute this entry's resolution target.
 
 ```text
 A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
@@ -841,9 +841,9 @@ Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glo
 ### intelligence-02-cards-table
 
 **Save as** `public/images/photography/intelligence-02-cards-table.png` · 3:1 · target 1536 × 512 px (ChatGPT's largest for 3:1 — 165 dpi at 236 mm)
-**Where it goes** Reading band, across the fold
+**Where it goes** Reading · two column (verso, bottom band at 236 mm)
 **Why it is there** Band under the working-memory margin note. The arrangement has to look mid-move, not finished.
-**Watch for** Target lowered 20 Aug 2026 to the largest canvas ChatGPT actually produces. The previous figure asked for a resolution no available generator could reach.
+**Watch for** Target lowered 20 Aug 2026 to the largest canvas ChatGPT actually produces. The previous figure asked for a resolution no available generator could reach. Spread description corrected 20 Aug 2026. It read “across the fold”, but .reading__band spans the twelve-column grid inside one page's text block — the band is 236 × 82 mm on the verso and has never crossed the fold. The wrong width had been used to compute this entry's resolution target.
 
 ```text
 A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
@@ -875,9 +875,9 @@ Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glo
 ### intelligence-04-route-line
 
 **Save as** `public/images/photography/intelligence-04-route-line.png` · 3:1 · target 1536 × 512 px (ChatGPT's largest for 3:1 — 165 dpi at 236 mm)
-**Where it goes** Reading band, across the fold
+**Where it goes** Reading · two column (verso, bottom band at 236 mm)
 **Why it is there** Band beside the taxi-driver margin note. No faces, no hands on the wheel if it can be avoided.
-**Watch for** Target lowered 20 Aug 2026 to the largest canvas ChatGPT actually produces. The previous figure asked for a resolution no available generator could reach.
+**Watch for** Target lowered 20 Aug 2026 to the largest canvas ChatGPT actually produces. The previous figure asked for a resolution no available generator could reach. Spread description corrected 20 Aug 2026. It read “across the fold”, but .reading__band spans the twelve-column grid inside one page's text block — the band is 236 × 82 mm on the verso and has never crossed the fold. The wrong width had been used to compute this entry's resolution target.
 
 ```text
 A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
@@ -1023,9 +1023,9 @@ Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glo
 ### pilgrimage-02-yellow-arrow
 
 **Save as** `public/images/photography/pilgrimage-02-yellow-arrow.png` · 3:1 · target 1536 × 512 px (ChatGPT's largest for 3:1 — 165 dpi at 236 mm)
-**Where it goes** Reading band, across the fold
+**Where it goes** Reading · two column (verso, bottom band at 236 mm)
 **Why it is there** Band under the Shikoku margin note. The banality of the lane is the point.
-**Watch for** Target lowered 20 Aug 2026 to the largest canvas ChatGPT actually produces. The previous figure asked for a resolution no available generator could reach.
+**Watch for** Target lowered 20 Aug 2026 to the largest canvas ChatGPT actually produces. The previous figure asked for a resolution no available generator could reach. Spread description corrected 20 Aug 2026. It read “across the fold”, but .reading__band spans the twelve-column grid inside one page's text block — the band is 236 × 82 mm on the verso and has never crossed the fold. The wrong width had been used to compute this entry's resolution target.
 
 ```text
 A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
@@ -1057,9 +1057,9 @@ Avoid: gradients; glossy 3D or rendered lighting; generic vector people; corpora
 ### pilgrimage-04-tending-feet
 
 **Save as** `public/images/photography/pilgrimage-04-tending-feet.png` · 3:1 · target 1536 × 512 px (ChatGPT's largest for 3:1 — 165 dpi at 236 mm)
-**Where it goes** Reading band, across the fold
+**Where it goes** Reading · two column (verso, bottom band at 236 mm)
 **Why it is there** Band beside the Camino margin note. Photo-selection-04 has real candidates for this row.
-**Watch for** Target lowered 20 Aug 2026 to the largest canvas ChatGPT actually produces. The previous figure asked for a resolution no available generator could reach.
+**Watch for** Target lowered 20 Aug 2026 to the largest canvas ChatGPT actually produces. The previous figure asked for a resolution no available generator could reach. Spread description corrected 20 Aug 2026. It read “across the fold”, but .reading__band spans the twelve-column grid inside one page's text block — the band is 236 × 82 mm on the verso and has never crossed the fold. The wrong width had been used to compute this entry's resolution target.
 
 ```text
 A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
@@ -1148,9 +1148,9 @@ Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glo
 ### privilege-02-machine-timeline
 
 **Save as** `public/images/illustration/privilege-02-machine-timeline.png` · 3:1 · target 1536 × 512 px (ChatGPT's largest for 3:1 — 165 dpi at 236 mm)
-**Where it goes** Reading band, across the fold
+**Where it goes** Reading · two column (verso, bottom band at 236 mm)
 **Why it is there** Band under the 4004 margin note. Not an infographic, and no arrows between the three.
-**Watch for** Target lowered 20 Aug 2026 to the largest canvas ChatGPT actually produces. The previous figure asked for a resolution no available generator could reach.
+**Watch for** Target lowered 20 Aug 2026 to the largest canvas ChatGPT actually produces. The previous figure asked for a resolution no available generator could reach. Spread description corrected 20 Aug 2026. It read “across the fold”, but .reading__band spans the twelve-column grid inside one page's text block — the band is 236 × 82 mm on the verso and has never crossed the fold. The wrong width had been used to compute this entry's resolution target.
 
 ```text
 An illustrated plate from a vintage scientific field guide, hand-drawn in ink on warm cream paper. Imperfect geometry — circles slightly out of true, lines drawn by hand, everything a degree or two off square. Field-guide illustration crossed with vintage scientific diagram, cartography and marginalia: arrows, rings, timelines, measure scales, tiny human figures. Screenprint and risograph texture with visible ink density variation and slight misregistration. Charcoal near-black ink on a warm cream ground (#F3EFE5), with restrained accents of muted rust (#A95738), faded cobalt (#536D8E) and moss green (#68735B). Intelligent, tactile, playful, handmade.
@@ -1182,9 +1182,9 @@ Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glo
 ### privilege-04-two-reviewing
 
 **Save as** `public/images/photography/privilege-04-two-reviewing.png` · 3:1 · target 1536 × 512 px (ChatGPT's largest for 3:1 — 165 dpi at 236 mm)
-**Where it goes** Reading band, across the fold
+**Where it goes** Reading · two column (verso, bottom band at 236 mm)
 **Why it is there** Band beside the transformer margin note. Candid rule applies; this is the one that will be tempting to stage.
-**Watch for** Target lowered 20 Aug 2026 to the largest canvas ChatGPT actually produces. The previous figure asked for a resolution no available generator could reach.
+**Watch for** Target lowered 20 Aug 2026 to the largest canvas ChatGPT actually produces. The previous figure asked for a resolution no available generator could reach. Spread description corrected 20 Aug 2026. It read “across the fold”, but .reading__band spans the twelve-column grid inside one page's text block — the band is 236 × 82 mm on the verso and has never crossed the fold. The wrong width had been used to compute this entry's resolution target.
 
 ```text
 A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
@@ -1252,9 +1252,9 @@ Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glo
 ### before-time-02-answering-machine
 
 **Save as** `public/images/photography/before-time-02-answering-machine.png` · 3:1 · target 1536 × 512 px (ChatGPT's largest for 3:1 — 165 dpi at 236 mm)
-**Where it goes** Reading band, across the fold
+**Where it goes** Reading · two column (verso, bottom band at 236 mm)
 **Why it is there** Band under the adoption margin note. No hand, no person; the room has to be empty.
-**Watch for** Target lowered 20 Aug 2026 to the largest canvas ChatGPT actually produces. The previous figure asked for a resolution no available generator could reach.
+**Watch for** Target lowered 20 Aug 2026 to the largest canvas ChatGPT actually produces. The previous figure asked for a resolution no available generator could reach. Spread description corrected 20 Aug 2026. It read “across the fold”, but .reading__band spans the twelve-column grid inside one page's text block — the band is 236 × 82 mm on the verso and has never crossed the fold. The wrong width had been used to compute this entry's resolution target.
 
 ```text
 A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
@@ -1286,9 +1286,9 @@ Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glo
 ### before-time-04-waiting-clock
 
 **Save as** `public/images/photography/before-time-04-waiting-clock.png` · 3:1 · target 1536 × 512 px (ChatGPT's largest for 3:1 — 165 dpi at 236 mm)
-**Where it goes** Reading band, across the fold
+**Where it goes** Reading · two column (verso, bottom band at 236 mm)
 **Why it is there** Band beside the SMS margin note. If anyone in frame is holding a phone the picture is about something else.
-**Watch for** Target lowered 20 Aug 2026 to the largest canvas ChatGPT actually produces. The previous figure asked for a resolution no available generator could reach.
+**Watch for** Target lowered 20 Aug 2026 to the largest canvas ChatGPT actually produces. The previous figure asked for a resolution no available generator could reach. Spread description corrected 20 Aug 2026. It read “across the fold”, but .reading__band spans the twelve-column grid inside one page's text block — the band is 236 × 82 mm on the verso and has never crossed the fold. The wrong width had been used to compute this entry's resolution target.
 
 ```text
 A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
@@ -1339,8 +1339,9 @@ Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glo
 ### here-02-house-section
 
 **Save as** `public/images/illustration/here-02-house-section.png` · 3:1 · target 9000 × 3000 px
-**Where it goes** Reading band, across the fold
+**Where it goes** Reading · two column (verso, bottom band at 236 mm)
 **Why it is there** Band under the sunlight margin note. The house must be plain and the systems hairline.
+**Watch for** Spread description corrected 20 Aug 2026. It read “across the fold”, but .reading__band spans the twelve-column grid inside one page's text block — the band is 236 × 82 mm on the verso and has never crossed the fold. The wrong width had been used to compute this entry's resolution target.
 
 ```text
 An illustrated plate from a vintage scientific field guide, hand-drawn in ink on warm cream paper. Imperfect geometry — circles slightly out of true, lines drawn by hand, everything a degree or two off square. Field-guide illustration crossed with vintage scientific diagram, cartography and marginalia: arrows, rings, timelines, measure scales, tiny human figures. Screenprint and risograph texture with visible ink density variation and slight misregistration. Charcoal near-black ink on a warm cream ground (#F3EFE5), with restrained accents of muted rust (#A95738), faded cobalt (#536D8E) and moss green (#68735B). Intelligent, tactile, playful, handmade.
@@ -1372,8 +1373,9 @@ Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glo
 ### here-04-window-water
 
 **Save as** `public/images/photography/here-04-window-water.png` · 3:1 · target 9000 × 3000 px
-**Where it goes** Reading band, across the fold
+**Where it goes** Reading · two column (verso, bottom band at 236 mm)
 **Why it is there** Band beside the Earth-motion margin note. Nothing beyond the glass may resolve.
+**Watch for** Spread description corrected 20 Aug 2026. It read “across the fold”, but .reading__band spans the twelve-column grid inside one page's text block — the band is 236 × 82 mm on the verso and has never crossed the fold. The wrong width had been used to compute this entry's resolution target.
 
 ```text
 A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.

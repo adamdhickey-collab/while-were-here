@@ -43,6 +43,36 @@ dead, and it still runs for any non-composite image. Do not delete it, and do no
 The consequence to accept knowingly: baked type cannot be corrected, restyled or
 translated later, and it will not match the book's faces at 300 mm.
 
+## The cover is `bleed` — 19 Aug 2026
+
+Four treatments were built and compared at full trim size: `plate` (artwork as a
+specimen inside the page), `bleed` (artwork edge to edge, title running off the
+trim), `orb` (the artwork as a single circle with the title over its upper limb)
+and `window` (artwork visible only inside the letterforms).
+
+**Decided: `bleed`.** It is the only one of the four that survives being seen
+from across a room, which is the job a cover has before any other. A 300 mm
+square is read at two metres before it is read at arm's length, and at that
+distance a cover gets one shape, one colour and one word cluster.
+
+*What follows from the decision:*
+
+- The artwork carries a soft veil under the title. A 150 pt Didone has large
+  counters that fill with whatever is behind them, and without the veil the
+  plate and the type competed letter by letter. Do not remove it to "let the
+  artwork breathe" — that was the state it was in, and it was the problem.
+- **The back cover stays quiet on purpose.** All three mood boards argued for a
+  calm cover; `bleed` spends that quiet on the front, so the back — cream, the
+  handwritten lake line, one small botanical — is now where the restraint lives.
+  Making the back loud too would leave the object with no rest in it.
+- The other three variants stay in the codebase and in `cover-options.html`.
+  They cost nothing, and the comparison is worth being able to re-run. They are
+  not live: `coverVariant` in `content/book.json` is the single switch.
+- `cover-03-circular-systems` remains unmade. If it is ever generated, `orb`
+  becomes worth re-comparing — it was judged on the square plate clipped to a
+  circle, which is enough to judge a composition and not enough to judge a
+  drawing.
+
 ## Stages III–IV stay unproven until an essay needs them — 19 Aug 2026
 
 The dark-ground inversion at the peak of the arc has never rendered. Every page

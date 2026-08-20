@@ -5,7 +5,9 @@
       "id": "smartphone-checks",
       "claim": "People check their phones about 85 times a day and use them for around five hours, and their own estimates of how often are roughly half the real figure.",
       "status": "verified",
-      "usedIn": ["essays/the-secret-life-of-attention.md — marginNote"],
+      "usedIn": [
+        "essays/the-secret-life-of-attention.md — marginNote"
+      ],
       "source": {
         "authors": "Andrews S, Ellis DA, Shaw H, Piwek L",
         "title": "Beyond Self-Report: Tools to Compare Estimated and Real-World Smartphone Use",
@@ -20,7 +22,9 @@
       "id": "peacock-structural-colour",
       "claim": "The blue and green of a peacock's feathers are not pigment. The barbule cortex holds a two-dimensional photonic crystal of melanin rods in keratin, and the colour comes from the spacing of that lattice.",
       "status": "verified",
-      "usedIn": ["photo 177 — specimen label"],
+      "usedIn": [
+        "photo 177 — specimen label"
+      ],
       "source": {
         "authors": "Zi J, Yu X, Li Y, Hu X, Xu C, Wang X, Liu X, Fu R",
         "title": "Coloration strategies in peacock feathers",
@@ -34,7 +38,9 @@
       "id": "mimosa-thigmonasty",
       "claim": "A touched Mimosa pudica leaflet folds in a second or two. Cells in the pulvinus at the leaflet base dump potassium and chloride, lose water and collapse their turgor. The leaf reopens over five to fifteen minutes.",
       "status": "verified",
-      "usedIn": ["photo 358 — figure caption, The Intelligence Outside Your Head"],
+      "usedIn": [
+        "photo 358 — figure caption, The Intelligence Outside Your Head"
+      ],
       "source": {
         "authors": "Volkov AG, Foster JC, Ashby TA, Walker RK, Johnson JA, Markin VS",
         "title": "Mimosa pudica: Electrical and mechanical stimulation of plant movements",
@@ -48,9 +54,43 @@
       "id": "sagrada-magic-square",
       "claim": "The magic square on the Passion façade sums to 33 in every row, column and diagonal, and reaches that total by repeating four numbers, so it is not a true magic square.",
       "status": "unverified",
-      "usedIn": ["photo 365 — figure caption"],
+      "usedIn": [
+        "photo 365 — figure caption"
+      ],
       "source": null,
       "note": "Needs a primary source on Subirachs' square: which numbers are repeated, and the standard 4x4 constant it departs from. Do not set this caption until sourced."
+    },
+    {
+      "id": "apollo-heat-shield",
+      "claim": "Columbia's heat shield protected the crew by destroying itself. The ablative layer vaporised as it heated, carrying the heat away with it, against a surface running between about 1,500 and 5,000 degrees Fahrenheit.",
+      "status": "verified",
+      "usedIn": [
+        "photo T023 — material break caption, The Strange Privilege"
+      ],
+      "source": {
+        "authors": "National Air and Space Museum, Smithsonian Institution",
+        "title": "Apollo 11 Command Module Columbia, and Heat Shield, Fragment, Ablated, Apollo",
+        "publication": "Smithsonian collection records",
+        "year": 2024,
+        "url": "https://airandspace.si.edu/collection-objects/heat-shield-fragment-ablated-apollo/nasm_A19731423008"
+      },
+      "note": "Construction was a brazed steel honeycomb substructure under a fibreglass honeycomb filled with phenolic epoxy resin, ablator thickness varying roughly 0.70 to 2.70 inches by position. Quote the range, not a single dramatic number: 5,000 F is the peak at the worst point, not the temperature of the whole capsule."
+    },
+    {
+      "id": "block-island-meteorite",
+      "claim": "Block Island is an iron-nickel meteorite about 67 cm across, found on Mars by the Opportunity rover on 17 July 2009. It is the largest meteorite yet found on Mars. The object in the museum is a full-scale model; the meteorite itself is still there.",
+      "status": "verified",
+      "usedIn": [
+        "photo T033 — plate caption"
+      ],
+      "source": {
+        "authors": "NASA Jet Propulsion Laboratory",
+        "title": "Magnified Look at a Meteorite on Mars (PIA12191)",
+        "publication": "NASA/JPL image and caption record",
+        "year": 2009,
+        "url": "https://www.jpl.nasa.gov/images/pia12191-magnified-look-at-a-meteorite-on-mars/"
+      },
+      "note": "Officially Meridiani Planum 006. Composition confirmed by Opportunity's alpha particle X-ray spectrometer. The label is visible in the photograph and says '(Full-Scale Model)', so the caption must not imply the object is the meteorite."
     }
   ]
 }

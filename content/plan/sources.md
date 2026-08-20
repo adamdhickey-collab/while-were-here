@@ -5,7 +5,7 @@
 Every technical number in this book is listed here with the source it came from.
 Where a figure is contested, small-sample or easy to misstate, the note says so.
 
-3 verified · 1 outstanding
+5 verified · 1 outstanding
 
 ---
 
@@ -37,6 +37,26 @@ Volkov AG, Foster JC, Ashby TA, Walker RK, Johnson JA, Markin VS. *Mimosa pudica
 **Note.** Timings vary by which pulvinus is triggered: a pinnule folds in roughly two to seven seconds, a whole compound leaf droops in about two to five. Do NOT write 'no electrical signal is involved'. Mimosa propagates genuine action potentials; what it has no trace of is neurons. That distinction is the whole interest of the picture and getting it backwards would be the exact failure this file exists to prevent.
 
 *Used in photo 358 — figure caption, The Intelligence Outside Your Head.*
+
+---
+
+### Columbia's heat shield protected the crew by destroying itself. The ablative layer vaporised as it heated, carrying the heat away with it, against a surface running between about 1,500 and 5,000 degrees Fahrenheit.
+
+National Air and Space Museum, Smithsonian Institution. *Apollo 11 Command Module Columbia, and Heat Shield, Fragment, Ablated, Apollo*. Smithsonian collection records. 2024. <https://airandspace.si.edu/collection-objects/heat-shield-fragment-ablated-apollo/nasm_A19731423008>
+
+**Note.** Construction was a brazed steel honeycomb substructure under a fibreglass honeycomb filled with phenolic epoxy resin, ablator thickness varying roughly 0.70 to 2.70 inches by position. Quote the range, not a single dramatic number: 5,000 F is the peak at the worst point, not the temperature of the whole capsule.
+
+*Used in photo T023 — material break caption, The Strange Privilege.*
+
+---
+
+### Block Island is an iron-nickel meteorite about 67 cm across, found on Mars by the Opportunity rover on 17 July 2009. It is the largest meteorite yet found on Mars. The object in the museum is a full-scale model; the meteorite itself is still there.
+
+NASA Jet Propulsion Laboratory. *Magnified Look at a Meteorite on Mars (PIA12191)*. NASA/JPL image and caption record. 2009. <https://www.jpl.nasa.gov/images/pia12191-magnified-look-at-a-meteorite-on-mars/>
+
+**Note.** Officially Meridiani Planum 006. Composition confirmed by Opportunity's alpha particle X-ray spectrometer. The label is visible in the photograph and says '(Full-Scale Model)', so the caption must not imply the object is the meteorite.
+
+*Used in photo T033 — plate caption.*
 
 
 ---

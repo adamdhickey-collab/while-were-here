@@ -41,23 +41,38 @@ across ninety images does not work.**
 | **Old Book Illustrations** | Curated Victorian engravings, searchable, cleaned. |
 | **Flickr Commons** | Aggregates institutional public-domain collections in one search. |
 
-## Handwriting and non-paper material
+## Handwriting and non-paper material — what actually happened
 
-Two registers the first pass missed entirely.
+Both registers are now in the book, and neither came from where this file
+predicted.
 
-**Handwriting.** Rawpixel carries manuscript and letter scans; the Biodiversity
-Heritage Library is full of annotated specimen sheets where a collector wrote on
-the plate; Wellcome has notebooks. What is wanted is **ink on transparent
-ground**, not a photograph of a page — the hand has to sit on this book's paper,
-not bring its own. A handwriting *font* will not do the job at 300 mm: pressure
-variation, ink pooling and a genuine crossing-out are exactly what a font cannot
-fake at that size.
+**Handwriting was generated, not sourced.** The advice below stands as advice —
+Rawpixel carries manuscript scans, the Biodiversity Heritage Library is full of
+annotated specimen sheets, Wellcome has notebooks, and what is wanted is *ink on
+transparent ground* rather than a photograph of a page. But the book had already
+decided to keep its composited AI imagery, and the hands were made to match. If
+they ever read as traced pseudo-cursive at 300 mm, this is the fallback that
+fixes it.
 
-**Non-paper material.** Linen, oxidised copper, weathered steel, stone,
-condensation on glass — macro, raking light, no object and no edge, only
-surface. Adobe Stock is the right place to spend credits here; searches that
-land: `linen weave macro raking light`, `oxidised copper patina macro`,
-`condensation window macro bokeh`, `weathered steel rust texture macro`.
+**Non-paper material was sourced for free.** This file said to spend Adobe Stock
+credits. That was not necessary:
+
+| Source | What it gave | Licence |
+| --- | --- | --- |
+| **Poly Haven** | `rough_linen`, `rusty_metal_04` — macro material scans, no object, no edge, exactly the brief | **CC0** |
+| **Unsplash** | the condensation and rust photography composited over the scans | Unsplash License |
+
+**Poly Haven belongs at the top of this document, not in a footnote.** It is CC0,
+it is built for exactly this — surfaces photographed as surfaces, with nothing in
+frame to give away the scale — and it cost nothing. It should be the first stop
+for any future material break.
+
+**One caveat to carry to press.** The Unsplash License permits commercial use and
+requires no attribution, but it is a licence granted by Unsplash rather than a
+public-domain dedication, and it prohibits compiling photos to build a competing
+service. For a book that is sold, CC0 material is the cleaner footing — prefer
+Poly Haven where both would work, and keep the recorded credit lines even though
+Unsplash does not require them.
 
 ## Texture and overprint
 
@@ -87,7 +102,17 @@ usually needs an extended licence. Read the licence before the file goes into
 4. Anything from a marketplace needs its licence checked against a print run and
    against resale.
 
-`npm run credits` regenerates the attribution list from the manifest.
+`npm run credits` regenerates the attribution list from the manifest, and reports
+only `origin: archive` assets — which is why reclassifying the grounds as
+`generated` emptied nine false warnings out of it. An asset that was made needs
+no credit; an asset that was found always does.
+
+**`npm run facts` is its sibling**, built in another session on the same shape:
+`content/facts.json` is the single source of truth for every technical claim in
+the prose, and `npm run facts:strict` fails the build if anything is still
+unverified. The two together mean neither the pictures nor the numbers can reach
+press without a traceable origin. It has already caught a false claim in the
+Attention essay — a phone-unlock figure that fused two incompatible studies.
 
 ---
 

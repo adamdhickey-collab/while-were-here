@@ -93,8 +93,17 @@ in iron-gall ink on transparent ground.
   it sits on the book's own paper rather than carrying its own.
 - **Rule** **It must not be legible as sentences.** It is a gesture, not content.
   The moment a reader can read it, they stop noticing it and start decoding it.
+- **Origin** `generated`. **This went against the recommendation in this file**,
+  which argued that a real scanned hand was the one place left where genuine
+  material could offset the AI read, and that a generated approximation would
+  compound the tell rather than break it. The book had already decided to keep
+  its composited AI imagery, and generated hands are consistent with that
+  decision; the recommendation was overtaken rather than refuted.
+
+  What survives of the argument is the rule below, which is about legibility
+  rather than provenance and applies whatever made the marks.
 - **Why it exists** Everything else typographic in this book is machine-set —
-  monospace, engraved labels, printed tables. Without a real hand there is no
+  monospace, engraved labels, printed tables. Without a hand there is no
   evidence anywhere of the person doing the noticing.
 
 Built as `.hand-scan`, positioned `margin`, `corner` or `over`.
@@ -107,6 +116,11 @@ at macro scale so it reads as terrain before it reads as substance.
 - **Stages** placed at the II→III, III→IV and IV→V turns
 - **Treatment** One surface, edge to edge, and almost nothing else. A short line
   reversed out on the recto at most.
+- **Origin** `archive`, and the only sourced role in the book. All three are
+  composites of **Poly Haven** scans (CC0) and **Unsplash** photography, with
+  source, licence and credit recorded at the moment they were placed.
+  This file previously said Adobe Stock credits were the right spend here.
+  They were not needed — the free route produced all three.
 - **Rule** **Two or three in the whole book.** More and it becomes a texture
   library; fewer and the paper still reads as a default rather than a decision.
 - **Why it exists** Every other asset is pigment on cellulose. One genuinely
@@ -121,6 +135,10 @@ small inset diagrams, one diffuse wash — laid under a spread at very low opaci
 
 - **Lives in** behind a reading, opener or pull-quote spread
 - **Stages** one per essay, matched to the stage's accent
+- **Origin** `generated`. These were manifested as `archive` from a plan to
+  source them, but their briefs were generation prompts from the first draft
+  onward, and credits was reporting nine sourced assets that would never have a
+  source — the kind of warning that stops being read. Corrected in `d806892`.
 - **Treatment** 8% opacity on cream, 14% on a dark page, because light lines on
   dark read weaker. Transparency, always: the book supplies the paper.
 - **Rules**
@@ -176,6 +194,29 @@ The composition rules matter more than the individual choices:
    spread it is not a cut-out specimen on another. Pick one and stay with it.
 8. **Every archival asset carries its provenance** at the moment it is
    downloaded — `source`, `license`, `credit`. See `asset-sources.md`.
+
+## Where the taxonomy actually stands
+
+Eleven roles are defined here and `place.mjs` now validates all eleven — it knew
+only eight for a while, so handwriting, material and ground each warned as
+unknown every time one was placed. Fixed in `903e5f2`.
+
+Of 41 images, **14 carry a role and 27 do not.** The 27 are the original
+photography and illustration set, which predates this taxonomy: the Essay 01
+package, the Attention package, the covers and the divider. They work, they are
+placed, and nothing is broken — but none of them is subject to the rules above,
+which means "one plate per spread" and "a specimen always carries a label" are
+currently conventions rather than anything checked.
+
+Assigning roles to those 27 is a `content/images.json` edit and worth doing
+before the taxonomy is relied on. It is not done here because that file is
+being actively edited in another session.
+
+| Origin | Count | What |
+| --- | --- | --- |
+| `generated` | 11 | 8 grounds, 2 hands, the circular cover plate |
+| `archive` | 3 | the three material breaks |
+| unset | 27 | everything made before the roles existed |
 
 ## The stage budget
 

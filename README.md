@@ -15,12 +15,18 @@ design language before scaling to eight essays.
 
 ## Quick start
 
+Install [Git LFS](https://git-lfs.com) **before cloning** — the images are LFS
+objects, and a clone made without it gets pointer files instead of pictures.
+
 ```bash
+git lfs install
 npm install
 npm run dev
 ```
 
 Then open <http://localhost:4321/> — a small hub linking the three views.
+
+If you cloned before installing LFS, `git lfs pull` fixes it in place.
 
 | Script | What it does |
 | --- | --- |
@@ -33,6 +39,8 @@ Then open <http://localhost:4321/> — a small hub linking the three views.
 | `npm run prompts` | Regenerate the full prompt library from the manifest. |
 | `npm run brief` | Write a self-contained brief for the assets not yet made. |
 | `npm run place` | Put a generated image into the book; bare, it lists what is missing. |
+| `npm run derive` | Refresh the screen-resolution derivatives the hosted preview is built from. Run it after placing images. |
+| `npm run build:web` | The build the Pages workflow runs: derivatives instead of press masters. |
 | `npm run fonts:setup` | One-time: venv + convert the licensed OTFs for press. |
 | `npm run credits` | Rebuild the attribution page from the manifest. |
 | `npm run clean` | Remove `build/` and `dist/`. |
@@ -170,6 +178,27 @@ generated ones one at a time.
 Some diagrams are authored as SVG in `src/layouts/diagrams.mjs` rather than
 generated, so they inherit the book's exact ink colours and stay vector-sharp at
 300 mm.
+
+### Two resolutions, and why
+
+`public/images` holds the press masters. They are **Git LFS objects** — they run
+to hundreds of megabytes and the re-render of the still-outstanding photographs
+will push them past a gigabyte.
+
+`public/images-web` holds the same pictures at 1400 px as ordinary git objects,
+and the hosted preview is built from those. Two things make this necessary
+rather than tidy: a published Pages site is capped at 1 GB, and every CI
+checkout that fetches LFS spends the account's monthly LFS bandwidth — 1 GB on
+the free tier, which is about two pushes. So the workflow does not fetch LFS at
+all, and `npm run build:web` reads the derivatives instead.
+
+Derivatives are generated here by `npm run derive` and committed, never
+generated in CI. That is also why the resize can go through `sips`: it never has
+to run on a Linux runner, so the repo needs no image dependency to build.
+
+**Run `npm run derive` after placing images**, or the hosted preview will keep
+showing the previous ones. A press build, a proof and every PDF go on reading
+the masters and are unaffected.
 
 ---
 

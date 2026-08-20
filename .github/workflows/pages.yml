@@ -18,7 +18,14 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      # Images live in Git LFS (see .gitattributes). Without lfs: true the
+      # checkout gets 130-byte pointer files, the build copies those into
+      # build/ as if they were pictures, and every image on the deployed
+      # preview is silently broken. The build itself cannot detect this —
+      # a pointer file exists, so the placeholder plate is never drawn.
       - uses: actions/checkout@v4
+        with:
+          lfs: true
       - uses: actions/setup-node@v4
         with:
           node-version: 22

@@ -43,12 +43,25 @@ dead, and it still runs for any non-composite image. Do not delete it, and do no
 The consequence to accept knowingly: baked type cannot be corrected, restyled or
 translated later, and it will not match the book's faces at 300 mm.
 
-## The subtitle is "Essays on ordinary days and hidden worlds" — 19 Aug 2026
+## The subtitle is "Small essays on attention, time, and being alive" — 19 Aug 2026
 
-Board three specified it. It had been reverted at some point to "Small essays on
-attention, time, and being alive" — the change landed inside one of my own
-commits and I could not account for how, which is the only reason it is written
-down here rather than just fixed.
+**Adam's decision, made in session on 19 August.** Board three's line, "Essays on
+ordinary days and hidden worlds," is out.
+
+His words: the old line made the book "feel like it's too much about a mushroom
+trip," and he wanted that "a little less obvious." The diagnosis was that
+"hidden worlds" agreed with the cover artwork instead of pulling against it — the
+art is already watercolour blooms over a contour form with mycelium on the back,
+so the words and the picture were saying the same thing and the object tipped
+toward the psychedelic. Three replacements were offered and he chose this one,
+which is the line the README was already using.
+
+The principle worth keeping: **when the graphic is lush, the words go plain.**
+
+> This entry previously recorded the opposite decision, on the reading that the
+> change was an unexplained revert inside an unrelated commit. It was not. It was
+> a deliberate choice with a stated reason, and it is restored. Do not revert it
+> without asking Adam directly.
 
 **It appears in exactly two places**, both driven from `subtitle` in
 `content/book.json`: the cover footer and the title spread. If it ever reads

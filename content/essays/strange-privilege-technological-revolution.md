@@ -214,6 +214,15 @@ spreads:
         - A generated photograph gets the light right and the fingers wrong.
         - Two versions of the same program sit open beside a list of changes.
     hand: before it settles
+    specimen:
+      image: specimen-04-hyacinth-macaw
+      Specimen: Anodorhynchus hyacinthinus
+      Common: Hyacinth macaw
+      Recorded: 2014, captive
+      notes: >-
+        The beak opens palm nuts that a person needs a hammer for. It arrived
+        with the bird, took no training, and cost nothing to carry. Every
+        tool in this essay had to be built, learned, and kept charged.
   - type: reading
     variant: aside
     blocks: [flow-3a, flow-3b]

@@ -46,6 +46,16 @@ spreads:
         - A photograph returns from processing with a thumb across one corner.
         - Three people wait beneath a clock because none can report that the bus is late.
     hand: before always online
+    specimen:
+      image: specimen-03-eagle-owl
+      Specimen: Bubo bubo
+      Common: Eurasian eagle-owl
+      Recorded: 2014, captive
+      notes: >-
+        The tufts are not ears. The ears are under the feathers, set at
+        different heights on each side, so a sound arrives at one a fraction
+        before the other and the difference is a position. The bird is
+        holding a map of a room it has not looked at.
   - type: reading
     variant: aside
     blocks: [flow-3a, flow-3b]

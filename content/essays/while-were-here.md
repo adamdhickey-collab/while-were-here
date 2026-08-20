@@ -46,6 +46,16 @@ spreads:
         - Someone in the next room closes a cupboard and begins humming.
         - The evening light reaches the far wall for less than a minute.
     hand: still in progress
+    specimen:
+      image: specimen-06-prairie-dog
+      Specimen: Cynomys ludovicianus
+      Common: Black-tailed prairie dog
+      Recorded: 2014, captive
+      notes: >-
+        The colony posts sentries, keeps its burrows, and calls with
+        different sounds for different threats. None of that stops for this
+        one, flat on warm sand with its legs out behind it, doing nothing
+        whatever on an ordinary afternoon.
   - type: reading
     variant: aside
     blocks: [flow-3a, flow-3b]

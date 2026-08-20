@@ -561,9 +561,9 @@ Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glo
 ### ordinary-days-01k-room-survey
 
 **Save as** `public/images/overlays/ordinary-days-01k-room-survey.png` · 1:1 · target 1254 × 1254 px (native — not upscaled)
-**Where it goes** Unplaced. Held in reserve — no spread assigned.
+**Where it goes** Reading · two column (verso, inset card) · fourth reading spread
 **Why it is there** Companion to 01A's surveyed dog — the same joke told at room scale. Generated 20 Aug 2026 from the room-survey prompt; kept with an ID so it is ready the day a spread wants it.
-**Watch for** Second generation. The first ran its survey at watermark strength and the linework vanished over bright areas; the prompt now names the two inks (cobalt #536D8E structure, rust #A95738 organic traces), demands full opacity and drafting rather than sketching, and forbids the fade over bright areas. Note the units came back imperial — if this is ever placed beside 01A, which is dimensioned in millimetres, regenerate with units named.
+**Watch for** Second generation. The first ran its survey at watermark strength and the linework vanished over bright areas; the prompt now names the two inks (cobalt #536D8E structure, rust #A95738 organic traces), demands full opacity and drafting rather than sketching, and forbids the fade over bright areas. Note the units came back imperial — if this is ever placed beside 01A, which is dimensioned in millimetres, regenerate with units named. Placed 20 Aug 2026 as the inset on the spread whose prose says ordinary reality becomes almost impossibly complex — the caption owns the imperial units instead of apologising for them.
 
 ```text
 A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
@@ -694,6 +694,23 @@ A signal-filtering plate: a dense field of several hundred small plotted points 
 Wide panoramic frame (2:1). This runs across a two-page spread, so keep the centre calm and place nothing important in the middle 30 mm.
 
 Avoid: any paper, card or background colour — the artwork must sit on full transparency; variable or heavy line weight; hard-edged washes; fills, hatching or shading; text, numerals, labels, scale bars or legends of any kind; frames or borders; drop shadows; a dense area that would darken into a blotch under body copy; perfect radial symmetry; a repeated or tiling motif; infographic or corporate-diagram styling; anything resolving into a recognisable scene or object.
+```
+
+### specimen-07-amur-tiger
+
+**Save as** `public/images/photography/specimen-07-amur-tiger.jpg` · 4:3 · target 1280 × 960 px (native — 493 dpi at 66 mm, and nothing larger)
+**Where it goes** Image essay, specimen card at 66 mm
+**Why it is there** Faces the essay on the editor. The animal is not looking at the field; it is reading it. Photographed by Adam, 2014. A captive animal — do not caption it as wild.
+**Watch for** Not retouched, not upscaled. Used at the only size its resolution supports.
+
+```text
+A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
+
+An Amur tiger stepping through summer growth, head low, whiskers forward, following something at ground level.
+
+Horizontal frame (4:3).
+
+Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
 ```
 
 ## The Beauty of Systems Nobody Designed
@@ -999,6 +1016,23 @@ Wide panoramic frame (2:1). This runs across a two-page spread, so keep the cent
 Avoid: any paper, card or background colour — the artwork must sit on full transparency; variable or heavy line weight; hard-edged washes; fills, hatching or shading; text, numerals, labels, scale bars or legends of any kind; frames or borders; drop shadows; a dense area that would darken into a blotch under body copy; perfect radial symmetry; a repeated or tiling motif; infographic or corporate-diagram styling; anything resolving into a recognisable scene or object.
 ```
 
+### specimen-03-eagle-owl
+
+**Save as** `public/images/photography/specimen-03-eagle-owl.jpg` · 4:3 · target 980 × 735 px cropped from 1280 × 960 (native — 377 dpi at 66 mm)
+**Where it goes** Image essay, specimen card at 66 mm
+**Why it is there** On a page about a default that is disappearing. The owl carries a map of a world that has not changed. Photographed by Adam, 2014. A captive bird — do not caption it as wild.
+**Watch for** Cropped from the original frame to remove a handler and a legible staff shirt: a person who has not consented to appear in a book intended for sale, and branding the plate rules forbid. Not retouched, not upscaled.
+
+```text
+A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
+
+A Eurasian eagle-owl from behind, ear tufts up, the barred pattern of the back running to the wing.
+
+Horizontal frame (4:3).
+
+Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
+```
+
 ## Why Humans Need Pilgrimages
 
 ### ground-07-convergent-routes
@@ -1101,6 +1135,23 @@ A believable documentary photograph of the real world — quiet, contemplative, 
 A folded paper credential open across a table, each stop stamped in a different ink.
 
 Vertical frame (2:3), subject low, generous empty space above.
+
+Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
+```
+
+### specimen-05-bactrian-swim
+
+**Save as** `public/images/photography/specimen-05-bactrian-swim.jpg` · 4:3 · target 1280 × 960 px (native — 493 dpi at 66 mm, and nothing larger)
+**Where it goes** Image essay, specimen card at 66 mm
+**Why it is there** Desert animals swimming, on a page about distance and the body. Photographed by Adam, 2014. Captive animals — do not caption them as wild.
+**Watch for** Not retouched, not upscaled. Used at the only size its resolution supports.
+
+```text
+A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
+
+Four Bactrian camels shoulder-deep in green water, humps above the surface, one head turned.
+
+Horizontal frame (4:3).
 
 Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
 ```
@@ -1226,6 +1277,23 @@ A believable documentary photograph of the real world — quiet, contemplative, 
 A dog asleep under a desk, cables and feet above her, the screen out of frame.
 
 Vertical frame (2:3), subject low, generous empty space above.
+
+Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
+```
+
+### specimen-04-hyacinth-macaw
+
+**Save as** `public/images/photography/specimen-04-hyacinth-macaw.jpg` · 4:3 · target 980 × 735 px cropped from 1280 × 960 (native — 377 dpi at 66 mm)
+**Where it goes** Image essay, specimen card at 66 mm
+**Why it is there** Faces the essay about borrowed intelligence. A beak that opens palm nuts, resting. Photographed by Adam, 2014. A captive bird — do not caption it as wild.
+**Watch for** Cropped from the original frame to remove a handler and a legible staff shirt: a person who has not consented to appear in a book intended for sale, and branding the plate rules forbid. Not retouched, not upscaled.
+
+```text
+A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
+
+A hyacinth macaw at close range, head lowered, the yellow eye-ring and bare chin bright against cobalt.
+
+Horizontal frame (4:3).
 
 Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
 ```
@@ -1417,6 +1485,23 @@ A believable documentary photograph of the real world — quiet, contemplative, 
 The last of the evening light on a far interior wall, under a minute from gone.
 
 Vertical frame (2:3), subject low, generous empty space above.
+
+Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
+```
+
+### specimen-06-prairie-dog
+
+**Save as** `public/images/photography/specimen-06-prairie-dog.jpg` · 4:3 · target 1280 × 960 px (native — 493 dpi at 66 mm, and nothing larger)
+**Where it goes** Image essay, specimen card at 66 mm
+**Why it is there** The closing essay, on ordinary time inside a system that keeps working. Photographed by Adam, 2014. A captive animal — do not caption it as wild.
+**Watch for** Not retouched, not upscaled. Used at the only size its resolution supports.
+
+```text
+A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
+
+A black-tailed prairie dog lying flat on warm sand, legs out behind, eyes closed.
+
+Horizontal frame (4:3).
 
 Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
 ```

@@ -81,6 +81,16 @@ spreads:
         - A yellow arrow points down an ordinary lane between parked cars.
         - The destination remains hidden while the path continues through rain.
     hand: earned by distance
+    specimen:
+      image: specimen-05-bactrian-swim
+      Specimen: Camelus bactrianus
+      Common: Bactrian camel
+      Recorded: 2014, captive
+      notes: >-
+        Everything about the body is an instruction for a dry place: the
+        humps, the nostrils that close, the long second eyelid. None of it
+        was needed here. The animals swam anyway, on a warm afternoon, in
+        Minnesota.
   - type: reading
     variant: aside
     blocks: [flow-3a, flow-3b]

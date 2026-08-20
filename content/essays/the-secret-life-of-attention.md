@@ -80,6 +80,16 @@ spreads:
         - Nine years of the same square yard and no evidence of boredom.
         - Whatever this is, it is not available to me by trying harder.
     hand: it isn’t trying
+    specimen:
+      image: specimen-07-amur-tiger
+      Specimen: Panthera tigris altaica
+      Common: Amur tiger
+      Recorded: 2014, captive
+      notes: >-
+        The whiskers are forward because the head is down. They are not
+        decoration; each one sits in a follicle wired to its own patch of
+        nerve, and at this range they are doing more of the work than the
+        eyes are. The animal is not looking at the grass. It is reading it.
   - type: diagram
     figure: attention-diagram
     title: What the editor kept

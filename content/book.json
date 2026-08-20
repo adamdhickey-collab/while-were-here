@@ -17,7 +17,7 @@
       "type": "title-spread"
     },
     {
-      "type": "blank"
+      "type": "dedication"
     },
     {
       "type": "opening-note",
@@ -96,5 +96,6 @@
     {
       "type": "cover-back"
     }
-  ]
+  ],
+  "dedication": "For my father, who handed me the right book"
 }

@@ -192,6 +192,32 @@ export const titleSpread = (bookData) => ({
   ],
 });
 
+/* The dedication takes the page that was blank between the title spread and
+   the opening note, so it costs nothing and faces "A note before starting".
+   One line, display face, upper third, no folio — the quietest page in the
+   book, because it is the one doing the most. */
+export const dedication = (bookData) => ({
+  pair: false,
+  pages: [{
+    spread: 'dedication',
+    folio: false,
+    cls: 'dedication',
+    html: `
+      <div class="page__block">
+        <p class="dedication__line">${(() => {
+          /* Break at the first comma, deliberately — the divider titles' own
+             rule: the stack is a decision, not a by-product of the measure.
+             "who handed me the right book" runs 104mm in the display face, so
+             no width cap produces this break and text-wrap: balance actively
+             prefers the wrong one. */
+          const i = bookData.dedication.indexOf(',');
+          return i < 0 ? esc(bookData.dedication)
+            : `${esc(bookData.dedication.slice(0, i + 1))}<br>${esc(bookData.dedication.slice(i + 1).trim())}`;
+        })()}</p>
+      </div>`,
+  }],
+});
+
 export const openingNote = (note) => ({
   pair: false,
   pages: [{

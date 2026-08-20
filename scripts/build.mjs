@@ -167,6 +167,9 @@ function compose(book, toc, folios = {}) {
       case 'blank':
         place(L.blank());
         break;
+      case 'dedication':
+        place(L.dedication(book));
+        break;
       case 'half-title':
         place(L.halfTitle(book), { prefersRecto: true });
         break;

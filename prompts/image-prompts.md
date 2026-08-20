@@ -148,142 +148,6 @@ Wide panoramic frame (2:1). This runs across a two-page spread, so keep the cent
 Avoid: any object, edge, hem, seam or boundary — only surface; anything that lets the viewer work out the scale; styled or arranged compositions; props; studio seamless backgrounds; heavy grading or HDR; vignettes; visible text or watermarks; symmetry; a recognisable scene resolving out of the texture.
 ```
 
-### ground-01-contour-quiet
-
-**Save as** `public/images/illustration/ground-01-contour-quiet.png` · 1:1 · target 6000 × 6000 px
-**Where it goes** Under a two-column reading spread
-**Why it is there** Stage I reading spreads. The one cartographic ground in the book.
-**Watch for** Transparent PNG, hairlines only — the book supplies the paper. Uniform single weight throughout: no heavier accent lines, no shading. Laid in at 8% — anything heavier than a hairline turns to mud.
-
-```text
-A minimal line drawing made entirely of single-weight hairlines on a fully transparent background. No fills, no shading, no gradients, no weight variation anywhere — every line in the image is exactly the same thinness. No text, no numbers, no labels, no legend, no key, no border. Composed to be looked through rather than at: it will be laid underneath body copy at roughly 8 to 14 percent opacity, so it has to survive being almost invisible and must never resolve into a subject. Vector-clean, printed-map precision, no sketchiness.
-
-Fine topographic contour lines describing very gentle terrain. **Composition: the upper two-thirds of the frame is almost flat — three or four long, widely spaced lines and a great deal of empty space — because two columns of body copy sit there. The terrain gathers only in the bottom third and along the outer edge, where the contours nest closer together.** Long slow curves, never crowding into dense bands.
-
-Square frame (1:1).
-
-Avoid: any paper, card or background colour — the lines must sit on full transparency; variable line weight; a heavier accent line every few lines; fills, tints, hatching or shading; gradients; text, numerals, labels, scale bars, north arrows or legends; frames or borders; drop shadows; a dense area that would darken into a blotch under text; perfect radial symmetry; tiling seams or an obviously repeated motif; anything that reads as a recognisable object or scene.
-```
-
-### ground-02-grain-rings
-
-**Save as** `public/images/illustration/ground-02-grain-rings.png` · 1:1 · target 6000 × 6000 px
-**Where it goes** Under an essay opener
-**Why it is there** Openers. A texture, not a map — and it rhymes with the tree sequence.
-**Watch for** Transparent PNG, hairlines only — the book supplies the paper. Uniform single weight throughout: no heavier accent lines, no shading. The knot must not fall near the centre, where the fold or the title would land on it.
-
-```text
-A minimal line drawing made entirely of single-weight hairlines on a fully transparent background. No fills, no shading, no gradients, no weight variation anywhere — every line in the image is exactly the same thinness. No text, no numbers, no labels, no legend, no key, no border. Composed to be looked through rather than at: it will be laid underneath body copy at roughly 8 to 14 percent opacity, so it has to survive being almost invisible and must never resolve into a subject. Vector-clean, printed-map precision, no sketchiness.
-
-The grain of a sawn plank: long near-parallel hairlines running the full height of the frame, wandering slightly as real grain does, with the concentric distortion of a single knot. **Composition: the knot sits low and to one side, in the outer third. The upper half is quiet, near-parallel grain, because a title and deck sit there.** No board edge, no bark, no object.
-
-Square frame (1:1).
-
-Avoid: any paper, card or background colour — the lines must sit on full transparency; variable line weight; a heavier accent line every few lines; fills, tints, hatching or shading; gradients; text, numerals, labels, scale bars, north arrows or legends; frames or borders; drop shadows; a dense area that would darken into a blotch under text; perfect radial symmetry; tiling seams or an obviously repeated motif; anything that reads as a recognisable object or scene.
-```
-
-### ground-03-ripple-interference
-
-**Save as** `public/images/illustration/ground-03-ripple-interference.png` · 2:1 · target 8000 × 4000 px
-**Where it goes** Under an image-pair or reading spread
-**Why it is there** Stage II. Carries the essay's argument about noticing without illustrating it.
-**Watch for** Transparent PNG, hairlines only — the book supplies the paper. Uniform single weight throughout: no heavier accent lines, no shading. Runs across the fold: keep the interference away from the centre 30 mm, where it would read as a printing fault.
-
-```text
-A minimal line drawing made entirely of single-weight hairlines on a fully transparent background. No fills, no shading, no gradients, no weight variation anywhere — every line in the image is exactly the same thinness. No text, no numbers, no labels, no legend, no key, no border. Composed to be looked through rather than at: it will be laid underneath body copy at roughly 8 to 14 percent opacity, so it has to survive being almost invisible and must never resolve into a subject. Vector-clean, printed-map precision, no sketchiness.
-
-Concentric ripples spreading from two separate points, as on still water struck twice. Where the two sets meet they cross into a fine interference pattern. **Composition: the two entry points sit low, near the bottom corners; the rings open upward and have largely dissipated by the top third, which stays open for text.**
-
-Wide panoramic frame (2:1). This runs across a two-page spread, so keep the centre calm and place nothing important in the middle 30 mm.
-
-Avoid: any paper, card or background colour — the lines must sit on full transparency; variable line weight; a heavier accent line every few lines; fills, tints, hatching or shading; gradients; text, numerals, labels, scale bars, north arrows or legends; frames or borders; drop shadows; a dense area that would darken into a blotch under text; perfect radial symmetry; tiling seams or an obviously repeated motif; anything that reads as a recognisable object or scene.
-```
-
-### ground-04-rain-trace
-
-**Save as** `public/images/illustration/ground-04-rain-trace.png` · 1:1 · target 6000 × 6000 px
-**Where it goes** Under a full-bleed or opener
-**Why it is there** The most placement-flexible ground — use it where the type position is not yet settled.
-**Watch for** Transparent PNG, hairlines only — the book supplies the paper. Uniform single weight throughout: no heavier accent lines, no shading. No convergence, no perspective, no vanishing point — the lines stay parallel.
-
-```text
-A minimal line drawing made entirely of single-weight hairlines on a fully transparent background. No fills, no shading, no gradients, no weight variation anywhere — every line in the image is exactly the same thinness. No text, no numbers, no labels, no legend, no key, no border. Composed to be looked through rather than at: it will be laid underneath body copy at roughly 8 to 14 percent opacity, so it has to survive being almost invisible and must never resolve into a subject. Vector-clean, printed-map precision, no sketchiness.
-
-Long parallel hairlines leaning about twelve degrees off vertical and running off all four edges — rain, or a seismograph that ran all night. Spacing varies irregularly; some lines break and restart; a few run the full height uninterrupted. **Composition: even across the whole frame with no focal point at all, so type can be placed anywhere on it.**
-
-Square frame (1:1).
-
-Avoid: any paper, card or background colour — the lines must sit on full transparency; variable line weight; a heavier accent line every few lines; fills, tints, hatching or shading; gradients; text, numerals, labels, scale bars, north arrows or legends; frames or borders; drop shadows; a dense area that would darken into a blotch under text; perfect radial symmetry; tiling seams or an obviously repeated motif; anything that reads as a recognisable object or scene.
-```
-
-### ground-05-venation
-
-**Save as** `public/images/illustration/ground-05-venation.png` · 1:1 · target 6000 × 6000 px
-**Where it goes** Under a dark-ground spread
-**Why it is there** Stage III. Pairs across the book with the stitched ground in Stage V.
-**Watch for** Transparent PNG with WHITE or pale hairlines — this one sits on a dark page, not cream. Laid in at 14%, because light on dark reads weaker than dark on light.
-
-```text
-A minimal line drawing made entirely of single-weight hairlines on a fully transparent background. No fills, no shading, no gradients, no weight variation anywhere — every line in the image is exactly the same thinness. No text, no numbers, no labels, no legend, no key, no border. Composed to be looked through rather than at: it will be laid underneath body copy at roughly 8 to 14 percent opacity, so it has to survive being almost invisible and must never resolve into a subject. Vector-clean, printed-map precision, no sketchiness.
-
-The vein structure of a single leaf with the leaf removed: a midrib entering from one edge, secondary veins branching from it, and the fine reticulated net between them. **Composition: the midrib enters at the outer edge and the branching is dense there, thinning steadily across the frame until it fades out entirely two-thirds of the way over — that cleared area is where reversed-out text sits.** No leaf outline, no stem.
-
-Square frame (1:1).
-
-Avoid: any paper, card or background colour — the lines must sit on full transparency; variable line weight; a heavier accent line every few lines; fills, tints, hatching or shading; gradients; text, numerals, labels, scale bars, north arrows or legends; frames or borders; drop shadows; a dense area that would darken into a blotch under text; perfect radial symmetry; tiling seams or an obviously repeated motif; anything that reads as a recognisable object or scene.
-```
-
-### ground-06-frost-dendrite
-
-**Save as** `public/images/illustration/ground-06-frost-dendrite.png` · 2:1 · target 8000 × 4000 px
-**Where it goes** Under the most vivid spread in the book
-**Why it is there** Stage IV. The most elaborate ground, at the point the book is most vivid.
-**Watch for** Transparent PNG, WHITE or pale hairlines for a dark page. Crystals must interlock irregularly — a repeated snowflake motif kills it.
-
-```text
-A minimal line drawing made entirely of single-weight hairlines on a fully transparent background. No fills, no shading, no gradients, no weight variation anywhere — every line in the image is exactly the same thinness. No text, no numbers, no labels, no legend, no key, no border. Composed to be looked through rather than at: it will be laid underneath body copy at roughly 8 to 14 percent opacity, so it has to survive being almost invisible and must never resolve into a subject. Vector-clean, printed-map precision, no sketchiness.
-
-Frost growing on cold glass: dendritic crystals radiating from several separate nucleation points, each throwing out fine branching arms that interlock with its neighbours. **Composition: the nucleation points sit along the bottom edge and the growth climbs upward, thinning as it goes, so the upper half is nearly clear for large reversed type.**
-
-Wide panoramic frame (2:1). This runs across a two-page spread, so keep the centre calm and place nothing important in the middle 30 mm.
-
-Avoid: any paper, card or background colour — the lines must sit on full transparency; variable line weight; a heavier accent line every few lines; fills, tints, hatching or shading; gradients; text, numerals, labels, scale bars, north arrows or legends; frames or borders; drop shadows; a dense area that would darken into a blotch under text; perfect radial symmetry; tiling seams or an obviously repeated motif; anything that reads as a recognisable object or scene.
-```
-
-### ground-07-stitch-weave
-
-**Save as** `public/images/illustration/ground-07-stitch-weave.png` · 1:1 · target 6000 × 6000 px
-**Where it goes** Under a closing spread
-**Why it is there** Stage V, and the rhyme that closes against the venation in Stage III — nature's branching line, then the human grid, seventy pages apart.
-**Watch for** Transparent PNG, hairlines only — the book supplies the paper. Uniform single weight throughout: no heavier accent lines, no shading. The unfinished corner is the whole idea. A perfectly even weave is wallpaper.
-
-```text
-A minimal line drawing made entirely of single-weight hairlines on a fully transparent background. No fills, no shading, no gradients, no weight variation anywhere — every line in the image is exactly the same thinness. No text, no numbers, no labels, no legend, no key, no border. Composed to be looked through rather than at: it will be laid underneath body copy at roughly 8 to 14 percent opacity, so it has to survive being almost invisible and must never resolve into a subject. Vector-clean, printed-map precision, no sketchiness.
-
-Warp and weft drawn as hairlines: a plain weave with the irregularity of something made by hand — threads slightly off-parallel, tension varying, a few crossing points pulled tighter than the rest. **Composition: the weave is complete and even across most of the frame, but at one corner the threads run out and the grid simply stops, leaving open paper.** No cloth edge, no hem, no needle.
-
-Square frame (1:1).
-
-Avoid: any paper, card or background colour — the lines must sit on full transparency; variable line weight; a heavier accent line every few lines; fills, tints, hatching or shading; gradients; text, numerals, labels, scale bars, north arrows or legends; frames or borders; drop shadows; a dense area that would darken into a blotch under text; perfect radial symmetry; tiling seams or an obviously repeated motif; anything that reads as a recognisable object or scene.
-```
-
-### ground-08-harmonograph
-
-**Save as** `public/images/illustration/ground-08-harmonograph.png` · 2:1 · target 8000 × 4000 px
-**Where it goes** Under a pull-quote spread
-**Why it is there** Pull-quote spreads, where the centre must stay clear and the edges can carry weight.
-**Watch for** Transparent PNG, hairlines only — the book supplies the paper. Uniform single weight throughout: no heavier accent lines, no shading. One unbroken line, not many separate ovals. Off-centre, so it never reads as a target.
-
-```text
-A minimal line drawing made entirely of single-weight hairlines on a fully transparent background. No fills, no shading, no gradients, no weight variation anywhere — every line in the image is exactly the same thinness. No text, no numbers, no labels, no legend, no key, no border. Composed to be looked through rather than at: it will be laid underneath body copy at roughly 8 to 14 percent opacity, so it has to survive being almost invisible and must never resolve into a subject. Vector-clean, printed-map precision, no sketchiness.
-
-The trace of a harmonograph: one single continuous line looping thousands of times, each pass falling slightly inside the last as the pendulum decays, so the figure is densest at its outer envelope and opens out toward the middle. **Composition: the dense envelope rings the outer edges of the frame and the centre is nearly empty, because a very large pull quote sits there.**
-
-Wide panoramic frame (2:1). This runs across a two-page spread, so keep the centre calm and place nothing important in the middle 30 mm.
-
-Avoid: any paper, card or background colour — the lines must sit on full transparency; variable line weight; a heavier accent line every few lines; fills, tints, hatching or shading; gradients; text, numerals, labels, scale bars, north arrows or legends; frames or borders; drop shadows; a dense area that would darken into a blotch under text; perfect radial symmetry; tiling seams or an obviously repeated motif; anything that reads as a recognisable object or scene.
-```
-
 ## Why Ordinary Days May Be the Point of Life
 
 ### ordinary-days-01a-dog-afternoon-light
@@ -541,6 +405,23 @@ Square frame (1:1).
 Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
 ```
 
+### ground-01-habituation-decay
+
+**Save as** `public/images/illustration/ground-01-habituation-decay.png` · 1:1 · target 6000 × 6000 px
+**Where it goes** Under the two-column reading spread
+**Why it is there** This essay's argument is that repetition dulls response. The ground is that claim, plotted — the reader is reading about habituation on top of a picture of it.
+**Watch for** Transparent PNG. Ink linework and plotted points, plus at most ONE very diffuse wash of a single colour — no hard edges on the wash. It is laid under body copy at 8% (14% on a dark page), so linework stays hairline and the wash stays soft enough to survive being nearly invisible. No text, numerals, labels or legends anywhere.
+
+```text
+A scientific plate in the manner of the cover artwork for this book: fine ink linework, plotted points, small circular inset diagrams, delicate annotation arcs, and occasionally a tiny human figure for scale — everything drawn at a single hairline weight, on a fully transparent background. At most one very diffuse wash of a single colour, soft-edged, behaving like watercolour that has spread into damp paper. It reads as a real study of a real system, drawn by someone who was measuring something. This is a GROUND: it will be laid underneath body copy at roughly 8 to 14 percent opacity, so it must survive being almost invisible, must never fight the text, and must have its density placed where the type is not.
+
+A plotted study of habituation: forty or fifty fine response curves, each starting high at the left and decaying toward a flat line as the same stimulus repeats, overlaid so they form a soft descending band. Small plotted points along each curve. Two or three tiny circular inset diagrams at the margins, drawn like detail figures. A single very diffuse wash of faded moss green sitting low. **Composition: the curves have already flattened across the upper two-thirds, so that area is nearly empty — two columns of body copy sit there. The density is in the lower third, at the left where the curves begin.**
+
+Square frame (1:1).
+
+Avoid: any paper, card or background colour — the artwork must sit on full transparency; variable or heavy line weight; hard-edged washes; fills, hatching or shading; text, numerals, labels, scale bars or legends of any kind; frames or borders; drop shadows; a dense area that would darken into a blotch under body copy; perfect radial symmetry; a repeated or tiling motif; infographic or corporate-diagram styling; anything resolving into a recognisable scene or object.
+```
+
 ## The Secret Life of Attention
 
 ### attention-01-window-reflection
@@ -626,4 +507,135 @@ A plan-view survey of one street corner: four figures at a crosswalk drawn from 
 Very wide band (3:1), figures small in the frame.
 
 Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
+```
+
+### ground-02-attention-filter
+
+**Save as** `public/images/illustration/ground-02-attention-filter.png` · 1:1 · target 6000 × 6000 px
+**Where it goes** Under the essay opener or a reading spread
+**Why it is there** The essay says attention is an editor writing a very short summary. This draws the edit.
+**Watch for** Transparent PNG. Ink linework and plotted points, plus at most ONE very diffuse wash of a single colour — no hard edges on the wash. It is laid under body copy at 8% (14% on a dark page), so linework stays hairline and the wash stays soft enough to survive being nearly invisible. No text, numerals, labels or legends anywhere.
+
+```text
+A scientific plate in the manner of the cover artwork for this book: fine ink linework, plotted points, small circular inset diagrams, delicate annotation arcs, and occasionally a tiny human figure for scale — everything drawn at a single hairline weight, on a fully transparent background. At most one very diffuse wash of a single colour, soft-edged, behaving like watercolour that has spread into damp paper. It reads as a real study of a real system, drawn by someone who was measuring something. This is a GROUND: it will be laid underneath body copy at roughly 8 to 14 percent opacity, so it must survive being almost invisible, must never fight the text, and must have its density placed where the type is not.
+
+A signal-filtering plate: a dense field of hundreds of small plotted points and short vectors at one edge, funnelling through a narrow constriction drawn as a few converging hairlines, and emerging on the other side as a mere handful of points. Fine annotation arcs around the constriction, and one tiny human figure at the output side for scale. A diffuse wash of faded cobalt around the dense side only. **Composition: the dense input field occupies the outer third; the middle and inner thirds are sparse, because that is where the title and text sit.**
+
+Square frame (1:1).
+
+Avoid: any paper, card or background colour — the artwork must sit on full transparency; variable or heavy line weight; hard-edged washes; fills, hatching or shading; text, numerals, labels, scale bars or legends of any kind; frames or borders; drop shadows; a dense area that would darken into a blotch under body copy; perfect radial symmetry; a repeated or tiling motif; infographic or corporate-diagram styling; anything resolving into a recognisable scene or object.
+```
+
+## The Beauty of Systems Nobody Designed
+
+### ground-03-local-rules-flocking
+
+**Save as** `public/images/illustration/ground-03-local-rules-flocking.png` · 2:1 · target 8000 × 4000 px
+**Where it goes** Under a reading or image-pair spread
+**Why it is there** The essay's claim is that the pattern exists between the parts. This shows the between.
+**Watch for** Transparent PNG. Ink linework and plotted points, plus at most ONE very diffuse wash of a single colour — no hard edges on the wash. It is laid under body copy at 8% (14% on a dark page), so linework stays hairline and the wash stays soft enough to survive being nearly invisible. No text, numerals, labels or legends anywhere. Runs across the fold: keep the densest area off the centre 30 mm.
+
+```text
+A scientific plate in the manner of the cover artwork for this book: fine ink linework, plotted points, small circular inset diagrams, delicate annotation arcs, and occasionally a tiny human figure for scale — everything drawn at a single hairline weight, on a fully transparent background. At most one very diffuse wash of a single colour, soft-edged, behaving like watercolour that has spread into damp paper. It reads as a real study of a real system, drawn by someone who was measuring something. This is a GROUND: it will be laid underneath body copy at roughly 8 to 14 percent opacity, so it must survive being almost invisible, must never fight the text, and must have its density placed where the type is not.
+
+A flocking study: several hundred tiny directional marks, each a short line with a head, arranged so that local alignment builds into one large coherent sweep across the frame without any centre or leader. Fine dotted radius circles around a few individual marks, showing the neighbourhood each one responds to. A diffuse wash of lake blue following the sweep. **Composition: the sweep enters low at one side and exits low at the other, leaving the upper half open for text.**
+
+Wide panoramic frame (2:1). This runs across a two-page spread, so keep the centre calm and place nothing important in the middle 30 mm.
+
+Avoid: any paper, card or background colour — the artwork must sit on full transparency; variable or heavy line weight; hard-edged washes; fills, hatching or shading; text, numerals, labels, scale bars or legends of any kind; frames or borders; drop shadows; a dense area that would darken into a blotch under body copy; perfect radial symmetry; a repeated or tiling motif; infographic or corporate-diagram styling; anything resolving into a recognisable scene or object.
+```
+
+## The Intelligence Outside Your Head
+
+### ground-04-extended-cognition
+
+**Save as** `public/images/illustration/ground-04-extended-cognition.png` · 1:1 · target 6000 × 6000 px
+**Where it goes** Under a reading spread
+**Why it is there** The essay argues intelligence is not what a brain does alone. The centre is deliberately the smallest node.
+**Watch for** Transparent PNG. Ink linework and plotted points, plus at most ONE very diffuse wash of a single colour — no hard edges on the wash. It is laid under body copy at 8% (14% on a dark page), so linework stays hairline and the wash stays soft enough to survive being nearly invisible. No text, numerals, labels or legends anywhere.
+
+```text
+A scientific plate in the manner of the cover artwork for this book: fine ink linework, plotted points, small circular inset diagrams, delicate annotation arcs, and occasionally a tiny human figure for scale — everything drawn at a single hairline weight, on a fully transparent background. At most one very diffuse wash of a single colour, soft-edged, behaving like watercolour that has spread into damp paper. It reads as a real study of a real system, drawn by someone who was measuring something. This is a GROUND: it will be laid underneath body copy at roughly 8 to 14 percent opacity, so it must survive being almost invisible, must never fight the text, and must have its density placed where the type is not.
+
+A distributed-system plate: one small node, drawn as a tiny human figure, with fine lines radiating out to a dozen external nodes of varying size — each node a small circular diagram in its own right, some plotted with points, some with concentric rings. The lines are weighted by nothing; all are hairlines. Diffuse amber wash pooling at the outer nodes, not at the figure. **Composition: the figure sits low and off-centre; the network fans upward and outward into the corners, leaving a clear diagonal band through the middle for text.**
+
+Square frame (1:1).
+
+Avoid: any paper, card or background colour — the artwork must sit on full transparency; variable or heavy line weight; hard-edged washes; fills, hatching or shading; text, numerals, labels, scale bars or legends of any kind; frames or borders; drop shadows; a dense area that would darken into a blotch under body copy; perfect radial symmetry; a repeated or tiling motif; infographic or corporate-diagram styling; anything resolving into a recognisable scene or object.
+```
+
+## The Strange Privilege of Being Alive During a Technological Revolution
+
+### ground-05-imagine-to-make
+
+**Save as** `public/images/illustration/ground-05-imagine-to-make.png` · 2:1 · target 8000 × 4000 px
+**Where it goes** Under a dark-ground spread
+**Why it is there** The essay is about that gap. Drawn, it needs no caption.
+**Watch for** Transparent PNG with PALE lines on a dark page — white or near-white ink, not charcoal. Ink linework and plotted points, plus at most ONE very diffuse wash of a single colour — no hard edges on the wash. It is laid under body copy at 8% (14% on a dark page), so linework stays hairline and the wash stays soft enough to survive being nearly invisible. No text, numerals, labels or legends anywhere.
+
+```text
+A scientific plate in the manner of the cover artwork for this book: fine ink linework, plotted points, small circular inset diagrams, delicate annotation arcs, and occasionally a tiny human figure for scale — everything drawn at a single hairline weight, on a fully transparent background. At most one very diffuse wash of a single colour, soft-edged, behaving like watercolour that has spread into damp paper. It reads as a real study of a real system, drawn by someone who was measuring something. This is a GROUND: it will be laid underneath body copy at roughly 8 to 14 percent opacity, so it must survive being almost invisible, must never fight the text, and must have its density placed where the type is not.
+
+A compression study on a dark field: two long hairlines running the width of the frame, one labelled by position as intent and the other as artefact, with fine vertical connectors between them. At the left the connectors are long; they shorten steadily until at the right the two lines nearly touch. Small plotted points where each connector meets a line. A diffuse bioluminescent teal wash where the lines converge. **Composition: convergence at the outer edge, the open end at the inner — the wide, sparse left two-thirds carries the reversed-out text.**
+
+Wide panoramic frame (2:1). This runs across a two-page spread, so keep the centre calm and place nothing important in the middle 30 mm.
+
+Avoid: any paper, card or background colour — the artwork must sit on full transparency; variable or heavy line weight; hard-edged washes; fills, hatching or shading; text, numerals, labels, scale bars or legends of any kind; frames or borders; drop shadows; a dense area that would darken into a blotch under body copy; perfect radial symmetry; a repeated or tiling motif; infographic or corporate-diagram styling; anything resolving into a recognisable scene or object.
+```
+
+## The Last Generation That Remembers the Before-Time
+
+### ground-06-density-thinning
+
+**Save as** `public/images/illustration/ground-06-density-thinning.png` · 1:1 · target 6000 × 6000 px
+**Where it goes** Under a dark-ground spread
+**Why it is there** The essay is a count of what disappeared. This is the count.
+**Watch for** Transparent PNG with PALE lines on a dark page. Ink linework and plotted points, plus at most ONE very diffuse wash of a single colour — no hard edges on the wash. It is laid under body copy at 8% (14% on a dark page), so linework stays hairline and the wash stays soft enough to survive being nearly invisible. No text, numerals, labels or legends anywhere.
+
+```text
+A scientific plate in the manner of the cover artwork for this book: fine ink linework, plotted points, small circular inset diagrams, delicate annotation arcs, and occasionally a tiny human figure for scale — everything drawn at a single hairline weight, on a fully transparent background. At most one very diffuse wash of a single colour, soft-edged, behaving like watercolour that has spread into damp paper. It reads as a real study of a real system, drawn by someone who was measuring something. This is a GROUND: it will be laid underneath body copy at roughly 8 to 14 percent opacity, so it must survive being almost invisible, must never fight the text, and must have its density placed where the type is not.
+
+A density plot on a dark field: a scatter of several hundred tiny outlined objects — rectangles, discs, spools, spirals, drawn small enough to read as marks rather than as things — crowded densely at one edge and thinning steadily across the frame until only three or four remain. One tiny human figure standing at the point where the density breaks. Diffuse ultraviolet wash at the dense edge. **Composition: dense at the outer edge, nearly empty across the inner two-thirds where the text sits.**
+
+Square frame (1:1).
+
+Avoid: any paper, card or background colour — the artwork must sit on full transparency; variable or heavy line weight; hard-edged washes; fills, hatching or shading; text, numerals, labels, scale bars or legends of any kind; frames or borders; drop shadows; a dense area that would darken into a blotch under body copy; perfect radial symmetry; a repeated or tiling motif; infographic or corporate-diagram styling; anything resolving into a recognisable scene or object.
+```
+
+## Why Humans Need Pilgrimages
+
+### ground-07-convergent-routes
+
+**Save as** `public/images/illustration/ground-07-convergent-routes.png` · 2:1 · target 8000 × 4000 px
+**Where it goes** Under a reading or pull-quote spread
+**Why it is there** Pilgrimage drawn as data rather than as devotion.
+**Watch for** Transparent PNG. Ink linework and plotted points, plus at most ONE very diffuse wash of a single colour — no hard edges on the wash. It is laid under body copy at 8% (14% on a dark page), so linework stays hairline and the wash stays soft enough to survive being nearly invisible. No text, numerals, labels or legends anywhere.
+
+```text
+A scientific plate in the manner of the cover artwork for this book: fine ink linework, plotted points, small circular inset diagrams, delicate annotation arcs, and occasionally a tiny human figure for scale — everything drawn at a single hairline weight, on a fully transparent background. At most one very diffuse wash of a single colour, soft-edged, behaving like watercolour that has spread into damp paper. It reads as a real study of a real system, drawn by someone who was measuring something. This is a GROUND: it will be laid underneath body copy at roughly 8 to 14 percent opacity, so it must survive being almost invisible, must never fight the text, and must have its density placed where the type is not.
+
+A route study: two dozen fine wandering lines entering from every edge of the frame and converging on a single point, each drawn as a real walked path would be — meandering, doubling back, not straight. Small plotted points at irregular intervals along each route, like recorded stops. A diffuse rust wash around the convergence. **Composition: the convergence point sits low and well off-centre; the upper half is open, sparse route lines only, because a large quote sits there.**
+
+Wide panoramic frame (2:1). This runs across a two-page spread, so keep the centre calm and place nothing important in the middle 30 mm.
+
+Avoid: any paper, card or background colour — the artwork must sit on full transparency; variable or heavy line weight; hard-edged washes; fills, hatching or shading; text, numerals, labels, scale bars or legends of any kind; frames or borders; drop shadows; a dense area that would darken into a blotch under body copy; perfect radial symmetry; a repeated or tiling motif; infographic or corporate-diagram styling; anything resolving into a recognisable scene or object.
+```
+
+## While We’re Here
+
+### ground-08-nested-systems
+
+**Save as** `public/images/illustration/ground-08-nested-systems.png` · 1:1 · target 6000 × 6000 px
+**Where it goes** Under the closing spread of the book
+**Why it is there** The last ground in the book, and the one that gathers every system the other seven drew separately. It should be the only ground a reader consciously notices.
+**Watch for** Transparent PNG. Ink linework and plotted points, plus at most ONE very diffuse wash of a single colour — no hard edges on the wash. It is laid under body copy at 8% (14% on a dark page), so linework stays hairline and the wash stays soft enough to survive being nearly invisible. No text, numerals, labels or legends anywhere. The six rings must each be a visibly different kind of line, or it collapses into a target.
+
+```text
+A scientific plate in the manner of the cover artwork for this book: fine ink linework, plotted points, small circular inset diagrams, delicate annotation arcs, and occasionally a tiny human figure for scale — everything drawn at a single hairline weight, on a fully transparent background. At most one very diffuse wash of a single colour, soft-edged, behaving like watercolour that has spread into damp paper. It reads as a real study of a real system, drawn by someone who was measuring something. This is a GROUND: it will be laid underneath body copy at roughly 8 to 14 percent opacity, so it must survive being almost invisible, must never fight the text, and must have its density placed where the type is not.
+
+Nested systems drawn as concentric irregular rings — six of them, each a different kind of line: cellular stipple at the innermost, then a branching vascular line, then a street-grid fragment, then an ecological web, then a circuit trace, then a slow astronomical arc at the outermost. One very small human figure standing near the centre, no larger than a few millimetres at full size. Diffuse warm amber wash at the centre only, fading outward to nothing. **Composition: the rings are concentric but the whole figure sits low and to one side, so the upper outer quadrant is nearly empty for the final words.**
+
+Square frame (1:1).
+
+Avoid: any paper, card or background colour — the artwork must sit on full transparency; variable or heavy line weight; hard-edged washes; fills, hatching or shading; text, numerals, labels, scale bars or legends of any kind; frames or borders; drop shadows; a dense area that would darken into a blotch under body copy; perfect radial symmetry; a repeated or tiling motif; infographic or corporate-diagram styling; anything resolving into a recognisable scene or object.
 ```

@@ -98,20 +98,23 @@ const MATERIAL_AVOID =
   'resolving out of the texture.';
 
 const GROUND_STYLE =
-  'A minimal line drawing made entirely of single-weight hairlines on a fully transparent ' +
-  'background. No fills, no shading, no gradients, no weight variation anywhere — every line ' +
-  'in the image is exactly the same thinness. No text, no numbers, no labels, no legend, no ' +
-  'key, no border. Composed to be looked through rather than at: it will be laid underneath ' +
-  'body copy at roughly 8 to 14 percent opacity, so it has to survive being almost invisible ' +
-  'and must never resolve into a subject. Vector-clean, printed-map precision, no sketchiness.';
+  'A scientific plate in the manner of the cover artwork for this book: fine ink linework, ' +
+  'plotted points, small circular inset diagrams, delicate annotation arcs, and occasionally a ' +
+  'tiny human figure for scale — everything drawn at a single hairline weight, on a fully ' +
+  'transparent background. At most one very diffuse wash of a single colour, soft-edged, ' +
+  'behaving like watercolour that has spread into damp paper. It reads as a real study of a ' +
+  'real system, drawn by someone who was measuring something. ' +
+  'This is a GROUND: it will be laid underneath body copy at roughly 8 to 14 percent opacity, ' +
+  'so it must survive being almost invisible, must never fight the text, and must have its ' +
+  'density placed where the type is not.';
 
 const GROUND_AVOID =
-  'Avoid: any paper, card or background colour — the lines must sit on full transparency; ' +
-  'variable line weight; a heavier accent line every few lines; fills, tints, hatching or ' +
-  'shading; gradients; text, numerals, labels, scale bars, north arrows or legends; frames or ' +
-  'borders; drop shadows; a dense area that would darken into a blotch under text; perfect ' +
-  'radial symmetry; tiling seams or an obviously repeated motif; anything that reads as a ' +
-  'recognisable object or scene.';
+  'Avoid: any paper, card or background colour — the artwork must sit on full transparency; ' +
+  'variable or heavy line weight; hard-edged washes; fills, hatching or shading; text, ' +
+  'numerals, labels, scale bars or legends of any kind; frames or borders; drop shadows; a ' +
+  'dense area that would darken into a blotch under body copy; perfect radial symmetry; a ' +
+  'repeated or tiling motif; infographic or corporate-diagram styling; anything resolving into ' +
+  'a recognisable scene or object.';
 
 const promptFor = (i) => {
   const byRole = {

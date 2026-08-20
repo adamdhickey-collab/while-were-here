@@ -116,38 +116,38 @@ at macro scale so it reads as terrain before it reads as substance.
 Built as spread type `material-break`.
 
 ### 10 · GROUND
-A hairline line-drawing laid underneath a spread at very low opacity — contour,
-bathymetric, isobar, root network, celestial graticule, watershed.
+A scientific plate in the cover's language — fine linework, plotted points,
+small inset diagrams, one diffuse wash — laid under a spread at very low opacity.
 
-- **Lives in** behind a reading, opener or full-bleed spread
-- **Stages** matched to the stage, and **only one of the eight is a map** —
-  contour at I; grain, ripple and rain through I–II; venation on the dark pages
-  of III; frost and harmonograph at IV; stitched weave at V.
-- **Treatment** 8% opacity on cream, 14% on a dark ground because light on dark
-  reads weaker. Single hairline weight throughout, on transparency — the book
-  supplies the paper.
+- **Lives in** behind a reading, opener or pull-quote spread
+- **Stages** one per essay, matched to the stage's accent
+- **Treatment** 8% opacity on cream, 14% on a dark page, because light lines on
+  dark read weaker. Transparency, always: the book supplies the paper.
 - **Rules**
-  - **Never under a plate, a specimen or a photograph.** A ground is for pages
+  - **Each ground draws the system its own essay is arguing about.** Not a
+    texture, not a mood — the actual thing. Habituation decay under the essay
+    about ordinary days. A signal filter under the essay about attention.
+    Flocking under the essay about systems nobody designed. The reader is
+    reading the argument on top of a picture of it, whether or not they ever
+    consciously see it.
+  - **Density goes where the type is not.** The habituation curves have already
+    flattened across the top two-thirds because two columns sit there. The
+    convergence in the route study sits low and off-centre because a quote sits
+    above it. A ground that ignores its composition is wallpaper, however well
+    drawn.
+  - **Never under a plate, a specimen or a photograph.** Grounds are for pages
     that are mostly type. Two layers of image is not depth, it is noise.
-  - **One per spread, and not on consecutive spreads.** The effect works by
-    being noticed second and only sometimes.
-  - **No weight variation.** The usual cartographic habit of a heavier line
-    every fifth contour is exactly wrong here — at 8% it turns to mud.
-  - **It must not resolve into a subject.** The moment a reader identifies it as
-    a lake or a night sky, it stops being ground and starts competing.
-  - **Each one is drawn for a slot.** The density is placed where the type is
-    not: contour goes flat across its top two-thirds because two columns sit
-    there; the harmonograph is dense at its edges and empty in the middle
-    because a pull quote sits there; frost climbs from the bottom because large
-    reversed type sits above it. A ground that ignores the composition it is
-    going under is wallpaper, however well drawn.
+  - **One per spread, and not on consecutive spreads.** It works by being
+    noticed second, and only sometimes.
 - **Why it exists** The book is about what is underneath the ordinary surface of
-  things. A layer that is genuinely there and genuinely easy to miss is the one
-  piece of the design that argues the thesis rather than describing it.
+  things. A layer that is genuinely there, genuinely related to the argument,
+  and genuinely easy to miss is the one part of the design that *performs* the
+  thesis instead of describing it.
 
-**Venation (III) and the stitched weave (V) are the pair that closes.** One is
-the way a living thing distributes; the other is the way a person makes a grid
-by hand. Nature's branching line, then the human one, seventy pages apart.
+**The last one is the exception.** `ground-08-nested-systems` gathers every
+system the other seven drew separately — cell, vessel, street, ecology, circuit,
+orbit — with one very small figure inside them. It sits under the final spread
+and it is the only ground a reader is meant to consciously notice.
 
 ### 11 · PERSONAL
 Real photographs. Family, dogs, the lake, old objects, places with meaning.

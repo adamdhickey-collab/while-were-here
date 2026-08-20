@@ -10,6 +10,12 @@ import { diagrams } from './diagrams.mjs';
 
 const nb = (s = '') => String(s).replace(/ (\w{1,3})$/, '&nbsp;$1');
 
+/* Stages and parts are NOT the same sequence and must not be assumed to align —
+   see content/plan/art-direction.md. The divider printed the part number under
+   the word "Stage", which was invisible while the two happened to match and
+   wrong the moment Part IV arrived at Stage V. */
+const ROMAN = { 1: 'I', 2: 'II', 3: 'III', 4: 'IV', 5: 'V' };
+
 /* Counts on the contents page are set as words, and they are derived rather
    than typed so that re-pacing the book cannot leave the page lying. */
 const WORDS = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven',
@@ -243,7 +249,7 @@ export const divider = (section, ctx) => ({
       spread: 'section divider',
       folio: false,
       cls: 'divider',
-      html: `<div class="divider__figure">${figure(ctx.image(section.image), { className: 'figure--bleed', inverse: true, root: ctx.root })}</div>`,
+      html: `<div class="divider__figure">${figure(ctx.image(section.image), { className: 'figure--bleed', inverse: true, root: ctx.root, dark: (ctx.stage || 1) >= 3 })}</div>`,
     },
     {
       spread: 'section divider',
@@ -252,7 +258,7 @@ export const divider = (section, ctx) => ({
       html: `
         <div class="page__block">
           <div class="divider__stage">
-            <p class="label"><b>Stage ${esc(section.number)}</b> ${esc(section.imperative || '')}${
+            <p class="label"><b>Stage ${esc(ROMAN[section.stage] || section.number)}</b> ${esc(section.imperative || '')}${
               section.stageTitle ? ' ' + esc(section.stageTitle) : ''}</p>
           </div>
           <div class="divider__head">
@@ -447,7 +453,7 @@ const readingTwo = (spread, essay, ctx) => ({
           </div>
           ${subhead(spread)}
           <div class="prose prose--cols${spread.dropCap ? ' prose--drop' : ''}">${block(ctx.blocks, spread.blocks[0])}</div>
-          ${spread.bandImage ? `<div class="reading__band">${figure(ctx.image(spread.bandImage), { root: ctx.root })}</div>` : ''}
+          ${spread.bandImage ? `<div class="reading__band">${figure(ctx.image(spread.bandImage), { root: ctx.root, dark: (ctx.stage || 1) >= 3 })}</div>` : ''}
           ${spread.insetOn === 'recto' ? '' : insetCard(spread.inset, ctx)}
           ${spread.handOn === 'recto' ? '' : handScan(spread.hand, ctx)}
           ${spread.noteOn === 'verso' && spread.marginNote ? `<div class="reading__note"><p class="margin-note">${spread.marginNote}</p></div>` : ''}
@@ -521,7 +527,7 @@ const pullQuote = (spread, essay, ctx) => ({
       folio: false,
       cls: 'quote-spread quote-spread--verso',
       html: `
-        ${spread.image ? `<div class="quote-spread__figure">${figure(ctx.image(spread.image), { root: ctx.root })}</div>` : ''}
+        ${spread.image ? `<div class="quote-spread__figure">${figure(ctx.image(spread.image), { root: ctx.root, dark: (ctx.stage || 1) >= 3 })}</div>` : ''}
         <div class="page__block">
           ${spread.variant === 'bare' && !spread.notice && !spread.noticeSteps
             ? `<div class="quote-spread__mark">${radiant(16, 24)}</div>` : ''}
@@ -652,7 +658,7 @@ const imageEssay = (spread, essay, ctx) => ({
       folio: true,
       cls: 'image-essay image-essay--tall' + (spread.blocks && spread.blocks.length > 1 ? ' image-essay--split' : ''),
       html: `
-        <div class="image-essay__figure">${figure(ctx.image(spread.image), { root: ctx.root })}
+        <div class="image-essay__figure">${figure(ctx.image(spread.image), { root: ctx.root, dark: (ctx.stage || 1) >= 3 })}
           ${specimenCard(spread.specimen, 'bl')}</div>
         ${spread.blocks && spread.blocks.length > 1 ? `
           <div class="page__block">

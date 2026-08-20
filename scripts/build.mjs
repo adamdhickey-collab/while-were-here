@@ -171,20 +171,20 @@ function compose(book, toc, folios = {}) {
       case 'field-note': {
         const doc = loadDoc(item.source);
         if (doc.data.stage) stage = doc.data.stage;
-        place(L.fieldNote({ ...doc.data, html: doc.html }, ctxBase));
+        place(L.fieldNote({ ...doc.data, html: doc.html }, { ...ctxBase, stage }));
         break;
       }
       case 'divider': {
         const { data } = loadDoc(item.source);
         if (data.stage) stage = data.stage;
-        place(L.divider(data, ctxBase));
+        place(L.divider(data, { ...ctxBase, stage }));
         break;
       }
       case 'essay': {
         const doc = loadDoc(item.source);
         const essay = doc.data;
         if (essay.stage) stage = essay.stage;
-        const ctx = { ...ctxBase, blocks: doc.blocks };
+        const ctx = { ...ctxBase, blocks: doc.blocks, stage };
         openings[essay.title] = n + 2;        // opener is a pair: verso, then the title recto
         for (const spread of essay.spreads) {
           const variantKey = spread.variant ? `${spread.type}-${spread.variant}` : null;

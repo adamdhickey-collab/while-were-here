@@ -114,6 +114,10 @@ reality too. Nothing is being blended.
 | **Initiation Well** | **2** | IV | Best of the set. Two plates, lavender and paper on void. Three made it busy and the magenta fought the spiral. |
 | **Metropol lattice** | **3** | II | Works. Reads near two-tone at the opacities tested; push `--accent-1` harder at placement if it wants more colour. That is a CSS number, not a plate problem. |
 | Cloud floor from the plane | 3 and 4 | IV | **Rejected. Do not print this one.** |
+| **Figure at the river** | 3 | V | **Placed**, Part IV divider. Three masses and nothing else, which is what the process wants. From the Facebook archive at 1,280 px, which the process does not care about. |
+| **Penguin underwater** | 3 | III | **Placed**, essay 04 pull quote. Composites normally on the dark ground. |
+| Forest horizon | 3 | II | **Pulled at placement.** Fine as a flat composite, near-black in the multiply stack: canopy puts almost every pixel below the darkest cut. |
+| Empty room | 3 | V | **Pulled at placement.** The separation is good and the slot was wrong. A 4:3 source cropped to a 2:3 tall plate loses the window, and the window was the subject. |
 
 ### Why the cloud floor was rejected
 
@@ -136,3 +140,21 @@ fine texture does. Both are continuous, and the separation is discrete.
   generous for anything under full-bleed and the files stay small, so it stays.
 - The `--levels` default of 3 holds, but it is a starting point per image rather
   than a house number. Two suited the well.
+
+
+## Rendering, added 19 Aug 2026
+
+Until now this file described a treatment the book had never actually printed:
+the plates existed, the CSS was written out here, and `.plate-stack` appeared
+nowhere in `src/`. It is now implemented in `plateStack()` in
+`src/layouts/helpers.mjs`, and `figure()` delegates to it whenever a manifest
+entry carries `treatment: "screen-print"`. So a print can go anywhere a figure
+can, and the stage inks it.
+
+The stage reaches the renderer through `ctx.stage`, which `scripts/build.mjs`
+now threads in. That is also what decides `plate-stack--dark`.
+
+**Two of four survived placement**, which is worth knowing before separating a
+batch. A source that looks right as a flat three-colour composite can still
+fail in the book, because the book multiplies the plates over the page ground
+rather than laying them on white. Judge it in the paginator, not in a preview.

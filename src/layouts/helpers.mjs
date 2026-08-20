@@ -17,6 +17,36 @@ const KIND_DIR = { photography: 'photography', illustration: 'illustration', per
  * labelled plate carrying its manifest ID if it has not. A proof PDF is
  * therefore also the shot list.
  */
+/**
+ * A screen print. The separator writes MASKS, so the ink is applied here from
+ * the stage's own accents and never baked into the file — the same principle as
+ * the handwriting. Lightest plate first, darkest last: a press lays pale ink
+ * before dark, and stacking the other way puts the biggest pale plate on top
+ * and washes the whole thing out.
+ *
+ * Dark stages cannot multiply. Multiplying anything into the void ground only
+ * makes it darker, so those composite normally and the layer order reverses.
+ */
+export function plateStack(image, { className = '', root = process.cwd(), dark = false } = {}) {
+  const slug = image.slug || image.id;
+  const order = dark ? [1, 2, 3] : [3, 2, 1];
+  const layers = order
+    .map((n) => {
+      const rel = path.join('images', 'plates', `${slug}-plate-${n}.png`);
+      if (!fs.existsSync(path.join(root, 'public', rel))) return '';
+      return `<img class="p${n}" src="${esc(rel)}" alt="">`;
+    })
+    .filter(Boolean);
+
+  if (!layers.length) return '';
+
+  return `<div class="figure ${esc(className)}">
+      <div class="plate-stack${dark ? ' plate-stack--dark' : ''}" role="img" aria-label="${esc(image.subject)}">
+        ${layers.join('\n        ')}
+      </div>
+    </div>`;
+}
+
 export function figure(image, opts = {}) {
   const { className = '', inverse = false, half = null, compact = false, root = process.cwd() } = opts;
   /* A composite arrives already mounted, taped, captioned or keyed. The layout
@@ -26,6 +56,12 @@ export function figure(image, opts = {}) {
 
   if (!image) {
     return `<div class="${classes}"><div class="plate"><p class="plate__id">missing manifest entry</p></div></div>`;
+  }
+
+  /* A screen print is stacked masks inked by the stage, not a single file. */
+  if (image.treatment === 'screen-print') {
+    const stacked = plateStack(image, { className, root, dark: opts.dark });
+    if (stacked) return stacked;
   }
 
   const rel = path.join('images', KIND_DIR[image.kind] || 'photography', image.filename);

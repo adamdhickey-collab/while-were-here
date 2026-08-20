@@ -389,7 +389,8 @@
       "aspect": "1:1",
       "target": "6000 × 6000 px",
       "status": "not generated",
-      "composite": false
+      "composite": false,
+      "revision": "A screen print of a forest horizon was tried here and pulled. See content/plan/screen-print.md."
     },
     {
       "id": "systems-01-ants-pavement",
@@ -870,19 +871,24 @@
     },
     {
       "id": "part-4-divider-return",
-      "filename": "part-4-divider-return.png",
-      "kind": "illustration",
-      "role": "diagram",
+      "filename": "—",
+      "kind": "plates",
+      "role": "plate",
       "essay": "—",
       "section": "Part IV · While We’re Here",
       "spread": "Part divider (verso, full bleed)",
-      "subject": "One walked line crossing contours, towns and a shoreline, ending at a small unmarked point.",
-      "concept": "The way back, drawn as a route rather than a destination.",
-      "purpose": "The divider that returns the book to warm paper after two dark parts.",
+      "subject": "A figure at the edge of a river, back turned, watching a dog swim. Separated into three plates.",
+      "concept": "The way back, and somebody standing still in it.",
+      "purpose": "The divider that returns the book to warm paper after two dark parts. A screen print rather than a photograph, because the archive it came from is 1,280 px and could never be one.",
       "aspect": "1:1",
-      "target": "6000 × 6000 px",
-      "status": "not generated",
-      "composite": false
+      "target": "3000 × 2250 px per plate",
+      "status": "placed",
+      "composite": false,
+      "treatment": "screen-print",
+      "slug": "print-01-river-figure",
+      "origin": "personal archive",
+      "selection": "Facebook archive, KylieatthePark2014. See content/plan/photo-selection-05.md",
+      "revision": "Separated at --simplify 700. The plates are masks; the ink comes from Stage V."
     },
     {
       "id": "intelligence-01-pencil-mark",
@@ -918,19 +924,24 @@
     },
     {
       "id": "intelligence-03-orb-web",
-      "filename": "intelligence-03-orb-web.png",
-      "kind": "illustration",
+      "filename": "—",
+      "kind": "plates",
       "role": "diagram",
       "essay": "The Intelligence Outside Your Head",
       "section": "Part II · What Are We?",
       "spread": "Pull quote (facing)",
-      "subject": "A technical drawing of an orb web with vibration paths marked along the radial threads and one spider at the hub.",
-      "concept": "A structure outside a body extending its sensing.",
-      "purpose": "Faces the pull quote. Drawn, because the vibration paths are the subject and a photograph cannot show them.",
+      "subject": "A penguin underwater, wings out, against a field of light. Separated into three plates.",
+      "concept": "A body that senses through the medium it is moving in.",
+      "purpose": "Faces the pull quote. On a dark stage the plates composite normally and lay largest first.",
       "aspect": "1:1",
-      "target": "6000 × 6000 px",
-      "status": "not generated",
-      "composite": false
+      "target": "3000 × 2250 px per plate",
+      "status": "placed",
+      "composite": false,
+      "treatment": "screen-print",
+      "slug": "print-03-penguin-water",
+      "origin": "personal archive",
+      "selection": "Facebook archive, Zoo2014. See content/plan/photo-selection-05.md",
+      "revision": "Separated at --simplify 700. Replaces the orb-web drawing, which stays a good idea for a diagram spread."
     },
     {
       "id": "intelligence-04-route-line",
@@ -1282,7 +1293,8 @@
       "aspect": "2:3",
       "target": "4000 × 6000 px",
       "status": "not generated",
-      "composite": false
+      "composite": false,
+      "revision": "A screen print of an empty room was tried here and pulled: a 4:3 separation cropped to 2:3 loses the window, which was the whole subject."
     }
   ]
 }

@@ -68,6 +68,7 @@ Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glo
 **Save as** `public/images/illustration/part-2-divider-branching.png` · 1:1 · target 6000 × 6000 px
 **Where it goes** Part divider (verso, full bleed)
 **Why it is there** The divider for Part II. It has to say "look at the pattern, not the thing" before a single essay does.
+**Watch for** A screen print of a forest horizon was tried here and pulled. See content/plan/screen-print.md.
 
 ```text
 An illustrated plate from a vintage scientific field guide, hand-drawn in ink on warm cream paper. Imperfect geometry — circles slightly out of true, lines drawn by hand, everything a degree or two off square. Field-guide illustration crossed with vintage scientific diagram, cartography and marginalia: arrows, rings, timelines, measure scales, tiny human figures. Screenprint and risograph texture with visible ink density variation and slight misregistration. Charcoal near-black ink on a warm cream ground (#F3EFE5), with restrained accents of muted rust (#A95738), faded cobalt (#536D8E) and moss green (#68735B). Intelligent, tactile, playful, handmade.
@@ -284,18 +285,19 @@ Avoid: gradients; glossy 3D or rendered lighting; generic vector people; corpora
 
 ### part-4-divider-return
 
-**Save as** `public/images/illustration/part-4-divider-return.png` · 1:1 · target 6000 × 6000 px
+**Save as** `public/images/plates/—` · 1:1 · target 3000 × 2250 px per plate
 **Where it goes** Part divider (verso, full bleed)
-**Why it is there** The divider that returns the book to warm paper after two dark parts.
+**Why it is there** The divider that returns the book to warm paper after two dark parts. A screen print rather than a photograph, because the archive it came from is 1,280 px and could never be one.
+**Watch for** Separated at --simplify 700. The plates are masks; the ink comes from Stage V.
 
 ```text
-An illustrated plate from a vintage scientific field guide, hand-drawn in ink on warm cream paper. Imperfect geometry — circles slightly out of true, lines drawn by hand, everything a degree or two off square. Field-guide illustration crossed with vintage scientific diagram, cartography and marginalia: arrows, rings, timelines, measure scales, tiny human figures. Screenprint and risograph texture with visible ink density variation and slight misregistration. Charcoal near-black ink on a warm cream ground (#F3EFE5), with restrained accents of muted rust (#A95738), faded cobalt (#536D8E) and moss green (#68735B). Intelligent, tactile, playful, handmade.
+A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
 
-One walked line crossing contours, towns and a shoreline, ending at a small unmarked point.
+A figure at the edge of a river, back turned, watching a dog swim. Separated into three plates.
 
 Square frame (1:1).
 
-Avoid: gradients; glossy 3D or rendered lighting; generic vector people; corporate infographic style; SaaS or explainer-video illustration; polished icon sets; decorative complexity with no conceptual purpose; fake handwritten paragraphs or invented lettering; any legible text; psychedelic imagery; symmetry for its own sake.
+Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
 ```
 
 ## Why Ordinary Days May Be the Point of Life
@@ -828,18 +830,19 @@ Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glo
 
 ### intelligence-03-orb-web
 
-**Save as** `public/images/illustration/intelligence-03-orb-web.png` · 1:1 · target 6000 × 6000 px
+**Save as** `public/images/plates/—` · 1:1 · target 3000 × 2250 px per plate
 **Where it goes** Pull quote (facing)
-**Why it is there** Faces the pull quote. Drawn, because the vibration paths are the subject and a photograph cannot show them.
+**Why it is there** Faces the pull quote. On a dark stage the plates composite normally and lay largest first.
+**Watch for** Separated at --simplify 700. Replaces the orb-web drawing, which stays a good idea for a diagram spread.
 
 ```text
-An illustrated plate from a vintage scientific field guide, hand-drawn in ink on warm cream paper. Imperfect geometry — circles slightly out of true, lines drawn by hand, everything a degree or two off square. Field-guide illustration crossed with vintage scientific diagram, cartography and marginalia: arrows, rings, timelines, measure scales, tiny human figures. Screenprint and risograph texture with visible ink density variation and slight misregistration. Charcoal near-black ink on a warm cream ground (#F3EFE5), with restrained accents of muted rust (#A95738), faded cobalt (#536D8E) and moss green (#68735B). Intelligent, tactile, playful, handmade.
+A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
 
-A technical drawing of an orb web with vibration paths marked along the radial threads and one spider at the hub.
+A penguin underwater, wings out, against a field of light. Separated into three plates.
 
 Square frame (1:1).
 
-Avoid: gradients; glossy 3D or rendered lighting; generic vector people; corporate infographic style; SaaS or explainer-video illustration; polished icon sets; decorative complexity with no conceptual purpose; fake handwritten paragraphs or invented lettering; any legible text; psychedelic imagery; symmetry for its own sake.
+Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
 ```
 
 ### intelligence-04-route-line
@@ -1099,6 +1102,7 @@ Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glo
 **Save as** `public/images/photography/here-05-evening-wall.png` · 2:3 · target 4000 × 6000 px
 **Where it goes** Image essay (tall)
 **Why it is there** The last tall plate in the book. It should be the quietest.
+**Watch for** A screen print of an empty room was tried here and pulled: a 4:3 separation cropped to 2:3 loses the window, which was the whole subject.
 
 ```text
 A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.

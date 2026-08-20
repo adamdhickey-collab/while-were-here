@@ -696,7 +696,11 @@
    the prompt and a strip of observations opposite the quote, and the closer
    puts the last words facing one photograph.                                 */
 
-.quote-spread--verso .page__block { align-content: space-between; }
+/* The lede sits BELOW the plate, not over it. `space-between` with a single
+   child resolves to `start`, which put the label in the top-left corner of the
+   figure — invisible the moment a real image is dark there, and the figure
+   occupies the top 54% of every one of these versos. */
+.quote-spread--verso .page__block { align-content: end; }
 .quote-spread--verso .notice { grid-column: 1 / 11; }
 .quote-spread--verso .contact-sheet { grid-column: 1 / 13; grid-row: auto; align-self: auto; margin: 0; }
 .quote-spread--verso .quote-spread__lede { align-self: end; }
@@ -887,3 +891,29 @@
   color: var(--ink-soft);
   max-width: 42ch;
 }
+
+/* ---- 21. SCREEN PRINT ----------------------------------------------------
+   Separated masks, inked here from the stage's accents. Documented in
+   content/plan/screen-print.md; this is the first place the book renders one.
+   Lightest plate first, darkest last, because a press lays pale ink before
+   dark and the other order washes the image out.                            */
+
+.plate-stack { position: absolute; inset: 0; background: var(--ground); overflow: hidden; }
+.plate-stack img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  mix-blend-mode: multiply;
+}
+.plate-stack .p3 { background: var(--accent-3); opacity: 0.30; translate: -3px  4px; }
+.plate-stack .p2 { background: var(--accent-1); opacity: 0.50; translate:  4px -3px; }
+.plate-stack .p1 { background: var(--ink);      opacity: 0.85; translate:  0    0;   }
+
+/* Multiplying into the void only darkens it, so a dark stage composites
+   normally and the plates lay largest first. */
+.plate-stack--dark img { mix-blend-mode: normal; }
+.plate-stack--dark .p3 { background: var(--accent-3); opacity: 0.22; }
+.plate-stack--dark .p2 { background: var(--accent-1); opacity: 0.42; }
+.plate-stack--dark .p1 { background: var(--paper);    opacity: 0.88; }

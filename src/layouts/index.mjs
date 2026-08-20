@@ -293,8 +293,15 @@ export const fieldNote = (note, ctx) => ({
     {
       spread: 'field note',
       folio: false,
-      cls: 'field-note field-note--plate',
-      html: figure(ctx.image(note.image), { className: 'figure--bleed', root: ctx.root }),
+      /* `band` holds the photograph at its own aspect across the page instead
+         of cropping it to the square. A wide frame whose subject is the scale
+         of an empty street against two small figures stops being that picture
+         the moment it is cropped to fit — the figures come up 1.8x and read as
+         a posed portrait. */
+      cls: `field-note field-note--plate${note.variant === 'band' ? ' field-note--band' : ''}`,
+      html: note.variant === 'band'
+        ? `<div class="field-note__band">${figure(ctx.image(note.image), { root: ctx.root })}</div>`
+        : figure(ctx.image(note.image), { className: 'figure--bleed', root: ctx.root }),
     },
     {
       spread: 'field note',

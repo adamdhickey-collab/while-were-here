@@ -235,17 +235,17 @@ Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glo
 
 ### field-note-03-street-and-dog
 
-**Save as** `public/images/personal/field-note-03-street-and-dog.jpg` · 1:1 · target 3213 × 3213 px
-**Where it goes** Field note (verso, full bleed)
+**Save as** `public/images/personal/field-note-03-street-and-dog.jpg` · 16:9 · target 5712 × 3213 px (native)
+**Where it goes** Field note (verso, wide band, bleeding left and right)
 **Why it is there** Field note verso. The only place in the book where a real photograph of this life appears at size.
-**Watch for** Centre square crop of the 5712 × 3213 original. Not retouched, not upscaled. 272 dpi at 300 mm. OPEN: at square the two figures are large enough to read as a posed portrait facing the lens, which the candid rule forbids. See decisions.md.
+**Watch for** Uncropped, unretouched. 483 dpi across a 300 mm page, and the band is 169 mm tall. It was square-cropped first and that was wrong: at 1.8x the two figures stopped being incidental and became a couple facing the camera, which is the one thing the candid rule forbids. The wide frame is the picture.
 
 ```text
 A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
 
 An empty suburban street, wires overhead, two small figures stopped on the sidewalk.
 
-Square frame (1:1).
+Frame 16:9.
 
 Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
 ```

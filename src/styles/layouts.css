@@ -1000,3 +1000,18 @@
   background: var(--rust);
   margin-bottom: var(--sp-6);
 }
+
+/* A field-note photograph run as a wide band rather than a full-bleed square.
+   Bleeds left and right, sits at its own aspect ratio, and leaves the page
+   above and below it. The whole point is that the frame is not cropped. */
+.field-note--band { background: var(--ground); }
+.field-note__band {
+  position: absolute;
+  top: 50%;
+  left: calc(-1 * var(--bleed-out));
+  right: calc(-1 * var(--bleed-out));
+  transform: translateY(-50%);
+  aspect-ratio: 16 / 9;
+}
+.field-note__band .figure { position: absolute; inset: 0; }
+.field-note__band img { width: 100%; height: 100%; object-fit: cover; }

@@ -59,10 +59,16 @@ exists to prevent. The frame did not change; the crop changed what it is.
 
 `IMG_5249` is the same setup one frame later and has the same problem.
 
-**Decide one of these.** Run field note 3 as a **wide band** rather than a full
-bleed verso, which keeps the scale of the street against the people, and is what
-the picture is about. Or give the slot to a different frame and let this one be
-a reading-spread band elsewhere.
+**Resolved 19 Aug 2026: it runs as a wide band.** The field-note page type
+gained a `band` variant, the square crop was thrown away, and the photograph is
+back at its native 5712 x 3213, bleeding left and right at 484 dpi with the page
+above and below it.
+
+That restores the picture: an empty street, wires, a school, a big sky, and two
+small figures on the sidewalk. **The person is still facing the camera.** What
+changed is that they are now small enough that the frame is about the street,
+which is the reading the candid rule was protecting. If that is still too much,
+the answer is a different frame rather than a different crop.
 
 ---
 

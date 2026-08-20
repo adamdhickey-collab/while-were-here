@@ -4,6 +4,7 @@ place: A street with nothing on it
 date: October
 stage: 3
 image: field-note-03-street-and-dog
+variant: band
 hand: stopped for no reason
 status: written
 brief: >-

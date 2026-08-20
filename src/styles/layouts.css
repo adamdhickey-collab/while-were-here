@@ -250,6 +250,71 @@
 
 .divider__stage { padding-bottom: var(--sp-3); border-bottom: 0.6pt solid var(--ink); }
 
+/* ---- The collision (20 Aug 2026) ----------------------------------------
+   The part numeral stops being a caption and becomes terrain: set enormous in
+   the stage's first accent, tilted, cropped by the trim, with the title
+   walking down across it in multiply so the black genuinely overprints the
+   way ink would. Carson by way of a drafting table — every element is still
+   the book's own face, ink and rule.
+
+   Two rules keep it honest. Multiply cannot survive the dark stages (the
+   book's own plate-stack doctrine), so stage 3 and 4 compose normally with
+   the numeral raised instead. And only the TEXT page may clip overflow — the
+   facing verso carries a full-bleed figure, and clipping at the page box
+   would cut its bleed. The renderer marks the text page `divider--text`.   */
+
+.divider--text { overflow: hidden; }
+.divider--text .divider__num {
+  position: absolute;
+  right: -8%;
+  top: -2%;
+  margin: 0;
+  font-size: 340pt;
+  line-height: 0.78;
+  letter-spacing: -0.05em;
+  white-space: nowrap;
+  color: var(--accent-1);
+  opacity: 0.34;
+  transform: rotate(-4deg);
+  z-index: 0;
+}
+.divider--text .divider__head,
+.divider--text .divider__foot { position: relative; z-index: 1; }
+.divider--text .divider__title { mix-blend-mode: multiply; }
+.stage-3 .divider--text .divider__title,
+.stage-4 .divider--text .divider__title,
+.stage-3.divider--text .divider__title,
+.stage-4.divider--text .divider__title { mix-blend-mode: normal; }
+.stage-3.divider--text .divider__num,
+.stage-4.divider--text .divider__num { opacity: 0.5; }
+.divider--text .divider__title span:nth-child(2) { margin-left: 1.2em; }
+.divider--text .divider__title span:nth-child(3) { margin-left: -0.18em; margin-top: -0.12em; }
+.divider--text .divider__title span:nth-child(4) { margin-left: 0.6em; }
+.divider--text .divider__statement {
+  max-width: 96mm;
+  margin-left: 38%;
+  border-left: 0.6pt solid var(--ink);
+  padding-left: 6mm;
+}
+/* The stage label moves to the foot, clear of the numeral's airspace, and
+   trades its underline for an overline so it reads as a footing, not a head.
+   It travels in FLOW, not absolutely — essay titles wrap differently per part,
+   so a fixed offset that clears one foot collides with another (it did: 24px
+   into Part III's list). Flex order re-seats it above the foot, and margin-top
+   auto pins the pair to the bottom while the head stays at the top. */
+.divider--text .page__block { display: flex; flex-direction: column; }
+.divider--text .divider__stage {
+  order: 2;
+  margin-top: auto;
+  margin-bottom: var(--sp-4);
+  border-bottom: none;
+  border-top: 0.6pt solid var(--ink);
+  padding-top: 2mm;
+  padding-bottom: 0;
+  z-index: 1;
+}
+.divider--text .divider__foot { order: 3; }
+
 .divider__num { margin-bottom: var(--sp-4); }
 
 /* Part titles stack one word per line, deliberately rather than because they
@@ -710,6 +775,25 @@
 /* The closer carries one block of text and nothing competing with it, so it
    takes the wide end of the measure band rather than the narrow end. */
 .closing--words .prose { grid-column: 1 / 11; max-width: 68ch; }
+/* The one word in the book that refuses the measure: the closing quote's last
+   word, large, italic, in the stage's third accent, cropped by the fore-edge.
+   The clip is safe because an off-trim closing carries no image — nothing on
+   this page owns the bleed. See the closing renderer. */
+.closing--offtrim { overflow: hidden; }
+.closing--offtrim .pull-quote .offtrim {
+  display: block;
+  font-style: italic;
+  color: var(--accent-3);
+  font-size: 2.1em;
+  line-height: 0.9;
+  text-align: right;
+  /* Past the fore-edge by intent: the block is inset by the outside margin, so
+     backing out that margin reaches the trim and the extra 12mm crosses it.
+     The page clips at the trim (overflow: hidden above), so the word is
+     genuinely cropped, not merely large. */
+  margin-right: calc(-1 * var(--m-outside) - 12mm);
+}
+
 .closing__end { grid-column: 1 / 11; grid-row: 3; align-self: end; }
 .closing__line {
   font-family: var(--font-display);

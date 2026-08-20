@@ -58,6 +58,7 @@ spreads:
       condition changes. Do not name the lesson. Record only what moved.
   - type: closing
     quote: The temporary thing is not less real. It is the only kind we have.
+    emphasis: off-trim
     line: For now, that is where we are.
     blocks: [flow-4a, flow-4b]
 ---

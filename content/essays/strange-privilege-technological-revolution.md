@@ -32,9 +32,10 @@ spreads:
       count: 7,325 unique · 154 shown
       source: >-
         Meta Platforms, "Advertisers using your activity or information".
-        Personal data export generated 19 August 2026. The first 160 entries in
-        export order, unsorted; six are withheld and the rest are unedited. The
-        remaining 7,165 are not printed because they would fill eleven more pages.
+        Personal data export generated 19 August 2026. Of the first 160 entries
+        in export order, 154 are printed here unedited and unsorted; six are
+        withheld. The 7,165 beyond them are not printed because they would fill
+        eleven more pages.
       items:
         - "Uniagency"
         - "LEGO"

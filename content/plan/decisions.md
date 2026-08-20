@@ -102,11 +102,15 @@ distance a cover gets one shape, one colour and one word cluster.
 - The other three variants stay in the codebase and in `cover-options.html`.
   They cost nothing, and the comparison is worth being able to re-run. They are
   not live: `coverVariant` in `content/book.json` is the single switch.
-- **The cover is `orb`, decided 20 August 2026.** `cover-03-circular-systems`
-  was made, the comparison was re-run at trim, and the circle won. This note
-  had said `orb` could not be judged until the drawing existed, because it had
-  only ever been seen as the square plate clipped to a circle. That was right:
-  the drawing changes the treatment completely.
+- **The cover is `bleed`, re-decided 20 August 2026, the same day `orb` was
+  tried.** With the drawing finally made, `orb` went live for a few hours and
+  Adam's verdict on seeing it against the proof was unambiguous: the old cover
+  was "100% better". So `bleed` is live again and `orb` returns to being a
+  comparison in `cover-options.html`. Everything below about the orb treatment
+  stays true and stays built — the unclipped `--drawn` handling, the regrounded
+  artwork — so the comparison remains honest if it is ever re-run. The lesson
+  worth keeping: the composition won the comparison at trim, and lost against
+  the felt book. Judge covers on the proof.
 
   Re-running it turned up a fault the fallback had hidden. `.cover__orb` clips
   to a circle, which is how a square plate became one. The drawn artwork is

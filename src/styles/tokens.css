@@ -72,14 +72,28 @@
      nowhere else — see README > Typography.                                 */
   /* Resolved by build/fonts.css, which knows whether the licensed display face
      is present on this machine. The fallback here is what a fresh clone gets. */
-  --font-display: var(--display-family, "Fraunces", "Hoefler Text", serif);
-  --font-text:    "Hanken Grotesk", "Avenir Next", "Helvetica Neue", Helvetica, sans-serif;
+  --font-display: var(--display-family, "Fraunces", "Hoefler Text", "Noto Sans JP", "Noto Sans KR", serif);
+  --font-text:    "Hanken Grotesk", "Avenir Next", "Helvetica Neue", Helvetica, "Noto Sans JP", "Noto Sans KR", sans-serif;
   /* The third voice: specimen labels, diagram callouts, field notations.
      This is where the book gets its personality. */
-  --font-note:    "IBM Plex Mono", Menlo, "SF Mono", monospace;
+  --font-note:    "IBM Plex Mono", Menlo, "SF Mono", "Noto Sans JP", "Noto Sans KR", monospace;
   /* The fourth voice: field-note script. Used for a hand in the margin, never
      for anything the reader has to read. */
-  --font-hand:    "Caveat", "Bradley Hand", Noteworthy, cursive;
+  --font-hand:    "Caveat", "Bradley Hand", Noteworthy, "Noto Sans JP", "Noto Sans KR", cursive;
+
+  /* The two Noto names above are the last resort in every stack. The book
+     prints a verbatim data export with Korean, Japanese and Chinese entries in
+     it; no Latin face here has those characters, and left to the machine's own
+     fonts the print path writes them as Type 3 outlines or drops them on the
+     floor. build/fonts.css embeds the few Noto subsets that carry them — see
+     scripts/build.mjs. They are named last, so they are reached only for
+     characters nothing else can set.
+
+     Written out in every stack rather than lifted into one --font-cjk variable,
+     which is the tidier thing and does not work: Vivliostyle's own CSS engine
+     does not resolve a custom property whose value is another custom property.
+     A stack ending in var(--font-cjk) resolves in a browser and silently loses
+     the face in the PDF, which is the exact failure this is here to prevent. */
 
   /* ---- Type scale -------------------------------------------------------
      Two ratios, because one cannot serve both a 104 pt divider and an 8 pt

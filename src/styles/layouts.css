@@ -809,6 +809,21 @@
 
 .material-break { background: var(--ink); }
 .material-break .figure { position: absolute; inset: 0; }
+/* A scrim at the foot, for the same reason the opener has one. This spread
+   grounds to --ink and the type reverses out of it, which assumed the material
+   would be dark. Two of the three are not: cream type measured 1.9:1 on the
+   linen and 1.5:1 on the condensation, which is not type, it is a watermark.
+   Only the foot needs it — the line and the label both sit on the bottom edge,
+   and covering more would flatten the material, which is the whole spread. */
+.material-break::after {
+  content: "";
+  position: absolute;
+  inset: auto calc(-1 * var(--bleed-out)) calc(-1 * var(--bleed-out));
+  height: 38%;
+  background: linear-gradient(to top,
+    rgba(15,14,12,0.62) 0%, rgba(15,14,12,0.26) 52%, rgba(15,14,12,0) 100%);
+  z-index: 1;
+}
 .material-break__line {
   position: absolute;
   right: var(--m-outside);

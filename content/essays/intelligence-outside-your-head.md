@@ -24,10 +24,6 @@ spreads:
       memory finds a central capacity averaging about four chunks. Lists,
       notes, diagrams, and arranged objects let a task hold more structure
       than attention can keep active at once.
-  - type: pull-quote
-    quote: A mind can be distributed without being divided.
-    lede: On what the room is holding
-    image: intelligence-03-orb-web
   - type: reading
     variant: two
     blocks: [flow-2a, flow-2b]

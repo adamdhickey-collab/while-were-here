@@ -618,7 +618,7 @@
       "role": "ground",
       "origin": "generated",
       "composite": false,
-      "status": "not generated",
+      "status": "generated",
       "selection": "—",
       "stage": 1
     },
@@ -638,7 +638,7 @@
       "role": "ground",
       "origin": "generated",
       "composite": false,
-      "status": "not generated",
+      "status": "generated",
       "selection": "—",
       "stage": 1
     },
@@ -658,7 +658,7 @@
       "role": "ground",
       "origin": "generated",
       "composite": false,
-      "status": "not generated",
+      "status": "generated",
       "selection": "—",
       "stage": 2
     },
@@ -678,7 +678,7 @@
       "role": "ground",
       "origin": "generated",
       "composite": false,
-      "status": "not generated",
+      "status": "generated",
       "selection": "—",
       "stage": 3
     },
@@ -698,7 +698,7 @@
       "role": "ground",
       "origin": "generated",
       "composite": false,
-      "status": "not generated",
+      "status": "generated",
       "selection": "—",
       "stage": 3
     },
@@ -718,7 +718,7 @@
       "role": "ground",
       "origin": "generated",
       "composite": false,
-      "status": "not generated",
+      "status": "generated",
       "selection": "—",
       "stage": 4
     },
@@ -738,7 +738,7 @@
       "role": "ground",
       "origin": "generated",
       "composite": false,
-      "status": "not generated",
+      "status": "generated",
       "selection": "—",
       "stage": 5
     },
@@ -758,7 +758,7 @@
       "role": "ground",
       "origin": "generated",
       "composite": false,
-      "status": "not generated",
+      "status": "generated",
       "selection": "—",
       "stage": 5
     },
@@ -920,7 +920,7 @@
       "purpose": "The essay opens on this. Thinking that is on the wood, not in the head.",
       "aspect": "1:1",
       "target": "6000 × 6000 px",
-      "status": "not generated",
+      "status": "generated",
       "composite": false
     },
     {
@@ -936,7 +936,7 @@
       "purpose": "Band under the working-memory margin note. The arrangement has to look mid-move, not finished.",
       "aspect": "3:1",
       "target": "9000 × 3000 px",
-      "status": "not generated",
+      "status": "generated",
       "composite": false
     },
     {
@@ -973,7 +973,7 @@
       "purpose": "Band beside the taxi-driver margin note. No faces, no hands on the wheel if it can be avoided.",
       "aspect": "3:1",
       "target": "9000 × 3000 px",
-      "status": "not generated",
+      "status": "generated",
       "composite": false
     },
     {
@@ -989,7 +989,7 @@
       "purpose": "The tall plate. It has to read as waiting, not as tidy.",
       "aspect": "2:3",
       "target": "4000 × 6000 px",
-      "status": "not generated",
+      "status": "generated",
       "composite": false
     },
     {
@@ -1005,7 +1005,7 @@
       "purpose": "On the shoot list in photo-selection-04. The library has nothing like it.",
       "aspect": "1:1",
       "target": "6000 × 6000 px",
-      "status": "not generated",
+      "status": "generated",
       "composite": false
     },
     {
@@ -1021,7 +1021,7 @@
       "purpose": "Band under the 4004 margin note. Not an infographic, and no arrows between the three.",
       "aspect": "3:1",
       "target": "9000 × 3000 px",
-      "status": "not generated",
+      "status": "generated",
       "composite": false
     },
     {
@@ -1054,7 +1054,7 @@
       "purpose": "Band beside the transformer margin note. Candid rule applies; this is the one that will be tempting to stage.",
       "aspect": "3:1",
       "target": "9000 × 3000 px",
-      "status": "not generated",
+      "status": "generated",
       "composite": false
     },
     {
@@ -1070,7 +1070,7 @@
       "purpose": "On the shoot list in photo-selection-04, and the one image in the storyboard that is purely Adam’s to take.",
       "aspect": "2:3",
       "target": "4000 × 6000 px",
-      "status": "not generated",
+      "status": "generated",
       "composite": false
     },
     {
@@ -1086,7 +1086,7 @@
       "purpose": "The opener. It has to look used rather than collected.",
       "aspect": "1:1",
       "target": "6000 × 6000 px",
-      "status": "not generated",
+      "status": "generated",
       "composite": false
     },
     {
@@ -1102,7 +1102,7 @@
       "purpose": "Band under the adoption margin note. No hand, no person; the room has to be empty.",
       "aspect": "3:1",
       "target": "9000 × 3000 px",
-      "status": "not generated",
+      "status": "generated",
       "composite": false
     },
     {
@@ -1135,7 +1135,7 @@
       "purpose": "Band beside the SMS margin note. If anyone in frame is holding a phone the picture is about something else.",
       "aspect": "3:1",
       "target": "9000 × 3000 px",
-      "status": "not generated",
+      "status": "generated",
       "composite": false
     },
     {
@@ -1151,7 +1151,7 @@
       "purpose": "The tall plate. Every function here now lives in one object in a pocket, and the caption says so.",
       "aspect": "2:3",
       "target": "4000 × 6000 px",
-      "status": "not generated",
+      "status": "generated",
       "composite": false
     },
     {
@@ -1167,7 +1167,7 @@
       "purpose": "The opener. Nothing else in frame; the wear is the whole subject.",
       "aspect": "1:1",
       "target": "6000 × 6000 px",
-      "status": "not generated",
+      "status": "generated",
       "composite": false
     },
     {
@@ -1183,7 +1183,7 @@
       "purpose": "Band under the Shikoku margin note. The banality of the lane is the point.",
       "aspect": "3:1",
       "target": "9000 × 3000 px",
-      "status": "not generated",
+      "status": "generated",
       "composite": false
     },
     {
@@ -1216,7 +1216,7 @@
       "purpose": "Band beside the Camino margin note. Photo-selection-04 has real candidates for this row.",
       "aspect": "3:1",
       "target": "9000 × 3000 px",
-      "status": "not generated",
+      "status": "generated",
       "composite": false
     },
     {
@@ -1232,7 +1232,7 @@
       "purpose": "The tall plate. Real stamps, uneven pressure, one of them upside down.",
       "aspect": "2:3",
       "target": "4000 × 6000 px",
-      "status": "not generated",
+      "status": "generated",
       "composite": false
     },
     {
@@ -1248,7 +1248,7 @@
       "purpose": "The closing essay opens where the book opened, which is the point.",
       "aspect": "1:1",
       "target": "6000 × 6000 px",
-      "status": "not generated",
+      "status": "generated",
       "composite": false
     },
     {
@@ -1264,7 +1264,7 @@
       "purpose": "Band under the sunlight margin note. The house must be plain and the systems hairline.",
       "aspect": "3:1",
       "target": "9000 × 3000 px",
-      "status": "not generated",
+      "status": "generated",
       "composite": false
     },
     {
@@ -1297,7 +1297,7 @@
       "purpose": "Band beside the Earth-motion margin note. Nothing beyond the glass may resolve.",
       "aspect": "3:1",
       "target": "9000 × 3000 px",
-      "status": "not generated",
+      "status": "generated",
       "composite": false
     },
     {
@@ -1313,7 +1313,7 @@
       "purpose": "The last tall plate in the book. It should be the quietest.",
       "aspect": "2:3",
       "target": "4000 × 6000 px",
-      "status": "not generated",
+      "status": "generated",
       "composite": false,
       "revision": "A screen print of an empty room was tried here and pulled: a 4:3 separation cropped to 2:3 loses the window, which was the whole subject."
     },

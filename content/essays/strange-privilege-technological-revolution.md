@@ -253,7 +253,7 @@ Learning systems make a different movement. Traditional software follows rules w
 
 <!-- block: flow-2b -->
 
-The public encounter with this change has been unusually direct. Earlier advances in machine learning often arrived inside ranking systems or fraud detection. Their decisions affected daily life without presenting themselves as collaborators. Generative systems appeared in a blank field. A person could ask for a paragraph or a piece of code and watch an answer form. The interface made a research trajectory feel conversational. It also made the weaknesses easy to meet. The same system that produces a clear explanation can invent a source. An image can preserve a difficult lighting condition and misunderstand a hand. Fluency and reliability arrive as separate properties. The user has to learn the difference.
+The public encounter with this change has been unusually direct. Earlier advances in machine learning often arrived inside ranking systems or fraud detection. Their decisions affected daily life without presenting themselves as collaborators. The editor that decides what gets noticed had, by then, acquired account managers. Generative systems appeared in a blank field. A person could ask for a paragraph or a piece of code and watch an answer form. The interface made a research trajectory feel conversational. It also made the weaknesses easy to meet. The same system that produces a clear explanation can invent a source. An image can preserve a difficult lighting condition and misunderstand a hand. Fluency and reliability arrive as separate properties. The user has to learn the difference.
 
 <!-- block: flow-2c -->
 
@@ -275,4 +275,4 @@ The costs are also being built into the ordinary layer. Large systems require co
 
 The paragraph on the screen is selected and revised. A specific noun replaces a vague one. The unsupported claim is removed. One sentence remains exactly as the machine produced it because it does the work cleanly. The final page contains no reliable way to separate the origins. It has become a joint artifact, though responsibility still rests with the person who sends it. This small act is not the whole revolution. It is one of the places where the revolution becomes real. The future enters through repeated decisions about what to accept, what to question, and what should never be made effortless.
 
-<!-- body word count: 1102 -->
+<!-- body word count: 1115 -->

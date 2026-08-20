@@ -101,7 +101,7 @@ spreads:
 
 <!-- block: open -->
 
-The center of the stone step is lower than its edges. Rain has softened the color, but feet made the hollow. Each person approached from the same lane, lifted a body onto the same threshold, and continued inside. No single crossing changed the stone enough to see. The route became visible through repetition. Pilgrimage begins with this plain fact. A place is reached by passing through the distance before it. The body cannot skip the hill because the destination matters. It cannot arrive early by understanding the map. Shoes wear. Water is carried. Weather reaches the skin. An intention that began as a sentence is given weight, duration, and a series of surfaces.
+The center of the stone step is lower than its edges. Rain has softened the color, but feet made the hollow. Each person approached from the same lane, lifted a body onto the same threshold, and continued inside. No single crossing changed the stone enough to see. The route became visible through repetition. Pilgrimage begins with this plain fact. Nothing requires it anymore — whole systems exist so that nobody has to walk anywhere — and the hollow keeps deepening anyway. A place is reached by passing through the distance before it. The body cannot skip the hill because the destination matters. It cannot arrive early by understanding the map. Shoes wear. Water is carried. Weather reaches the skin. An intention that began as a sentence is given weight, duration, and a series of surfaces.
 
 <!-- block: flow-1a -->
 
@@ -139,4 +139,4 @@ Arrival needs a fixed edge. Without one, a long walk can dissolve into mileage. 
 
 The yellow arrow points through a residential street where laundry moves above parked cars. Nothing in the lane announces that it belongs to an ancient route. A walker follows it past a bakery and a road crew lifting stones. Pilgrimage does not remove ordinary life from the path. It threads purpose through it. The sacred route uses the same pavement as errands and deliveries. That may be why it can return a person to daily life without pretending daily life has been replaced. The destination matters, but the road is made from the world already here. The final marker is reached one ordinary step after another.
 
-<!-- body word count: 1104 -->
+<!-- body word count: 1123 -->

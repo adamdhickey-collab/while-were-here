@@ -109,10 +109,10 @@ A human body is full of the same kind of order. Cells exchange signals and repai
 
 <!-- block: flow-4a -->
 
-Human systems do this too. A footpath appears where enough people cut the same corner. A language shifts because millions of speakers shorten sounds, borrow terms, mishear phrases, and repeat what survives. A city grows around old property lines and routes to water. Later transit lines inherit those earlier choices. Traffic gathers on a street because drivers avoid another street, then moves again because enough drivers make the same correction. Nobody designed the total result, even when thousands of people designed pieces of it. The system carries intention without having a single intention of its own. That is why it can be useful, wasteful, durable, and difficult to change at the same time.
+Human systems do this too. A footpath appears where enough people cut the same corner. A language shifts because millions of speakers shorten sounds, borrow terms, mishear phrases, and repeat what survives. A city grows around old property lines and routes to water. Later transit lines inherit those earlier choices. Traffic gathers on a street because drivers avoid another street, then moves again because enough drivers make the same correction. Nobody designed the total result, even when thousands of people designed pieces of it. The system carries intention without having a single intention of its own. That is why it can be useful, wasteful, durable, and difficult to change at the same time. The newest of these footpaths is worn by glances instead of feet, and nobody designed its total result either.
 
 <!-- block: flow-4b -->
 
 The line of ants is thinner when the pavement cools. A bicycle passes through it. For a few seconds the route is broken. Ants circle the gap and touch the ground with their antennae. Some return to the curb. Others find the trace on the far side. The line reforms, not exactly where it was, but close enough to reach the same opening. Nothing announces that the repair is complete. There is only movement where movement had stopped. By morning, a different obstacle may bend the route somewhere else. The pattern will persist by changing. The system survives because no single part contains it. It is distributed among the bodies, the pavement, the scent, and the next response.
 
-<!-- body word count: 1234 -->
+<!-- body word count: 1254 -->

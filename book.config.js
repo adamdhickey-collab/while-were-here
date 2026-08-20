@@ -41,7 +41,9 @@ export const geometry = {
     // breaks and credits, with a spread of slack.
     // MEASURED 19 Aug 2026: the full eight-essay book builds to exactly 130
     // pages, which is the ceiling. This is now the actual count, not a target.
-    // There is no slack left: any spread added has to take one out.
+    // There is no slack left: any spread added has to take one out. That has
+    // already happened once — essay 01's seventh spread came back and the
+    // blank between the cover and the half title paid for it.
     pageCount: 130,        // actual, and the ceiling at this printer
     paperCaliper: 0.17,    // mm per leaf — PROVISIONAL AND ALMOST CERTAINLY LOW.
                            // Saal prints this book on FUJIFILM Crystal Archive HD

@@ -64,7 +64,7 @@ spreads:
   - type: reading
     variant: two
     subhead: The Ordinary Is Not the Interruption
-    blocks: [s6a+s6b+s7a+s7b, s8a+s8b+s9a+s9b]
+    blocks: [s6a+s6b, s7a+s7b]
     noteOn: verso
     marginNote: The route repeats. The world does not.
     handOn: verso
@@ -73,6 +73,9 @@ spreads:
       at: over
       rotate: -2.5
       width: 62%
+  - type: reading
+    variant: two
+    blocks: [s8a+s8b, s9a+s9b]
   - type: closing
     line: Maybe the ordinary days were the important parts.
     coda: We just didn’t know what they were worth yet.

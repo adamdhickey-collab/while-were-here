@@ -234,7 +234,44 @@ line was already making. Nothing conceptual removed.
 - *One more ridiculous conversation*, one of six.
 - *We'll want something far less dramatic*, which the list immediately says.
 
-**This does not close the gap, and it was never going to.** The density is
+## Resolved the same day: the seventh spread came back
+
+The cuts above were the wrong lever, and the measurement says so plainly.
+
+Essay 01 was squeezed from seven spreads to six under the old four-to-six board
+rhythm, which left its second reading spread carrying **589 words, four blocks
+to a column**, where every other essay puts one block per column. That, not the
+word count, was the 42 percent.
+
+**The seventh spread is restored**, split exactly as it was before the cut:
+`[s6a+s6b, s7a+s7b]` and `[s8a+s8b, s9a+s9b]`. Measured again across the proof:
+
+| | Before | After |
+| --- | ---: | ---: |
+| Essay 01 ink coverage | 42.0% | **25.4%** |
+| Every other essay | 24.9 – 27.2% | 24.9 – 27.2% |
+
+The book now has one texture instead of an opening essay twice as dense as the
+rest of it.
+
+**Two pages had to come from somewhere**, because 130 is the printer's ceiling.
+They came from the blank page that sat between the front cover and the half
+title. Removing it saves the two pages *and* moves the half title onto a recto,
+which is where a half title belongs and where it had never been.
+
+**The 56 words are still cut, and they do not have to be.** They were removed to
+narrow a gap that turned out to be structural. Every one of them is repetition
+by the standard this file has always used, so the essay is tighter for it, but
+the original reason no longer applies. Veto any of them and they go straight
+back at no cost in pages.
+
+---
+
+## The argument that no longer applies
+
+*Kept because the reasoning was sound at the time and the options were real.*
+
+The density is
 structural. Essay 01 carries 1,330 words across six spreads, and its second
 reading spread alone holds 589 of them, four blocks to a column, because the
 essay was squeezed from seven spreads to six under the old four-to-six board

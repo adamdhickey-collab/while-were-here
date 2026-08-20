@@ -1,7 +1,6 @@
 # What to do next
 
-Three jobs for ChatGPT and one for you. Do them in any order; job 1 is the one
-that unblocks pages.
+Three jobs for ChatGPT. Job 1 is the one that unblocks pages. Job 4 is done.
 
 ## Where the book is
 
@@ -13,7 +12,7 @@ that unblocks pages.
 | Cover | Settled: `bleed`. Subtitle settled. Both closed, see `content/plan/decisions.md`. |
 | Essays | **2 of 8** laid out in the repo. Six exist as drafts elsewhere and are not in repo format. |
 | Field notes | 4 planned, **1** in the sequence, **0 of 4** paragraphs written. |
-| Images | 28 made and placed. **9 unmade** (8 grounds + the orb cover). 4 personal photographs chosen but not copied in. |
+| Images | 33 made and placed, including all four field-note photographs. **9 unmade** (8 grounds + the orb cover). |
 | Current extent | 42 interior pages. Target is 128. |
 
 The gap between 42 and 128 is almost entirely essays 3 to 8. Everything else is
@@ -28,174 +27,22 @@ save it to `content/essays/`, run `npm run dev`, and look at the overflow
 outlines before commissioning the next one. Do essay 3 first and check the
 pacing holds; then the remaining five can go out in a batch.
 
-The block is written for the third essay. For the others, change the title and
-part in the one bolded line near the middle and change `part`, `stage`,
-`partTitle` and `number` in the frontmatter example:
+Each essay has its own file, already filled in with its title, part, stage and
+frontmatter values. Open one and paste the whole fenced block into ChatGPT:
 
-| # | Essay | Part | stage |
+| # | File | Essay | Part |
 | --- | --- | --- | --- |
-| 03 | The Beauty of Systems Nobody Designed | II | 2 |
-| 04 | The Intelligence Outside Your Head | II | 3 |
-| 05 | The Strange Privilege of Being Alive During a Technological Revolution | III | 3 |
-| 06 | The Last Generation That Remembers the Before-Time | III | 4 |
-| 07 | Why Humans Need Pilgrimages | IV | 5 |
-| 08 | While We're Here | IV | 5 |
+| 03 | `prompts/essays/03-systems-nobody-designed.md` | The Beauty of Systems Nobody Designed | II |
+| 04 | `prompts/essays/04-intelligence-outside.md` | The Intelligence Outside Your Head | II |
+| 05 | `prompts/essays/05-strange-privilege.md` | The Strange Privilege of Being Alive During a Technological Revolution | III |
+| 06 | `prompts/essays/06-before-time.md` | The Last Generation That Remembers the Before-Time | III |
+| 07 | `prompts/essays/07-pilgrimages.md` | Why Humans Need Pilgrimages | IV |
+| 08 | `prompts/essays/08-while-were-here.md` | While We're Here | IV |
 
-**Paste everything in this block into ChatGPT:**
-
-````text
-
-You are drafting one essay for a printed book. Read all of this before writing.
-
-## The book
-
-*While We're Here* by Adam Hickey. A 300 x 300 mm hardcover, printed layflat on
-heavy photographic paper. Eight essays, 128 pages, roughly half of it imagery.
-It is a coffee-table book you can read straight through, or open at random on a
-Tuesday. Subject matter is attention, weather, water, machines that are learning
-to think, and the people who will not always be here.
-
-It is not a blog, not a newsletter, and not a self-help book. There is no
-listicle structure, no "here are five ways," no takeaway box, and no second
-person imperative telling the reader to live differently.
-
-## The eight essays and their parts
-
-**I. Look Again** — Why Ordinary Days May Be the Point of Life · The Secret Life
-of Attention
-**II. What Are We?** — The Beauty of Systems Nobody Designed · The Intelligence
-Outside Your Head
-**III. The World Is Changing** — The Strange Privilege of Being Alive During a
-Technological Revolution · The Last Generation That Remembers the Before-Time
-**IV. While We're Here** — Why Humans Need Pilgrimages · While We're Here
-
-The book is a progression, not a collection: observe, notice, understand,
-expand, integrate. Part I is calm and domestic and light. Parts II and III get
-denser and darker, literally so, since those pages invert to a dark ground. Part
-IV comes back down. Write to the register of the part the essay sits in.
-
-**The essay you are drafting is: The Beauty of Systems Nobody Designed, in Part II.**
-
-## The length budget, which is not negotiable
-
-An essay occupies five to eight spreads. A spread is two facing pages. The two
-finished essays run:
-
-| Essay | Spreads | Words |
-| --- | --- | --- |
-| Why Ordinary Days May Be the Point of Life | 6 | 1,389 |
-| The Secret Life of Attention | 8 | 1,005 |
-
-**Target 1,100 to 1,400 words of body prose.** Not 2,000. The pages are large,
-the type is 13 pt, and images take roughly half the space. Prose arrives in
-discrete blocks of **60 to 210 words**, each of which has to fit inside a fixed
-page. Nothing reflows. A block that runs long does not push to the next page, it
-overflows and breaks the layout.
-
-Write to the budget from the start. Do not write long and offer to cut.
-
-## What an essay actually consists of
-
-Body prose is maybe 60% of the work. The rest is apparatus, and it is what makes
-the book feel like a field guide rather than a document. Deliver all of it.
-
-- **Deck.** One sentence under the title. States the turn the essay makes, not
-  what the essay is about. Existing example: *"Attention is not a beam you point
-  at the world. It is the thing quietly deciding what the world is going to be."*
-- **Prose blocks.** Six to ten of them, 60 to 210 words each, in reading order.
-- **One pull quote.** Under 20 words, aphoristic, load-bearing. It gets a whole
-  spread to itself, so it has to survive that. Existing example: *"You have never
-  once experienced a room. You have experienced a paraphrase."*
-- **Two or three margin notes.** 25 to 45 words. **Factual, with real numbers.**
-  This is where the science lives. Existing example: *"The average smartphone is
-  unlocked between 58 and 80 times a day. Nobody decided this. It is the sum of
-  very small decisions, none of which felt like a decision."* If you are not
-  certain of a figure, say so explicitly in brackets so it can be checked. Do
-  not invent statistics.
-- **One set of field notes.** Three to five observational lines, present tense,
-  no conclusion drawn. They read as somebody watching, not somebody explaining.
-- **One notice.** Two or three sentences instructing the reader to do one small
-  thing. This is the only place the imperative is allowed. Existing example:
-  *"Walk five minutes of a route you know by heart. Find one thing you have never
-  seen before. It is there. It has been there the whole time."*
-- **Two or three image subjects.** Plain description of what should be
-  photographed or drawn, one sentence each. Documentary and quiet. No one
-  looking at the camera. Say what the picture is evidence of.
-- **One hand annotation.** Two to four words, as if scribbled in the margin. It
-  must not read as a sentence. Existing example: *"it isn't trying."*
-- **One closing.** 50 to 80 words. It lands, it does not summarize.
-
-## Voice
-
-Plain, concrete, unhurried. Short declaratives. Specific nouns. The science is
-load-bearing and always arrives as fact rather than as wonder, because the
-wonder is the reader's job and the book does not do it for them.
-
-Do this:
-- Open on a physical particular, not on a thesis
-- Let one concrete observation carry a paragraph
-- Trust the reader to make the leap and then stop talking
-- Use real numbers, real species, real mechanisms
-
-Do not do this:
-- No em dashes anywhere. Use a period or a comma.
-- No rhetorical questions
-- No "imagine that," "picture this," "here's the thing," "the truth is"
-- No three-item parallel lists where two would do
-- No paragraph that restates the previous paragraph in warmer language
-- No sentence a picture is already making
-- Nothing mystical or psychedelic in register. This is a book about noticing,
-  and it must never sound like a book about transcendence.
-
-## Deliver it in exactly this format
-
-Markdown, frontmatter first, then prose with block markers. Copy the shape
-literally.
-
-```markdown
----
-id: short-slug
-number: "04"
-part: II
-stage: 2
-partTitle: What Are We?
-title: The Full Title of the Essay
-deck: One sentence stating the turn.
-runningHead: Short Title
-readingTime: 6
-pullQuote: Under twenty words, aphoristic.
-marginNotes:
-  - Factual note with a real number in it.
-  - A second one.
-fieldNotes:
-  - Observational line, present tense.
-  - Another.
-  - A third.
-notice: >-
-  Two or three sentences telling the reader to do one small thing.
-hand: two to four words
-images:
-  - One sentence describing a picture, and what it is evidence of.
-  - A second.
-closing: Fifty to eighty words that land rather than summarize.
----
-
-<!-- block: open -->
-The opening block. Sixty to two hundred and ten words.
-
-<!-- block: flow-1a -->
-The next block.
-
-<!-- block: flow-1b -->
-And so on, six to ten blocks in reading order.
-```
-
-Do not add spread types or layout instructions. Layout is decided in the repo,
-not in the draft. Your job is the writing and the apparatus.
-
-Before you send it back, count the words in the body blocks and state the total.
-If it is over 1,400, cut it yourself and send the cut version.
-````
+They regenerate from [`content/plan/drafting-brief.md`](../content/plan/drafting-brief.md)
+with `npm run draft`, so the brief stays the one place to change how all six ask.
+Essays 05 and 06 carry an extra line about writing for a dark ground, because
+those two are where the page inverts.
 
 When it comes back, save it as `content/essays/<id>.md` using the `id` from its
 own frontmatter, add it to `sequence` in `content/book.json`, then run
@@ -305,31 +152,51 @@ instead, which is why a proof PDF is also the writing list.
 
 ---
 
-## Job 4 — yours, not ChatGPT's
+## Job 4 — done
 
-Four personal photographs are chosen but the files are not in the repo. They are
-identified in `content/plan/photo-selection-02.md` (the lake is B011 /
-IMG_5212). Export them at the longest edge available, crop square, do not
-retouch, and save as:
+All four field-note photographs are in the repo, square, at native resolution,
+unretouched. Two things came out of it that need you:
 
-```
-public/images/personal/field-note-01-lake.jpg
-public/images/personal/field-note-02-engine-plate.jpg
-public/images/personal/field-note-03-street-and-dog.jpg
-public/images/personal/field-note-04-firepit.jpg
-```
-
-Target 3600 × 3600 px. Preserve the imperfection, per the PERSONAL role.
+- **Field note 2 changed subject.** The engine plate is 883 px and cannot hold a
+  300 mm page, so the verso is now the mower from above and the plate runs as a
+  taped specimen card on the recto at 70 mm. That is the size
+  [photo-selection-02](../content/plan/photo-selection-02.md) always specified
+  for it.
+- **Field note 3 cannot be square.** At square, the two figures stop being
+  incidental and become a couple facing the camera, which is the one thing the
+  candid rule forbids. Run it as a wide band, or give the slot to another frame.
+  See [photo-selection-04](../content/plan/photo-selection-04.md).
 
 ---
 
-## Two questions still open, for you not for ChatGPT
+## The library has been read again
 
-- **Where are the six existing essay drafts?** `content/contents.json` records
-  essays 3 to 8 as "drafted", but nothing is in the repo. If those drafts are
-  good, job 1 becomes a rewrite to the format and the length budget rather than
-  a fresh commission, which is faster and keeps your voice.
+All 672 unique frames across all three folders, against what the book is short
+of now. 41 selected, 6 blocked on rights, written up in
+[photo-selection-04](../content/plan/photo-selection-04.md).
+
+The one to look at first is the vaulted underground baths at 3213 × 5712. Stage
+III is specified as "the page inverts, luminous line work on a dark ground" and
+that photograph already is one. [decisions.md](../content/plan/decisions.md)
+currently defers the Stage III proof until an essay needs it; this is the
+cheapest way to stop deferring it.
+
+Five things the library does not contain and no re-reading will produce. They
+have to be shot, and four of them are within a mile of the house: a kitchen
+table with a laptop while domestic life goes on around it, the dog under the
+desk, before-time objects, a desire path, and a repeated view across four
+seasons.
+
+---
+
+## Still open, for you not for ChatGPT
+
+- **The six essay drafts are not on this machine.** `content/contents.json`
+  records essays 3 to 8 as "drafted"; nothing matching those titles exists
+  anywhere under `~/dev`, `~/Desktop`, `~/Documents` or `~/Downloads`. If they
+  exist they are in ChatGPT. Worth searching that thread before commissioning
+  fresh ones, because a rewrite to the format and the length budget keeps your
+  voice and a fresh draft does not.
 - **Stages III and IV have never rendered.** The dark-ground inversion is the
-  book's main structural idea and it is currently only colour tokens. Essay 4 or
-  5 will be the first to use it. Setting `stage: 3` on an existing essay for one
-  build would prove it now, and costs one line.
+  book's main structural idea and it is still only colour tokens. Essay 05 will
+  be the first to need it, and the baths photograph would prove it now.

@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "description": "WHILE WE'RE HERE \u2014 a print-first coffee-table book built with HTML, CSS and Vivliostyle.",
+  "description": "WHILE WE'RE HERE — a print-first coffee-table book built with HTML, CSS and Vivliostyle.",
   "author": "Adam Hickey",
   "scripts": {
     "build": "node scripts/build.mjs",
@@ -22,7 +22,8 @@
     "brief": "node scripts/prompts.mjs --outstanding",
     "facts": "node scripts/facts.mjs",
     "facts:strict": "node scripts/facts.mjs --strict",
-    "separate": "./.venv/bin/python scripts/separate.py"
+    "separate": "./.venv/bin/python scripts/separate.py",
+    "draft": "node scripts/draft.mjs"
   },
   "devDependencies": {
     "@fontsource-variable/fraunces": "^5.3.0",

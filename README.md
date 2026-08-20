@@ -253,7 +253,7 @@ embeds exactly these faces:
 | Voice | Board specifies | Currently | Why |
 | --- | --- | --- | --- |
 | Display | GT Super Bold | **Falutin Title** (purchased), Fraunces fallback | A Didone display cut with teardrop terminals, 7 weights. Licensed from Plattner Type and **not in this repo** — see [LICENSING.md](LICENSING.md). Builds without it fall back to Fraunces automatically. |
-| Body | Söhne Buch | **Familjen Grotesk** | A Swedish editorial grotesque. Chosen over Archivo, which was correct and characterless — this one has the same cleanliness with letterforms that carry some of the display face's personality. |
+| Body | Söhne Buch | **Hanken Grotesk** | A humanist grotesque, the warmest of the four candidates — calligraphic residue in the letterforms. Chosen 20 Aug 2026 for friendliness over Familjen Grotesk, which stays in the type tester for comparison. Body copy re-measured at 65 characters per line after the swap. |
 | Annotations | GT America Mono | **IBM Plex Mono** | Neo-grotesque mono, warmer than Roboto Mono. |
 | Hand | script accent | **Caveat** | Natural handwriting, closest to the board's sample. |
 

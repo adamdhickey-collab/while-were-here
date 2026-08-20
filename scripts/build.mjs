@@ -601,16 +601,20 @@ const FONTS = [
     family: 'Fraunces', weight: '600', style: 'normal' },
   { file: '@fontsource/fraunces/files/fraunces-latin-700-normal.woff2',
     family: 'Fraunces', weight: '700', style: 'normal' },
-  { file: '@fontsource/familjen-grotesk/files/familjen-grotesk-latin-400-normal.woff2',
-    family: 'Familjen Grotesk', weight: '400', style: 'normal' },
-  { file: '@fontsource/familjen-grotesk/files/familjen-grotesk-latin-400-italic.woff2',
-    family: 'Familjen Grotesk', weight: '400', style: 'italic' },
-  { file: '@fontsource/familjen-grotesk/files/familjen-grotesk-latin-500-normal.woff2',
-    family: 'Familjen Grotesk', weight: '500', style: 'normal' },
-  { file: '@fontsource/familjen-grotesk/files/familjen-grotesk-latin-600-normal.woff2',
-    family: 'Familjen Grotesk', weight: '600', style: 'normal' },
-  { file: '@fontsource/familjen-grotesk/files/familjen-grotesk-latin-700-normal.woff2',
-    family: 'Familjen Grotesk', weight: '700', style: 'normal' },
+  /* Hanken Grotesk — the body voice from 20 Aug 2026. The warmest of the four
+     candidates, chosen for exactly that: humanist skeleton, calligraphic
+     residue in the letterforms. Familjen moves down to the candidates so the
+     comparison stays runnable in the type tester. */
+  { file: '@fontsource/hanken-grotesk/files/hanken-grotesk-latin-400-normal.woff2',
+    family: 'Hanken Grotesk', weight: '400', style: 'normal' },
+  { file: '@fontsource/hanken-grotesk/files/hanken-grotesk-latin-400-italic.woff2',
+    family: 'Hanken Grotesk', weight: '400', style: 'italic' },
+  { file: '@fontsource/hanken-grotesk/files/hanken-grotesk-latin-500-normal.woff2',
+    family: 'Hanken Grotesk', weight: '500', style: 'normal' },
+  { file: '@fontsource/hanken-grotesk/files/hanken-grotesk-latin-600-normal.woff2',
+    family: 'Hanken Grotesk', weight: '600', style: 'normal' },
+  { file: '@fontsource/hanken-grotesk/files/hanken-grotesk-latin-700-normal.woff2',
+    family: 'Hanken Grotesk', weight: '700', style: 'normal' },
   { file: '@fontsource/ibm-plex-mono/files/ibm-plex-mono-latin-400-normal.woff2',
     family: 'IBM Plex Mono', weight: '400', style: 'normal' },
   { file: '@fontsource/caveat/files/caveat-latin-500-normal.woff2',
@@ -621,7 +625,7 @@ const FONTS = [
    at trim size against real copy rather than from a specimen card. Static
    instances, for the same reason as everything else here: a variable instance
    is written into the PDF as Type 3 glyph procedures. Delete the ones that lose. */
-const CANDIDATES = ['archivo', 'schibsted-grotesk', 'hanken-grotesk', 'epilogue']
+const CANDIDATES = ['archivo', 'schibsted-grotesk', 'familjen-grotesk', 'epilogue']
   .flatMap((name) => [
     ['400', 'normal'], ['400', 'italic'], ['500', 'normal'], ['600', 'normal'],
   ].map(([weight, style]) => ({

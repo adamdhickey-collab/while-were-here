@@ -5,7 +5,7 @@
 Every technical number in this book is listed here with the source it came from.
 Where a figure is contested, small-sample or easy to misstate, the note says so.
 
-5 verified · 1 outstanding
+10 verified · 1 outstanding
 
 ---
 
@@ -57,6 +57,57 @@ NASA Jet Propulsion Laboratory. *Magnified Look at a Meteorite on Mars (PIA12191
 **Note.** Officially Meridiani Planum 006. Composition confirmed by Opportunity's alpha particle X-ray spectrometer. The label is visible in the photograph and says '(Full-Scale Model)', so the caption must not imply the object is the meteorite.
 
 *Used in photo T033 — plate caption.*
+
+---
+
+### European starlings in a large flock interact with about six or seven nearby birds, whatever the physical distance between them, so a turn can cross the flock through local updates with nobody giving an order.
+
+Ballerini M, Cabibbo N, Candelier R, Cavagna A, Cisbani E, Giardina I, Lecomte V, Orlandi A, Parisi G, Procaccini A, Viale M, Zdravkovic V. *Interaction ruling animal collective behavior depends on topological rather than metric distance: Evidence from a field study*. PNAS 105(4): 1232-1237. 2008. <https://www.pnas.org/doi/10.1073/pnas.0711437105>
+
+**Note.** The finding is TOPOLOGICAL, not metric: a bird tracks a fixed NUMBER of neighbours, six to seven, rather than everything inside a fixed radius. That distinction is the whole reason the flock holds together when it changes density, and writing it as "the birds within a few metres" reverses the paper. Do not add a leader anywhere in the sentence.
+
+*Used in essays/beauty-of-systems-nobody-designed.md — marginNote; essays/beauty-of-systems-nobody-designed.md — flow-1b.*
+
+---
+
+### Given food at positions matching cities around Tokyo, Physarum polycephalum built a network balancing cost, transport efficiency and fault tolerance at levels comparable to the rail system.
+
+Tero A, Takagi S, Saigusa T, Ito K, Bebber DP, Fricker MD, Yumiki K, Kobayashi R, Nakagaki T. *Rules for Biologically Inspired Adaptive Network Design*. Science 327(5964): 439-442. 2010. <https://www.science.org/doi/10.1126/science.1177894>
+
+**Note.** Write "comparable", never "identical" or "the same as". The organism did not reproduce the rail map; the two networks score similarly on cost, efficiency and resilience. It also has no brain and no nervous system, which is the point, so do not soften that into "a simple brain".
+
+*Used in essays/beauty-of-systems-nobody-designed.md — marginNote; essays/beauty-of-systems-nobody-designed.md — flow-2a.*
+
+---
+
+### A 2016 estimate for a seventy-kilogram reference man counted about thirty trillion human cells and thirty-eight trillion bacterial cells.
+
+Sender R, Fuchs S, Milo R. *Revised Estimates for the Number of Human and Bacteria Cells in the Body*. PLOS Biology 14(8): e1002533. 2016. <https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1002533>
+
+**Note.** These are estimates for a defined 70 kg reference man, not universal counts, and they carry real methodological uncertainty. The load-bearing point is that the two populations are the SAME ORDER OF SIZE.
+**Replaces.** The often-repeated claim that bacterial cells outnumber human cells ten to one. This paper is the correction to it, and the ratio is close to 1:1. Do not reintroduce the 10:1 figure.
+
+*Used in essays/beauty-of-systems-nobody-designed.md — marginNote.*
+
+---
+
+### The subterranean nests of Apicotermes termites, with their parallel floors and connecting ramps, form through local building acts in which new structure changes where later material is likely to be placed.
+
+Heyde A, Guo L, Jost C, Theraulaz G, Mahadevan L. *Self-organized biotectonics of termite nests*. PNAS 118(5): e2006985118. 2021. <https://www.pnas.org/doi/10.1073/pnas.2006985118>
+
+**Note.** The prose is a plain-language compression of a model, not a behavioural account observed from one worker. Do not write that a termite "decides" anything, and do not describe the nest as built to a plan the colony holds.
+
+*Used in essays/beauty-of-systems-nobody-designed.md — flow-2b.*
+
+---
+
+### Honey-bee cells begin closer to cylinders and become hexagonal through construction behaviour and physical shaping, with new cells starting in the grooves between cells already built. The exact mechanism is still debated.
+
+Nazzi F. *The hexagonal shape of the honeycomb cells depends on the construction behavior of bees*. Scientific Reports 6: 28341. 2016. <https://www.nature.com/articles/srep28341>
+
+**Note.** The groove rule is a proposed behavioural mechanism supported by observation and simulation, not a settled result. Keep the hedge. The competing account is that wax flows and surface tension do the shaping, and the essay must not pick a winner.
+
+*Used in essays/beauty-of-systems-nobody-designed.md — flow-2c.*
 
 
 ---

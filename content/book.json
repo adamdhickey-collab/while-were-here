@@ -46,6 +46,14 @@
       "source": "field-notes/01-the-lake.md"
     },
     {
+      "type": "divider",
+      "source": "sections/part-2.md"
+    },
+    {
+      "type": "essay",
+      "source": "essays/beauty-of-systems-nobody-designed.md"
+    },
+    {
       "type": "blank"
     },
     {

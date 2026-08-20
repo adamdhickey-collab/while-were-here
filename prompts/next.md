@@ -10,10 +10,10 @@ Three jobs for ChatGPT. Job 1 is the one that unblocks pages. Job 4 is done.
 | Print geometry | 300 × 300 mm, settled, provisional on the printer's own template. |
 | Type | Settled. Falutin Title / Familjen Grotesk / IBM Plex Mono / Caveat. |
 | Cover | Settled: `bleed`. Subtitle settled. Both closed, see `content/plan/decisions.md`. |
-| Essays | **2 of 8** laid out in the repo. Six exist as drafts elsewhere and are not in repo format. |
-| Field notes | 4 planned, **1** in the sequence, **0 of 4** paragraphs written. |
+| Essays | **3 of 8** laid out. Essay 03 is in, with a Part II divider. 04 to 08 are being drafted. |
+| Field notes | All four written. One is in the sequence; the other three land as their parts arrive. |
 | Images | 33 made and placed, including all four field-note photographs. **9 unmade** (8 grounds + the orb cover). |
-| Current extent | 42 interior pages. Target is 128. |
+| Current extent | 58 interior pages. Target is 128. |
 
 The gap between 42 and 128 is almost entirely essays 3 to 8. Everything else is
 finishing work.
@@ -200,3 +200,11 @@ seasons.
 - **Stages III and IV have never rendered.** The dark-ground inversion is the
   book's main structural idea and it is still only colour tokens. Essay 05 will
   be the first to need it, and the baths photograph would prove it now.
+
+- **The four field-note paragraphs are scene drafts, not verified memoir.** They
+  were written from the photographs and the briefs, so the small physical
+  details are plausible rather than remembered: what the garage sounded like,
+  how long you stood at the seawall, which log hissed. Read them against memory
+  and correct anything that did not happen. They are marked
+  `status: written`, which means they set as prose rather than as a brief, not
+  that they have been checked.

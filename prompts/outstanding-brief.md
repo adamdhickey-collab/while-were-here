@@ -4,7 +4,7 @@
 
 **Book:** *While We're Here* — Adam Hickey. A 300 × 300 mm hardcover of short
 essays on attention, ordinary life, hidden systems and being alive. Twenty-three
-images are already made and placed. These 9 are what remain, and they
+images are already made and placed. These 15 are what remain, and they
 are the two registers the set is currently missing entirely.
 
 ## What the book already looks like
@@ -45,6 +45,140 @@ thing. Nothing in frame should let a viewer work out the scale.
 
 ---
 
+## Recurring assets
+
+### part-2-divider-branching
+
+**Save as** `public/images/illustration/part-2-divider-branching.png` · 1:1 · target 6000 × 6000 px
+**Where it goes** Part divider (verso, full bleed)
+**Why it is there** The divider for Part II. It has to say "look at the pattern, not the thing" before a single essay does.
+
+```text
+An illustrated plate from a vintage scientific field guide, hand-drawn in ink on warm cream paper. Imperfect geometry — circles slightly out of true, lines drawn by hand, everything a degree or two off square. Field-guide illustration crossed with vintage scientific diagram, cartography and marginalia: arrows, rings, timelines, measure scales, tiny human figures. Screenprint and risograph texture with visible ink density variation and slight misregistration. Charcoal near-black ink on a warm cream ground (#F3EFE5), with restrained accents of muted rust (#A95738), faded cobalt (#536D8E) and moss green (#68735B). Intelligent, tactile, playful, handmade.
+
+Four branching systems at one scale and one line weight: a river delta, a root mass, a street grid, a capillary bed.
+
+Square frame (1:1).
+
+Avoid: gradients; glossy 3D or rendered lighting; generic vector people; corporate infographic style; SaaS or explainer-video illustration; polished icon sets; decorative complexity with no conceptual purpose; fake handwritten paragraphs or invented lettering; any legible text; psychedelic imagery; symmetry for its own sake.
+```
+
+### cover-03-circular-systems
+
+**Save as** `public/images/illustration/cover-03-circular-systems.png` · 1:1 · target 6000 × 6000 px
+**Where it goes** Front cover — the `orb` variant
+**Why it is there** An alternative cover artwork for the `orb` treatment. A circle on a square is the strongest graphic move available on a 300 mm cover, and it makes the title's 'here' mean somewhere.
+**Watch for** Transparent PNG or warm cream ground. **Not the Earth**: no recognisable continents, no coastlines, no blue-marble colouring, no latitude/longitude graticule, no space, no stars, no glow or lens flare, no terminator line dividing day from night. The circle is drawn — very slightly out of true, with a hand-inked edge — not rendered as a lit sphere. Keep the upper third of the circle quieter: on the `orb` cover the title sits above and slightly over it.
+
+```text
+An illustrated plate from a vintage scientific field guide, hand-drawn in ink on warm cream paper. Imperfect geometry — circles slightly out of true, lines drawn by hand, everything a degree or two off square. Field-guide illustration crossed with vintage scientific diagram, cartography and marginalia: arrows, rings, timelines, measure scales, tiny human figures. Screenprint and risograph texture with visible ink density variation and slight misregistration. Charcoal near-black ink on a warm cream ground (#F3EFE5), with restrained accents of muted rust (#A95738), faded cobalt (#536D8E) and moss green (#68735B). Intelligent, tactile, playful, handmade.
+
+The same watercolour-and-ink systems drawing as the existing cover artwork, but composed inside a single circle: a bounded circular field of view, hard-edged, sitting on warm cream paper with nothing outside it. Inside the circle, read as a whole world without ever resolving into the Earth — broad atmospheric bands of teal and slate curving with the sphere near one limb; a swirl of current or weather blooming in rust, amber and coral across the middle; fine contour lines banding the surface the way isobars band a planet; a branching network of hairlines running through it like root systems or river deltas or blood vessels, deliberately impossible to say which. Small plotted points and connecting lines scattered across it. Two or three tiny human figures standing at the very edge of the circle, at the scale of a millimetre, so the size of the thing is unmistakable. A few small circular inset diagrams outside the main circle, in the cream, like detail figures from the same study.
+
+Square frame (1:1).
+
+Avoid: gradients; glossy 3D or rendered lighting; generic vector people; corporate infographic style; SaaS or explainer-video illustration; polished icon sets; decorative complexity with no conceptual purpose; fake handwritten paragraphs or invented lettering; any legible text; psychedelic imagery; symmetry for its own sake.
+```
+
+## The Beauty of Systems Nobody Designed
+
+### systems-01-ants-pavement
+
+**Save as** `public/images/photography/systems-01-ants-pavement.png` · 1:1 · target 6000 × 6000 px
+**Where it goes** Opener (verso, full bleed)
+**Why it is there** The essay opens on this. Evidence that a route can be held by contact alone.
+
+```text
+A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
+
+A line of ants crossing pavement, rerouting around a crack, close and low.
+
+Square frame (1:1).
+
+Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
+```
+
+### systems-02-starling-flock
+
+**Save as** `public/images/photography/systems-02-starling-flock.png` · 3:1 · target 9000 × 3000 px
+**Where it goes** Reading band, across the fold
+**Why it is there** Band under a two-column reading spread. The margin note beside it is the topological-distance finding.
+
+```text
+A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
+
+A starling flock changing direction above bare winter trees, one coherent moving edge.
+
+Very wide band (3:1), figures small in the frame.
+
+Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
+```
+
+### systems-05-physarum-network
+
+**Save as** `public/images/photography/systems-05-physarum-network.png` · 3:1 · target 9000 × 3000 px
+**Where it goes** Reading band, across the fold
+**Why it is there** Band under the spread that carries the Tokyo experiment. The picture has to make the network legible as a network, not as mold.
+
+```text
+A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
+
+A slime mold network on a dish: thick trunks along useful routes, thin branches withdrawing.
+
+Very wide band (3:1), figures small in the frame.
+
+Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
+```
+
+### systems-03-termite-section
+
+**Save as** `public/images/illustration/systems-03-termite-section.png` · 2:3 · target 4000 × 6000 px
+**Where it goes** Image essay (tall)
+**Why it is there** Drawn rather than photographed, because the whole point is a section nobody can stand back and see.
+
+```text
+An illustrated plate from a vintage scientific field guide, hand-drawn in ink on warm cream paper. Imperfect geometry — circles slightly out of true, lines drawn by hand, everything a degree or two off square. Field-guide illustration crossed with vintage scientific diagram, cartography and marginalia: arrows, rings, timelines, measure scales, tiny human figures. Screenprint and risograph texture with visible ink density variation and slight misregistration. Charcoal near-black ink on a warm cream ground (#F3EFE5), with restrained accents of muted rust (#A95738), faded cobalt (#536D8E) and moss green (#68735B). Intelligent, tactile, playful, handmade.
+
+A sectional drawing of a subterranean termite nest: parallel floors, connected ramps, chambers.
+
+Vertical frame (2:3), subject low, generous empty space above.
+
+Avoid: gradients; glossy 3D or rendered lighting; generic vector people; corporate infographic style; SaaS or explainer-video illustration; polished icon sets; decorative complexity with no conceptual purpose; fake handwritten paragraphs or invented lettering; any legible text; psychedelic imagery; symmetry for its own sake.
+```
+
+### systems-04-desire-path
+
+**Save as** `public/images/photography/systems-04-desire-path.png` · 1:1 · target 6000 × 6000 px
+**Where it goes** Pull quote (facing)
+**Why it is there** Faces the pull quote. See content/plan/photo-selection-04.md — this is on the shoot list.
+
+```text
+A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
+
+A worn track cutting a corner across grass, beside the paved path it ignores.
+
+Square frame (1:1).
+
+Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
+```
+
+### ground-03-local-rules-flocking
+
+**Save as** `public/images/illustration/ground-03-local-rules-flocking.png` · 2:1 · target 8000 × 4000 px
+**Where it goes** Under a reading or image-pair spread
+**Why it is there** The essay's claim is that the pattern exists between the parts. This shows the between.
+**Watch for** Transparent PNG. Ink linework and plotted points, plus at most ONE very diffuse wash of a single colour — no hard edges on the wash. It is laid under body copy at 8% (14% on a dark page), so linework stays hairline and the wash stays soft enough to survive being nearly invisible. No text, numerals, labels or legends anywhere. Runs across the fold: keep the densest area off the centre 30 mm.
+
+```text
+A scientific plate in the manner of the cover artwork for this book: fine ink linework, plotted points, small circular inset diagrams, delicate annotation arcs, and occasionally a tiny human figure for scale — everything drawn at a single hairline weight, on a fully transparent background. At most one very diffuse wash of a single colour, soft-edged, behaving like watercolour that has spread into damp paper. It reads as a real study of a real system, drawn by someone who was measuring something. This is a GROUND: it will be laid underneath body copy at roughly 8 to 14 percent opacity, so it must survive being almost invisible, must never fight the text, and must have its density placed where the type is not.
+
+A flocking study: several hundred tiny directional marks, each a short line with a head, arranged so that local alignment builds into one large coherent sweep across the frame without any centre or leader. Fine dotted radius circles around a few individual marks, showing the neighbourhood each one responds to. A diffuse wash of lake blue following the sweep. **Composition: the sweep enters low at one side and exits low at the other, leaving the upper half open for text.**
+
+Wide panoramic frame (2:1). This runs across a two-page spread, so keep the centre calm and place nothing important in the middle 30 mm.
+
+Avoid: any paper, card or background colour — the artwork must sit on full transparency; variable or heavy line weight; hard-edged washes; fills, hatching or shading; text, numerals, labels, scale bars or legends of any kind; frames or borders; drop shadows; a dense area that would darken into a blotch under body copy; perfect radial symmetry; a repeated or tiling motif; infographic or corporate-diagram styling; anything resolving into a recognisable scene or object.
+```
+
 ## Why Ordinary Days May Be the Point of Life
 
 ### ground-01-habituation-decay
@@ -79,25 +213,6 @@ A scientific plate in the manner of the cover artwork for this book: fine ink li
 A signal-filtering plate: a dense field of hundreds of small plotted points and short vectors at one edge, funnelling through a narrow constriction drawn as a few converging hairlines, and emerging on the other side as a mere handful of points. Fine annotation arcs around the constriction, and one tiny human figure at the output side for scale. A diffuse wash of faded cobalt around the dense side only. **Composition: the dense input field occupies the outer third; the middle and inner thirds are sparse, because that is where the title and text sit.**
 
 Square frame (1:1).
-
-Avoid: any paper, card or background colour — the artwork must sit on full transparency; variable or heavy line weight; hard-edged washes; fills, hatching or shading; text, numerals, labels, scale bars or legends of any kind; frames or borders; drop shadows; a dense area that would darken into a blotch under body copy; perfect radial symmetry; a repeated or tiling motif; infographic or corporate-diagram styling; anything resolving into a recognisable scene or object.
-```
-
-## The Beauty of Systems Nobody Designed
-
-### ground-03-local-rules-flocking
-
-**Save as** `public/images/illustration/ground-03-local-rules-flocking.png` · 2:1 · target 8000 × 4000 px
-**Where it goes** Under a reading or image-pair spread
-**Why it is there** The essay's claim is that the pattern exists between the parts. This shows the between.
-**Watch for** Transparent PNG. Ink linework and plotted points, plus at most ONE very diffuse wash of a single colour — no hard edges on the wash. It is laid under body copy at 8% (14% on a dark page), so linework stays hairline and the wash stays soft enough to survive being nearly invisible. No text, numerals, labels or legends anywhere. Runs across the fold: keep the densest area off the centre 30 mm.
-
-```text
-A scientific plate in the manner of the cover artwork for this book: fine ink linework, plotted points, small circular inset diagrams, delicate annotation arcs, and occasionally a tiny human figure for scale — everything drawn at a single hairline weight, on a fully transparent background. At most one very diffuse wash of a single colour, soft-edged, behaving like watercolour that has spread into damp paper. It reads as a real study of a real system, drawn by someone who was measuring something. This is a GROUND: it will be laid underneath body copy at roughly 8 to 14 percent opacity, so it must survive being almost invisible, must never fight the text, and must have its density placed where the type is not.
-
-A flocking study: several hundred tiny directional marks, each a short line with a head, arranged so that local alignment builds into one large coherent sweep across the frame without any centre or leader. Fine dotted radius circles around a few individual marks, showing the neighbourhood each one responds to. A diffuse wash of lake blue following the sweep. **Composition: the sweep enters low at one side and exits low at the other, leaving the upper half open for text.**
-
-Wide panoramic frame (2:1). This runs across a two-page spread, so keep the centre calm and place nothing important in the middle 30 mm.
 
 Avoid: any paper, card or background colour — the artwork must sit on full transparency; variable or heavy line weight; hard-edged washes; fills, hatching or shading; text, numerals, labels, scale bars or legends of any kind; frames or borders; drop shadows; a dense area that would darken into a blotch under body copy; perfect radial symmetry; a repeated or tiling motif; infographic or corporate-diagram styling; anything resolving into a recognisable scene or object.
 ```
@@ -195,23 +310,4 @@ Nested systems drawn as concentric irregular rings — six of them, each a diffe
 Square frame (1:1).
 
 Avoid: any paper, card or background colour — the artwork must sit on full transparency; variable or heavy line weight; hard-edged washes; fills, hatching or shading; text, numerals, labels, scale bars or legends of any kind; frames or borders; drop shadows; a dense area that would darken into a blotch under body copy; perfect radial symmetry; a repeated or tiling motif; infographic or corporate-diagram styling; anything resolving into a recognisable scene or object.
-```
-
-## Recurring assets
-
-### cover-03-circular-systems
-
-**Save as** `public/images/illustration/cover-03-circular-systems.png` · 1:1 · target 6000 × 6000 px
-**Where it goes** Front cover — the `orb` variant
-**Why it is there** An alternative cover artwork for the `orb` treatment. A circle on a square is the strongest graphic move available on a 300 mm cover, and it makes the title's 'here' mean somewhere.
-**Watch for** Transparent PNG or warm cream ground. **Not the Earth**: no recognisable continents, no coastlines, no blue-marble colouring, no latitude/longitude graticule, no space, no stars, no glow or lens flare, no terminator line dividing day from night. The circle is drawn — very slightly out of true, with a hand-inked edge — not rendered as a lit sphere. Keep the upper third of the circle quieter: on the `orb` cover the title sits above and slightly over it.
-
-```text
-An illustrated plate from a vintage scientific field guide, hand-drawn in ink on warm cream paper. Imperfect geometry — circles slightly out of true, lines drawn by hand, everything a degree or two off square. Field-guide illustration crossed with vintage scientific diagram, cartography and marginalia: arrows, rings, timelines, measure scales, tiny human figures. Screenprint and risograph texture with visible ink density variation and slight misregistration. Charcoal near-black ink on a warm cream ground (#F3EFE5), with restrained accents of muted rust (#A95738), faded cobalt (#536D8E) and moss green (#68735B). Intelligent, tactile, playful, handmade.
-
-The same watercolour-and-ink systems drawing as the existing cover artwork, but composed inside a single circle: a bounded circular field of view, hard-edged, sitting on warm cream paper with nothing outside it. Inside the circle, read as a whole world without ever resolving into the Earth — broad atmospheric bands of teal and slate curving with the sphere near one limb; a swirl of current or weather blooming in rust, amber and coral across the middle; fine contour lines banding the surface the way isobars band a planet; a branching network of hairlines running through it like root systems or river deltas or blood vessels, deliberately impossible to say which. Small plotted points and connecting lines scattered across it. Two or three tiny human figures standing at the very edge of the circle, at the scale of a millimetre, so the size of the thing is unmistakable. A few small circular inset diagrams outside the main circle, in the cream, like detail figures from the same study.
-
-Square frame (1:1).
-
-Avoid: gradients; glossy 3D or rendered lighting; generic vector people; corporate infographic style; SaaS or explainer-video illustration; polished icon sets; decorative complexity with no conceptual purpose; fake handwritten paragraphs or invented lettering; any legible text; psychedelic imagery; symmetry for its own sake.
 ```

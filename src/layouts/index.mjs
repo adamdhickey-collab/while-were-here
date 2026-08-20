@@ -506,6 +506,7 @@ const readingAside = (spread, essay, ctx) => ({
               <p class="label"><b>Fig.</b> ${esc(spread.figureTitle || '')}</p>
               ${(diagrams[spread.figure] || (() => ''))()}
             </div>` : ''}
+          ${spread.marginNote ? `<div class="reading__note"><p class="margin-note">${spread.marginNote}</p></div>` : ''}
           ${noticeBlock(spread)}
         </div>`,
     },

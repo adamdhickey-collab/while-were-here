@@ -82,6 +82,11 @@
 .reading--aside .prose--generous { grid-column: 1 / 8; }
 .page--verso.reading--aside .prose--generous { grid-column: 6 / 13; }
 .reading--aside .notice { grid-column: 1 / 7; grid-row: 3; align-self: end; }
+/* The asymmetric spread leaves its outer margin empty, which is where a margin
+   note belongs. Row 1 so it sits beside the opening lines rather than under
+   them, and clear of the notice, which owns row 3. */
+.reading--aside .reading__note { grid-column: 9 / 13; grid-row: 1; align-self: start; }
+.page--verso.reading--aside .reading__note { grid-column: 1 / 5; }
 .page--verso.reading--aside .notice { grid-column: 7 / 13; }
 
 /* ---- 4. PULL QUOTE ------------------------------------------------------

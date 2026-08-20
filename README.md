@@ -9,7 +9,7 @@ hardcover. It is not a website.
 
 **Status: prototype.** One complete essay laid out across eight spread types,
 plus covers and front matter — 28 interior pages. The point is to prove the
-design language before scaling to eighteen essays.
+design language before scaling to eight essays.
 
 ---
 

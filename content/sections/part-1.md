@@ -8,8 +8,5 @@ theme: light
 blurb: Attention, beauty, and the case for the ordinary day.
 essays:
   - Why Ordinary Days May Be the Point of Life
-  - Why We Cry at Beauty
   - The Secret Life of Attention
-  - The Lost Art of Wandering
-  - The Psychology of Enough
 ---

@@ -10,6 +10,14 @@ import { diagrams } from './diagrams.mjs';
 
 const nb = (s = '') => String(s).replace(/ (\w{1,3})$/, '&nbsp;$1');
 
+/* Counts on the contents page are set as words, and they are derived rather
+   than typed so that re-pacing the book cannot leave the page lying. */
+const WORDS = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven',
+  'eight', 'nine', 'ten', 'eleven', 'twelve', 'thirteen', 'fourteen', 'fifteen',
+  'sixteen', 'seventeen', 'eighteen', 'nineteen', 'twenty'];
+const word = (n) => WORDS[n] ?? String(n);
+const Word = (n) => word(n).replace(/^./, (c) => c.toUpperCase());
+
 /* ---- Covers -------------------------------------------------------------- */
 
 export const coverFront = (bookData, ctx) => ({
@@ -117,6 +125,7 @@ export const openingNote = (note) => ({
 });
 
 export const contents = (bookData, toc, folios = {}) => {
+  const essayCount = toc.parts.reduce((n, p) => n + p.essays.length, 0);
   const half = (parts) => parts.map((p) => `
       <section class="contents__part">
         <p class="meta meta--rust">Part ${esc(p.number)}</p>
@@ -153,7 +162,7 @@ export const contents = (bookData, toc, folios = {}) => {
         html: `
           <div class="page__block">
             <div class="contents__head">
-              <p class="meta">Four parts &nbsp;·&nbsp; eighteen essays</p>
+              <p class="meta">${Word(toc.parts.length)} parts &nbsp;·&nbsp; ${word(essayCount)} essays</p>
             </div>
             ${half(toc.parts.slice(2))}
           </div>`,

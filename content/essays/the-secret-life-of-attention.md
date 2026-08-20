@@ -1,6 +1,6 @@
 ---
 id: attention
-number: "03"
+number: "02"
 part: I
 stage: 1
 partTitle: Look Again

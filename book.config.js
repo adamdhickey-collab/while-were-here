@@ -35,8 +35,15 @@ export const geometry = {
   // Spine width cannot be calculated until final page count and paper stock are
   // fixed. Formula: pages / 2 * caliper + boardAllowance.
   cover: {
-    pageCount: 144,        // board estimate, thread bound
-    paperCaliper: 0.17,    // mm per leaf — uncoated warm white with natural fibre
+    // Saal Digital Professional Line 30 x 30 accepts a minimum of 26 pages
+    // and a MAXIMUM OF 130. 128 is the working target: eight essays at the
+    // density Part I already proves, plus front matter, dividers, material
+    // breaks and credits, with a spread of slack.
+    pageCount: 128,        // working target, ceiling is 130 at this printer
+    paperCaliper: 0.17,    // mm per leaf — PROVISIONAL AND ALMOST CERTAINLY LOW.
+                           // Saal prints this book on FUJIFILM Crystal Archive HD
+                           // at 368 g/m2, layflat, not on the uncoated stock this
+                           // number assumes. Replace from the production template.
     boardAllowance: 4,     // mm added for hardcover board and hinge
     wrapTurnIn: 15,        // mm folded around the board
     hingeGap: 8,           // mm groove either side of the spine

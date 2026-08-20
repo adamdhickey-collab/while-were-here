@@ -477,8 +477,8 @@ function typeDoc(book) {
           <p class="specimen typespec__source">${esc(s.source)}</p>
           <p class="specimen typespec__probe" data-probe='${JSON.stringify(s.have)}'></p>
         </div>
-        <h2 class="essay-title">Why Ordinary Days May Be the Point of Life</h2>
-        <p class="deck">Most of life happens between the moments we think are important.</p>
+        <h2 class="essay-title">Most of Life Is a Tuesday</h2>
+        <p class="deck">Almost everything happens between the moments we think are important.</p>
         <div class="prose prose--cols prose--drop typespec__body">
           <p>Most of life does not happen during the big moments. It happens in between
           them. Not at the wedding, but on a Tuesday night years later when you are both

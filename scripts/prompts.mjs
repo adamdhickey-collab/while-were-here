@@ -248,7 +248,7 @@ is invisible in the book and has to be redone.
 
 | # | Essay | Page | Ink |
 | --- | --- | --- | --- |
-| 01 | Why Ordinary Days May Be the Point of Life | warm paper | charcoal |
+| 01 | Most of Life Is a Tuesday | warm paper | charcoal |
 | 02 | The Secret Life of Attention | warm paper | charcoal |
 | 03 | The Beauty of Systems Nobody Designed | bone | charcoal |
 | 04 | The Intelligence Outside Your Head | **charcoal** | **pale** |

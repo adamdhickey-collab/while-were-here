@@ -4,9 +4,9 @@ number: "01"
 part: I
 stage: 1
 partTitle: Look Again
-title: Why Ordinary Days May Be the Point of Life
-deck: Most of life happens between the moments we think are important.
-runningHead: Why Ordinary Days May Be the Point of Life
+title: Most of Life Is a Tuesday
+deck: Almost everything happens between the moments we think are important.
+runningHead: Most of Life Is a Tuesday
 readingTime: 7
 progression: calm observation → increased noticing → hidden complexity → human intimacy → quiet return
 spreads:
@@ -85,6 +85,8 @@ spreads:
 
 <!-- block: s2a -->
 
+The dog moved twice this afternoon and never woke. The sun came in low and crossed half the floor between two and five, and the dog crossed with it — a slow pursuit conducted entirely in sleep. I measured it once, out of curiosity. About a metre an hour. That is the honest record of the day, and I have started to suspect that days like this one are not the packaging around my life. They are the substance.
+
 Most of life does not happen during the big moments.  
 It happens in between them.
 
@@ -95,9 +97,7 @@ Most of life is quieter than that.
 
 A walk.  
 A meal.  
-A familiar room.  
-A dog sleeping nearby.  
-The light changing across the floor.
+A familiar room.
 
 And yet we have a strange habit of treating these moments as filler, as though the real life is somewhere else.
 
@@ -166,7 +166,7 @@ Which raises an uncomfortable question: how much of everyday life are we simply 
 
 <!-- block: s5b -->
 
-There is a basic neurological reason this happens. The brain is designed to filter. Repeated exposure reduces our response to things that remain predictable.
+Brains economise. Whatever repeats and stays harmless gets filed as background — the refrigerator hum, the commute, eventually the whole street.
 
 This is useful. You would be overwhelmed if every hum, texture, face, smell, and background sound felt as intense on the thousandth encounter as it did on the first.
 
@@ -236,7 +236,8 @@ Repetition gets a bad reputation. We imagine meaningful life as a sequence of ne
 
 But repetition may be what allows subtle differences to become visible.
 
-You walk the same path.  
+On my usual route there is one tree I have photographed four times now — same tree, same angle, one photograph a season. Anyone watching would have seen a man standing in the street doing nothing. The tree never once repeated itself.
+
 The light changes.  
 Birds arrive and leave.  
 A house gets painted.  
@@ -246,7 +247,7 @@ The route repeats. The world does not.
 
 <!-- block: s8b -->
 
-Perhaps this is what makes ordinary routines more interesting than they initially appear. They provide a stable frame around constant change.
+This is what makes ordinary routines more interesting than they first appear. They provide a stable frame around constant change.
 
 The morning coffee is similar. You aren’t. The neighborhood looks similar. It isn’t. Even your body is continuously rebuilding itself.
 
@@ -256,7 +257,7 @@ Pay attention long enough and ordinary reality becomes almost impossibly complex
 
 <!-- block: s9a -->
 
-Perhaps we do the same thing with people. We turn them into categories.
+We do the same thing with people. We turn them into categories.
 
 Wife.  
 Husband.  
@@ -273,7 +274,7 @@ But every person around us contains an entire private universe. Memories you’l
 
 A person you’ve known for thirty years remains fundamentally mysterious. That mystery can disappear beneath routine.
 
-Perhaps love depends partly on resisting that disappearance, loving what has become familiar without allowing familiarity to make it invisible.
+Love depends partly on resisting that disappearance, loving what has become familiar without allowing familiarity to make it invisible.
 
 Romantic love often begins with novelty. Everything about the person is interesting. How they laugh. What they eat.
 
@@ -295,7 +296,7 @@ But mountains are mostly made of everything below the summit. You don’t live o
 
 <!-- block: s10b -->
 
-Perhaps a good life isn’t one containing the maximum number of extraordinary experiences. Maybe it is one in which ordinary experience stops feeling like something you need to escape.
+A good life isn’t one containing the maximum number of extraordinary experiences. Maybe it is one in which ordinary experience stops feeling like something you need to escape.
 
 A life where a quiet morning can be enough. Where walking somewhere familiar still occasionally surprises you. Where the people you’ve known longest don’t become invisible. Where nothing remarkable needs to happen for you to feel that the day counted.
 

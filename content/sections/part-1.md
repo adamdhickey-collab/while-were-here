@@ -12,6 +12,6 @@ statement: >-
   That is the whole of the difficulty.
 blurb: Attention, beauty, and the case for the ordinary day.
 essays:
-  - Why Ordinary Days May Be the Point of Life
+  - Most of Life Is a Tuesday
   - The Secret Life of Attention
 ---

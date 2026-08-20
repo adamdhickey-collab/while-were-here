@@ -15,35 +15,21 @@
  * committed, so they have to be refreshed when a master changes. This script is
  * the refresh, and it only touches what is actually out of date.
  *
- * Resizing runs through `sips`, which ships with macOS. That is deliberate:
- * derivatives are generated here and committed, never generated in CI, so this
- * script never has to run on a Linux runner and the repo needs no image
- * dependency to build.
+ * The resize itself, and the 1400 px it resizes to, are shared with
+ * `npm run pdf:proof` — see scripts/lib/images.mjs.
  */
 
 import fs from 'node:fs';
 import path from 'node:path';
-import { execFileSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
+
+import { MAX, walk, images, resize, longEdge } from './lib/images.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const src = path.join(root, 'public/images');
 const out = path.join(root, 'public/images-web');
 
-/* The long edge, in px. Matches scripts/proof.mjs so the hosted preview and the
-   proof PDF are looking at exactly the same pictures. */
-const MAX = 1400;
-
 const all = process.argv.includes('--all');
-
-/** Every file under a directory, as paths relative to it. */
-function walk(dir, base = dir) {
-  if (!fs.existsSync(dir)) return [];
-  return fs.readdirSync(dir, { withFileTypes: true }).flatMap((e) => {
-    const p = path.join(dir, e.name);
-    return e.isDirectory() ? walk(p, base) : [path.relative(base, p)];
-  });
-}
 
 /* An LFS pointer is a small text file that begins with the spec URL. Resizing
    one produces nothing useful and the failure is silent later, so catch it here
@@ -53,19 +39,8 @@ function isPointer(file) {
   return fs.readFileSync(file, 'utf8').startsWith('version https://git-lfs');
 }
 
-/** Longest edge in px, or Infinity if sips cannot read it — so an unreadable
-    file falls through to the resize path and reports its failure there. */
-function longEdge(file) {
-  try {
-    const out = execFileSync('sips', ['-g', 'pixelWidth', '-g', 'pixelHeight', file], { encoding: 'utf8' });
-    const w = /pixelWidth:\s*(\d+)/.exec(out);
-    const h = /pixelHeight:\s*(\d+)/.exec(out);
-    return w && h ? Math.max(+w[1], +h[1]) : Infinity;
-  } catch { return Infinity; }
-}
-
-const images = walk(src).filter((f) => /\.(png|jpe?g|tiff?)$/i.test(f));
-if (!images.length) {
+const masters = images(src);
+if (!masters.length) {
   console.error(`✗ No images under ${path.relative(root, src)}.`);
   process.exit(1);
 }
@@ -74,7 +49,7 @@ const pointers = [];
 let made = 0;
 let skipped = 0;
 
-for (const rel of images) {
+for (const rel of masters) {
   const from = path.join(src, rel);
   const to = path.join(out, rel);
 
@@ -93,9 +68,7 @@ for (const rel of images) {
      down to what a generator actually produces, most masters are now smaller
      than this cap, so the guard matters more than it used to. */
   if (longEdge(to) <= MAX) { made += 1; continue; }
-  try {
-    execFileSync('sips', ['-Z', String(MAX), to], { stdio: 'ignore' });
-  } catch {
+  if (!resize(to)) {
     fs.rmSync(to, { force: true });
     console.error(`✗ sips could not read ${rel} — left out of the web build.`);
     continue;
@@ -105,7 +78,7 @@ for (const rel of images) {
 
 /* A derivative whose master is gone is worse than a missing one: the web build
    would keep serving a picture the book no longer contains. */
-const live = new Set(images);
+const live = new Set(masters);
 let removed = 0;
 for (const rel of walk(out)) {
   if (live.has(rel)) continue;

@@ -5,6 +5,10 @@ reduced to one frame each). Source: `~/Desktop/Photos from iphoto`.
 
 **26 selected. 4 held. The rest out.**
 
+Every number in the labels below is registered in [facts.json](../facts.json)
+and carries a source. Anything unsourced is marked "do not set yet" rather than
+being written to sound right.
+
 ---
 
 ## The verdict first
@@ -152,8 +156,11 @@ Role SPECIMEN, **cut out** · Systems, contact sheet or margin · Stage II · 40
 - **Color** As shot, and this matters: the blue is **not pigment**. It is
   structural, produced by the geometry of the barbules.
 - **Texture** None.
-- **Label** `Pavo cristatus. There is no blue pigment anywhere in this bird. The
-  color is the shape of the feather doing something to light.`
+- **Label** `Pavo cristatus. There is no blue pigment in this bird. The barbules
+  hold a lattice of melanin rods roughly 120 nm apart, and the blue is the
+  spacing doing something to light.` Sourced: `peacock-structural-colour` in
+  [facts.json](../facts.json). Melanin is a pigment and it is present, so the
+  claim is "no blue pigment," never "no pigment.
 - **Why** The best label in the set writes itself, and it is true. A specimen
   card carrying a real mechanism is exactly what separates this book from a
   scrapbook.
@@ -176,8 +183,11 @@ Role FIGURE · The Intelligence Outside Your Head, diagram spread · Stage II ·
 - **Color** Desaturate the skin toward the stage ink so the hand is evidence
   rather than a body part. Keep the leaf green.
 - **Texture** Global paper.
-- **Label** `Mimosa pudica, thigmonasty. The leaflets fold in one to two seconds.
-  There is no nervous system involved. [verify timing]`
+- **Label** `Mimosa pudica, thigmonasty. Touched, a leaflet folds in two to
+  seven seconds and reopens over the next quarter hour. It has no neurons. It
+  does propagate an action potential.` Sourced: `mimosa-thigmonasty`. The
+  earlier draft of this label said no electrical signal was involved, which is
+  backwards and would have been the exact failure the fact file exists to catch.
 - **Why** The only frame in 456 that photographs a mechanism happening. For an
   essay about intelligence outside the head, a plant computing without a brain
   is the whole argument in one picture. It is also the weakest composition in
@@ -189,8 +199,10 @@ Role FIGURE · Systems or Intelligence · Stage II · 2268 × 4032
   bottom edge** — they are in frame and they kill it.
 - **Color** Desaturate to the stage's stone neutral.
 - **Texture** Global paper.
-- **Label** `Subirachs, Passion façade. Every row, column and diagonal sums to
-  33. Four numbers are repeated to force it, so it is not a true magic square.`
+- **Label** **Do not set yet.** Recorded as `sagrada-magic-square`, status
+  unverified. The 33 and the repeated numbers are widely repeated online and I
+  have not traced either to a primary source. Either it gets one or the caption
+  describes the object without asserting the arithmetic.
 - **Why** An object that is a diagram. And the fact that it cheats to reach its
   number is a better note than the pattern itself.
 

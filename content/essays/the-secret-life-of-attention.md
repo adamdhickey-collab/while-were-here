@@ -19,9 +19,10 @@ spreads:
     blocks: [flow-1a, flow-1b]
     bandImage: attention-05-crosswalk-strangers
     marginNote: >-
-      The average smartphone is unlocked between 58 and 80 times a day. Nobody
-      decided this. It is the sum of very small decisions, none of which felt
-      like a decision.
+      In a study that logged real use for two weeks rather than asking about it,
+      people picked up their phones around eighty-five times a day. Asked to
+      estimate, they guessed about half that. Nobody decided this. It is the sum
+      of very small decisions, none of which felt like a decision.
   - type: pull-quote
     quote: You have never once experienced a room. You have experienced a paraphrase.
     lede: On what the editor leaves out

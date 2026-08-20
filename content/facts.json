@@ -1,0 +1,56 @@
+{
+  "$comment": "Single source of truth for every factual claim in the book. A number does not go on a page unless it has an entry here with status 'verified' and a real source. `npm run facts` validates this file and regenerates the sources page; the build warns on anything unverified. Status: verified | unverified | disputed | cut.",
+  "facts": [
+    {
+      "id": "smartphone-checks",
+      "claim": "People check their phones about 85 times a day and use them for around five hours, and their own estimates of how often are roughly half the real figure.",
+      "status": "verified",
+      "usedIn": ["essays/the-secret-life-of-attention.md — marginNote"],
+      "source": {
+        "authors": "Andrews S, Ellis DA, Shaw H, Piwek L",
+        "title": "Beyond Self-Report: Tools to Compare Estimated and Real-World Smartphone Use",
+        "publication": "PLOS ONE 10(10): e0139004",
+        "year": 2015,
+        "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0139004"
+      },
+      "note": "Device-logged over two weeks. n = 23, which is small and must not be inflated into a general population figure. The load-bearing finding is the mismatch between estimate and reality, not the count.",
+      "replaces": "An earlier margin note claimed phones are 'unlocked between 58 and 80 times a day'. The 58 came from RescueTime's 2018 blog data, which counted checks rather than unlocks; the 80 had no traceable source; and the range fused two incompatible studies. Cut."
+    },
+    {
+      "id": "peacock-structural-colour",
+      "claim": "The blue and green of a peacock's feathers are not pigment. The barbule cortex holds a two-dimensional photonic crystal of melanin rods in keratin, and the colour comes from the spacing of that lattice.",
+      "status": "verified",
+      "usedIn": ["photo 177 — specimen label"],
+      "source": {
+        "authors": "Zi J, Yu X, Li Y, Hu X, Xu C, Wang X, Liu X, Fu R",
+        "title": "Coloration strategies in peacock feathers",
+        "publication": "PNAS 100(22): 12576-12578",
+        "year": 2003,
+        "url": "https://www.pnas.org/doi/10.1073/pnas.2133313100"
+      },
+      "note": "Melanin rods are roughly 110 to 130 nm across, arranged in a lattice in keratin with air holes between. Colour is tuned by lattice constant and number of periods. Precision matters here: melanin IS a pigment and it IS present, but it is brown-black and is acting as structure rather than as the chromophore for the blue. Do not write 'no pigment in this bird'. Write 'no blue pigment'. The authors confirmed it structurally by infiltrating the barbules with glycerin, which reduces refractive-index contrast and kills the colour."
+    },
+    {
+      "id": "mimosa-thigmonasty",
+      "claim": "A touched Mimosa pudica leaflet folds in a second or two. Cells in the pulvinus at the leaflet base dump potassium and chloride, lose water and collapse their turgor. The leaf reopens over five to fifteen minutes.",
+      "status": "verified",
+      "usedIn": ["photo 358 — figure caption, The Intelligence Outside Your Head"],
+      "source": {
+        "authors": "Volkov AG, Foster JC, Ashby TA, Walker RK, Johnson JA, Markin VS",
+        "title": "Mimosa pudica: Electrical and mechanical stimulation of plant movements",
+        "publication": "Plant, Cell & Environment 33(2): 163-173",
+        "year": 2010,
+        "url": "https://onlinelibrary.wiley.com/doi/10.1111/j.1365-3040.2009.02066.x"
+      },
+      "note": "Timings vary by which pulvinus is triggered: a pinnule folds in roughly two to seven seconds, a whole compound leaf droops in about two to five. Do NOT write 'no electrical signal is involved'. Mimosa propagates genuine action potentials; what it has no trace of is neurons. That distinction is the whole interest of the picture and getting it backwards would be the exact failure this file exists to prevent."
+    },
+    {
+      "id": "sagrada-magic-square",
+      "claim": "The magic square on the Passion façade sums to 33 in every row, column and diagonal, and reaches that total by repeating four numbers, so it is not a true magic square.",
+      "status": "unverified",
+      "usedIn": ["photo 365 — figure caption"],
+      "source": null,
+      "note": "Needs a primary source on Subirachs' square: which numbers are repeated, and the standard 4x4 constant it departs from. Do not set this caption until sourced."
+    }
+  ]
+}

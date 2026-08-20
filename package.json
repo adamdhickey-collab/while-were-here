@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "description": "WHILE WE'RE HERE — a print-first coffee-table book built with HTML, CSS and Vivliostyle.",
+  "description": "WHILE WE'RE HERE \u2014 a print-first coffee-table book built with HTML, CSS and Vivliostyle.",
   "author": "Adam Hickey",
   "scripts": {
     "build": "node scripts/build.mjs",
@@ -19,7 +19,9 @@
     "fonts:convert": "./.venv/bin/python scripts/otf2ttf.py fonts-licensed fonts-licensed/.ttf-cache",
     "fonts:setup": "python3 -m venv .venv && ./.venv/bin/pip install -q \"fonttools[woff]\" && npm run fonts:convert",
     "pdf:proof": "npm run build && node scripts/proof.mjs && vivliostyle build build/book.html -o dist/while-were-here-proof.pdf && npm run build",
-    "brief": "node scripts/prompts.mjs --outstanding"
+    "brief": "node scripts/prompts.mjs --outstanding",
+    "facts": "node scripts/facts.mjs",
+    "facts:strict": "node scripts/facts.mjs --strict"
   },
   "devDependencies": {
     "@fontsource-variable/fraunces": "^5.3.0",

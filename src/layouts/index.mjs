@@ -638,12 +638,18 @@ const visualEssay = (spread, essay, ctx) => {
   };
 };
 
-/* An archival collection record laid over a photograph. */
-const specimenCard = (rows, position = 'br') => {
+/* An archival collection record laid over a photograph. With `image:` it also
+   carries its own small plate, which is the only place in the book where a
+   1,280 px source is at home: at 66 mm that is 493 dpi. */
+const specimenCard = (rows, position = 'br', ctx = null) => {
   if (!rows) return '';
-  const { notes, ...fields } = rows;
+  const { notes, image, ...fields } = rows;
+  const plate = image && ctx
+    ? `<div class="specimen-card__plate">${figure(ctx.image(image), { root: ctx.root, compact: true })}</div>`
+    : '';
   return `
-    <div class="specimen-card specimen-card--${position}">
+    <div class="specimen-card specimen-card--${position}${image ? ' specimen-card--plated' : ''}">
+      ${plate}
       ${Object.entries(fields).map(([k, v]) =>
         `<dl class="specimen-card__row"><dt>${esc(k)}</dt><dd>${esc(v)}</dd></dl>`).join('')}
       ${notes ? `<p class="specimen-card__notes">${esc(notes)}</p>` : ''}
@@ -659,7 +665,7 @@ const imageEssay = (spread, essay, ctx) => ({
       cls: 'image-essay image-essay--tall' + (spread.blocks && spread.blocks.length > 1 ? ' image-essay--split' : ''),
       html: `
         <div class="image-essay__figure">${figure(ctx.image(spread.image), { root: ctx.root, dark: (ctx.stage || 1) >= 3 })}
-          ${specimenCard(spread.specimen, 'bl')}</div>
+          ${specimenCard(spread.specimen, 'bl', ctx)}</div>
         ${spread.blocks && spread.blocks.length > 1 ? `
           <div class="page__block">
             ${subhead(spread)}

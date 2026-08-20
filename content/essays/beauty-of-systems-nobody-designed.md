@@ -43,6 +43,17 @@ spreads:
     caption: >-
       <b>Figure 2.</b> A section nobody can stand back and see. Floors, ramps
       and chambers, none of them measured by any termite.
+    specimen:
+      image: specimen-02-queen-butterfly
+      Specimen: Danaus gilippus
+      Common: Queen
+      Recorded: 2014, captive
+      notes: >-
+        Milkweed as a larva, cardenolides carried into adulthood, and the same
+        warning pattern the monarch wears. Neither species is copying the other.
+        A predator that learns one avoids both, so the pattern is held in place
+        by the birds. How distasteful a queen actually is depends on the plant
+        it grew up on.
     sidebar:
       title: Field notes
       lines:

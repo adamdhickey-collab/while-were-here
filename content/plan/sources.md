@@ -5,7 +5,7 @@
 Every technical number in this book is listed here with the source it came from.
 Where a figure is contested, small-sample or easy to misstate, the note says so.
 
-26 verified · 1 outstanding
+28 verified · 1 outstanding
 
 ---
 
@@ -269,6 +269,26 @@ StatPearls. *Abnormal Respirations*. NCBI Bookshelf. 2023. <https://www.ncbi.nlm
 **Note.** A typical clinical range for a healthy resting adult, not a constant and not a value for any individual. Tidal volume of ~500 ml is likewise an approximation for an average adult.
 
 *Used in essays/while-were-here.md — marginNote.*
+
+---
+
+### A Komodo dragon samples the air with its forked tongue and presses the tips to paired Jacobson's organs in the roof of its mouth. A stronger reading on one tip than the other tells it which way the scent is coming from.
+
+Smithsonian's National Zoo and Conservation Biology Institute. *Komodo dragon*. Smithsonian National Zoo animal record. 2024. <https://nationalzoo.si.edu/animals/komodo-dragon>
+
+**Note.** The direction comes from the DIFFERENCE between the two tips, which is the whole reason the tongue is forked and the whole reason this belongs in this essay. The Smithsonian gives carrion detection at up to 2.5 miles, about 4 km. A figure of 9.5 km circulates widely online with no traceable source; do not use it. Also: the animal photographed is captive, so nothing on the card may imply a wild observation.
+
+*Used in essays/intelligence-outside-your-head.md — specimen card; specimen-01-komodo-tongue — label.*
+
+---
+
+### Queen butterflies feed on milkweed as larvae and carry cardenolides into adulthood, as monarchs do. The two are co-mimics rather than one copying the other: a predator that learns to avoid either pattern avoids both.
+
+Ritland DB. *Variation in Palatability of Queen Butterflies (Danaus gilippus) and Implications Regarding Mimicry*. Ecology 75(3): 732-746. 1994. <https://esajournals.onlinelibrary.wiley.com/doi/10.2307/1941731>
+
+**Note.** Palatability VARIES with the host plant: queens reared on high-cardenolide Asclepias curassavica are as distasteful as monarchs, and queens reared on low-cardenolide hosts are not. Do not write that queens are uniformly toxic. The Mullerian rather than Batesian reading is Ritland's, and the same author's 1991 Nature paper made the parallel case for the viceroy, which is the classic textbook example that turned out to be wrong the other way.
+
+*Used in essays/beauty-of-systems-nobody-designed.md — specimen card; specimen-02-queen-butterfly — label.*
 
 
 ---

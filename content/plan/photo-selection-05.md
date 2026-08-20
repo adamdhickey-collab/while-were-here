@@ -92,6 +92,43 @@ reduction and comes back as noise. Tested and confirmed on
 photographs inside private conversations. No slot in this book needs it and
 nothing should be taken from it.
 
+## Specimen cards — the second route, and the one that keeps the photograph
+
+Two frames from the Zoo album are now real photographs in the book, at 66 mm,
+which is **493 dpi** and the only size this archive supports. Not abstracted,
+not retouched, not upscaled.
+
+`specimenCard()` in `src/layouts/index.mjs` already existed as a data card and
+now carries its own plate, so a card is a small photograph with its record set
+under it in mono.
+
+### Danaus gilippus, essay 03
+
+A queen butterfly closed on a grass stem. Milkweed as a larva, cardenolides into
+adulthood, and the same warning pattern the monarch wears — with neither species
+copying the other. The pattern is held in place by the birds, which is the
+essay's argument arriving as a real animal rather than as a diagram.
+
+**It was logged as a monarch on the first pass and that was wrong.** Chestnut
+ground rather than orange, white spots scattered across the middle of the
+forewing, and none of the monarch's heavy black venation. Had the card gone out
+labelled *Danaus plexippus*, it would have carried a false record on a page
+arguing for looking at the actual world, and the monarch migration fact does not
+apply to this animal at all.
+
+### Varanus komodoensis, essay 04
+
+The tongue is forked so it can sample two places at once. Both tips press to
+paired organs in the roof of the mouth, and the difference between the readings
+is the direction. An animal that finds its way by standing in the field and
+taking a difference, on the spread that argues thinking happens outside the head.
+
+Both are registered in [facts.json](../facts.json) with the caution that makes
+them true: queen palatability varies with the host plant and they are not
+uniformly toxic, and the Smithsonian's carrion figure is about 4 km, not the
+9.5 km that circulates online with no traceable source. Both animals are
+captive, and nothing on either card implies a wild observation.
+
 ## What the archive still has, unused
 
 The Zoo album is the surprise. Hyacinth macaw, eagle owl, Komodo dragon,

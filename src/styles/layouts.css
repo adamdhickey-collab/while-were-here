@@ -917,3 +917,16 @@
 .plate-stack--dark .p3 { background: var(--accent-3); opacity: 0.22; }
 .plate-stack--dark .p2 { background: var(--accent-1); opacity: 0.42; }
 .plate-stack--dark .p1 { background: var(--paper);    opacity: 0.88; }
+
+/* A specimen card that carries its own photograph. The card is 66 mm, so a
+   1,280 px source runs at 493 dpi here — the one size at which the personal
+   archive is a photograph rather than an abstraction. */
+.specimen-card--plated { padding-top: var(--sp-3); }
+.specimen-card__plate {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  margin-bottom: var(--sp-3);
+}
+.specimen-card__plate .figure { position: absolute; inset: 0; }
+.specimen-card__plate img { width: 100%; height: 100%; object-fit: cover; }

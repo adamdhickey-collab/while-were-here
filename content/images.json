@@ -1295,6 +1295,44 @@
       "status": "not generated",
       "composite": false,
       "revision": "A screen print of an empty room was tried here and pulled: a 4:3 separation cropped to 2:3 loses the window, which was the whole subject."
+    },
+    {
+      "id": "specimen-01-komodo-tongue",
+      "filename": "specimen-01-komodo-tongue.jpg",
+      "kind": "photography",
+      "role": "specimen",
+      "essay": "The Intelligence Outside Your Head",
+      "section": "Part II · What Are We?",
+      "spread": "Image essay, specimen card at 66 mm",
+      "subject": "The head of a Komodo dragon at rest on sand, one eye open, nostril and jawline in raking light.",
+      "concept": "An animal that finds direction by sampling the world rather than by modelling it.",
+      "purpose": "A real record on a page that argues thinking happens outside the skull. Photographed by Adam, 2014. A captive animal — do not caption it as wild.",
+      "aspect": "4:3",
+      "target": "1280 × 960 px (native — 493 dpi at 66 mm, and nothing larger)",
+      "status": "placed",
+      "origin": "own photograph",
+      "selection": "Facebook archive, Zoo2014. See content/plan/photo-selection-05.md",
+      "revision": "Not retouched, not upscaled. It is used at the only size its resolution supports.",
+      "composite": false
+    },
+    {
+      "id": "specimen-02-queen-butterfly",
+      "filename": "specimen-02-queen-butterfly.jpg",
+      "kind": "photography",
+      "role": "specimen",
+      "essay": "The Beauty of Systems Nobody Designed",
+      "section": "Part II · What Are We?",
+      "spread": "Image essay, specimen card at 66 mm",
+      "subject": "A queen butterfly, Danaus gilippus, closed on a grass stem: chestnut ground, white spots scattered across the forewing, fine veins.",
+      "concept": "Two toxic species converging on one warning pattern that neither of them chose.",
+      "purpose": "The essay argues that a pattern can exist between the parts. This is one, and it is a real photograph rather than a drawn diagram.",
+      "aspect": "4:3",
+      "target": "1280 × 960 px (native — 493 dpi at 66 mm, and nothing larger)",
+      "status": "placed",
+      "origin": "own photograph",
+      "selection": "Facebook archive, Zoo2014. See content/plan/photo-selection-05.md",
+      "revision": "NOT A MONARCH. Identified as Danaus gilippus by the chestnut ground, the white spots scattered mid-forewing and the absence of heavy black veins. It was logged as a monarch on first pass and that was wrong. Captive animal.",
+      "composite": false
     }
   ]
 }

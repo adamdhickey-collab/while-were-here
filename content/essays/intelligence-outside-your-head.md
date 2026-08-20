@@ -44,6 +44,16 @@ spreads:
     caption: >-
       <b>Figure 3.</b> A bench left ready. None of the thinking is in the
       tools, and none of it happens without them.
+    specimen:
+      image: specimen-01-komodo-tongue
+      Specimen: Varanus komodoensis
+      Common: Komodo dragon
+      Recorded: 2014, captive
+      notes: >-
+        The tongue is forked so that it can sample two places at once. Both tips
+        press to paired organs in the roof of the mouth, and the difference
+        between the two readings is the direction. The animal is not picturing
+        the field. It is standing in it and taking the difference.
     sidebar:
       title: Field notes
       lines:

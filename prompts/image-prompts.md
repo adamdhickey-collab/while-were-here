@@ -777,6 +777,23 @@ Wide panoramic frame (2:1). This runs across a two-page spread, so keep the cent
 Avoid: any paper, card or background colour — the artwork must sit on full transparency; variable or heavy line weight; hard-edged washes; fills, hatching or shading; text, numerals, labels, scale bars or legends of any kind; frames or borders; drop shadows; a dense area that would darken into a blotch under body copy; perfect radial symmetry; a repeated or tiling motif; infographic or corporate-diagram styling; anything resolving into a recognisable scene or object.
 ```
 
+### specimen-02-queen-butterfly
+
+**Save as** `public/images/photography/specimen-02-queen-butterfly.jpg` · 4:3 · target 1280 × 960 px (native — 493 dpi at 66 mm, and nothing larger)
+**Where it goes** Image essay, specimen card at 66 mm
+**Why it is there** The essay argues that a pattern can exist between the parts. This is one, and it is a real photograph rather than a drawn diagram.
+**Watch for** NOT A MONARCH. Identified as Danaus gilippus by the chestnut ground, the white spots scattered mid-forewing and the absence of heavy black veins. It was logged as a monarch on first pass and that was wrong. Captive animal.
+
+```text
+A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
+
+A queen butterfly, Danaus gilippus, closed on a grass stem: chestnut ground, white spots scattered across the forewing, fine veins.
+
+Horizontal frame (4:3).
+
+Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
+```
+
 ## The Intelligence Outside Your Head
 
 ### ground-04-extended-cognition
@@ -873,6 +890,23 @@ A believable documentary photograph of the real world — quiet, contemplative, 
 A workbench with tools laid out ready for use, nobody present, the work half done.
 
 Vertical frame (2:3), subject low, generous empty space above.
+
+Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
+```
+
+### specimen-01-komodo-tongue
+
+**Save as** `public/images/photography/specimen-01-komodo-tongue.jpg` · 4:3 · target 1280 × 960 px (native — 493 dpi at 66 mm, and nothing larger)
+**Where it goes** Image essay, specimen card at 66 mm
+**Why it is there** A real record on a page that argues thinking happens outside the skull. Photographed by Adam, 2014. A captive animal — do not caption it as wild.
+**Watch for** Not retouched, not upscaled. It is used at the only size its resolution supports.
+
+```text
+A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
+
+The head of a Komodo dragon at rest on sand, one eye open, nostril and jawline in raking light.
+
+Horizontal frame (4:3).
 
 Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
 ```

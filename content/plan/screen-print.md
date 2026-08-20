@@ -33,9 +33,9 @@ whose interest is *mass*: cloud, silhouette, a lit aperture, a lattice against
 sky. A source whose interest is *texture* should stay a photograph. Deciding
 which is which is now part of choosing an image, not something to fix afterward.
 
-Tested and working: the cumulus, the cloud floor from the plane, the Initiation
-Well, the Metropol lattice, the muqarnas vault. Marginal: the pebble mosaic,
-which survives but only just.
+Tested and working: the cumulus, the Initiation Well, the Metropol lattice, the
+muqarnas vault. Marginal: the pebble mosaic, which survives but only just.
+Failed: the cloud floor from the plane, for the reason below.
 
 ## How it is implemented
 
@@ -88,11 +88,51 @@ An **accent**, which means it earns its place by being rare.
   abstracted image carries the change of register.
 - One per spread. Two screen prints facing each other cancel out.
 
+## Dark stages invert
+
+Stages III and IV run on a dark ground with light ink, and the separation has to
+invert with them.
+
+The plates mark pixels **darker** than each cut, which is what you want on
+paper. On `--void` you need their complement, painted in light ink, laid
+**largest first**. And multiply cannot do it: multiplying anything into #14111C
+only makes it darker. Dark stages composite normally instead.
+
+This is the one place the book's "multiply is the only blend" rule does not
+apply, and it is not a violation of it. Light ink on dark stock is opaque in
+reality too. Nothing is being blended.
+
+```css
+.plate-stack--dark img { mix-blend-mode: normal; }   /* opaque ink on dark stock */
+```
+
+## Separated so far
+
+| Source | Levels | Stage | Verdict |
+| --- | --- | --- | --- |
+| Cumulus and bird | 3 | I | Works. The original proof. |
+| **Initiation Well** | **2** | IV | Best of the set. Two plates, lavender and paper on void. Three made it busy and the magenta fought the spiral. |
+| **Metropol lattice** | **3** | II | Works. Reads near two-tone at the opacities tested; push `--accent-1` harder at placement if it wants more colour. That is a CSS number, not a plate problem. |
+| Cloud floor from the plane | 3 and 4 | IV | **Rejected. Do not print this one.** |
+
+### Why the cloud floor was rejected
+
+It was on my own shortlist and it should not have been. The image is a delicate
+warm gradient, and the gradient *is* the subject. Separating it into flat bands
+destroys the only thing it had, and Stage IV's magenta and lavender replace a
+sunset with something lurid. Four levels was muddier than three, not better.
+
+It stays a photograph, full-bleed, at the III to IV turn, which is what
+[asset-system.md](asset-system.md) asks of a material break anyway: "one
+surface, edge to edge, and almost nothing else."
+
+**The general rule this gives us:** the treatment needs *masses*. A source whose
+interest is a gradient fails it for the same reason a source whose interest is
+fine texture does. Both are continuous, and the separation is discrete.
+
 ## Open
 
-- Whether the plates should be exported at 3000 px or at final placed size. 3000
-  is generous for anything under full-bleed and the files are small (about 120 KB
-  a plate), so it stays for now.
-- The `--levels` default of 3 suits most sources. The cloud floor might be
-  better at 4, and the Initiation Well at 2. Worth testing per image rather than
-  setting a house number.
+- Whether plates should be exported at 3000 px or at final placed size. 3000 is
+  generous for anything under full-bleed and the files stay small, so it stays.
+- The `--levels` default of 3 holds, but it is a starting point per image rather
+  than a house number. Two suited the well.

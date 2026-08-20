@@ -20,22 +20,65 @@ const Word = (n) => word(n).replace(/^./, (c) => c.toUpperCase());
 
 /* ---- Covers -------------------------------------------------------------- */
 
-export const coverFront = (bookData, ctx) => ({
+/* Three cover treatments. `plate` is the quiet one; `bleed` and `window` are
+   attempts at the same artwork doing more work. Set `coverVariant` in
+   content/book.json; build/cover-options.html shows all three at trim size. */
+export const coverVariants = {
+
+  /* PLATE — the artwork sits inside the page as a specimen, with clean paper
+     above and below it. Quiet, bookish, and easy to walk past on a shelf. */
+  plate: (b, ctx) => `
+    <div class="cover__art">${figure(ctx.image('cover-01-watercolor-systems'), { root: ctx.root })}</div>
+    <div class="cover__inner">
+      <div class="cover__head">
+        <h1 class="cover__title"><span>While</span><span>We’re</span><span>Here</span></h1>
+        <p class="cover__sub">${esc(b.subtitle)}</p>
+      </div>
+      <p class="cover__author">${esc(b.author)}</p>
+    </div>`,
+
+  /* BLEED — the artwork fills the whole board and the title is set large enough
+     to run off the trim. At two metres this reads as one colour and one word,
+     which is all a cover gets on a shelf. */
+  bleed: (b, ctx) => `
+    <div class="cover__art cover__art--bleed">${figure(ctx.image('cover-01-watercolor-systems'), { className: 'figure--bleed', root: ctx.root })}</div>
+    <div class="cover__inner cover__inner--bleed">
+      <h1 class="cover__title cover__title--huge"><span>While</span><span>We’re</span><span>Here</span></h1>
+      <div class="cover__foot">
+        <p class="cover__sub">${esc(b.subtitle)}</p>
+        <p class="cover__author">${esc(b.author)}</p>
+      </div>
+    </div>`,
+
+  /* WINDOW — the artwork shows only through the letterforms. The title stops
+     being type on top of a picture and becomes the aperture onto it, which is
+     the book's argument in one move: the systems are already there, and you see
+     them through the thing in front of you. */
+  window: (b, ctx) => `
+    <div class="cover__inner cover__inner--window">
+      <h1 class="cover__title cover__title--window"
+          style="background-image:url('${esc(coverArtPath(ctx))}')"><span>While</span><span>We’re</span><span>Here</span></h1>
+      <div class="cover__foot">
+        <p class="cover__sub">${esc(b.subtitle)}</p>
+        <p class="cover__author">${esc(b.author)}</p>
+      </div>
+    </div>`,
+};
+
+const coverArtPath = (ctx) => {
+  const img = ctx.image('cover-01-watercolor-systems');
+  return img ? `images/illustration/${img.filename}` : '';
+};
+
+export const coverFront = (bookData, ctx, variant) => ({
+
   pair: false,
   pages: [{
     spread: 'cover',
     folio: false,
-    cls: 'cover',
+    cls: `cover cover--${variant || bookData.coverVariant || 'plate'}`,
     label: 'front cover',
-    html: `
-      <div class="cover__art">${figure(ctx.image('cover-01-watercolor-systems'), { root: ctx.root })}</div>
-      <div class="cover__inner">
-        <div class="cover__head">
-          <h1 class="cover__title"><span>While</span><span>We’re</span><span>Here</span></h1>
-          <p class="cover__sub">${esc(bookData.subtitle)}</p>
-        </div>
-        <p class="cover__author">${esc(bookData.author)}</p>
-      </div>`,
+    html: (coverVariants[variant || bookData.coverVariant || 'plate'] || coverVariants.plate)(bookData, ctx),
   }],
 });
 

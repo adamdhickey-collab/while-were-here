@@ -221,6 +221,42 @@ ${preview ? '<script src="scripts/preview.js"></script>' : ''}
 `;
 }
 
+/* All three cover treatments at trim size, for choosing between. */
+function coverOptionsDoc(book) {
+  const notes = {
+    plate: 'Artwork as a specimen inside the page. Quiet, bookish — and the one that disappears on a shelf.',
+    bleed: 'Artwork edge to edge, title running off the trim. One colour and one word at two metres.',
+    window: 'Artwork only inside the letterforms. The title becomes the aperture onto the systems.',
+  };
+  const pages = Object.keys(L.coverVariants).map((v) => {
+    const p = L.coverFront(book, ctxBase, v).pages[0];
+    return `<section class="page page--recto stage-1 ${p.cls}" data-side="recto"
+              data-spread="cover · ${v}" data-label="${v}">${p.html}</section>`;
+  });
+  return `<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><title>Cover options — ${esc(book.title)}</title>
+${['geometry.css', ...STYLES].map((h) => `<link rel="stylesheet" href="${h}">`).join('\n')}
+<link rel="stylesheet" href="styles/preview.css">
+<style>
+  .cover-note { position:absolute; left:0; top:-46px; width:100%; color:#8B8477;
+    font:500 11px/1.5 var(--font-note); letter-spacing:.08em; }
+  .cover-note b { color:#E4DCC9; text-transform:uppercase; letter-spacing:.18em; }
+</style></head>
+<body class="preview is-proof-screen">
+${pages.join('\n')}
+<script>
+  document.querySelectorAll('.page').forEach((p) => {
+    const n = document.createElement('div');
+    n.className = 'cover-note';
+    n.innerHTML = '<b>' + p.dataset.label + '</b> — ' + ${JSON.stringify(notes)}[p.dataset.label];
+    p.appendChild(n);
+  });
+</script>
+<script src="scripts/preview.js"></script>
+</body></html>
+`;
+}
+
 function coverWrapDoc(book) {
   const front = L.coverFront(book, ctxBase).pages[0];
   const back = L.coverBack(book, ctxBase).pages[0];
@@ -282,6 +318,7 @@ ${['geometry.css', ...STYLES].map((h) => `<link rel="stylesheet" href="${h}">`).
   <a href="preview.html"><b>Spread preview</b><span>${count} pp &nbsp;·&nbsp; guides &amp; navigation</span></a>
   <a href="book.html"><b>Print document</b><span>raw pages &nbsp;·&nbsp; no chrome</span></a>
   <a href="cover-wrap.html"><b>Cover wrap</b><span>back | spine | front</span></a>
+  <a href="cover-options.html"><b>Cover options</b><span>three treatments at trim</span></a>
   <a href="direction.html"><b>Art direction</b><span>stages · spectrum · voices</span></a>
   <a href="type.html"><b>Type tester</b><span>candidate stacks at trim size</span></a>
   <footer>
@@ -721,6 +758,7 @@ export async function build() {
   fs.writeFileSync(path.join(out, 'preview.html'),
     document_({ title: `${book.title} — preview`, body, preview: true }));
   fs.writeFileSync(path.join(out, 'cover-wrap.html'), coverWrapDoc(book));
+  fs.writeFileSync(path.join(out, 'cover-options.html'), coverOptionsDoc(book));
   fs.writeFileSync(path.join(out, 'direction.html'), directionDoc(book));
   fs.writeFileSync(path.join(out, 'type.html'), typeDoc(book));
   fs.writeFileSync(path.join(out, 'index.html'), indexDoc(book, count));

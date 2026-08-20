@@ -229,3 +229,102 @@
 .cover-back__art .figure { position: absolute; inset: 0; background: transparent; }
 .cover-back__art img { object-fit: contain; object-position: left bottom; }
 .cover-back .cover__inner { grid-template-rows: auto auto 1fr auto auto; }
+
+/* ==========================================================================
+   Cover variants
+   A 12" square is read from across a room before it is read from the hand.
+   At that distance a cover gets one shape, one colour and one word cluster —
+   which is the test the quiet version does not pass.
+   ========================================================================== */
+
+/* ---- BLEED --------------------------------------------------------------
+   Artwork edge to edge, title large enough to run off the trim. */
+
+.cover__art--bleed { top: 0; bottom: 0; left: 0; right: 0; }
+.cover__art--bleed .figure { position: absolute; inset: 0; background: transparent; }
+/* The artwork is square and so is the page, so object-fit had nothing to crop —
+   object-position did nothing at all. The image is oversized explicitly instead,
+   anchored to the top — but only slightly. At 128% it became a handsome abstract
+   crop and stopped being the drawing; 106% keeps the whole plate readable and
+   just carries its busiest band below the trim.
+
+   `object-fit: none` was tried here first and is wrong: it renders the 6000 px
+   source at its natural size, so the cover showed a 300% detail rather than a
+   6% crop. Width and height both have to be oversized, with cover doing the
+   fitting. */
+.cover__art--bleed img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 106%;
+  height: 106%;
+  max-width: none;
+  transform: translateX(-50%);
+  object-fit: cover;
+  object-position: top center;
+}
+
+/* A scrim only where the footer sits. The artwork is pale enough almost
+   everywhere else that type survives on it unaided. */
+.cover--bleed .cover__inner--bleed::before {
+  content: "";
+  position: absolute;
+  left: calc(-1 * var(--m-outside));
+  right: calc(-1 * var(--m-outside));
+  bottom: calc(-1 * var(--m-bottom));
+  height: 78mm;
+  background: linear-gradient(to top, rgba(243,239,229,0.97) 30%, rgba(243,239,229,0.72) 62%, rgba(243,239,229,0) 100%);
+  pointer-events: none;
+}
+.cover--bleed .cover__foot { position: relative; }
+
+.cover__inner--bleed {
+  grid-template-rows: 1fr auto;
+  justify-items: start;
+  text-align: left;
+  inset: var(--m-top) var(--m-outside) var(--m-bottom);
+}
+.cover__title--huge {
+  align-self: start;
+  font-size: 150pt;
+  line-height: 0.80;
+  /* Runs past the text block on purpose — a title that respects the margin on
+     a cover looks like an inside page. */
+  margin-left: -3mm;
+  margin-right: -22mm;
+  text-wrap: nowrap;
+}
+.cover--bleed .cover__foot { align-self: end; display: grid; gap: var(--sp-4); }
+.cover--bleed .cover__sub { margin: 0; text-align: left; text-indent: 0; }
+.cover--bleed .cover__author { margin: 0; text-align: left; }
+
+/* ---- WINDOW -------------------------------------------------------------
+   The artwork appears only inside the letterforms. The title stops being type
+   over a picture and becomes the aperture onto it. */
+
+.cover--window { background: var(--paper); }
+.cover__inner--window {
+  grid-template-rows: 1fr auto;
+  justify-items: start;
+  text-align: left;
+  inset: var(--m-top) var(--m-outside) var(--m-bottom);
+}
+.cover__title--window {
+  align-self: end;
+  margin-bottom: 26mm;
+  font-size: 158pt;
+  line-height: 0.78;
+  margin: 0 0 0 -3mm;
+  /* Scaled up so the letterforms fill with the artwork's dense, saturated core
+     rather than its pale edges — at 190% half the letters went to cream. */
+  background-size: 300% auto;
+  background-position: 46% 54%;
+  background-repeat: no-repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+.cover--window .cover__foot { align-self: end; display: grid; gap: var(--sp-4); }
+.cover--window .cover__sub { margin: 0; text-align: left; text-indent: 0; }
+.cover--window .cover__author { margin: 0; text-align: left; }

@@ -732,3 +732,50 @@ Five of them are 24-megapixel frames printing at **363 dpi across a
 300 mm page** — better than all but a handful of images already in the book,
 and more than four times the 81–87 dpi the lowest plates are living with. Nobody
 in any of them is facing the camera.
+
+### "Never the stripped base" was too strong, and it was hiding six frames — 21 Aug 2026
+
+The eight frames still reported as *not exported yet* were, every one, a
+` 2`-suffixed name. `scripts/selection.py` refused to look under the stripped
+base, in bold, for a good reason: an early version fell back to `IMG_2946` when
+`IMG_2946 2` was absent and matched a cat asleep under a tarp to a carved magic
+square.
+
+**The cat was real. The conclusion drawn from it was wrong.**
+
+    IMG_2946.JPG    3264 × 2448    a cat asleep under a tarp
+    IMG_2946.heic   2268 × 4032    the Sagrada Família magic square
+
+Photos disambiguates a filename collision by ` 2` in one export mode and **by
+file extension** in another. The folder this document was written against used
+the suffix; this export uses the extension. The base stem was never wrong —
+taking the *first file under it* was, exactly as with the ten frames above.
+
+`find_base` now looks under the stripped base **only when the document states
+dimensions**, and the caller accepts a result only if it matches exactly or is a
+plausible crop parent. Results appear in their own category and are never
+counted as found. Six frames came back. **Five are the photograph:**
+
+| frame | the document says | what it is |
+| --- | --- | --- |
+| `IMG_2946 2` | a four-by-four grid of numbers cut into stone | **The Sagrada Família cryptogram**, exact match at 2268 × 4032. It also lands `sagrada-magic-square`, one of the five verified claims `npm run verify` reports as possibly not on a page. |
+| `IMG_3329 2` | Portuguese pebble pavement, black and white | **Exactly that** — *calçada portuguesa* in a foliate pattern, a drain grate at the top corner, whitewashed wall behind |
+| `IMG_0623 2` | stained-glass petals, orange through red | **Exactly that** — Sagrada Família petal windows, shrine names lettered in the glass. Real architectural lettering, photographed, so the legibility rule in [art-direction](art-direction.md) does not bite |
+| `IMG_4904 2` | above an unbroken cloud floor at sunset | **Exactly that**, from altitude, a burning orange band at the horizon |
+| `IMG_5360 2` | two people asleep against each other on a plane | **Exactly that — and it must not be placed.** See below |
+| `IMG_0821 2` | a cat drinking from a marble water channel | **The Bay of Naples from the rim of Vesuvius.** A different photograph |
+
+**`IMG_5360` is the hardest consent case in the whole selection and it is not
+close.** Two people asleep on a flight, leaning on each other, and **both faces
+are visible** — the woman's fully, in focus, filling a third of the frame.
+People asleep cannot consent at the moment of the photograph, and printing them
+is a different order of thing from a figure at 25 mm with their back turned.
+Every other candid frame in this book is people not looking at a camera; this is
+people who do not know there is one. **Do not place it, even in the family
+copies, without asking both of them by name.**
+
+**Precision, again.** Four of the six were exact dimension matches and all four
+were the photograph. Two were crop parents and one of those was wrong. That is
+consistent with everything measured today: exact is a strong signal on an
+unusual shape, crop-parent is a coin flip, and neither is proof — `IMG_5483`
+matched its dimensions exactly under its own stem and is a dog on a gravel path.

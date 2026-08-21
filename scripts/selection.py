@@ -169,6 +169,36 @@ def find_all(stem: str, libs):
     return out
 
 
+
+def find_base(stem: str, libs):
+    """Files under the STRIPPED base name — `IMG_2946` for `IMG_2946 2`.
+
+    READ THIS BEFORE USING IT. A blind base-name fallback is what put a cat
+    asleep under a tarp where a carved magic square was supposed to go, and the
+    rule written afterwards was "NEVER the stripped base". That rule was too
+    strong, and it was costing six frames.
+
+    The real situation: Photos disambiguates a filename collision differently
+    depending on how it exports. The folder this document was written against
+    used a ` 2` suffix. This export uses the FILE EXTENSION — so both
+    photographs sit under one stem:
+
+        IMG_2946.JPG    3264 x 2448   a cat asleep under a tarp
+        IMG_2946.heic   2268 x 4032   the Sagrada Familia magic square
+
+    The base stem is therefore not wrong. Taking the FIRST file under it is.
+
+    So this is only ever called when the document states dimensions, and the
+    caller accepts a result only if it matches exactly or is a plausible crop
+    parent. Anything found this way is reported in its own category and has to
+    be opened. It is a lead, not a match.
+    """
+    base = re.sub(r'\s+\d+$', '', stem)
+    if base == stem:
+        return []
+    return find_all(base, libs)
+
+
 # "**IMG_2946 2** · 2268 × 4032" — the document states dimensions for most frames.
 DIMS = re.compile(r'(\d{3,5})\s*[×x]\s*(\d{3,5})')
 
@@ -257,13 +287,20 @@ def main():
 
     frames = named(doc)
     doc_text = doc.read_text(encoding='utf-8')
-    found, missing, suspect = [], [], []
+    found, missing, suspect, base_hits = [], [], [], []
     for stem, section in frames:
         paths = find_all(stem, libs)
+        want = stated_dims(doc_text, stem)
+        via_base = False
+        if not paths and want:
+            # See find_base. Dimension-gated, never blind.
+            cands = [q for q in find_base(stem, libs)
+                     if shape(q) == tuple(want) or crop_verdict(want, shape(q)) == 'crop']
+            if cands:
+                paths, via_base = cands, True
         if not paths:
             missing.append((stem, section))
             continue
-        want = stated_dims(doc_text, stem)
         # With several files under one stem, rank them by how well each answers
         # the document rather than by file extension. Exact match first, then a
         # frame the wanted shape could have been cropped out of, then the rest.
@@ -280,6 +317,9 @@ def main():
             return (4, -(w * h))
         p = min(paths, key=rank) if want else paths[0]
         w, h = shape(p)
+        if via_base:
+            base_hits.append((stem, section, p, w, h, tuple(want)))
+            continue
         if want and sorted(want) != sorted((w, h)):
             suspect.append((stem, want, (w, h), p.name, 'shape'))
             continue
@@ -357,6 +397,20 @@ def main():
     unresolved += [(s, '') for s, _, _, _, _ in suspect
                    if (s, ) not in [(c[0],) for c in
                        [x for x in suspect if x[4] == 'shape' and crop_verdict(x[1], x[2]) == 'crop']]]
+    if base_hits:
+        print(f"\n  ◐ FOUND UNDER THE BASE STEM — {len(base_hits)}:")
+        print("    The document writes these with a ` 2` suffix, which is how Photos")
+        print("    disambiguated a filename collision in the folder it was written against.")
+        print("    THIS export disambiguates the same collision by file extension, so both")
+        print("    photographs live under one stem. Each of these matched the stated")
+        print("    dimensions or is a plausible crop parent — nothing was accepted blind.")
+        for stem, section, q, w, h, want in base_hits:
+            mark = 'exact' if (w, h) == want else 'crop parent'
+            print(f"    {stem:<15} doc {want[0]}×{want[1]}  ·  {q.name} is {w}×{h}  ({mark})")
+        print("    `IMG_2946.heic` was opened and IS the Sagrada Família magic square, which")
+        print("    the blanket \"never the stripped base\" rule had been hiding since it was")
+        print("    written. Open the rest before trusting any of them.")
+
     if unresolved:
         by = index(libs)
         print(f"\n  candidates by stated shape — open these and read them against"

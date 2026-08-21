@@ -919,3 +919,28 @@ thing it cannot serve, and `library-11` already covers the craft with the
 Portuguese original. If it enters the book it enters as a personal frame, and
 that list is already long enough to need Adam's choosing rather than more
 registering.
+
+### Final tally, with the renders in hand — 21 Aug, evening
+
+Thirty-nine frames named. **Twenty-six now registered in `content/images.json`
+as `library-01` … `library-26`**, every one opened and read against its line.
+
+| | count | |
+| --- | --- | --- |
+| verified and placeable | **24** | `library-01`…`13`, `15`…`19`, `21`…`26` |
+| verified and blocked on consent | **2** | `library-14` sleeping couple · `library-20` airport stranger |
+| still unlocated | **1** | `IMG_2944`, three dogs at a white rail — the only ` 2` frame no candidate matched; its bare stem is a 2020 file at 3088 × 2320 |
+| unregistered by choice | rest | duplicates of an already-registered subject, or lines whose frame turned out to be a Fabiola portrait already covered by `library-18`/`19` |
+
+**Where the day's method landed.** Every wrong verdict this document produced
+came from reaching a photograph *by filename*. Every right one came from
+reaching it by **asset identity** — which, in practice, means the rendered crop
+in `photo library edits`, because Photos exports it under the name that belongs
+to the asset rather than to whatever else once used that number. The reconciler
+now reports both, dates everything, and says in its own output which kind of
+match a reader is looking at.
+
+**Where the book stands.** Twenty-four verified frames, seven of them printing
+at 363 dpi, most of them in Adam's own crop and grade — against a book at its
+130-page ceiling where **every one of them costs an existing spread.** The
+photographs are no longer the constraint. The editing is.

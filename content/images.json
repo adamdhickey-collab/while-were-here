@@ -1715,7 +1715,7 @@
       "composite": false,
       "target": "1280 × 960 px (native — 493 dpi at 66 mm, and nothing larger)",
       "selection": "Facebook archive, Zoo2014. Re-exported 20 Aug 2026 at High media quality, which returned the identical 1,280 px files — see content/plan/personal-archive.md.",
-      "revision": "Count softened 21 Aug 2026. The line said four camels; enlarged, the bodies overlap so heavily that four and five are both defensible and neither is checkable. The rule this book has settled on is to assert only what the picture supports \u2014 \u201cone head turned\u201d is certain and is the detail that matters. Not retouched, not upscaled. Used at the only size its resolution supports.",
+      "revision": "Count softened 21 Aug 2026. The line said four camels; enlarged, the bodies overlap so heavily that four and five are both defensible and neither is checkable. The rule this book has settled on is to assert only what the picture supports — “one head turned” is certain and is the detail that matters. Not retouched, not upscaled. Used at the only size its resolution supports.",
       "captured": "Jul 20, 2014 2:30:30 pm",
       "capturedSource": "Facebook data export, album HTML \"Taken\" field. The JPEG EXIF was stripped on upload; Facebook kept the capture timestamp in its own metadata and returns it in the export."
     },
@@ -1942,7 +1942,7 @@
       "captured": "Nov 01, 2015 12:41:28 pm",
       "capturedSource": "Facebook data export, album HTML \"Taken\" field. The JPEG EXIF was stripped on upload; Facebook kept the capture timestamp in its own metadata and returns it in the export.",
       "selection": "Facebook archive, Photos. Chosen over a black-squirrel frame from the same walk because a flock reads as a system and one squirrel does not.",
-      "revision": "Subject corrected 21 Aug 2026 after counting at 2x: the line said \u201ca dozen\u201d geese with \u201cfour of them walking on the asphalt in single file\u201d, and there are fifteen or so with exactly TWO on the asphalt, standing abreast. Two abreast is the better detail anyway \u2014 they are using a path built for people the way people use it. Cropped 4:3 from 2048 × 2048, 28% down, to hold both the grass flock and the birds on the asphalt. Not retouched, not upscaled."
+      "revision": "Subject corrected 21 Aug 2026 after counting at 2x: the line said “a dozen” geese with “four of them walking on the asphalt in single file”, and there are fifteen or so with exactly TWO on the asphalt, standing abreast. Two abreast is the better detail anyway — they are using a path built for people the way people use it. Cropped 4:3 from 2048 × 2048, 28% down, to hold both the grass flock and the birds on the asphalt. Not retouched, not upscaled."
     },
     {
       "id": "here-06-empty-room",
@@ -2099,7 +2099,7 @@
       "essay": "The Strange Privilege",
       "section": "III — The World Is Changing",
       "spread": "Reading · asymmetric, inset",
-      "subject": "Five VHS cassettes standing on a dark shelf. Four carry printed spines — Dazed and Confused, Taxi Driver, Life in the Fast Lane, Welcome to Hell — and the fifth is a plain tape with \u201cThrashing\u201d written on a white label in ballpoint.",
+      "subject": "Five VHS cassettes standing on a dark shelf. Four carry printed spines — Dazed and Confused, Taxi Driver, Life in the Fast Lane, Welcome to Hell — and the fifth is a plain tape with “Thrashing” written on a white label in ballpoint.",
       "concept": "A layer that was once simply how things worked.",
       "purpose": "Inset beside “Most people who live after a major transition see only the stable layer… A generation living through machine intelligence can still see the joins.” These are a join, still on a shelf.",
       "aspect": "4:3",
@@ -2110,7 +2110,7 @@
       "captured": "Nov 22, 2016 7:17:30 pm",
       "capturedSource": "Facebook data export, album HTML \"Taken\" field. The JPEG EXIF was stripped on upload; Facebook kept the capture timestamp in its own metadata and returns it in the export.",
       "selection": "Facebook archive, Photos. The only obsolete-format object in the archive that is photographed as an object rather than in use.",
-      "revision": "Subject corrected 21 Aug 2026: the shelf holds FIVE cassettes, not four. The fifth is the hand-recorded one, and an earlier line counted it as one of the four titled tapes rather than as its own object \u2014 so the alt text undercounted the shelf and lost the only home-made thing on it. Not cropped, not retouched, not upscaled. Natively 4:3. The caption makes no claim about whether a player still exists in the house, because the photograph does not show one."
+      "revision": "Subject corrected 21 Aug 2026: the shelf holds FIVE cassettes, not four. The fifth is the hand-recorded one, and an earlier line counted it as one of the four titled tapes rather than as its own object — so the alt text undercounted the shelf and lost the only home-made thing on it. Not cropped, not retouched, not upscaled. Natively 4:3. The caption makes no claim about whether a player still exists in the house, because the photograph does not show one."
     },
     {
       "id": "here-08-dog-resting",
@@ -2224,6 +2224,74 @@
       "origin": "own photograph",
       "capturedSource": "EXIF in the file.",
       "selection": "iPhoto library, verified by eye 21 Aug 2026. The line and the photograph agree exactly."
+    },
+    {
+      "id": "library-04-alcobaca-nave",
+      "filename": "—",
+      "kind": "personal",
+      "role": "plate",
+      "essay": "The Body Cannot Skip the Hill",
+      "section": "Part IV · While We're Here",
+      "spread": "Unplaced, and the file is not in this repository yet — it is still in the export at `~/Desktop/photo library 2/IMG_1638.HEIC`. Registered 21 Aug 2026, verified by eye against photo-selection-04's line. Copy it into public/images/personal/ and run `npm run derive` when a slot is decided. The book is at its 130-page ceiling, so placing this means removing something.",
+      "subject": "The nave of the abbey church at Alcobaça, seen down the centre aisle: bare Cistercian stone, compound piers running away to a lit apse, plain quadripartite vaults, dark wooden benches on both sides and nobody in any of them.",
+      "concept": "A room built to be walked the length of, empty.",
+      "purpose": "The essay is about distance the body has to cover. This is the far end of one, and its emptiness is the point — a building made for arrival, between arrivals.",
+      "aspect": "3:4",
+      "target": "4284 × 5712 px native — 363 dpi at 300 mm full bleed",
+      "origin": "own photograph",
+      "capturedSource": "EXIF in the file.",
+      "selection": "iPhoto library. NOTE: `IMG_1638.JPG` in the same folder is a night street parade with a brass band, and an earlier pass wrote this frame off on the strength of it. The HEIC is the nave."
+    },
+    {
+      "id": "library-05-light-on-a-wall",
+      "filename": "—",
+      "kind": "personal",
+      "role": "plate",
+      "essay": "The Secret Life of Attention",
+      "section": "I — Look Again",
+      "spread": "Unplaced, and the file is not in this repository yet — it is still in the export at `~/Desktop/photo library 2/IMG_1735.HEIC`. Registered 21 Aug 2026, verified by eye against photo-selection-04's line. Copy it into public/images/personal/ and run `npm run derive` when a slot is decided. The book is at its 130-page ceiling, so placing this means removing something.",
+      "subject": "A woman alone in a stone chapel, back to the camera, watching a scatter of coloured light thrown onto a bare wall by a stained window out of frame. Clay amphorae ranged along the foot of the wall, a hanging wooden weight at the right, a rope barrier between her and the light.",
+      "concept": "Somebody stopped, looking at nothing that is there.",
+      "purpose": "The essay's argument photographed without a diagram: a person giving full attention to a patch of coloured light on a blank wall, in a room full of objects nobody is looking at.",
+      "aspect": "4:3",
+      "target": "5712 × 4284 px native — 363 dpi at 300 mm full bleed",
+      "origin": "own photograph",
+      "capturedSource": "EXIF in the file.",
+      "selection": "iPhoto library, verified by eye 21 Aug 2026. Face not visible."
+    },
+    {
+      "id": "library-06-bamboo-path",
+      "filename": "—",
+      "kind": "personal",
+      "role": "plate",
+      "essay": "The Body Cannot Skip the Hill",
+      "section": "Part IV · While We're Here",
+      "spread": "Unplaced, and the file is not in this repository yet — it is still in the export at `~/Desktop/photo library 2/IMG_1562.HEIC`. Registered 21 Aug 2026, verified by eye against photo-selection-04's line. Copy it into public/images/personal/ and run `npm run derive` when a slot is decided. The book is at its 130-page ceiling, so placing this means removing something.",
+      "subject": "Two people walking away along a plank boardwalk through dense bamboo, backs turned, the frame closed on both sides by the fibrous trunks of two palms.",
+      "concept": "A path narrow enough that it can only be taken in order.",
+      "purpose": "Route rather than destination. Nobody's face is visible.",
+      "aspect": "4:3",
+      "target": "5712 × 4284 px native — 363 dpi at 300 mm full bleed",
+      "origin": "own photograph",
+      "capturedSource": "EXIF in the file.",
+      "selection": "iPhoto library, verified by eye 21 Aug 2026."
+    },
+    {
+      "id": "library-07-moss-trunk",
+      "filename": "—",
+      "kind": "personal",
+      "role": "material",
+      "essay": "—",
+      "section": "Material break",
+      "spread": "Unplaced, and the file is not in this repository yet — it is still in the export at `~/Desktop/photo library 2/IMG_1390.HEIC`. Registered 21 Aug 2026, verified by eye against photo-selection-04's line. Copy it into public/images/personal/ and run `npm run derive` when a slot is decided. The book is at its 130-page ceiling, so placing this means removing something.",
+      "subject": "Moss and lichen up the flank of a tree trunk, filling the frame: bright green cushion moss over grey-pink bark, pale lichen crusts, sunlight coming through the leaves behind.",
+      "concept": "Surface, at the scale where it stops being a tree.",
+      "purpose": "A candidate for a material break. photo-selection-04 defines that brief as SURFACE — no edge, no scale — and this frame nearly meets it: the trunk fills the frame, but background foliage at the left gives away both. A tighter crop from 4284 × 5712 would satisfy it and still clear 300 dpi.",
+      "aspect": "3:4",
+      "target": "4284 × 5712 px native — 363 dpi at 300 mm full bleed",
+      "origin": "own photograph",
+      "capturedSource": "EXIF in the file.",
+      "selection": "iPhoto library, verified by eye 21 Aug 2026."
     }
   ]
 }

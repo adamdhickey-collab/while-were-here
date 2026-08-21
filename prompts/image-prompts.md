@@ -335,6 +335,22 @@ Vertical frame (3:4).
 Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
 ```
 
+### library-07-moss-trunk
+
+**Save as** `public/images/personal/—` · 3:4 · target 4284 × 5712 px native — 363 dpi at 300 mm full bleed
+**Where it goes** Unplaced, and the file is not in this repository yet — it is still in the export at `~/Desktop/photo library 2/IMG_1390.HEIC`. Registered 21 Aug 2026, verified by eye against photo-selection-04's line. Copy it into public/images/personal/ and run `npm run derive` when a slot is decided. The book is at its 130-page ceiling, so placing this means removing something.
+**Why it is there** A candidate for a material break. photo-selection-04 defines that brief as SURFACE — no edge, no scale — and this frame nearly meets it: the trunk fills the frame, but background foliage at the left gives away both. A tighter crop from 4284 × 5712 would satisfy it and still clear 300 dpi.
+
+```text
+A macro photograph of a single material surface, lit with raking light from one side so the surface throws its own shadows and its texture reads as terrain. Fills the entire frame edge to edge. Shallow but honest depth of field. Muted, true colour with no grading. Real photographic texture and fine grain.
+
+Moss and lichen up the flank of a tree trunk, filling the frame: bright green cushion moss over grey-pink bark, pale lichen crusts, sunlight coming through the leaves behind.
+
+Vertical frame (3:4).
+
+Avoid: any object, edge, hem, seam or boundary — only surface; anything that lets the viewer work out the scale; styled or arranged compositions; props; studio seamless backgrounds; heavy grading or HDR; vignettes; visible text or watermarks; symmetry; a recognisable scene resolving out of the texture.
+```
+
 ## Most of Life Is a Tuesday
 
 ### survey-01-familiar-lake
@@ -843,6 +859,22 @@ Avoid: any paper, card or background colour — the artwork must sit on full tra
 A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
 
 An Amur tiger stepping through summer growth, head low, whiskers forward, following something at ground level.
+
+Horizontal frame (4:3).
+
+Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
+```
+
+### library-05-light-on-a-wall
+
+**Save as** `public/images/personal/—` · 4:3 · target 5712 × 4284 px native — 363 dpi at 300 mm full bleed
+**Where it goes** Unplaced, and the file is not in this repository yet — it is still in the export at `~/Desktop/photo library 2/IMG_1735.HEIC`. Registered 21 Aug 2026, verified by eye against photo-selection-04's line. Copy it into public/images/personal/ and run `npm run derive` when a slot is decided. The book is at its 130-page ceiling, so placing this means removing something.
+**Why it is there** The essay's argument photographed without a diagram: a person giving full attention to a patch of coloured light on a blank wall, in a room full of objects nobody is looking at.
+
+```text
+A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
+
+A woman alone in a stone chapel, back to the camera, watching a scatter of coloured light thrown onto a bare wall by a stained window out of frame. Clay amphorae ranged along the foot of the wall, a hanging wooden weight at the right, a rope barrier between her and the light.
 
 Horizontal frame (4:3).
 
@@ -1359,12 +1391,12 @@ Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glo
 **Save as** `public/images/photography/specimen-05-bactrian-swim.jpg` · 4:3 · target 1280 × 960 px (native — 493 dpi at 66 mm, and nothing larger)
 **Where it goes** Image essay, specimen card at 66 mm
 **Why it is there** Desert animals swimming, on a page about distance and the body. Photographed by Adam, 2014. Captive animals — do not caption them as wild.
-**Watch for** Not retouched, not upscaled. Used at the only size its resolution supports.
+**Watch for** Count softened 21 Aug 2026. The line said four camels; enlarged, the bodies overlap so heavily that four and five are both defensible and neither is checkable. The rule this book has settled on is to assert only what the picture supports — “one head turned” is certain and is the detail that matters. Not retouched, not upscaled. Used at the only size its resolution supports.
 
 ```text
 A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
 
-Four Bactrian camels shoulder-deep in green water, humps above the surface, one head turned.
+Bactrian camels shoulder-deep in still green water, bodies overlapping so the count is not readable — four or five — humps above the surface, and one head turned to the camera with its mouth open.
 
 Horizontal frame (4:3).
 
@@ -1450,6 +1482,38 @@ A believable documentary photograph of the real world — quiet, contemplative, 
 A paved footpath switchbacking down a limestone mountainside at Montserrat, folding back on itself four times through scrub and pine, a small carved shrine set into the rock at one turn, and one walking figure alone on the path, a few millimetres tall.
 
 Vertical frame (3:4).
+
+Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
+```
+
+### library-04-alcobaca-nave
+
+**Save as** `public/images/personal/—` · 3:4 · target 4284 × 5712 px native — 363 dpi at 300 mm full bleed
+**Where it goes** Unplaced, and the file is not in this repository yet — it is still in the export at `~/Desktop/photo library 2/IMG_1638.HEIC`. Registered 21 Aug 2026, verified by eye against photo-selection-04's line. Copy it into public/images/personal/ and run `npm run derive` when a slot is decided. The book is at its 130-page ceiling, so placing this means removing something.
+**Why it is there** The essay is about distance the body has to cover. This is the far end of one, and its emptiness is the point — a building made for arrival, between arrivals.
+
+```text
+A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
+
+The nave of the abbey church at Alcobaça, seen down the centre aisle: bare Cistercian stone, compound piers running away to a lit apse, plain quadripartite vaults, dark wooden benches on both sides and nobody in any of them.
+
+Vertical frame (3:4).
+
+Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
+```
+
+### library-06-bamboo-path
+
+**Save as** `public/images/personal/—` · 4:3 · target 5712 × 4284 px native — 363 dpi at 300 mm full bleed
+**Where it goes** Unplaced, and the file is not in this repository yet — it is still in the export at `~/Desktop/photo library 2/IMG_1562.HEIC`. Registered 21 Aug 2026, verified by eye against photo-selection-04's line. Copy it into public/images/personal/ and run `npm run derive` when a slot is decided. The book is at its 130-page ceiling, so placing this means removing something.
+**Why it is there** Route rather than destination. Nobody's face is visible.
+
+```text
+A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
+
+Two people walking away along a plank boardwalk through dense bamboo, backs turned, the frame closed on both sides by the fibrous trunks of two palms.
+
+Horizontal frame (4:3).
 
 Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
 ```
@@ -1754,12 +1818,12 @@ Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glo
 **Save as** `public/images/personal/systems-06-geese-path.jpg` · 4:3 · target 2048 × 1536 px (native crop — 565 dpi at 92 mm)
 **Where it goes** Reading · asymmetric, inset
 **Why it is there** Inset beside the paragraph on order as the visible history of constraints. The path is the constraint; the geese are what met it.
-**Watch for** Cropped 4:3 from 2048 × 2048, 28% down, to hold both the grass flock and the birds on the asphalt. Not retouched, not upscaled.
+**Watch for** Subject corrected 21 Aug 2026 after counting at 2x: the line said “a dozen” geese with “four of them walking on the asphalt in single file”, and there are fifteen or so with exactly TWO on the asphalt, standing abreast. Two abreast is the better detail anyway — they are using a path built for people the way people use it. Cropped 4:3 from 2048 × 2048, 28% down, to hold both the grass flock and the birds on the asphalt. Not retouched, not upscaled.
 
 ```text
 A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
 
-A dozen Canada geese on autumn grass beside a paved park path, four of them walking on the asphalt in single file.
+Canada geese scattered across leaf-covered autumn grass beside a paved park path, fifteen or so, most of them grazing. Exactly two are out on the asphalt, standing abreast and facing the same way.
 
 Horizontal frame (4:3).
 
@@ -1995,12 +2059,12 @@ Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glo
 **Save as** `public/images/personal/privilege-08-vhs-shelf.jpg` · 4:3 · target 960 × 720 px (native, uncropped — 265 dpi at 92 mm)
 **Where it goes** Reading · asymmetric, inset
 **Why it is there** Inset beside “Most people who live after a major transition see only the stable layer… A generation living through machine intelligence can still see the joins.” These are a join, still on a shelf.
-**Watch for** Not cropped, not retouched, not upscaled. Natively 4:3. The caption makes no claim about whether a player still exists in the house, because the photograph does not show one.
+**Watch for** Subject corrected 21 Aug 2026: the shelf holds FIVE cassettes, not four. The fifth is the hand-recorded one, and an earlier line counted it as one of the four titled tapes rather than as its own object — so the alt text undercounted the shelf and lost the only home-made thing on it. Not cropped, not retouched, not upscaled. Natively 4:3. The caption makes no claim about whether a player still exists in the house, because the photograph does not show one.
 
 ```text
 A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
 
-Four VHS cassettes standing on a dark shelf — Dazed and Confused, Taxi Driver, Life in the Fast Lane, Welcome to Hell — one with a hand-written spine label.
+Five VHS cassettes standing on a dark shelf. Four carry printed spines — Dazed and Confused, Taxi Driver, Life in the Fast Lane, Welcome to Hell — and the fifth is a plain tape with “Thrashing” written on a white label in ballpoint.
 
 Horizontal frame (4:3).
 

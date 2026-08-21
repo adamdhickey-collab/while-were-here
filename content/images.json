@@ -2533,6 +2533,24 @@
       "capturedSource": "EXIF in the file — 19 Sep 2024.",
       "consent": "BLOCKING, and unlike the plane frame there is no one to ask. She is a close-up, fully identifiable stranger, photographed candidly in an airport, and printing her as an emblem of ‘the last people who remember waiting’ makes an argument about a person who never agreed to illustrate it. The candid rule’s size test does not rescue a frame whose entire point is one legible face.",
       "selection": "iPhoto library, verified by eye 21 Aug 2026."
+    },
+    {
+      "id": "library-21-lake-last-light",
+      "filename": "—",
+      "kind": "personal",
+      "role": "plate",
+      "essay": "—",
+      "section": "Stage III → IV, the dark ground",
+      "spread": "Unplaced, and the file is not in this repository yet — Adam's crop is at `~/Desktop/photo library edits/IMG_2630.jpeg` (5712 × 3213) and the uncropped original at `~/Desktop/photo library 2/IMG_2630 (2).HEIC` (5712 × 4284). Registered 21 Aug 2026, verified by eye. The book is at its 130-page ceiling, so placing this means removing something.",
+      "subject": "Heavy broken cloud over a flat lake at last light, the sun a pale disc behind the overcast, the far shore a black tree line doubled in the water, a few waterfowl as specks. Almost no colour beyond grey and a last brown in the reeds.",
+      "concept": "The day withdrawing, watched from the shore.",
+      "purpose": "photo-selection-04 holds it for the dark stages, and it is the right register: a picture that is mostly weight. Shot at home in Minnesota two weeks after the trip, which suits the arc — the dark stages are not elsewhere, they are here.",
+      "aspect": "16:9",
+      "target": "5712 × 3213 px (Adam's crop) — 272 dpi at 300 mm full bleed, 346 as a band",
+      "origin": "own photograph",
+      "capturedSource": "EXIF in the file — 14 Oct 2024.",
+      "render": "~/Desktop/photo library edits/IMG_2630.jpeg — Adam's own crop and grade; the subject line above describes this crop.",
+      "selection": "iPhoto library, verified by eye 21 Aug 2026 from the render, which carries the asset identity the bare filename never did."
     }
   ]
 }

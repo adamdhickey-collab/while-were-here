@@ -3,14 +3,14 @@
 # Credits and permissions
 
 
-- **systems-02-starling-flock** — Adapted from a photograph by Yuri Elizegi, with the bare-tree foreground from a photograph by Vera Emilie A Bomstad, both via Pexels. Composited and colour-graded for this book. Source: Pexels photo 38305943 (Yuri Elizegi); bare-tree foreground from Pexels photo 10545719 (Vera Emilie A Bomstad). Licence: Pexels License.
-- **systems-05-physarum-network** — Rob Cruickshank, “Slime mould (P. polycephalum)”, via Wikimedia Commons. Cropped, masked, composited and colour-graded for this book. Source: https://commons.wikimedia.org/wiki/File:Slime_mould_(P._polycephalum).jpg. Licence: CC BY 2.0.
+- **systems-02-starling-flock** — Adapted from a photograph by Yuri Elizegi, with the bare-tree foreground from a photograph by Vera Emilie A Bomstad, both via Pexels. Composited and color-graded for this book. Source: Pexels photo 38305943 (Yuri Elizegi); bare-tree foreground from Pexels photo 10545719 (Vera Emilie A Bomstad). Licence: Pexels License.
+- **systems-05-physarum-network** — Rob Cruickshank, “Slime mould (P. polycephalum)”, via Wikimedia Commons. Cropped, masked, composited and color-graded for this book. Source: https://commons.wikimedia.org/wiki/File:Slime_mould_(P._polycephalum).jpg. Licence: CC BY 2.0.
 - **material-01-linen-weave** — Composited from Poly Haven's “Rough Linen” diffuse, displacement and ambient-occlusion maps, relit from the side for this book. Source: https://polyhaven.com/a/rough_linen. Licence: CC0.
-- **material-02-oxidised-metal** — Composited from Poly Haven's “Rusty Metal 04” PBR maps and a photograph of weathered copper by Lana on Unsplash, relit and rebalanced for this book. Source: https://polyhaven.com/a/rusty_metal_04 · https://unsplash.com/photos/bP2tnerweOc. Licence: CC0 · Unsplash License.
+- **material-02-oxidized-metal** — Composited from Poly Haven's “Rusty Metal 04” PBR maps and a photograph of weathered copper by Lana on Unsplash, relit and rebalanced for this book. Source: https://polyhaven.com/a/rusty_metal_04 · https://unsplash.com/photos/bP2tnerweOc. Licence: CC0 · Unsplash License.
 - **material-03-glass-condensation** — Composited from glass-droplet photography by Petri R on Unsplash, over a heavily blurred atmosphere layer from a condensation photograph by Lana on Unsplash; no scene from either remains legible. Source: https://unsplash.com/photos/-ojlrE-LxWQ · https://unsplash.com/photos/_gCDTmrSHKA. Licence: Unsplash License.
-- **intelligence-06-closing-hands** — Adapted from a photograph by Tima Miroshnichenko via Pexels. Colour-graded and composited for this book. Source: Pexels photo 6790754 (Tima Miroshnichenko). Licence: Pexels License.
-- **privilege-06-closing-cursor** — Adapted from a photograph by Artem Podrez via Pexels. Colour-graded and composited for this book. Source: Pexels photo 6279111 (Artem Podrez). Licence: Pexels License.
-- **pilgrimage-06-closing-stone** — Adapted from a photograph by Elle Hughes via Pexels. Colour-graded and composited for this book. Source: Pexels photo 1537811 (Elle Hughes). Licence: Pexels License.
+- **intelligence-06-closing-hands** — Adapted from a photograph by Tima Miroshnichenko via Pexels. Color-graded and composited for this book. Source: Pexels photo 6790754 (Tima Miroshnichenko). Licence: Pexels License.
+- **privilege-06-closing-cursor** — Adapted from a photograph by Artem Podrez via Pexels. Color-graded and composited for this book. Source: Pexels photo 6279111 (Artem Podrez). Licence: Pexels License.
+- **pilgrimage-06-closing-stone** — Adapted from a photograph by Elle Hughes via Pexels. Color-graded and composited for this book. Source: Pexels photo 1537811 (Elle Hughes). Licence: Pexels License.
 
 ## Generated and original material
 

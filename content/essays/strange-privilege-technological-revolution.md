@@ -247,8 +247,8 @@ spreads:
     line: It is the brief chance to watch the new machinery become ordinary while its choices can still be seen.
     blocks: [flow-4a, flow-4b]
   - type: material-break
-    image: material-02-oxidised-metal
-    label: Oxidised metal · rust bloom and verdigris · raking light
+    image: material-02-oxidized-metal
+    label: Oxidized metal · rust bloom and verdigris · raking light
     line: Time, doing its work on something that was supposed to last.
 ---
 

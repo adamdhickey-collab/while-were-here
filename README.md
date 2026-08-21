@@ -34,7 +34,7 @@ If you cloned before installing LFS, `git lfs pull` fixes it in place.
 | `npm run dev` | Build, watch content, and serve `build/` on port 4321. |
 | `npm run preview` | Open the real Vivliostyle paginator on `build/book.html`. |
 | `npm run pdf` | Full-resolution PDF → `dist/while-were-here.pdf`. Around 200 MB with real imagery — correct for a printer, unwieldy on a laptop. |
-| `npm run pdf:proof` | Review PDF at screen resolution → `dist/while-were-here-proof.pdf`, 75 MB. |
+| `npm run pdf:proof` | Review PDF at screen resolution → `dist/while-were-here-proof.pdf`, 90 MB. |
 | `npm run pdf:press` | Press PDF → `dist/while-were-here-press.pdf` (bleed + crop marks). **Needs Ghostscript** — `npm run press:check` runs first and says so, because press-ready hangs rather than failing without it. **Check the build line says `PRESS: bleed + crop marks`**: this script once ran the trimmed proof build behind a press-ready preflight, and the file had no bleed at all. |
 | `npm run press:check` | Confirm the press preflight can actually run before committing to a long build. |
 | `npm run prompts` | Regenerate the full prompt library from the manifest. |

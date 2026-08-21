@@ -242,8 +242,33 @@ served by item 8, which shares a session with item 4.
 
 ## The photo library
 
-### 6 · The edited export
-Running. `File → Export → Export N Photos…` into `~/Desktop/photo library
+### 6 · The edited export — **IT STOPPED**
+**Stopped at 17:27 on 21 Aug, about half done.** 13,456 files, 205 GB, against
+roughly 27,000 expected. Photos.app is no longer running, `caffeinate` is gone
+too, and an orphaned temp file — `IMG_6218 (1).png.sb-…`, a partial write —
+was left behind, so it did not finish cleanly. No crash report was written,
+which suggests it was quit or the session was torn down rather than that Photos
+died on its own.
+
+**How much this costs is worth being precise about, because it is less than it
+looked this morning.** Every one of the eighteen frames verified today came out
+of the **unmodified originals** export, which finished: 23,912 stills. The
+16:9 shapes this document names turned out to be reachable from their 4:3
+parents, and Photos' three collision-naming schemes — ` 2`, the file extension,
+and ` (N)` — were the real obstacle, not the export mode. The edited export is
+now wanted for one thing only: **frames where Adam's crop or grade IS the
+photograph**, of which `IMG_1813` is the proven example — its original is a
+pleasant colour snapshot and his black-and-white is a different picture.
+
+**If it is restarted, send it to a THIRD folder.** Re-running into
+`photo library edited` makes Photos rename every collision again, which is the
+naming mess this document has spent a day untangling. Disk: 474 GB free, and
+a full edited export runs to about 350 GB, so **delete one of the two existing
+folders first** — the partial edited one is the obvious candidate, and it covers
+2009 to April 2022, which is entirely before the September 2024 trip every
+wanted frame comes from.
+
+Original note, kept for the record: Running. `File → Export → Export N Photos…` into `~/Desktop/photo library
 edited`, which `npm run selection` already reads alongside the originals.
 
 This is the one that unblocks [photo-selection-04](photo-selection-04.md). Every

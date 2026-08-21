@@ -207,6 +207,39 @@ match its four sightlines.
 
 ---
 
+### 10 · Nine verified frames, and the three worst plates in the book
+These two facts belong side by side, because one may answer the other.
+
+**Nine frames from the library are now verified by eye** — opened, read against
+their line, and registered in `content/images.json` as `library-01` … `-09`.
+Five print at **363 dpi across a 300 mm page**.
+
+**Three plates in the book print at 87 dpi**, all of them essay closings, all of
+them composited from stock photographs. They are shot-list items 8–10.
+
+One pairing is strong enough to name. `pilgrimage-06-closing-stone` closes *The
+Body Cannot Skip the Hill* at 87 dpi, and the library holds **`IMG_1638`, the
+Alcobaça nave at 4284 × 5712 — 363 dpi.** An empty Cistercian nave, benches on
+both sides, light at the far end, nobody in it. For an essay about distance the
+body has to cover, that is arrival photographed, and it is Adam's own.
+
+**Three ways, and the choice is yours:**
+
+1. **Shoot item 10.** Your hand, your stone, and the essay's last sentence is
+   already written for it. Best if the shoot happens.
+2. **Place the nave.** In hand today, four times the resolution, and it removes
+   one of the six pictures in this book somebody else took. Costs **one
+   paragraph** — the essay currently ends on the gesture in the photograph, and
+   that ending would have to become the room.
+3. **Both.** The nave is not only a closing plate; it would also carry a
+   full-bleed anywhere in Part IV.
+
+The same arithmetic applies less neatly to the other two closings. Nothing in
+the library is a cursor blinking in a dim room, and the bench closing is better
+served by item 8, which shares a session with item 4.
+
+---
+
 ## The photo library
 
 ### 6 · The edited export
@@ -219,9 +252,12 @@ export is 4:3 or 3:4. The frames were cropped in Photos, so the originals export
 cannot match the document by dimension. When the edited export reaches the newer
 photographs, `npm run selection` should start resolving frames.
 
-Then it is verification work per frame — open it, read it against the document's
-one-line description — because **ten frames so far have turned out to disagree
-with the line written for them.** Eight are the wrong file: iPhone reuses
+Much of that verification is now done — see item 10 and
+[photo-selection-04](photo-selection-04.md). Fifteen shape-consistent candidates
+were opened on 21 Aug and **nine were the photograph the document describes**.
+It still has to be done per frame, by eye, because **six of the fifteen were
+not** — four were a different photograph entirely and two had a wrong line
+written about them. Eight are the wrong file: iPhone reuses
 `IMG_####`, and `IMG_1638` is a night street parade, not the Alcobaça nave. Two
 are the right file wrongly described, found only by looking — including
 `P1050320`, where the description is wrong *and* an identifiable adult is in the

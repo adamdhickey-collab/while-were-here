@@ -138,6 +138,24 @@ copy, both written about wear that turned out not to be in the photograph.
 
 ---
 
+## One rephotograph, and it settles a quotation
+
+### 11 · The inside page of *Misery Is…* · `intelligence-07-child-hand`
+**4:3 · prints 92 mm in an inset · anything a phone gives clears it**
+The ruled page, close and square, filling the frame. Even light, no flash, no
+angle — this one is a document, so shoot it the way a document is shot.
+
+The existing file is 1536 × 1152, which prints fine and **cannot arbitrate the
+letterform the book quotes.** The caption prints *"embarrass younn front"*, the
+disputed letters occupy about 230 × 130 real pixels, and enlarged they read as
+plausibly `nn`, `rn` or `rin`. The book quotes this sentence twice. A quotation
+the book cannot check is worth five minutes with a phone.
+
+While the object is out, read the line off the paper as well — the eye settles
+it faster than any file will, and then the photograph is only insurance.
+
+---
+
 ## Not to be shot — recorded so it is not re-proposed
 
 The Renwick *Wonder* frames (`P1050270`–`P1050283`) are **blocked on rights**:

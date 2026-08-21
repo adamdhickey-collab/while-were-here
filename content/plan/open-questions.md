@@ -89,14 +89,27 @@ talking about **three** books, and only two are in the manifest. Either the
 third exists and needs photographing, or two is right and this note closes. The
 layout takes a third without changing anything.
 
-**One word of the transcription needs a look.** The caption quotes the inside of
-the child's book as *"Misery is when your mom embarrass younn front of your
-friends."* `younn` is either a faithful transcription of a child's spelling —
-in which case it is the best word on the page and must not be touched — or a
-slip for *you in*. **The photograph shows only the cover, so this cannot be
-settled from the book's own files.** It has to be read off the object. Nobody
-should silently correct it in the meantime: a tidied-up child's sentence is
-worth nothing, and the whole page is about keeping the thing as it was made.
+**One word of the transcription needs the object, not the file.** The caption
+quotes the inside of the child's book as *"Misery is when your mom embarrass
+younn front of your friends."* The manifest records that `younn` was checked at
+full resolution and is deliberate, reproduced rather than corrected.
+
+Looked at again on 21 Aug and **it does not settle.** The page is photographed
+in `intelligence-07-child-hand`, but that file is **1536 × 1152**, and the four
+disputed letters occupy about 230 × 130 real pixels. Enlarged, the strokes read
+as plausibly `nn`, `rn` or `rin` — there appears to be a dot above one of them,
+which would make it an `i` and the word *yourin*, but a dot at that scale is
+also what a pencil does. Enough pixels to print at 424 dpi in a 92 mm inset;
+not enough to arbitrate a letterform.
+
+So: **read it off the paper.** The book is in the house. Failing that,
+re-photograph that one page close and square — five minutes, and it also gives
+the inset a better file than a 1536 px frame.
+
+Nobody should quietly normalise it to *you in* in the meantime. A tidied-up
+child's sentence is worth nothing, and the page exists to keep the thing as it
+was made — the manifest already records that an earlier draft did exactly that
+and it was caught.
 
 ---
 

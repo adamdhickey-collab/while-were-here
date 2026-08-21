@@ -203,6 +203,10 @@ spreads:
       The 2017 transformer paper described a network based on attention rather
       than recurrence. Its larger model trained for 3.5 days on eight P100
       GPUs and set new reported results on two translation tasks.
+    insetOn: recto
+    inset:
+      image: privilege-09-crosswalk
+      caption: Rules written in advance, in paint.
   - type: image-essay
     variant: tall
     image: privilege-05-dog-under-desk

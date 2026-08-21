@@ -145,6 +145,21 @@ const SURVEY_AVOID =
   'tiling motif; infographic, corporate-diagram or explainer-video styling; drop shadows; a frame or ' +
   'border around the artwork.';
 
+const MICRO_STYLE =
+  'A scientific micrograph — scanning electron, dark-field or confocal — of a real specimen at high ' +
+  'magnification, the kind reproduced in a journal rather than a stock library. Dark, near-black ' +
+  'ground with the subject luminous against it, lit as though by the instrument itself. Extremely ' +
+  'shallow depth of field with the focal plane doing real work: parts of the structure fall away into ' +
+  'the dark. Fine surface detail visible at the limit of resolution — pitting, fibre, grain, crystal ' +
+  'edge. Restrained false colour in one or two hues at most, in the manner of a coloured SEM plate, ' +
+  'never rainbow-mapped. It should look measured, not styled.';
+
+const MICRO_AVOID =
+  'Avoid: bright or white grounds; rainbow or heat-map false colour; neon or fluorescent glow; a ' +
+  'cartoon or 3D-rendered look; symmetrical or tiling arrangements; visible text, numerals, watermarks ' +
+  'or a burned-in scale bar (the layout sets its own); anything recognisable at human scale; a subject ' +
+  'floating in empty space with no surface under it; stock-photo science imagery.';
+
 const promptFor = (i) => {
   const byRole = {
     handwriting: [HAND_STYLE, HAND_AVOID],
@@ -154,6 +169,7 @@ const promptFor = (i) => {
        the one way that matters: the watercolour is the subject, not an accent,
        and the avoid-list must therefore stop forbidding gradients. */
     survey: [SURVEY_STYLE, SURVEY_AVOID],
+    micrograph: [MICRO_STYLE, MICRO_AVOID],
   };
   const [style, avoid] = byRole[i.role] ||
     (i.kind === 'illustration' ? [ILLO_STYLE, ILLO_AVOID] : [PHOTO_STYLE, PHOTO_AVOID]);

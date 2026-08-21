@@ -149,7 +149,49 @@ const noDeriv = images.filter((i) => hasMaster(i) && i.filename !== '—'
   && !fs.existsSync(P('public/images-web', KD[i.kind] || 'photography', i.filename)));
 check('every master has a web derivative', noDeriv.length === 0, noDeriv.map((i) => i.id).join(', '));
 
-/* 10. Facts that are verified but have not reached a page. Reported, never
+/* 10. Reproduced records count what they contain. Three spreads print a real
+       Meta data export in full — "Cities you have checked into · 23 entries" —
+       and the number beside the title is typed while the list underneath is
+       edited. A record whose header disagrees with its own body is the exact
+       failure this book's argument cannot survive: the spread's whole claim is
+       that it reproduces the thing unedited.
+       `count` takes two shapes. "23 entries" must equal the list. "7,325
+       unique · 154 shown" is a total and a sample, and it is the SHOWN number
+       that has to match — reading the first integer would fail a correct page,
+       which is worse than not checking. */
+const essays = fs.readdirSync(P('content/essays')).filter((f) => f.endsWith('.md'))
+  .map((f) => [f, fs.readFileSync(P('content/essays', f), 'utf8')]);
+const records = [];
+for (const [file, src] of essays) {
+  for (const m of src.matchAll(/record:\s*\n((?:[ \t]{6,}.*\n)+)/g)) {
+    const blk = m[1];
+    const title = (blk.match(/title:\s*(.+)/) || [, ''])[1].trim();
+    const count = (blk.match(/count:\s*(.+)/) || [, ''])[1].trim();
+    const entries = [...blk.matchAll(/^\s+-\s+"?(.*?)"?\s*$/gm)].map((x) => x[1].trim());
+    const items = entries.length;
+    if (!count || !items) continue;
+    const nums = [...count.matchAll(/([\d,]+)/g)].map((x) => Number(x[1].replace(/,/g, '')));
+    const want = /shown/i.test(count) ? nums[nums.length - 1] : nums[0];
+    records.push({ file, title, count, items, want, entries });
+  }
+}
+const miscounted = records.filter((r) => r.want !== r.items);
+check('every reproduced record counts what it prints', miscounted.length === 0,
+  miscounted.length
+    ? miscounted.map((r) => `${r.title}: says "${r.count}", prints ${r.items}`).join('; ')
+    : `${records.length} record(s), ${records.reduce((a, r) => a + r.items, 0)} entries`);
+
+/* And every entry survives the layout. The count above compares the header to
+   the source; this compares the source to the paper. A record that silently
+   loses its tail to a column break would pass the first and fail the reader,
+   and "reproduced in full, unedited" is printed underneath it as a claim. */
+const dropped = records.flatMap((r) => r.entries.filter((e) => !text.includes(e))
+  .map((e) => `${r.title}: "${e}"`));
+check('every reproduced entry reaches the page', dropped.length === 0,
+  dropped.length ? dropped.slice(0, 4).join('; ') + (dropped.length > 4 ? ` (+${dropped.length - 4})` : '')
+                 : 'checked entry by entry against the printed text');
+
+/* 11. Facts that are verified but have not reached a page. Reported, never
        failed: registering a claim before its spread exists is correct. */
 const printedLower = text.toLowerCase();
 const STOP = new Set(['about','above','after','their','there','these','those','which','while','would','because','between','through','around','other','under','where','with','from','that','this','than','then','they','been','have','into','more','most','only','over','some','such','were','when']);

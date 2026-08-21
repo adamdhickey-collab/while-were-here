@@ -199,34 +199,34 @@ Square frame (1:1).
 Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
 ```
 
-### field-note-02-mower
+### field-note-02-dog-tag
 
-**Save as** `public/images/personal/field-note-02-mower.jpg` · 1:1 · target 3213 × 3213 px
-**Where it goes** undefined
-**Why it is there** Field note verso. The machine before you are told what it wants.
-**Watch for** Square crop of the 3213 × 5712 original, 1049 px down. Not retouched, not upscaled. 272 dpi at 300 mm.
+**Save as** `public/images/personal/field-note-02-dog-tag.jpg` · 1:1 · target shoot at native phone resolution; used at 300 mm (main) and 70 mm (inset)
+**Where it goes** Field note (between Parts II and III)
+**Why it is there** Field note between Parts II and III: an ordinary thing that has quietly become networked, and the thing is the dog.
+**Watch for** To shoot: ordinary indoor light, no flash. Frame so that neither her name nor the code content is legible — the book prints no scannable codes and no personal data it does not mean to. Replaces the mower photographs, which were brand-heavy (two logos, a slogan), off-palette, and carried a fully legible serial number.
 
 ```text
 A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
 
-A lawnmower from directly above on a garage floor, grass still on the deck.
+The dog asleep, the collar slack around her neck, the tag lying face up against dark fur in ordinary indoor light — close enough that the tag is the subject and the dog is the landscape it rests on.
 
 Square frame (1:1).
 
 Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
 ```
 
-### field-note-02-engine-plate
+### field-note-02-tag-code
 
-**Save as** `public/images/personal/field-note-02-engine-plate.jpg` · 3:2 · target 883 × 597 px (native, do not upscale)
-**Where it goes** Field note (recto, taped inset at 70 mm)
-**Why it is there** Field note verso. The only place in the book where a real photograph of this life appears at size.
-**Watch for** Native resolution, uncropped, unretouched. At 70 mm wide this is 320 dpi, which is why it works here and not as a full bleed. See content/plan/photo-selection-04.md.
+**Save as** `public/images/personal/field-note-02-tag-code.jpg` · 3:2 · target shoot at native phone resolution; used at 300 mm (main) and 70 mm (inset)
+**Where it goes** Field note (between Parts II and III)
+**Why it is there** The inset. Replaces a lawnmower serial plate that was all brands and barcodes; this one is worn smooth by an animal drinking.
+**Watch for** To shoot: ordinary indoor light, no flash. Frame so that neither her name nor the code content is legible — the book prints no scannable codes and no personal data it does not mean to. Replaces the mower photographs, which were brand-heavy (two logos, a slogan), off-palette, and carried a fully legible serial number.
 
 ```text
 A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
 
-The serial plate on a lawnmower engine: model number, barcode, QR, and the words “Data Rates apply.”
+The tag alone, filling the frame: a worn metal disc with a square scannable code, scratches across it from years of clicking against the bowl. Framed so no name and no code content is legible.
 
 Horizontal frame (3:2).
 

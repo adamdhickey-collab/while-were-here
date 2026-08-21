@@ -110,6 +110,8 @@ and between them they halve the number of pictures in this book that somebody
 else took.
 
 ### 8 · The bench, closing · `intelligence-06-closing-hands`
+**Rename it when you replace it.** The id says *hands*; the subject line says
+"nobody in frame", and the replacement has no hands either. `-closing-bench`.
 **1:1 · prints 300 mm full bleed · want 3543 px square**
 Tools set down where they were used. A pencil, a rule, sawdust. Nobody in frame.
 

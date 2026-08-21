@@ -43,6 +43,13 @@ jobs:
       # It runs against the web build, whose masters are LFS pointers here
       # rather than pixels, which is why verify.mjs treats a derivative as
       # proof the project holds an image.
+      #
+      # Copy overflow is checked here too. verify shells out to
+      # scripts/overflow.mjs, which finds the Chrome this runner already has
+      # and drives the preview's own overflow rule in it. If a runner ever
+      # ships without one the check reports itself as not run rather than
+      # passing — which is the state this repository insists on, because a
+      # green tick beside an unrun check is worse than no check.
       - run: npm run verify -- --strict
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3

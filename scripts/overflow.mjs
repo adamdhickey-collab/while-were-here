@@ -38,13 +38,28 @@ if (!fs.existsSync(path.join(build, 'preview.html'))) {
   process.exit(strict ? 1 : 0);
 }
 
-// Playwright's own Chromium, fetched the first time `npm run pdf` runs. Absent
-// in CI, which is the whole reason this is a separate script from verify.
-const exe = [`${process.env.HOME}/Library/Caches/ms-playwright`]
-  .flatMap((d) => (fs.existsSync(d) ? fs.readdirSync(d) : [])
+/* A browser, from wherever this machine keeps one. Playwright's own Chromium
+   arrives with the first `npm run pdf`; a CI runner has Chrome on the PATH and
+   no Playwright cache. Probing both is what lets this run as a real gate on
+   push instead of degrading to a note there. $CHROME overrides everything. */
+const CACHES = [
+  `${process.env.HOME}/Library/Caches/ms-playwright`,   // macOS
+  `${process.env.HOME}/.cache/ms-playwright`,           // Linux
+];
+const SYSTEM = [
+  '/usr/bin/google-chrome', '/usr/bin/google-chrome-stable', '/usr/bin/chromium',
+  '/usr/bin/chromium-browser', '/snap/bin/chromium',
+  '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',
+];
+const exe = [
+  ...CACHES.flatMap((d) => (fs.existsSync(d) ? fs.readdirSync(d) : [])
     .filter((n) => n.startsWith('chromium-'))
-    .map((n) => path.join(d, n, 'chrome-mac', 'Chromium.app', 'Contents', 'MacOS', 'Chromium')))
-  .find((p) => fs.existsSync(p));
+    .flatMap((n) => [
+      path.join(d, n, 'chrome-mac', 'Chromium.app', 'Contents', 'MacOS', 'Chromium'),
+      path.join(d, n, 'chrome-linux', 'chrome'),
+    ])),
+  ...SYSTEM,
+].find((p) => fs.existsSync(p));
 
 if (!exe && !process.env.CHROME) {
   if (asJson) console.log(JSON.stringify({ available: false }));

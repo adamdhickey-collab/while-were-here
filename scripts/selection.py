@@ -51,7 +51,26 @@ import argparse
 import re
 from pathlib import Path
 
-from PIL import Image, ImageOps
+from PIL import Image, ImageOps  # noqa: F401  (ImageOps kept for callers)
+
+# Orientation values 5-8 mean the stored pixels are rotated a quarter turn, so
+# the displayed shape is the transpose. Reading the tag is cheap; decoding the
+# whole image to ask exif_transpose is not, and this runs over thousands of files.
+SIDEWAYS = {5, 6, 7, 8}
+
+# Above this, a shape is a camera model rather than a fingerprint.
+CANDIDATE_CAP = 12
+
+
+def shape(path: Path):
+    """Displayed (width, height) without decoding pixels."""
+    with Image.open(path) as im:
+        w, h = im.size
+        try:
+            o = (im.getexif() or {}).get(274, 1)
+        except Exception:
+            o = 1
+    return (h, w) if o in SIDEWAYS else (w, h)
 
 ROOT = Path(__file__).resolve().parent.parent
 
@@ -105,6 +124,20 @@ def stated_dims(doc_text: str, stem: str):
     return None
 
 
+def index(libs):
+    """Every still in the libraries, keyed by displayed shape."""
+    by = {}
+    for lib in libs:
+        for f in sorted(lib.iterdir()):
+            if f.suffix not in EXTS:
+                continue
+            try:
+                by.setdefault(shape(f), []).append(f)
+            except Exception:
+                pass
+    return by
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__,
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
@@ -127,7 +160,7 @@ def main():
         if not p:
             missing.append((stem, section))
             continue
-        w, h = ImageOps.exif_transpose(Image.open(p)).size
+        w, h = shape(p)
         want = stated_dims(doc_text, stem)
         if want and sorted(want) != sorted((w, h)):
             suspect.append((stem, want, (w, h), p.name))
@@ -150,6 +183,32 @@ def main():
         for stem, want, got, name in suspect:
             print(f"    {stem:<15} document says {want[0]}×{want[1]}, {name} is {got[0]}×{got[1]}")
         print("    Not counted as found. Check before trusting either.")
+    # Name matching cannot be relied on here: the frames this document wants are
+    # mostly the duplicates, and a fresh export disambiguates them differently.
+    # So for anything unresolved, offer every file of exactly the stated shape.
+    unresolved = [(s, sec) for s, sec in missing]
+    unresolved += [(s, '') for s, _, _, _ in suspect]
+    if unresolved:
+        by = index(libs)
+        print(f"\n  candidates by stated shape — open these and read them against"
+              f" the document's description:")
+        for stem, _ in unresolved:
+            want = stated_dims(doc_text, stem)
+            if not want:
+                print(f"    {stem:<15} (document states no dimensions)")
+                continue
+            hits = by.get(tuple(want), []) + ([] if want[0] == want[1] else by.get((want[1], want[0]), []))
+            hits = [h for h in hits if h.stem != stem]
+            # A shape shared by hundreds of files identifies nothing. 3264×2448
+            # and 4000×3000 are simply "the old iPhone" and "the Panasonic", and
+            # printing a thousand names is worse than printing none.
+            if not hits:
+                print(f"    {stem:<15} {want[0]}×{want[1]}  →  no file of that shape exported yet")
+            elif len(hits) <= CANDIDATE_CAP:
+                print(f"    {stem:<15} {want[0]}×{want[1]}  →  {', '.join(h.name for h in hits)}")
+            else:
+                print(f"    {stem:<15} {want[0]}×{want[1]}  →  {len(hits)} files share this shape;"
+                      f" too common to identify by it")
     if missing:
         print(f"\n  not exported yet — {len(missing)}:")
         for i in range(0, len(missing), 5):

@@ -36,6 +36,10 @@ spreads:
       positions matching cities around Tokyo. The network it built balanced
       cost, transport efficiency and fault tolerance at levels comparable to the
       rail system.
+    insetOn: recto
+    inset:
+      image: systems-07-moon-jelly
+      caption: No brain in this one either.
   - type: image-essay
     variant: tall
     image: systems-03-termite-section

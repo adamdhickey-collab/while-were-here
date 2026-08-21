@@ -2039,6 +2039,27 @@
       "selection": "Facebook archive, Wedding Ceremony — the whole album is three frames, timestamped 4:10:10, 4:13:08 and 4:40:21 p.m. This is the middle one. The other two are portraits; this is the only one that shows the room, which is the argument.",
       "revision": "Not cropped, not retouched, not upscaled. Natively 4:3, the inset plate's aspect.",
       "consent": "Adam and Fabiola, plus an officiant and one other person, all small in frame but identifiable at 92 mm. Fine for the family copies; ask before any sale."
+    },
+    {
+      "id": "systems-07-moon-jelly",
+      "filename": "systems-07-moon-jelly.jpg",
+      "kind": "personal",
+      "role": "specimen",
+      "essay": "The Beauty of Systems Nobody Designed",
+      "section": "II — What Are We?",
+      "spread": "Reading · two column, inset",
+      "subject": "A jellyfish photographed through aquarium glass: a translucent bell lit violet and magenta, four horseshoe-shaped gonads clustered at the centre, fine radial canals running to a fringe of short marginal tentacles.",
+      "concept": "Coordinated behaviour with nothing in charge of it.",
+      "purpose": "Inset beside “Physarum polycephalum has no brain and no nervous system.” The jellyfish has no brain either — a ring of nerve tissue around the bell margin, no centre — and unlike the slime mold it is an animal, which is the harder case to accept.",
+      "aspect": "4:3",
+      "target": "2048 × 1536 px (native crop — 565 dpi at 92 mm)",
+      "status": "generated",
+      "composite": false,
+      "origin": "own photograph",
+      "captured": "Oct 18, 2013 9:23:18 pm",
+      "capturedSource": "Facebook data export, album HTML \"Taken\" field. The JPEG EXIF was stripped on upload; Facebook kept the capture timestamp in its own metadata and returns it in the export.",
+      "selection": "Facebook archive, Photos. Two frames of the same animal exist; this is the sharper bell.",
+      "revision": "Cropped 4:3 from 2048 × 2048 through the centre. Not retouched — the violet is the tank's lighting, not a grade. IDENTIFICATION NOT ASSERTED IN PRINT: the four clover-shaped gonads and the radial canals read as a moon jelly, Aurelia sp., but this is a photograph through glass in coloured light and the book has been wrong about a species before (see specimen-02, which is a Queen and was captioned Monarch). The printed caption names no species, and the claim it does make — that a jellyfish has no brain — is true of every jellyfish."
     }
   ]
 }

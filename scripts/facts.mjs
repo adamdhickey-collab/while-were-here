@@ -5,7 +5,15 @@
    a source is treated the same way as an image without a licence: a gap that
    has to surface now rather than at press. Run bare to check and regenerate;
    `--strict` exits non-zero if anything is unverified, which is what a release
-   build should use. */
+   build should use.
+
+   It also reports which verified claims are not in the built book yet. That is
+   not a failure — a fact registered before its spread exists is the ledger
+   working as intended, and `sagrada-magic-square` is exactly that, waiting on a
+   frame still exporting. It is reported because the opposite case looks
+   identical from here: a claim left behind when its content was cut. The same
+   drift put two credits for absent images on the printed imprint, and nothing
+   surfaced it until someone went looking. */
 
 import fs from 'node:fs';
 import path from 'node:path';
@@ -21,6 +29,33 @@ const pending = facts.filter((f) => f.status === 'unverified' || f.status === 'd
 /* A fact claiming to be verified but carrying no source is worse than an
    unverified one, because it looks settled. Fail on it either way. */
 const lying = verified.filter((f) => !f.source || !f.source.url);
+
+/* Which verified claims have reached the page. APPROXIMATE ON PURPOSE, and it
+   reports rather than gates: the book paraphrases its sources instead of
+   quoting them, so this matches on how many of a claim's distinctive words
+   appear anywhere in the built HTML. It over-reports — `peacock-structural-
+   colour` is flagged because the page says "peacock" and never says "barbule"
+   or "photonic", which is the claim doing its job invisibly — and it will miss
+   a claim whose words happen to be common. Treat every line as "go and look",
+   never as "delete this".
+
+   Worth knowing while looking: several `usedIn` values read "photo 177" or
+   "photo T023", a numbering from an older selection pass that no longer
+   resolves to anything in this repo. Those cannot be checked mechanically at
+   all. Absence of a built book is not an error; this stays quiet. */
+const bookPath = path.join(root, 'build/book.html');
+const printed = fs.existsSync(bookPath)
+  ? fs.readFileSync(bookPath, 'utf8').replace(/<[^>]+>/g, ' ').toLowerCase()
+  : null;
+const STOP = new Set(['about','above','after','their','there','these','those','which','while','would',
+  'because','between','through','around','other','under','where','with','from','that','this','than',
+  'then','they','been','have','into','more','most','only','over','some','such','were','when']);
+const missing = printed === null ? [] : verified.filter((f) => {
+  const words = [...new Set((f.claim.toLowerCase().match(/[a-z]{5,}/g) || []))]
+    .filter((w) => !STOP.has(w));
+  const hits = words.filter((w) => printed.includes(w)).length;
+  return words.length >= 4 && hits / words.length < 0.5;
+});
 
 const cite = (s) => [
   s.authors,
@@ -62,6 +97,11 @@ fs.writeFileSync(path.join(root, 'content/plan/sources.md'), body);
 for (const f of lying) console.error(`✗ ${f.id} is marked verified but has no source URL`);
 for (const f of pending) console.warn(`⚠ ${f.id} — ${f.status}, not safe to set`);
 console.log(`${verified.length} verified, ${pending.length} outstanding → content/plan/sources.md`);
+if (missing.length) {
+  console.log(`  ${missing.length} verified claim(s) may not be on a page — approximate, go and look.`);
+  console.log('    Either registered ahead of their content, or left behind when content was cut.');
+  for (const f of missing) console.log(`    · ${f.id}`);
+}
 
 if (lying.length) process.exit(1);
 if (strict && pending.length) {

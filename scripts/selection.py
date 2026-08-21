@@ -31,8 +31,15 @@ Two details that will bite anyone who skips them:
     exact spelling and an underscore variant are accepted now.
 
   · Where the document states a frame's dimensions, they are checked against the
-    file and a mismatch is reported rather than silently accepted. That is the
-    structural guard: a wrong file of the right name cannot pass twice.
+    file and a mismatch is reported rather than silently accepted. This is not
+    fussiness. iPhone restarts its IMG_#### counter, so this library holds
+    several distinct photographs under one name: `IMG_1638` on disk is a night
+    street parade with a brass band, while the document's `IMG_1638` is the
+    Alcobaça nave. The dimension check caught that one and two others.
+
+    It is a guard, not a proof — two photographs can share a name AND a shape.
+    Open every frame and read it against the document's one-line description
+    before placing it.
 
   · These originals carry EXIF orientation, which the Facebook archive did not
     because Facebook bakes rotation in and strips the tag. Dimensions here are

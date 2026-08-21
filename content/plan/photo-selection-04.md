@@ -355,3 +355,27 @@ works unchanged.
 
 Until that folder exists, treat the thirty-eight entries above as selected and
 blocked, not as rejected.
+
+### Filenames in this library are not unique — 21 Aug 2026
+
+iPhone restarts its `IMG_####` counter, so the library holds several distinct
+photographs sharing one name. Matching a frame in this document to a file on
+disk **by name alone is unsafe**, and the failure is silent: you get a real
+photograph, correctly named, of the wrong thing.
+
+Three caught so far, all of which would have reached the page:
+
+| named here | wanted | what that filename actually holds |
+|---|---|---|
+| `IMG_1638` | the Alcobaça nave, receding, no congregation | a night street parade with a brass band |
+| `IMG_1562` | a bamboo path with two walkers going away | a man on a seafront with moored boats |
+| `IMG_2946 2` | a magic square carved into the Sagrada Família | *(as `IMG_2946`)* a cat asleep under a tarp |
+
+`npm run selection` now checks the pixel dimensions this document states against
+the file it finds and refuses to count a mismatch. That works because the wanted
+frames are mostly 3213 × 5712, 5712 × 3213, 2268 × 4032 or 4000 × 3000, while
+the colliding older files are 3264 × 2448 — but it is a guard, not a proof. Two
+photographs can share a name *and* a shape.
+
+**Before placing any frame from this document, open it and check it against the
+one-line description here.** The descriptions exist for exactly this reason.

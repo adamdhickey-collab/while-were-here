@@ -44,7 +44,7 @@ If you cloned before installing LFS, `git lfs pull` fixes it in place.
 | `npm run fonts:setup` | One-time: venv + convert the licensed OTFs for press. |
 | `npm run credits` | Rebuild the attribution page from the manifest. |
 | `npm run facts` | Check `content/facts.json` and rebuild the sources page. `--strict` fails on anything unverified. |
-| `npm run verify` | **The pre-press checks, in one command.** Nine of them, run against the built pages rather than the sources. `--strict` exits non-zero on any failure, which is what CI uses. |
+| `npm run verify` | **The pre-press checks, in one command.** Seven pass/fail, run against the built pages rather than the sources, plus what it cannot check and says so. `--strict` exits non-zero on any failure, which is what CI uses. |
 | `npm run selection` | Reconcile `content/plan/photo-selection-04.md` against the exported photo library — which selected frames exist yet, at what size, and the dpi they would give. |
 | `npm run shots` | Render spreads to PNG at trim size. `-- --all` for every spread. |
 | `npm run clean` | Remove `build/` and `dist/`. |

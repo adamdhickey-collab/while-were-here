@@ -41,6 +41,9 @@ const KD = { photography: 'photography', illustration: 'illustration', personal:
 
 const results = [];
 const check = (name, ok, detail = '') => results.push({ name, ok, detail });
+/* Three states, not two. A tick beside "not checked" is a lie told in the
+   shape of a pass, and this file's whole purpose is catching those. */
+const note = (name, detail) => results.push({ name, info: true, detail });
 
 /* 1. Page count. The 130 in book.config.js is this printer's hard maximum, not
       a target — going over it is not a layout opinion, it is unprintable. */
@@ -48,9 +51,15 @@ const pages = (html.match(/<section class="page/g) || []).length;
 const want = geometry.cover.pageCount + 2;   // + two cover surfaces
 check('page count', pages === want, `${pages} sections, expected ${want} (${geometry.cover.pageCount} interior + 2 covers)`);
 
-/* 2. Copy overflow. The preview flags it in the browser; here we can at least
-      confirm the build did not emit the flag class into the HTML. */
-check('no overflow flags in markup', !html.includes('has-overflow'), '');
+/* 2. Copy overflow CANNOT BE CHECKED HERE, and pretending otherwise is worse
+      than not checking. `has-overflow` is added by src/scripts/preview.js in a
+      live browser, after layout; the build never emits it, so testing the HTML
+      for it always passes and proves nothing.
+      The real check needs a browser and already exists: `npm run shots` counts
+      `.page.has-overflow` in Playwright and prints a warning. This line exists
+      to say so, rather than leaving a green tick that means nothing. */
+note('copy overflow',
+  'not checkable here — needs a browser. Run `npm run shots` or open the preview.');
 
 /* 3. Placeholder text. "ISBN & barcode placement" printed on the back cover of
       every proof for weeks before anyone read it as text rather than as layout. */
@@ -105,8 +114,8 @@ check('every sourced image has source + licence', gaps.length === 0, gaps.map((i
 
 /* 8. Consent. Anything flagged must still be flagged when this is sold. */
 const consent = images.filter((i) => i.consent && inBook(i));
-check('consent notes present on identifiable people', true,
-  `${consent.length} image(s) carry a consent note — all must be cleared before any sale`);
+note('consent',
+  `${consent.length} image(s) carry a consent note — none are cleared; required before any sale`);
 
 /* 9. Web derivatives, or the hosted preview 404s. */
 /* This one must test the master specifically: the question is whether every
@@ -129,8 +138,9 @@ const pad = (s, n) => (s + ' '.repeat(n)).slice(0, n);
 console.log('');
 let failed = 0;
 for (const r of results) {
-  if (!r.ok) failed += 1;
-  console.log(`  ${r.ok ? '✓' : '✗'} ${pad(r.name, 46)} ${r.detail}`);
+  if (!r.info && !r.ok) failed += 1;
+  const mark = r.info ? '·' : r.ok ? '✓' : '✗';
+  console.log(`  ${mark} ${pad(r.name, 46)} ${r.detail}`);
 }
 console.log(`\n  · ${unreached.length} verified claim(s) may not be on a page (approximate — look, do not delete)`);
 if (unreached.length) console.log(`    ${unreached.map((f) => f.id).join(', ')}`);

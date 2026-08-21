@@ -367,6 +367,22 @@ Frame —.
 Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
 ```
 
+### library-18-fabiola-street
+
+**Save as** `public/images/personal/—` · 3:4 · target 4284 × 5712 px native — 363 dpi at 300 mm full bleed
+**Where it goes** Unplaced, and the file is not in this repository yet — it is still in the export at `~/Desktop/photo library 2/IMG_1051 (1).HEIC`. Registered 21 Aug 2026, verified by eye. Copy it into public/images/personal/ and run `npm run derive` when a slot is decided. The book is at its 130-page ceiling, so placing this means removing something.
+**Why it is there** photo-selection-04 describes this as \u201ca figure standing against a huge blank wall\u201d, which is a formal exercise in scale and is not what the photograph is. It is a joke about a name, and it is one of the few frames in the archive that is funny. For a book being handed to family that is worth more than the formal reading.
+
+```text
+A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
+
+Fabiola standing against a large blank rendered wall on a narrow Seville street, smiling at the camera, under a tiled street sign that reads FABIOLA. Cobbles in the foreground, a dark doorway at the left.
+
+Vertical frame (3:4).
+
+Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
+```
+
 ## Most of Life Is a Tuesday
 
 ### survey-01-familiar-lake
@@ -1578,6 +1594,54 @@ A believable documentary photograph of the real world — quiet, contemplative, 
 Two people walking away along a plank boardwalk through dense bamboo, backs turned, the frame closed on both sides by the fibrous trunks of two palms.
 
 Horizontal frame (4:3).
+
+Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
+```
+
+### library-15-alcazar-baths
+
+**Save as** `public/images/personal/—` · 3:4 · target 4284 × 5712 px native — 363 dpi at 300 mm full bleed
+**Where it goes** Unplaced, and the file is not in this repository yet — it is still in the export at `~/Desktop/photo library 2/IMG_1112 (1).HEIC`. Registered 21 Aug 2026, verified by eye. Copy it into public/images/personal/ and run `npm run derive` when a slot is decided. The book is at its 130-page ceiling, so placing this means removing something.
+**Why it is there** The strongest frame the library holds. An underground room reached by going down and in, which is what the essay is about, and a picture whose subject is symmetry the water supplies rather than the architect.
+
+```text
+A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
+
+The Baños de Doña María de Padilla beneath the Alcázar of Seville: a low gothic vault running away from the camera over a sheet of completely still water, ribs and arches doubled exactly in the reflection, a pierced oculus at the far end completing itself as a full circle where the real half meets the reflected half.
+
+Vertical frame (3:4).
+
+Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
+```
+
+### library-16-fatima-esplanade
+
+**Save as** `public/images/personal/—` · 4:3 · target 5712 × 4284 px native — 363 dpi at 300 mm full bleed
+**Where it goes** Unplaced, and the file is not in this repository yet — it is still in the export at `~/Desktop/photo library 2/IMG_1746 (1).HEIC`. Registered 21 Aug 2026, verified by eye. Copy it into public/images/personal/ and run `npm run derive` when a slot is decided. The book is at its 130-page ceiling, so placing this means removing something.
+**Why it is there** The essay's argument about distance and arrival, photographed at the scale the destination was built to expect.
+
+```text
+A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
+
+The esplanade at the Sanctuary of Fátima under a hard blue sky: the basilica and its bell tower at the left, the curved colonnade running away on both sides, the Sacred Heart monument on its column at the right, steel crash barriers curving across a wet expanse of paving, and perhaps thirty small figures scattered across ground built for a hundred thousand.
+
+Horizontal frame (4:3).
+
+Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
+```
+
+### library-17-montserrat-cloud
+
+**Save as** `public/images/personal/—` · 3:4 · target 3024 × 4032 px native — 256 dpi at 300 mm full bleed
+**Where it goes** Unplaced, and the file is not in this repository yet — it is still in the export at `~/Desktop/photo library 2/IMG_0707 (1).HEIC`. Registered 21 Aug 2026, verified by eye. Copy it into public/images/personal/ and run `npm run derive` when a slot is decided. The book is at its 130-page ceiling, so placing this means removing something.
+**Why it is there** The mountain the essay's other Montserrat frame is walking down.
+
+```text
+A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
+
+Cloud pouring through a saddle between conglomerate pinnacles at Montserrat, backlit and breaking over the rock; a summit cross small on the skyline at the top right, the Catalan plain and distant ranges visible under the cloud at the left, pine in silhouette across the bottom corners.
+
+Vertical frame (3:4).
 
 Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
 ```

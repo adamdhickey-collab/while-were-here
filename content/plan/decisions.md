@@ -368,3 +368,34 @@ hold, stop tuning the value and go and find a different quantity to measure.
 The spine appears only in `cover-wrap.html`; Saal produce the real wrap from
 their own template. That does not make it cosmetic — the mockup is what the wrap
 gets checked against, and a spine nobody trusts is a spine nobody checks.
+
+## Do not read letterforms below the resolution that supports reading — 21 Aug 2026
+
+Three times in one day, reading small text off a low-resolution view produced a
+confident wrong answer. It is the same mistake each time and it is worth a rule.
+
+**The spine.** An early look at a small screenshot called the apostrophe broken
+and applied `margin-inline: -0.30em`, which made the line read *WRRE*. The
+screenshot was too small to show what was actually happening; the real fault was
+`text-orientation` and needed a measured character advance, not an eye.
+
+**The VHS shelf.** At 1,200 px the third spine read *LIFE IN THE EAST LANE*, and
+that was written down as a manifest correction. At 4× magnification the letter
+is plainly an **F**. The manifest was right and the correction would have
+introduced an error into printed alt text.
+
+**The child's book.** `intelligence-07-child-hand` is 1536 × 1152 and the four
+disputed letters occupy about 230 × 130 real pixels. Enlarged they read as
+plausibly `nn`, `rn` or `rin`. That one was **not** written down as a correction,
+because the file cannot settle it — see [open-questions](open-questions.md).
+That is the right outcome of the same situation.
+
+**The rule.** Before correcting any text read out of an image, enlarge to at
+least 4× and confirm the letterform, and check what the *file's* native
+resolution actually supports. If a glyph occupies fewer than roughly 40 × 40
+real pixels, no amount of enlargement adds information — it only adds
+confidence. Then say the file cannot answer, and go to the object.
+
+**What made the difference in the one case that went right** was noticing the
+pixel budget before trusting the reading. That check costs one line of
+arithmetic and it is the only thing separating a correction from a fabrication.

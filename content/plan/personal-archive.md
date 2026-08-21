@@ -191,3 +191,24 @@ every time.
   date.
 - The same album HTML carries **upload IP addresses**. Nothing in that column
   goes anywhere near the book, the manifest, or the repository.
+
+
+## Two captions verified against the calendar and the frame — 21 Aug 2026
+
+**`here-07-ceremony` — "Thirty minutes, on a Thursday afternoon."** Both halves
+check out. The album is three frames at 4:10:10, 4:13:08 and 4:40:21 p.m. —
+thirty minutes and eleven seconds — and **19 June 2014 was a Thursday.** A
+caption that names a weekday is a checkable claim, and this one is right.
+
+**`north-03-lake-horizon` — "Nothing in the frame has a date."** Also checked,
+by opening it. Birch and aspen in autumn colour, spruce, a ridge falling to Lake
+Superior, mackerel cloud. No building, no vehicle, no person, no clothing, no
+sign. Nothing in it could place the picture in any decade. The claim is exactly
+true, which is rarer than it sounds for a caption of that shape.
+
+**`privilege-08-vhs-shelf` — corrected.** The manifest said four cassettes; the
+shelf holds **five**. The fifth is a plain tape with *Thrashing* written on a
+white label in ballpoint, and the earlier line counted it as one of the four
+titled tapes — so the alt text undercounted the shelf and lost the only
+home-made object on it, which in an essay about obsolete formats is the one that
+matters most.

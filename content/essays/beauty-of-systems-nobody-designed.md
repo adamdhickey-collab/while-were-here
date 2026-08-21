@@ -77,7 +77,7 @@ spreads:
 
 <!-- block: open -->
 
-A line of ants crosses the pavement beside a storm drain. Each ant pauses at nearly the same places. One turns back. Two meet head to head, separate, and continue. From standing height the line looks organized. It bends around a pebble, narrows at a crack, and joins a dark opening under the curb. There is no ant at the front holding a map. None can see the whole route. The path exists because small bodies keep laying down and responding to chemical traces. The useful route strengthens. The weak route fades. Rain will erase much of it. Traffic will break it. The ants will begin again from what remains. By afternoon, a system is running where there was only concrete, hunger, and repeated contact.
+A colony works behind glass at the end of the barn. Each bee stops at cell after cell, touches the rim, and moves on. One backs out and reverses down the comb. Two meet head to head, pass antennae, and separate. From standing height the sheet looks planned. Capped honey is banked along the top, the brood is held in the warm middle, and the empty cells wait at the edge. There is no bee at the front holding a drawing. None can see the whole comb. The wall exists because small bodies keep working the surface that other bodies have already warmed. The used comb thickens. The unused edge stays thin. Winter will empty half of it. A knock will crack it. The colony will begin again from what remains. By afternoon, a system is running where there was only wax, hunger, and repeated contact.
 
 <!-- block: flow-1a -->
 

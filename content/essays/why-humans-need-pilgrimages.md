@@ -115,7 +115,7 @@ spreads:
 
 <!-- block: open -->
 
-The center of the stone step is lower than its edges. Rain has softened the color, but feet made the hollow. Each person approached from the same lane, lifted a body onto the same threshold, and continued inside. No single crossing changed the stone enough to see. The route became visible through repetition. Pilgrimage begins with this plain fact. Nothing requires it anymore — whole systems exist so that nobody has to walk anywhere — and the hollow keeps deepening anyway. A place is reached by passing through the distance before it. The body cannot skip the hill because the destination matters. It cannot arrive early by understanding the map. Shoes wear. Water is carried. Weather reaches the skin. An intention that began as a sentence is given weight, duration, and a series of surfaces.
+A public stair drops away between two handrails. The shadow of the person at the top lies down it, across half the flight. The treads are worn shallow in the middle and sharp at the edges, and feet made that. Each person arrived at the same landing, took the same first step, and went down. No single crossing changed the concrete enough to see. The route became visible through repetition. Pilgrimage begins with this plain fact. Nothing requires it anymore — whole systems exist so that nobody has to walk anywhere — and the tread keeps wearing anyway. A place is reached by passing through the distance before it. The body cannot skip the hill because the destination matters. It cannot arrive early by understanding the map. Shoes wear. Water is carried. Weather reaches the skin. An intention that began as a sentence is given weight, duration, and a series of surfaces.
 
 <!-- block: flow-1a -->
 

@@ -383,6 +383,70 @@ Vertical frame (3:4).
 Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
 ```
 
+### library-19-park-guell-colonnade
+
+**Save as** `public/images/personal/—` · 3:4 · target 3024 × 4032 px native — 256 dpi at 300 mm full bleed
+**Where it goes** Unplaced, and the file is not in this repository yet — it is still in the export at `~/Desktop/photo library 2/IMG_5008 (1).JPG`. Registered 21 Aug 2026, verified by eye. Copy it into public/images/personal/ and run `npm run derive` when a slot is decided. The book is at its 130-page ceiling, so placing this means removing something.
+**Why it is there** photo-selection-04 lists this as “Park Güell's leaning stone colonnade”, an architecture frame — but the photograph is a portrait, and the line simply does not mention the person filling the middle of it. Like the FABIOLA street sign it belongs to the book's personal register or not at all: as architecture it is unusable, because the subject is looking at the lens.
+
+```text
+A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
+
+Fabiola standing in the leaning rubble colonnade at Park Güell, dead centre, sunglasses and sun hat, smiling at the camera, a shopping bag in one hand; the helicoidal columns and stone vaults running away behind her, half a dozen other visitors along the walkway.
+
+Vertical frame (3:4).
+
+Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
+```
+
+### library-21-lake-last-light
+
+**Save as** `public/images/personal/—` · 16:9 · target 5712 × 3213 px (Adam's crop) — 272 dpi at 300 mm full bleed, 346 as a band
+**Where it goes** Unplaced, and the file is not in this repository yet — Adam's crop is at `~/Desktop/photo library edits/IMG_2630.jpeg` (5712 × 3213) and the uncropped original at `~/Desktop/photo library 2/IMG_2630 (2).HEIC` (5712 × 4284). Registered 21 Aug 2026, verified by eye. The book is at its 130-page ceiling, so placing this means removing something.
+**Why it is there** photo-selection-04 holds it for the dark stages, and it is the right register: a picture that is mostly weight. Shot at home in Minnesota two weeks after the trip, which suits the arc — the dark stages are not elsewhere, they are here.
+
+```text
+A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
+
+Heavy broken cloud over a flat lake at last light, the sun a pale disc behind the overcast, the far shore a black tree line doubled in the water, a few waterfowl as specks. Almost no colour beyond grey and a last brown in the reeds.
+
+Frame 16:9.
+
+Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
+```
+
+### library-23-cathedral-square-audience
+
+**Save as** `public/images/personal/—` · 16:9 · target 4032 × 2268 px (Adam's crop) — 244 dpi as a 236 mm band
+**Where it goes** Unplaced, and the file is not in this repository yet — Adam's crop is at `~/Desktop/photo library edits/IMG_0915.jpeg`. Registered 21 Aug 2026, verified by eye from the render. The book is at its 130-page ceiling, so placing this means removing something.
+**Why it is there** Registered with its WRONG reading struck out: photo-selection-04 filed this under flocking as a crowd 'arranged by nothing', and the photograph contains the conductor. It cannot serve the flocking argument. It can serve as what it is — a city turned toward music at night — if a slot ever wants that.
+
+```text
+A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
+
+Granada Cathedral floodlit at blue hour, several hundred people standing in the square before it, all facing an orchestra on a lit stage at the foot of the façade.
+
+Frame 16:9.
+
+Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
+```
+
+### library-25-cat-on-the-gable
+
+**Save as** `public/images/personal/—` · 9:16 · target 2268 × 4032 px (Adam's crop) — 626 dpi at a 92 mm inset
+**Where it goes** Unplaced, and the file is not in this repository yet — Adam's crop is at `~/Desktop/photo library edits/IMG_0970.jpeg`. Registered 21 Aug 2026, verified by eye from the render. The book is at its 130-page ceiling, so placing this means removing something.
+**Why it is there** Quiet-oddities set. Adam's crop already excludes the parked car whose number plate blocked the original.
+
+```text
+A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
+
+A black cat walking the white gable parapet of a Córdoba museum building against a flat pale sky, storeys above a street of flags, balconies and a hanging exhibition banner.
+
+Frame 9:16.
+
+Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
+```
+
 ## Most of Life Is a Tuesday
 
 ### survey-01-familiar-lake
@@ -929,6 +993,22 @@ Vertical frame (3:4).
 Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
 ```
 
+### library-24-fatima-pigeon
+
+**Save as** `public/images/personal/—` · 16:9 · target 4032 × 2268 px (Adam's crop) — 626 dpi at a 92 mm inset
+**Where it goes** Unplaced, and the file is not in this repository yet — Adam's crop is at `~/Desktop/photo library edits/IMG_1749.jpeg`. Registered 21 Aug 2026, verified by eye from the render. The book is at its 130-page ceiling, so placing this means removing something.
+**Why it is there** photo-selection-04's 'quiet oddities' set. Shot at Fátima three minutes after the esplanade frame — the enormous shrine, and Adam photographing a pigeon. That fact is the book's whole argument about attention, and worth a caption if placed.
+
+```text
+A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
+
+A white fantail pigeon walking on grey asphalt in hard noon sun, leg-banded, its shadow thrown beside it so black and complete that the shadow reads as a second bird.
+
+Frame 16:9.
+
+Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
+```
+
 ## The Intelligence Outside Your Head
 
 ### survey-03-workbench-field
@@ -1339,6 +1419,22 @@ A believable documentary photograph of the real world — quiet, contemplative, 
 An unbroken floor of small clouds seen from altitude at sunset, running flat to a horizon banded orange under a grey-violet sky. No ground, no aircraft, no wing.
 
 Vertical frame (3:4).
+
+Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
+```
+
+### library-20-waiting-without-a-phone
+
+**Save as** `public/images/personal/—` · 9:16 · target 2268 × 4032 px per the document's crop; the original is 3024 × 4032
+**Where it goes** EFFECTIVELY BLOCKED — recorded 21 Aug 2026 so the frame is not re-proposed. The file is at `~/Desktop/photo library 2/IMG_3161 (1).heic`.
+**Why it is there** The essay's thesis, found in the wild — she is reading paper in a row of screens. That is why the frame was selected, and it is real. It still cannot be printed.
+
+```text
+A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
+
+A woman in a straw hat and scarf sitting on an airport bench, reading a printed leaflet, hands in her lap, luggage handles crossing the foreground; behind her a row of travellers, several of them on phones.
+
+Frame 9:16.
 
 Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
 ```
@@ -2056,6 +2152,22 @@ Frame 9:16.
 Avoid: any object, edge, hem, seam or boundary — only surface; anything that lets the viewer work out the scale; styled or arranged compositions; props; studio seamless backgrounds; heavy grading or HDR; vignettes; visible text or watermarks; symmetry; a recognisable scene resolving out of the texture.
 ```
 
+### library-22-granada-street-flow
+
+**Save as** `public/images/personal/—` · 16:9 · target 4032 × 2268 px (Adam's crop) — 244 dpi as a 236 mm band
+**Where it goes** Unplaced, and the file is not in this repository yet — Adam's crop is at `~/Desktop/photo library edits/IMG_0936.jpeg`. Registered 21 Aug 2026, verified by eye from the render. The book is at its 130-page ceiling, so placing this means removing something.
+**Why it is there** photo-selection-04's flocking pair, human half. The essay's starling argument, performed by people who would each say they were just going somewhere.
+
+```text
+A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
+
+A narrow Granada shopping street at dusk, packed edge to edge with people walking both ways between lit shopfronts and balconied facades — no leader, no centre, one coherent flow filling the canyon of the street to its vanishing point.
+
+Frame 16:9.
+
+Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
+```
+
 ## The Strange Privilege
 
 ### ground-05-imagine-to-make
@@ -2260,6 +2372,24 @@ A believable documentary photograph of the real world — quiet, contemplative, 
 An empty painted crosswalk filling the foreground, cars stopped at the kerb to the left, the Washington Monument small and centred beyond it, a few people on the far pavement.
 
 Horizontal frame (4:3).
+
+Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
+```
+
+## The Strange Privilege of Living Through a Technological Revolution
+
+### library-26-morning-motorway
+
+**Save as** `public/images/personal/—` · 16:9 · target 5712 × 3213 px (Adam's crop) — 272 dpi at 300 mm full bleed
+**Where it goes** Unplaced, and the file is not in this repository yet — Adam's crop is at `~/Desktop/photo library edits/IMG_1698.jpeg`. Registered 21 Aug 2026, verified by eye from the render. The book is at its 130-page ceiling, so placing this means removing something.
+**Why it is there** photo-selection-04 wanted 'an empty motorway at dawn through the windscreen' and the photograph is none of those three things — side window, not empty of context, 09:17 not dawn. Registered with the honest description; whether the real picture serves the slot is Adam's call, not the line's.
+
+```text
+A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
+
+A Spanish motorway seen from the passenger seat through the side window, morning sun flaring above ranks of polytunnel greenhouses running to hazy hills, the window frame and a corner of windscreen sticker visible at the edge.
+
+Frame 16:9.
 
 Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
 ```

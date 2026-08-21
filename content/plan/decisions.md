@@ -268,3 +268,40 @@ book prints photographically on FUJIFILM Crystal Archive HD. If they do want it,
 `brew install ghostscript` is the cheapest route. If they do not, the preflight
 flags should come out of the script rather than sit there implying a requirement
 nobody confirmed.
+
+## Copy overflow became a real check — 21 Aug 2026
+
+`verify.mjs` reported this as *"not checkable here — needs a browser"*. That was
+honest, and it was the third state invented specifically so a tick would not sit
+beside an unrun check. It was also the least useful line in the file, because
+**this is the fault the book is most exposed to**: pages here are composed, not
+flowed, so nothing reflows to rescue a paragraph that grew by a line. The copy is
+simply past the trim, invisible in the source, and first seen on paper.
+
+`scripts/overflow.mjs` now drives the rule in a headless browser and reports the
+folio, the block and the millimetres it runs over by. Three things about how it
+was built are worth keeping:
+
+**The rule is not duplicated.** It lives in `src/scripts/preview.js`, which
+already exposed `window.book.check()` for automated proofing. The script calls
+that. Two copies of an overflow rule would drift, and the copy that drifts is
+always the one nobody is looking at.
+
+**It was proven to fail before it was trusted.** Injecting one fat paragraph into
+a `.prose` produced `folio 13 · recto · reading · two column` with the overrun in
+millimetres. This matters because two checks in this same file had already been
+caught passing vacuously — copy overflow tested the built HTML for a class only a
+browser adds, and consent was hardcoded `true`. **A check that has never been
+seen to fail has not been tested.**
+
+**It found a second bug on the way.** The local server sent `text/html` with no
+charset, so Chromium decoded a UTF-8 document as windows-1252 and every middle
+dot, curly quote and em dash came back mojibake. `shots.mjs` had the same server
+and the same omission — which means every spread PNG rendered to judge
+*typography* has been rendering its punctuation wrong. Both now send
+`charset=utf-8`.
+
+The check runs in CI as well. `overflow.mjs` looks for Playwright's Chromium and
+then for a system Chrome, and a GitHub runner has one, so a push that overflows a
+page now fails the build. Where no browser exists it goes back to being a note —
+never a pass.

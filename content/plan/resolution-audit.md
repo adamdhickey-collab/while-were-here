@@ -60,10 +60,36 @@ essay.
 above are 300 mm full bleeds that *close* an essay — `intelligence-06-closing-hands`,
 `privilege-06-closing-cursor`, `pilgrimage-06-closing-stone`, all at 87 dpi, all
 composited from Pexels photographs. They are now items 8–10 on the shot list.
-Shooting them takes the worst three plates in the book from 87 dpi to 256 and
-removes three of the six images in the book that are not Adam's, in one pass.
-The bench closing shares a setup with item 4, so the true cost is two sessions,
-not three.
+Shooting them takes them from 87 dpi to 256 and removes three of the six images
+in the book that are not Adam's, in one pass. The bench closing shares a setup
+with item 4, so the true cost is two sessions, not three.
+
+### Then the low-dpi plates were actually looked at — and the arithmetic oversells the problem
+
+Written first: *"87 dpi across a 300 mm square is soft enough to read as a
+mistake rather than a choice."* That was reasoning from the number. Two of them
+were then resampled to 3543 px — what the press would receive — and a 90 mm
+detail from each was examined at 1:1.
+
+**They do not look broken.** No blocking, no aliasing, no stair-stepped edges.
+`here-01-dog-late-light` at **81 dpi**, the lowest in the book, is a floor of
+leaf litter: high-frequency texture with no hard edge for the eye to catch on,
+so the softness reads as autumn light. `intelligence-06-closing-hands` at
+**87 dpi** has chisel edges and wood shavings, which is the harder test, and
+they hold — because the plate is a *composited, graded, deliberately softened*
+treatment with little fine detail for the resolution to fail at. Low dpi hurts
+where a picture is crisp. These are not crisp, on purpose.
+
+**What that changes.** Shot-list items 8–10 stay, and stay near the top, but the
+argument for them shifts: **shoot them because they should be Adam's
+photographs, not because the current ones will print badly.** Provenance is the
+reason; resolution is a bonus.
+
+**What it does not settle.** This was a screen looking at an upscale. A backlit
+display is far more forgiving than ink on FUJIFILM Crystal Archive at arm's
+length. What is established is that the files are not *pixelated*; whether they
+are acceptably *sharp* is a question for a proof print, and one 300 mm plate on
+the real stock answers it for all eleven.
 
 ## And what the photo library is worth
 

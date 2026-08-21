@@ -84,13 +84,20 @@ only item here that is impossible to catch up on later.
 
 ---
 
-## The three worst plates in the book are all essay closings
+## Three essay closings are somebody else's photographs
 
 Found while checking whether library frames could be placed — see the
 resolution audit's table of eleven images under 120 dpi. Three of those eleven
 are **closing rectos**: the last picture of an essay, printed 300 mm full bleed,
-from a 1024 × 1024 file. That is **87 dpi on paper**, and 87 dpi across a
-300 mm square is soft enough to read as a mistake rather than a choice.
+from a 1024 × 1024 file. That is **87 dpi on paper**.
+
+**Read the audit's follow-up before treating that as an emergency.** These
+plates were resampled to press size and examined at 1:1, and they do not look
+broken — no blocking, no aliasing, and the graded treatment leaves little fine
+detail for the low resolution to fail at. The reason to shoot them is that
+**they should be Adam's photographs**: all three are composited from stock, and
+they are half of the six images in the book that are not his. The resolution
+gain is real and it is not the argument.
 
 | slot | essay | now | from a phone |
 | --- | --- | --- | --- |
@@ -98,10 +105,9 @@ from a 1024 × 1024 file. That is **87 dpi on paper**, and 87 dpi across a
 | `privilege-06-closing-cursor` | The Strange Privilege | 87 dpi | **256 dpi** |
 | `pilgrimage-06-closing-stone` | The Body Cannot Skip the Hill | 87 dpi | **256 dpi** |
 
-All three are composites adapted from Pexels photographs, so shooting them also
-removes three of the six remaining images in the book that are not Adam's. They
-are the highest-value frames left on this list by both measures at once, and
-none of them is hard to shoot.
+All three are composites adapted from Pexels photographs. None is hard to shoot,
+and between them they halve the number of pictures in this book that somebody
+else took.
 
 ### 8 · The bench, closing · `intelligence-06-closing-hands`
 **1:1 · prints 300 mm full bleed · want 3543 px square**

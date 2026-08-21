@@ -67,12 +67,19 @@ Ten photographs the library provably does not contain. Four cost minutes each
 and every one frees a generated plate; `privilege-01-kitchen-laptop` alone goes
 from **106 dpi to 256** on a 300 mm full bleed that opens an essay.
 
-**Items 8–10 were added on 21 Aug and are worth more than their position
-suggests.** They are the three essay *closings*, printed 300 mm full bleed from
-1024 px files — **87 dpi, the three worst plates in the book** — and all three
-are composited from stock photographs. Shooting them fixes the resolution and
-removes half of the six images in the book that are not Adam's, in one pass.
-One of them shares a bench and a session with item 4.
+**Items 8–10 were added on 21 Aug.** They are the three essay *closings*,
+printed 300 mm full bleed from 1024 px files — 87 dpi, the lowest-resolution
+plates in the book — and all three are composited from stock photographs.
+
+The reason to shoot them is **provenance, not resolution.** The plates were
+resampled to press size and examined at 1:1 before this was written, and they do
+not look broken; the graded treatment leaves little fine detail for 87 dpi to
+fail at. What is wrong with them is that somebody else took them. Shooting all
+three halves the number of pictures in this book that are not Adam's, and one of
+them shares a bench and a session with item 4.
+
+Item 11 is different and smaller: one page rephotographed so the book can check
+a sentence it quotes.
 
 **One has a deadline and it is this month.** A real four-season sequence costs a
 year, so it starts in August or it does not exist. It cannot make this Christmas

@@ -135,6 +135,23 @@
   white-space: nowrap;
   margin: 0;
 }
+/* The spine is letterspaced 0.12em, and that tracking lands on the apostrophe
+   too, so WE'RE sits a little loose in the middle of a tight line. This closes
+   it by one notch and no more.
+
+   Measured, not guessed. Rendered at 4x and read back at 0, -0.06, -0.10, -0.14,
+   -0.18 and -0.30em: the default was always legible and correct — a first look
+   at a small screenshot suggested a broken contraction and that was an artifact
+   of the screenshot, not the type. From -0.10em the apostrophe starts touching
+   the R, and by -0.30em the line reads WRRE. -0.06em is the last value that
+   tightens without collision.
+
+   In vertical-rl the inline axis runs top to bottom, so margin-inline is the
+   vertical one here. */
+.spine__text .spine__apos {
+  letter-spacing: 0;
+  margin-inline: -0.06em;
+}
 .spine__author {
   writing-mode: vertical-rl;
   font-family: var(--font-text);

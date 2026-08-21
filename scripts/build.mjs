@@ -311,7 +311,7 @@ ${['geometry.css', ...STYLES].map((h) => `<link rel="stylesheet" href="${h}">`).
     <div class="${back.cls} page--verso">${back.html}</div>
     <div class="spine">
       <div class="spine__stack">
-        <p class="spine__text">While We’re Here</p>
+        <p class="spine__text">${esc(book.title).replace(/\u2019/g, '<span class="spine__apos">\u2019</span>')}</p>
         <p class="spine__author">${esc(book.author)}</p>
       </div>
     </div>

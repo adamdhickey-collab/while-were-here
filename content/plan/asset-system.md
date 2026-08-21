@@ -329,3 +329,30 @@ of its `not generated` entries have files on disk anyway, and rewriting a field
 across 114 entries to fix a reading problem is how a real one gets introduced.
 If it is ever touched, the honest values are *made* and *not made*, and the
 rename belongs in `place.mjs` at the same moment.
+
+### Two ids outlived the pictures they named — 21 Aug 2026
+
+When a generated plate is replaced by a photograph, the manifest id stays. Two
+of them had drifted far enough to actively mislead, and both open or close an
+essay:
+
+| was | is now | what it actually shows |
+| --- | --- | --- |
+| `before-time-01-road-atlas` | `before-time-01-father-portrait` | The studio portrait of Adam's father, mid-1980s. It opens *The Last People Who Remember Waiting*. |
+| `systems-01-ants-pavement` | `systems-01-observation-hive` | A real observation hive behind glass, State Fair 2013. It opens *The Beauty of Systems Nobody Designed*. |
+
+Both `revision` fields record the old name, so nothing is lost and the history
+stays readable from the entry itself.
+
+**One more is misnamed and was deliberately left alone.**
+`intelligence-06-closing-hands` is a workbench whose own subject line reads
+"nobody in frame". It is [shot-list](shot-list.md) item 8 and is going to be
+rephotographed, so renaming it now is churn. **Rename it when it is replaced**
+— and the replacement has no hands in it either, so the new name should say
+bench, not hands.
+
+**The rule this suggests.** `scripts/place.mjs` could refuse a placement whose id
+words appear nowhere in its subject. A crude version of that check over the
+whole manifest returned 18 hits, of which 2 were real — too noisy to automate
+and cheap to run by eye whenever a plate is swapped. Worth doing at swap time,
+not on every build.

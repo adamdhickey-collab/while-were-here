@@ -638,8 +638,8 @@
       "revision": "A screen print of a forest horizon was tried here and pulled. See content/plan/screen-print.md. Target lowered 20 Aug 2026 to the largest canvas ChatGPT actually produces. The previous figure asked for a resolution no available generator could reach."
     },
     {
-      "id": "systems-01-ants-pavement",
-      "filename": "systems-01-ants-pavement.jpg",
+      "id": "systems-01-observation-hive",
+      "filename": "systems-01-observation-hive.jpg",
       "kind": "personal",
       "role": "plate",
       "essay": "The Beauty of Systems Nobody Designed",
@@ -652,7 +652,7 @@
       "target": "960 × 960 px (native square crop — 81 dpi at 300 mm, against the 87 dpi the generated plate was giving — a 6% loss, taken knowingly)",
       "status": "generated",
       "composite": false,
-      "revision": "Replaced the generated ants-on-pavement plate 21 Aug 2026. The generated plate read well as a diagram but its ants were dots. This is a real colony, photographed by Adam, and it costs 6 dpi to say so. Cropped square from 1280 × 960, offset 45% from the left so both frames hold. Not retouched, not upscaled.",
+      "revision": "Was `systems-01-ants-pavement` until 21 Aug 2026, when it was renamed for what it is — the id survived the swap and named a photograph of a beehive after the ants it replaced, exactly as the father portrait was still filed under a road atlas. Replaced the generated ants-on-pavement plate 21 Aug 2026. The generated plate read well as a diagram but its ants were dots. This is a real colony, photographed by Adam, and it costs 6 dpi to say so. Cropped square from 1280 × 960, offset 45% from the left so both frames hold. Not retouched, not upscaled.",
       "origin": "own photograph",
       "selection": "Facebook archive, StateFair2013. An observation hive is the essay’s argument twice over: comb is the canonical structure nobody drafted, and this one is in a glass case because people will stand and watch it.",
       "captured": "Sep 02, 2013 1:31:57 pm",

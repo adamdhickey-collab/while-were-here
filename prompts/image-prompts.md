@@ -1598,12 +1598,12 @@ Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glo
 
 ## The Beauty of Systems Nobody Designed
 
-### systems-01-ants-pavement
+### systems-01-observation-hive
 
-**Save as** `public/images/personal/systems-01-ants-pavement.jpg` · 1:1 · target 960 × 960 px (native square crop — 81 dpi at 300 mm, against the 87 dpi the generated plate was giving — a 6% loss, taken knowingly)
+**Save as** `public/images/personal/systems-01-observation-hive.jpg` · 1:1 · target 960 × 960 px (native square crop — 81 dpi at 300 mm, against the 87 dpi the generated plate was giving — a 6% loss, taken knowingly)
 **Where it goes** Opener (verso, full bleed)
 **Why it is there** The essay opens on this. Evidence that a route can be held by contact alone.
-**Watch for** Replaced the generated ants-on-pavement plate 21 Aug 2026. The generated plate read well as a diagram but its ants were dots. This is a real colony, photographed by Adam, and it costs 6 dpi to say so. Cropped square from 1280 × 960, offset 45% from the left so both frames hold. Not retouched, not upscaled.
+**Watch for** Was `systems-01-ants-pavement` until 21 Aug 2026, when it was renamed for what it is — the id survived the swap and named a photograph of a beehive after the ants it replaced, exactly as the father portrait was still filed under a road atlas. Replaced the generated ants-on-pavement plate 21 Aug 2026. The generated plate read well as a diagram but its ants were dots. This is a real colony, photographed by Adam, and it costs 6 dpi to say so. Cropped square from 1280 × 960, offset 45% from the left so both frames hold. Not retouched, not upscaled.
 
 ```text
 A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.

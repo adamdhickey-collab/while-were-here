@@ -11,7 +11,7 @@ readingTime: 6
 spreads:
   - type: opener
     variant: facing
-    image: systems-01-ants-pavement
+    image: systems-01-observation-hive
     blocks: [open]
   - type: reading
     variant: two

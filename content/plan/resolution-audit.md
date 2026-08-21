@@ -18,7 +18,7 @@ Reproduce it by loading `build/book.html` and measuring `img` boxes against a
 
 ## The eleven under 120 dpi
 
-    81   systems-01-ants-pavement        960 × 960     archive, capped
+    81   systems-01-observation-hive     960 × 960     archive, capped
     81   here-01-dog-late-light          960 × 960     archive, capped
     87   part-2-divider-branching       1024 × 1024    generated, capped
     87   part-3-divider-machine-dark    1024 × 1024    generated, capped

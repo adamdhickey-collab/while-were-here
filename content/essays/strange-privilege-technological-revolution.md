@@ -2,7 +2,7 @@
 id: strange-privilege-technological-revolution
 number: "05"
 part: III
-stage: 3
+stage: 4
 partTitle: The World Is Changing
 title: The Strange Privilege
 deck: The rare condition is not living after a transformation, but living while its rules are still unsettled.

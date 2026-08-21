@@ -102,6 +102,23 @@ distance a cover gets one shape, one colour and one word cluster.
 - The other three variants stay in the codebase and in `cover-options.html`.
   They cost nothing, and the comparison is worth being able to re-run. They are
   not live: `coverVariant` in `content/book.json` is the single switch.
+- **Stage 4 is Part III, and the dividers now announce the climax — 21 Aug 2026.**
+  The book's most vivid zone was one essay — the quietest one — reached mid-part
+  with no announcement, while the divider imperatives read Observe, Notice,
+  Understand, Integrate: *Expand* was the one imperative no divider ever said.
+  Three changes resolve it as one decision. Essay 05 joins Essay 06 in stage 4,
+  so the peak is a pair: the new intelligence arriving and the old default
+  dying — expansion forward and backward from the same present. Part III's
+  divider becomes that announcement: **Stage IV · Expand the aperture**, on the
+  dark ground its machine drawing was always made for. And what EXPAND argues is
+  now stated rather than implied: the aperture at its widest, both worlds
+  visible from where the reader is standing — which is Essay 06's own closing
+  claim. Stage 3 (Understand) becomes the unannounced inversion mid-Part II,
+  carried by the one essay literally about understanding; the dark sneaking in
+  unannounced is right for it, the peak arriving unannounced was not. Field
+  note 03 follows its part to stage 4, keeping the interlude convention of
+  breathing at the part's own stage. Essay-level climb: 1 1 · 2 3 · 4 4 · 5 5.
+
 - **The Carson experiment is out, 20 August 2026, the day it went in.** The
   dividers briefly carried a colliding part numeral (340–430pt, tilted, cropped
   by the trim, second impression out of register) and the last essay's closing

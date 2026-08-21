@@ -1,12 +1,12 @@
 ---
 id: part-3
 number: "III"
-stage: 3
+stage: 4
 title: The World Is Changing
 image: part-3-divider-machine-dark
 theme: dark
-imperative: Understand
-stageTitle: the systems
+imperative: Expand
+stageTitle: the aperture
 statement: >-
   You are inside the change, not after it.
   That is the only vantage point that ever exists.

@@ -232,3 +232,39 @@ existing essay for one build and look. It costs one line and no content.
 > a proof any more. It is simply a very good dark-ground photograph competing
 > for a slot in a book with no free spreads, and it should be judged on that
 > and not on a job that is already done.
+
+## The press path works; the preflight is a separate question — 21 Aug 2026
+
+Two independent faults were found on the way to the printer's file, and neither
+would have shown up in a proof.
+
+`npm run pdf:press` never set `BOOK_PRESS=1`. It built the trimmed proof and
+then applied a press-ready preflight, so the file called press-ready would have
+carried no bleed and no crop marks — every full-bleed photograph sitting exactly
+on the trim, with a millimetre of ordinary cutting variance putting a white
+sliver down the edge of the dog, the hive, the staircase and Adam's father.
+
+And the preflight itself cannot run here. `--preflight press-ready` is a wrapper
+around Ghostscript, via Docker or a local install, and with neither present it
+does not fail — it hangs. Measured at 81 minutes, 0.0% CPU, no output, which is
+indistinguishable from a slow build of this book. `npm run press:check` now runs
+first and fails in a second.
+
+**A press PDF built without the preflight is verified correct**, which settles
+the important half:
+
+    132 pages
+    MediaBox   332 × 332 mm
+    BleedBox   306 × 306 mm     ← trim + 3 mm all round
+    TrimBox    300 × 300 mm     ← the finished book
+    7 faces, every one subset-embedded
+
+That is a file a printer can work from. Bleed and trim boxes are what "press
+ready" means for this book.
+
+**Still open, and it is one question to Saal, not a decision to make here.**
+Whether they want PDF/X-1a at all. It is an offset-litho convention, and this
+book prints photographically on FUJIFILM Crystal Archive HD. If they do want it,
+`brew install ghostscript` is the cheapest route. If they do not, the preflight
+flags should come out of the script rather than sit there implying a requirement
+nobody confirmed.

@@ -417,3 +417,46 @@ before rejecting it.** A sidecar means the description and the file are both
 right and the difference is an edit the book can redo. No sidecar means it is
 genuinely a different photograph, which is the far more common case here and is
 covered by the filename-collision table above.
+
+### The dimensions in this document are of EDITED files — 21 Aug 2026
+
+This is the reason frame matching keeps failing, and it is structural rather
+than bad luck.
+
+**Every shape this document names is 16:9 or 9:16.** 5712 × 3213, 3213 × 5712,
+4032 × 2268, 2268 × 4032 — all of them 1.7778 or 0.5625.
+
+**Every shape the export actually contains is 4:3 or 3:4.** Measured across
+9,708 stills: 4000 × 3000 (4,783 files), 3264 × 2448 (1,274), 4032 × 3024
+(1,235), 3024 × 4032 (482). Not one file at 5712 × 3213, 3213 × 5712 or
+2268 × 4032. The export also carries **2,363 `.aae` edit sidecars**.
+
+So the frames selected here were **cropped to 16:9 in Photos**, and
+`File → Export → Export Unmodified Original` returns the uncropped camera
+originals. The document was written against a folder of edited renditions. The
+dimensions in it describe pictures that this export mode cannot produce.
+
+That affects the best frames in the pass, not the marginal ones — `IMG_1112`
+(3213 × 5712, the vaulted baths), `IMG_1735` (5712 × 3213, the woman watching
+light on a wall), `IMG_0964` (2268 × 4032, the lit bridge at night), the Fátima
+esplanade, the Alcobaça nave, the bamboo path.
+
+**What to do.** A second export of the same library, this time
+`File → Export → Export N Photos…` — the ordinary one, not *Unmodified
+Original* — which renders each photograph **as edited**: Adam's crops, his
+black-and-white, his grades. Send it to `~/Desktop/photo library edited`.
+`npm run selection` already reads every `~/Desktop/photo library*` folder.
+
+Keep both. They answer different questions:
+
+| | unmodified originals | edited renditions |
+| --- | --- | --- |
+| pixels | every one the sensor gave | fewer — the crop is baked |
+| framing | as shot | **as Adam decided** |
+| matches this document | no | yes |
+| use for | re-cropping, maximum quality | identifying the frame, and any case where the crop *is* the picture |
+
+Identify frames from the edited export, then decide per frame which file to
+place. Where the crop is the composition — the 16:9 of a nave receding, a bridge
+at night — the edited file is the photograph and the original is just its raw
+material.

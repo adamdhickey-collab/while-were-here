@@ -1069,3 +1069,81 @@
 }
 .field-note__band .figure { position: absolute; inset: 0; }
 .field-note__band img { width: 100%; height: 100%; object-fit: cover; }
+
+/* ---- HANDED OVER --------------------------------------------------------
+   The last interior page. A short catalogue of objects this family made for
+   each other, entered in the same register as every other specimen in the
+   book: plate, number, title, one flat line, and the real capture time from
+   the archive.
+
+   It takes the page that used to be blank before the back cover, so it costs
+   the 130-page ceiling nothing. Deliberately quiet — the page before it is a
+   field note and the page after it is the back cover, the calmest surface in
+   the object. Nothing here raises its voice.
+
+   `.page__block` is the 12-column grid, so the list has to span it explicitly;
+   left to itself it lands in a single column and the whole page collapses into
+   the top-left corner.                                                        */
+
+.page.handed { background: var(--paper); }
+
+/* Two rows: the eyebrow pins to the top margin, the catalogue takes the rest
+   and centres optically inside it. Without the explicit 1fr the block's rows
+   both size to content and the entries ride high with a dead third beneath. */
+.page.handed .page__block { grid-template-rows: auto 1fr; }
+
+.handed__eyebrow { grid-column: 1 / -1; align-self: start; }
+
+.handed__list {
+  grid-column: 1 / -1;
+  align-self: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 30mm;
+}
+
+.handed__item {
+  display: grid;
+  grid-template-columns: 104mm 1fr;
+  gap: 12mm;
+  align-items: center;
+}
+
+/* `contain`, not `cover`: these are objects in a catalogue, photographed at
+   their own shape. Cropping a book to a square is the one thing a catalogue
+   does not do — the shape of the object is part of the record. */
+.handed__plate {
+  border: 0.3pt solid var(--rule);
+  padding: 4mm;
+  background: var(--paper);
+}
+.handed__plate img,
+.handed__plate .figure img {
+  width: 100%;
+  height: 78mm;
+  object-fit: contain;
+  display: block;
+}
+
+.handed__label { max-width: 92mm; }
+
+.handed__n { color: var(--ink-faint); margin-bottom: 3mm; }
+
+.handed__title {
+  font-family: var(--display);
+  font-size: 21pt;
+  line-height: 1.1;
+  margin-bottom: 3mm;
+  text-wrap: balance;
+}
+
+.handed__by {
+  font-size: 10pt;
+  line-height: 1.5;
+  margin-bottom: 4mm;
+}
+
+.handed__spec { border: 0; padding: 0; }

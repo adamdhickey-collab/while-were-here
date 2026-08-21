@@ -167,6 +167,9 @@ function compose(book, toc, folios = {}) {
       case 'blank':
         place(L.blank());
         break;
+      case 'handed-over':
+        place(L.handedOver(item, ctxBase));
+        break;
       case 'dedication':
         place(L.dedication(book));
         break;

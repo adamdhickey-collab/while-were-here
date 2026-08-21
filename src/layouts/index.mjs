@@ -381,6 +381,40 @@ export const fieldNote = (note, ctx) => ({
   ],
 });
 
+/* The last interior page: a short catalogue of objects this family made for
+   each other, entered the way the book enters everything else — a plate, a
+   flat label, and the real capture time from the archive.
+
+   It takes the page that was blank before the back cover, so it costs the
+   130-page ceiling nothing. Register matters more here than anywhere: these
+   are ordinary objects belonging to living people, so the entries state what
+   the thing is and when the photograph was taken, and stop. No elegy, no
+   commentary line. The reader does the rest, which is the whole book's method.  */
+export const handedOver = (data, ctx) => ({
+  pair: false,
+  pages: [{
+    spread: 'handed over',
+    folio: false,
+    cls: 'handed',
+    html: `
+      <div class="page__block">
+        <p class="meta meta--rust handed__eyebrow">${esc(data.eyebrow)}</p>
+        <ol class="handed__list">
+          ${data.entries.map((e, n) => `
+            <li class="handed__item">
+              <div class="handed__plate">${figure(ctx.image(e.image), { root: ctx.root, compact: true })}</div>
+              <div class="handed__label">
+                <p class="handed__n specimen">${String(n + 1).padStart(2, '0')}</p>
+                <p class="handed__title">${esc(e.title)}</p>
+                <p class="handed__by">${esc(e.by)}</p>
+                <p class="handed__spec plate__spec">${esc(e.spec)}</p>
+              </div>
+            </li>`).join('')}
+        </ol>
+      </div>`,
+  }],
+});
+
 /* ---- Essay spreads ------------------------------------------------------- */
 
 const openerSpread = (spread, essay, ctx) => {

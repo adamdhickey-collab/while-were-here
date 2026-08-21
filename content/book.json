@@ -91,7 +91,22 @@
       "source": "field-notes/04-the-fire.md"
     },
     {
-      "type": "blank"
+      "type": "handed-over",
+      "eyebrow": "Handed over",
+      "entries": [
+        {
+          "image": "handed-01-love-of-my-life",
+          "title": "To the Love of My Life",
+          "by": "Made by Fabiola. One copy, for one reader.",
+          "spec": "Photographed 20 June 2017, 2:39 p.m."
+        },
+        {
+          "image": "handed-02-misery-is",
+          "title": "Misery Is…",
+          "by": "Written and bound by the author as a child, and kept. Inside, in pencil: “Misery is when your mom embarrass younn front of your friends.”",
+          "spec": "Photographed 4 October 2021, 1:56 p.m."
+        }
+      ]
     },
     {
       "type": "cover-back"

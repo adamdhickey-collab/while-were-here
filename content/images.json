@@ -1866,6 +1866,48 @@
       "source": "Pexels photo 1537811 (Elle Hughes)",
       "license": "Pexels License",
       "credit": "Adapted from a photograph by Elle Hughes via Pexels. Colour-graded and composited for this book"
+    },
+    {
+      "id": "handed-01-love-of-my-life",
+      "filename": "handed-01-love-of-my-life.jpg",
+      "kind": "personal",
+      "role": "specimen",
+      "essay": "—",
+      "section": "Back matter",
+      "spread": "Handed over (final page, catalogue)",
+      "subject": "A small hardcover held open on a carved table, one page blank and the other reading “I love hiking with you” above two drawn walkers and a dog. A hand keeps the spine flat; a wedding ring is on it.",
+      "concept": "An object made by one person for one reader.",
+      "purpose": "First entry in the closing catalogue. It is a book with a print run of one.",
+      "aspect": "4:3",
+      "target": "900 × 660 px (native crop — 320 dpi at 72 mm, far above what a catalogue cell needs)",
+      "status": "generated",
+      "composite": false,
+      "origin": "own photograph",
+      "captured": "Jun 20, 2017 2:39:36 pm",
+      "capturedSource": "Facebook data export, album HTML \"Taken\" field. The JPEG EXIF was stripped on upload; Facebook kept the capture timestamp in its own metadata and returns it in the export.",
+      "selection": "Facebook archive, Photos. Two frames exist of this book; the open one carries the sentence and the hand.",
+      "revision": "Cropped from 960 × 720 to trim table above and left. Not retouched, not upscaled."
+    },
+    {
+      "id": "handed-02-misery-is",
+      "filename": "handed-02-misery-is.jpg",
+      "kind": "personal",
+      "role": "specimen",
+      "essay": "—",
+      "section": "Back matter",
+      "spread": "Handed over (final page, catalogue)",
+      "subject": "A child’s book on green construction paper, hand-lettered “Misery is…” in pencil and crayon, “by Adam Hickey” beneath it, two staple marks down the left edge.",
+      "concept": "A surface that held a thought until somebody found it again.",
+      "purpose": "Second entry. Made by the author as a child and kept by somebody else for long enough to be photographed in 2021.",
+      "aspect": "3:4",
+      "target": "1280 × 1750 px (native crop — 450 dpi at 72 mm)",
+      "status": "generated",
+      "composite": false,
+      "origin": "own photograph",
+      "captured": "Oct 04, 2021 1:56:29 pm",
+      "capturedSource": "Facebook data export, album HTML \"Taken\" field. The JPEG EXIF was stripped on upload; Facebook kept the capture timestamp in its own metadata and returns it in the export.",
+      "selection": "Facebook archive, Mobile uploads. Three frames of this book survive — the cover, a crayon page, and the sentence. The cover carries the title and the author’s name, which is what a catalogue entry needs.",
+      "revision": "Cropped from 1536 × 2048 to sit the book in its cell. Not retouched, not upscaled. The catalogue entry quotes the book's interior sentence exactly, including the child's run-together \"younn\" for \"you in\". An earlier draft silently normalized it to \"you in front\", which is a direct quotation corrected without saying so. Checked against the page at full resolution before printing."
     }
   ]
 }

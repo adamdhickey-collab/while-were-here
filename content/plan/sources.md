@@ -5,7 +5,7 @@
 Every technical number in this book is listed here with the source it came from.
 Where a figure is contested, small-sample or easy to misstate, the note says so.
 
-34 verified · 0 outstanding
+34 verified · 1 outstanding
 
 ---
 
@@ -352,3 +352,11 @@ Rankin CH, Abrams T, Barry RJ, Bhatnagar S, Clayton DF, Colombo J, et al.. *Habi
 *Used in essays/why-ordinary-days-may-be-the-point-of-life.md — marginNote.*
 
 
+---
+
+## Outstanding
+
+These are not settled and must not appear on a page until they are.
+
+- **opening-plate-solar-geometry** (disputed) — The opening plate of Most of Life Is a Tuesday prints a solar survey over a photograph of a dog asleep in afternoon light: LAT 45.4167 N, LON 75.7000 W, DATE 21/06, TIME 15:00, ALTITUDE 61.2 degrees, AZIMUTH 212.7 degrees.
+  Three problems, all checkable from the plate's own numbers. (1) Those coordinates are OTTAWA, ONTARIO to within a kilometre. Nothing in this book happens in Ottawa; the reproduced check-in record on the pilgrimage spread is Minnesota and Wisconsin, and the field notes are Lake Harriet. (2) At the stated latitude, date and hour the sun is at altitude 57.9 and azimuth 236.7, not 61.2 and 212.7 — the azimuth is out by 24 degrees, which is about ninety minutes of afternoon. (3) The altitude contradicts the photograph it is drawn on: the plate says the light patch is 2018 mm deep from a 1420 mm aperture, and a 61.2-degree sun cannot throw a patch that long. The picture's own light is low and raking. This matters because the entry's revision field demands 'real angles, real units' and the plate's stated purpose is to establish on page one that this book measures things. For Minneapolis (44.9778 N, 93.2650 W) the honest numbers are: 21/06 15:00 CDT, altitude 59.6, azimuth 233.7; 15/10 15:00 CDT, altitude 30.2, azimuth 215.3 — and that October figure is the one whose azimuth is nearly what the plate already prints, which is the season the photograph looks like. Every other survey plate in the book checks out: the mug specimen card's elevation matches its photograph and its own colour chip, and the corner survey's four observers match its four sightlines.

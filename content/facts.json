@@ -553,6 +553,22 @@
         "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2754195/"
       },
       "note": "A consensus paper by seventeen authors setting out habituation's defining characteristics, which is why it can carry a general claim where a single study could not. The essay uses only the two properties the paper is unambiguous about: the response declines with harmless repetition, and it recovers when the stimulus changes. Do not extend it into a claim about meaning, attention or relationships — the paper describes a response curve, not a life. That extension is the essay's own argument and must stay visibly the essay's."
+    },
+    {
+      "id": "opening-plate-solar-geometry",
+      "claim": "The opening plate of Most of Life Is a Tuesday prints a solar survey over a photograph of a dog asleep in afternoon light: LAT 45.4167 N, LON 75.7000 W, DATE 21/06, TIME 15:00, ALTITUDE 61.2 degrees, AZIMUTH 212.7 degrees.",
+      "status": "disputed",
+      "usedIn": [
+        "images.json — ordinary-days-01a-dog-afternoon-light (printed inside the image, not in body copy)"
+      ],
+      "source": {
+        "authors": "NOAA Global Monitoring Laboratory",
+        "title": "Solar Position Calculator (equations)",
+        "publication": "General Solar Position Calculations",
+        "year": 2024,
+        "url": "https://gml.noaa.gov/grad/solcalc/solareqns.PDF"
+      },
+      "note": "Three problems, all checkable from the plate's own numbers. (1) Those coordinates are OTTAWA, ONTARIO to within a kilometre. Nothing in this book happens in Ottawa; the reproduced check-in record on the pilgrimage spread is Minnesota and Wisconsin, and the field notes are Lake Harriet. (2) At the stated latitude, date and hour the sun is at altitude 57.9 and azimuth 236.7, not 61.2 and 212.7 — the azimuth is out by 24 degrees, which is about ninety minutes of afternoon. (3) The altitude contradicts the photograph it is drawn on: the plate says the light patch is 2018 mm deep from a 1420 mm aperture, and a 61.2-degree sun cannot throw a patch that long. The picture's own light is low and raking. This matters because the entry's revision field demands 'real angles, real units' and the plate's stated purpose is to establish on page one that this book measures things. For Minneapolis (44.9778 N, 93.2650 W) the honest numbers are: 21/06 15:00 CDT, altitude 59.6, azimuth 233.7; 15/10 15:00 CDT, altitude 30.2, azimuth 215.3 — and that October figure is the one whose azimuth is nearly what the plate already prints, which is the season the photograph looks like. Every other survey plate in the book checks out: the mug specimen card's elevation matches its photograph and its own colour chip, and the corner survey's four observers match its four sightlines."
     }
   ]
 }

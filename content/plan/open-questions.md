@@ -156,6 +156,57 @@ same reason and is now `familiar-room`.
 
 ---
 
+### 9 · The plate that opens the book prints Ottawa's latitude
+`ordinary-days-01a-dog-afternoon-light` is the full-bleed opener of *Most of
+Life Is a Tuesday* — the dog asleep in a rectangle of afternoon light, overlaid
+with a solar survey in moss green. Its own manifest entry says the overlay
+"must be drafted, not sketched — **real angles, real units**", and its purpose
+is "to establish on page one that this book measures things."
+
+It prints, legibly, at 300 mm:
+
+    LAT: 45.4167° N   LON: 75.7000° W
+    DATE 21 / 06      TIME 15:00
+    ALTITUDE 61.2°    AZIMUTH 212.7°
+
+**Those coordinates are Ottawa, Ontario**, to within a kilometre. Nothing in
+this book happens in Ottawa — the reproduced check-in record two parts later is
+Minnesota and Wisconsin, and the field notes are Lake Harriet.
+
+**And the angles do not follow from the numbers beside them.** At that latitude,
+date and hour the sun is at **altitude 57.9°, azimuth 236.7°**. The azimuth is
+out by 24 degrees, which is about ninety minutes of afternoon.
+
+**The altitude also contradicts the photograph it is drawn on.** The plate says
+the light patch is 2018 mm deep from a 1420 mm aperture. A 61° sun cannot throw
+a patch that long — and the picture's own light is low and raking, which is
+what makes it worth photographing.
+
+**The honest numbers, if it is redrawn** — Minneapolis, 44.9778° N, 93.2650° W:
+
+| date | time | altitude | azimuth |
+| --- | --- | --- | --- |
+| 21 / 06 | 15:00 CDT | 59.6° | 233.7° |
+| 21 / 09 | 15:00 CDT | 39.3° | 218.0° |
+| **15 / 10** | **15:00 CDT** | **30.2°** | **215.3°** |
+
+The October row is the one to use. Its azimuth is within three degrees of what
+the plate already prints, and a 30° sun is what actually makes a two-metre
+parallelogram on a floor — so the drawing is nearly right for a mid-October
+afternoon in Minneapolis and badly wrong for a June afternoon in Ottawa. Fixing
+it is a matter of relettering four values, not reshooting anything.
+
+Logged in `content/facts.json` as `opening-plate-solar-geometry`, status
+**disputed**, so `npm run facts` reports it until it is settled. Note this makes
+`npm run facts:strict` exit non-zero, which is correct and is not in CI.
+
+**Every other survey plate in the book checks out**, which is why this one is
+worth fixing rather than abandoning: the mug specimen card's elevation matches
+its photograph and its own colour chip, and the corner survey's four observers
+match its four sightlines.
+
+---
+
 ## The photo library
 
 ### 6 · The edited export

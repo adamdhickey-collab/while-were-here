@@ -354,3 +354,45 @@ rather than set. Body copy stays on Archivo, and the hand stays on Caveat.
 
 All five are wired into `build/type.html` as candidate stacks. They render as
 soon as the fonts are installed on the machine — no code change.
+
+---
+
+## Generated pictures may not contain legible text — 21 Aug 2026
+
+A rule arrived at by enlarging every generated image in the book to the size it
+prints at and reading what is written in it.
+
+**The rule.** Any text inside a generated image must sit **below the legibility
+threshold at trim size** — small enough, soft enough or abstract enough that the
+eye reads *handwriting* or *a shelf of books* without ever being invited to read
+a word. The moment a viewer can start decoding, the picture has to survive being
+decoded, and a generated picture never does.
+
+**The book already gets this right almost everywhere, and it is worth saying how.**
+
+- `hand-01-marginalia-set` and `hand-02-overwriting-diagram` are pure abstract
+  cursive — struck-through lines, an ink blot, a bracket, an arrow. They read
+  unmistakably as annotation and as a passage being revised, and they claim no
+  words at all. This is the correct pattern.
+- `before-time-05-artifact-array` puts a phone book and two handwritten notes on
+  a table and keeps them small and slightly out of focus. The columns and the
+  script stay below the threshold. Also correct.
+- `field-note-02-tag-code` is framed, by its own brief, so that no code content
+  and no name is legible.
+
+**One image breaks it,** and it is the full-bleed opener of the essay about
+looking closely: `attention-01-familiar-room`. Its coffee table carries a
+readable *The Hidden Life of Trees* — a real book on a fabricated cover — above
+five spines that say things like *Hnadtoo drdrtatr*. See
+[open-questions](open-questions.md) item 8.
+
+**Why the threshold is the right rule rather than "no text".** Text at the
+threshold is doing real work in all three good cases: the marginalia has to look
+like writing or the overlay means nothing. What fails is not the presence of
+text but the *promise* of it. Legible-looking text is a promise, and a generated
+image cannot keep one.
+
+**And it matters more in this book than in most.** The argument here is
+attending to the actual world. The reader is told, in as many words, to look
+again. A picture that punishes the second look is arguing against the page it
+sits on.

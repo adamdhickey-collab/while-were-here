@@ -827,3 +827,30 @@ That is **fourteen** frames whose line disagrees with the photograph, out of
 thirty-nine — and the pattern is now clear enough to state. The document is
 reliable about *what is in the library* and unreliable about *what is in the
 frame*. Nothing in it should be placed on the strength of its own description.
+
+### The last two reachable frames, opened — 21 Aug 2026
+
+`IMG_5008 (1).JPG` (exact dimensions, 16 Sep 2024) **is Park Güell's leaning
+colonnade — and the line left out the subject.** Fabiola is standing dead centre,
+posed, smiling at the lens. As an architecture plate it is unusable, because the
+architecture is behind a person looking at the camera; as a personal frame it is
+another of the good ones, same register as the FABIOLA street sign. Registered
+as `library-19-park-guell-colonnade` with both readings and the consent notes
+(her, plus two identifiable strangers behind).
+
+`IMG_3161 (1).heic` (19 Sep 2024) is exactly what the line promises — someone
+waiting in an airport seat with a printed leaflet, phones in the row behind, the
+essay's thesis found in the wild — **and it cannot be printed.** She is a
+close-up, fully identifiable stranger, and unlike the sleeping-couple frame
+there is nobody Adam can ask. Registered as `library-20-waiting-without-a-phone`,
+marked EFFECTIVELY BLOCKED, so the frame is not re-proposed every time someone
+reads this document's line and gets excited.
+
+**The tally for the whole document, at the end of the day:** 39 frames named.
+**21 verified as the photograph described** (7 at stated size + 14 via
+crop-parents, base stems and parenthesised duplicates). **2 verified and
+unusable on consent** (the sleeping couple, the airport stranger). **14 whose
+line disagrees with the photograph.** 2 still unlocated (`IMG_2944`'s square
+crop and `IMG_2630`'s 16:9, whose parents exist but whose crops were never
+confirmed against the described subject). Only two of the 39 turned out to
+require the edited export at all — the rest resolved from originals.

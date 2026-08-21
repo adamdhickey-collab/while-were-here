@@ -2483,6 +2483,42 @@
       "capturedSource": "EXIF in the file — 24 Sep 2024, 15:05.",
       "consent": "Fabiola, posed and looking at the lens. Outside the candid rule, which exists for strangers and does not apply here — but it is her picture as much as Adam's, so ask her before it is printed.",
       "selection": "iPhoto library, verified by eye 21 Aug 2026."
+    },
+    {
+      "id": "library-19-park-guell-colonnade",
+      "filename": "—",
+      "kind": "personal",
+      "role": "personal",
+      "essay": "—",
+      "section": "—",
+      "spread": "Unplaced, and the file is not in this repository yet — it is still in the export at `~/Desktop/photo library 2/IMG_5008 (1).JPG`. Registered 21 Aug 2026, verified by eye. Copy it into public/images/personal/ and run `npm run derive` when a slot is decided. The book is at its 130-page ceiling, so placing this means removing something.",
+      "subject": "Fabiola standing in the leaning rubble colonnade at Park Güell, dead centre, sunglasses and sun hat, smiling at the camera, a shopping bag in one hand; the helicoidal columns and stone vaults running away behind her, half a dozen other visitors along the walkway.",
+      "concept": "A person mid-trip, delighted, in a corridor built to lean.",
+      "purpose": "photo-selection-04 lists this as “Park Güell's leaning stone colonnade”, an architecture frame — but the photograph is a portrait, and the line simply does not mention the person filling the middle of it. Like the FABIOLA street sign it belongs to the book's personal register or not at all: as architecture it is unusable, because the subject is looking at the lens.",
+      "aspect": "3:4",
+      "target": "3024 × 4032 px native — 256 dpi at 300 mm full bleed",
+      "origin": "own photograph",
+      "capturedSource": "EXIF in the file — 16 Sep 2024.",
+      "consent": "Fabiola, posed — ask her, same as the street sign. Behind her, five or six strangers, two of them clearly identifiable at print size. Fine small; do not run full bleed without cropping the background figures or accepting that they need asking.",
+      "selection": "iPhoto library, verified by eye 21 Aug 2026. Found as `IMG_5008 (1).JPG` — the bare-stem files are a 2017 frame and a 2025 frame."
+    },
+    {
+      "id": "library-20-waiting-without-a-phone",
+      "filename": "—",
+      "kind": "personal",
+      "role": "personal",
+      "essay": "The Last People Who Remember Waiting",
+      "section": "Part III · The World Is Changing",
+      "spread": "EFFECTIVELY BLOCKED — recorded 21 Aug 2026 so the frame is not re-proposed. The file is at `~/Desktop/photo library 2/IMG_3161 (1).heic`.",
+      "subject": "A woman in a straw hat and scarf sitting on an airport bench, reading a printed leaflet, hands in her lap, luggage handles crossing the foreground; behind her a row of travellers, several of them on phones.",
+      "concept": "The last person in the terminal who is just waiting.",
+      "purpose": "The essay's thesis, found in the wild — she is reading paper in a row of screens. That is why the frame was selected, and it is real. It still cannot be printed.",
+      "aspect": "9:16",
+      "target": "2268 × 4032 px per the document's crop; the original is 3024 × 4032",
+      "origin": "own photograph",
+      "capturedSource": "EXIF in the file — 19 Sep 2024.",
+      "consent": "BLOCKING, and unlike the plane frame there is no one to ask. She is a close-up, fully identifiable stranger, photographed candidly in an airport, and printing her as an emblem of ‘the last people who remember waiting’ makes an argument about a person who never agreed to illustrate it. The candid rule’s size test does not rescue a frame whose entire point is one legible face.",
+      "selection": "iPhoto library, verified by eye 21 Aug 2026."
     }
   ]
 }

@@ -177,7 +177,7 @@ function compose(book, toc, folios = {}) {
         place(L.halfTitle(book), { prefersRecto: true });
         break;
       case 'title-spread':
-        place(L.titleSpread(book));
+        place(L.titleSpread(book, Object.values(imagesById)));
         break;
       case 'opening-note':
         place(L.openingNote(loadDoc(item.source)), { prefersRecto: true });

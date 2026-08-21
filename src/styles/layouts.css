@@ -1147,3 +1147,39 @@
 }
 
 .handed__spec { border: 0; padding: 0; }
+
+/* ---- IMPRINT ------------------------------------------------------------
+   Small print at the foot of the title spread's verso, which previously held a
+   single dot. Generated from content/images.json, not typed — see L.imprint.
+
+   This exists for a licence, not for tidiness: one sourced image is CC BY 2.0,
+   which requires attribution wherever the work is distributed, and the book
+   printed none anywhere before this.                                        */
+
+.titlespread--imprint .page__block {
+  grid-template-rows: 1fr auto auto;
+}
+
+.imprint {
+  grid-column: 1 / -1;
+  align-self: end;
+  max-width: 150mm;
+  color: var(--ink-faint);
+  font-family: var(--font-note);
+  font-size: 6.4pt;
+  line-height: 1.5;
+}
+
+.imprint__line { margin: 0 0 1.5mm; }
+
+.imprint__credits {
+  list-style: none;
+  margin: 3mm 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.4mm;
+}
+
+.imprint__what { font-style: italic; }
+.imprint__lic  { white-space: nowrap; }

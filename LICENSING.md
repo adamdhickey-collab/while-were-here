@@ -93,3 +93,34 @@ the attribution page and flags anything incomplete.
 See `content/plan/asset-sources.md` for the licence rules per service — in
 particular, Envato's terms for physical products offered for sale are tighter
 than Adobe Stock's, which matters for a book.
+
+---
+
+## The book now prints its image credits — 21 Aug 2026
+
+Until today the credits existed only in `content/plan/credits.md`, a repository
+file. **The printed book carried no copyright line, no imprint and no
+attribution anywhere.** For seven of the eight sourced images that is merely
+impolite — Pexels and Unsplash do not require credit. For the eighth it is a
+licence breach on distribution:
+
+> `systems-05-physarum-network` — Rob Cruickshank, "Slime mould (P.
+> polycephalum)", via Wikimedia Commons, **CC BY 2.0**.
+
+CC BY requires attribution wherever the work is distributed, which includes a
+printed book given away or sold.
+
+The imprint now sits at the foot of the title spread's verso — the page that
+previously held a single dot. It is **generated from `content/images.json` at
+build time** (`L.imprint`, called by `L.titleSpread`), not typed, so it cannot
+drift from the manifest. Anything carrying `origin: archive` appears
+automatically, with its `credit` and `license` fields.
+
+**What this means for future work:** if you add a sourced image, fill in
+`credit`, `source` and `license` on its manifest entry and the printed page
+updates itself. `npm run credits` still flags any entry missing them. Do not
+hand-edit the imprint into a template.
+
+Still outstanding before any sale, and not a licensing matter but a consent one:
+the `consent` fields on `before-time-01-road-atlas`, `before-time-06-thanksgiving`,
+`here-07-ceremony` and `pilgrimage-08-plaza-stones`.

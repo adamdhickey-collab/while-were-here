@@ -162,15 +162,44 @@ export const halfTitle = (bookData) => ({
   }],
 });
 
-export const titleSpread = (bookData) => ({
+/* Short human label for a credit line: drop the essay-and-number prefix an id
+   carries and keep the descriptive tail, so a reader sees "physarum network"
+   rather than "systems-05-physarum-network". */
+const creditLabel = (id) => id.split('-').slice(2).join(' ');
+
+/* The imprint. It sits at the foot of the title spread's verso, which held one
+   dot and nothing else — the emptiest page in the book and the conventional
+   place for this matter.
+
+   It is not decoration. One of the sourced images is CC BY 2.0, and that
+   licence requires attribution wherever the work is distributed; before this
+   block existed the book printed none, anywhere. The lines are generated from
+   `content/images.json` at build time rather than typed here, so they cannot
+   drift from the manifest the way a hand-kept colophon always eventually does.
+   Anything with `origin: archive` appears automatically. */
+export const imprint = (bookData, images = []) => {
+  const sourced = images.filter((i) => i.origin === 'archive');
+  if (!sourced.length) return '';
+  return `
+    <div class="imprint">
+      <p class="imprint__line">© ${bookData.year || 2026} ${esc(bookData.author)}. All rights reserved.</p>
+      <p class="imprint__line">Photographs, drawings and diagrams by ${esc(bookData.author)} except as listed.</p>
+      <ul class="imprint__credits">
+        ${sourced.map((i) => `<li><span class="imprint__what">${esc(creditLabel(i.id))}</span> — ${esc(i.credit || '')} <span class="imprint__lic">${esc(i.license || '')}</span></li>`).join('')}
+      </ul>
+    </div>`;
+};
+
+export const titleSpread = (bookData, images = []) => ({
   pair: true,
   pages: [
     {
       spread: 'title spread',
       folio: false,
-      cls: 'titlespread',
+      cls: 'titlespread titlespread--imprint',
       html: `
         <div class="page__block">
+          ${imprint(bookData, images)}
           <div class="titlespread__foot">
             <span class="dot"></span>
           </div>

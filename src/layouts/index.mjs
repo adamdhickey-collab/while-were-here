@@ -133,7 +133,18 @@ export const coverBack = (bookData, ctx) => ({
         <div class="cover-back__mark">${radiant(15)}</div>
         <div class="cover-back__meta">
           <p class="cover-back__blurb">${esc(bookData.backCoverBlurb)}</p>
-          <div class="cover-back__isbn">ISBN &amp; barcode<br>placement</div>
+          ${/* Only when there is an ISBN to print. This block used to be
+                hardcoded and read "ISBN & barcode placement" on every build —
+                a visible placeholder on the back of a book whose first copies
+                are a present, not stock. It is now driven by `isbn` in
+                content/book.json, which is absent, so nothing renders.
+
+                BEFORE ANY COMMERCIAL PRINT: setting `isbn` prints the number
+                inside a reserved 38 x 24 mm box, and that is all it does. A
+                retailer needs a real EAN-13 barcode image in that space, which
+                this repo does not generate. Put the artwork in before selling
+                a single copy. */''}
+          ${bookData.isbn ? `<div class="cover-back__isbn">${esc(bookData.isbn)}</div>` : ''}
         </div>
         <p class="cover-back__coda">Look closer. Stay curious. Be kind.</p>
       </div>`,

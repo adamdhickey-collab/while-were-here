@@ -535,20 +535,20 @@
       "revision": "Second generation. The first ran its survey at watermark strength and the linework vanished over bright areas; the prompt now names the two inks (cobalt #536D8E structure, rust #A95738 organic traces), demands full opacity and drafting rather than sketching, and forbids the fade over bright areas. Note the units came back imperial — if this is ever placed beside 01A, which is dimensioned in millimetres, regenerate with units named. Placed 20 Aug 2026 as the inset on the spread whose prose says ordinary reality becomes almost impossibly complex — the caption owns the imperial units instead of apologising for them."
     },
     {
-      "id": "attention-01-window-reflection",
-      "filename": "attention-01-window-reflection.jpg",
+      "id": "attention-01-familiar-room",
+      "filename": "attention-01-familiar-room.jpg",
       "kind": "overlays",
       "essay": "The Secret Life of Attention",
       "section": "I — Look Again",
       "spread": "Essay opener (verso, full page)",
-      "subject": "A lit second-floor window at dusk, its glass carrying the reflection of the street trees behind the viewer, overprinted with two complete figure-ground diagrams keyed to the same surface: one tracing the room, one tracing the reflection, in two colours at the same weight. Both are correct. The eye cannot hold them at once.",
-      "concept": "Two worlds occupying one surface.",
-      "purpose": "Essay opener. States the premise as an optical fact before the essay states it as a sentence.",
+      "subject": "A sunlit living room in daylight: a sofa with cushions and a throw, a monstera and a windowsill of small pots, a framed botanical print and a large framed watercolour, a round coffee table with books and a mug, a dog asleep in a bed at the right. Overprinted with a figure-ground survey in two colours at equal weight — a blue-lake grid keyed to the room\u2019s planes and coral traces keyed to what the eye actually follows.",
+      "concept": "How much is going on in a room somebody has stopped seeing.",
+      "purpose": "Essay opener. The essay opens on a maple the author walked under for eleven years without seeing; the plate makes the same argument about the room he was walking home to.",
       "aspect": "1:1",
       "target": "4000 × 4000 px",
       "status": "generated",
       "selection": "—",
-      "revision": "Specimen colour lake #3E6B87 for the room trace, coral for the reflection trace, equal weight — if one recedes the plate has failed. No caption tells the reader to try.",
+      "revision": "Was `attention-01-window-reflection` until 21 Aug 2026; the id named the brief, not the picture. Subject rewritten 21 Aug 2026 to describe the picture that exists. The brief asked for a lit second-floor window at dusk carrying a street-tree reflection, with two figure-ground traces on one surface; the generator returned a daylight interior, it was placed anyway, and the manifest kept describing the brief for weeks — which meant the alt text told a screen reader about a window at dusk while the page showed a living room. Specimen colour lake #3E6B87 and coral, equal weight — if one trace recedes the plate has failed.",
       "composite": false
     },
     {

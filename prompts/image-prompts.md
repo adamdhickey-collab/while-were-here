@@ -730,17 +730,17 @@ Square frame (1:1).
 Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
 ```
 
-### attention-01-window-reflection
+### attention-01-familiar-room
 
-**Save as** `public/images/overlays/attention-01-window-reflection.jpg` · 1:1 · target 4000 × 4000 px
+**Save as** `public/images/overlays/attention-01-familiar-room.jpg` · 1:1 · target 4000 × 4000 px
 **Where it goes** Essay opener (verso, full page)
-**Why it is there** Essay opener. States the premise as an optical fact before the essay states it as a sentence.
-**Watch for** Specimen colour lake #3E6B87 for the room trace, coral for the reflection trace, equal weight — if one recedes the plate has failed. No caption tells the reader to try.
+**Why it is there** Essay opener. The essay opens on a maple the author walked under for eleven years without seeing; the plate makes the same argument about the room he was walking home to.
+**Watch for** Was `attention-01-window-reflection` until 21 Aug 2026; the id named the brief, not the picture. Subject rewritten 21 Aug 2026 to describe the picture that exists. The brief asked for a lit second-floor window at dusk carrying a street-tree reflection, with two figure-ground traces on one surface; the generator returned a daylight interior, it was placed anyway, and the manifest kept describing the brief for weeks — which meant the alt text told a screen reader about a window at dusk while the page showed a living room. Specimen colour lake #3E6B87 and coral, equal weight — if one trace recedes the plate has failed.
 
 ```text
 A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
 
-A lit second-floor window at dusk, its glass carrying the reflection of the street trees behind the viewer, overprinted with two complete figure-ground diagrams keyed to the same surface: one tracing the room, one tracing the reflection, in two colours at the same weight. Both are correct. The eye cannot hold them at once.
+A sunlit living room in daylight: a sofa with cushions and a throw, a monstera and a windowsill of small pots, a framed botanical print and a large framed watercolour, a round coffee table with books and a mug, a dog asleep in a bed at the right. Overprinted with a figure-ground survey in two colours at equal weight — a blue-lake grid keyed to the room’s planes and coral traces keyed to what the eye actually follows.
 
 Square frame (1:1).
 

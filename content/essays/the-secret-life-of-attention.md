@@ -11,7 +11,7 @@ readingTime: 6
 spreads:
   - type: opener
     variant: facing
-    image: attention-01-window-reflection
+    image: attention-01-familiar-room
     blocks: [open]
   - type: reading
     variant: two

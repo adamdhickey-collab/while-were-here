@@ -120,6 +120,42 @@ and it was caught.
 
 ---
 
+### 8 · The essay about looking closely opens on a picture that punishes it
+`attention-01-familiar-room` — the full-bleed opener of *The Secret Life of
+Attention* — is a generated interior. Enlarged to the size it prints at, **every
+book on the coffee table is gibberish.** One reads cleanly as *The Hidden Life
+of Trees*, a real book on a fabricated cover; the five beneath it say things
+like *Hnadtoo drdrtatr* and *Ienrhrmghwmdnhthrrn ergnn*. That stack occupies
+roughly 120 × 84 mm on a 300 mm page.
+
+It is a problem here in a way it would not be elsewhere. The essay's own
+instruction is *look again*. A reader who does what the page asks is rewarded
+with nonsense, in a book whose argument is attending to the actual world. The
+dog asleep at the right is generated too, in a book where the same dog appears
+in six real photographs.
+
+**Three ways out, and the choice is Adam's:**
+
+1. **Replace it with one of his own rooms.** Strongest by the book's own
+   argument, and the essay would then open on a room he has actually stopped
+   seeing. Needs a 1:1 frame; 3000 px on the short edge gives 254 dpi, which is
+   three times what several full-bleed plates in this book already live with.
+   It is close to shot-list item 2, and could be the same afternoon.
+2. **Crop the books out.** Cheapest. The lower shelf is the worst of it and
+   sits in the bottom fifth; cropping to 3400 × 3400 still gives 288 dpi. It
+   does not fix the blue book beside *The Hidden Life of Trees*, which is also
+   garbled.
+3. **Leave it.** Defensible only if nobody is expected to look closely, which
+   is the one thing this essay asks them to do.
+
+The manifest lied about this picture for weeks and has been corrected: it
+described a lit second-floor window at dusk with a street-tree reflection —
+the brief the generator was given, not the daylight living room it returned —
+and that text was the page's alt text. The id said `window-reflection` for the
+same reason and is now `familiar-room`.
+
+---
+
 ## The photo library
 
 ### 6 · The edited export

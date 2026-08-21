@@ -242,7 +242,28 @@ served by item 8, which shares a session with item 4.
 
 ## The photo library
 
-### 6 · The edited export — **IT STOPPED**
+### 6 · The edited export — RESTARTED, differently, 21 Aug evening
+The GUI re-run is no longer the plan. What actually happened, in order:
+
+1. **The full accounting**: every original is already local (23,687 of 23,775)
+   and `photo library 2` holds them all. Of 6,613 *edited* photos, only 335
+   had their rendered version cached locally — the other **6,278 renders live
+   only in iCloud**, and only Photos itself can download them. That is what
+   the six-hour GUI export was really doing, and why it was slow.
+2. **`osxphotos`** (installed under `~/.cache/osxphotos-venv`, needs the Full
+   Disk Access Adam granted) exported everything with a local file to
+   `~/Desktop/photo library rendered` — 7,088 files, clean names, resumable.
+3. **The 6,278 iCloud renders** are being fetched by a tiny AppleScript applet
+   at `~/.cache/render-export/Render Export.app`, which drives Photos in
+   batches of 20 into `~/Desktop/photo library edits`, **September 2024 trip
+   first**, resumable via `all.txt`/`done.txt` beside it. Log:
+   `~/.cache/render-export/applet.log`. Output confirmed 16:9/9:16 — the real
+   crops, at last. If it dies, `open` the app again; it picks up where it was.
+
+`npm run selection` reads every `~/Desktop/photo library*` folder, so both new
+folders are already searched.
+
+### The stop itself, kept for the record — **IT STOPPED**
 **Stopped at 17:27 on 21 Aug, about half done.** 13,456 files, 205 GB, against
 roughly 27,000 expected. Photos.app is no longer running, `caffeinate` is gone
 too, and an orphaned temp file — `IMG_6218 (1).png.sb-…`, a partial write —

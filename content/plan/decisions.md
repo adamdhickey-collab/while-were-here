@@ -168,6 +168,35 @@ distance a cover gets one shape, one colour and one word cluster.
   the rest, and it is worth reaching for whenever an opaque asset arrives on
   somebody else's paper.
 
+## The dedication is set at 900, like every other display line — 21 Aug 2026
+
+`typography.css` states it in capitals: **the display serif appears at 900 and
+at no other weight.** A selector list enforces it across the cover title, the
+title spread, the dividers, the spine, essay titles, pull quotes, statements,
+closing lines and drop caps.
+
+`.dedication__line` was not in that list. It is a `<p>`, so it inherited 400 and
+had been the only display type in the book below 900 — provable from the proof
+PDF, which carried `FalutinTitle-Ultra` on 37 pages and `FalutinTitle-Regular`
+on exactly one: page 5, the dedication.
+
+That was an omission, not an exception. The layout comment on that page records
+its two deliberate deviations — not centred, not the hand face — and weight was
+never among them.
+
+**Adam's decision, seeing both rendered side by side: 900.** The lighter cut is
+genuinely pretty and suits what the code calls "the quietest page in the book",
+but at a glance it reads as a different family from the cover and every essay
+title the reader has already passed, and the book's own rule exists to stop
+exactly that.
+
+*What follows:* the weight is now declared in `layouts.css` rather than
+inherited, with a comment saying not to remove it, and `typography.css` carries
+a cross-reference at the rule itself. A display element that appears in neither
+place is a silent bug — this one survived weeks of proofs.
+
+Verified from the output, not the stylesheet: Ultra on 38 pages, Regular on none.
+
 ## Stages III–IV stay unproven until an essay needs them — 19 Aug 2026
 
 The dark-ground inversion at the peak of the arc has never rendered. Every page

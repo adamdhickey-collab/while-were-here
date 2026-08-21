@@ -34,6 +34,12 @@
 .cover__title, .titlespread__title, .display, .spine__text,
 .essay-title, .pull-quote, .statement, .closing__line,
 .prose--drop > p:first-child::first-letter { font-weight: 900; }
+/* .dedication__line belongs to this rule too and is set in layouts.css beside
+   the rest of that page's type. It is called out here because it was missing
+   from this list for weeks and nothing caught it: the dedication is a <p>, so
+   it inherited 400 and read as a different family on the one page that gets
+   read hardest. If another display element is added, add it to one of these
+   two places — a display selector that appears in neither is a silent bug. */
 
 /* The text face doing the work the serif used to do. Weight carries the
    hierarchy now that the family cannot. */

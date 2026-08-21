@@ -201,15 +201,15 @@ Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glo
 
 ### field-note-02-dog-tag
 
-**Save as** `public/images/personal/field-note-02-dog-tag.jpg` · 1:1 · target shoot at native phone resolution; used at 300 mm (main) and 70 mm (inset)
+**Save as** `public/images/photography/field-note-02-dog-tag.png` · 1:1 · target 1024 × 1024 px (ChatGPT's largest for 1:1)
 **Where it goes** Field note (between Parts II and III)
 **Why it is there** Field note between Parts II and III: an ordinary thing that has quietly become networked, and the thing is the dog.
-**Watch for** To shoot: ordinary indoor light, no flash. Frame so that neither her name nor the code content is legible — the book prints no scannable codes and no personal data it does not mean to. Replaces the mower photographs, which were brand-heavy (two logos, a slogan), off-palette, and carried a fully legible serial number.
+**Watch for** Generated 21 Aug 2026 in place of a shot. Framed so the animal is unidentifiable — the real dog appears in real photographs elsewhere in the book, and a generated stand-in must not claim to be her. Face, eyes and markings stay out of frame. Replace with the real photograph whenever it is taken; the slot and framing rule are unchanged.
 
 ```text
 A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
 
-The dog asleep, the collar slack around her neck, the tag lying face up against dark fur in ordinary indoor light — close enough that the tag is the subject and the dog is the landscape it rests on.
+A round metal pet tag lying face up against the dark fur of a sleeping black dog, photographed very close in soft indoor window light. The tag is in sharp focus and carries only a small square code — no name, no legible characters. The dog is entirely out of focus: fur as a soft dark landscape, the slack collar crossing the frame, no face, no eyes, no identifying features visible.
 
 Square frame (1:1).
 
@@ -218,10 +218,10 @@ Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glo
 
 ### field-note-02-tag-code
 
-**Save as** `public/images/personal/field-note-02-tag-code.jpg` · 3:2 · target shoot at native phone resolution; used at 300 mm (main) and 70 mm (inset)
+**Save as** `public/images/photography/field-note-02-tag-code.png` · 3:2 · target 1536 × 1024 px (ChatGPT's largest for 3:2)
 **Where it goes** Field note (between Parts II and III)
 **Why it is there** The inset. Replaces a lawnmower serial plate that was all brands and barcodes; this one is worn smooth by an animal drinking.
-**Watch for** To shoot: ordinary indoor light, no flash. Frame so that neither her name nor the code content is legible — the book prints no scannable codes and no personal data it does not mean to. Replaces the mower photographs, which were brand-heavy (two logos, a slogan), off-palette, and carried a fully legible serial number.
+**Watch for** Generated 21 Aug 2026 in place of a shot. The code must be plausible but unscannable — softened by wear and focus so no real payload exists. No name, no phone number, no legible characters anywhere. Replace with the real photograph whenever it is taken.
 
 ```text
 A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.

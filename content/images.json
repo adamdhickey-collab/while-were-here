@@ -2292,6 +2292,40 @@
       "origin": "own photograph",
       "capturedSource": "EXIF in the file.",
       "selection": "iPhoto library, verified by eye 21 Aug 2026."
+    },
+    {
+      "id": "library-08-organ-en-chamade",
+      "filename": "—",
+      "kind": "personal",
+      "role": "plate",
+      "essay": "The Beauty of Systems Nobody Designed",
+      "section": "Part II · What Are We?",
+      "spread": "Unplaced, and the file is not in this repository yet — it is still in the export at `~/Desktop/photo library 2/IMG_1026.HEIC`. Registered 21 Aug 2026, verified by eye against photo-selection-04's line. Copy it into public/images/personal/ and run `npm run derive` when a slot is decided. The book is at its 130-page ceiling, so placing this means removing something.",
+      "subject": "A cathedral organ case seen from below: two ranks of horizontal en chamade trumpet pipes fanning out of the case at an angle, dense vertical ranks of pewter and gilt pipework behind them, deep red casework and heavy gilt carving, a coat of arms at the foot.",
+      "concept": "Hundreds of identical parts, each tuned to do one thing.",
+      "purpose": "Every pipe is one note and nothing else, and the instrument exists only in the arrangement. It is a designed object, so it carries the same caveat photo-selection-04 attaches to the muqarnas dome: name the design rather than pretending it emerged.",
+      "aspect": "4:3",
+      "target": "4032 × 3024 px native — 256 dpi at 300 mm full bleed",
+      "origin": "own photograph",
+      "capturedSource": "EXIF in the file.",
+      "selection": "iPhoto library, verified by eye 21 Aug 2026. `IMG_1026.JPG` in the same folder is a different frame."
+    },
+    {
+      "id": "library-09-serpent-on-spheres",
+      "filename": "—",
+      "kind": "personal",
+      "role": "specimen",
+      "essay": "The Beauty of Systems Nobody Designed",
+      "section": "Part II · What Are We?",
+      "spread": "Unplaced, and the file is not in this repository yet — it is still in the export at `~/Desktop/photo library 2/IMG_1305.HEIC`. Registered 21 Aug 2026, verified by eye against photo-selection-04's line. Copy it into public/images/personal/ and run `npm run derive` when a slot is decided. The book is at its 130-page ceiling, so placing this means removing something.",
+      "subject": "A wall of carved stone hemispheres, rank on rank, with a scaled serpent creature carved across them on a string course — head raised, mouth open, body looping over and under itself. A yellow rendered wall at the left edge, diamond-point rustication at the right.",
+      "concept": "A rule, and the one thing that breaks it.",
+      "purpose": "Two hundred identical units and a single figure crossing them. It is an inset-scale picture: at 92 mm the spheres read as texture and the serpent as an event, which is the argument.",
+      "aspect": "4:3",
+      "target": "4032 × 3024 px native — 1,113 dpi at 92 mm inset",
+      "origin": "own photograph",
+      "capturedSource": "EXIF in the file.",
+      "selection": "iPhoto library, verified by eye 21 Aug 2026."
     }
   ]
 }

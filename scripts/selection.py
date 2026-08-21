@@ -325,13 +325,14 @@ def main():
             for stem, want, got, name, _ in crops:
                 print(f"    {stem:<15} doc {want[0]}×{want[1]}  ·  {name} is {got[0]}×{got[1]}"
                       f"   ({got[0]*got[1]/(want[0]*want[1]):.2f}x the area)")
-            print("    MEASURED PRECISION: the first EIGHT of these were opened on 21 Aug and")
-            print("    only THREE were the photograph the document describes. Two more were the")
-            print("    right subject with a wrong line written about them; three were something")
-            print("    else entirely — a dog on a lawn, a hibiscus, a dog at a screen door.")
-            print("    4032×3024 is the shape of 16,248 files in this library, so sharing an edge")
-            print("    with it is very weak evidence. Treat this list as a shortlist to open,")
-            print("    never as an answer.")
+            print("    MEASURED PRECISION: all fifteen were opened on 21 Aug. NINE were the")
+            print("    photograph the document describes. Two were the right subject with a wrong")
+            print("    line written about them. Four were something else entirely — a dog on a")
+            print("    lawn, a hibiscus, a dog at a screen door, a suburban house with a legible")
+            print("    licence plate. So about three in five, and the failures are not subtle:")
+            print("    when this list is wrong it is wrong about the whole subject. Open every")
+            print("    one. 4032×3024 is the shape of 16,248 files here, so sharing an edge with")
+            print("    it is weak evidence on its own.")
 
         if inside:
             print(f"\n  ? MIGHT BE A CROP — {len(inside)}:")

@@ -681,7 +681,40 @@ photographer's long shadow — not "an artisan at a bench, hands and tools, face
 down and away." It is now sitting in the confident `found` table with a dpi
 figure beside it. **An exact dimension match is not proof either.**
 
-### Seven frames are now verified by eye and ready — 21 Aug 2026
+### All fifteen shape-consistent candidates opened — nine are the picture — 21 Aug 2026
+
+With the extension bug fixed the shortlist grew from eight to fifteen, and every
+one has now been opened. **Nine are the photograph the document describes** —
+against three of the first eight, before the fix. The extension bug was doing
+most of the damage.
+
+| verdict | frames |
+| --- | --- |
+| **the picture** (9) | `IMG_0831` dome · `IMG_1638` nave · `IMG_1735` light on a wall · `IMG_1562` bamboo path · `IMG_1390` moss trunk · `IMG_1026` organ · `IMG_1305` serpent on spheres · `IMG_0964` Córdoba bridge · `IMG_0775` Montserrat |
+| right subject, wrong line (2) | `IMG_0915` — the crowd has a conductor · `IMG_0970` — the line describes the crop, and the frame holds a legible number plate |
+| a different photograph (4) | `IMG_0936` dog on a lawn · `IMG_5210` dog at a screen door · `IMG_1749` hibiscus · `IMG_5214` a suburban house |
+
+**`IMG_5214` should not be placed even if it were wanted.** It is a ranch house
+with irises in bloom, a car in the drive and **a legible licence plate** — a
+street address and a vehicle registration in one frame. It is somebody's house,
+possibly a family one. It belongs to the same class as the crosswalk's number
+plate: fine to keep, never to print.
+
+**Two more good frames**, registered as `library-08-organ-en-chamade` and
+`library-09-serpent-on-spheres`:
+
+- **`IMG_1026`** — a cathedral organ from below, horizontal *en chamade* trumpets
+  fanning out over dense ranks of pewter and gilt. Every pipe is one note. Like
+  the muqarnas dome it is designed, and carries the same caveat.
+- **`IMG_1305`** — a wall of carved stone hemispheres at Pena with a scaled
+  serpent looping across them. Two hundred identical units and one thing
+  crossing them. At a 92 mm inset the spheres read as texture and the serpent as
+  an event, which is the argument, and the file gives **1,113 dpi** there.
+
+`selection.py` now prints the full nine-of-fifteen result rather than the
+three-of-eight measured before the fix.
+
+### Nine frames are now verified by eye and ready — 21 Aug 2026
 
 | frame | subject | native | dpi at 300 mm |
 | --- | --- | --- | --- |
@@ -692,8 +725,10 @@ figure beside it. **An exact dimension match is not proof either.**
 | `IMG_1562` | a bamboo path, two walkers going away | 5712 × 4284 | **363** |
 | `IMG_0964` | the Roman bridge at Córdoba at night | 3024 × 4032 | 256 |
 | `IMG_0775` | Montserrat switchbacks | 3024 × 4032 | 256 |
+| `IMG_1026` | a cathedral organ, en chamade | 4032 × 3024 | 256 |
+| `IMG_1305` | a serpent across carved spheres | 4032 × 3024 | 256 (1,113 at inset) |
 
-Five of the seven are 24-megapixel frames printing at **363 dpi across a
+Five of them are 24-megapixel frames printing at **363 dpi across a
 300 mm page** — better than all but a handful of images already in the book,
 and more than four times the 81–87 dpi the lowest plates are living with. Nobody
 in any of them is facing the camera.

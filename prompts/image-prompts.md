@@ -1880,6 +1880,38 @@ Vertical frame (3:4).
 Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
 ```
 
+### library-08-organ-en-chamade
+
+**Save as** `public/images/personal/—` · 4:3 · target 4032 × 3024 px native — 256 dpi at 300 mm full bleed
+**Where it goes** Unplaced, and the file is not in this repository yet — it is still in the export at `~/Desktop/photo library 2/IMG_1026.HEIC`. Registered 21 Aug 2026, verified by eye against photo-selection-04's line. Copy it into public/images/personal/ and run `npm run derive` when a slot is decided. The book is at its 130-page ceiling, so placing this means removing something.
+**Why it is there** Every pipe is one note and nothing else, and the instrument exists only in the arrangement. It is a designed object, so it carries the same caveat photo-selection-04 attaches to the muqarnas dome: name the design rather than pretending it emerged.
+
+```text
+A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
+
+A cathedral organ case seen from below: two ranks of horizontal en chamade trumpet pipes fanning out of the case at an angle, dense vertical ranks of pewter and gilt pipework behind them, deep red casework and heavy gilt carving, a coat of arms at the foot.
+
+Horizontal frame (4:3).
+
+Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
+```
+
+### library-09-serpent-on-spheres
+
+**Save as** `public/images/personal/—` · 4:3 · target 4032 × 3024 px native — 1,113 dpi at 92 mm inset
+**Where it goes** Unplaced, and the file is not in this repository yet — it is still in the export at `~/Desktop/photo library 2/IMG_1305.HEIC`. Registered 21 Aug 2026, verified by eye against photo-selection-04's line. Copy it into public/images/personal/ and run `npm run derive` when a slot is decided. The book is at its 130-page ceiling, so placing this means removing something.
+**Why it is there** Two hundred identical units and a single figure crossing them. It is an inset-scale picture: at 92 mm the spheres read as texture and the serpent as an event, which is the argument.
+
+```text
+A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
+
+A wall of carved stone hemispheres, rank on rank, with a scaled serpent creature carved across them on a string course — head raised, mouth open, body looping over and under itself. A yellow rendered wall at the left edge, diamond-point rustication at the right.
+
+Horizontal frame (4:3).
+
+Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
+```
+
 ## The Strange Privilege
 
 ### ground-05-imagine-to-make

@@ -131,5 +131,5 @@ updates itself. `npm run credits` still flags any entry missing them. Do not
 hand-edit the imprint into a template.
 
 Still outstanding before any sale, and not a licensing matter but a consent one:
-the `consent` fields on `before-time-01-road-atlas`, `before-time-06-thanksgiving`,
+the `consent` fields on `before-time-01-father-portrait`, `before-time-06-thanksgiving`,
 `here-07-ceremony` and `pilgrimage-08-plaza-stones`.

@@ -117,7 +117,7 @@ Avoid: any paper, card or background — the ink must sit on full transparency; 
 ### material-01-linen-weave
 
 **Save as** `public/images/photography/material-01-linen-weave.jpg` · 2:1 · target 8000 × 4000 px
-**Where it goes** Material break, full bleed crossover
+**Where it goes** Unplaced, recorded 21 Aug 2026. The file exists and this entry describes the spread it was made for, but it appears nowhere in the built book — verified against build/book.html, not inferred. The book reached its 130-page ceiling by cutting spreads (see book.config.js), and these entries were never updated when their spread went. Original spread: “Material break, full bleed crossover”.
 **Why it is there** The set is entirely pigment on cellulose. One genuinely different material makes the paper read as chosen rather than defaulted — and linen rhymes with the binding.
 **Watch for** Warm neutral, close to the book's paper in value so the break is tactile rather than tonal.
 
@@ -131,9 +131,9 @@ Wide panoramic frame (2:1). This runs across a two-page spread, so keep the cent
 Avoid: any object, edge, hem, seam or boundary — only surface; anything that lets the viewer work out the scale; styled or arranged compositions; props; studio seamless backgrounds; heavy grading or HDR; vignettes; visible text or watermarks; symmetry; a recognisable scene resolving out of the texture.
 ```
 
-### material-02-oxidised-metal
+### material-02-oxidized-metal
 
-**Save as** `public/images/photography/material-02-oxidised-metal.jpg` · 2:1 · target 8000 × 4000 px
+**Save as** `public/images/photography/material-02-oxidized-metal.jpg` · 2:1 · target 8000 × 4000 px
 **Where it goes** Material break, full bleed crossover
 **Why it is there** The hardest material break in the book, placed where the book is most vivid.
 **Watch for** Let the rust carry the accent colours of Stage IV — coral, ultraviolet — rather than importing them.
@@ -151,7 +151,7 @@ Avoid: any object, edge, hem, seam or boundary — only surface; anything that l
 ### material-03-glass-condensation
 
 **Save as** `public/images/photography/material-03-glass-condensation.jpg` · 2:1 · target 8000 × 4000 px
-**Where it goes** Material break, full bleed crossover
+**Where it goes** Unplaced, recorded 21 Aug 2026. The file exists and this entry describes the spread it was made for, but it appears nowhere in the built book — verified against build/book.html, not inferred. The book reached its 130-page ceiling by cutting spreads (see book.config.js), and these entries were never updated when their spread went. Original spread: “Material break, full bleed crossover”.
 **Why it is there** The turn back to calm. Transparent material after opaque ones.
 **Watch for** The out-of-focus world must be unreadable — the moment it resolves into a scene it stops being a material.
 
@@ -301,6 +301,40 @@ Square frame (1:1).
 Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
 ```
 
+### handed-01-love-of-my-life
+
+**Save as** `public/images/personal/handed-01-love-of-my-life.jpg` · 4:3 · target 900 × 660 px (native crop — 320 dpi at 72 mm, far above what a catalogue cell needs)
+**Where it goes** Handed over (final page, catalogue)
+**Why it is there** First entry in the closing catalogue. It is a book with a print run of one.
+**Watch for** Cropped from 960 × 720 to trim table above and left. Not retouched, not upscaled.
+
+```text
+A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
+
+A small hardcover held open on a carved table, one page blank and the other reading “I love hiking with you” above two drawn walkers and a dog. A hand keeps the spine flat; a wedding ring is on it.
+
+Horizontal frame (4:3).
+
+Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
+```
+
+### handed-02-misery-is
+
+**Save as** `public/images/personal/handed-02-misery-is.jpg` · 3:4 · target 1280 × 1750 px (native crop — 450 dpi at 72 mm)
+**Where it goes** Handed over (final page, catalogue)
+**Why it is there** Second entry. Made by the author as a child and kept by somebody else for long enough to be photographed in 2021.
+**Watch for** Cropped from 1536 × 2048 to sit the book in its cell. Not retouched, not upscaled. The catalogue entry quotes the book's interior sentence exactly, including the child's run-together "younn" for "you in". An earlier draft silently normalized it to "you in front", which is a direct quotation corrected without saying so. Checked against the page at full resolution before printing.
+
+```text
+A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
+
+A child’s book on green construction paper, hand-lettered “Misery is…” in pencil and crayon, “by Adam Hickey” beneath it, two staple marks down the left edge.
+
+Vertical frame (3:4).
+
+Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
+```
+
 ## Most of Life Is a Tuesday
 
 ### survey-01-familiar-lake
@@ -357,7 +391,7 @@ Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glo
 ### ordinary-days-01c-lake-quiet
 
 **Save as** `public/images/maps/ordinary-days-01c-lake-quiet.png` · 3:2 · target 6000 × 4000 px
-**Where it goes** Reading · asymmetric (verso, plate) · 01C
+**Where it goes** Unplaced, recorded 21 Aug 2026. The file exists and this entry describes the spread it was made for, but it appears nowhere in the built book — verified against build/book.html, not inferred. The book reached its 130-page ceiling by cutting spreads (see book.config.js), and these entries were never updated when their spread went. Original spread: “Reading · asymmetric (verso, plate) · 01C”.
 **Why it is there** Reading spread plate. Pairs with the observational drawing opposite.
 **Watch for** Specimen colour moss #68735B on the walked path and the chip; the water carries lake and algae. The cross gets no explanation anywhere on the plate.
 
@@ -408,7 +442,7 @@ Avoid: bright or white grounds; rainbow or heat-map false colour; neon or fluore
 ### ordinary-days-01e-two-walking
 
 **Save as** `public/images/diagrams/ordinary-days-01e-two-walking.png` · 2:3 · target 4000 × 6000 px
-**Where it goes** Image + essay · tall (verso) · 01H
+**Where it goes** Unplaced, recorded 21 Aug 2026. The file exists and this entry describes the spread it was made for, but it appears nowhere in the built book — verified against build/book.html, not inferred. The book reached its 130-page ceiling by cutting spreads (see book.config.js), and these entries were never updated when their spread went. Original spread: “Image + essay · tall (verso) · 01H”.
 **Why it is there** Carries the walking passage. The essay calls it astonishing in one sentence; this spends a whole page proving it.
 **Watch for** Specimen colour moss #68735B on the key lines, amber on the force vectors. Deadpan — no cartoon figure, no exaggeration. It should look like it was filed with a patent office.
 
@@ -425,7 +459,7 @@ Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glo
 ### ordinary-days-01f1-pavement-shadow
 
 **Save as** `public/images/specimens/ordinary-days-01f1-pavement-shadow.png` · 1:1 · target 3000 × 3000 px
-**Where it goes** Contact sheet (recto) · 01F
+**Where it goes** Unplaced, recorded 21 Aug 2026. The file exists and this entry describes the spread it was made for, but it appears nowhere in the built book — verified against build/book.html, not inferred. The book reached its 130-page ceiling by cutting spreads (see book.config.js), and these entries were never updated when their spread went. Original spread: “Contact sheet (recto) · 01F”.
 **Why it is there** One of three on the contact sheet. The labels record what was noticed and nothing else.
 **Watch for** Specimen colour moss #68735B. The label must be shorter than feels comfortable. No caption anywhere explains why the thing was worth mounting.
 
@@ -442,7 +476,7 @@ Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glo
 ### ordinary-days-01f2-bird-shoreline
 
 **Save as** `public/images/specimens/ordinary-days-01f2-bird-shoreline.png` · 1:1 · target 3000 × 3000 px
-**Where it goes** Contact sheet (recto) · 01F
+**Where it goes** Unplaced, recorded 21 Aug 2026. The file exists and this entry describes the spread it was made for, but it appears nowhere in the built book — verified against build/book.html, not inferred. The book reached its 130-page ceiling by cutting spreads (see book.config.js), and these entries were never updated when their spread went. Original spread: “Contact sheet (recto) · 01F”.
 **Why it is there** One of three on the contact sheet. The labels record what was noticed and nothing else.
 **Watch for** Specimen colour moss #68735B. The label must be shorter than feels comfortable. No caption anywhere explains why the thing was worth mounting.
 
@@ -459,7 +493,7 @@ Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glo
 ### ordinary-days-01f3-dog-nose-grass
 
 **Save as** `public/images/specimens/ordinary-days-01f3-dog-nose-grass.png` · 1:1 · target 3000 × 3000 px
-**Where it goes** Contact sheet (recto) · 01F
+**Where it goes** Unplaced, recorded 21 Aug 2026. The file exists and this entry describes the spread it was made for, but it appears nowhere in the built book — verified against build/book.html, not inferred. The book reached its 130-page ceiling by cutting spreads (see book.config.js), and these entries were never updated when their spread went. Original spread: “Contact sheet (recto) · 01F”.
 **Why it is there** One of three on the contact sheet. The labels record what was noticed and nothing else.
 **Watch for** Specimen colour moss #68735B. The label must be shorter than feels comfortable. No caption anywhere explains why the thing was worth mounting.
 
@@ -478,7 +512,7 @@ Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glo
 **Save as** `public/images/personal/walk-01-leaf-light.jpg` · 4:3 · target 1280 × 960 px (native — 464 dpi at 70 mm, and nothing larger)
 **Where it goes** Contact sheet, cell 1 of 3
 **Why it is there** First cell. A real walk, on the spread that asks the reader to look again at one.
-**Watch for** Not retouched, not upscaled. Facebook stripped the EXIF, so no capture time survives — the captions carry the season, which is recorded, and claim no clock time, which is not.
+**Watch for** Not retouched, not upscaled. Corrected 21 Aug 2026: an earlier note here claimed Facebook stripped the EXIF and that no capture time survived. The JPEG EXIF is indeed gone, but the export's own album HTML keeps a "Taken" field, and it gives this frame to the second. The captions now carry that time rather than a season.
 
 ```text
 A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
@@ -495,7 +529,7 @@ Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glo
 **Save as** `public/images/personal/walk-02-same-woods.jpg` · 4:3 · target 1280 × 960 px (native — 464 dpi at 70 mm, and nothing larger)
 **Where it goes** Contact sheet, cell 2 of 3
 **Why it is there** Second cell. Nearly the same photograph, which is the point.
-**Watch for** Not retouched, not upscaled. Facebook stripped the EXIF, so no capture time survives — the captions carry the season, which is recorded, and claim no clock time, which is not.
+**Watch for** Not retouched, not upscaled. Corrected 21 Aug 2026: an earlier note here claimed Facebook stripped the EXIF and that no capture time survived. The JPEG EXIF is indeed gone, but the export's own album HTML keeps a "Taken" field, and it gives this frame to the second. The captions now carry that time rather than a season.
 
 ```text
 A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
@@ -512,7 +546,7 @@ Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glo
 **Save as** `public/images/personal/walk-03-found-water.jpg` · 4:3 · target 1280 × 960 px (native — 464 dpi at 70 mm, and nothing larger)
 **Where it goes** Contact sheet, cell 3 of 3
 **Why it is there** Third cell. Same walk — and the route ran into water that was not there the week before.
-**Watch for** Not retouched, not upscaled. Facebook stripped the EXIF, so no capture time survives — the captions carry the season, which is recorded, and claim no clock time, which is not.
+**Watch for** Not retouched, not upscaled. Corrected 21 Aug 2026: an earlier note here claimed Facebook stripped the EXIF and that no capture time survived. The JPEG EXIF is indeed gone, but the export's own album HTML keeps a "Taken" field, and it gives this frame to the second. The captions now carry that time rather than a season.
 
 ```text
 A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
@@ -527,7 +561,7 @@ Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glo
 ### ordinary-days-01g1-tree-spring
 
 **Save as** `public/images/overlays/ordinary-days-01g1-tree-spring.jpg` · 3:4 · target 3600 × 4800 px
-**Where it goes** Sequence (recto, strip of four) · 01G
+**Where it goes** Unplaced, recorded 21 Aug 2026. The file exists and this entry describes the spread it was made for, but it appears nowhere in the built book — verified against build/book.html, not inferred. The book reached its 130-page ceiling by cutting spreads (see book.config.js), and these entries were never updated when their spread went. Original spread: “Sequence (recto, strip of four) · 01G”.
 **Why it is there** Frame of four in the sequence strip. The frame must not move between visits — the data is the only thing allowed to change.
 **Watch for** Specimen colour moss #68735B on the chip; the overlay block shifts to moss for this frame, so the strip reads as a colour ramp across the seasons before a single figure is read.
 
@@ -544,7 +578,7 @@ Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glo
 ### ordinary-days-01g2-tree-summer
 
 **Save as** `public/images/overlays/ordinary-days-01g2-tree-summer.jpg` · 3:4 · target 3600 × 4800 px
-**Where it goes** Sequence (recto, strip of four) · 01G
+**Where it goes** Unplaced, recorded 21 Aug 2026. The file exists and this entry describes the spread it was made for, but it appears nowhere in the built book — verified against build/book.html, not inferred. The book reached its 130-page ceiling by cutting spreads (see book.config.js), and these entries were never updated when their spread went. Original spread: “Sequence (recto, strip of four) · 01G”.
 **Why it is there** Frame of four in the sequence strip. The frame must not move between visits — the data is the only thing allowed to change.
 **Watch for** Specimen colour moss #68735B on the chip; the overlay block shifts to algae for this frame, so the strip reads as a colour ramp across the seasons before a single figure is read.
 
@@ -561,7 +595,7 @@ Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glo
 ### ordinary-days-01g3-tree-autumn
 
 **Save as** `public/images/overlays/ordinary-days-01g3-tree-autumn.jpg` · 3:4 · target 3600 × 4800 px
-**Where it goes** Sequence (recto, strip of four) · 01G
+**Where it goes** Unplaced, recorded 21 Aug 2026. The file exists and this entry describes the spread it was made for, but it appears nowhere in the built book — verified against build/book.html, not inferred. The book reached its 130-page ceiling by cutting spreads (see book.config.js), and these entries were never updated when their spread went. Original spread: “Sequence (recto, strip of four) · 01G”.
 **Why it is there** Frame of four in the sequence strip. The frame must not move between visits — the data is the only thing allowed to change.
 **Watch for** Specimen colour moss #68735B on the chip; the overlay block shifts to amber for this frame, so the strip reads as a colour ramp across the seasons before a single figure is read.
 
@@ -578,7 +612,7 @@ Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glo
 ### ordinary-days-01g4-tree-winter
 
 **Save as** `public/images/overlays/ordinary-days-01g4-tree-winter.jpg` · 3:4 · target 3600 × 4800 px
-**Where it goes** Sequence (recto, strip of four) · 01G
+**Where it goes** Unplaced, recorded 21 Aug 2026. The file exists and this entry describes the spread it was made for, but it appears nowhere in the built book — verified against build/book.html, not inferred. The book reached its 130-page ceiling by cutting spreads (see book.config.js), and these entries were never updated when their spread went. Original spread: “Sequence (recto, strip of four) · 01G”.
 **Why it is there** Frame of four in the sequence strip. The frame must not move between visits — the data is the only thing allowed to change.
 **Watch for** Specimen colour moss #68735B on the chip; the overlay block shifts to rust for this frame, so the strip reads as a colour ramp across the seasons before a single figure is read.
 
@@ -595,7 +629,7 @@ Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glo
 ### ordinary-days-01i-kitchen-light
 
 **Save as** `public/images/archival/ordinary-days-01i-kitchen-light.jpg` · 2:1 · target 8000 × 4000 px
-**Where it goes** Image + essay · band (crossover) · 01H
+**Where it goes** Unplaced, recorded 21 Aug 2026. The file exists and this entry describes the spread it was made for, but it appears nowhere in the built book — verified against build/book.html, not inferred. The book reached its 130-page ceiling by cutting spreads (see book.config.js), and these entries were never updated when their spread went. Original spread: “Image + essay · band (crossover) · 01H”.
 **Why it is there** Crossover band. The one place in the essay where the apparatus stops and the book just looks at somebody.
 **Watch for** Specimen colour moss #68735B. Keep the figure fully on one page; nothing of interest within 15 mm of the fold. No measurement, no key, no diagram anywhere on this spread — it earns its silence by following six pages of instruments.
 
@@ -890,7 +924,7 @@ Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glo
 ### intelligence-03-orb-web
 
 **Save as** `public/images/plates/—` · 1:1 · target 3000 × 2250 px per plate
-**Where it goes** Pull quote (facing)
+**Where it goes** Unplaced, recorded 21 Aug 2026. The file exists and this entry describes the spread it was made for, but it appears nowhere in the built book — verified against build/book.html, not inferred. The book reached its 130-page ceiling by cutting spreads (see book.config.js), and these entries were never updated when their spread went. Original spread: “Pull quote (facing)”.
 **Why it is there** Faces the pull quote. On a dark stage the plates composite normally and lay largest first.
 **Watch for** Separated at --simplify 700. Replaces the orb-web drawing, which stays a good idea for a diagram spread.
 
@@ -989,6 +1023,23 @@ Square frame (1:1).
 Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
 ```
 
+### intelligence-07-child-hand
+
+**Save as** `public/images/personal/intelligence-07-child-hand.jpg` · 4:3 · target 1536 × 1152 px (native crop — 424 dpi at 92 mm)
+**Where it goes** Reading · asymmetric, inset
+**Why it is there** Inset beside “Writing makes the effect durable. Instructions survive their author. A margin note can argue with a reader born later.” Here the author and the later reader are the same person, thirty-odd years apart, which is the essay's claim at its sharpest.
+**Watch for** Cropped 4:3 from 1536 × 2048, 16% down, so all five lines hold. Not retouched, not upscaled. The child's run-together “younn” for “you in” is reproduced, not corrected — see the note on handed-02-misery-is.
+
+```text
+A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
+
+A ruled page in a child's hand-bound book, five lines in pencil: “Misery is when your mom embarrass younn front of your friends.” The green construction-paper cover shows along the edge.
+
+Horizontal frame (4:3).
+
+Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
+```
+
 ## The Last People Who Remember Waiting
 
 ### survey-04-two-roads
@@ -1044,17 +1095,17 @@ Wide panoramic frame (2:1). This runs across a two-page spread, so keep the cent
 Avoid: any paper, card or background colour — the artwork must sit on full transparency; variable or heavy line weight; hard-edged washes; fills, hatching or shading; text, numerals, labels, scale bars or legends of any kind; frames or borders; drop shadows; a dense area that would darken into a blotch under body copy; perfect radial symmetry; a repeated or tiling motif; infographic or corporate-diagram styling; anything resolving into a recognisable scene or object.
 ```
 
-### before-time-01-road-atlas
+### before-time-01-father-portrait
 
-**Save as** `public/images/photography/before-time-01-road-atlas.png` · 1:1 · target 1024 × 1024 px (ChatGPT's largest for 1:1 — 85 dpi at 306 mm)
+**Save as** `public/images/personal/before-time-01-father-portrait.jpg` · 1:1 · target 1272 × 1272 px (native square crop — 108 dpi at 300 mm, above the 87 dpi the generated plate gave)
 **Where it goes** Opener (verso, full bleed)
-**Why it is there** The opener. It has to look used rather than collected.
-**Watch for** Target lowered 20 Aug 2026 to the largest canvas ChatGPT actually produces. The previous figure asked for a resolution no available generator could reach.
+**Why it is there** The essay opens on this. One sitting, one expression, and no way to see the result until it came back in an envelope.
+**Watch for** Was `before-time-01-road-atlas` until 21 Aug 2026, when it was renamed for what it is: the id survived a swap and named a photograph of Adam’s father after the road atlas it replaced. Replaced the generated road-atlas plate 21 Aug 2026. The atlas was a good illustration of information that cannot answer back; a studio portrait is the same argument about an image — one sitting, one expression, weeks of waiting, and no retake from the couch that evening. Cropped square from 1272 × 1566, offset 12% down. Not retouched, not upscaled: the softness is a phone photograph of a thirty-five-year-old print and is period-correct.
 
 ```text
 A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
 
-A folded road atlas open across a passenger seat, one fold split white, a coffee ring on the index.
+A studio portrait of the author's father, mid-1980s: large tortoiseshell frames, a mustache, a plaid shirt, a mottled painted backdrop behind him.
 
 Square frame (1:1).
 
@@ -1163,6 +1214,23 @@ Square frame (1:1).
 Avoid: bright or white grounds; rainbow or heat-map false colour; neon or fluorescent glow; a cartoon or 3D-rendered look; symmetrical or tiling arrangements; visible text, numerals, watermarks or a burned-in scale bar (the layout sets its own); anything recognisable at human scale; a subject floating in empty space with no surface under it; stock-photo science imagery.
 ```
 
+### before-time-06-thanksgiving
+
+**Save as** `public/images/personal/before-time-06-thanksgiving.jpg` · 4:3 · target 538 × 404 px (native crop — 149 dpi at 92 mm; the smallest file used anywhere in the book, and only an inset can take it)
+**Where it goes** Reading · asymmetric, inset
+**Why it is there** Inset beside the paragraph on growing up before ordinary life produced a continuous public record. This book is set from that record.
+**Watch for** Cropped 4:3 from 604 × 404. Not retouched, not upscaled.
+
+```text
+A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
+
+Six people posed on a patterned rug in front of a white fireplace at Thanksgiving, two of them children wearing paper crowns.
+
+Horizontal frame (4:3).
+
+Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
+```
+
 ## The Body Cannot Skip the Hill
 
 ### north-01-gorge-cut
@@ -1203,15 +1271,15 @@ Avoid: any paper, card or background colour — the artwork must sit on full tra
 
 ### pilgrimage-01-worn-threshold
 
-**Save as** `public/images/photography/pilgrimage-01-worn-threshold.png` · 1:1 · target 1024 × 1024 px (ChatGPT's largest for 1:1 — 85 dpi at 306 mm)
+**Save as** `public/images/personal/pilgrimage-01-worn-threshold.jpg` · 1:1 · target 1536 × 1536 px (native square crop — 130 dpi at 300 mm, above the 106 dpi the generated plate was giving)
 **Where it goes** Opener (verso, full bleed)
 **Why it is there** The opener. Nothing else in frame; the wear is the whole subject.
-**Watch for** Target lowered 20 Aug 2026 to the largest canvas ChatGPT actually produces. The previous figure asked for a resolution no available generator could reach.
+**Watch for** Replaced the generated worn-threshold plate 21 Aug 2026. The generated stone sill was a good image but an anonymous one; this is Adam’s own, at higher resolution, and the shadow makes the essay’s claim directly — the body is in the picture, at the top of the climb, with the steps still to go. Cropped square from 1536 × 2048, offset 18% down so the stair head, the shadow and the falling steps all hold. Not retouched, not upscaled.
 
 ```text
 A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
 
-A stone threshold worn into a shallow bowl at its centre, raking light across the dip.
+A long public staircase seen from the top, the photographer’s own shadow thrown down it, handrails converging, summer growth crowding both sides.
 
 Square frame (1:1).
 
@@ -1320,6 +1388,40 @@ Square frame (1:1).
 Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
 ```
 
+### pilgrimage-07-switchbacks
+
+**Save as** `public/images/personal/pilgrimage-07-switchbacks.jpg` · 4:3 · target 1280 × 960 px (native, uncropped — 353 dpi at 92 mm)
+**Where it goes** Reading · two column, inset
+**Why it is there** Inset beside the paragraph on the body supplying a measure that cannot be argued with — a blister changes pace, heat decides when to stop.
+**Watch for** Not cropped, not retouched, not upscaled. The frame is natively 4:3, which is the inset plate’s aspect. Caption corrected 21 Aug 2026: it read "Every one of those turns has to be walked", but the frame's dominant subject is a mule train with riders, and three walkers are only incidental below. "Nobody gets down without taking every turn" is true of both and does not have the picture arguing with its own caption.
+
+```text
+A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
+
+A mule train strung out along a switchback cut into a canyon wall, with three walkers far below on the same trail. The rock fills the frame; the figures are a few pixels each.
+
+Horizontal frame (4:3).
+
+Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
+```
+
+### pilgrimage-08-plaza-stones
+
+**Save as** `public/images/personal/pilgrimage-08-plaza-stones.jpg` · 4:3 · target 1280 × 960 px (native, uncropped — 353 dpi at 92 mm)
+**Where it goes** Reading · asymmetric, inset
+**Why it is there** Inset beside “People walk to a childhood home before it is sold. They travel to a battlefield, a grave, or the coast where a migration began.” The essay's point is that the pattern is not only religious; this is the secular version, and it is a family trip.
+**Watch for** Not cropped, not retouched, not upscaled; natively 4:3. THE TOWN IS NOT NAMED IN PRINT. The white colonial arcades and the size of the cobbled square read as Villa de Leyva, but that is an inference from architecture, and the book names no place it has not confirmed.
+
+```text
+A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
+
+A very large colonial plaza laid in rough cobbles, low white buildings with terracotta roofs on three sides and a bare mountain behind. A couple stands near the middle; a dozen other people are scattered across it, all small.
+
+Horizontal frame (4:3).
+
+Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
+```
+
 ## While We’re Here
 
 ### north-02-aspen-up
@@ -1360,10 +1462,10 @@ Avoid: any paper, card or background colour — the artwork must sit on full tra
 
 ### here-01-dog-late-light
 
-**Save as** `public/images/personal/here-01-dog-late-light.jpg` · 1:1 · target 960 × 960 px (native crop — 106 dpi at 306 mm, above the 85 dpi the slot accepted from a generator)
+**Save as** `public/images/personal/here-01-dog-late-light.jpg` · 1:1 · target 960 × 960 px (native crop — 81 dpi at 300 mm, against the 87 dpi the slot was getting from a generated 1024 px plate)
 **Where it goes** Opener (verso, full bleed)
 **Why it is there** The closing essay opens where the book opened, which is the point.
-**Watch for** Replaced the generated opener 21 Aug 2026: the archive re-audit found the no-full-page rule was written against 6000 px targets and never revisited after the retarget — a 1280 px real photograph now exceeds what the slot accepts from a generator, on both dpi and honesty. Cropped square from 1280 × 960, the dog kept right of centre.
+**Watch for** Replaced the generated opener 21 Aug 2026: the archive re-audit found the no-full-page rule was written against 6000 px targets and never revisited after the retarget — a real photograph now sits within a few dpi of what the slot accepts from a generator, and ahead of it on honesty. Cropped square from 1280 × 960, the dog kept right of centre. Target corrected 21 Aug 2026: this entry had claimed 106 dpi at 306 mm. Measured in the rendered book, the full-bleed opener box is 300 mm and the proof carries no bleed, so 960 px is 81 dpi. The swap still stands — it was argued on the photograph, not on the arithmetic — but the number was wrong.
 
 ```text
 A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
@@ -1460,19 +1562,53 @@ Horizontal frame (4:3).
 Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
 ```
 
-## The Beauty of Systems Nobody Designed
+### here-07-ceremony
 
-### systems-01-ants-pavement
-
-**Save as** `public/images/photography/systems-01-ants-pavement.png` · 1:1 · target 1024 × 1024 px (ChatGPT's largest for 1:1 — 85 dpi at 306 mm)
-**Where it goes** Opener (verso, full bleed)
-**Why it is there** The essay opens on this. Evidence that a route can be held by contact alone.
-**Watch for** Target lowered 20 Aug 2026 to the largest canvas ChatGPT actually produces. The previous figure asked for a resolution no available generator could reach.
+**Save as** `public/images/personal/here-07-ceremony.jpg` · 4:3 · target 1280 × 960 px (native, uncropped — 353 dpi at 92 mm)
+**Where it goes** Image + essay · tall, inset
+**Why it is there** Inset beside “Most of those hours are not milestones. They are preparation, maintenance, repetition, and return.” The milestone is in the picture and it took half an hour.
+**Watch for** Not cropped, not retouched, not upscaled. Natively 4:3, the inset plate's aspect.
 
 ```text
 A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
 
-A line of ants crossing pavement, rerouting around a crack, close and low.
+A city council chamber: a long empty conference table, stacked office chairs, a printer against the wall, flags behind the dais. Three small figures stand at the far end conducting a wedding.
+
+Horizontal frame (4:3).
+
+Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
+```
+
+### here-08-dog-resting
+
+**Save as** `public/images/personal/here-08-dog-resting.jpg` · 4:3 · target 1070 × 803 px (native crop — 295 dpi at 92 mm)
+**Where it goes** Reading · asymmetric, inset
+**Why it is there** Inset beside “The body is not a silent vehicle carrying a separate observer. It is an active population keeping the observer possible.”
+**Watch for** Cropped 4:3 from 1200 × 803. Not retouched, not upscaled.
+
+```text
+A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
+
+The dog lying on a bed with her front paws crossed, head up and ears forward, a wall of small art cards behind her.
+
+Horizontal frame (4:3).
+
+Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
+```
+
+## The Beauty of Systems Nobody Designed
+
+### systems-01-ants-pavement
+
+**Save as** `public/images/personal/systems-01-ants-pavement.jpg` · 1:1 · target 960 × 960 px (native square crop — 81 dpi at 300 mm, against the 87 dpi the generated plate was giving — a 6% loss, taken knowingly)
+**Where it goes** Opener (verso, full bleed)
+**Why it is there** The essay opens on this. Evidence that a route can be held by contact alone.
+**Watch for** Replaced the generated ants-on-pavement plate 21 Aug 2026. The generated plate read well as a diagram but its ants were dots. This is a real colony, photographed by Adam, and it costs 6 dpi to say so. Cropped square from 1280 × 960, offset 45% from the left so both frames hold. Not retouched, not upscaled.
+
+```text
+A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
+
+An observation hive behind glass: capped honey in the upper frame, the brood cluster massed across the lower comb, a few bees walking the empty cells.
 
 Square frame (1:1).
 
@@ -1575,6 +1711,57 @@ Avoid: any paper, card or background colour — the artwork must sit on full tra
 A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
 
 A queen butterfly, Danaus gilippus, closed on a grass stem: chestnut ground, white spots scattered across the forewing, fine veins.
+
+Horizontal frame (4:3).
+
+Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
+```
+
+### systems-06-geese-path
+
+**Save as** `public/images/personal/systems-06-geese-path.jpg` · 4:3 · target 2048 × 1536 px (native crop — 565 dpi at 92 mm)
+**Where it goes** Reading · asymmetric, inset
+**Why it is there** Inset beside the paragraph on order as the visible history of constraints. The path is the constraint; the geese are what met it.
+**Watch for** Cropped 4:3 from 2048 × 2048, 28% down, to hold both the grass flock and the birds on the asphalt. Not retouched, not upscaled.
+
+```text
+A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
+
+A dozen Canada geese on autumn grass beside a paved park path, four of them walking on the asphalt in single file.
+
+Horizontal frame (4:3).
+
+Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
+```
+
+### here-06-empty-room
+
+**Save as** `public/images/personal/here-06-empty-room.jpg` · 4:3 · target 772 × 579 px (native crop — 213 dpi at 92 mm)
+**Where it goes** Reading · two column, inset
+**Why it is there** Inset beside “We are trained to look for the maker. A nest suggests an architect… This habit works well for tables and bridges. It fails in much of the living world.” A built room is the case where the habit is right, which is what makes the rest of the essay land.
+**Watch for** Cropped 4:3 from a 1024 × 579 frame, 62% across, to keep the window, the floor and the door. Not retouched, not upscaled. Moved 21 Aug 2026 from essay 08, where the ceremony frame argues the same sentence harder — a small interval containing "every choice that changed the next day" is a wedding, and this one is timestamped.
+
+```text
+A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
+
+An empty living room: bare oak floorboards, a bay window with the light blown out behind it, a magenta front door, the edge of a brick hearth.
+
+Horizontal frame (4:3).
+
+Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
+```
+
+### systems-07-moon-jelly
+
+**Save as** `public/images/personal/systems-07-moon-jelly.jpg` · 4:3 · target 2048 × 1536 px (native crop — 565 dpi at 92 mm)
+**Where it goes** Reading · two column, inset
+**Why it is there** Inset beside “Physarum polycephalum has no brain and no nervous system.” The jellyfish has no brain either — a ring of nerve tissue around the bell margin, no centre — and unlike the slime mold it is an animal, which is the harder case to accept.
+**Watch for** Cropped 4:3 from 2048 × 2048 through the centre. Not retouched — the violet is the tank's lighting, not a grade. IDENTIFICATION NOT ASSERTED IN PRINT: the four clover-shaped gonads and the radial canals read as a moon jelly, Aurelia sp., but this is a photograph through glass in coloured light and the book has been wrong about a species before (see specimen-02, which is a Queen and was captioned Monarch). The printed caption names no species, and the claim it does make — that a jellyfish has no brain — is true of every jellyfish.
+
+```text
+A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
+
+A jellyfish photographed through aquarium glass: a translucent bell lit violet and magenta, four horseshoe-shaped gonads clustered at the centre, fine radial canals running to a fringe of short marginal tentacles.
 
 Horizontal frame (4:3).
 
@@ -1734,6 +1921,59 @@ A believable documentary photograph of the real world — quiet, contemplative, 
 A dim room, a screen out of focus, and a cursor still blinking in an empty field after the answer has been read.
 
 Square frame (1:1).
+
+Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
+```
+
+## The Strange Privilege of Living Through a Technological Revolution
+
+### privilege-07-grill-screen
+
+**Save as** `public/images/personal/privilege-07-grill-screen.jpg` · 4:3 · target 720 × 540 px (native crop — 199 dpi at 92 mm)
+**Where it goes** Reading · two column, inset
+**Why it is there** Inset beside “Later generations inherit revolutions as furniture… The machinery disappears behind a reliable action.” This is the machinery, disappeared.
+**Watch for** Cropped 4:3 from 720 × 960, 34% down, to centre the screen. Not retouched, not upscaled.
+
+```text
+A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
+
+A tablet propped on a speckled counter running a grill controller: grill 190 °F, food 124 °F, a countdown at 03:09:35, and a button reading Select Grill Profile.
+
+Horizontal frame (4:3).
+
+Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
+```
+
+### privilege-08-vhs-shelf
+
+**Save as** `public/images/personal/privilege-08-vhs-shelf.jpg` · 4:3 · target 960 × 720 px (native, uncropped — 265 dpi at 92 mm)
+**Where it goes** Reading · asymmetric, inset
+**Why it is there** Inset beside “Most people who live after a major transition see only the stable layer… A generation living through machine intelligence can still see the joins.” These are a join, still on a shelf.
+**Watch for** Not cropped, not retouched, not upscaled. Natively 4:3. The caption makes no claim about whether a player still exists in the house, because the photograph does not show one.
+
+```text
+A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
+
+Four VHS cassettes standing on a dark shelf — Dazed and Confused, Taxi Driver, Life in the Fast Lane, Welcome to Hell — one with a hand-written spine label.
+
+Horizontal frame (4:3).
+
+Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
+```
+
+### privilege-09-crosswalk
+
+**Save as** `public/images/personal/privilege-09-crosswalk.jpg` · 4:3 · target 4000 × 3000 px (native, uncropped — 1,104 dpi at 92 mm; the derivative caps it)
+**Where it goes** Reading · two column, inset
+**Why it is there** Inset beside “Traditional software follows rules written in advance. A learned model is shaped by examples.” The crosswalk is the first half of that sentence, made physical, so the second half has something to be different from.
+**Watch for** Not cropped, not retouched — natively 4:3, which is the inset plate's aspect. No .aae sidecar, so this is the photograph as taken. Verified by eye against the document's description, “an empty crosswalk, nobody on it”, before placing: eight frames in this library have been found to be different photographs under a wanted filename.
+
+```text
+A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
+
+An empty painted crosswalk filling the foreground, cars stopped at the kerb to the left, the Washington Monument small and centred beyond it, a few people on the far pavement.
+
+Horizontal frame (4:3).
 
 Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
 ```

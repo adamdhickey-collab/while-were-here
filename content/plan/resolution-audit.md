@@ -28,7 +28,7 @@ Reproduce it by loading `build/book.html` and measuring `img` boxes against a
    106   intelligence-01-pencil-mark    1254 × 1254    generated, capped
    106   field-note-02-dog-tag          1254 × 1254    generated, capped
    106   privilege-01-kitchen-laptop    1254 × 1254    ON THE SHOT LIST
-   108   before-time-01-road-atlas      1272 × 1272    archive, capped
+   108   before-time-01-father-portrait  1272 × 1272   archive, capped
 
 Nothing here is a mistake. Two causes, and only one of them can be fixed:
 
@@ -36,7 +36,8 @@ Nothing here is a mistake. Two causes, and only one of them can be fixed:
   1:1, 1254 at best. Regenerating does not help; the ceiling is the ceiling.
 - **Archive frames** are capped by Facebook's 1280 px downscale, which a second
   High-quality export proved is permanent (see
-  [personal-archive](personal-archive.md)). `before-time-01` is Adam's father,
+  [personal-archive](personal-archive.md)). `before-time-01` (renamed `-father-portrait` on 21 Aug, having been
+  `-road-atlas` — the id outlived the picture it named) is Adam's father,
   photographed from a print — the softness is period-correct and the frame was
   chosen on the photograph, not the arithmetic.
 

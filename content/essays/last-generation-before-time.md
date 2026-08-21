@@ -11,7 +11,7 @@ readingTime: 6
 spreads:
   - type: opener
     variant: facing
-    image: before-time-01-road-atlas
+    image: before-time-01-father-portrait
     blocks: [open]
   - type: reading
     variant: two

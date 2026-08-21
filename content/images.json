@@ -1051,7 +1051,9 @@
       "status": "placed",
       "selection": "B011 · IMG_5212, Oct 4 2025. See content/plan/photo-selection-02.md",
       "revision": "Square centre-left crop of the 5712 × 3213 original, offset 349 px. Not retouched, not upscaled. 272 dpi at 300 mm.",
-      "composite": false
+      "composite": false,
+      "origin": "own photograph",
+      "capturedSource": "Shot for this book on Adam's phone in October 2025, not out of the Facebook archive — the filename and date are in `selection`. No \"Taken\" field applies; these never went through Facebook."
     },
     {
       "id": "field-note-02-dog-tag",
@@ -1105,7 +1107,10 @@
       "status": "placed",
       "selection": "B032 · IMG_5248, Oct 9 2025. See content/plan/photo-selection-02.md",
       "revision": "Uncropped, unretouched. 483 dpi across a 300 mm page, and the band is 169 mm tall. It was square-cropped first and that was wrong: at 1.8x the two figures stopped being incidental and became a couple facing the camera, which is the one thing the candid rule forbids. The wide frame is the picture.",
-      "composite": false
+      "composite": false,
+      "origin": "own photograph",
+      "capturedSource": "Shot for this book on Adam's phone in October 2025, not out of the Facebook archive — the filename and date are in `selection`. No \"Taken\" field applies; these never went through Facebook.",
+      "consent": "Fabiola kneeling with the dog, roughly 25 mm tall on a 300 mm page and not identifiable at that size — which is the reason the revision note gives for refusing the square crop. Do not re-crop this frame tighter without revisiting that."
     },
     {
       "id": "field-note-04-firepit",
@@ -1123,7 +1128,10 @@
       "status": "placed",
       "selection": "B038 · IMG_5258, Oct 9 2025. See content/plan/photo-selection-04.md",
       "revision": "SWAPPED 19 Aug 2026. The frame previously placed here (IMG_5259) had her looking straight into the lens, lit from below, filling a full-bleed square — the exact thing the candid rule forbids, and photo-selection-02 justified that frame by describing her as seated in profile watching the fire, which she was not. This is the frame that description actually fits. Uncropped, unretouched, 341 dpi across a 300 mm band.",
-      "composite": false
+      "composite": false,
+      "origin": "own photograph",
+      "capturedSource": "Shot for this book on Adam's phone in October 2025, not out of the Facebook archive — the filename and date are in `selection`. No \"Taken\" field applies; these never went through Facebook.",
+      "consent": "Fabiola, in profile and lit by the fire, clearly identifiable, running as a wide band across the spread. Fine for the family copies. Ask before any sale."
     },
     {
       "id": "part-3-divider-machine-dark",

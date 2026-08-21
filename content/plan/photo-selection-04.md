@@ -460,3 +460,47 @@ Identify frames from the edited export, then decide per frame which file to
 place. Where the crop is the composition — the 16:9 of a nave receding, a bridge
 at night — the edited file is the photograph and the original is just its raw
 material.
+
+### What the edited export turns out to be — 21 Aug 2026, mid-run
+
+The second export is running. Measured at 3,871 stills of roughly 27,000 — about
+one seventh — so everything here is about the **format**, which will not change,
+not about coverage, which will.
+
+**It renders PNG, not JPEG.** 51 GB for 3,871 files, averaging 13 MB, with the
+largest single frame at 39 MB. Three consequences:
+
+* *Quality.* PNG is lossless. An edited rendition is a re-encode by definition —
+  the crop and the grade have to be baked into new pixels — and this one is
+  re-encoded without generation loss. For a book at 300 dpi that makes the
+  edited file a legitimate print master rather than a compromise accepted for
+  the sake of the framing. The table above says the original is for "maximum
+  quality"; on this evidence, that column now only means *more pixels*, not
+  *better pixels*.
+* *Disk.* Extrapolating the average, the finished folder lands near 350 GB.
+  Free space at the time of writing was 638 GB with the unmodified export still
+  growing. It fits, but not with room to be careless — do not start a third
+  export before deleting one of these.
+* *Tooling.* `scripts/selection.py` already accepts `.png`, so the reconciler
+  reads both folders without a change.
+
+**Capture dates survive, and orientation is baked in.** Sampled across the first
+1,200 files: EXIF `DateTime` present on **1,200 of 1,200**, and orientation tag
+**1 on every one** — the rotation is applied to the pixels, not deferred to a
+tag. That is the better of the two behaviours for anything that crops these
+files, and it is the opposite of the unmodified originals, which do defer it.
+
+The date is the more valuable of the two. Capture time for the Facebook archive
+had to be recovered from the album HTML's `Taken` column, which existed for
+1,146 of 1,459 images and for none of the rest. Here it is in the file. Any
+frame placed from this export can carry a `captured` field sourced from the
+photograph itself, and `capturedSource` should say so rather than citing a
+sidecar.
+
+**No 16:9 frames yet, and that is expected.** Of 3,871 files, 13 are 16:9 or
+9:16 and seven of those are 1080 × 1920 — screen captures, not photographs. The
+export is working through the oldest material: the commonest shapes so far are
+4000 × 3000 (a Lumix) and 3264 × 2448 (an iPhone 4S/5), and the oldest file
+carries a 2009 date from a Sony Ericsson C905a. Every frame this document is
+waiting on was shot on later hardware. The hypothesis in the section above is
+not yet tested — it will be testable when the export reaches 2015 and after.

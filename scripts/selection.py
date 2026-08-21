@@ -43,9 +43,22 @@ Two details that will bite anyone who skips them:
 
   · These originals carry EXIF orientation, which the Facebook archive did not
     because Facebook bakes rotation in and strips the tag. Dimensions here are
-    reported AFTER `exif_transpose`, so a portrait frame reports as portrait.
+    reported as DISPLAYED — `shape()` reads orientation tag 274 and swaps the
+    axes itself rather than decoding the file, which is the same answer
+    `exif_transpose` gives and thousands of times cheaper over a whole library —
+    so a portrait frame reports as portrait.
     Anything that crops these files must transpose first or it will place the
     picture on its side.
+
+    There are now three behaviours across the sources this reads, so transpose
+    unconditionally rather than by folder: unmodified originals defer rotation
+    to the tag; the Facebook archive bakes it in and strips the tag; the edited
+    export bakes it in and writes the tag as 1. `exif_transpose` is correct for
+    all three. Deciding by which folder a file came from is not.
+
+  · The edited export is PNG and keeps its EXIF, so capture dates come out of
+    the file rather than out of an album's HTML. A frame placed from that folder
+    should record `capturedSource` as the photograph's own EXIF.
 """
 import argparse
 import re

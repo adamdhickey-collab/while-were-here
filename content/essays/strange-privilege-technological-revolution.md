@@ -222,7 +222,7 @@ spreads:
       image: specimen-04-hyacinth-macaw
       Specimen: Anodorhynchus hyacinthinus
       Common: Hyacinth macaw
-      Recorded: 2014, captive
+      Recorded: July 20, 2014, 1:29 p.m., captive
       notes: >-
         The beak opens palm nuts that a person needs a hammer for. It arrived
         with the bird, took no training, and cost nothing to carry. Every

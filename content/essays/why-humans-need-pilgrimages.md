@@ -93,7 +93,7 @@ spreads:
       image: specimen-05-bactrian-swim
       Specimen: Camelus bactrianus
       Common: Bactrian camel
-      Recorded: 2014, captive
+      Recorded: July 20, 2014, 2:30 p.m., captive
       notes: >-
         Everything about the body is an instruction for a dry place: the
         humps, the nostrils that close, the long second eyelid. None of it

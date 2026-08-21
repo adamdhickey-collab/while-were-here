@@ -51,7 +51,7 @@ spreads:
       image: specimen-02-queen-butterfly
       Specimen: Danaus gilippus
       Common: Queen
-      Recorded: 2014, captive
+      Recorded: July 20, 2014, 4:46 p.m., captive
       notes: >-
         Milkweed as a larva, cardenolides carried into adulthood, and the same
         warning pattern the monarch wears. Neither species is copying the other.

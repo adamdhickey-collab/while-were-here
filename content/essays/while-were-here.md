@@ -58,7 +58,7 @@ spreads:
       image: specimen-06-prairie-dog
       Specimen: Cynomys ludovicianus
       Common: Black-tailed prairie dog
-      Recorded: 2014, captive
+      Recorded: July 20, 2014, 2:44 p.m., captive
       notes: >-
         The colony posts sentries, keeps its burrows, and calls with
         different sounds for different threats. None of that stops for this

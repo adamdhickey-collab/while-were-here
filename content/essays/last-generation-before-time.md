@@ -58,7 +58,7 @@ spreads:
       image: specimen-03-eagle-owl
       Specimen: Bubo bubo
       Common: Eurasian eagle-owl
-      Recorded: 2014, captive
+      Recorded: July 20, 2014, 1:31 p.m., captive
       notes: >-
         The tufts are not ears. The ears are under the feathers, set at
         different heights on each side, so a sound arrives at one a fraction

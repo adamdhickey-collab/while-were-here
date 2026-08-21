@@ -48,7 +48,7 @@ spreads:
       image: specimen-01-komodo-tongue
       Specimen: Varanus komodoensis
       Common: Komodo dragon
-      Recorded: 2014, captive
+      Recorded: July 20, 2014, 4:12 p.m., captive
       notes: >-
         The tongue is forked so that it can sample two places at once. Both tips
         press to paired organs in the roof of the mouth, and the difference

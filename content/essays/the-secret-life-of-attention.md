@@ -88,7 +88,7 @@ spreads:
       image: specimen-07-amur-tiger
       Specimen: Panthera tigris altaica
       Common: Amur tiger
-      Recorded: 2014, captive
+      Recorded: July 20, 2014, 2:54 p.m., captive
       notes: >-
         The whiskers are forward because the head is down. They are not
         decoration; each one sits in a follicle wired to its own patch of

@@ -1049,7 +1049,7 @@
       "essay": "—",
       "section": "Field note II→III",
       "spread": "Field note (between Parts II and III)",
-      "status": "not generated",
+      "status": "generated",
       "composite": false,
       "origin": "generated",
       "target": "1024 × 1024 px (ChatGPT's largest for 1:1)",
@@ -1067,10 +1067,10 @@
       "essay": "—",
       "section": "Field note II→III",
       "spread": "Field note (between Parts II and III)",
-      "status": "not generated",
+      "status": "generated",
       "composite": false,
       "origin": "generated",
-      "target": "1536 × 1024 px (ChatGPT's largest for 3:2)",
+      "target": "1020 × 680 px (cropped to 3:2 from a square generation — 370 dpi at 70 mm)",
       "revision": "Generated 21 Aug 2026 in place of a shot. The code must be plausible but unscannable — softened by wear and focus so no real payload exists. No name, no phone number, no legible characters anywhere. Replace with the real photograph whenever it is taken."
     },
     {

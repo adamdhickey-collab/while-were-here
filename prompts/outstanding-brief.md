@@ -4,7 +4,7 @@
 
 **Book:** *While We're Here* — Adam Hickey. A 300 × 300 mm hardcover of short
 essays on attention, ordinary life, hidden systems and being alive. Twenty-three
-images are already made and placed. These 10 are what remain, and they
+images are already made and placed. These 8 are what remain, and they
 are the two registers the set is currently missing entirely.
 
 ## What the book already looks like
@@ -60,42 +60,6 @@ A believable documentary photograph of the real world — quiet, contemplative, 
 A worn track cutting a corner across grass, beside the paved path it ignores.
 
 Square frame (1:1).
-
-Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
-```
-
-## Recurring assets
-
-### field-note-02-dog-tag
-
-**Save as** `public/images/photography/field-note-02-dog-tag.png` · 1:1 · target 1024 × 1024 px (ChatGPT's largest for 1:1)
-**Where it goes** Field note (between Parts II and III)
-**Why it is there** Field note between Parts II and III: an ordinary thing that has quietly become networked, and the thing is the dog.
-**Watch for** Generated 21 Aug 2026 in place of a shot. Framed so the animal is unidentifiable — the real dog appears in real photographs elsewhere in the book, and a generated stand-in must not claim to be her. Face, eyes and markings stay out of frame. Replace with the real photograph whenever it is taken; the slot and framing rule are unchanged.
-
-```text
-A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
-
-A round metal pet tag lying face up against the dark fur of a sleeping black dog, photographed very close in soft indoor window light. The tag is in sharp focus and carries only a small square code — no name, no legible characters. The dog is entirely out of focus: fur as a soft dark landscape, the slack collar crossing the frame, no face, no eyes, no identifying features visible.
-
-Square frame (1:1).
-
-Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
-```
-
-### field-note-02-tag-code
-
-**Save as** `public/images/photography/field-note-02-tag-code.png` · 3:2 · target 1536 × 1024 px (ChatGPT's largest for 3:2)
-**Where it goes** Field note (between Parts II and III)
-**Why it is there** The inset. Replaces a lawnmower serial plate that was all brands and barcodes; this one is worn smooth by an animal drinking.
-**Watch for** Generated 21 Aug 2026 in place of a shot. The code must be plausible but unscannable — softened by wear and focus so no real payload exists. No name, no phone number, no legible characters anywhere. Replace with the real photograph whenever it is taken.
-
-```text
-A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
-
-The tag alone, filling the frame: a worn metal disc with a square scannable code, scratches across it from years of clicking against the bowl. Framed so no name and no code content is legible.
-
-Horizontal frame (3:2).
 
 Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
 ```

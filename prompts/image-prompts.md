@@ -218,7 +218,7 @@ Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glo
 
 ### field-note-02-tag-code
 
-**Save as** `public/images/photography/field-note-02-tag-code.png` · 3:2 · target 1536 × 1024 px (ChatGPT's largest for 3:2)
+**Save as** `public/images/photography/field-note-02-tag-code.png` · 3:2 · target 1020 × 680 px (cropped to 3:2 from a square generation — 370 dpi at 70 mm)
 **Where it goes** Field note (between Parts II and III)
 **Why it is there** The inset. Replaces a lawnmower serial plate that was all brands and barcodes; this one is worn smooth by an animal drinking.
 **Watch for** Generated 21 Aug 2026 in place of a shot. The code must be plausible but unscannable — softened by wear and focus so no real payload exists. No name, no phone number, no legible characters anywhere. Replace with the real photograph whenever it is taken.

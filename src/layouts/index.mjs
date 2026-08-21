@@ -215,8 +215,14 @@ export const imprint = (bookData, images = []) => {
 };
 
 /** One credit line, for build.mjs to assemble once the book exists. */
+/* The credit sentences end without punctuation and the licence followed on a
+   bare space, so the line read "…composited for this book Pexels License" as
+   one run-on sentence. Separated with the middle dot the book already uses in
+   every spec line, and non-breaking so a licence never starts a line alone. */
 export const creditLine = (i) =>
-  `<li><span class="imprint__what">${esc(creditLabel(i.id))}</span> — ${esc(i.credit || '')} <span class="imprint__lic">${esc(i.license || '')}</span></li>`;
+  `<li><span class="imprint__what">${esc(creditLabel(i.id))}</span> — ${esc(i.credit || '')}`
+  + (i.license ? `&nbsp;·&nbsp;<span class="imprint__lic">${esc(i.license)}</span>` : '')
+  + '</li>';
 
 export const titleSpread = (bookData, images = []) => ({
   pair: true,

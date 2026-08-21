@@ -35,7 +35,7 @@ If you cloned before installing LFS, `git lfs pull` fixes it in place.
 | `npm run preview` | Open the real Vivliostyle paginator on `build/book.html`. |
 | `npm run pdf` | Full-resolution PDF → `dist/while-were-here.pdf`. Around 200 MB with real imagery — correct for a printer, unwieldy on a laptop. |
 | `npm run pdf:proof` | Review PDF at screen resolution → `dist/while-were-here-proof.pdf`, roughly 30 MB. |
-| `npm run pdf:press` | Press PDF → `dist/while-were-here-press.pdf` (bleed + crop marks). |
+| `npm run pdf:press` | Press PDF → `dist/while-were-here-press.pdf` (bleed + crop marks). **Check the build line it prints says `PRESS: bleed + crop marks`** — this script once ran the trimmed proof build behind a press-ready preflight, and the resulting file had no bleed at all. |
 | `npm run prompts` | Regenerate the full prompt library from the manifest. |
 | `npm run brief` | Write a self-contained brief for the assets not yet made. |
 | `npm run place` | Put a generated image into the book; bare, it lists what is missing. |
@@ -43,6 +43,10 @@ If you cloned before installing LFS, `git lfs pull` fixes it in place.
 | `npm run build:web` | The build the Pages workflow runs: derivatives instead of press masters. |
 | `npm run fonts:setup` | One-time: venv + convert the licensed OTFs for press. |
 | `npm run credits` | Rebuild the attribution page from the manifest. |
+| `npm run facts` | Check `content/facts.json` and rebuild the sources page. `--strict` fails on anything unverified. |
+| `npm run verify` | **The pre-press checks, in one command.** Nine of them, run against the built pages rather than the sources. `--strict` exits non-zero on any failure, which is what CI uses. |
+| `npm run selection` | Reconcile `content/plan/photo-selection-04.md` against the exported photo library — which selected frames exist yet, at what size, and the dpi they would give. |
+| `npm run shots` | Render spreads to PNG at trim size. `-- --all` for every spread. |
 | `npm run clean` | Remove `build/` and `dist/`. |
 
 `npm run pdf` downloads a Chromium build the first time it runs (~130 MB, via

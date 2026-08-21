@@ -84,7 +84,7 @@ spreads:
 
 <!-- block: open -->
 
-A road atlas lies open across the passenger seat. The paper has softened along the state lines. One fold has split through the blue of a lake, and a route drawn years ago continues beneath the tear. The map does not know where the car is. It does not rotate at an intersection or warn about traffic ahead. A traveler has to keep a place in the landscape by comparing road numbers, towns, and the direction of the sun. A missed turn may remain unnoticed for several miles. This was not considered an emergency. It was part of driving. The atlas belonged to a world in which useful information could be complete, portable, and still unable to answer back.
+A man sits for a portrait in a studio with a painted backdrop behind him. The photographer chooses the moment, and nobody in the room sees the result. The film leaves in an envelope and comes back weeks later as prints in three sizes. There is one expression, and it becomes the way this face looks to everyone who is given a copy. It cannot be checked on the drive home. It cannot be deleted, filtered, or quietly replaced by a better frame from the same afternoon, because there is no better frame and no same afternoon to return to. Copies go to relatives who put them in drawers. The portrait belonged to a world in which an image could be complete, portable, and still unable to be revised.
 
 <!-- block: flow-1a -->
 

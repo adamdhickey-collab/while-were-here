@@ -1422,6 +1422,38 @@ Horizontal frame (4:3).
 Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
 ```
 
+### library-02-cordoba-bridge-night
+
+**Save as** `public/images/personal/—` · 3:4 · target 3024 × 4032 px native — 256 dpi at 300 mm full bleed
+**Where it goes** Unplaced, and the file is not in this repository yet — it is still in the export at `~/Desktop/photo library 2/IMG_0964.heic`. Registered 21 Aug 2026 so the frame is discoverable rather than living only in photo-selection-04. Copy it into public/images/personal/ and run `npm run derive` when a slot is decided. The book is at its 130-page ceiling, so placing this means removing something, and that trade is a decision, not a build step.
+**Why it is there** photo-selection-04 calls this the best pilgrimage frame in the library and it is not wrong. Nobody's face is visible, so it carries none of the consent weight the other candid frames do.
+
+```text
+A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
+
+The Roman bridge at Córdoba at night: two figures walking away up the deck, backs turned, a lit bollard-lantern beside them throwing their shadows forward, the floodlit Mezquita small and warm on the far bank, more walkers scattered along the parapet beyond.
+
+Vertical frame (3:4).
+
+Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
+```
+
+### library-03-montserrat-switchbacks
+
+**Save as** `public/images/personal/—` · 3:4 · target 3024 × 4032 px native — 256 dpi at 300 mm full bleed
+**Where it goes** Unplaced, and the file is not in this repository yet — it is still in the export at `~/Desktop/photo library 2/IMG_0775.heic`. Registered 21 Aug 2026 so the frame is discoverable rather than living only in photo-selection-04. Copy it into public/images/personal/ and run `npm run derive` when a slot is decided. The book is at its 130-page ceiling, so placing this means removing something, and that trade is a decision, not a build step.
+**Why it is there** The essay's title is its argument and this is that argument photographed. Note the essay already carries `pilgrimage-07-switchbacks`, a mule train on a canyon wall — two switchback pictures in one essay only earn their place if the difference between them is legible.
+
+```text
+A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
+
+A paved footpath switchbacking down a limestone mountainside at Montserrat, folding back on itself four times through scrub and pine, a small carved shrine set into the rock at one turn, and one walking figure alone on the path, a few millimetres tall.
+
+Vertical frame (3:4).
+
+Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
+```
+
 ## While We’re Here
 
 ### north-02-aspen-up
@@ -1768,6 +1800,22 @@ Horizontal frame (4:3).
 Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
 ```
 
+### library-01-muqarnas-dome
+
+**Save as** `public/images/personal/—` · 3:4 · target 4284 × 5712 px native — 363 dpi at 300 mm full bleed, the highest of any frame photo-selection-04 names
+**Where it goes** Unplaced, and the file is not in this repository yet — it is still in the export at `~/Desktop/photo library 2/IMG_0831.heic`. Registered 21 Aug 2026 so the frame is discoverable rather than living only in photo-selection-04. Copy it into public/images/personal/ and run `npm run derive` when a slot is decided. The book is at its 130-page ceiling, so placing this means removing something, and that trade is a decision, not a build step.
+**Why it is there** photo-selection-04 states the objection and the use in one line: it IS designed, which is the objection; it LOOKS grown, which is the use. Any copy near it has to name that rather than pretend — the essay's argument is order without a plan, and this had a plan.
+
+```text
+A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
+
+The muqarnas dome of the Sala de Dos Hermanas at the Alhambra, seen from below: thousands of small identical stalactite cells stepping inward and resolving into a single eight-pointed star, with pierced window grilles and carved stucco on the drum beneath.
+
+Vertical frame (3:4).
+
+Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
+```
+
 ## The Strange Privilege
 
 ### ground-05-imagine-to-make
@@ -1924,8 +1972,6 @@ Square frame (1:1).
 
 Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
 ```
-
-## The Strange Privilege of Living Through a Technological Revolution
 
 ### privilege-07-grill-screen
 

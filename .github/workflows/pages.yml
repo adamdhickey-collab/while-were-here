@@ -32,6 +32,18 @@ jobs:
           cache: npm
       - run: npm ci
       - run: npm run build:web
+
+      # The pre-press checks, on every push. Each one is here because that
+      # exact fault reached a proof in this project and was found by hand
+      # weeks later — a placeholder printed on the back cover, two credits for
+      # images that had been cut, British spellings arriving with the imprint.
+      # Failing the deploy is the point: a preview that looks right while the
+      # manifest quietly disagrees with it is the thing this catches.
+      #
+      # It runs against the web build, whose masters are LFS pointers here
+      # rather than pixels, which is why verify.mjs treats a derivative as
+      # proof the project holds an image.
+      - run: npm run verify -- --strict
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

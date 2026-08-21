@@ -77,7 +77,11 @@ const inBook = (i) => {
   const slug = i.slug || i.id;
   return (i.filename && i.filename !== '—' && html.includes(i.filename)) || html.includes(`${slug}-plate-1.png`);
 };
+/* "The project holds this image" — master OR derivative. On CI the masters are
+   LFS pointer files rather than pixels (the Pages job deliberately does not
+   fetch LFS), so testing only the master would be testing for a stub. */
 const onDisk = (i) => fs.existsSync(P('public/images', KD[i.kind] || 'photography', i.filename))
+  || fs.existsSync(P('public/images-web', KD[i.kind] || 'photography', i.filename))
   || fs.existsSync(P('public/images/plates', `${i.slug || i.id}-plate-1.png`));
 const anywhere = (i) => {
   const slug = i.slug || i.id;
@@ -105,7 +109,10 @@ check('consent notes present on identifiable people', true,
   `${consent.length} image(s) carry a consent note — all must be cleared before any sale`);
 
 /* 9. Web derivatives, or the hosted preview 404s. */
-const noDeriv = images.filter((i) => onDisk(i) && i.filename !== '—'
+/* This one must test the master specifically: the question is whether every
+   press master has a screen derivative for the hosted preview. */
+const hasMaster = (i) => fs.existsSync(P('public/images', KD[i.kind] || 'photography', i.filename));
+const noDeriv = images.filter((i) => hasMaster(i) && i.filename !== '—'
   && !fs.existsSync(P('public/images-web', KD[i.kind] || 'photography', i.filename)));
 check('every master has a web derivative', noDeriv.length === 0, noDeriv.map((i) => i.id).join(', '));
 

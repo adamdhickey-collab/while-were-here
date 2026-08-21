@@ -1721,11 +1721,12 @@
       "kind": "photography",
       "role": "micrograph",
       "aspect": "1:1",
-      "target": "1024 × 1024 px (ChatGPT's largest for 1:1)",
-      "status": "not generated",
+      "target": "2000 × 2000 px (drawn — regenerate at any size with scripts/micrograph.py)",
+      "status": "generated",
       "composite": false,
-      "origin": "generated",
-      "revision": "Stages III and IV only — this is the peak material and spending it early costs the book its climb. Dark ground, luminous subject, type reversed out. The layout sets the scale bar; the image must not carry one baked in."
+      "origin": "original",
+      "revision": "Stages III and IV only — this is the peak material and spending it early costs the book its climb. Dark ground, luminous subject, type reversed out. The layout sets the scale bar; the image must not carry one baked in. Drawn in code by scripts/micrograph.py rather than generated — an illustration in the register of an SEM plate, inside the recorded decision that plates may invent their records. Preset and seed above reproduce it exactly.",
+      "recipe": "./.venv/bin/python scripts/micrograph.py graphite --size 2000 --seed 11"
     },
     {
       "id": "micro-02-die-surface",
@@ -1739,11 +1740,12 @@
       "kind": "photography",
       "role": "micrograph",
       "aspect": "1:1",
-      "target": "1024 × 1024 px (ChatGPT's largest for 1:1)",
-      "status": "not generated",
+      "target": "2000 × 2000 px (drawn — regenerate at any size with scripts/micrograph.py)",
+      "status": "generated",
       "composite": false,
-      "origin": "generated",
-      "revision": "Stages III and IV only — this is the peak material and spending it early costs the book its climb. Dark ground, luminous subject, type reversed out. The layout sets the scale bar; the image must not carry one baked in."
+      "origin": "original",
+      "revision": "Stages III and IV only — this is the peak material and spending it early costs the book its climb. Dark ground, luminous subject, type reversed out. The layout sets the scale bar; the image must not carry one baked in. Drawn in code by scripts/micrograph.py rather than generated — an illustration in the register of an SEM plate, inside the recorded decision that plates may invent their records. Preset and seed above reproduce it exactly.",
+      "recipe": "./.venv/bin/python scripts/micrograph.py die --size 2000 --seed 11"
     },
     {
       "id": "micro-03-tape-oxide",
@@ -1757,11 +1759,12 @@
       "kind": "photography",
       "role": "micrograph",
       "aspect": "1:1",
-      "target": "1024 × 1024 px (ChatGPT's largest for 1:1)",
-      "status": "not generated",
+      "target": "2000 × 2000 px (drawn — regenerate at any size with scripts/micrograph.py)",
+      "status": "generated",
       "composite": false,
-      "origin": "generated",
-      "revision": "Stages III and IV only — this is the peak material and spending it early costs the book its climb. Dark ground, luminous subject, type reversed out. The layout sets the scale bar; the image must not carry one baked in."
+      "origin": "original",
+      "revision": "Stages III and IV only — this is the peak material and spending it early costs the book its climb. Dark ground, luminous subject, type reversed out. The layout sets the scale bar; the image must not carry one baked in. Drawn in code by scripts/micrograph.py rather than generated — an illustration in the register of an SEM plate, inside the recorded decision that plates may invent their records. Preset and seed above reproduce it exactly.",
+      "recipe": "./.venv/bin/python scripts/micrograph.py tape --size 2000 --seed 11"
     },
     {
       "id": "intelligence-06-closing-hands",

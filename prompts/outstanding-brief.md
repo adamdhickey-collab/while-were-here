@@ -4,7 +4,7 @@
 
 **Book:** *While We're Here* — Adam Hickey. A 300 × 300 mm hardcover of short
 essays on attention, ordinary life, hidden systems and being alive. Twenty-three
-images are already made and placed. These 8 are what remain, and they
+images are already made and placed. These 5 are what remain, and they
 are the two registers the set is currently missing entirely.
 
 ## What the book already looks like
@@ -83,23 +83,6 @@ Square frame (1:1).
 Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
 ```
 
-### micro-02-die-surface
-
-**Save as** `public/images/photography/micro-02-die-surface.png` · 1:1 · target 1024 × 1024 px (ChatGPT's largest for 1:1)
-**Where it goes** Unplaced. Held for a dark-stage slot.
-**Why it is there** Essay 05 says a revolution arrives as office work and nothing in the room looks historic. This is what is in the room, one hundred thousand times closer.
-**Watch for** Stages III and IV only — this is the peak material and spending it early costs the book its climb. Dark ground, luminous subject, type reversed out. The layout sets the scale bar; the image must not carry one baked in.
-
-```text
-A scientific micrograph — scanning electron, dark-field or confocal — of a real specimen at high magnification, the kind reproduced in a journal rather than a stock library. Dark, near-black ground with the subject luminous against it, lit as though by the instrument itself. Extremely shallow depth of field with the focal plane doing real work: parts of the structure fall away into the dark. Fine surface detail visible at the limit of resolution — pitting, fibre, grain, crystal edge. Restrained false colour in one or two hues at most, in the manner of a coloured SEM plate, never rainbow-mapped. It should look measured, not styled.
-
-The surface of a silicon die at high magnification: rectilinear metal traces in stacked layers running to the edge of focus, dust of the fabrication process caught in the channels.
-
-Square frame (1:1).
-
-Avoid: bright or white grounds; rainbow or heat-map false colour; neon or fluorescent glow; a cartoon or 3D-rendered look; symmetrical or tiling arrangements; visible text, numerals, watermarks or a burned-in scale bar (the layout sets its own); anything recognisable at human scale; a subject floating in empty space with no surface under it; stock-photo science imagery.
-```
-
 ## The Last People Who Remember Waiting
 
 ### before-time-03-contact-sheet
@@ -117,23 +100,6 @@ A contact sheet of six film frames, at least two of them failed: a thumb, a clos
 Square frame (1:1).
 
 Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
-```
-
-### micro-03-tape-oxide
-
-**Save as** `public/images/photography/micro-03-tape-oxide.png` · 1:1 · target 1024 × 1024 px (ChatGPT's largest for 1:1)
-**Where it goes** Unplaced. Held for a dark-stage slot.
-**Why it is there** Essay 06 is about answering machines, road atlases and waiting. Every voice anyone ever left on a machine was a pattern in particles like these. It is the essay's most literal artefact and its least literal picture.
-**Watch for** Stages III and IV only — this is the peak material and spending it early costs the book its climb. Dark ground, luminous subject, type reversed out. The layout sets the scale bar; the image must not carry one baked in.
-
-```text
-A scientific micrograph — scanning electron, dark-field or confocal — of a real specimen at high magnification, the kind reproduced in a journal rather than a stock library. Dark, near-black ground with the subject luminous against it, lit as though by the instrument itself. Extremely shallow depth of field with the focal plane doing real work: parts of the structure fall away into the dark. Fine surface detail visible at the limit of resolution — pitting, fibre, grain, crystal edge. Restrained false colour in one or two hues at most, in the manner of a coloured SEM plate, never rainbow-mapped. It should look measured, not styled.
-
-Magnetic tape at high magnification: needle-shaped oxide particles lying in a binder, most combed into one direction by the coating process, a few crossing it.
-
-Square frame (1:1).
-
-Avoid: bright or white grounds; rainbow or heat-map false colour; neon or fluorescent glow; a cartoon or 3D-rendered look; symmetrical or tiling arrangements; visible text, numerals, watermarks or a burned-in scale bar (the layout sets its own); anything recognisable at human scale; a subject floating in empty space with no surface under it; stock-photo science imagery.
 ```
 
 ## The Body Cannot Skip the Hill
@@ -172,23 +138,4 @@ Two people in separate rooms connected by an open doorway, neither looking at th
 Square frame (1:1).
 
 Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
-```
-
-## The Intelligence Outside Your Head
-
-### micro-01-graphite-ridge
-
-**Save as** `public/images/photography/micro-01-graphite-ridge.png` · 1:1 · target 1024 × 1024 px (ChatGPT's largest for 1:1)
-**Where it goes** Unplaced. Held for a dark-stage slot.
-**Why it is there** Essay 04 argues thinking happens partly outside the skull, in marks and tools. The essay already carries a photograph of a pencil mark; this is the same mark at the magnification where it stops being a line and becomes a deposit.
-**Watch for** Stages III and IV only — this is the peak material and spending it early costs the book its climb. Dark ground, luminous subject, type reversed out. The layout sets the scale bar; the image must not carry one baked in.
-
-```text
-A scientific micrograph — scanning electron, dark-field or confocal — of a real specimen at high magnification, the kind reproduced in a journal rather than a stock library. Dark, near-black ground with the subject luminous against it, lit as though by the instrument itself. Extremely shallow depth of field with the focal plane doing real work: parts of the structure fall away into the dark. Fine surface detail visible at the limit of resolution — pitting, fibre, grain, crystal edge. Restrained false colour in one or two hues at most, in the manner of a coloured SEM plate, never rainbow-mapped. It should look measured, not styled.
-
-Graphite from a pencil line at high magnification: flat crystalline flakes shorn and stacked across the tooth of the paper, fibres of the sheet visible under and between them.
-
-Square frame (1:1).
-
-Avoid: bright or white grounds; rainbow or heat-map false colour; neon or fluorescent glow; a cartoon or 3D-rendered look; symmetrical or tiling arrangements; visible text, numerals, watermarks or a burned-in scale bar (the layout sets its own); anything recognisable at human scale; a subject floating in empty space with no surface under it; stock-photo science imagery.
 ```

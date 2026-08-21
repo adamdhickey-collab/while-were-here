@@ -957,10 +957,10 @@ Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glo
 
 ### micro-01-graphite-ridge
 
-**Save as** `public/images/photography/micro-01-graphite-ridge.png` · 1:1 · target 1024 × 1024 px (ChatGPT's largest for 1:1)
+**Save as** `public/images/photography/micro-01-graphite-ridge.png` · 1:1 · target 2000 × 2000 px (drawn — regenerate at any size with scripts/micrograph.py)
 **Where it goes** Unplaced. Held for a dark-stage slot.
 **Why it is there** Essay 04 argues thinking happens partly outside the skull, in marks and tools. The essay already carries a photograph of a pencil mark; this is the same mark at the magnification where it stops being a line and becomes a deposit.
-**Watch for** Stages III and IV only — this is the peak material and spending it early costs the book its climb. Dark ground, luminous subject, type reversed out. The layout sets the scale bar; the image must not carry one baked in.
+**Watch for** Stages III and IV only — this is the peak material and spending it early costs the book its climb. Dark ground, luminous subject, type reversed out. The layout sets the scale bar; the image must not carry one baked in. Drawn in code by scripts/micrograph.py rather than generated — an illustration in the register of an SEM plate, inside the recorded decision that plates may invent their records. Preset and seed above reproduce it exactly.
 
 ```text
 A scientific micrograph — scanning electron, dark-field or confocal — of a real specimen at high magnification, the kind reproduced in a journal rather than a stock library. Dark, near-black ground with the subject luminous against it, lit as though by the instrument itself. Extremely shallow depth of field with the focal plane doing real work: parts of the structure fall away into the dark. Fine surface detail visible at the limit of resolution — pitting, fibre, grain, crystal edge. Restrained false colour in one or two hues at most, in the manner of a coloured SEM plate, never rainbow-mapped. It should look measured, not styled.
@@ -1148,10 +1148,10 @@ Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glo
 
 ### micro-03-tape-oxide
 
-**Save as** `public/images/photography/micro-03-tape-oxide.png` · 1:1 · target 1024 × 1024 px (ChatGPT's largest for 1:1)
+**Save as** `public/images/photography/micro-03-tape-oxide.png` · 1:1 · target 2000 × 2000 px (drawn — regenerate at any size with scripts/micrograph.py)
 **Where it goes** Unplaced. Held for a dark-stage slot.
 **Why it is there** Essay 06 is about answering machines, road atlases and waiting. Every voice anyone ever left on a machine was a pattern in particles like these. It is the essay's most literal artefact and its least literal picture.
-**Watch for** Stages III and IV only — this is the peak material and spending it early costs the book its climb. Dark ground, luminous subject, type reversed out. The layout sets the scale bar; the image must not carry one baked in.
+**Watch for** Stages III and IV only — this is the peak material and spending it early costs the book its climb. Dark ground, luminous subject, type reversed out. The layout sets the scale bar; the image must not carry one baked in. Drawn in code by scripts/micrograph.py rather than generated — an illustration in the register of an SEM plate, inside the recorded decision that plates may invent their records. Preset and seed above reproduce it exactly.
 
 ```text
 A scientific micrograph — scanning electron, dark-field or confocal — of a real specimen at high magnification, the kind reproduced in a journal rather than a stock library. Dark, near-black ground with the subject luminous against it, lit as though by the instrument itself. Extremely shallow depth of field with the focal plane doing real work: parts of the structure fall away into the dark. Fine surface detail visible at the limit of resolution — pitting, fibre, grain, crystal edge. Restrained false colour in one or two hues at most, in the manner of a coloured SEM plate, never rainbow-mapped. It should look measured, not styled.
@@ -1706,10 +1706,10 @@ Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glo
 
 ### micro-02-die-surface
 
-**Save as** `public/images/photography/micro-02-die-surface.png` · 1:1 · target 1024 × 1024 px (ChatGPT's largest for 1:1)
+**Save as** `public/images/photography/micro-02-die-surface.png` · 1:1 · target 2000 × 2000 px (drawn — regenerate at any size with scripts/micrograph.py)
 **Where it goes** Unplaced. Held for a dark-stage slot.
 **Why it is there** Essay 05 says a revolution arrives as office work and nothing in the room looks historic. This is what is in the room, one hundred thousand times closer.
-**Watch for** Stages III and IV only — this is the peak material and spending it early costs the book its climb. Dark ground, luminous subject, type reversed out. The layout sets the scale bar; the image must not carry one baked in.
+**Watch for** Stages III and IV only — this is the peak material and spending it early costs the book its climb. Dark ground, luminous subject, type reversed out. The layout sets the scale bar; the image must not carry one baked in. Drawn in code by scripts/micrograph.py rather than generated — an illustration in the register of an SEM plate, inside the recorded decision that plates may invent their records. Preset and seed above reproduce it exactly.
 
 ```text
 A scientific micrograph — scanning electron, dark-field or confocal — of a real specimen at high magnification, the kind reproduced in a journal rather than a stock library. Dark, near-black ground with the subject luminous against it, lit as though by the instrument itself. Extremely shallow depth of field with the focal plane doing real work: parts of the structure fall away into the dark. Fine surface detail visible at the limit of resolution — pitting, fibre, grain, crystal edge. Restrained false colour in one or two hues at most, in the manner of a coloured SEM plate, never rainbow-mapped. It should look measured, not styled.

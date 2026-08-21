@@ -318,3 +318,40 @@ separate corrections and is better than what either of them replaced.
 **The lesson, recorded because it will recur:** a selection note written from
 memory is not a caption. Check the description against the frame before the
 frame goes on a page.
+
+---
+
+## The library is not on this machine — 21 Aug 2026
+
+**This document selected 41 frames. Three of them are in the book.** The other
+thirty-eight are not, and the reason is not editorial: `~/Desktop/Photos from
+iphoto` does not exist on the machine the book is now being made on. It was on
+the old laptop.
+
+The three that made it — `IMG_5212` (field note 1), `IMG_5248` (field note 3),
+`IMG_5258` (field note 4) — were placed before the switch.
+
+**Why this matters more than any other outstanding item.** Everything selected
+here runs 3024–5712 px. The Facebook archive that the 20–21 August passes worked
+from tops out at 1280 px, which is 81 dpi on a 300 mm full bleed. The same slot
+filled from this library would be 270 dpi or better. The book has been accepting
+soft openers because the sharp originals were on another computer.
+
+It also fills gaps the Facebook archive cannot. Read the "What is still missing"
+section above: MATERIAL surfaces, dark-ground imagery for stages III and IV, and
+photography for Parts II and III. The Facebook archive has almost none of that.
+This document already found it and argued for each frame.
+
+**Recovery.** `~/Pictures/Photos Library.photoslibrary` exists on this machine
+and is live, but macOS TCC refuses process access to it — `Operation not
+permitted`, which is expected and not a fault. Reading Apple's internal
+`originals/` tree is not a real option either: the files sit under UUID
+directories and the filename mapping lives in `database/Photos.sqlite`.
+
+The supported path is an export from Photos.app to a plain folder, **File →
+Export → Export Unmodified Original**, with File Naming set to *Use File Name*
+so the `IMG_####` names in this document match. Any tooling in this repo then
+works unchanged.
+
+Until that folder exists, treat the thirty-eight entries above as selected and
+blocked, not as rejected.

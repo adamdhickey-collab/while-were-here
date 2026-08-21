@@ -130,3 +130,44 @@ Adam rather than PNAS. The rule does not change.
 
 Number 2. It is one specimen card, it costs no pages, and it puts the book's own
 sentence about paraphrase next to a machine's paraphrase of its author.
+
+---
+
+## Consent, audited by eye rather than by keyword — 21 Aug 2026
+
+`verify.mjs` reports how many images carry a `consent` note. It cannot report a
+**missing** one, and that is not a small gap: a note is written by a person who
+noticed, so the check measures attention already paid, not risk. It counted seven
+and everything looked settled.
+
+Thirty-five of Adam's own photographs are in the book. Reading every subject line
+and opening the ones that could hold a person found **one image with an
+identifiable stranger and no note — the largest such figure in the book.**
+
+**`field-note-01-lake`** · full bleed, 300 mm, Lake Harriet, October. A child is
+fishing at the railing in the lower left, in profile, face clearly visible. At
+trim the figure stands about 55 mm and the face reads at roughly 8 mm. Not
+Adam's child. It now carries a note. Nobody should quietly crop the child out
+either: the figure is the only human scale in a picture whose whole subject is a
+lake where nothing is happening, and removing it to avoid a conversation is the
+wrong order of operations.
+
+Two more were opened and are **clear**, recorded so they are not re-opened:
+
+| image | placement | what is actually in it |
+| --- | --- | --- |
+| `pilgrimage-01-worn-threshold` | opener, 300 mm full bleed | Nobody. The only human trace is **Adam's own shadow** thrown down the steps, which is the picture's subject. A yellow `X ING TRAFFIC` sign is the only text. |
+| `privilege-07-grill-screen` | inset, 92 mm | A grill app: temperatures, a countdown, *Select Grill Profile*. **No name, no account, no network, no code.** The field-note rule that this book prints no scannable codes and no personal data it does not mean to holds here. |
+
+The rest of the thirty-five are animals, landscapes, objects and the dog.
+`pilgrimage-07-switchbacks` has walkers and riders, but they are a few
+millimetres at a 92 mm inset and the manifest already says so.
+
+**The lesson is about the check, not the picture.** A count of notes cannot find
+the image nobody looked at. The only thing that finds it is opening the file —
+the same conclusion the frame-verification pass reached from the other
+direction, where the dimension guard caught eight wrong files and only looking
+caught two wrong descriptions. Any future pass that adds photographs has to
+include a looking step, and it cannot be delegated to a keyword match over the
+`subject` field: a match over people-words returned 47 of 90 images, almost all
+of them animals, diagrams, and the words "nobody in frame."

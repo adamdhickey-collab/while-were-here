@@ -867,3 +867,29 @@ inferring the crops from their 4:3 parents, the crops are simply here.
 Placement guidance stands as written in the earlier table: where the crop is the
 composition, the render is the photograph; where maximum pixels matter, the
 original has a third more. Both now exist on disk for every verified frame.
+
+### Corrections, as the true renders arrive — 21 Aug, evening
+
+The rendered crops carry the right **asset identity**, which the bare filenames
+never did, and they are overturning wrong-file verdicts as they land:
+
+| frame | today's earlier verdict | the render shows |
+| --- | --- | --- |
+| `IMG_0936` | "a black dog on a lawn" | **The narrow street packed edge to edge, one coherent flow** — Granada at dusk, exactly the document's line. The dog was a 2019 file under the same name |
+| `IMG_1749` | "a white hibiscus" | **The white pigeon on grey asphalt, hard black shadow** — a fantail at Fátima, shot three minutes after the esplanade frame. The hibiscus was a 2017 file under the same name |
+| `IMG_0970` | right subject, but the original holds a legible number plate | **Adam's own crop already excludes the car.** The consent concern was solved in his edit before it was found |
+| `IMG_1051` | located as the FABIOLA portrait original | Render landed at the stated 3213 × 5712 |
+
+`IMG_5210` / `IMG_5214` (the dinghies, October 2025) render later in the queue —
+the screen-door dog and the suburban house are almost certainly the same
+collision story, but that stays unverified until the renders are looked at.
+
+**The standing lesson has flipped polarity.** This morning the document looked
+unreliable about what was in each frame. By evening: the document was written
+against the renders, and against the renders it has been right nearly every
+time. What was unreliable all day was the *filename* as a way of reaching the
+photograph — one number can cover four assets across eleven years, and every
+lookup strategy short of the render's own asset identity got burned by it at
+least once. Consent findings, both directions, survive the corrections: the
+sleeping couple and the airport stranger stay blocked, and the cat frame
+unblocks because the crop removed its plate.

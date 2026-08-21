@@ -181,3 +181,25 @@ built, it will be discovered after the surrounding book is already set.
 
 *Cheapest mitigation if that risk ever needs reducing:* set `stage: 3` on any
 existing essay for one build and look. It costs one line and no content.
+
+> **The wait is over and the risk did not land — 21 Aug 2026.** This entry is
+> kept because it records what was true on 19 August, but it no longer describes
+> the book. Measured in the built HTML today:
+>
+>     stage 1  40 pages     stage 4  32 pages
+>     stage 2  16 pages     stage 5  32 pages
+>     stage 3  12 pages
+>
+> Forty-four pages now carry the dark-ground inversion, across *The Intelligence
+> Outside Your Head*, *The Strange Privilege* and *The Last People Who Remember
+> Waiting*. It works. The essays arrived and took the stages with them, which is
+> exactly what "wait for the essay" was betting on.
+>
+> One consequence worth chasing: [photo-selection-04](photo-selection-04.md) is
+> still written against this entry's premise. It calls `IMG_1112` — the vaulted
+> baths reflected in black water — "the single best find in this pass" and adds
+> "if decisions.md ever wants to stop deferring the Stage III proof, this is the
+> spread to build it on." Stage III is no longer deferred, so that frame is not
+> a proof any more. It is simply a very good dark-ground photograph competing
+> for a slot in a book with no free spreads, and it should be judged on that
+> and not on a job that is already done.

@@ -29,7 +29,8 @@
     "separate": "./.venv/bin/python scripts/separate.py",
     "draft": "node scripts/draft.mjs",
     "grounds": "node scripts/prompts.mjs --grounds",
-    "shots": "npm run build && node scripts/shots.mjs"
+    "shots": "npm run build && node scripts/shots.mjs",
+    "selection": "./.venv/bin/python scripts/selection.py"
   },
   "devDependencies": {
     "@fontsource-variable/fraunces": "^5.3.0",

@@ -1170,14 +1170,20 @@
   grid-template-rows: 1fr auto auto;
 }
 
+/* 7pt, not 6.4, and --ink-soft, not --ink-faint. This block is an attribution
+   before it is a design element: one credited image is CC BY 2.0, which asks
+   for attribution reasonable to the medium, and the medium is ink on FUJIFILM
+   Crystal Archive at arm's length. 6.4pt of monospace at #6A6559 on cream is
+   4.7:1 and near the floor of what a reader will actually read. The page is
+   otherwise empty, so the smaller size was buying nothing. */
 .imprint {
   grid-column: 1 / -1;
   align-self: end;
   max-width: 150mm;
-  color: var(--ink-faint);
+  color: var(--ink-soft);
   font-family: var(--font-note);
-  font-size: 6.4pt;
-  line-height: 1.5;
+  font-size: 7pt;
+  line-height: 1.55;
 }
 
 .imprint__line { margin: 0 0 1.5mm; }

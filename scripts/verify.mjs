@@ -93,7 +93,14 @@ check('no placeholder text', hits.length === 0, hits.length ? `found: ${[...new 
 const BRIT = ['colour', 'colours', 'coloured', 'oxidised', 'organised', 'recognised', 'realised',
   'centre', 'metre', 'metres', 'grey', 'travelled', 'labelled', 'analyse', 'behaviour',
   'favourite', 'neighbour', 'honour', 'catalogue', 'licence', 'defence', 'practise'];
-const brit = BRIT.filter((w) => new RegExp(`\\b${w}\\b`, 'i').test(text));
+/* Quoted titles are exempt, and this is not a loophole — it is the difference
+   between house style and misquoting somebody. The imprint credits Rob
+   Cruickshank's photograph "Slime mould (P. polycephalum)". That is its title.
+   Americanising it would make the attribution wrong, which for a CC BY image is
+   the one thing this page exists to get right. Only text in curly quotes is
+   skipped, so a British spelling in the book's own prose is still caught. */
+const ownWords = text.replace(/\u201C[^\u201D]*\u201D/g, ' ');
+const brit = BRIT.filter((w) => new RegExp(`\\b${w}\\b`, 'i').test(ownWords));
 check('American English', brit.length === 0, brit.length ? `found: ${brit.join(', ')}` : '');
 
 /* 5. Images: a file on disk is either in the book or says it is not. An entry

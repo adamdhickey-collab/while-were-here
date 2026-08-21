@@ -893,3 +893,29 @@ lookup strategy short of the render's own asset identity got burned by it at
 least once. Consent findings, both directions, survive the corrections: the
 sleeping couple and the airport stranger stay blocked, and the cat frame
 unblocks because the crop removed its plate.
+
+### `IMG_5403 2` opened, and a pattern worth naming — 21 Aug, evening
+
+`IMG_5403 (1).JPG`, exact dimensions, 19 Sep 2024: the *calçada* craft again as
+promised — a pomegranate worked in black pebbles, which in Granada is the city
+naming itself in its own pavement. **And Fabiola is standing on it, smiling at
+the camera**, with a bus, a lit shop and several strangers behind her. As
+MATERIAL — "surface, no edge, no scale" — it fails completely; the frame has a
+person, a street and a night sky in it.
+
+That is the third time today the same correction has been made, and it is now a
+pattern, not a coincidence: **`IMG_5008`** (Park Güell — "leaning stone
+colonnade", actually Fabiola dead centre), **`IMG_1051`** ("a figure against a
+huge blank wall", actually Fabiola under the FABIOLA sign), and this. The
+selection pass read these frames as architecture and abstracted the person out
+of every line. Where the person is Fabiola, that reading was not just
+incomplete, it inverted the value: for this book the person IS the frame's
+argument, and the architecture is the setting. Anyone using this document should
+assume any "figure" in a line from the September 2024 trip may be her, and open
+the frame before believing anything else about it.
+
+Not registered as a candidate: the MATERIAL brief it was selected for is the one
+thing it cannot serve, and `library-11` already covers the craft with the
+Portuguese original. If it enters the book it enters as a personal frame, and
+that list is already long enough to need Adam's choosing rather than more
+registering.

@@ -2,7 +2,14 @@
 """Reconcile a photo-selection document against an exported library folder.
 
     ./.venv/bin/python scripts/selection.py [--doc content/plan/photo-selection-04.md]
-                                            [--lib ~/Desktop/photo\\ library]
+                                            [--lib DIR ...]
+
+`--lib` may be given more than once, and defaults to every `~/Desktop/photo
+library*` folder that exists. A Photos export that dies partway has to be
+finished into a SECOND folder rather than re-run into the first: exporting again
+over existing files makes Photos rename the collisions to `IMG_1234 2.jpg`, and
+that duplicate-suffix naming is what made an earlier version of this script
+match a photograph of a cat to a carved magic square.
 
 `photo-selection-04.md` names 41 frames from Adam's iPhoto library, each with a
 role, a stage and an argument for why it belongs. Three of them are in the book.
@@ -63,16 +70,17 @@ def named(doc: Path):
     return [(n, s) for n, s in out if not (n in seen or seen.add(n))]
 
 
-def find(stem: str, lib: Path):
+def find(stem: str, libs):
     """The document's exact spelling, or the same name with the space as an
     underscore. NEVER the stripped base: `IMG_2946 2` and `IMG_2946` are two
     different photographs, and treating them as one put a cat where a carved
     magic square was supposed to go."""
-    for cand in (stem, stem.replace(' ', '_')):
-        for ext in EXTS:
-            p = lib / (cand + ext)
-            if p.exists():
-                return p
+    for lib in libs:
+        for cand in (stem, stem.replace(' ', '_')):
+            for ext in EXTS:
+                p = lib / (cand + ext)
+                if p.exists():
+                    return p
     return None
 
 
@@ -94,18 +102,21 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__,
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument('--doc', default='content/plan/photo-selection-04.md')
-    ap.add_argument('--lib', default=str(Path.home() / 'Desktop/photo library'))
+    ap.add_argument('--lib', action='append', default=None)
     a = ap.parse_args()
 
-    doc, lib = ROOT / a.doc, Path(a.lib).expanduser()
-    if not lib.is_dir():
-        raise SystemExit(f"✗ no such library folder: {lib}")
+    doc = ROOT / a.doc
+    libs = ([Path(x).expanduser() for x in a.lib] if a.lib
+            else sorted(Path.home().glob('Desktop/photo library*')))
+    libs = [d for d in libs if d.is_dir()]
+    if not libs:
+        raise SystemExit("✗ no library folder found (looked for ~/Desktop/photo library*)")
 
     frames = named(doc)
     doc_text = doc.read_text(encoding='utf-8')
     found, missing, suspect = [], [], []
     for stem, section in frames:
-        p = find(stem, lib)
+        p = find(stem, libs)
         if not p:
             missing.append((stem, section))
             continue
@@ -116,7 +127,10 @@ def main():
             continue
         found.append((stem, section, p, w, h))
 
-    print(f"\n  {doc.name} names {len(frames)} frames · {lib} holds {len(found)}\n")
+    where = ' + '.join(str(d) for d in libs)
+    total = sum(1 for d in libs for _ in d.iterdir())
+    print(f"\n  {doc.name} names {len(frames)} frames · {len(found)} found")
+    print(f"  searched {where} ({total} files)\n")
     if found:
         head = ' '.join(f"{k.split()[0]:>11}" for k in SLOTS)
         print(f"  {'frame':<15}{'pixels':>12}   {head}   section")

@@ -1940,12 +1940,12 @@
       "filename": "here-06-empty-room.jpg",
       "kind": "personal",
       "role": "specimen",
-      "essay": "While We’re Here",
-      "section": "Part IV · While We’re Here",
+      "essay": "The Beauty of Systems Nobody Designed",
+      "section": "II — What Are We?",
       "spread": "Reading · two column, inset",
       "subject": "An empty living room: bare oak floorboards, a bay window with the light blown out behind it, a magenta front door, the edge of a brick hearth.",
-      "concept": "A room before it holds anything.",
-      "purpose": "Inset beside the paragraph on the human bracket — “every room remembered”. This is one of those rooms with nothing in it yet.",
+      "concept": "The case the essay is arguing against, photographed.",
+      "purpose": "Inset beside “We are trained to look for the maker. A nest suggests an architect… This habit works well for tables and bridges. It fails in much of the living world.” A built room is the case where the habit is right, which is what makes the rest of the essay land.",
       "aspect": "4:3",
       "target": "772 × 579 px (native crop — 213 dpi at 92 mm)",
       "status": "generated",
@@ -1953,7 +1953,7 @@
       "origin": "own photograph",
       "capturedSource": "No capture time. This is one of the 313 files in the export whose album HTML carries no “Taken” field, so the caption claims no date.",
       "selection": "Facebook archive, New Home — Adam’s own album, captioned by him at the time: “Fabiola, Kylie, and I are loving our new home in Richfield!”",
-      "revision": "Cropped 4:3 from a 1024 × 579 frame, 62% across, to keep the window, the floor and the door. Not retouched, not upscaled."
+      "revision": "Cropped 4:3 from a 1024 × 579 frame, 62% across, to keep the window, the floor and the door. Not retouched, not upscaled. Moved 21 Aug 2026 from essay 08, where the ceremony frame argues the same sentence harder — a small interval containing \"every choice that changed the next day\" is a wedding, and this one is timestamped."
     },
     {
       "id": "pilgrimage-07-switchbacks",
@@ -2017,6 +2017,28 @@
       "selection": "Facebook archive, TDay09 — seven frames from one afternoon. This is the only one holding the whole group.",
       "revision": "Cropped 4:3 from 604 × 404. Not retouched, not upscaled.",
       "consent": "IDENTIFIABLE PEOPLE, INCLUDING TWO CHILDREN. Fine for the family copies. Before any sale or public distribution every adult here must be asked, and the children’s parents on their behalf. This is the heaviest consent case in the book — see content/plan/personal-archive.md."
+    },
+    {
+      "id": "here-07-ceremony",
+      "filename": "here-07-ceremony.jpg",
+      "kind": "personal",
+      "role": "personal",
+      "essay": "While We’re Here",
+      "section": "Part IV · While We’re Here",
+      "spread": "Image + essay · tall, inset",
+      "subject": "A city council chamber: a long empty conference table, stacked office chairs, a printer against the wall, flags behind the dais. Three small figures stand at the far end conducting a wedding.",
+      "concept": "A milestone, at the size the room gave it.",
+      "purpose": "Inset beside “Most of those hours are not milestones. They are preparation, maintenance, repetition, and return.” The milestone is in the picture and it took half an hour.",
+      "aspect": "4:3",
+      "target": "1280 × 960 px (native, uncropped — 353 dpi at 92 mm)",
+      "status": "generated",
+      "composite": false,
+      "origin": "own photograph",
+      "captured": "Jun 19, 2014 4:13:08 pm",
+      "capturedSource": "Facebook data export, album HTML \"Taken\" field. The JPEG EXIF was stripped on upload; Facebook kept the capture timestamp in its own metadata and returns it in the export.",
+      "selection": "Facebook archive, Wedding Ceremony — the whole album is three frames, timestamped 4:10:10, 4:13:08 and 4:40:21 p.m. This is the middle one. The other two are portraits; this is the only one that shows the room, which is the argument.",
+      "revision": "Not cropped, not retouched, not upscaled. Natively 4:3, the inset plate's aspect.",
+      "consent": "Adam and Fabiola, plus an officiant and one other person, all small in frame but identifiable at 92 mm. Fine for the family copies; ask before any sale."
     }
   ]
 }

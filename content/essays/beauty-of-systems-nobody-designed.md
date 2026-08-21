@@ -23,6 +23,10 @@ spreads:
       European starlings in a large flock interact with about six or seven
       nearby birds, whatever the physical distance between them. A turn can
       cross the whole flock through local updates, with nobody giving an order.
+    insetOn: recto
+    inset:
+      image: here-06-empty-room
+      caption: This one did have an architect.
   - type: reading
     variant: two
     blocks: [flow-2a, flow-2b]

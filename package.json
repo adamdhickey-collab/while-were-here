@@ -32,7 +32,8 @@
     "shots": "npm run build && node scripts/shots.mjs",
     "selection": "./.venv/bin/python scripts/selection.py",
     "verify": "node scripts/verify.mjs",
-    "press:check": "node scripts/press-check.mjs"
+    "press:check": "node scripts/press-check.mjs",
+    "fonts:cjk": "npm run build && node scripts/fonts-cjk.mjs"
   },
   "devDependencies": {
     "@fontsource-variable/fraunces": "^5.3.0",
@@ -43,8 +44,6 @@
     "@fontsource/fraunces": "^5.3.0",
     "@fontsource/hanken-grotesk": "^5.3.0",
     "@fontsource/ibm-plex-mono": "^5.3.0",
-    "@fontsource/noto-sans-jp": "^5.3.0",
-    "@fontsource/noto-sans-kr": "^5.3.0",
     "@fontsource/schibsted-grotesk": "^5.3.0",
     "@vivliostyle/cli": "^9.5.0",
     "chokidar": "^4.0.3",

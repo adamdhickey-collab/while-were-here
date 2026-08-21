@@ -9,6 +9,15 @@
 | Archivo | Body | SIL OFL | Yes, via npm |
 | IBM Plex Mono | Annotations | SIL OFL | Yes, via npm |
 | Caveat | Hand | SIL OFL | Yes, via npm |
+| Noto Sans JP / KR | The CJK entries in the advertiser record | SIL OFL | **Yes, as files** — `fonts-cjk/` |
+
+The Noto subsets are the one family committed as actual font files rather than
+pulled from npm. The two packages are 130 MB and the book uses 131 KB of them,
+which every `npm ci` on the Pages runner would otherwise pay for. The OFL permits
+redistribution, and requires the licence travel with the fonts: it is at
+`fonts-cjk/OFL.txt`, copied there by `npm run fonts:cjk`. This is the opposite of
+the Falutin Title situation below, and for the opposite reason — the OFL allows
+what the Plattner EULA forbids.
 
 ### Falutin Title — what the EULA permits, and what it doesn't
 

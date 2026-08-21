@@ -43,6 +43,7 @@ If you cloned before installing LFS, `git lfs pull` fixes it in place.
 | `npm run derive` | Refresh the screen-resolution derivatives the hosted preview is built from. Run it after placing images. |
 | `npm run build:web` | The build the Pages workflow runs: derivatives instead of press masters. |
 | `npm run fonts:setup` | One-time: venv + convert the licensed OTFs for press. |
+| `npm run fonts:cjk` | Rebuild `fonts-cjk/` when the book gains a character the Latin faces cannot set. |
 | `npm run credits` | Rebuild the attribution page from the manifest. |
 | `npm run facts` | Check `content/facts.json` and rebuild the sources page. `--strict` fails on anything unverified. |
 | `npm run verify` | **The pre-press checks, in one command.** Seven pass/fail, run against the built pages rather than the sources, plus what it cannot check and says so. `--strict` exits non-zero on any failure, which is what CI uses. |
@@ -261,7 +262,7 @@ embeds exactly these faces:
 | Body | Söhne Buch | **Hanken Grotesk** | A humanist grotesque, the warmest of the four candidates — calligraphic residue in the letterforms. Chosen 20 Aug 2026 for friendliness over Familjen Grotesk, which stays in the type tester for comparison. Body copy re-measured at 65 characters per line after the swap. |
 | Annotations | GT America Mono | **IBM Plex Mono** | Neo-grotesque mono, warmer than Roboto Mono. |
 | Hand | script accent | **Caveat** | Natural handwriting, closest to the board's sample. |
-| CJK | — | **Noto Sans JP / KR** | Last resort in every stack, for the Korean, Japanese and Chinese entries in the advertiser record. Only the unicode-range subsets carrying characters the book actually prints are embedded — 27 characters, 131 KB. Without them the print path writes those glyphs as Type 3 outlines or drops them. |
+| CJK | — | **Noto Sans JP / KR** | Last resort in every stack, for the Korean, Japanese and Chinese entries in the advertiser record. Only the unicode-range subsets carrying characters the book prints are committed, in `fonts-cjk/` — 27 characters, 131 KB, against 130 MB for the two packages. Without them the print path writes those glyphs as Type 3 outlines or drops them. Regenerate with `npm run fonts:cjk`. |
 
 ### Moving to Adobe Fonts
 

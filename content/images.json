@@ -287,7 +287,9 @@
       "composite": false,
       "target": "1280 × 960 px (native — 464 dpi at 70 mm, and nothing larger)",
       "selection": "Facebook archive, DogParkFall2018. One walk, three moments, in the order they were taken.",
-      "revision": "Not retouched, not upscaled. Facebook stripped the EXIF, so no capture time survives — the captions carry the season, which is recorded, and claim no clock time, which is not."
+      "revision": "Not retouched, not upscaled. Corrected 21 Aug 2026: an earlier note here claimed Facebook stripped the EXIF and that no capture time survived. The JPEG EXIF is indeed gone, but the export's own album HTML keeps a \"Taken\" field, and it gives this frame to the second. The captions now carry that time rather than a season.",
+      "captured": "Oct 21, 2018 2:58:00 pm",
+      "capturedSource": "Facebook data export, album HTML \"Taken\" field. The JPEG EXIF was stripped on upload; Facebook kept the capture timestamp in its own metadata and returns it in the export."
     },
     {
       "id": "walk-02-same-woods",
@@ -306,7 +308,9 @@
       "composite": false,
       "target": "1280 × 960 px (native — 464 dpi at 70 mm, and nothing larger)",
       "selection": "Facebook archive, DogParkFall2018. One walk, three moments, in the order they were taken.",
-      "revision": "Not retouched, not upscaled. Facebook stripped the EXIF, so no capture time survives — the captions carry the season, which is recorded, and claim no clock time, which is not."
+      "revision": "Not retouched, not upscaled. Corrected 21 Aug 2026: an earlier note here claimed Facebook stripped the EXIF and that no capture time survived. The JPEG EXIF is indeed gone, but the export's own album HTML keeps a \"Taken\" field, and it gives this frame to the second. The captions now carry that time rather than a season.",
+      "captured": "Oct 21, 2018 3:26:00 pm",
+      "capturedSource": "Facebook data export, album HTML \"Taken\" field. The JPEG EXIF was stripped on upload; Facebook kept the capture timestamp in its own metadata and returns it in the export."
     },
     {
       "id": "walk-03-found-water",
@@ -325,7 +329,9 @@
       "composite": false,
       "target": "1280 × 960 px (native — 464 dpi at 70 mm, and nothing larger)",
       "selection": "Facebook archive, DogParkFall2018. One walk, three moments, in the order they were taken.",
-      "revision": "Not retouched, not upscaled. Facebook stripped the EXIF, so no capture time survives — the captions carry the season, which is recorded, and claim no clock time, which is not."
+      "revision": "Not retouched, not upscaled. Corrected 21 Aug 2026: an earlier note here claimed Facebook stripped the EXIF and that no capture time survived. The JPEG EXIF is indeed gone, but the export's own album HTML keeps a \"Taken\" field, and it gives this frame to the second. The captions now carry that time rather than a season.",
+      "captured": "Oct 21, 2018 3:11:00 pm",
+      "capturedSource": "Facebook data export, album HTML \"Taken\" field. The JPEG EXIF was stripped on upload; Facebook kept the capture timestamp in its own metadata and returns it in the export."
     },
     {
       "id": "ephemera-01-window-plant",
@@ -363,7 +369,9 @@
       "origin": "own photograph",
       "composite": false,
       "selection": "Facebook archive, NorthShoreFall2017 — the highest-resolution album in the export.",
-      "revision": "Not retouched, not upscaled. EXIF stripped on upload, so the captions carry the season, which is recorded, and no clock time, which is not."
+      "revision": "Not retouched, not upscaled. EXIF stripped on upload, so the captions carry the season, which is recorded, and no clock time, which is not.",
+      "captured": "Oct 08, 2017 12:39:54 pm",
+      "capturedSource": "Facebook data export, album HTML \"Taken\" field. The JPEG EXIF was stripped on upload; Facebook kept the capture timestamp in its own metadata and returns it in the export."
     },
     {
       "id": "north-02-aspen-up",
@@ -382,7 +390,9 @@
       "origin": "own photograph",
       "composite": false,
       "selection": "Facebook archive, NorthShoreFall2017 — the highest-resolution album in the export.",
-      "revision": "Not retouched, not upscaled. EXIF stripped on upload, so the captions carry the season, which is recorded, and no clock time, which is not."
+      "revision": "Not retouched, not upscaled. EXIF stripped on upload, so the captions carry the season, which is recorded, and no clock time, which is not.",
+      "captured": "Oct 08, 2017 11:26:23 am",
+      "capturedSource": "Facebook data export, album HTML \"Taken\" field. The JPEG EXIF was stripped on upload; Facebook kept the capture timestamp in its own metadata and returns it in the export."
     },
     {
       "id": "north-03-lake-horizon",
@@ -401,7 +411,9 @@
       "origin": "own photograph",
       "composite": false,
       "selection": "Facebook archive, NorthShoreFall2017 — the highest-resolution album in the export.",
-      "revision": "Not retouched, not upscaled. EXIF stripped on upload, so the captions carry the season, which is recorded, and no clock time, which is not."
+      "revision": "Not retouched, not upscaled. EXIF stripped on upload, so the captions carry the season, which is recorded, and no clock time, which is not.",
+      "captured": "Oct 08, 2017 10:35:28 am",
+      "capturedSource": "Facebook data export, album HTML \"Taken\" field. The JPEG EXIF was stripped on upload; Facebook kept the capture timestamp in its own metadata and returns it in the export."
     },
     {
       "id": "ordinary-days-01g1-tree-spring",
@@ -642,7 +654,9 @@
       "composite": false,
       "revision": "Replaced the generated ants-on-pavement plate 21 Aug 2026. The generated plate read well as a diagram but its ants were dots. This is a real colony, photographed by Adam, and it costs 6 dpi to say so. Cropped square from 1280 × 960, offset 45% from the left so both frames hold. Not retouched, not upscaled.",
       "origin": "own photograph",
-      "selection": "Facebook archive, StateFair2013. An observation hive is the essay’s argument twice over: comb is the canonical structure nobody drafted, and this one is in a glass case because people will stand and watch it."
+      "selection": "Facebook archive, StateFair2013. An observation hive is the essay’s argument twice over: comb is the canonical structure nobody drafted, and this one is in a glass case because people will stand and watch it.",
+      "captured": "Sep 02, 2013 1:31:57 pm",
+      "capturedSource": "Facebook data export, album HTML \"Taken\" field. The JPEG EXIF was stripped on upload; Facebook kept the capture timestamp in its own metadata and returns it in the export."
     },
     {
       "id": "systems-02-starling-flock",
@@ -1425,7 +1439,9 @@
       "composite": false,
       "revision": "Replaced the generated worn-threshold plate 21 Aug 2026. The generated stone sill was a good image but an anonymous one; this is Adam’s own, at higher resolution, and the shadow makes the essay’s claim directly — the body is in the picture, at the top of the climb, with the steps still to go. Cropped square from 1536 × 2048, offset 18% down so the stair head, the shadow and the falling steps all hold. Not retouched, not upscaled.",
       "origin": "own photograph",
-      "selection": "Facebook archive, mobile uploads. Chosen over four other stair and trail frames because it is the only one with the walker in it — as a shadow, so no face and no consent question."
+      "selection": "Facebook archive, mobile uploads. Chosen over four other stair and trail frames because it is the only one with the walker in it — as a shadow, so no face and no consent question.",
+      "captured": "Sep 28, 2021 1:30:26 pm",
+      "capturedSource": "Facebook data export, album HTML \"Taken\" field. The JPEG EXIF was stripped on upload; Facebook kept the capture timestamp in its own metadata and returns it in the export."
     },
     {
       "id": "pilgrimage-02-yellow-arrow",
@@ -1512,7 +1528,9 @@
       "composite": false,
       "revision": "Replaced the generated opener 21 Aug 2026: the archive re-audit found the no-full-page rule was written against 6000 px targets and never revisited after the retarget — a real photograph now sits within a few dpi of what the slot accepts from a generator, and ahead of it on honesty. Cropped square from 1280 × 960, the dog kept right of centre. Target corrected 21 Aug 2026: this entry had claimed 106 dpi at 306 mm. Measured in the rendered book, the full-bleed opener box is 300 mm and the proof carries no bleed, so 960 px is 81 dpi. The swap still stands — it was argued on the photograph, not on the arithmetic — but the number was wrong.",
       "origin": "own photograph",
-      "selection": "Facebook archive, DogParkFall2018 — the same walk as the essay-01 contact sheet, closing the book where it opened."
+      "selection": "Facebook archive, DogParkFall2018 — the same walk as the essay-01 contact sheet, closing the book where it opened.",
+      "captured": "Oct 21, 2018 2:51:00 pm",
+      "capturedSource": "Facebook data export, album HTML \"Taken\" field. The JPEG EXIF was stripped on upload; Facebook kept the capture timestamp in its own metadata and returns it in the export."
     },
     {
       "id": "here-02-house-section",
@@ -1599,7 +1617,9 @@
       "origin": "own photograph",
       "selection": "Facebook archive, Zoo2014. See content/plan/photo-selection-05.md",
       "revision": "Not retouched, not upscaled. It is used at the only size its resolution supports.",
-      "composite": false
+      "composite": false,
+      "captured": "Jul 20, 2014 4:12:27 pm",
+      "capturedSource": "Facebook data export, album HTML \"Taken\" field. The JPEG EXIF was stripped on upload; Facebook kept the capture timestamp in its own metadata and returns it in the export."
     },
     {
       "id": "specimen-02-queen-butterfly",
@@ -1618,7 +1638,9 @@
       "origin": "own photograph",
       "selection": "Facebook archive, Zoo2014. See content/plan/photo-selection-05.md",
       "revision": "NOT A MONARCH. Identified as Danaus gilippus by the chestnut ground, the white spots scattered mid-forewing and the absence of heavy black veins. It was logged as a monarch on first pass and that was wrong. Captive animal.",
-      "composite": false
+      "composite": false,
+      "captured": "Jul 20, 2014 4:46:33 pm",
+      "capturedSource": "Facebook data export, album HTML \"Taken\" field. The JPEG EXIF was stripped on upload; Facebook kept the capture timestamp in its own metadata and returns it in the export."
     },
     {
       "id": "specimen-03-eagle-owl",
@@ -1637,7 +1659,9 @@
       "composite": false,
       "target": "980 × 735 px cropped from 1280 × 960 (native — 377 dpi at 66 mm)",
       "selection": "Facebook archive, Zoo2014. Re-exported 20 Aug 2026 at High media quality, which returned the identical 1,280 px files — see content/plan/personal-archive.md.",
-      "revision": "Cropped from the original frame to remove a handler and a legible staff shirt: a person who has not consented to appear in a book intended for sale, and branding the plate rules forbid. Not retouched, not upscaled."
+      "revision": "Cropped from the original frame to remove a handler and a legible staff shirt: a person who has not consented to appear in a book intended for sale, and branding the plate rules forbid. Not retouched, not upscaled.",
+      "captured": "Jul 20, 2014 1:31:41 pm",
+      "capturedSource": "Facebook data export, album HTML \"Taken\" field. The JPEG EXIF was stripped on upload; Facebook kept the capture timestamp in its own metadata and returns it in the export."
     },
     {
       "id": "specimen-04-hyacinth-macaw",
@@ -1656,7 +1680,9 @@
       "composite": false,
       "target": "980 × 735 px cropped from 1280 × 960 (native — 377 dpi at 66 mm)",
       "selection": "Facebook archive, Zoo2014. Re-exported 20 Aug 2026 at High media quality, which returned the identical 1,280 px files — see content/plan/personal-archive.md.",
-      "revision": "Cropped from the original frame to remove a handler and a legible staff shirt: a person who has not consented to appear in a book intended for sale, and branding the plate rules forbid. Not retouched, not upscaled."
+      "revision": "Cropped from the original frame to remove a handler and a legible staff shirt: a person who has not consented to appear in a book intended for sale, and branding the plate rules forbid. Not retouched, not upscaled.",
+      "captured": "Jul 20, 2014 1:29:34 pm",
+      "capturedSource": "Facebook data export, album HTML \"Taken\" field. The JPEG EXIF was stripped on upload; Facebook kept the capture timestamp in its own metadata and returns it in the export."
     },
     {
       "id": "specimen-05-bactrian-swim",
@@ -1675,7 +1701,9 @@
       "composite": false,
       "target": "1280 × 960 px (native — 493 dpi at 66 mm, and nothing larger)",
       "selection": "Facebook archive, Zoo2014. Re-exported 20 Aug 2026 at High media quality, which returned the identical 1,280 px files — see content/plan/personal-archive.md.",
-      "revision": "Not retouched, not upscaled. Used at the only size its resolution supports."
+      "revision": "Not retouched, not upscaled. Used at the only size its resolution supports.",
+      "captured": "Jul 20, 2014 2:30:30 pm",
+      "capturedSource": "Facebook data export, album HTML \"Taken\" field. The JPEG EXIF was stripped on upload; Facebook kept the capture timestamp in its own metadata and returns it in the export."
     },
     {
       "id": "specimen-06-prairie-dog",
@@ -1694,7 +1722,9 @@
       "composite": false,
       "target": "1280 × 960 px (native — 493 dpi at 66 mm, and nothing larger)",
       "selection": "Facebook archive, Zoo2014. Re-exported 20 Aug 2026 at High media quality, which returned the identical 1,280 px files — see content/plan/personal-archive.md.",
-      "revision": "Not retouched, not upscaled. Used at the only size its resolution supports."
+      "revision": "Not retouched, not upscaled. Used at the only size its resolution supports.",
+      "captured": "Jul 20, 2014 2:44:58 pm",
+      "capturedSource": "Facebook data export, album HTML \"Taken\" field. The JPEG EXIF was stripped on upload; Facebook kept the capture timestamp in its own metadata and returns it in the export."
     },
     {
       "id": "specimen-07-amur-tiger",
@@ -1713,7 +1743,9 @@
       "composite": false,
       "target": "1280 × 960 px (native — 493 dpi at 66 mm, and nothing larger)",
       "selection": "Facebook archive, Zoo2014. Re-exported 20 Aug 2026 at High media quality, which returned the identical 1,280 px files — see content/plan/personal-archive.md.",
-      "revision": "Not retouched, not upscaled. Used at the only size its resolution supports."
+      "revision": "Not retouched, not upscaled. Used at the only size its resolution supports.",
+      "captured": "Jul 20, 2014 2:54:37 pm",
+      "capturedSource": "Facebook data export, album HTML \"Taken\" field. The JPEG EXIF was stripped on upload; Facebook kept the capture timestamp in its own metadata and returns it in the export."
     },
     {
       "id": "micro-01-graphite-ridge",

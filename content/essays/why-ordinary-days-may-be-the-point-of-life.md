@@ -55,12 +55,12 @@ spreads:
     contactSheet:
       images:
         - walk-01-leaf-light
-        - walk-02-same-woods
         - walk-03-found-water
+        - walk-02-same-woods
       captions:
-        - Fall 2018 / the leaves came down all week
-        - Fall 2018 / same corner, twenty minutes later
-        - Fall 2018 / the route ran into water
+        - October 21, 2018, 2:58 p.m. / the leaves came down all week
+        - October 21, 2018, 3:11 p.m. / the route ran into water
+        - October 21, 2018, 3:26 p.m. / same corner, twenty-eight minutes on
   - type: reading
     variant: two
     subhead: The Ordinary Is Not the Interruption

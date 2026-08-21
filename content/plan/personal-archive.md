@@ -154,3 +154,40 @@ problem.
 
 The alternative is sweeping all 1,460, which is roughly seven times the work for
 material the album names suggest is mostly posed.
+
+---
+
+## The capture times survived after all — 21 Aug 2026
+
+**The JPEG EXIF is gone. The capture times are not.** Facebook strips EXIF on
+upload, which is what earlier notes in this file and in `content/images.json`
+recorded. But the export's own album pages —
+`your_facebook_activity/posts/album/*.html` — carry a `Taken` field per
+photograph, to the second, from Facebook's own metadata. 1,146 of the 1,453
+images in the 20 August export have one.
+
+Every archive image in the book now carries a `captured` field in
+`content/images.json`, with `capturedSource` recording where it came from. Three
+manifest entries that claimed no capture time survived have been corrected.
+
+**What this bought immediately.** The essay-01 contact sheet claimed its three
+frames ran "in the order they were taken". They did not: 2:58, 3:26, 3:11. It
+also said "twenty minutes later" for a gap of twenty-eight. Both are fixed, and
+the captions now print the real clock time instead of a season. The whole first
+and last of the book turn out to come from one 35-minute window — the essay-08
+opener is 2:51 p.m. on the same walk.
+
+**Why this matters more than another photograph would.** The book is a field
+guide, not an album. A true timestamp is the field guide's own apparatus, and
+pointing it at an ordinary Sunday afternoon is the whole argument of Essay 01
+made as a fact rather than a claim. Prefer this over sentiment in a caption
+every time.
+
+**Two cautions.**
+
+- A `Taken` value is the *file's* capture time, not the subject's date. The
+  scanned portrait of Adam's father reads `Jan 23, 2020` because that is when
+  the print was photographed. Never caption a digitized print with its scan
+  date.
+- The same album HTML carries **upload IP addresses**. Nothing in that column
+  goes anywhere near the book, the manifest, or the repository.

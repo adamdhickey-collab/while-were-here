@@ -137,6 +137,23 @@ def named(doc: Path):
     return [(n, s) for n, s in out if not (n in seen or seen.add(n))]
 
 
+def taken(path):
+    """Capture date from the file's own EXIF, or '' if it has none.
+
+    Worth printing beside every match. When a frame turns out to be the wrong
+    photograph, the date is the fastest way to find the right one — the library
+    is 24,000 files and browsing it by name is hopeless, but a trip is a
+    fortnight and the frames wanted here cluster inside one.
+    """
+    try:
+        with Image.open(path) as im:
+            ex = im.getexif() or {}
+        d = ex.get(36867) or ex.get(306) or ''
+        return str(d)[:10].replace(':', '-')
+    except Exception:
+        return ''
+
+
 def find_all(stem: str, libs):
     """EVERY file with this stem, not the first one found.
 
@@ -347,10 +364,10 @@ def main():
     print(f"  searched {where} ({total} files)\n")
     if found:
         head = ' '.join(f"{k.split()[0]:>11}" for k in SLOTS)
-        print(f"  {'frame':<15}{'pixels':>12}   {head}   section")
+        print(f"  {'frame':<15}{'pixels':>12}   {head}   {'taken':<11} section")
         for stem, section, p, w, h in found:
             dpis = ' '.join(f"{min(w, h) / (mm / 25.4):>11.0f}" for mm in SLOTS.values())
-            print(f"  {stem:<15}{w}×{h:<6}   {dpis}   {section[:34]}")
+            print(f"  {stem:<15}{w}×{h:<6}   {dpis}   {taken(p):<11} {section[:28]}")
         print("\n  dpi columns use the SHORT edge — the honest number for a square crop.")
     if suspect:
         crops   = [x for x in suspect if x[4] == 'shape' and crop_verdict(x[1], x[2]) == 'crop']

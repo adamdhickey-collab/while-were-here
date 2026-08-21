@@ -75,6 +75,10 @@ spreads:
       Find one object whose instructions assume no network connection. Follow
       the sequence exactly as printed. Notice which delays and decisions the
       object expects a person to manage.
+    insetOn: verso
+    inset:
+      image: before-time-06-thanksgiving
+      caption: Returned, years later, by the archive that kept it.
   - type: closing
     quote: Absence was not a setting selected from a menu. It was what happened
       when a body moved beyond the length of a wire.

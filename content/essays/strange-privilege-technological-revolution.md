@@ -23,6 +23,10 @@ spreads:
       Intel introduced the 4004 microprocessor in 1971 with 2,300 transistors
       on a chip smaller than a fingernail. Computation that once occupied a
       room had begun its long movement into ordinary objects.
+    insetOn: verso
+    inset:
+      image: privilege-07-grill-screen
+      caption: The machinery, disappeared behind a number.
   - type: pull-quote
     quote: A revolution is easiest to miss when it arrives as a convenience.
     lede: On watching it become ordinary

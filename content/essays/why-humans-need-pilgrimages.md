@@ -70,6 +70,10 @@ spreads:
       the Pyrenean starting routes and Santiago de Compostela. The Compostela
       requires stated spiritual or religious motivation and at least the final
       100 continuous kilometers on foot.
+    insetOn: verso
+    inset:
+      image: pilgrimage-07-switchbacks
+      caption: Every one of those turns has to be walked.
   - type: image-essay
     variant: tall
     image: pilgrimage-05-stamped-booklet

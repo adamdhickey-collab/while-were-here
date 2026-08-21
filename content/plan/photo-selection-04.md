@@ -779,3 +779,51 @@ were the photograph. Two were crop parents and one of those was wrong. That is
 consistent with everything measured today: exact is a strong signal on an
 unusual shape, crop-parent is a coin flip, and neither is proof — `IMG_5483`
 matched its dimensions exactly under its own stem and is a dog on a gravel path.
+
+### Photos has a third way of renaming a collision, and it was hiding nine frames — 21 Aug 2026
+
+After the ` 2` suffix and the file extension, there is a third form:
+**parentheses**.
+
+    IMG_1698.JPG          3264 × 2448    28 Dec 2015
+    IMG_1698.HEIC         3024 × 3024    01 Sep 2019
+    IMG_1698 (1).HEIC     5712 × 4284    30 Sep 2024   ← the frame this document names
+    IMG_1698 (2).HEIC     5712 × 4284    01 Aug 2026
+
+Four photographs under one number, spanning eleven years, in one folder. `find_all`
+now collects every ` (N)` sibling as well, and **nine of the ten frames still
+unresolved were sitting in this form.**
+
+### The capture date is a better discriminator than the shape — 21 Aug 2026
+
+Printed beside every match now, and it should be read first.
+
+**Every frame this document names that has turned out to be correct was captured
+between 17 and 30 September 2024** — one trip, one fortnight, Spain and
+Portugal. Every candidate that turned out to be a different photograph was from
+2019, 2021 or 2022:
+
+| candidate | verdict | captured |
+| --- | --- | --- |
+| `IMG_0831`, `IMG_1638`, `IMG_1735`, `IMG_1562`, `IMG_1390`, `IMG_0964`, `IMG_0775`, `IMG_1026`, `IMG_1305`, `IMG_2946`, `IMG_3329`, `IMG_0623` | the picture | **all 17–30 Sep 2024** |
+| `IMG_0936` | a dog on a lawn | 04 Jun 2019 |
+| `IMG_5210` | a dog at a screen door | 29 Mar 2021 |
+| `IMG_5214` | a suburban house | 06 Jun 2022 |
+
+The date column alone would have caught all three misses, before anything was
+opened. It costs nothing to read and it is now the first thing the report says.
+
+### Five more frames located and opened — 21 Aug 2026
+
+| frame | the document says | what it is |
+| --- | --- | --- |
+| `IMG_1112 (1)` | the vaulted underground baths, a barrel of stone | **Exactly that, and it may be the best photograph in the library.** The Baños de Doña María de Padilla under the Alcázar of Seville — gothic vaults doubled in perfectly still water, an oculus at the far end completing itself as a circle in the reflection. 4284 × 5712, **363 dpi** at full bleed |
+| `IMG_1746 (1)` | the Fátima esplanade, vast, mostly empty | **Exactly that.** Basilica, colonnade, the Sacred Heart column, crash barriers across a wet esplanade, figures scattered small. On the nose for a pilgrimage essay. 5712 × 4284 |
+| `IMG_0707 (1)` | a rock peak with cloud pouring over the saddle | **Exactly that.** Montserrat: cloud pouring through a gap between conglomerate pinnacles, a summit cross on the skyline, the plain beyond |
+| `IMG_1051 (1)` | a figure standing against a huge blank wall | **Right subject, and the line misses the picture entirely.** It is **Fabiola standing under a Seville street sign that reads FABIOLA**, smiling at the camera. The line describes a formal exercise in scale; the photograph is a joke about a name, and for a book meant to be personal that is worth far more. She is posed and looking at the lens, so it is outside the candid rule — which matters for a stranger and not at all for her |
+| `IMG_1698 (1)` | an empty motorway at dawn through the windscreen | **Right subject, wrong line, three times over.** Shot sideways through a *side* window with the frame and a sticker visible, not a windscreen; mostly sky, hills and rows of polytunnel greenhouses, with the carriageway along the bottom edge; and the EXIF says **09:17**, which is not dawn |
+
+That is **fourteen** frames whose line disagrees with the photograph, out of
+thirty-nine — and the pattern is now clear enough to state. The document is
+reliable about *what is in the library* and unreliable about *what is in the
+frame*. Nothing in it should be placed on the strength of its own description.

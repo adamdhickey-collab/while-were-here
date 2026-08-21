@@ -49,6 +49,20 @@ export const geometry = {
                            // Saal prints this book on FUJIFILM Crystal Archive HD
                            // at 368 g/m2, layflat, not on the uncoated stock this
                            // number assumes. Replace from the production template.
+                           //
+                           // HOW WRONG THIS CAN BE, 21 Aug 2026. spineWidth() is
+                           // linear: at 130 pages it is 65 x caliper + 4, so every
+                           // 0.01 mm of caliper moves the spine 0.65 mm. A caliper
+                           // of 0.26 gives a 20.9 mm spine and 0.31 gives 24.15,
+                           // against the 15.05 this file currently reports — a
+                           // cover wrap out by six to nine millimetres, which is
+                           // not a rounding error, it is a misprinted case.
+                           //
+                           // Nothing here asserts what the true caliper IS. That
+                           // number comes from Saal's production template for this
+                           // exact product and nowhere else. Get it before the
+                           // cover wrap is sent, and treat every spine figure the
+                           // build prints as provisional until it is in.
     boardAllowance: 4,     // mm added for hardcover board and hinge
     wrapTurnIn: 15,        // mm folded around the board
     hingeGap: 8,           // mm groove either side of the spine

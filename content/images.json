@@ -2189,7 +2189,8 @@
       "target": "4284 × 5712 px native — 363 dpi at 300 mm full bleed, the highest of any frame photo-selection-04 names",
       "origin": "own photograph",
       "capturedSource": "EXIF in the file. Read it off the photograph rather than an album's HTML — these are unmodified originals.",
-      "selection": "iPhoto library, verified by eye 21 Aug 2026 against the document's line. One of three frames out of eight shape-matches that turned out to be the photograph described."
+      "selection": "iPhoto library, verified by eye 21 Aug 2026 against the document's line. One of three frames out of eight shape-matches that turned out to be the photograph described.",
+      "render": "~/Desktop/photo library edits/IMG_0831.jpeg — Adam's own crop and grade, rendered by Photos at 3213 × 5712. Where his crop is the composition this is the file to place; the original above has more pixels for re-cropping. Verify the render against the subject line before use: the subject describes the ORIGINAL framing, and a crop can exclude parts of it."
     },
     {
       "id": "library-02-cordoba-bridge-night",
@@ -2206,7 +2207,8 @@
       "target": "3024 × 4032 px native — 256 dpi at 300 mm full bleed",
       "origin": "own photograph",
       "capturedSource": "EXIF in the file.",
-      "selection": "iPhoto library, verified by eye 21 Aug 2026. The document says the lantern is between the two figures; it is beside them. Everything else in the line is exact."
+      "selection": "iPhoto library, verified by eye 21 Aug 2026. The document says the lantern is between the two figures; it is beside them. Everything else in the line is exact.",
+      "render": "~/Desktop/photo library edits/IMG_0964.jpeg — Adam's own crop and grade, rendered by Photos at 2268 × 4032. Where his crop is the composition this is the file to place; the original above has more pixels for re-cropping. Verify the render against the subject line before use: the subject describes the ORIGINAL framing, and a crop can exclude parts of it."
     },
     {
       "id": "library-03-montserrat-switchbacks",
@@ -2223,7 +2225,8 @@
       "target": "3024 × 4032 px native — 256 dpi at 300 mm full bleed",
       "origin": "own photograph",
       "capturedSource": "EXIF in the file.",
-      "selection": "iPhoto library, verified by eye 21 Aug 2026. The line and the photograph agree exactly."
+      "selection": "iPhoto library, verified by eye 21 Aug 2026. The line and the photograph agree exactly.",
+      "render": "~/Desktop/photo library edits/IMG_0775.jpeg — Adam's own crop and grade, rendered by Photos at 2268 × 4032. Where his crop is the composition this is the file to place; the original above has more pixels for re-cropping. Verify the render against the subject line before use: the subject describes the ORIGINAL framing, and a crop can exclude parts of it."
     },
     {
       "id": "library-04-alcobaca-nave",
@@ -2240,7 +2243,8 @@
       "target": "4284 × 5712 px native — 363 dpi at 300 mm full bleed",
       "origin": "own photograph",
       "capturedSource": "EXIF in the file.",
-      "selection": "iPhoto library. NOTE: `IMG_1638.JPG` in the same folder is a night street parade with a brass band, and an earlier pass wrote this frame off on the strength of it. The HEIC is the nave."
+      "selection": "iPhoto library. NOTE: `IMG_1638.JPG` in the same folder is a night street parade with a brass band, and an earlier pass wrote this frame off on the strength of it. The HEIC is the nave.",
+      "render": "~/Desktop/photo library edits/IMG_1638.jpeg — Adam's own crop and grade, rendered by Photos at 3213 × 5712. Where his crop is the composition this is the file to place; the original above has more pixels for re-cropping. Verify the render against the subject line before use: the subject describes the ORIGINAL framing, and a crop can exclude parts of it."
     },
     {
       "id": "library-05-light-on-a-wall",
@@ -2257,7 +2261,8 @@
       "target": "5712 × 4284 px native — 363 dpi at 300 mm full bleed",
       "origin": "own photograph",
       "capturedSource": "EXIF in the file.",
-      "selection": "iPhoto library, verified by eye 21 Aug 2026. Face not visible."
+      "selection": "iPhoto library, verified by eye 21 Aug 2026. Face not visible.",
+      "render": "~/Desktop/photo library edits/IMG_1735.jpeg — Adam's own crop and grade, rendered by Photos at 5712 × 3213. Where his crop is the composition this is the file to place; the original above has more pixels for re-cropping. Verify the render against the subject line before use: the subject describes the ORIGINAL framing, and a crop can exclude parts of it."
     },
     {
       "id": "library-06-bamboo-path",
@@ -2274,7 +2279,8 @@
       "target": "5712 × 4284 px native — 363 dpi at 300 mm full bleed",
       "origin": "own photograph",
       "capturedSource": "EXIF in the file.",
-      "selection": "iPhoto library, verified by eye 21 Aug 2026."
+      "selection": "iPhoto library, verified by eye 21 Aug 2026.",
+      "render": "~/Desktop/photo library edits/IMG_1562.jpeg — Adam's own crop and grade, rendered by Photos at 5712 × 3213. Where his crop is the composition this is the file to place; the original above has more pixels for re-cropping. Verify the render against the subject line before use: the subject describes the ORIGINAL framing, and a crop can exclude parts of it."
     },
     {
       "id": "library-07-moss-trunk",
@@ -2291,7 +2297,8 @@
       "target": "4284 × 5712 px native — 363 dpi at 300 mm full bleed",
       "origin": "own photograph",
       "capturedSource": "EXIF in the file.",
-      "selection": "iPhoto library, verified by eye 21 Aug 2026."
+      "selection": "iPhoto library, verified by eye 21 Aug 2026.",
+      "render": "~/Desktop/photo library edits/IMG_1390.jpeg — Adam's own crop and grade, rendered by Photos at 3213 × 5712. Where his crop is the composition this is the file to place; the original above has more pixels for re-cropping. Verify the render against the subject line before use: the subject describes the ORIGINAL framing, and a crop can exclude parts of it."
     },
     {
       "id": "library-08-organ-en-chamade",
@@ -2308,7 +2315,8 @@
       "target": "4032 × 3024 px native — 256 dpi at 300 mm full bleed",
       "origin": "own photograph",
       "capturedSource": "EXIF in the file.",
-      "selection": "iPhoto library, verified by eye 21 Aug 2026. `IMG_1026.JPG` in the same folder is a different frame."
+      "selection": "iPhoto library, verified by eye 21 Aug 2026. `IMG_1026.JPG` in the same folder is a different frame.",
+      "render": "~/Desktop/photo library edits/IMG_1026.jpeg — Adam's own crop and grade, rendered by Photos at 4032 × 2268. Where his crop is the composition this is the file to place; the original above has more pixels for re-cropping. Verify the render against the subject line before use: the subject describes the ORIGINAL framing, and a crop can exclude parts of it."
     },
     {
       "id": "library-09-serpent-on-spheres",
@@ -2325,7 +2333,8 @@
       "target": "4032 × 3024 px native — 1,113 dpi at 92 mm inset",
       "origin": "own photograph",
       "capturedSource": "EXIF in the file.",
-      "selection": "iPhoto library, verified by eye 21 Aug 2026."
+      "selection": "iPhoto library, verified by eye 21 Aug 2026.",
+      "render": "~/Desktop/photo library edits/IMG_1305.jpeg — Adam's own crop and grade, rendered by Photos at 4032 × 2268. Where his crop is the composition this is the file to place; the original above has more pixels for re-cropping. Verify the render against the subject line before use: the subject describes the ORIGINAL framing, and a crop can exclude parts of it."
     },
     {
       "id": "library-10-sagrada-magic-square",
@@ -2377,7 +2386,8 @@
       "target": "3024 × 4032 px — 256 dpi at 300 mm full bleed",
       "origin": "own photograph",
       "capturedSource": "EXIF in the file.",
-      "selection": "iPhoto library, verified by eye 21 Aug 2026."
+      "selection": "iPhoto library, verified by eye 21 Aug 2026.",
+      "render": "~/Desktop/photo library edits/IMG_0623.jpeg — Adam's own crop and grade, rendered by Photos at 2268 × 4032. Where his crop is the composition this is the file to place; the original above has more pixels for re-cropping. Verify the render against the subject line before use: the subject describes the ORIGINAL framing, and a crop can exclude parts of it."
     },
     {
       "id": "library-13-cloud-floor-sunset",
@@ -2429,7 +2439,8 @@
       "target": "4284 × 5712 px native — 363 dpi at 300 mm full bleed",
       "origin": "own photograph",
       "capturedSource": "EXIF in the file — 25 Sep 2024, 13:29.",
-      "selection": "iPhoto library, verified by eye 21 Aug 2026. Found only after `find_all` learned about parenthesised duplicates: `IMG_1112.HEIC` under the bare name is a 2019 frame."
+      "selection": "iPhoto library, verified by eye 21 Aug 2026. Found only after `find_all` learned about parenthesised duplicates: `IMG_1112.HEIC` under the bare name is a 2019 frame.",
+      "render": "~/Desktop/photo library edits/IMG_1112.jpeg — Adam's own crop and grade, rendered by Photos at 3213 × 5712. Where his crop is the composition this is the file to place; the original above has more pixels for re-cropping. Verify the render against the subject line before use: the subject describes the ORIGINAL framing, and a crop can exclude parts of it."
     },
     {
       "id": "library-16-fatima-esplanade",
@@ -2447,7 +2458,8 @@
       "origin": "own photograph",
       "capturedSource": "EXIF in the file — 30 Sep 2024, 12:14.",
       "consent": "Around thirty people, most of them a few millimetres at print size and most with their backs turned. One man in the left foreground would print roughly 30 mm. Fine at this framing; do not crop in on him.",
-      "selection": "iPhoto library, verified by eye 21 Aug 2026."
+      "selection": "iPhoto library, verified by eye 21 Aug 2026.",
+      "render": "~/Desktop/photo library edits/IMG_1746.jpeg — Adam's own crop and grade, rendered by Photos at 5712 × 3213. Where his crop is the composition this is the file to place; the original above has more pixels for re-cropping. Verify the render against the subject line before use: the subject describes the ORIGINAL framing, and a crop can exclude parts of it."
     },
     {
       "id": "library-17-montserrat-cloud",
@@ -2464,7 +2476,8 @@
       "target": "3024 × 4032 px native — 256 dpi at 300 mm full bleed",
       "origin": "own photograph",
       "capturedSource": "EXIF in the file — 18 Sep 2024, 10:08.",
-      "selection": "iPhoto library, verified by eye 21 Aug 2026."
+      "selection": "iPhoto library, verified by eye 21 Aug 2026.",
+      "render": "~/Desktop/photo library edits/IMG_0707.jpeg — Adam's own crop and grade, rendered by Photos at 2268 × 4032. Where his crop is the composition this is the file to place; the original above has more pixels for re-cropping. Verify the render against the subject line before use: the subject describes the ORIGINAL framing, and a crop can exclude parts of it."
     },
     {
       "id": "library-18-fabiola-street",
@@ -2482,7 +2495,8 @@
       "origin": "own photograph",
       "capturedSource": "EXIF in the file — 24 Sep 2024, 15:05.",
       "consent": "Fabiola, posed and looking at the lens. Outside the candid rule, which exists for strangers and does not apply here — but it is her picture as much as Adam's, so ask her before it is printed.",
-      "selection": "iPhoto library, verified by eye 21 Aug 2026."
+      "selection": "iPhoto library, verified by eye 21 Aug 2026.",
+      "render": "~/Desktop/photo library edits/IMG_1051.jpeg — Adam's own crop and grade, rendered by Photos at 3213 × 5712. Where his crop is the composition this is the file to place; the original above has more pixels for re-cropping. Verify the render against the subject line before use: the subject describes the ORIGINAL framing, and a crop can exclude parts of it."
     },
     {
       "id": "library-19-park-guell-colonnade",

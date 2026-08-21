@@ -137,6 +137,12 @@ def named(doc: Path):
     return [(n, s) for n, s in out if not (n in seen or seen.add(n))]
 
 
+def glob_escape(name: str) -> str:
+    """`glob` treats [ ] ? * as patterns and these filenames contain none of
+    them today — but a library is user data, so escape rather than hope."""
+    return re.sub(r'([\[\]?*])', r'[\1]', name)
+
+
 def taken(path):
     """Capture date from the file's own EXIF, or '' if it has none.
 
@@ -175,6 +181,17 @@ def find_all(stem: str, libs):
     `IMG_1638`, which the docstring at the top of this file confidently called
     a night street parade rather than the Alcobaca nave. That conclusion was
     reached from the wrong file.
+
+    Photos has a THIRD disambiguation form, found on 21 Aug after the first two:
+    parentheses. `IMG_1698 (1).HEIC` and `IMG_1698 (2).HEIC` sit beside
+    `IMG_1698.HEIC` and `IMG_1698.JPG`, four photographs under one number, and
+    the export writes an `IMG_1698 (1)O.aae` sidecar for the edited ones. Nine
+    of the ten frames still unresolved at that point were hiding in this form.
+
+    So: exact spelling, underscore variant, and every ` (N)` sibling. The
+    capture date printed beside each is what actually tells them apart — the
+    frames this document wants are all from one fortnight in September 2024,
+    and the files sitting under their bare names are from 2015 to 2026.
     """
     out = []
     for lib in libs:
@@ -182,6 +199,10 @@ def find_all(stem: str, libs):
             for ext in EXTS:
                 p = lib / (cand + ext)
                 if p.exists():
+                    out.append(p)
+            # ` (1)`, ` (2)` … siblings of the same number.
+            for p in sorted(lib.glob(glob_escape(cand) + ' (*).*')):
+                if p.suffix in EXTS:
                     out.append(p)
     return out
 
@@ -338,7 +359,7 @@ def main():
             base_hits.append((stem, section, p, w, h, tuple(want)))
             continue
         if want and sorted(want) != sorted((w, h)):
-            suspect.append((stem, want, (w, h), p.name, 'shape'))
+            suspect.append((stem, want, (w, h), p.name, 'shape', p))
             continue
         # Orientation is not cosmetic. A portrait and a landscape frame off the
         # same sensor are different photographs, and comparing sorted dimensions
@@ -346,7 +367,7 @@ def main():
         # and it is a garden bed rather than an artisan at a bench. Flag rather
         # than reject, because a stray EXIF tag can also transpose a right file.
         if want and tuple(want) != (w, h):
-            suspect.append((stem, want, (w, h), p.name, 'turned'))
+            suspect.append((stem, want, (w, h), p.name, 'turned', p))
             continue
         found.append((stem, section, p, w, h))
 
@@ -379,9 +400,15 @@ def main():
             print(f"\n  ○ SHAPE IS CONSISTENT WITH A CROP — {len(crops)}:")
             print("    The document's shape fits inside the file and shares an edge with it,")
             print("    which is what a Photos 16:9 crop of a 4:3 frame looks like.")
-            for stem, want, got, name, _ in crops:
-                print(f"    {stem:<15} doc {want[0]}×{want[1]}  ·  {name} is {got[0]}×{got[1]}"
-                      f"   ({got[0]*got[1]/(want[0]*want[1]):.2f}x the area)")
+            for stem, want, got, name, _, path in crops:
+                print(f"    {stem:<15} doc {want[0]}×{want[1]}  ·  {name:<22} is {got[0]}×{got[1]}"
+                      f"  ({got[0]*got[1]/(want[0]*want[1]):.2f}x)  {taken(path)}")
+            print("    READ THE DATE COLUMN FIRST. Every frame this document names that has")
+            print("    turned out to be correct was captured between 17 and 30 September 2024 —")
+            print("    one trip, one fortnight. Every candidate that turned out to be a")
+            print("    different photograph was from 2019, 2021 or 2022. The date is a better")
+            print("    discriminator than the shape and it costs nothing to read.")
+            print("")
             print("    MEASURED PRECISION: all fifteen were opened on 21 Aug. NINE were the")
             print("    photograph the document describes. Two were the right subject with a wrong")
             print("    line written about them. Four were something else entirely — a dog on a")
@@ -394,15 +421,15 @@ def main():
         if inside:
             print(f"\n  ? MIGHT BE A CROP — {len(inside)}:")
             print("    Fits inside the file but shares no edge, so it is a weaker signal.")
-            for stem, want, got, name, _ in inside:
-                print(f"    {stem:<15} doc {want[0]}×{want[1]}, {name} is {got[0]}×{got[1]}")
+            for stem, want, got, name, _, path in inside:
+                print(f"    {stem:<15} doc {want[0]}×{want[1]}, {name} is {got[0]}×{got[1]}  {taken(path)}")
 
         if differs or turned:
             print(f"\n  ⚠ DOES NOT MATCH the document — {len(differs) + len(turned)}:")
-            for stem, want, got, name, why in differs + turned:
+            for stem, want, got, name, why, path in differs + turned:
                 note = ('the wanted shape does not fit inside the file — a different photograph'
                         if why == 'shape' else 'same shape, TURNED — verify by eye')
-                print(f"    {stem:<15} doc {want[0]}×{want[1]}, {name} is {got[0]}×{got[1]}  ({note})")
+                print(f"    {stem:<15} doc {want[0]}×{want[1]}, {name} is {got[0]}×{got[1]}  {taken(path)}  ({note})")
             print("    None counted as found.")
     # Name matching cannot be relied on here: the frames this document wants are
     # mostly the duplicates, and a fresh export disambiguates them differently.
@@ -411,7 +438,7 @@ def main():
     # A frame whose uncropped original is on disk is resolved, not unresolved —
     # listing it again under "candidates by stated shape" would send someone
     # looking for a file they have already been handed.
-    unresolved += [(s, '') for s, _, _, _, _ in suspect
+    unresolved += [(s, '') for s, _, _, _, _, _ in suspect
                    if (s, ) not in [(c[0],) for c in
                        [x for x in suspect if x[4] == 'shape' and crop_verdict(x[1], x[2]) == 'crop']]]
     if base_hits:

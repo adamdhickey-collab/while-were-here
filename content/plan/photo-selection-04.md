@@ -546,3 +546,58 @@ frame is looking at it; two pairs of legs are walking past at the edges.
 One discipline if it is ever used: **the picture does not say why the painting is
 gone.** Loan, conservation, cleaning, rehang — unknown, and not knowable from the
 frame. Any copy placed near it has to work with the absence and not explain it.
+
+### The reconciler could not see half the library — 21 Aug 2026
+
+The unmodified-originals export finished: **23,912 stills**, plus 5,774 `.aae`
+edit sidecars and 849 movies. Of those stills, **14,110 are HEIC** — and
+`scripts/selection.py` could not open one of them. Pillow has no HEIC support
+without `pillow-heif`, so every HEIC in both folders was skipped silently and
+the frames inside them were reported as **"not exported yet."**
+
+That is the one answer this script must never give wrongly. It sends someone
+away to wait for an export that already finished.
+
+Fixed by registering `pillow-heif` and adding the extensions. `npm run venv`
+installs it; the import is guarded, so the script still runs without it.
+
+### And that settles the 16:9 question with arithmetic — 21 Aug 2026
+
+The section above concluded, from the shapes that were visible, that these
+frames had been **cropped to 16:9 in Photos** and that an originals export
+therefore could not match the document by dimension. With HEIC readable the
+originals appeared, and they are exact:
+
+| the document wants | the file on disk is | |
+| --- | --- | --- |
+| `IMG_0936` 4032 × 2268 | 4032 × **3024** | same width, 1.33× the area |
+| `IMG_0915` 4032 × 2268 | 4032 × **3024** | same width, 1.33× the area |
+| `IMG_5210` 4032 × 2268 | 4032 × **3024** | same width, 1.33× the area |
+| `IMG_1749` 4032 × 2268 | 4032 × **3024** | same width, 1.33× the area |
+| `IMG_0964` 2268 × 4032 | **3024** × 4032 | same height, 1.33× the area |
+| `IMG_0775` 2268 × 4032 | **3024** × 4032 | same height, 1.33× the area |
+| `IMG_0970` 2268 × 4032 | **3024** × 4032 | same height, 1.33× the area |
+| `IMG_0831` 3213 × 5712 | **4284** × 5712 | same height, 1.33× the area |
+
+Every one keeps a full edge and restores the short edge to 4/3 of the crop.
+That is a 16:9 crop of a 4:3 frame and nothing else. **Eight frames were never
+missing.** The count went from *7 found* to **15 found — 7 at the stated size,
+8 as uncropped originals with a third more pixels than the document asked for.**
+
+The script now reports three verdicts instead of a flat mismatch: *the
+uncropped original is here* (fits and shares an edge), *might be a crop* (fits,
+shares no edge), and *does not match* (does not fit — a different photograph
+under the same filename, which this library is full of). And where a 16:9 frame
+has no original at all, it now names the parent shape to look for rather than
+saying "not exported yet" about a shape this export mode can never contain.
+
+**Eight frames are still genuinely absent, and every one of them is a
+`space 2` duplicate name** — `IMG_2946 2`, `IMG_4904 2`, `IMG_3161 2`,
+`IMG_5360 2`, `IMG_0821 2`, `IMG_3329 2`, `IMG_5403 2`, `IMG_0623 2`. The
+originals export disambiguated those collisions differently. The edited export
+is still running and is where they will appear, if they appear.
+
+**The eight resolved frames still have to be opened and read against their
+descriptions before placement.** A shape is a filter, not a proof — ten frames
+in this document have already turned out to disagree with the line written for
+them, and matching arithmetic does not change that.

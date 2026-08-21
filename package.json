@@ -19,7 +19,7 @@
     "build:web": "BOOK_WEB=1 node scripts/build.mjs",
     "credits": "node scripts/credits.mjs",
     "fonts:convert": "./.venv/bin/python scripts/otf2ttf.py fonts-licensed fonts-licensed/.ttf-cache",
-    "venv": "python3 -m venv .venv && ./.venv/bin/pip install -q \"fonttools[woff]\" pillow numpy scipy",
+    "venv": "python3 -m venv .venv && ./.venv/bin/pip install -q \"fonttools[woff]\" pillow pillow-heif numpy scipy",
     "fonts:setup": "npm run venv && npm run fonts:convert",
     "reground": "./.venv/bin/python scripts/reground.py",
     "pdf:proof": "npm run build && node scripts/proof.mjs && vivliostyle build build/book.html -o dist/while-were-here-proof.pdf && npm run build",

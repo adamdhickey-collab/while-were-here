@@ -66,6 +66,18 @@ from pathlib import Path
 
 from PIL import Image, ImageOps  # noqa: F401  (ImageOps kept for callers)
 
+# HEIC is more than half this library and Pillow cannot open it unaided. Without
+# this the reconciler silently skipped 14,110 of 23,912 stills and reported
+# frames as "not exported yet" that were sitting on the disk — a false negative
+# is the one answer this script must never give, because it sends someone away
+# to wait for an export that already finished.
+try:
+    import pillow_heif
+    pillow_heif.register_heif_opener()
+    HEIC = True
+except ImportError:                                   # pragma: no cover
+    HEIC = False
+
 # Orientation values 5-8 mean the stored pixels are rotated a quarter turn, so
 # the displayed shape is the transpose. Reading the tag is cheap; decoding the
 # whole image to ask exif_transpose is not, and this runs over thousands of files.
@@ -91,7 +103,8 @@ ROOT = Path(__file__).resolve().parent.parent
 SLOTS = {'full bleed 300 mm': 300.0, 'band 236 mm': 236.0, 'inset 92 mm': 92.0}
 
 FRAME = re.compile(r'\*\*([A-Za-z0-9_][A-Za-z0-9_ ]*\d[A-Za-z0-9_ ]*)\*\*\s*·')
-EXTS = ('.jpg', '.jpeg', '.JPG', '.JPEG', '.png', '.PNG', '.tif', '.tiff', '.TIF')
+EXTS = ('.jpg', '.jpeg', '.JPG', '.JPEG', '.png', '.PNG', '.tif', '.tiff', '.TIF',
+        '.heic', '.HEIC', '.HEIF', '.heif')
 
 
 def named(doc: Path):
@@ -134,6 +147,50 @@ def stated_dims(doc_text: str, stem: str):
             m = DIMS.search(line)
             if m:
                 return int(m.group(1)), int(m.group(2))
+    return None
+
+
+def crop_verdict(want, got):
+    """Could `got` (the file on disk) be the uncropped parent of `want` (the
+    shape the document names)?
+
+    photo-selection-04 concluded that its frames were cropped to 16:9 in Photos
+    and that an unmodified-original export therefore cannot match them by
+    dimension. Once HEIC was readable the arithmetic made that concrete:
+    `IMG_0936` wants 4032 x 2268 and the file is 4032 x 3024 — the same width,
+    a taller frame. That is exactly a 16:9 crop that kept the full width.
+    `IMG_0831` wants 3213 x 5712 against a file of 4284 x 5712: same height,
+    and 3213 is 3/4 of 4284.
+
+    So a mismatch is not automatically a wrong file. Three verdicts:
+
+      'crop'      the wanted shape fits inside the file AND shares an edge with
+                  it — the signature of a Photos crop. Same photograph.
+      'inside'    fits, but shares no edge. Possible, weaker; a hand crop.
+      'different' does not fit at all. A different photograph under the same
+                  filename, which this library is full of.
+    """
+    W, H = want
+    w, h = got
+    if W <= w and H <= h:
+        return 'crop' if (W == w or H == h) else 'inside'
+    return 'different'
+
+
+def parent_shape(want):
+    """The 4:3 frame a 16:9 shape was most likely cropped out of.
+
+    An unmodified-original export contains no 16:9 stills at all, so telling
+    someone "no file of that shape exported yet" for a 5712 x 3213 frame sends
+    them away to wait for a file this export mode cannot produce. What they
+    should be looking for is its uncropped parent: the same long edge, the short
+    edge restored to 3/4 of it.
+    """
+    W, H = want
+    if abs(W / H - 16 / 9) < 0.02:
+        return (W, round(W * 3 / 4))
+    if abs(H / W - 16 / 9) < 0.02:
+        return (round(H * 3 / 4), H)
     return None
 
 
@@ -190,7 +247,17 @@ def main():
 
     where = ' + '.join(str(d) for d in libs)
     total = sum(1 for d in libs for _ in d.iterdir())
-    print(f"\n  {doc.name} names {len(frames)} frames · {len(found)} found")
+    # Two kinds of found. A frame matched at its stated dimensions is here as
+    # the document describes it. A frame whose UNCROPPED PARENT is on disk is
+    # also here — with more pixels than the document asked for — and reporting
+    # only the first number told the reader eight fewer frames were available
+    # than actually were.
+    resolved_crops = [x for x in suspect
+                      if x[4] == 'shape' and crop_verdict(x[1], x[2]) == 'crop']
+    n_found = len(found) + len(resolved_crops)
+    extra = f" ({len(found)} at the stated size, {len(resolved_crops)} as uncropped originals)" \
+        if resolved_crops else ""
+    print(f"\n  {doc.name} names {len(frames)} frames · {n_found} found{extra}")
     print(f"  searched {where} ({total} files)\n")
     if found:
         head = ' '.join(f"{k.split()[0]:>11}" for k in SLOTS)
@@ -200,16 +267,43 @@ def main():
             print(f"  {stem:<15}{w}×{h:<6}   {dpis}   {section[:34]}")
         print("\n  dpi columns use the SHORT edge — the honest number for a square crop.")
     if suspect:
-        print(f"\n  ⚠ DOES NOT MATCH the document — {len(suspect)}:")
-        for stem, want, got, name, why in suspect:
-            note = 'different shape' if why == 'shape' else 'same shape, TURNED — verify by eye'
-            print(f"    {stem:<15} doc {want[0]}×{want[1]}, {name} is {got[0]}×{got[1]}  ({note})")
-        print("    None counted as found.")
+        crops   = [x for x in suspect if x[4] == 'shape' and crop_verdict(x[1], x[2]) == 'crop']
+        inside  = [x for x in suspect if x[4] == 'shape' and crop_verdict(x[1], x[2]) == 'inside']
+        differs = [x for x in suspect if x[4] == 'shape' and crop_verdict(x[1], x[2]) == 'different']
+        turned  = [x for x in suspect if x[4] != 'shape']
+
+        if crops:
+            print(f"\n  ✓ THE UNCROPPED ORIGINAL IS HERE — {len(crops)}:")
+            print("    The document's shape fits inside the file and shares an edge with it:")
+            print("    a Photos crop, same photograph, more pixels than the document asked for.")
+            for stem, want, got, name, _ in crops:
+                print(f"    {stem:<15} doc {want[0]}×{want[1]}  ·  {name} is {got[0]}×{got[1]}"
+                      f"   ({got[0]*got[1]/(want[0]*want[1]):.2f}x the area)")
+            print("    Still open each one: a shape is a filter, not a proof.")
+
+        if inside:
+            print(f"\n  ? MIGHT BE A CROP — {len(inside)}:")
+            print("    Fits inside the file but shares no edge, so it is a weaker signal.")
+            for stem, want, got, name, _ in inside:
+                print(f"    {stem:<15} doc {want[0]}×{want[1]}, {name} is {got[0]}×{got[1]}")
+
+        if differs or turned:
+            print(f"\n  ⚠ DOES NOT MATCH the document — {len(differs) + len(turned)}:")
+            for stem, want, got, name, why in differs + turned:
+                note = ('the wanted shape does not fit inside the file — a different photograph'
+                        if why == 'shape' else 'same shape, TURNED — verify by eye')
+                print(f"    {stem:<15} doc {want[0]}×{want[1]}, {name} is {got[0]}×{got[1]}  ({note})")
+            print("    None counted as found.")
     # Name matching cannot be relied on here: the frames this document wants are
     # mostly the duplicates, and a fresh export disambiguates them differently.
     # So for anything unresolved, offer every file of exactly the stated shape.
     unresolved = [(s, sec) for s, sec in missing]
-    unresolved += [(s, '') for s, _, _, _, _ in suspect]
+    # A frame whose uncropped original is on disk is resolved, not unresolved —
+    # listing it again under "candidates by stated shape" would send someone
+    # looking for a file they have already been handed.
+    unresolved += [(s, '') for s, _, _, _, _ in suspect
+                   if (s, ) not in [(c[0],) for c in
+                       [x for x in suspect if x[4] == 'shape' and crop_verdict(x[1], x[2]) == 'crop']]]
     if unresolved:
         by = index(libs)
         print(f"\n  candidates by stated shape — open these and read them against"
@@ -225,7 +319,18 @@ def main():
             # and 4000×3000 are simply "the old iPhone" and "the Panasonic", and
             # printing a thousand names is worse than printing none.
             if not hits:
-                print(f"    {stem:<15} {want[0]}×{want[1]}  →  no file of that shape exported yet")
+                par = parent_shape(want)
+                kin = (by.get(par, []) if par else [])
+                if par and kin:
+                    print(f"    {stem:<15} {want[0]}×{want[1]}  →  a 16:9 crop; no original has this shape."
+                          f" Look for its uncropped parent at {par[0]}×{par[1]}"
+                          f" — {len(kin)} file(s) of that shape are here")
+                elif par:
+                    print(f"    {stem:<15} {want[0]}×{want[1]}  →  a 16:9 crop; an originals export"
+                          f" will never hold this shape. Its parent would be {par[0]}×{par[1]},"
+                          f" and none is exported yet either")
+                else:
+                    print(f"    {stem:<15} {want[0]}×{want[1]}  →  no file of that shape exported yet")
             elif len(hits) <= CANDIDATE_CAP:
                 print(f"    {stem:<15} {want[0]}×{want[1]}  →  {', '.join(h.name for h in hits)}")
             else:

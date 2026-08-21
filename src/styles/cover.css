@@ -126,8 +126,37 @@
   place-items: center;
   position: relative;
 }
+/* Vertical Latin. `text-orientation: sideways` is not optional here, and the
+   reason is worth the paragraph.
+
+   The apostrophe on this line rendered as a low round dot with a word-space
+   after it — the book's own title reading "WHILE WE· RE HERE" on a hardcover
+   spine. Two earlier attempts fixed it by tightening `letter-spacing` and
+   `margin-inline`, and both failed, because tracking was never the cause.
+
+   `writing-mode: vertical-rl` with the default `text-orientation: mixed`
+   follows UAX #50: characters with Vertical Orientation "R" — every Latin
+   letter — rotate a quarter turn, and characters marked "U" stay UPRIGHT,
+   drawn centred in a full-width em box. U+2019 is "U". Measured in the
+   browser, its advance was 28 px against a 24 px font-size, nearly five times
+   its real width, while the letters beside it measured 18–30 px for a full
+   capital. The typeface was never at fault — every weight of Falutin Title
+   carries U+2019, at 0.159 em in the Regular.
+
+   `sideways` rotates the punctuation with the letters and the advance drops to
+   5.75 px, which is the glyph plus this line's 0.12 em tracking.
+
+   No negative margin is wanted now, and the `-0.06em` that used to sit here is
+   actively wrong: rendered at 4x across 0, -0.02, -0.06 and -0.10em with the
+   orientation corrected, 0 is right and by -0.06em the apostrophe crowds the R.
+   The `.spine__apos` span the build emitted for it is gone too.
+
+   This spine appears only in cover-wrap.html; Saal produce the real wrap from
+   their own template. That does not make it cosmetic — the mockup is what the
+   wrap gets checked against. */
 .spine__text {
   writing-mode: vertical-rl;
+  text-orientation: sideways;
   font-family: var(--font-display);
   font-size: var(--t-sub);
   letter-spacing: 0.12em;
@@ -135,35 +164,15 @@
   white-space: nowrap;
   margin: 0;
 }
-/* The apostrophe on the spine was rendering as a low round dot with a word-space
-   after it — "WHILE WE· RE HERE" on a hardcover spine. Two earlier attempts to
-   fix it by tightening `letter-spacing` and `margin-inline` failed, because
-   tracking was never the cause.
-
-   The cause is `writing-mode: vertical-rl` plus the default
-   `text-orientation: mixed`. Under UAX #50, Latin letters are Vertical
-   Orientation "R" and get rotated a quarter turn; U+2019 is "U" and stays
-   UPRIGHT, drawn centred in a full-width em box. Measured in the browser: the
-   apostrophe's advance was **28 px against a font-size of 24 px** — 4.9x its
-   real width — while every letter beside it measured 18 to 30 px for a full
-   capital. The font is not at fault: FalutinTitle-Regular has U+2019 at
-   0.159 em, and every weight carries it.
-
-   `sideways` rotates the punctuation with the letters, and the advance drops
-   from 28 px to 5.75 px, which is the glyph plus the 0.12em tracking.
-
-   No negative margin is needed now, and the one that was here is actively
-   wrong: rendered at 4x across 0, -0.02, -0.06 and -0.10em with the
-   orientation corrected, 0 is right and by -0.06em the apostrophe is crowding
-   the R. The `.spine__apos` span it hung on has been removed from the build.
-
-   This spine lives only in cover-wrap.html, the mockup. Saal produce the real
-   wrap from their own template — but the mockup is what the wrap gets checked
-   against, so it has to be right. */
-.spine__text { text-orientation: sideways; }
 
 .spine__author {
   writing-mode: vertical-rl;
+  /* Sideways for the same reason as .spine__text above. This line is "Adam
+     Hickey" — all Latin letters, so `mixed` renders it identically today. It is
+     declared anyway: the moment this string gains a full stop, a hyphen or an
+     accented character, `mixed` stands that one character upright in a
+     full-width box and the line breaks exactly the way the title did. */
+  text-orientation: sideways;
   font-family: var(--font-text);
   font-size: var(--t-fine);
   letter-spacing: 0.28em;

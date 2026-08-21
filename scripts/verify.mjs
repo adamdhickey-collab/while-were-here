@@ -191,7 +191,27 @@ check('every reproduced entry reaches the page', dropped.length === 0,
   dropped.length ? dropped.slice(0, 4).join('; ') + (dropped.length > 4 ? ` (+${dropped.length - 4})` : '')
                  : 'checked entry by entry against the printed text');
 
-/* 11. Facts that are verified but have not reached a page. Reported, never
+/* 11. Vertical text declares its orientation. This is the one check that reads
+       a stylesheet rather than the built page, and it is here because the book's
+       own title printed as "WHILE WE· RE HERE" on the spine for weeks.
+       `writing-mode: vertical-rl` with the default `text-orientation: mixed`
+       rotates Latin letters and leaves UAX #50 "U" characters — the apostrophe
+       among them — standing upright in a full-width em box. Two rounds of
+       measuring `letter-spacing` failed to find it because tracking was never
+       the cause. Any Latin text set vertically wants `sideways`, so a rule that
+       goes vertical without saying which is worth a second look. */
+const cssFiles = fs.readdirSync(P('src/styles')).filter((f) => f.endsWith('.css'));
+const vertical = [];
+for (const f of cssFiles) {
+  const css = fs.readFileSync(P('src/styles', f), 'utf8').replace(/\/\*[\s\S]*?\*\//g, '');
+  for (const m of css.matchAll(/([^{}]+)\{([^}]*writing-mode\s*:\s*vertical[^}]*)\}/g)) {
+    if (!/text-orientation/.test(m[2])) vertical.push(`${f} ${m[1].trim().split('\n').pop().trim()}`);
+  }
+}
+check('vertical text declares text-orientation', vertical.length === 0,
+  vertical.length ? vertical.join(', ') : 'no vertical rule leaves orientation to the default');
+
+/* 12. Facts that are verified but have not reached a page. Reported, never
        failed: registering a claim before its spread exists is correct. */
 const printedLower = text.toLowerCase();
 const STOP = new Set(['about','above','after','their','there','these','those','which','while','would','because','between','through','around','other','under','where','with','from','that','this','than','then','they','been','have','into','more','most','only','over','some','such','were','when']);

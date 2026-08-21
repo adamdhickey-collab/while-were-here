@@ -33,13 +33,28 @@ Two details that will bite anyone who skips them:
   · Where the document states a frame's dimensions, they are checked against the
     file and a mismatch is reported rather than silently accepted. This is not
     fussiness. iPhone restarts its IMG_#### counter, so this library holds
-    several distinct photographs under one name: `IMG_1638` on disk is a night
-    street parade with a brass band, while the document's `IMG_1638` is the
-    Alcobaça nave. The dimension check caught that one and two others.
+    several distinct photographs under one name: `IMG_1638.JPG` is a night
+    street parade with a brass band, while `IMG_1638.HEIC`, in the same folder,
+    is the Alcobaça nave the document names. The dimension check flags such
+    collisions — and for a while it was flagging the right frames on the
+    strength of the wrong file. See `find_all`.
 
-    It is a guard, not a proof — two photographs can share a name AND a shape.
-    Open every frame and read it against the document's one-line description
-    before placing it.
+    It is a guard, not a proof, and by 21 Aug it had produced errors in BOTH
+    directions:
+
+      · False alarms. The guard was reading whichever file `find` returned
+        first, and `.jpg` sorted before `.heic` while 3,147 stems in this export
+        have both. `IMG_1638.JPG` is a night street parade; `IMG_1638.HEIC` is
+        the Alcobaca nave the document actually names. Four frames written off
+        as "different photographs" were the right photographs under the wrong
+        extension — the nave, a woman watching coloured light on a wall, a moss
+        trunk, and a bamboo path. Every file under a stem is ranked now.
+
+      · False passes. `IMG_5483.HEIC` matches its stated 3024 x 4032 EXACTLY
+        and is a dog on a gravel path, not an artisan at a bench.
+
+    So: open every frame and read it against the document's one-line description
+    before placing it. An exact dimension match is not proof either.
 
   · These originals carry EXIF orientation, which the Facebook archive did not
     because Facebook bakes rotation in and strips the tag. Dimensions here are
@@ -122,18 +137,36 @@ def named(doc: Path):
     return [(n, s) for n, s in out if not (n in seen or seen.add(n))]
 
 
-def find(stem: str, libs):
-    """The document's exact spelling, or the same name with the space as an
+def find_all(stem: str, libs):
+    """EVERY file with this stem, not the first one found.
+
+    The document's exact spelling, or the same name with the space as an
     underscore. NEVER the stripped base: `IMG_2946 2` and `IMG_2946` are two
     different photographs, and treating them as one put a cat where a carved
-    magic square was supposed to go."""
+    magic square was supposed to go.
+
+    This returned a single path until 21 Aug 2026, taking the first extension
+    that existed in EXTS order — which put `.jpg` ahead of `.heic`. **3,147
+    stems in this export have BOTH**, and they are frequently not the same
+    photograph: `IMG_5248.JPG` is a 3264 x 2448 frame from February 2017 and
+    `IMG_5248.HEIC` is the 5712 x 4284 street this book actually prints, eight
+    years apart under one name in one folder.
+
+    Ten of the frames this document names were affected, every one of them
+    reported as "does not match" on the strength of a JPG nobody wanted. Eight
+    of those ten resolve the moment the HEIC is considered — including
+    `IMG_1638`, which the docstring at the top of this file confidently called
+    a night street parade rather than the Alcobaca nave. That conclusion was
+    reached from the wrong file.
+    """
+    out = []
     for lib in libs:
         for cand in (stem, stem.replace(' ', '_')):
             for ext in EXTS:
                 p = lib / (cand + ext)
                 if p.exists():
-                    return p
-    return None
+                    out.append(p)
+    return out
 
 
 # "**IMG_2946 2** · 2268 × 4032" — the document states dimensions for most frames.
@@ -226,12 +259,27 @@ def main():
     doc_text = doc.read_text(encoding='utf-8')
     found, missing, suspect = [], [], []
     for stem, section in frames:
-        p = find(stem, libs)
-        if not p:
+        paths = find_all(stem, libs)
+        if not paths:
             missing.append((stem, section))
             continue
-        w, h = shape(p)
         want = stated_dims(doc_text, stem)
+        # With several files under one stem, rank them by how well each answers
+        # the document rather than by file extension. Exact match first, then a
+        # frame the wanted shape could have been cropped out of, then the rest.
+        def rank(path):
+            w, h = shape(path)
+            if want and (w, h) == tuple(want):
+                return (0, 0)
+            if want and sorted((w, h)) == sorted(want):
+                return (1, 0)
+            if want and crop_verdict(want, (w, h)) == 'crop':
+                return (2, -(w * h))
+            if want and crop_verdict(want, (w, h)) == 'inside':
+                return (3, -(w * h))
+            return (4, -(w * h))
+        p = min(paths, key=rank) if want else paths[0]
+        w, h = shape(p)
         if want and sorted(want) != sorted((w, h)):
             suspect.append((stem, want, (w, h), p.name, 'shape'))
             continue
@@ -277,13 +325,13 @@ def main():
             for stem, want, got, name, _ in crops:
                 print(f"    {stem:<15} doc {want[0]}×{want[1]}  ·  {name} is {got[0]}×{got[1]}"
                       f"   ({got[0]*got[1]/(want[0]*want[1]):.2f}x the area)")
-            print("    MEASURED PRECISION: all eight of these were opened on 21 Aug and only")
-            print("    THREE were the photograph the document describes. Two more were the right")
-            print("    subject with a wrong line written about them; three were something else")
-            print("    entirely — a dog on a lawn, a hibiscus, a dog at a screen door. 4032×3024")
-            print("    is the shape of 16,248 files in this library, so sharing an edge with it")
-            print("    is very weak evidence. Treat this list as a shortlist to open, never as")
-            print("    an answer.")
+            print("    MEASURED PRECISION: the first EIGHT of these were opened on 21 Aug and")
+            print("    only THREE were the photograph the document describes. Two more were the")
+            print("    right subject with a wrong line written about them; three were something")
+            print("    else entirely — a dog on a lawn, a hibiscus, a dog at a screen door.")
+            print("    4032×3024 is the shape of 16,248 files in this library, so sharing an edge")
+            print("    with it is very weak evidence. Treat this list as a shortlist to open,")
+            print("    never as an answer.")
 
         if inside:
             print(f"\n  ? MIGHT BE A CROP — {len(inside)}:")

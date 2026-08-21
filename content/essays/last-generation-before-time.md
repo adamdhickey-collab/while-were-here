@@ -76,7 +76,8 @@ spreads:
       the sequence exactly as printed. Notice which delays and decisions the
       object expects a person to manage.
   - type: closing
-    quote: Memory can preserve a former rule after the world stops using it.
+    quote: Absence was not a setting selected from a menu. It was what happened
+      when a body moved beyond the length of a wire.
     line: For a little while, one generation can still describe both worlds from inside them.
     blocks: [flow-4a, flow-4b]
 ---

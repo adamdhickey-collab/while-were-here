@@ -47,10 +47,16 @@ A diagram: cross-section, cycle, network, scale comparison. Either drawn in code
 ### 4 · MAP
 Topographic, bathymetric, survey, star chart. Rumsey territory.
 
-- **Lives in** full bleed beneath type · section divider · printed endpapers
-- **Stages** II–III
-- **Treatment** Either full-bleed as an image, or dropped to 12–18% opacity as a
-  ground under text. Never in between.
+- **Lives in** full bleed beneath type · section divider · printed endpapers ·
+  a band across a reading spread
+- **Stages** I–III
+- **Treatment** Full-bleed as an image, dropped to 12–18% opacity as a ground
+  under text, or run full-measure as a band that interrupts a reading spread.
+  What it must never be is a picture of a map sitting in a column at the size of
+  a photograph — at band width it spans the measure, or it is one of the other
+  two. (Widened 21 Aug 2026. The rule said full bleed or ground and nothing
+  between, and the only map actually in the book is a 236 mm band. Written from
+  the plan rather than the object; the object was right.)
 - **Rule** Never on the same spread as a plate. They are both documents and they
   will fight.
 
@@ -244,7 +250,7 @@ afterwards:
 
 | Stage | Plates | Specimens | Figures | Maps | Micrographs | Ephemera | Hand |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| **I** Observe | — | 2–3 | 1 | — | — | light | 2–3 |
+| **I** Observe | — | 2–3 | 1 | 1 | — | light | 2–3 |
 | **II** Notice | 2–3 | 4–6 | 3–4 | 1–2 | — | moderate | 2–3 |
 | **III** Understand | 2–3 | 2–3 | 4–5 | 1–2 | 3–4 | moderate | 1–2 |
 | **IV** Expand | 1–2 | 1 | 3–4 | — | 4–6 | light | 1 |

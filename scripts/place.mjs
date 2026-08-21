@@ -29,7 +29,7 @@ const ROLES = {
   plate:      { stages: [2, 3, 4],    note: 'used whole, never cut out or taped; one per spread' },
   specimen:   { stages: [1, 2, 3, 4, 5], note: 'cut out, no drop shadow, must carry a label' },
   figure:     { stages: [2, 3, 4],    note: 'recoloured to the stage; must argue something the prose does not' },
-  map:        { stages: [2, 3],       note: 'full bleed or 12–18% ground, nothing between; never beside a plate' },
+  map:        { stages: [1, 2, 3],    note: 'full bleed, 12–18% ground, or a full-measure band; never a photograph-sized picture in a column, and never beside a plate' },
   micrograph: { stages: [3, 4],       note: 'dark ground, type reversed out, always a scale bar' },
   ephemera:   { stages: [1, 2, 3, 4, 5], note: 'applied to specimen or personal only, never to a plate' },
   texture:    { stages: [1, 2, 3, 4, 5], note: 'set per stage, not per asset; multiply blend' },

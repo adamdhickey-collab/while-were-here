@@ -272,7 +272,19 @@ export const dedication = (bookData) => ({
              rule: the stack is a decision, not a by-product of the measure.
              "who handed me the right book" runs 104mm in the display face, so
              no width cap produces this break and text-wrap: balance actively
-             prefers the wrong one. */
+             prefers the wrong one.
+
+             TESTED against a rewrite, 21 Aug 2026, because Adam is changing
+             this line and it should not need a layout change to do it. Rendered
+             at trim with five candidates — no comma and short, no comma and
+             long, two commas, and one running to four lines. Nothing broke,
+             nothing overflowed, and `max-width: 128mm` wraps the comma-less
+             ones into balanced lines on its own.
+
+             One case is mild and worth knowing rather than fixing: with TWO
+             commas the first-comma rule can leave a short opening line, as in
+             "For my mother, / my father, and the dog who / walked it with me".
+             Still correct, just stackier. Anything is safe to write here. */
           const i = bookData.dedication.indexOf(',');
           return i < 0 ? esc(bookData.dedication)
             : `${esc(bookData.dedication.slice(0, i + 1))}<br>${esc(bookData.dedication.slice(i + 1).trim())}`;

@@ -90,3 +90,23 @@ export const press = process.env.BOOK_PRESS === '1';
 export const web = process.env.BOOK_WEB === '1';
 
 export default geometry;
+
+/* PRESS BUILD, 21 Aug 2026 — read this before changing the pdf scripts.
+ *
+ * `npm run pdf:press` did not build in press mode. It ran `npm run build`, the
+ * plain proof build, and then asked vivliostyle for a press-ready preflight —
+ * so the file called press-ready had `--bleed-out: 0mm` and no crop marks, with
+ * every full-bleed photograph sitting exactly on the trim. Normal cutting
+ * variance is around a millimetre either way, which on that file is a white
+ * sliver down the edge of the dog, the hive, the staircase and Adam's father.
+ *
+ * The preflight flags were never the problem; the build behind them was. The
+ * script now sets BOOK_PRESS=1 explicitly and restores the proof build after,
+ * so a stray press build cannot leave bleed and crop marks in the preview.
+ *
+ * Check it the same way every time: the build prints which mode it used.
+ *   proof  →  "proof: trimmed, no marks"
+ *   press  →  "PRESS: bleed + crop marks"
+ * If a press deliverable was made by a run that printed the first line, it is
+ * the wrong file.
+ */

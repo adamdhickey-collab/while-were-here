@@ -636,3 +636,64 @@ nobody reads the list the way I first wrote it.
 dome, the bridge at Córdoba, and the Montserrat switchbacks — and the last of
 those bears on the essay whose closing plate is on the shot list, since
 `pilgrimage-07-switchbacks` is already a mule train on a canyon wall.
+
+### The reconciler was reading the wrong file, 3,147 times over — 21 Aug 2026
+
+`find()` returned the first extension that existed, in `EXTS` order, and `.jpg`
+sorted before `.heic`. **3,147 stems in this export have both**, in the same
+folder, and they are frequently not the same photograph.
+
+The clearest case is `IMG_5248`, which is already in the book as
+`field-note-03-street-and-dog`:
+
+    IMG_5248.JPG    3264 × 2448    22 Feb 2017
+    IMG_5248.HEIC   5712 × 4284    09 Oct 2025   ← the street this book prints
+
+Eight years apart, one name, one folder.
+
+**Ten of the frames this document names were affected**, every one of them
+reported as *"does not match — a different photograph."* On the strength of a
+JPG nobody wanted. `find_all` now returns every file under a stem and ranks
+them by how well each answers the document — exact match, then transposed, then
+crop-parent, then the rest — instead of by file extension.
+
+**Four of those ten are the right photograph and were opened to confirm it:**
+
+| frame | the document says | the HEIC is |
+| --- | --- | --- |
+| `IMG_1638` | the Alcobaça nave, receding, no congregation | **Exactly that.** Empty benches down a Cistercian nave, light from the clerestory. 4284 × 5712 — **363 dpi** at 300 mm full bleed |
+| `IMG_1735` | a woman from behind, alone, watching a scatter of light | **Exactly that.** A stone chapel, coloured light thrown from a stained window onto a bare wall, amphorae ranged along the base, her back to the camera. 5712 × 4284 |
+| `IMG_1562` | a bamboo path with two walkers going away | **Exactly that.** Two figures on a boardwalk through bamboo, framed by palm trunks, both walking away. 5712 × 4284 |
+| `IMG_1390` | moss and lichen up a tree trunk, filling the frame | **Exactly that.** 4284 × 5712 |
+
+**This overturns a documented finding.** `scripts/selection.py` stated in its own
+docstring that "`IMG_1638` on disk is a night street parade with a brass band,
+while the document's `IMG_1638` is the Alcobaça nave," and offered it as proof
+the dimension guard was working. The guard was working on the wrong file. The
+JPG is the street parade; the HEIC beside it is the nave. Both the docstring and
+this document have been corrected rather than quietly amended — a plan document
+that silently changes its mind is worth less than one that shows where it was
+wrong.
+
+**And the guard fails in the other direction too.** `IMG_5483.HEIC` matches its
+stated `3024 × 4032` **exactly** and is a black dog on a gravel path with the
+photographer's long shadow — not "an artisan at a bench, hands and tools, face
+down and away." It is now sitting in the confident `found` table with a dpi
+figure beside it. **An exact dimension match is not proof either.**
+
+### Seven frames are now verified by eye and ready — 21 Aug 2026
+
+| frame | subject | native | dpi at 300 mm |
+| --- | --- | --- | --- |
+| `IMG_0831` | the muqarnas dome at the Alhambra | 4284 × 5712 | **363** |
+| `IMG_1638` | the Alcobaça nave | 4284 × 5712 | **363** |
+| `IMG_1390` | moss and lichen up a trunk | 4284 × 5712 | **363** |
+| `IMG_1735` | a woman watching coloured light on a wall | 5712 × 4284 | **363** |
+| `IMG_1562` | a bamboo path, two walkers going away | 5712 × 4284 | **363** |
+| `IMG_0964` | the Roman bridge at Córdoba at night | 3024 × 4032 | 256 |
+| `IMG_0775` | Montserrat switchbacks | 3024 × 4032 | 256 |
+
+Five of the seven are 24-megapixel frames printing at **363 dpi across a
+300 mm page** — better than all but a handful of images already in the book,
+and more than four times the 81–87 dpi the lowest plates are living with. Nobody
+in any of them is facing the camera.

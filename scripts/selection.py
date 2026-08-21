@@ -163,7 +163,15 @@ def main():
         w, h = shape(p)
         want = stated_dims(doc_text, stem)
         if want and sorted(want) != sorted((w, h)):
-            suspect.append((stem, want, (w, h), p.name))
+            suspect.append((stem, want, (w, h), p.name, 'shape'))
+            continue
+        # Orientation is not cosmetic. A portrait and a landscape frame off the
+        # same sensor are different photographs, and comparing sorted dimensions
+        # hid that: IMG_5483 is described as 3024×4032, the file is 4032×3024,
+        # and it is a garden bed rather than an artisan at a bench. Flag rather
+        # than reject, because a stray EXIF tag can also transpose a right file.
+        if want and tuple(want) != (w, h):
+            suspect.append((stem, want, (w, h), p.name, 'turned'))
             continue
         found.append((stem, section, p, w, h))
 
@@ -179,15 +187,16 @@ def main():
             print(f"  {stem:<15}{w}×{h:<6}   {dpis}   {section[:34]}")
         print("\n  dpi columns use the SHORT edge — the honest number for a square crop.")
     if suspect:
-        print(f"\n  ⚠ WRONG FILE under the right name — {len(suspect)}:")
-        for stem, want, got, name in suspect:
-            print(f"    {stem:<15} document says {want[0]}×{want[1]}, {name} is {got[0]}×{got[1]}")
-        print("    Not counted as found. Check before trusting either.")
+        print(f"\n  ⚠ DOES NOT MATCH the document — {len(suspect)}:")
+        for stem, want, got, name, why in suspect:
+            note = 'different shape' if why == 'shape' else 'same shape, TURNED — verify by eye'
+            print(f"    {stem:<15} doc {want[0]}×{want[1]}, {name} is {got[0]}×{got[1]}  ({note})")
+        print("    None counted as found.")
     # Name matching cannot be relied on here: the frames this document wants are
     # mostly the duplicates, and a fresh export disambiguates them differently.
     # So for anything unresolved, offer every file of exactly the stated shape.
     unresolved = [(s, sec) for s, sec in missing]
-    unresolved += [(s, '') for s, _, _, _ in suspect]
+    unresolved += [(s, '') for s, _, _, _, _ in suspect]
     if unresolved:
         by = index(libs)
         print(f"\n  candidates by stated shape — open these and read them against"

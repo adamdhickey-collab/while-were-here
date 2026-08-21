@@ -370,9 +370,15 @@ Three caught so far, all of which would have reached the page:
 | `IMG_1638` | the Alcobaça nave, receding, no congregation | a night street parade with a brass band |
 | `IMG_1562` | a bamboo path with two walkers going away | a man on a seafront with moored boats |
 | `IMG_2946 2` | a magic square carved into the Sagrada Família | *(as `IMG_2946`)* a cat asleep under a tarp |
+| `IMG_5483` | an artisan at a bench, hands and tools, mid-cut | a garden bed of hostas, irises and tulips |
 
 `npm run selection` now checks the pixel dimensions this document states against
-the file it finds and refuses to count a mismatch. That works because the wanted
+the file it finds and refuses to count a mismatch. **Orientation counts.** The
+first version compared sorted dimensions, so 3024 × 4032 and 4032 × 3024 looked
+identical and `IMG_5483` — a garden bed where an artisan should be — was
+reported as found. A portrait and a landscape frame off one sensor are different
+photographs. Same-shape-but-turned is now flagged for the eye rather than
+accepted, since a stray EXIF tag can also transpose a right file. That works because the wanted
 frames are mostly 3213 × 5712, 5712 × 3213, 2268 × 4032 or 4000 × 3000, while
 the colliding older files are 3264 × 2448 — but it is a guard, not a proof. Two
 photographs can share a name *and* a shape.

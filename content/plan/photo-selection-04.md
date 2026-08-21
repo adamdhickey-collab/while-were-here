@@ -854,3 +854,16 @@ line disagrees with the photograph.** 2 still unlocated (`IMG_2944`'s square
 crop and `IMG_2630`'s 16:9, whose parents exist but whose crops were never
 confirmed against the described subject). Only two of the 39 turned out to
 require the edited export at all — the rest resolved from originals.
+
+### The renders the document was written against are arriving — 21 Aug, evening
+
+The export is restarted as three pieces instead of one fragile GUI run — see
+[open-questions](open-questions.md) item 6 for the machinery. What matters for
+this document: `~/Desktop/photo library edits` is filling with the **rendered
+crops themselves**, and the first wanted frame to land, `IMG_0831.jpeg`, measures
+**exactly 3213 × 5712 — the dimensions this document states.** After a day of
+inferring the crops from their 4:3 parents, the crops are simply here.
+
+Placement guidance stands as written in the earlier table: where the crop is the
+composition, the render is the photograph; where maximum pixels matter, the
+original has a third more. Both now exist on disk for every verified frame.

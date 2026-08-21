@@ -13,6 +13,8 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { createRequire } from 'node:module';
+
+import { DIR as CJK_DIR, unlatinChars, parseRanges, carries, manifest as cjkManifest } from './lib/cjk.mjs';
 import matter from 'gray-matter';
 import MarkdownIt from 'markdown-it';
 
@@ -716,60 +718,6 @@ async function installLicensedFonts(out) {
   return { css, found };
 }
 
-/* Faces for the characters the Latin faces do not have.
- *
- * The book prints a verbatim data export and a few of its entries are Korean,
- * Japanese and Chinese. Nothing in FONTS covers them, so Chromium fell back to
- * a system CJK face — CFF, which it then wrote into the PDF as Type 3 glyph
- * procedures, the one outcome the static-instance rule above exists to avoid.
- * Worse, in a headless render it found no fallback at all for the Han
- * ideographs and dropped them silently, which a page promising an unedited
- * record cannot afford.
- *
- * Noto ships ~124 unicode-range subsets per weight, 80 MB the family. The book
- * needs a couple of dozen characters. So rather than name files, read each
- * subset's range out of the package's own stylesheet and take only the files
- * that actually carry a character the book prints — a few hundred KB, and it
- * stays correct as the content changes. JP is asked first because it carries
- * the kana and the ideographs; KR is only ever reached for Hangul.
- */
-const CJK = [
-  { spec: '@fontsource/noto-sans-jp/400.css', family: 'Noto Sans JP' },
-  { spec: '@fontsource/noto-sans-kr/400.css', family: 'Noto Sans KR' },
-];
-
-/* Everything from the CJK radicals up. Below this line the Latin faces cover
-   what the book actually uses, punctuation and dashes included. */
-const CJK_FLOOR = 0x2E80;
-
-/** The codepoints in a composed document that no Latin face covers. */
-function unlatinChars(html) {
-  const need = new Set();
-  for (const ch of html) {
-    const c = ch.codePointAt(0);
-    if (c >= CJK_FLOOR) need.add(c);
-  }
-  return need;
-}
-
-/** `unicode-range: U+30a2,U+4e00-9fff` → [[0x30a2,0x30a2],[0x4e00,0x9fff]] */
-function parseRanges(text) {
-  return text.split(',').map((r) => {
-    const [lo, hi] = r.trim().replace(/^U\+/i, '').split('-');
-    return [parseInt(lo, 16), parseInt(hi ?? lo, 16)];
-  });
-}
-
-/** Every subset a fontsource stylesheet declares, as { file, ranges, range }. */
-function subsetsOf(cssFile) {
-  const css = fs.readFileSync(cssFile, 'utf8');
-  const out = [];
-  for (const m of css.matchAll(/src:\s*url\(\.\/files\/([^)]+\.woff2)\)[\s\S]*?unicode-range:\s*([^;]+);/g)) {
-    out.push({ file: m[1], ranges: parseRanges(m[2]), range: m[2].trim() });
-  }
-  return out;
-}
-
 /* Faces are resolved through Node rather than by joining `root/node_modules`.
    The two are the same thing in an ordinary clone, and different the moment the
    tree is not one: a git worktree, or any layout that hoists node_modules to a
@@ -781,47 +729,48 @@ function faceFile(spec) {
   try { return require.resolve(spec); } catch { return null; }
 }
 
-/* Copy only the subsets that carry a character this book prints. Each family
-   is asked for what is still uncovered, so KR contributes Hangul and not a
-   second copy of the ideographs JP already answered for. */
+/* Install the committed Noto subsets — see scripts/lib/cjk.mjs for why they are
+   committed rather than pulled from a dependency. Nothing is chosen here: the
+   choosing happened in `npm run fonts:cjk`, and this only carries the result
+   into the build and reports anything the book prints that it does not cover. */
 function installCjk(dir, need) {
+  const cjk = cjkManifest(root);
+  if (!cjk) {
+    console.warn(`  ! ${CJK_DIR}/ is missing — run \`npm run fonts:cjk\`.`);
+    console.warn(`    ${need.size} character${need.size === 1 ? '' : 's'} the Latin faces cannot set will be dropped or drawn as Type 3.`);
+    return { css: '', files: 0, bytes: 0, covered: 0 };
+  }
+
   let css = '';
   let files = 0;
   let bytes = 0;
   const covered = new Set();
 
-  for (const { spec, family } of CJK) {
-    const cssFile = faceFile(spec);
-    if (!cssFile) { console.warn(`  ! missing font ${spec}`); continue; }
-    const filesDir = path.join(path.dirname(cssFile), 'files');
-    const outstanding = [...need].filter((c) => !covered.has(c));
-    if (!outstanding.length) break;
-
-    for (const sub of subsetsOf(cssFile)) {
-      const carries = outstanding.filter((c) => sub.ranges.some(([a, b]) => c >= a && c <= b));
-      if (!carries.length) continue;
-      const src = path.join(filesDir, sub.file);
-      if (!fs.existsSync(src)) continue;
-      fs.copyFileSync(src, path.join(dir, sub.file));
-      for (const c of carries) covered.add(c);
-      files += 1;
-      bytes += fs.statSync(src).size;
-      css += `@font-face {
-  font-family: "${family}";
+  for (const sub of cjk.subsets) {
+    const src = path.join(root, CJK_DIR, sub.file);
+    if (!fs.existsSync(src)) { console.warn(`  ! ${CJK_DIR}/${sub.file} is in the manifest but not on disk`); continue; }
+    const ranges = parseRanges(sub.range);
+    const takes = [...need].filter((c) => carries(ranges, c));
+    if (!takes.length) continue;               // needed once, not needed now
+    fs.copyFileSync(src, path.join(dir, sub.file));
+    for (const c of takes) covered.add(c);
+    files += 1;
+    bytes += fs.statSync(src).size;
+    css += `@font-face {
+  font-family: "${sub.family}";
   src: url("fonts/${sub.file}") format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: block;
   unicode-range: ${sub.range};
 }\n`;
-    }
   }
 
   /* A character with no face is the failure this whole section exists to stop
      being silent — it is dropped from the page, or drawn as a box. */
   const orphans = [...need].filter((c) => !covered.has(c));
   if (orphans.length) {
-    console.warn(`  ! ${orphans.length} character${orphans.length === 1 ? '' : 's'} no embedded face covers:`);
+    console.warn(`  ! ${orphans.length} character${orphans.length === 1 ? '' : 's'} no embedded face covers — run \`npm run fonts:cjk\`:`);
     console.warn(`    ${orphans.map((c) => `U+${c.toString(16).toUpperCase()} ${String.fromCodePoint(c)}`).join('  ')}`);
   }
   return { css, files, bytes, covered: covered.size };

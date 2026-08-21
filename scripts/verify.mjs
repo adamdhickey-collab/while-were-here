@@ -13,6 +13,7 @@
  * manifest, a ledger or a stylesheet claiming something the object does not do.
  */
 import fs from 'node:fs';
+import { execFileSync } from 'node:child_process';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { geometry } from '../book.config.js';
@@ -51,15 +52,31 @@ const pages = (html.match(/<section class="page/g) || []).length;
 const want = geometry.cover.pageCount + 2;   // + two cover surfaces
 check('page count', pages === want, `${pages} sections, expected ${want} (${geometry.cover.pageCount} interior + 2 covers)`);
 
-/* 2. Copy overflow CANNOT BE CHECKED HERE, and pretending otherwise is worse
-      than not checking. `has-overflow` is added by src/scripts/preview.js in a
-      live browser, after layout; the build never emits it, so testing the HTML
-      for it always passes and proves nothing.
-      The real check needs a browser and already exists: `npm run shots` counts
-      `.page.has-overflow` in Playwright and prints a warning. This line exists
-      to say so, rather than leaving a green tick that means nothing. */
-note('copy overflow',
-  'not checkable here — needs a browser. Run `npm run shots` or open the preview.');
+/* 2. Copy overflow cannot be answered by reading the built HTML — `has-overflow`
+      is added by src/scripts/preview.js in a live browser, after layout, so
+      testing the file for it always passes and proves nothing. That is what
+      this line used to say, and saying it was all it did.
+      It now hands the question to `scripts/overflow.mjs`, which drives the same
+      rule in a real browser. Where there is no browser — CI — it goes back to
+      being a note. Three states, and the third one is honest.
+      Verified to fail: injecting a fat paragraph into one `.prose` reports
+      folio 13, naming the block and the millimetres it runs over by. */
+let flow = { available: false };
+try {
+  flow = JSON.parse(execFileSync('node', [P('scripts/overflow.mjs'), '--json'],
+    { encoding: 'utf8', stdio: ['ignore', 'pipe', 'ignore'] }));
+} catch { /* no browser, or the script is unhappy — the note below covers it */ }
+
+if (!flow.available) {
+  note('copy overflow',
+    'no browser here — not checked. Run `npm run overflow` locally, or open the preview.');
+} else {
+  const over = flow.overflowing || [];
+  check('copy overflow', over.length === 0,
+    over.length
+      ? `${over.length} page(s): ${over.map((o) => `folio ${o.folio}`).join(', ')} — run \`npm run overflow\` for the millimetres`
+      : `${flow.pages} pages measured in a browser, none overflowing`);
+}
 
 /* 3. Placeholder text. "ISBN & barcode placement" printed on the back cover of
       every proof for weeks before anyone read it as text rather than as layout. */

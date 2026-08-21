@@ -22,7 +22,12 @@ const args = process.argv.slice(2);
 const all = args.includes('--all');
 const only = args.filter((a) => !a.startsWith('--'));
 
-const TYPES = { '.html': 'text/html', '.css': 'text/css', '.js': 'text/javascript',
+// The charset is NOT optional here. Without it Chromium falls back to
+// windows-1252 for a served document, and every curly quote, em dash and
+// middle dot in this book comes back as mojibake — in shot PNGs used to judge
+// typography, and in the page labels this reports. The file is UTF-8; say so.
+const TYPES = { '.html': 'text/html; charset=utf-8', '.css': 'text/css; charset=utf-8',
+  '.js': 'text/javascript; charset=utf-8',
   '.png': 'image/png', '.jpg': 'image/jpeg', '.jpeg': 'image/jpeg', '.woff2': 'font/woff2' };
 
 const server = createServer((req, res) => {

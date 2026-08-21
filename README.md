@@ -7,9 +7,15 @@ A print-first coffee-table book. HTML, CSS and a small amount of JavaScript are
 the production system; the deliverable is a press-ready PDF for a 300 × 300 mm
 hardcover. It is not a website.
 
-**Status: prototype.** One complete essay laid out across eight spread types,
-plus covers and front matter — 28 interior pages. The point is to prove the
-design language before scaling to eight essays.
+**Status: complete draft, not press-final.** Eight essays laid out across the
+full set of spread types, plus covers and front matter — **130 interior pages**,
+which is the printer's hard maximum rather than a target. Adding a spread now
+means removing one.
+
+Three things stand between this and a press file, and none of them is code:
+Saal's real paper caliper, whether Saal wants PDF/X-1a, and consent from anyone
+identifiable if the book is ever sold. They live in
+[open-questions.md](content/plan/open-questions.md).
 
 ---
 
@@ -46,8 +52,9 @@ If you cloned before installing LFS, `git lfs pull` fixes it in place.
 | `npm run fonts:cjk` | Rebuild `fonts-cjk/` when the book gains a character the Latin faces cannot set. |
 | `npm run credits` | Rebuild the attribution page from the manifest. |
 | `npm run facts` | Check `content/facts.json` and rebuild the sources page. `--strict` fails on anything unverified. |
-| `npm run verify` | **The pre-press checks, in one command.** Seven pass/fail, run against the built pages rather than the sources, plus what it cannot check and says so. `--strict` exits non-zero on any failure, which is what CI uses. |
+| `npm run verify` | **The pre-press checks, in one command.** Eight pass/fail, run against the built pages rather than the sources, plus what it cannot check and says so. `--strict` exits non-zero on any failure, which is what CI uses. |
 | `npm run selection` | Reconcile `content/plan/photo-selection-04.md` against the exported photo library — which selected frames exist yet, at what size, and the dpi they would give. |
+| `npm run overflow` | Does any page's copy run past the page? Drives the preview's own rule in a headless browser and names the folio and the millimetres. `npm run verify` calls this when a browser is present. |
 | `npm run shots` | Render spreads to PNG at trim size. `-- --all` for every spread. |
 | `npm run clean` | Remove `build/` and `dist/`. |
 
@@ -86,8 +93,13 @@ Current values — trim 300 × 300 mm, bleed 3 mm, safe area 8 mm, margins
 > 30 × 30 cm photo book, but no Saal-specific number is hard-coded anywhere.
 
 Spine width is computed, not typed: `pages / 2 × caliper + board allowance`. At
-120 pp on a 0.14 mm leaf it comes to **12.4 mm**. Change the page count in
+130 pp on a 0.17 mm leaf it comes to **15.1 mm**. Change the page count in
 `book.config.js` and the wrap mockup follows.
+
+**That 0.17 is a placeholder and the spine is linear in it** — 0.65 mm of spine
+per 0.01 mm of caliper, so a guess that is wrong by four hundredths puts the
+wrap out by 2.6 mm and the title off centre on a finished book. Get the number
+from Saal before anything is printed.
 
 ### Proof vs press
 
@@ -289,8 +301,13 @@ run `npm run dev` and watch the overflow outlines before trusting a swap.
 - Printer geometry is provisional — see above.
 - Body copy currently runs 13 pt. On a 300 mm page that is comfortable but it
   sets the copy-to-page ratio for the whole book; worth deciding deliberately.
-- The prototype is 28 interior pages for one essay. Eighteen essays at that
-  density would overshoot 130 pp, so essay pacing needs a target spread count.
+- ~~Essay pacing needs a target spread count.~~ **Settled.** Eight essays fit
+  130 interior pages, at roughly sixteen pages each: two openers, four
+  two-column reading spreads, two asymmetric, two image-and-essay, one pull
+  quote, two closing. The remainder is front matter, eight section dividers and
+  eight field notes. There is no slack left — 130 is the printer's maximum, so
+  a new spread has to displace an existing one, and that trade is the decision,
+  not the layout.
 - **Image resolution is now set by the generator, not by the press.** Thirty-two
   manifest targets were lowered on 20 August 2026 to the largest canvas ChatGPT
   actually produces — 1024 × 1024, 1536 × 1024, 1024 × 1536 — because the
@@ -306,7 +323,10 @@ run `npm run dev` and watch the overflow outlines before trusting a swap.
   Press work normally wants 300 dpi. Lowering the target changed what the
   manifest asks for, not what the paper will show, so a full-bleed opener is
   the one to revisit first — either upscale a generation already judged good,
-  or place it smaller. Note the band was never the problem it looked like: its
+  or place it smaller. **Every image has since been measured in the composed
+  book** — see [resolution-audit.md](content/plan/resolution-audit.md). Eleven
+  are under 120 dpi and all eleven are 300 mm full bleeds; three of those are
+  essay closings at 87 dpi, and a phone would take them to 256. Note the band was never the problem it looked like: its
   old 9000 px target implied 969 dpi across a 236 mm placement, because it was
   spec'd as though it ran the full 600 mm across the fold. It does not —
   `.reading__band` sits inside one page's text block.

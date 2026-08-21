@@ -33,7 +33,8 @@
     "selection": "./.venv/bin/python scripts/selection.py",
     "verify": "node scripts/verify.mjs",
     "press:check": "node scripts/press-check.mjs",
-    "fonts:cjk": "npm run build && node scripts/fonts-cjk.mjs"
+    "fonts:cjk": "npm run build && node scripts/fonts-cjk.mjs",
+    "overflow": "npm run build && node scripts/overflow.mjs"
   },
   "devDependencies": {
     "@fontsource-variable/fraunces": "^5.3.0",

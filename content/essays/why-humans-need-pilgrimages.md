@@ -73,7 +73,7 @@ spreads:
     insetOn: verso
     inset:
       image: pilgrimage-07-switchbacks
-      caption: Every one of those turns has to be walked.
+      caption: Nobody gets down without taking every turn.
   - type: image-essay
     variant: tall
     image: pilgrimage-05-stamped-booklet

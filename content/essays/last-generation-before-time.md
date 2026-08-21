@@ -88,7 +88,7 @@ spreads:
 
 <!-- block: open -->
 
-A man sits for a portrait in a studio with a painted backdrop behind him. The photographer chooses the moment, and nobody in the room sees the result. The film leaves in an envelope and comes back weeks later as prints in three sizes. There is one expression, and it becomes the way this face looks to everyone who is given a copy. It cannot be checked on the drive home. It cannot be deleted, filtered, or quietly replaced by a better frame from the same afternoon, because there is no better frame and no same afternoon to return to. Copies go to relatives who put them in drawers. The portrait belonged to a world in which an image could be complete, portable, and still unable to be revised.
+A man sits for a portrait in a studio with a painted backdrop behind him. The photographer chooses the moment, and nobody in the room sees the result. The film leaves in an envelope and comes back weeks later as a set of prints in several sizes. There is one expression, and it becomes the way this face looks to everyone who is given a copy. It cannot be checked on the drive home. It cannot be deleted, filtered, or quietly replaced by a better frame from the same afternoon, because there is no better frame and no same afternoon to return to. Copies go to relatives who put them in drawers. The portrait belonged to a world in which an image could be complete, portable, and still unable to be revised.
 
 <!-- block: flow-1a -->
 

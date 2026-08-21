@@ -50,9 +50,16 @@ candidate texts including comma-less and four-line ones; nothing breaks or
 overflows. Write anything.
 
 ### 5 · The shot list — [shot-list.md](shot-list.md)
-Seven photographs the library provably does not contain. Four cost minutes each
+Ten photographs the library provably does not contain. Four cost minutes each
 and every one frees a generated plate; `privilege-01-kitchen-laptop` alone goes
 from **106 dpi to 256** on a 300 mm full bleed that opens an essay.
+
+**Items 8–10 were added on 21 Aug and are worth more than their position
+suggests.** They are the three essay *closings*, printed 300 mm full bleed from
+1024 px files — **87 dpi, the three worst plates in the book** — and all three
+are composited from stock photographs. Shooting them fixes the resolution and
+removes half of the six images in the book that are not Adam's, in one pass.
+One of them shares a bench and a session with item 4.
 
 **One has a deadline and it is this month.** A real four-season sequence costs a
 year, so it starts in August or it does not exist. It cannot make this Christmas
@@ -73,6 +80,16 @@ cannot match the document by dimension. When the edited export reaches the newer
 photographs, `npm run selection` should start resolving frames.
 
 Then it is verification work per frame — open it, read it against the document's
-one-line description — because **eight frames so far have turned out to be
-different photographs under a wanted filename.** iPhone reuses `IMG_####`.
-`IMG_1638` is a night street parade, not the Alcobaça nave.
+one-line description — because **ten frames so far have turned out to disagree
+with the line written for them.** Eight are the wrong file: iPhone reuses
+`IMG_####`, and `IMG_1638` is a night street parade, not the Alcobaça nave. Two
+are the right file wrongly described, found only by looking — including
+`P1050320`, where the description is wrong *and* an identifiable adult is in the
+frame, which pushes it into question 3 above.
+
+The export is confirmed to render **PNG with EXIF intact**: capture dates on
+every file sampled, rotation baked into the pixels, and no generation loss. So a
+frame placed from it carries its own verified date, and `capturedSource` should
+cite the photograph rather than an album's HTML. It is also large — near 350 GB
+finished, against 638 GB free at the time of writing, with the unmodified export
+still growing. **Do not start a third export before deleting one of these two.**

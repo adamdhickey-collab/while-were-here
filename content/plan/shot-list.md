@@ -84,6 +84,60 @@ only item here that is impossible to catch up on later.
 
 ---
 
+## The three worst plates in the book are all essay closings
+
+Found while checking whether library frames could be placed — see the
+resolution audit's table of eleven images under 120 dpi. Three of those eleven
+are **closing rectos**: the last picture of an essay, printed 300 mm full bleed,
+from a 1024 × 1024 file. That is **87 dpi on paper**, and 87 dpi across a
+300 mm square is soft enough to read as a mistake rather than a choice.
+
+| slot | essay | now | from a phone |
+| --- | --- | --- | --- |
+| `intelligence-06-closing-hands` | The Intelligence Outside Your Head | 87 dpi | **256 dpi** |
+| `privilege-06-closing-cursor` | The Strange Privilege | 87 dpi | **256 dpi** |
+| `pilgrimage-06-closing-stone` | The Body Cannot Skip the Hill | 87 dpi | **256 dpi** |
+
+All three are composites adapted from Pexels photographs, so shooting them also
+removes three of the six remaining images in the book that are not Adam's. They
+are the highest-value frames left on this list by both measures at once, and
+none of them is hard to shoot.
+
+### 8 · The bench, closing · `intelligence-06-closing-hands`
+**1:1 · prints 300 mm full bleed · want 3543 px square**
+Tools set down where they were used. A pencil, a rule, sawdust. Nobody in frame.
+
+**Shoot this in the same session as item 4** — it is the same bench, and the two
+slots want it in two states. Item 4 is *waiting*: laid out, ready, work not yet
+begun. This one is *finished*: the same tools where the hands left them. Shoot
+the finished state last and do not tidy between the two frames. Two pictures of
+one bench in one essay only earns its place if the difference between them is
+legible, so if the frames end up looking alike, keep item 4 and leave this one
+generated.
+
+### 9 · The cursor · `privilege-06-closing-cursor`
+**1:1 · prints 300 mm full bleed · want 3543 px square**
+A dim room, a screen thrown out of focus, a cursor still blinking in an empty
+field after the answer has been read.
+
+The only shot on this list that needs staging, and the staging is nearly nothing:
+a real screen, a real room, lights off, focus pulled off the glass so the text is
+unreadable. **Nothing on the screen may be legible** — not a name, not a URL, not
+a message. The picture is the blink, not the content.
+
+### 10 · The hand on stone · `pilgrimage-06-closing-stone`
+**1:1 · prints 300 mm full bleed · want 3543 px square**
+One hand flat against cold worn stone, close, the wear of other hands visible in
+the surface around it.
+
+Adam's own hand, so no consent question and no posed face — the hand is the whole
+frame. Any threshold, jamb, plinth or step where other people have worn the
+surface will do; the wear has to be **visible in the picture** rather than
+asserted in a caption. That distinction has already cost this book two pieces of
+copy, both written about wear that turned out not to be in the photograph.
+
+---
+
 ## Not to be shot — recorded so it is not re-proposed
 
 The Renwick *Wonder* frames (`P1050270`–`P1050283`) are **blocked on rights**:

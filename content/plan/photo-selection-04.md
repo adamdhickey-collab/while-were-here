@@ -504,3 +504,45 @@ export is working through the oldest material: the commonest shapes so far are
 carries a 2009 date from a Sony Ericsson C905a. Every frame this document is
 waiting on was shot on later hardware. The hypothesis in the section above is
 not yet tested — it will be testable when the export reaches 2015 and after.
+
+### Seven frames opened and read against their descriptions — 21 Aug 2026
+
+Every frame the reconciler currently reports as found, viewed at size and
+compared with the line this document writes for it. One was already in the book.
+Two descriptions were wrong. One frame has a consent problem this document did
+not record.
+
+| frame | the line here | what is actually in the picture |
+| --- | --- | --- |
+| `P1050246` | "an empty crosswalk, nobody on it" | **Already placed** as `privilege-09-crosswalk`, native 4000 × 3000. Correct as far as it goes, but the right third of the frame is an excavation site — fencing, two excavators, torn ground — with the Washington Monument beyond. The picture is a crossing in front of a demolition, which is more than the line claims. |
+| `P1050250` | "a sparrow on pale gravel, small in a large frame" | **Confirmed.** A house sparrow on aggregate concrete, and it is holding a pale crumb in its bill — a detail the line misses and the better reason to use it. |
+| `P1050247` | "mackerel cloud, no ground, no horizon" | **Confirmed**, exactly. |
+| `P1050292` | "a lion's-head knocker on soft red brick" | **Confirmed** as a picture — but it is filed here under *MATERIAL — surface, no edge, no scale* and it fails that brief on both counts. There is a stone quoin down the left edge, and a door knocker is a known size, so the frame has scale. Good photograph, wrong category. |
+| `P1050326` | "a blank museum wall with the label and plinth still" | **Confirmed and better than the line.** It is the National Gallery wall where Leonardo's *Ginevra de' Benci* hangs, with the painting absent and three labels still in place: `CHILDREN'S TOUR 902`, the object label, and `DIRECTOR'S TOUR 313`. Two tour stops still pointing at nothing. See below. |
+| `IMG_1813` | "black and white, a wide lawn, a low horizon, a dozen" | **Confirmed**, and closer to twenty-five figures than a dozen. The Mall toward the Lincoln Memorial. See the note on the two versions below. |
+| `P1050320` | "a small child hauling a traffic cone across a pavement" | **Wrong, and the frame has a consent problem.** The child is walking away, hood up, back to camera, not touching a cone; the cones are behind, beside an adult lifting a metal tub. **That adult's face is visible and identifiable.** Nothing here is unusable, but it cannot be placed on the strength of this line, and it cannot be placed at any size without asking. |
+
+That is now **ten** frames where the document's line and the photograph disagree
+— eight found earlier by the dimension guard, two here by eye. The pattern holds:
+the guard catches wrong *files*, and only looking catches wrong *descriptions*.
+Both checks are needed, and looking is the one that cannot be automated.
+
+**`IMG_1813` settles which file to place.** The unmodified original is colour:
+green lawn, blue sky, a school group in bright shirts, a pleasant ordinary
+snapshot. Adam's edit is black and white, and it is a different photograph — the
+sky resolves into structured cloud, the lawn goes dry and tonal, the group
+becomes a row of silhouettes against the light. The pixels are the same and the
+picture is not. Where an edit does that, **the edited file is the photograph and
+the original is raw material**, and the table earlier in this document should be
+read with this frame as its worked example.
+
+**`P1050326` is the strongest thing in this batch.** A book whose first section
+argues that attention is a thing you have to spend deliberately has, sitting in
+the library, a photograph of the apparatus of attention still switched on over an
+absent object: the plinth, the wall, the object label, and two separate tour
+routes that both stop here to look at a painting that is not there. Nobody in the
+frame is looking at it; two pairs of legs are walking past at the edges.
+
+One discipline if it is ever used: **the picture does not say why the painting is
+gone.** Loan, conservation, cleaning, rehang — unknown, and not knowable from the
+frame. Any copy placed near it has to work with the absence and not explain it.

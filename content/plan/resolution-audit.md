@@ -56,6 +56,15 @@ That is four of the seventeen sub-150 images fixed by an afternoon's shooting,
 and one of them — the kitchen laptop — is a 300 mm full bleed that opens an
 essay.
 
+**Added 21 Aug, after this table was first written.** Three more of the eleven
+above are 300 mm full bleeds that *close* an essay — `intelligence-06-closing-hands`,
+`privilege-06-closing-cursor`, `pilgrimage-06-closing-stone`, all at 87 dpi, all
+composited from Pexels photographs. They are now items 8–10 on the shot list.
+Shooting them takes the worst three plates in the book from 87 dpi to 256 and
+removes three of the six images in the book that are not Adam's, in one pass.
+The bench closing shares a setup with item 4, so the true cost is two sessions,
+not three.
+
 ## And what the photo library is worth
 
 `privilege-09-crosswalk`, the first frame placed from Adam's own library,

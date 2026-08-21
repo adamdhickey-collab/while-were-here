@@ -1913,6 +1913,47 @@
       "capturedSource": "Facebook data export, album HTML \"Taken\" field. The JPEG EXIF was stripped on upload; Facebook kept the capture timestamp in its own metadata and returns it in the export.",
       "selection": "Facebook archive, Mobile uploads. Three frames of this book survive — the cover, a crayon page, and the sentence. The cover carries the title and the author’s name, which is what a catalogue entry needs.",
       "revision": "Cropped from 1536 × 2048 to sit the book in its cell. Not retouched, not upscaled. The catalogue entry quotes the book's interior sentence exactly, including the child's run-together \"younn\" for \"you in\". An earlier draft silently normalized it to \"you in front\", which is a direct quotation corrected without saying so. Checked against the page at full resolution before printing."
+    },
+    {
+      "id": "systems-06-geese-path",
+      "filename": "systems-06-geese-path.jpg",
+      "kind": "personal",
+      "role": "specimen",
+      "essay": "The Beauty of Systems Nobody Designed",
+      "section": "II — What Are We?",
+      "spread": "Reading · asymmetric, inset",
+      "subject": "A dozen Canada geese on autumn grass beside a paved park path, four of them walking on the asphalt in single file.",
+      "concept": "A structure laid for one purpose, used by something that did not read the plan.",
+      "purpose": "Inset beside the paragraph on order as the visible history of constraints. The path is the constraint; the geese are what met it.",
+      "aspect": "4:3",
+      "target": "2048 × 1536 px (native crop — 565 dpi at 92 mm)",
+      "status": "generated",
+      "composite": false,
+      "origin": "own photograph",
+      "captured": "Nov 01, 2015 12:41:28 pm",
+      "capturedSource": "Facebook data export, album HTML \"Taken\" field. The JPEG EXIF was stripped on upload; Facebook kept the capture timestamp in its own metadata and returns it in the export.",
+      "selection": "Facebook archive, Photos. Chosen over a black-squirrel frame from the same walk because a flock reads as a system and one squirrel does not.",
+      "revision": "Cropped 4:3 from 2048 × 2048, 28% down, to hold both the grass flock and the birds on the asphalt. Not retouched, not upscaled."
+    },
+    {
+      "id": "here-06-empty-room",
+      "filename": "here-06-empty-room.jpg",
+      "kind": "personal",
+      "role": "specimen",
+      "essay": "While We’re Here",
+      "section": "Part IV · While We’re Here",
+      "spread": "Reading · two column, inset",
+      "subject": "An empty living room: bare oak floorboards, a bay window with the light blown out behind it, a magenta front door, the edge of a brick hearth.",
+      "concept": "A room before it holds anything.",
+      "purpose": "Inset beside the paragraph on the human bracket — “every room remembered”. This is one of those rooms with nothing in it yet.",
+      "aspect": "4:3",
+      "target": "772 × 579 px (native crop — 213 dpi at 92 mm)",
+      "status": "generated",
+      "composite": false,
+      "origin": "own photograph",
+      "capturedSource": "No capture time. This is one of the 313 files in the export whose album HTML carries no “Taken” field, so the caption claims no date.",
+      "selection": "Facebook archive, New Home — Adam’s own album, captioned by him at the time: “Fabiola, Kylie, and I are loving our new home in Richfield!”",
+      "revision": "Cropped 4:3 from a 1024 × 579 frame, 62% across, to keep the window, the floor and the door. Not retouched, not upscaled."
     }
   ]
 }

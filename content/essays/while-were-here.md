@@ -31,6 +31,10 @@ spreads:
     variant: two
     blocks: [flow-2a, flow-2b]
     bandImage: here-04-window-water
+    insetOn: verso
+    inset:
+      image: here-06-empty-room
+      caption: The house on the day it was empty.
     marginNote: >-
       Earth turns once relative to the Sun in 24 hours and travels around the
       Sun at roughly 29 to 30 kilometers per second. Stillness at human scale

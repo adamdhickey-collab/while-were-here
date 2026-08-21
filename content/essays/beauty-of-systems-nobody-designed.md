@@ -61,6 +61,10 @@ spreads:
   - type: reading
     variant: aside
     blocks: [flow-3a, flow-3b]
+    insetOn: verso
+    inset:
+      image: systems-06-geese-path
+      caption: The path was poured for other feet.
     marginNote: >-
       A 2016 estimate for a seventy-kilogram reference man counted about thirty
       trillion human cells and thirty-eight trillion bacterial cells. The ratio

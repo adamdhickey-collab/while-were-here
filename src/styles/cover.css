@@ -135,23 +135,33 @@
   white-space: nowrap;
   margin: 0;
 }
-/* The spine is letterspaced 0.12em, and that tracking lands on the apostrophe
-   too, so WE'RE sits a little loose in the middle of a tight line. This closes
-   it by one notch and no more.
+/* The apostrophe on the spine was rendering as a low round dot with a word-space
+   after it — "WHILE WE· RE HERE" on a hardcover spine. Two earlier attempts to
+   fix it by tightening `letter-spacing` and `margin-inline` failed, because
+   tracking was never the cause.
 
-   Measured, not guessed. Rendered at 4x and read back at 0, -0.06, -0.10, -0.14,
-   -0.18 and -0.30em: the default was always legible and correct — a first look
-   at a small screenshot suggested a broken contraction and that was an artifact
-   of the screenshot, not the type. From -0.10em the apostrophe starts touching
-   the R, and by -0.30em the line reads WRRE. -0.06em is the last value that
-   tightens without collision.
+   The cause is `writing-mode: vertical-rl` plus the default
+   `text-orientation: mixed`. Under UAX #50, Latin letters are Vertical
+   Orientation "R" and get rotated a quarter turn; U+2019 is "U" and stays
+   UPRIGHT, drawn centred in a full-width em box. Measured in the browser: the
+   apostrophe's advance was **28 px against a font-size of 24 px** — 4.9x its
+   real width — while every letter beside it measured 18 to 30 px for a full
+   capital. The font is not at fault: FalutinTitle-Regular has U+2019 at
+   0.159 em, and every weight carries it.
 
-   In vertical-rl the inline axis runs top to bottom, so margin-inline is the
-   vertical one here. */
-.spine__text .spine__apos {
-  letter-spacing: 0;
-  margin-inline: -0.06em;
-}
+   `sideways` rotates the punctuation with the letters, and the advance drops
+   from 28 px to 5.75 px, which is the glyph plus the 0.12em tracking.
+
+   No negative margin is needed now, and the one that was here is actively
+   wrong: rendered at 4x across 0, -0.02, -0.06 and -0.10em with the
+   orientation corrected, 0 is right and by -0.06em the apostrophe is crowding
+   the R. The `.spine__apos` span it hung on has been removed from the build.
+
+   This spine lives only in cover-wrap.html, the mockup. Saal produce the real
+   wrap from their own template — but the mockup is what the wrap gets checked
+   against, so it has to be right. */
+.spine__text { text-orientation: sideways; }
+
 .spine__author {
   writing-mode: vertical-rl;
   font-family: var(--font-text);

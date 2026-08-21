@@ -328,3 +328,43 @@ comment above the rule always claimed it was doing.
 
 **Two open items, both in [open-questions](open-questions.md).** Whether a third
 object exists, and whether one word of a transcription is right.
+
+## The spine read "WHILE WE· RE HERE" — 21 Aug 2026
+
+The title of the book, on the spine of the hardcover, with a low round dot and a
+word-space where the apostrophe belongs. Found by screenshotting `cover-wrap.html`
+at 2× and enlarging, not by reading the CSS.
+
+**It had been looked at twice before and misdiagnosed both times.** The first
+look, at a small screenshot, called it broken and applied `margin-inline:
+-0.30em`, which made it read *WRRE*. The second look rendered six tracking
+values at 4×, concluded the default was correct, and settled on `-0.06em` as a
+mild tightening. Both were reasoning about **tracking**, and tracking was never
+the cause.
+
+**The cause is `text-orientation`.** The spine is `writing-mode: vertical-rl`
+with the default `text-orientation: mixed`. Under UAX #50 that rotates
+characters whose Vertical Orientation is `R` — every Latin letter — and leaves
+characters marked `U` **upright**, centred in a full-width em box. U+2019 is
+`U`. So the letters lay down sideways and the apostrophe stood up, in a box
+nearly five times too wide.
+
+Measured rather than argued: the apostrophe's advance was **28 px at a 24 px
+font-size**. `text-orientation: sideways` takes it to **5.75 px**, which is the
+font's own 0.159 em plus the line's 0.12 em tracking. The typeface was never at
+fault — every weight of Falutin Title carries U+2019.
+
+With the orientation right, the negative margin is not merely unnecessary, it is
+**wrong**: rendered at 4× across 0, −0.02, −0.06 and −0.10 em, zero is correct
+and by −0.06 em the apostrophe crowds the R. The rule and the `.spine__apos`
+span the build was emitting for it are both gone.
+
+**The lesson is the one this project keeps relearning.** Two rounds of careful
+measurement produced a confident wrong answer because they measured the wrong
+property. What finally settled it was reading a single number out of the browser
+— the character's advance — and noticing it was impossible. When a fix does not
+hold, stop tuning the value and go and find a different quantity to measure.
+
+The spine appears only in `cover-wrap.html`; Saal produce the real wrap from
+their own template. That does not make it cosmetic — the mockup is what the wrap
+gets checked against, and a spine nobody trusts is a spine nobody checks.

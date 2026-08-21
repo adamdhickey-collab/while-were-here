@@ -507,17 +507,17 @@ Horizontal frame (4:3).
 Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
 ```
 
-### walk-03-long-shadows
+### walk-03-found-water
 
-**Save as** `public/images/personal/walk-03-long-shadows.jpg` · 4:3 · target 1280 × 960 px (native — 464 dpi at 70 mm, and nothing larger)
+**Save as** `public/images/personal/walk-03-found-water.jpg` · 4:3 · target 1280 × 960 px (native — 464 dpi at 70 mm, and nothing larger)
 **Where it goes** Contact sheet, cell 3 of 3
-**Why it is there** Third cell. Same walk, later; the light has moved and so has everything else.
+**Why it is there** Third cell. Same walk — and the route ran into water that was not there the week before.
 **Watch for** Not retouched, not upscaled. Facebook stripped the EXIF, so no capture time survives — the captions carry the season, which is recorded, and claim no clock time, which is not.
 
 ```text
 A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
 
-Deeper leaf litter, the shadows longer, the dog small and far off at the left edge.
+The dog mid-splash in floodwater at the wood’s edge, leaves down to the waterline, her reflection breaking under her.
 
 Horizontal frame (4:3).
 
@@ -1360,15 +1360,15 @@ Avoid: any paper, card or background colour — the artwork must sit on full tra
 
 ### here-01-dog-late-light
 
-**Save as** `public/images/photography/here-01-dog-late-light.png` · 1:1 · target 1024 × 1024 px (ChatGPT's largest for 1:1 — 85 dpi at 306 mm)
+**Save as** `public/images/personal/here-01-dog-late-light.jpg` · 1:1 · target 960 × 960 px (native crop — 106 dpi at 306 mm, above the 85 dpi the slot accepted from a generator)
 **Where it goes** Opener (verso, full bleed)
 **Why it is there** The closing essay opens where the book opened, which is the point.
-**Watch for** Target lowered 20 Aug 2026 to the largest canvas ChatGPT actually produces. The previous figure asked for a resolution no available generator could reach.
+**Watch for** Replaced the generated opener 21 Aug 2026: the archive re-audit found the no-full-page rule was written against 6000 px targets and never revisited after the retarget — a 1280 px real photograph now exceeds what the slot accepts from a generator, on both dpi and honesty. Cropped square from 1280 × 960, the dog kept right of centre.
 
 ```text
 A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
 
-A dog crossing from shadow into a narrow band of late light on a floor.
+The dog nose-down in late afternoon light on a floor of yellow leaves, tree shadows raking the whole slope, DogPark, fall 2018.
 
 Square frame (1:1).
 

@@ -56,11 +56,11 @@ spreads:
       images:
         - walk-01-leaf-light
         - walk-02-same-woods
-        - walk-03-long-shadows
+        - walk-03-found-water
       captions:
         - Fall 2018 / the leaves came down all week
         - Fall 2018 / same corner, twenty minutes later
-        - Fall 2018 / the shadows had doubled
+        - Fall 2018 / the route ran into water
   - type: reading
     variant: two
     subhead: The Ordinary Is Not the Interruption

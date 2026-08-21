@@ -46,7 +46,17 @@ The numbers below describe the export as it actually arrived on 19 August 2026.
 Facebook re-encoded every upload. At the book's 300 mm trim, a 1,280 px file is
 **108 dpi**. That is not a near miss, it is a different category of asset.
 
-**So none of this can be a plate, an opener, a band or a full bleed.** Any plan
+**SUPERSEDED, 21 Aug 2026: the archive can now serve every placement.** The
+rule below was written against the original 6000 px targets. Those targets were
+lowered on 20 August to what a generator actually produces — 1024 px for a
+full-bleed slot — and the comparison was never re-run: a 1,280 px archive frame
+now *exceeds* what every slot accepts from a generated image, on resolution and
+on honesty both. First swap made the same day: the essay-08 opener is the real
+dog in real late light. The candid rule and the consent list still govern which
+frames may be used; resolution no longer does.
+
+The original verdict, kept for the record: **So none of this can be a plate, an
+opener, a band or a full bleed.** Any plan
 that treats the archive as a photo library is going to fail at the proof stage.
 What it can be is three other things.
 

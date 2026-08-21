@@ -379,3 +379,35 @@ photographs can share a name *and* a shape.
 
 **Before placing any frame from this document, open it and check it against the
 one-line description here.** The descriptions exist for exactly this reason.
+
+### The export strips edits, and 406 frames have them — 21 Aug 2026
+
+**File → Export → Export Unmodified Original** does what it says: it returns the
+camera original and leaves every adjustment behind, as a `.aae` sidecar that is
+not an image. The 21 August export carries **406 of those sidecars**, so 406
+photographs in this library have an edit that the exported file does not show.
+
+This document was written against the library as Adam had edited it, which means
+its descriptions can disagree with the originals. The first case surfaced on the
+first pass:
+
+> **IMG_1813** · 3264 × 2448 — **black and white**, a wide lawn, a low horizon, a
+> dozen tiny figures, most of the frame sky.
+
+`IMG_1813.JPG` is in colour. `IMG_O1813.aae` sits beside it with
+`adjustmentEditorBundleID = com.apple.camera`, so the black and white was a
+filter applied in the Camera app at capture. The composition matches the
+description exactly; only the grade is missing.
+
+**This is not a fault in the export.** For print, the unmodified original is the
+better file — full data, no baked-in filter, and the book grades it with its own
+treatment layer rather than inheriting a phone's. The thing to avoid is the
+quiet version of the error: seeing a colour frame, deciding it is the wrong
+picture, and dropping a correctly-chosen image.
+
+**So the rule for anything in this document that mentions a treatment**
+— black and white, a filter, a crop — **is to check for a `.aae` beside the file
+before rejecting it.** A sidecar means the description and the file are both
+right and the difference is an edit the book can redo. No sidecar means it is
+genuinely a different photograph, which is the far more common case here and is
+covered by the filename-collision table above.

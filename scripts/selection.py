@@ -16,8 +16,16 @@ enough for the slot the document asked for.** Run it again as the export grows.
 Two details that will bite anyone who skips them:
 
   · The document writes some frames as `IMG_2946 2` — the space-2 suffix Photos
-    adds to a duplicate filename. On disk that may be `IMG_2946`, `IMG_2946 2`
-    or `IMG_2946_2`, so all three are tried.
+    adds when two distinct photographs want the same filename. It is NOT an
+    alias for the base name. The first version of this script fell back to
+    `IMG_2946` when `IMG_2946 2` was absent and cheerfully reported two frames
+    as present, at confident dpi; both were wrong. `IMG_2946` is a cat asleep
+    under a tarp, not a magic square carved into the Sagrada Família. Only the
+    exact spelling and an underscore variant are accepted now.
+
+  · Where the document states a frame's dimensions, they are checked against the
+    file and a mismatch is reported rather than silently accepted. That is the
+    structural guard: a wrong file of the right name cannot pass twice.
 
   · These originals carry EXIF orientation, which the Facebook archive did not
     because Facebook bakes rotation in and strips the tag. Dimensions here are
@@ -56,13 +64,29 @@ def named(doc: Path):
 
 
 def find(stem: str, lib: Path):
-    """Try the document's spelling, the de-duplicated base, and an underscore."""
-    base = re.sub(r' \d$', '', stem)
-    for cand in (stem, base, stem.replace(' ', '_')):
+    """The document's exact spelling, or the same name with the space as an
+    underscore. NEVER the stripped base: `IMG_2946 2` and `IMG_2946` are two
+    different photographs, and treating them as one put a cat where a carved
+    magic square was supposed to go."""
+    for cand in (stem, stem.replace(' ', '_')):
         for ext in EXTS:
             p = lib / (cand + ext)
             if p.exists():
                 return p
+    return None
+
+
+# "**IMG_2946 2** · 2268 × 4032" — the document states dimensions for most frames.
+DIMS = re.compile(r'(\d{3,5})\s*[×x]\s*(\d{3,5})')
+
+
+def stated_dims(doc_text: str, stem: str):
+    """The dimensions the document claims for a frame, if it states any."""
+    for line in doc_text.splitlines():
+        if f'**{stem}**' in line or f'**{stem} /' in line or f'/ {stem}**' in line:
+            m = DIMS.search(line)
+            if m:
+                return int(m.group(1)), int(m.group(2))
     return None
 
 
@@ -78,13 +102,18 @@ def main():
         raise SystemExit(f"✗ no such library folder: {lib}")
 
     frames = named(doc)
-    found, missing = [], []
+    doc_text = doc.read_text(encoding='utf-8')
+    found, missing, suspect = [], [], []
     for stem, section in frames:
         p = find(stem, lib)
         if not p:
             missing.append((stem, section))
             continue
         w, h = ImageOps.exif_transpose(Image.open(p)).size
+        want = stated_dims(doc_text, stem)
+        if want and sorted(want) != sorted((w, h)):
+            suspect.append((stem, want, (w, h), p.name))
+            continue
         found.append((stem, section, p, w, h))
 
     print(f"\n  {doc.name} names {len(frames)} frames · {lib} holds {len(found)}\n")
@@ -95,6 +124,11 @@ def main():
             dpis = ' '.join(f"{min(w, h) / (mm / 25.4):>11.0f}" for mm in SLOTS.values())
             print(f"  {stem:<15}{w}×{h:<6}   {dpis}   {section[:34]}")
         print("\n  dpi columns use the SHORT edge — the honest number for a square crop.")
+    if suspect:
+        print(f"\n  ⚠ WRONG FILE under the right name — {len(suspect)}:")
+        for stem, want, got, name in suspect:
+            print(f"    {stem:<15} document says {want[0]}×{want[1]}, {name} is {got[0]}×{got[1]}")
+        print("    Not counted as found. Check before trusting either.")
     if missing:
         print(f"\n  not exported yet — {len(missing)}:")
         for i in range(0, len(missing), 5):

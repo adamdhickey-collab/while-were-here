@@ -111,6 +111,10 @@ spreads:
       Choose one familiar destination and reach it by a slower route. Carry
       what is needed and do not shorten the last section. Let arrival occur
       only after the distance has been crossed.
+    insetOn: verso
+    inset:
+      image: pilgrimage-08-plaza-stones
+      caption: Come a long way, to stand on old stones.
   - type: closing
     image: pilgrimage-06-closing-stone
     line: Tomorrow the body will turn back toward ordinary rooms, carrying the route in its feet.

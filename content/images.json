@@ -2122,6 +2122,28 @@
       "capturedSource": "No capture time: one of the 313 files whose album HTML carries no “Taken” field.",
       "selection": "Facebook archive, Photos. Chosen awake rather than asleep on purpose — the paragraph is about an observer being kept possible, so the observer should be looking at something.",
       "revision": "Cropped 4:3 from 1200 × 803. Not retouched, not upscaled."
+    },
+    {
+      "id": "pilgrimage-08-plaza-stones",
+      "filename": "pilgrimage-08-plaza-stones.jpg",
+      "kind": "personal",
+      "role": "specimen",
+      "essay": "The Body Cannot Skip the Hill",
+      "section": "Part IV · While We’re Here",
+      "spread": "Reading · asymmetric, inset",
+      "subject": "A very large colonial plaza laid in rough cobbles, low white buildings with terracotta roofs on three sides and a bare mountain behind. A couple stands near the middle; a dozen other people are scattered across it, all small.",
+      "concept": "A surface people cross a long distance in order to stand on.",
+      "purpose": "Inset beside “People walk to a childhood home before it is sold. They travel to a battlefield, a grave, or the coast where a migration began.” The essay's point is that the pattern is not only religious; this is the secular version, and it is a family trip.",
+      "aspect": "4:3",
+      "target": "1280 × 960 px (native, uncropped — 353 dpi at 92 mm)",
+      "status": "generated",
+      "composite": false,
+      "origin": "own photograph",
+      "captured": "Dec 17, 2015 —",
+      "capturedSource": "Facebook data export, album HTML \"Taken\" field. The JPEG EXIF was stripped on upload; Facebook kept the capture timestamp in its own metadata and returns it in the export.",
+      "selection": "Facebook archive, Colombia 2015 — Adam's own album caption reads: “Great vacation in Colombia. Lots of good memories of nice people, outstanding views, good music, lots of dancing and delicious food:) It was fun spending the holidays with our family!”",
+      "revision": "Not cropped, not retouched, not upscaled; natively 4:3. THE TOWN IS NOT NAMED IN PRINT. The white colonial arcades and the size of the cobbled square read as Villa de Leyva, but that is an inference from architecture, and the book names no place it has not confirmed.",
+      "consent": "A couple stands mid-frame at roughly 55 px tall in a 960 px file — not identifiable at 92 mm. Everyone else is smaller. No consent issue at this size; do not enlarge this frame without revisiting that."
     }
   ]
 }

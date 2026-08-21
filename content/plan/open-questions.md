@@ -67,6 +67,26 @@ year, so it starts in August or it does not exist. It cannot make this Christmas
 
 ---
 
+### 7 · Two things about the handed-over page
+The last interior page, and the one with the most of Adam's family in it.
+
+**Is there a third object?** The page carries two: *To the Love of My Life* and
+*Misery Is…*. The decision to make this page a centerpiece was taken while
+talking about **three** books, and only two are in the manifest. Either the
+third exists and needs photographing, or two is right and this note closes. The
+layout takes a third without changing anything.
+
+**One word of the transcription needs a look.** The caption quotes the inside of
+the child's book as *"Misery is when your mom embarrass younn front of your
+friends."* `younn` is either a faithful transcription of a child's spelling —
+in which case it is the best word on the page and must not be touched — or a
+slip for *you in*. **The photograph shows only the cover, so this cannot be
+settled from the book's own files.** It has to be read off the object. Nobody
+should silently correct it in the meantime: a tidied-up child's sentence is
+worth nothing, and the whole page is about keeping the thing as it was made.
+
+---
+
 ## The photo library
 
 ### 6 · The edited export

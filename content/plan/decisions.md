@@ -305,3 +305,26 @@ The check runs in CI as well. `overflow.mjs` looks for Playwright's Chromium and
 then for a system Chrome, and a GitHub runner has one, so a push that overflows a
 page now fails the build. Where no browser exists it goes back to being a note —
 never a pass.
+
+## The handed-over page, and what it is for — 21 Aug 2026
+
+Two objects other people made and gave to Adam, photographed as a catalogue and
+printed as the last interior page: a small hardcover with *I love hiking with
+you* drawn inside it, and a green construction-paper book he stapled together as
+a child. Adam's decision when asked was that these should be **a centerpiece**,
+not an appendix, and the final page with a full mount each is that position.
+
+The page is called *Handed over* and it earns the title twice. Both objects were
+handed to somebody. So is the book the reader is holding — which is the whole
+reason it ends here rather than beginning here.
+
+**The plates are mounts, not boxes.** Both images were `object-fit: contain`
+inside a fixed 78 mm box, which is not the same thing as a catalogue plate: a
+4:3 object got a letterbox, a 3:4 object got a pillarbox, and `.figure` paints
+`--paper-deep`, so each printed with grey bars on two sides, in a different
+place for each. The border now shrink-wraps the photograph — a true 4 mm mount
+on four sides, and the plate is the shape of the object, which is what the
+comment above the rule always claimed it was doing.
+
+**Two open items, both in [open-questions](open-questions.md).** Whether a third
+object exists, and whether one word of a transcription is right.

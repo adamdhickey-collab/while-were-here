@@ -1124,16 +1124,32 @@
 
 /* `contain`, not `cover`: these are objects in a catalogue, photographed at
    their own shape. Cropping a book to a square is the one thing a catalogue
-   does not do — the shape of the object is part of the record. */
+   does not do — the shape of the object is part of the record.
+
+   The mount shrink-wraps the photograph rather than the photograph filling a
+   fixed box. Both were "contain", but a fixed 78 mm box gave a 4:3 object a
+   letterbox and a 3:4 object a pillarbox, and `.figure` paints
+   `--paper-deep` behind it — so each plate printed with grey bars on two
+   sides, in a different place for each object. It read as a broken web page.
+   Now the border is a true 4 mm mount on all four sides and the plate is the
+   shape of the thing.
+
+   The caps are what keeps two plates and a 30 mm gap inside the text block:
+   96 mm across the 104 mm column, 92 mm tall for the taller of the two. */
 .handed__plate {
   border: 0.3pt solid var(--rule);
   padding: 4mm;
   background: var(--paper);
+  width: fit-content;
+  justify-self: start;
 }
+.handed__plate .figure { background: none; }
 .handed__plate img,
 .handed__plate .figure img {
-  width: 100%;
-  height: 78mm;
+  max-width: 96mm;
+  max-height: 92mm;
+  width: auto;
+  height: auto;
   object-fit: contain;
   display: block;
 }

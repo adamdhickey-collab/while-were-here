@@ -74,6 +74,10 @@ spreads:
       Put one unfinished problem on paper. Move its pieces until the next step
       becomes visible. Notice which part of the answer appears in the
       arrangement rather than in memory.
+    insetOn: verso
+    inset:
+      image: intelligence-07-child-hand
+      caption: Written by someone who is now the reader.
   - type: closing
     image: intelligence-06-closing-hands
     line: Restore them and the unfinished work begins again.

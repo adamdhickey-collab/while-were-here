@@ -238,6 +238,10 @@ spreads:
     notice: >-
       Save one result that would have seemed impossible ten years ago. Record
       the exact part that still required judgment. Keep both pieces together.
+    insetOn: verso
+    inset:
+      image: privilege-08-vhs-shelf
+      caption: A layer that used to be the stable one.
   - type: closing
     image: privilege-06-closing-cursor
     line: It is the brief chance to watch the new machinery become ordinary while its choices can still be seen.

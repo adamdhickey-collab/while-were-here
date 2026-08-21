@@ -74,6 +74,10 @@ spreads:
     notice: >-
       Stand where an ordinary room meets daylight. Stay until one visible
       condition changes. Do not name the lesson. Record only what moved.
+    insetOn: verso
+    inset:
+      image: here-08-dog-resting
+      caption: Resting, and not in charge of most of it.
   - type: closing
     quote: The temporary thing is not less real. It is the only kind we have.
     line: For now, that is where we are.

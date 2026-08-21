@@ -826,7 +826,27 @@ export async function build() {
 
   const { openings } = compose(book, toc);            // pass 1: find the folios
   const { pages, count } = compose(book, toc, openings); // pass 2: print them
-  const body = pages.join('\n');
+  let body = pages.join('\n');
+
+  /* Pass 3, for the imprint alone: credit only what the book actually contains.
+     L.imprint leaves a marker rather than a list, because the manifest can hold
+     sourced images that were cut when spreads were trimmed — linen weave and
+     glass condensation were being credited to Poly Haven and Unsplash while
+     appearing nowhere in the object. Matching against the composed HTML makes
+     that impossible: a credit can only appear if its file does. */
+  const inBook = (i) => {
+    const slug = i.slug || i.id;
+    return (i.filename && i.filename !== '—' && body.includes(i.filename))
+        || body.includes(`${slug}-plate-1.png`);
+  };
+  const credited = Object.values(imagesById).filter((i) => i.origin === 'archive' && inBook(i));
+  body = body.replace(L.CREDIT_MARKER, credited.map(L.creditLine).join(''));
+  const dropped = Object.values(imagesById)
+    .filter((i) => i.origin === 'archive' && !inBook(i)).map((i) => i.id);
+  if (dropped.length) {
+    console.log(`  imprint: ${credited.length} credits · ${dropped.length} sourced image(s) not in the book, not credited`);
+    for (const d of dropped) console.log(`    · ${d}`);
+  }
 
   fs.writeFileSync(path.join(out, 'book.html'),
     document_({ title: `${book.title} — ${book.author}`, body, preview: false }));

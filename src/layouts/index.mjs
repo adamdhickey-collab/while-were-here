@@ -188,18 +188,35 @@ const creditLabel = (id) => id.split('-').slice(2).join(' ');
    `content/images.json` at build time rather than typed here, so they cannot
    drift from the manifest the way a hand-kept colophon always eventually does.
    Anything with `origin: archive` appears automatically. */
+/* The credit lines are NOT written here. This emits a marker and build.mjs
+   substitutes it after every page is composed, using only the sourced images
+   whose file actually appears in the finished book.
+
+   That indirection exists because of a real fault. This function used to list
+   everything in the manifest with `origin: archive`, and the manifest outlives
+   the layout: two material breaks, linen weave and glass condensation, were cut
+   from the book when spreads were trimmed to reach 130 pages, and their files
+   and entries stayed. So the printed imprint credited Poly Haven and two
+   Unsplash photographers for work that is not in the object — two of eight
+   lines, on the page whose entire job is to be accurate.
+
+   Deriving the list from the composed HTML rather than from the manifest means
+   the credits cannot say a thing the book does not contain. */
+export const CREDIT_MARKER = '<!--imprint-credits-->';
+
 export const imprint = (bookData, images = []) => {
-  const sourced = images.filter((i) => i.origin === 'archive');
-  if (!sourced.length) return '';
+  if (!images.some((i) => i.origin === 'archive')) return '';
   return `
     <div class="imprint">
       <p class="imprint__line">© ${bookData.year || 2026} ${esc(bookData.author)}. All rights reserved.</p>
       <p class="imprint__line">Photographs, drawings and diagrams by ${esc(bookData.author)} except as listed.</p>
-      <ul class="imprint__credits">
-        ${sourced.map((i) => `<li><span class="imprint__what">${esc(creditLabel(i.id))}</span> — ${esc(i.credit || '')} <span class="imprint__lic">${esc(i.license || '')}</span></li>`).join('')}
-      </ul>
+      <ul class="imprint__credits">${CREDIT_MARKER}</ul>
     </div>`;
 };
+
+/** One credit line, for build.mjs to assemble once the book exists. */
+export const creditLine = (i) =>
+  `<li><span class="imprint__what">${esc(creditLabel(i.id))}</span> — ${esc(i.credit || '')} <span class="imprint__lic">${esc(i.license || '')}</span></li>`;
 
 export const titleSpread = (bookData, images = []) => ({
   pair: true,

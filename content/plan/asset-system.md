@@ -288,3 +288,44 @@ So the split across the three services you already have:
 | EPHEMERA, TEXTURE | **Envato Elements** |
 | FIGURE | Drawn in code |
 | PERSONAL | You |
+
+---
+
+## Two manifest fields answer different questions, and one of them is a trap — 21 Aug 2026
+
+**`origin` is provenance. `status` is production state. Only `origin` says who
+took the picture.**
+
+`status` holds three values across 114 entries: `generated` (102),
+`not generated` (5), `placed` (7). It is set by `scripts/place.mjs`, which
+writes `status = 'generated'` when an asset is put into the book **whatever the
+asset is** — so the studio portrait of Adam's father, a phone copy of a
+mid-1980s print, reads `status: generated` in the manifest.
+
+Thirty-eight entries carry `status: generated` alongside an `origin` of
+`own photograph` or `archive`. Not one of them is a contradiction. All of them
+look like one.
+
+That matters more in this book than it would in most. The question the manifest
+gets asked most often is *which of these pictures are Adam's*, and there is a
+field whose value appears to answer it and does not. Anyone reading
+`status: generated` on the portrait that opens *The Last People Who Remember
+Waiting* would conclude the book opens an essay about the pre-network world with
+a machine-made face.
+
+**Read `origin`:**
+
+| value | count | what it means |
+| --- | --- | --- |
+| `own photograph` | 35 | Adam took it |
+| `archive` | 8 | somebody else took it; carries `credit` and `license` |
+| `generated` | 13 | actually machine-made |
+| `original` | 7 | drawn for this book |
+| `personal archive` | 2 | from the Facebook export, not yet re-sorted |
+| absent | 49 | mostly unplaced entries and plates |
+
+`status` was left alone rather than renamed. Nothing printed depends on it, five
+of its `not generated` entries have files on disk anyway, and rewriting a field
+across 114 entries to fix a reading problem is how a real one gets introduced.
+If it is ever touched, the honest values are *made* and *not made*, and the
+rename belongs in `place.mjs` at the same moment.

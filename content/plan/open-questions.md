@@ -34,10 +34,23 @@ TrimBox 300 × 300 mm, BleedBox 306 × 306 mm, all seven faces subset-embedded.
 That is a file a printer can work from.
 
 ### 3 · Consent, if this is ever sold
-Seven images carry a `consent` note in `content/images.json`. **None are
-cleared.** Fine for family copies; every one needs asking before a sale. The
-heaviest is `before-time-06-thanksgiving` — identifiable adults and two
-children, whose parents have to be asked on their behalf.
+**Eight** images carry a `consent` note in `content/images.json`. **None are
+cleared.** Fine for family copies; every one needs asking before a sale.
+
+The heaviest is no longer the Thanksgiving frame. It is **`field-note-01-lake`**,
+found on 21 Aug by opening files rather than reading manifest lines: a child
+fishing at the railing, in profile, face clearly visible, printed **300 mm full
+bleed** — about 55 mm of figure and 8 mm of face, the largest an unconsented
+person appears anywhere in the book. Not Adam's child. `before-time-06-thanksgiving`
+is second — identifiable adults and two children, whose parents have to be asked
+on their behalf.
+
+`P1050320` from the photo library would join this list if it were ever placed;
+it has an identifiable adult and is not currently in the book.
+
+The audit and the two images that were checked and cleared are in
+[personal-data.md](personal-data.md). Its conclusion is worth repeating here: a
+count of consent notes cannot find the image nobody looked at.
 
 ---
 

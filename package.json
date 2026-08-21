@@ -11,7 +11,7 @@
     "dev": "npm run build && concurrently -k -n build,serve \"node scripts/build.mjs --watch\" \"http-server build -p 4321 -c-1 -s\"",
     "preview": "npm run build && vivliostyle preview build/book.html",
     "pdf": "npm run build && vivliostyle build build/book.html -o dist/while-were-here.pdf",
-    "pdf:press": "BOOK_PRESS=1 node scripts/build.mjs && vivliostyle build build/book.html -o dist/while-were-here-press.pdf --preflight press-ready --preflight-option gray-scale=false --preflight-option pdfx=true && npm run build",
+    "pdf:press": "npm run press:check && BOOK_PRESS=1 node scripts/build.mjs && vivliostyle build build/book.html -o dist/while-were-here-press.pdf --preflight press-ready --preflight-option gray-scale=false --preflight-option pdfx=true && npm run build",
     "clean": "rm -rf build dist",
     "prompts": "node scripts/prompts.mjs",
     "place": "node scripts/place.mjs",
@@ -31,7 +31,8 @@
     "grounds": "node scripts/prompts.mjs --grounds",
     "shots": "npm run build && node scripts/shots.mjs",
     "selection": "./.venv/bin/python scripts/selection.py",
-    "verify": "node scripts/verify.mjs"
+    "verify": "node scripts/verify.mjs",
+    "press:check": "node scripts/press-check.mjs"
   },
   "devDependencies": {
     "@fontsource-variable/fraunces": "^5.3.0",

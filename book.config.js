@@ -110,3 +110,19 @@ export default geometry;
  * If a press deliverable was made by a run that printed the first line, it is
  * the wrong file.
  */
+
+/* PRESS PREFLIGHT NEEDS GHOSTSCRIPT — 21 Aug 2026.
+ *
+ * `--preflight press-ready` runs Ghostscript, via Docker or a local install.
+ * With neither present press-ready does not error: it HANGS. Measured here at
+ * 81 minutes, 0.0% CPU, no output and no file — indistinguishable from a slow
+ * build of a 130-page book full of photographs, which is why it went unnoticed.
+ * `npm run press:check` now runs first and fails in a second.
+ *
+ * Before installing anything, decide whether the preflight is wanted at all.
+ * PDF/X-1a and the grayscale flag are offset-litho conventions. This book
+ * prints photographically at Saal on FUJIFILM Crystal Archive HD, and that
+ * workflow may not ask for PDF/X — worth one question to them. Dropping the
+ * preflight still leaves real bleed and crop marks, which is the part that
+ * makes a file press-ready in the sense this book needs.
+ */

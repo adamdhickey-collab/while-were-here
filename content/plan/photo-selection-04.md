@@ -601,3 +601,38 @@ is still running and is where they will appear, if they appear.
 descriptions before placement.** A shape is a filter, not a proof — ten frames
 in this document have already turned out to disagree with the line written for
 them, and matching arithmetic does not change that.
+
+### All eight shape-matched frames opened — three are the picture — 21 Aug 2026
+
+The section above found eight frames whose uncropped originals are on disk at
+exactly 1.33× the area. Every one was opened and read against its line. **The
+arithmetic was right about the crop and wrong about the photograph five times
+out of eight.**
+
+| frame | the document says | what is in it |
+| --- | --- | --- |
+| `IMG_0831` | a muqarnas dome, thousands of identical cells resolving into one form | **Exactly that.** The Alhambra, Sala de Dos Hermanas — stalactite cells resolving into an eight-pointed star. 4284 × 5712, which is **363 dpi at 300 mm full bleed**, the best resolution any frame in this document offers. |
+| `IMG_0964` | two figures walking a lit bridge at night, backs turned, a lantern between them, a floodlit cathedral small behind | **Confirmed.** The Roman bridge at Córdoba, the Mezquita floodlit at the right. The lantern is beside the pair rather than between them; everything else is exact. Backs turned, no faces. |
+| `IMG_0775` | a footpath switchbacking down a wooded mountainside | **Confirmed.** Montserrat: a paved path folding down through limestone and scrub, a small shrine at one turn, and **one walking figure** giving the scale. |
+| `IMG_0915` | a night crowd seated in a cathedral square, several hundred people, all facing one way, **arranged by nothing** | **Right picture, wrong argument.** Granada Cathedral at blue hour, several hundred people — but they are standing, and there is **an orchestra on a lit stage** at the foot of the façade. They face one way because a conductor is facing them. Filing this under *flocking*, where the whole claim is order without a leader, would be a caption arguing with its own photograph. It is a superb frame for something else. **Consent:** hundreds of identifiable faces, some large in the foreground. |
+| `IMG_0970` | a black cat crossing a white parapet against flat sky, four storeys up | **Right subject, description is of the crop.** The cat on a white gable is the top third; the rest is a Spanish street with a banner reading `CANTABRANA · EL PODER DE LA LUZ`, flags, a balcony and a parked car. Two storeys, not four. **The car's number plate is legible** — if this is ever placed uncropped, that has to go. |
+| `IMG_0936` | a narrow street packed edge to edge with people walking, no leader, no centre, one coherent flow | **A black dog standing on a lawn in front of a hedge, looking at the camera.** |
+| `IMG_1749` | a white pigeon on grey asphalt with a hard black shadow | **A white hibiscus with a crimson throat, on a shrub against a hedge.** |
+| `IMG_5210` | sailing dinghies moored in a row off a dock, sails up | **A curly brown dog panting at a porch screen door.** |
+
+**Twelve frames in this document now disagree with the line written for them** —
+eight caught by the dimension guard, four by looking.
+
+**What this calibrates.** The crop test is a good filter and a bad answer.
+`4032 × 3024` is the shape of **16,248 files** in this library, so "fits inside
+and shares an edge" is very weak evidence on its own; the one frame with a rare
+parent shape, `IMG_0831` at 4284 × 5712, was correct, but so were two with the
+common one, so rarity is not a rule either. `selection.py` no longer prints
+these under a tick or counts them as found. It prints them as *shape-consistent
+candidates to open*, with the three-of-eight result stated in the output, so
+nobody reads the list the way I first wrote it.
+
+**Three frames are now genuinely available and worth placing.** The muqarnas
+dome, the bridge at Córdoba, and the Montserrat switchbacks — and the last of
+those bears on the essay whose closing plate is on the shot list, since
+`pilgrimage-07-switchbacks` is already a mule train on a canyon wall.

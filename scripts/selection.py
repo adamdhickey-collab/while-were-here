@@ -247,17 +247,15 @@ def main():
 
     where = ' + '.join(str(d) for d in libs)
     total = sum(1 for d in libs for _ in d.iterdir())
-    # Two kinds of found. A frame matched at its stated dimensions is here as
-    # the document describes it. A frame whose UNCROPPED PARENT is on disk is
-    # also here — with more pixels than the document asked for — and reporting
-    # only the first number told the reader eight fewer frames were available
-    # than actually were.
+    # `found` means matched at the stated dimensions. Shape-consistent crops are
+    # counted SEPARATELY and deliberately not called found: opening all eight on
+    # 21 Aug showed only three were the photograph the document describes, so
+    # folding them into one number would overstate what is available by more
+    # than half.
     resolved_crops = [x for x in suspect
                       if x[4] == 'shape' and crop_verdict(x[1], x[2]) == 'crop']
-    n_found = len(found) + len(resolved_crops)
-    extra = f" ({len(found)} at the stated size, {len(resolved_crops)} as uncropped originals)" \
-        if resolved_crops else ""
-    print(f"\n  {doc.name} names {len(frames)} frames · {n_found} found{extra}")
+    extra = f" · {len(resolved_crops)} shape-consistent candidates to open" if resolved_crops else ""
+    print(f"\n  {doc.name} names {len(frames)} frames · {len(found)} found{extra}")
     print(f"  searched {where} ({total} files)\n")
     if found:
         head = ' '.join(f"{k.split()[0]:>11}" for k in SLOTS)
@@ -273,13 +271,19 @@ def main():
         turned  = [x for x in suspect if x[4] != 'shape']
 
         if crops:
-            print(f"\n  ✓ THE UNCROPPED ORIGINAL IS HERE — {len(crops)}:")
-            print("    The document's shape fits inside the file and shares an edge with it:")
-            print("    a Photos crop, same photograph, more pixels than the document asked for.")
+            print(f"\n  ○ SHAPE IS CONSISTENT WITH A CROP — {len(crops)}:")
+            print("    The document's shape fits inside the file and shares an edge with it,")
+            print("    which is what a Photos 16:9 crop of a 4:3 frame looks like.")
             for stem, want, got, name, _ in crops:
                 print(f"    {stem:<15} doc {want[0]}×{want[1]}  ·  {name} is {got[0]}×{got[1]}"
                       f"   ({got[0]*got[1]/(want[0]*want[1]):.2f}x the area)")
-            print("    Still open each one: a shape is a filter, not a proof.")
+            print("    MEASURED PRECISION: all eight of these were opened on 21 Aug and only")
+            print("    THREE were the photograph the document describes. Two more were the right")
+            print("    subject with a wrong line written about them; three were something else")
+            print("    entirely — a dog on a lawn, a hibiscus, a dog at a screen door. 4032×3024")
+            print("    is the shape of 16,248 files in this library, so sharing an edge with it")
+            print("    is very weak evidence. Treat this list as a shortlist to open, never as")
+            print("    an answer.")
 
         if inside:
             print(f"\n  ? MIGHT BE A CROP — {len(inside)}:")

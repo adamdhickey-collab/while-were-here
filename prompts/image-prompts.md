@@ -351,6 +351,22 @@ Vertical frame (3:4).
 Avoid: any object, edge, hem, seam or boundary — only surface; anything that lets the viewer work out the scale; styled or arranged compositions; props; studio seamless backgrounds; heavy grading or HDR; vignettes; visible text or watermarks; symmetry; a recognisable scene resolving out of the texture.
 ```
 
+### library-14-asleep-on-a-plane
+
+**Save as** `public/images/personal/—` · — · target 2205 × 3881 px
+**Where it goes** DO NOT PLACE. Recorded 21 Aug 2026 so that nobody rediscovers it and places it. The file is at `~/Desktop/photo library 2/IMG_5360.jpg`.
+**Why it is there** Registered as a REFUSAL, not a candidate. photo-selection-04 named this frame and it is a good photograph; that is not the question.
+
+```text
+A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
+
+Two people asleep against each other on a flight, leaning together over a tray table.
+
+Frame —.
+
+Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
+```
+
 ## Most of Life Is a Tuesday
 
 ### survey-01-familiar-lake
@@ -881,6 +897,22 @@ Horizontal frame (4:3).
 Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
 ```
 
+### library-12-petal-windows
+
+**Save as** `public/images/personal/—` · 3:4 · target 3024 × 4032 px — 256 dpi at 300 mm full bleed
+**Where it goes** Unplaced, and the file is not in this repository yet — it is still in the export at `~/Desktop/photo library 2/IMG_0623.heic`. Registered 21 Aug 2026, verified by eye against photo-selection-04's line. Copy it into public/images/personal/ and run `npm run derive` when a slot is decided. The book is at its 130-page ceiling, so placing this means removing something. Found under the stripped base stem: the document writes it `IMG_0623 2`, and Photos disambiguated the same filename collision by extension in this export rather than by a ` 2` suffix.
+**Why it is there** The lettering is real architectural lettering photographed, not fabricated, so it clears the rule that generated pictures may not invite reading.
+
+```text
+A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
+
+Petal-shaped stained-glass lights in the Sagrada Família, radiating from a round centre against a black interior: orange through yellow to deep red, each petal carrying a shrine name lettered into the glass.
+
+Vertical frame (3:4).
+
+Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
+```
+
 ## The Intelligence Outside Your Head
 
 ### survey-03-workbench-field
@@ -1072,6 +1104,22 @@ Horizontal frame (4:3).
 Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
 ```
 
+### library-10-sagrada-magic-square
+
+**Save as** `public/images/personal/—` · 9:16 · target 2268 × 4032 px — 1,113 dpi at a 92 mm inset
+**Where it goes** Unplaced, and the file is not in this repository yet — it is still in the export at `~/Desktop/photo library 2/IMG_2946.heic`. Registered 21 Aug 2026, verified by eye against photo-selection-04's line. Copy it into public/images/personal/ and run `npm run derive` when a slot is decided. The book is at its 130-page ceiling, so placing this means removing something. Found under the stripped base stem: the document writes it `IMG_2946 2`, and Photos disambiguated the same filename collision by extension in this export rather than by a ` 2` suffix.
+**Why it is there** The essay's argument in one object: the arithmetic is not in anyone's head, it is in the stone, and it will still be there when everyone who can do it has gone. It also carries the verified claim `sagrada-magic-square` in content/facts.json, which currently has no page.
+
+```text
+A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
+
+A four-by-four grid of numbers cut into a stone panel on the Passion façade of the Sagrada Família, set into rusticated ashlar beside a carved figure. The numbers read 1 14 14 4 / 11 7 6 9 / 8 10 10 5 / 13 2 3 15.
+
+Frame 9:16.
+
+Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
+```
+
 ## The Last People Who Remember Waiting
 
 ### survey-04-two-roads
@@ -1259,6 +1307,22 @@ A believable documentary photograph of the real world — quiet, contemplative, 
 Six people posed on a patterned rug in front of a white fireplace at Thanksgiving, two of them children wearing paper crowns.
 
 Horizontal frame (4:3).
+
+Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
+```
+
+### library-13-cloud-floor-sunset
+
+**Save as** `public/images/personal/—` · 3:4 · target 3024 × 4032 px — 256 dpi at 300 mm full bleed
+**Where it goes** Unplaced, and the file is not in this repository yet — it is still in the export at `~/Desktop/photo library 2/IMG_4904.jpg`. Registered 21 Aug 2026, verified by eye against photo-selection-04's line. Copy it into public/images/personal/ and run `npm run derive` when a slot is decided. The book is at its 130-page ceiling, so placing this means removing something. Found under the stripped base stem: the document writes it `IMG_4904 2`, and Photos disambiguated the same filename collision by extension in this export rather than by a ` 2` suffix.
+**Why it is there** An essay about waiting, opened or closed on the view from the thing that abolished waiting. Nothing in the frame dates it, and nothing in it is anybody.
+
+```text
+A believable documentary photograph of the real world — quiet, contemplative, observant, naturalistic, cinematic, very slightly uncanny. Natural available light only, late afternoon or early morning. Restrained composition with strong negative space and slightly imperfect, off-centre framing, as though the photographer did not have time to fix it. Believable lens behaviour: mild vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film grain and real surface texture. Emotionally present, never sentimental. Shot on a 35 mm or 50 mm prime.
+
+An unbroken floor of small clouds seen from altitude at sunset, running flat to a horizon banded orange under a grey-violet sky. No ground, no aircraft, no wing.
+
+Vertical frame (3:4).
 
 Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
 ```
@@ -1910,6 +1974,22 @@ A wall of carved stone hemispheres, rank on rank, with a scaled serpent creature
 Horizontal frame (4:3).
 
 Avoid: fantasy; neon, glow or bloom effects; floating or impossible objects; glossy commercial or stock photography; exaggerated HDR or heavy grading; smiling models; anyone looking into the lens; visible text, signage lettering, logos or watermarks; distorted hands, faces or anatomy; AI-render sheen; symmetrical dead-centre composition; added lens flare.
+```
+
+### library-11-calcada-portuguesa
+
+**Save as** `public/images/personal/—` · 9:16 · target 2268 × 4032 px — 1,113 dpi at a 92 mm inset
+**Where it goes** Unplaced, and the file is not in this repository yet — it is still in the export at `~/Desktop/photo library 2/IMG_3329.heic`. Registered 21 Aug 2026, verified by eye against photo-selection-04's line. Copy it into public/images/personal/ and run `npm run derive` when a slot is decided. The book is at its 130-page ceiling, so placing this means removing something. Found under the stripped base stem: the document writes it `IMG_3329 2`, and Photos disambiguated the same filename collision by extension in this export rather than by a ` 2` suffix.
+**Why it is there** Every unit is placed by a person and no person places the pattern. It is the essay's argument in a pavement, and unlike the dome and the organ it is genuinely closer to a craft tradition than a design.
+
+```text
+A macro photograph of a single material surface, lit with raking light from one side so the surface throws its own shadows and its texture reads as terrain. Fills the entire frame edge to edge. Shallow but honest depth of field. Muted, true colour with no grading. Real photographic texture and fine grain.
+
+Portuguese pebble pavement seen at a low angle: thousands of hand-set black and white limestone cubes laid in a foliate pattern of leaves and tendrils, a cast-iron drain grate at the top corner, a whitewashed wall behind.
+
+Frame 9:16.
+
+Avoid: any object, edge, hem, seam or boundary — only surface; anything that lets the viewer work out the scale; styled or arranged compositions; props; studio seamless backgrounds; heavy grading or HDR; vignettes; visible text or watermarks; symmetry; a recognisable scene resolving out of the texture.
 ```
 
 ## The Strange Privilege

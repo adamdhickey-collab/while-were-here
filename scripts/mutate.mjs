@@ -116,6 +116,27 @@ const MUTATIONS = [
   { id: 'contents-drift', file: 'content/contents.json',
     from: 'Most of Life Is a Tuesday', to: 'Most of Life Is a Wednesday',
     expect: 'the contents page agrees', why: 'a contents title that no longer matches the essay' },
+
+  /* Three that the first version of this file listed as "awkward to synthesise"
+     and gave up on. Two were ordinary string edits and the third needed only a
+     moment's thought about what the check actually reads. Listing a check as
+     hard to mutate is a claim that should be re-tested, not inherited. */
+
+  { id: 'ground-stage', file: 'content/images.json',
+    from: '"stage": 3', to: '"stage": 2',
+    expect: 'every ground agrees with its essay', why: 'a ground labelled a stage behind its essay' },
+
+  { id: 'record-count', file: 'content/essays/the-secret-life-of-attention.md',
+    from: 'count: 31 entries', to: 'count: 32 entries',
+    expect: 'every reproduced record counts', why: 'a record whose stated count is not what it prints' },
+
+  /* The spread check fires on an image that is on disk, absent from the book,
+     and NOT marked Unplaced. So take one that is legitimately unplaced and
+     delete only the marker — the file and the manifest stay as they are. */
+  { id: 'spread-claim', file: 'content/images.json',
+    from: '"spread": "Unplaced, replaced 21 Aug 2026.',
+    to:   '"spread": "Reading · two column, inset. Replaced 21 Aug 2026.',
+    expect: 'no entry claims a spread', why: 'an image claiming a spread it is not on' },
 ];
 
 const runVerify = () => {
@@ -189,14 +210,11 @@ if (dirty) {
    same failure mode as the checks this script exists to catch. These are the
    ones whose faults are awkward to synthesise, not ones believed to be fine. */
 const UNMUTATED = [
-  ['page count', 'needs a page added or removed — every mutation also breaks the build'],
-  ['no entry claims a spread it is not on', 'needs a manifest spread that contradicts the composed page'],
+  ['page count', 'needs a page added or removed, and every edit that does so also breaks the build'],
   ['imprint credits only what is in the book', 'needs a credited image cut from the book but left in the manifest'],
-  ['every master has a web derivative', 'needs a derivative deleted from disk, not a text edit'],
-  ['every reproduced record counts what it prints', 'needs a record count edited away from its entry list'],
-  ['every reproduced entry reaches the page', 'needs an entry that exists but is not printed'],
-  ['every ground agrees with its essay about the stage', 'needs a stage number moved in one place and not the other'],
-  ['nothing is drawn through a diagram label', 'needs geometry moved so a stroke crosses a label — not a string swap'],
+  ['every master has a web derivative', 'needs a derivative deleted from disk — this harness only edits text'],
+  ['every reproduced entry reaches the page', 'needs an entry that exists in the record but is not printed'],
+  ['nothing is drawn through a diagram label', 'needs geometry moved so a stroke crosses a label, not a string swapped'],
 ];
 
 const missed = results.filter((r) => r.state === 'MISSED');

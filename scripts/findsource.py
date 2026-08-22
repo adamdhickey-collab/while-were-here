@@ -71,26 +71,42 @@ def norm(a):
     return (a - m) / (sd + 1e-6)
 
 
-def build_index():
+def _thumb_one(path):
+    """Worker: one thumbnail, or None. Must be module-level to be picklable."""
+    try:
+        return path.name, np.asarray(thumb(path), dtype=np.uint8)
+    except Exception:
+        return None
+
+
+def build_index(workers=None):
+    """PARALLEL. The first run of this was single-threaded and took ~35 minutes
+       on an 18-core machine, mostly waiting on HEIC decode at ~116 ms a frame
+       against ~18 ms for JPEG. Decoding is per-file and shares nothing, so it
+       is embarrassingly parallel; there was no reason for it to be serial
+       except that the first version was written to be simple and never
+       measured. Re-indexing is now a few minutes, which matters because the
+       library grows and this has to be re-run when it does."""
+    import multiprocessing as mp
     files = sorted(p for p in ORIG.iterdir() if p.suffix.lower() in EXT)
     sizes = {}
     sz_cache = ROOT / '.cache' / 'sizes.json'
     if sz_cache.exists():
         sizes = json.loads(sz_cache.read_text())
+    todo = [p for p in files
+            if not (sizes.get(p.name) and min(sizes[p.name]) < MIN_EDGE)]
+    print(f"{len(todo)} frames to decode of {len(files)}")
     names, flat, shapes = [], [], []
-    for n, p in enumerate(files, 1):
-        wh = sizes.get(p.name)
-        if wh and min(wh) < MIN_EDGE:
-            continue
-        if n % 500 == 0:
-            print(f"  {n}/{len(files)}  kept {len(names)}", flush=True)
-        try:
-            t = np.asarray(thumb(p), dtype=np.uint8)
-        except Exception:
-            continue
-        names.append(p.name)
-        shapes.append(t.shape)
-        flat.append(t.reshape(-1))
+    with mp.Pool(workers or max(1, mp.cpu_count() - 2)) as pool:
+        for n, r in enumerate(pool.imap_unordered(_thumb_one, todo, chunksize=32), 1):
+            if n % 1000 == 0:
+                print(f"  {n}/{len(todo)}", flush=True)
+            if r is None:
+                continue
+            nm, t = r
+            names.append(nm)
+            shapes.append(t.shape)
+            flat.append(t.reshape(-1))
     # ragged shapes, so store flat with an offset table
     offs = np.cumsum([0] + [len(f) for f in flat])
     CACHE.parent.mkdir(exist_ok=True)

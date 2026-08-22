@@ -316,7 +316,7 @@ somebody reads the four dividers in a row.
 
 ---
 
-### 12 · The book prints no sources, and mostly does not need to
+### 12 · The book prints no sources, and mostly does not need to — **RESOLVED**, 22 Aug 2026
 Surfaced by checking how the margin notes attribute themselves. Not a defect —
 a decision that has never been made explicitly.
 
@@ -340,18 +340,55 @@ in the book stated without provenance. It now opens *"In a 2008 field study…"*
 matching the convention the other twelve already follow. Still fits the margin;
 overflow checked.
 
-**What remains open, and it is Adam's call.** The book carries no notes page, no
-bibliography, no sources spread. `content/plan/sources.md` already exists and is
-auto-generated from the ledger — 35 verified claims with full citations, authors,
-journals, years and URLs — but it is a plan document, not a page.
+**Resolved 22 Aug 2026 — Adam asked for the sources page, and it cost no page.**
 
-* **Leave it.** Inline attribution is the right register for personal essays,
-  and a bibliography would make the book look like it is defending itself.
-* **Add one page.** It would cost a page at the 130 ceiling, so something goes.
-  The content is already written and would stay correct automatically.
+Both options above assumed a sources page meant spending one of the 130. It did
+not. The verso of the title spread was empty from the head down to the imprint
+at its foot — the grid's `1fr` row — and that page is already the book's
+apparatus page, carrying the copyright line and the image credits. Sources went
+above them, under a rule. The book is still 130 interior pages.
 
-There is no wrong answer here. It is worth deciding on purpose rather than by
-default, because a reader who wants to check the Pew figure currently cannot.
+Twenty-eight claims are printed, as `subject — author, publication, year`.
+Titles are not: with them the block ran **74 mm past the head of the page**,
+measured in a browser, and the choice was between dropping the titles and
+dropping the page. Author, journal and year locate any of these in one search.
+The full citation with title and URL stays in `content/plan/sources.md`.
+
+**What the page cost instead was six citations, and finding them was the point.**
+The ledger held 35 facts and would happily have printed all of them. Six were
+for passages the book no longer contains:
+
+| claim | why it is not in the book |
+| --- | --- |
+| `apollo-heat-shield` | its material break was cut in the trim to 130 pages |
+| `block-island-meteorite` | same trim |
+| `peacock-structural-colour` | from an older selection pass; no peacock specimen was ever placed |
+| `mimosa-thigmonasty` | same pass |
+| `sagrada-magic-square` | its photograph is still not in the repository |
+| `monastic-acedia` | the passage went in the editorial pass |
+
+The last one is the one worth remembering. The other five had `usedIn` values
+like `"photo 177 — specimen label"` — a numbering from a selection pass that
+stopped resolving to anything in this repo long ago, and unreadable as an
+address the moment you look at it. `monastic-acedia` read
+`"essays/the-secret-life-of-attention.md — flow-1b"`. Real file. Real block.
+Both still exist. Only the prose inside the block changed, and the word "acedia"
+appears on no page of this book. It read as resolvable right up until someone
+grepped for the word.
+
+All six are now marked `Unplaced` in the ledger, the same marker
+`content/images.json` already uses for a cut asset, with the reason and the date.
+Their research is kept — a claim whose passage was cut may come back — and
+`content/plan/sources.md` marks them so the two lists read against each other.
+
+`npm run verify` gained **every fact says where it is used, and means it**: each
+`usedIn` must name an essay file (and a block, if it names one) or an image id
+that exists, or be marked `Unplaced`. That catches five of the six. It cannot
+catch `monastic-acedia`, and the check says so in its own comment — no exact
+test can tell that a block's prose changed underneath a citation. The
+approximate reporter that has always run alongside it did list that one.
+
+A reader who wants to check the Pew figure can now do so.
 
 ---
 

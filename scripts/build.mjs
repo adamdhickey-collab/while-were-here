@@ -919,6 +919,31 @@ export async function build() {
     for (const d of dropped) console.log(`    · ${d}`);
   }
 
+  /* Sources, on the same page and by the same rule. A fact is cited only if it
+     is verified AND every `usedIn` entry resolves to something the book still
+     contains; an entry marked "Unplaced" means the passage left the book and
+     the ledger kept the research, exactly as content/images.json marks a cut
+     asset. Six verified claims were in that state when this page was written.
+
+     The filter is on `usedIn` rather than on the composed HTML because no text
+     match is trustworthy here, and both directions were tried. Searching for a
+     claim's numbers misses every one the book spells out — the attention essay
+     prints "around eighty-five times a day", so `smartphone-checks` reads as
+     absent — while matching loose numbers picks up folios instead. Searching
+     for a claim's words is worse: "peacock" hit, and it was Peacock TV in a
+     list of streaming services. scripts/facts.mjs makes the same point about
+     its own matcher and reports rather than gates. So the exact record lives in
+     the ledger, and `npm run verify` guards it. */
+  const { facts: allFacts } = json('content/facts.json');
+  const placed = (f) => f.status === 'verified'
+    && (f.usedIn || []).length > 0
+    && !(f.usedIn || []).some((u) => String(u).startsWith('Unplaced'));
+  const cited = allFacts.filter(placed);
+  body = body.replace(L.SOURCES_MARKER, cited.map(L.sourceLine).join(''));
+  const uncited = allFacts.filter((f) => !placed(f));
+  console.log(`  sources: ${cited.length} claims cited · ${uncited.length} not printed`);
+  for (const f of uncited) console.log(`    · ${f.id} (${f.status})`);
+
   /* Compose before installing faces. Which CJK subsets the book needs is a
      question about the composed pages, not about the content directory: the
      plan notes carry characters the book never prints, and embedding a face

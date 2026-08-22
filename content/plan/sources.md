@@ -5,11 +5,18 @@
 Every technical number in this book is listed here with the source it came from.
 Where a figure is contested, small-sample or easy to misstate, the note says so.
 
-34 verified · 1 outstanding
+34 verified · 1 outstanding · 6 verified but not in the book
+
+The book's own sources page, on the verso of the title spread, prints only the
+claims it actually makes — the ones below whose `usedIn` still resolves. This
+file is the fuller record and keeps the rest, because a claim whose passage was
+cut is still researched and may come back. The two lists have to be readable
+against each other, so the entries the book does not print are marked here.
 
 ---
 
 ### People check their phones about 85 times a day and use them for around five hours, and their own estimates of how often are roughly half the real figure.
+
 
 Andrews S, Ellis DA, Shaw H, Piwek L. *Beyond Self-Report: Tools to Compare Estimated and Real-World Smartphone Use*. PLOS ONE 10(10): e0139004. 2015. <https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0139004>
 
@@ -22,55 +29,71 @@ Andrews S, Ellis DA, Shaw H, Piwek L. *Beyond Self-Report: Tools to Compare Esti
 
 ### The blue and green of a peacock's feathers are not pigment. The barbule cortex holds a two-dimensional photonic crystal of melanin rods in keratin, and the colour comes from the spacing of that lattice.
 
+_Not in the book — no printed citation._
+
+
 Zi J, Yu X, Li Y, Hu X, Xu C, Wang X, Liu X, Fu R. *Coloration strategies in peacock feathers*. PNAS 100(22): 12576-12578. 2003. <https://www.pnas.org/doi/10.1073/pnas.2133313100>
 
 **Note.** Melanin rods are roughly 110 to 130 nm across, arranged in a lattice in keratin with air holes between. Colour is tuned by lattice constant and number of periods. Precision matters here: melanin IS a pigment and it IS present, but it is brown-black and is acting as structure rather than as the chromophore for the blue. Do not write 'no pigment in this bird'. Write 'no blue pigment'. The authors confirmed it structurally by infiltrating the barbules with glycerin, which reduces refractive-index contrast and kills the colour.
 
-*Used in photo 177 — specimen label.*
+*Used in Unplaced — was 'photo 177 — specimen label', a numbering from an older selection pass. No peacock specimen is in the book; the only 'peacock' on a page is Peacock TV in a list of streaming services. Verified 22 Aug 2026, not printed, not cited..*
 
 ---
 
 ### A touched Mimosa pudica leaflet folds in a second or two. Cells in the pulvinus at the leaflet base dump potassium and chloride, lose water and collapse their turgor. The leaf reopens over five to fifteen minutes.
 
+_Not in the book — no printed citation._
+
+
 Volkov AG, Foster JC, Ashby TA, Walker RK, Johnson JA, Markin VS. *Mimosa pudica: Electrical and mechanical stimulation of plant movements*. Plant, Cell & Environment 33(2): 163-173. 2010. <https://onlinelibrary.wiley.com/doi/10.1111/j.1365-3040.2009.02066.x>
 
 **Note.** Timings vary by which pulvinus is triggered: a pinnule folds in roughly two to seven seconds, a whole compound leaf droops in about two to five. Do NOT write 'no electrical signal is involved'. Mimosa propagates genuine action potentials; what it has no trace of is neurons. That distinction is the whole interest of the picture and getting it backwards would be the exact failure this file exists to prevent.
 
-*Used in photo 358 — figure caption, The Intelligence Outside Your Head.*
+*Used in Unplaced — was 'photo 358 — figure caption', a numbering from an older selection pass. Neither 'mimosa' nor 'pulvinus' appears anywhere in the content. Verified 22 Aug 2026, not printed, not cited..*
 
 ---
 
 ### The 4x4 square beside the Kiss of Judas on the Passion facade sums to 33 in every row, column and diagonal. It is adapted from the square in Durer's Melencolia I, repeating 14 and 10 and omitting 12 and 16, so it is not a true magic square.
 
+_Not in the book — no printed citation._
+
+
 Basilica de la Sagrada Familia. *The magic square on the Passion facade: keys to understanding it*. Official Sagrada Familia blog. 2024. <https://blog.sagradafamilia.org/en/the-magic-square-on-the-passion-facade/>
 
 **Note.** The basilica's own account. Two things must both be said or the caption is wrong in one direction or the other. The constant is 33, the age traditionally given for Christ at his death, and that is the entire point of the object. And it is NOT a magic square by the standard definition: a 4x4 running 1 to 16 has a constant of 34, and this one omits 12 and 16 and repeats 14 and 10 to reach 33. Do not call it a magic square without the qualification, and do not call it a mistake either. It is a deliberate departure by Subirachs.
 
-*Used in photo 365 — figure caption.*
+*Used in Unplaced — was 'photo 365 — figure caption'. Its image, library-10-sagrada-magic-square, is itself Unplaced and its file is not yet in the repository. This is the case scripts/facts.mjs names: a claim registered ahead of its spread. Cite it when the frame lands..*
 
 ---
 
 ### Columbia's heat shield protected the crew by destroying itself. The ablative layer vaporised as it heated, carrying the heat away with it, against a surface running between about 1,500 and 5,000 degrees Fahrenheit.
 
+_Not in the book — no printed citation._
+
+
 National Air and Space Museum, Smithsonian Institution. *Apollo 11 Command Module Columbia, and Heat Shield, Fragment, Ablated, Apollo*. Smithsonian collection records. 2024. <https://airandspace.si.edu/collection-objects/heat-shield-fragment-ablated-apollo/nasm_A19731423008>
 
 **Note.** Construction was a brazed steel honeycomb substructure under a fibreglass honeycomb filled with phenolic epoxy resin, ablator thickness varying roughly 0.70 to 2.70 inches by position. Quote the range, not a single dramatic number: 5,000 F is the peak at the worst point, not the temperature of the whole capsule.
 
-*Used in photo T023 — material break caption, The Strange Privilege.*
+*Used in Unplaced — was 'photo T023 — material break caption'. Two material breaks were cut when spreads were trimmed to reach 130 pages; this caption went with them. 'ablative' appears nowhere in the content. Verified 22 Aug 2026, not printed, not cited..*
 
 ---
 
 ### Block Island is an iron-nickel meteorite about 67 cm across, found on Mars by the Opportunity rover on 17 July 2009. It is the largest meteorite yet found on Mars. The object in the museum is a full-scale model; the meteorite itself is still there.
 
+_Not in the book — no printed citation._
+
+
 NASA Jet Propulsion Laboratory. *Magnified Look at a Meteorite on Mars (PIA12191)*. NASA/JPL image and caption record. 2009. <https://www.jpl.nasa.gov/images/pia12191-magnified-look-at-a-meteorite-on-mars/>
 
 **Note.** Officially Meridiani Planum 006. Composition confirmed by Opportunity's alpha particle X-ray spectrometer. The label is visible in the photograph and says '(Full-Scale Model)', so the caption must not imply the object is the meteorite.
 
-*Used in photo T033 — plate caption.*
+*Used in Unplaced — was 'photo T033 — plate caption', a numbering from an older selection pass. 'meteorite' appears nowhere in the content. Verified 22 Aug 2026, not printed, not cited..*
 
 ---
 
 ### European starlings in a large flock interact with about six or seven nearby birds, whatever the physical distance between them, so a turn can cross the flock through local updates with nobody giving an order.
+
 
 Ballerini M, Cabibbo N, Candelier R, Cavagna A, Cisbani E, Giardina I, Lecomte V, Orlandi A, Parisi G, Procaccini A, Viale M, Zdravkovic V. *Interaction ruling animal collective behavior depends on topological rather than metric distance: Evidence from a field study*. PNAS 105(4): 1232-1237. 2008. <https://www.pnas.org/doi/10.1073/pnas.0711437105>
 
@@ -82,6 +105,7 @@ Ballerini M, Cabibbo N, Candelier R, Cavagna A, Cisbani E, Giardina I, Lecomte V
 
 ### Given food at positions matching cities around Tokyo, Physarum polycephalum built a network balancing cost, transport efficiency and fault tolerance at levels comparable to the rail system.
 
+
 Tero A, Takagi S, Saigusa T, Ito K, Bebber DP, Fricker MD, Yumiki K, Kobayashi R, Nakagaki T. *Rules for Biologically Inspired Adaptive Network Design*. Science 327(5964): 439-442. 2010. <https://www.science.org/doi/10.1126/science.1177894>
 
 **Note.** Write "comparable", never "identical" or "the same as". The organism did not reproduce the rail map; the two networks score similarly on cost, efficiency and resilience. It also has no brain and no nervous system, which is the point, so do not soften that into "a simple brain".
@@ -91,6 +115,7 @@ Tero A, Takagi S, Saigusa T, Ito K, Bebber DP, Fricker MD, Yumiki K, Kobayashi R
 ---
 
 ### A 2016 estimate for a seventy-kilogram reference man counted about thirty trillion human cells and thirty-eight trillion bacterial cells.
+
 
 Sender R, Fuchs S, Milo R. *Revised Estimates for the Number of Human and Bacteria Cells in the Body*. PLOS Biology 14(8): e1002533. 2016. <https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1002533>
 
@@ -103,6 +128,7 @@ Sender R, Fuchs S, Milo R. *Revised Estimates for the Number of Human and Bacter
 
 ### The subterranean nests of Apicotermes termites, with their parallel floors and connecting ramps, form through local building acts in which new structure changes where later material is likely to be placed.
 
+
 Heyde A, Guo L, Jost C, Theraulaz G, Mahadevan L. *Self-organized biotectonics of termite nests*. PNAS 118(5): e2006985118. 2021. <https://www.pnas.org/doi/10.1073/pnas.2006985118>
 
 **Note.** The prose is a plain-language compression of a model, not a behavioural account observed from one worker. Do not write that a termite "decides" anything, and do not describe the nest as built to a plan the colony holds.
@@ -113,6 +139,7 @@ Heyde A, Guo L, Jost C, Theraulaz G, Mahadevan L. *Self-organized biotectonics o
 
 ### Honey-bee cells begin closer to cylinders and become hexagonal through construction behaviour and physical shaping, with new cells starting in the grooves between cells already built. The exact mechanism is still debated.
 
+
 Nazzi F. *The hexagonal shape of the honeycomb cells depends on the construction behavior of bees*. Scientific Reports 6: 28341. 2016. <https://www.nature.com/articles/srep28341>
 
 **Note.** The groove rule is a proposed behavioural mechanism supported by observation and simulation, not a settled result. Keep the hedge. The competing account is that wax flows and surface tension do the shaping, and the essay must not pick a winner.
@@ -122,6 +149,7 @@ Nazzi F. *The hexagonal shape of the honeycomb cells depends on the construction
 ---
 
 ### Under conditions that block rehearsal and grouping, research on working memory finds a central capacity averaging about four chunks.
+
 
 Cowan N. *The magical number 4 in short-term memory: A reconsideration of mental storage capacity*. Behavioral and Brain Sciences 24(1): 87-114. 2001. <https://doi.org/10.1017/S0140525X01003922>
 
@@ -134,6 +162,7 @@ Cowan N. *The magical number 4 in short-term memory: A reconsideration of mental
 
 ### In a 2000 MRI study, licensed London taxi drivers had greater posterior hippocampal grey-matter volume than controls, and the difference correlated with years spent navigating.
 
+
 Maguire EA, Gadian DG, Johnsrude IS, Good CD, Ashburner J, Frackowiak RSJ, Frith CD. *Navigation-related structural change in the hippocampi of taxi drivers*. PNAS 97(8): 4398-4403. 2000. <https://www.pnas.org/doi/10.1073/pnas.070039597>
 
 **Note.** The study is OBSERVATIONAL. Write "associated with" or "correlated with", never "caused by". Self-selection cannot be ruled out from this design alone.
@@ -143,6 +172,7 @@ Maguire EA, Gadian DG, Johnsrude IS, Good CD, Ashburner J, Frackowiak RSJ, Frith
 ---
 
 ### Four experiments published in 2011 found that people expecting later computer access recalled where information was stored better than the information itself.
+
 
 Sparrow B, Liu J, Wegner DM. *Google Effects on Memory: Cognitive Consequences of Having Information at Our Fingertips*. Science 333(6043): 776-778. 2011. <https://www.science.org/doi/10.1126/science.1207745>
 
@@ -154,6 +184,7 @@ Sparrow B, Liu J, Wegner DM. *Google Effects on Memory: Cognitive Consequences o
 
 ### An orb web transmits vibration and tension to the spider at its hub, extending the animal's sensing beyond its body.
 
+
 Japyassú HF, Laland KN. *Extended spider cognition*. Animal Cognition 20: 375-395. 2017. <https://doi.org/10.1007/s10071-017-1069-7>
 
 **Note.** The vibration, tension and sensory extension are well supported. Calling the web part of COGNITION is the authors' theoretical interpretation and is contested. Stay with the observable mechanism, which is what the essay does.
@@ -163,6 +194,7 @@ Japyassú HF, Laland KN. *Extended spider cognition*. Animal Cognition 20: 375-3
 ---
 
 ### Intel introduced the 4004 microprocessor in 1971 with 2,300 transistors on a chip smaller than a fingernail.
+
 
 Intel Corporation. *The First Programmable Microprocessor: The 4004*. Intel company timeline. 1971. <https://timeline.intel.com/1971/the-first-programmable-microprocessor%3A-the-4004>
 
@@ -174,6 +206,7 @@ Intel Corporation. *The First Programmable Microprocessor: The 4004*. Intel comp
 
 ### The 2017 transformer paper described a network based on attention rather than recurrence. Its larger model trained for 3.5 days on eight P100 GPUs and set new reported results on two translation tasks.
 
+
 Vaswani A, Shazeer N, Parmar N, Uszkoreit J, Jones L, Gomez AN, Kaiser L, Polosukhin I. *Attention Is All You Need*. Advances in Neural Information Processing Systems 30. 2017. <https://proceedings.neurips.cc/paper_files/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf>
 
 **Note.** The two tasks are WMT 2014 English-to-German and English-to-French machine translation, and nothing else. Do not rewrite this as the paper already doing the generative work that came later. The 3.5 days and eight P100s are the big model, not the base.
@@ -183,6 +216,7 @@ Vaswani A, Shazeer N, Parmar N, Uszkoreit J, Jones L, Gomez AN, Kaiser L, Polosu
 ---
 
 ### The AlphaFold Protein Structure Database provides over 200 million predicted protein structures.
+
 
 EMBL-EBI and Google DeepMind. *AlphaFold Protein Structure Database*. Public database. 2024. <https://alphafold.ebi.ac.uk/>
 
@@ -194,6 +228,7 @@ EMBL-EBI and Google DeepMind. *AlphaFold Protein Structure Database*. Public dat
 
 ### Pew found 52 percent of U.S. adults used the internet in 2000 and 96 percent in 2025. Home broadband was reported by 1 percent of U.S. adults in March 2000.
 
+
 Pew Research Center. *Internet, Broadband Fact Sheet*. Pew Research Center. 2025. <https://www.pewresearch.org/internet/fact-sheet/internet-broadband/>
 
 **Note.** Pew changed survey mode from 2023, so the 2000 and 2025 figures are not a clean like-for-like series. Keep the methodology caution in the note. The broadband figure is dated 31 March 2000 specifically.
@@ -203,6 +238,7 @@ Pew Research Center. *Internet, Broadband Fact Sheet*. Pew Research Center. 2025
 ---
 
 ### Smartphone ownership among U.S. adults rose from 35 percent in Pew's first 2011 measurement to 91 percent in 2025.
+
 
 Pew Research Center. *Mobile Fact Sheet*. Pew Research Center. 2025. <https://www.pewresearch.org/internet/fact-sheet/mobile/>
 
@@ -214,6 +250,7 @@ Pew Research Center. *Mobile Fact Sheet*. Pew Research Center. 2025. <https://ww
 
 ### The first SMS message was sent from a computer on 3 December 1992. Early text messages carried a 160-character limit.
 
+
 Vodafone. *25 years since the world's first text message*. Vodafone newsroom. 2017. <https://www.vodafone.com/news/newsroom/technology/25-anniversary-text-message>
 
 **Note.** Sent by Neil Papworth, from a computer to a phone, reading "Merry Christmas". The 160-character limit is a real technical boundary. The sentence about it shaping a compressed style is an editorial inference, not a measured effect, and must not be written as one.
@@ -223,6 +260,7 @@ Vodafone. *25 years since the world's first text message*. Vodafone newsroom. 20
 ---
 
 ### The Shikoku Henro links 88 temples across Japan's four Shikoku prefectures, covers approximately 1,200 kilometres, and generally takes more than 40 days on foot.
+
 
 Japan National Tourism Organization. *Experience an Authentic Pilgrimage in Shikoku*. japan.travel. 2024. <https://www.japan.travel/en/japans-local-treasures/experience-authentic-pilgrimage-shikoku-2024/>
 
@@ -234,6 +272,7 @@ Japan National Tourism Organization. *Experience an Authentic Pilgrimage in Shik
 
 ### Roughly 800 kilometres separate the Pyrenean starting routes from Santiago de Compostela. The Compostela requires stated spiritual or religious motivation and at least the final 100 continuous kilometres on foot.
 
+
 Turespaña. *Camino Francés*. spain.info, official tourism portal. 2024. <https://www.spain.info/es/ruta/camino-frances-santiago/>
 
 **Note.** The 100 km minimum applies to walking; by bicycle it is 200 km. The essay uses the walking figure only, and the motivation requirement is a stated declaration rather than anything tested.
@@ -243,6 +282,7 @@ Turespaña. *Camino Francés*. spain.info, official tourism portal. 2024. <https
 ---
 
 ### UNESCO's French Santiago property includes 71 selected monuments and seven sections of the Chemin du Puy totalling nearly 160 kilometres.
+
 
 UNESCO World Heritage Centre. *Routes of Santiago de Compostela in France*. World Heritage List, ref. 868. 1998. <https://whc.unesco.org/en/list/868/>
 
@@ -254,6 +294,7 @@ UNESCO World Heritage Centre. *Routes of Santiago de Compostela in France*. Worl
 
 ### Sunlight takes about 8 minutes and 20 seconds to reach Earth.
 
+
 NASA Space Place. *All About the Sun*. NASA. 2024. <https://spaceplace.nasa.gov/all-about-the-sun/en/>
 
 **Note.** A mean figure. Earth's distance varies over the year, so the light-time varies by a few seconds either side. "About" is doing real work.
@@ -263,6 +304,7 @@ NASA Space Place. *All About the Sun*. NASA. 2024. <https://spaceplace.nasa.gov/
 ---
 
 ### Earth turns once relative to the Sun in 24 hours and travels around the Sun at roughly 29 to 30 kilometres per second.
+
 
 NASA Science. *Basics of Space Flight, Chapter 2: Reference Systems*. NASA. 2024. <https://science.nasa.gov/learn/basics-of-space-flight/chapter2-1/>
 
@@ -274,6 +316,7 @@ NASA Science. *Basics of Space Flight, Chapter 2: Reference Systems*. NASA. 2024
 
 ### A healthy adult at rest typically breathes 12 to 20 times each minute, moving about 500 millilitres of air per breath.
 
+
 StatPearls. *Abnormal Respirations*. NCBI Bookshelf. 2023. <https://www.ncbi.nlm.nih.gov/books/NBK470309/>
 
 **Note.** A typical clinical range for a healthy resting adult, not a constant and not a value for any individual. Tidal volume of ~500 ml is likewise an approximation for an average adult.
@@ -283,6 +326,7 @@ StatPearls. *Abnormal Respirations*. NCBI Bookshelf. 2023. <https://www.ncbi.nlm
 ---
 
 ### A Komodo dragon samples the air with its forked tongue and presses the tips to paired Jacobson's organs in the roof of its mouth. A stronger reading on one tip than the other tells it which way the scent is coming from.
+
 
 Smithsonian's National Zoo and Conservation Biology Institute. *Komodo dragon*. Smithsonian National Zoo animal record. 2024. <https://nationalzoo.si.edu/animals/komodo-dragon>
 
@@ -294,6 +338,7 @@ Smithsonian's National Zoo and Conservation Biology Institute. *Komodo dragon*. 
 
 ### Queen butterflies feed on milkweed as larvae and carry cardenolides into adulthood, as monarchs do. The two are co-mimics rather than one copying the other: a predator that learns to avoid either pattern avoids both.
 
+
 Ritland DB. *Variation in Palatability of Queen Butterflies (Danaus gilippus) and Implications Regarding Mimicry*. Ecology 75(3): 732-746. 1994. <https://esajournals.onlinelibrary.wiley.com/doi/10.2307/1941731>
 
 **Note.** Palatability VARIES with the host plant: queens reared on high-cardenolide Asclepias curassavica are as distasteful as monarchs, and queens reared on low-cardenolide hosts are not. Do not write that queens are uniformly toxic. The Mullerian rather than Batesian reading is Ritland's, and the same author's 1991 Nature paper made the parallel case for the viceroy, which is the classic textbook example that turned out to be wrong the other way.
@@ -304,7 +349,8 @@ Ritland DB. *Variation in Palatability of Queen Butterflies (Danaus gilippus) an
 
 ### A personal Facebook data export generated on 19 August 2026 lists 31 categories the platform used to reach the author, among them "Away from family", "Away from hometown" and "Family of those who live abroad".
 
-Meta Platforms. *Other categories used to reach you*. Download Your Information, personal export for Adam Hickey. 2026. <https://www.facebook.com/dyi>
+
+Meta Platforms. *Other categories used to reach you*. Download Your Information, personal export. 2026. <https://www.facebook.com/dyi>
 
 **Note.** The primary document is on disk and is reproduced in the book in full and unedited, which is the only honest way to print it. The count is 31 and must be re-checked if the export is ever regenerated, because these categories change. Do not characterise them as accurate or inaccurate on the page; the interest is that a system wrote a description of a person and this is the description.
 **Replaces.** Nothing. This is the first record in the book that is a real document about its own author rather than a published study or an invented plate.
@@ -315,7 +361,8 @@ Meta Platforms. *Other categories used to reach you*. Download Your Information,
 
 ### A personal Facebook data export generated on 19 August 2026 lists 7,325 unique advertisers holding or having used the author's activity or information, across 7,499 entries.
 
-Meta Platforms. *Advertisers using your activity or information*. Download Your Information, personal export for Adam Hickey. 2026. <https://www.facebook.com/dyi>
+
+Meta Platforms. *Advertisers using your activity or information*. Download Your Information, personal export. 2026. <https://www.facebook.com/dyi>
 
 **Note.** Counted twice by independent extractions of the same file, agreeing to within thirteen entries: 7,499 entries and 7,325 unique names. The page prints the first 160 in export order, unsorted, and says so. Six entries were withheld on 20 August 2026 at the author’s request — four named "Mushrooms" and two named "Zoomies" — so the page now shows 154 and states that six are withheld. Nothing else is sorted, curated or dropped: names such as "Non ddtc 1 zocket manager" are in the record and are part of what it shows. Do not restore the six, and do not let the page go back to claiming it is unedited. Re-count if the export is regenerated.
 
@@ -325,7 +372,8 @@ Meta Platforms. *Advertisers using your activity or information*. Download Your 
 
 ### A personal Facebook data export generated on 19 August 2026 lists 23 cities the author has checked into, five of them in Door County, Wisconsin.
 
-Meta Platforms. *Cities you have checked into*. Download Your Information, personal export for Adam Hickey. 2026. <https://www.facebook.com/dyi>
+
+Meta Platforms. *Cities you have checked into*. Download Your Information, personal export. 2026. <https://www.facebook.com/dyi>
 
 **Note.** Reproduced in full in export order, which is NOT the order they were visited and the page says so. This is a record of where a phone reported a check-in, not a record of where a life was lived, and the essay must not blur the two. Egg Harbor, Baileys Harbor, Fish Creek, Ephraim and Sister Bay are the Door County five.
 
@@ -335,15 +383,19 @@ Meta Platforms. *Cities you have checked into*. Download Your Information, perso
 
 ### Distraction is not new: fourth- and fifth-century monastic writers described it at length, naming it acedia — the noonday restlessness that makes a person unable to stay with the task or the cell.
 
+_Not in the book — no printed citation._
+
+
 John Cassian. *De institutis coenobiorum, Book X (On the Spirit of Acedia)*. Written c. 420 CE; standard English text in Boniface Ramsey trans., The Institutes, Newman Press 2000. 420. <https://www.newadvent.org/fathers/350710.htm>
 
 **Note.** Cassian devotes a whole book to it, and Evagrius Ponticus lists it among the eight thoughts a generation earlier. The prose claim is deliberately modest — that monks complained about distraction in writing — and that is exactly what the source supports. Do not inflate it into a claim that acedia and modern distraction are the same condition; the essay's argument does not need that and the sources do not carry it.
 
-*Used in essays/the-secret-life-of-attention.md — flow-1b.*
+*Used in Unplaced — was 'essays/the-secret-life-of-attention.md — flow-1b'. The passage went in the editorial pass; the essay now reaches the same point through the reader's own afternoon rather than through fourth-century monks. This entry is the one that hid: it named a real essay and a real block, so it read as resolvable while 'acedia' appeared nowhere on any page. Verified 22 Aug 2026, not printed, not cited..*
 
 ---
 
 ### Habituation — a declining response to a stimulus that repeats without consequence — is one of the most widely observed forms of learning, found across species from single-celled organisms to humans, and it reverses when the stimulus changes.
+
 
 Rankin CH, Abrams T, Barry RJ, Bhatnagar S, Clayton DF, Colombo J, et al.. *Habituation revisited: An updated and revised description of the behavioral characteristics of habituation*. Neurobiology of Learning and Memory 92(2): 135–138. 2009. <https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2754195/>
 

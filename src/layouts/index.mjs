@@ -215,6 +215,101 @@ const creditLabel = (id) => id.split('-').slice(2).join(' ');
    the credits cannot say a thing the book does not contain. */
 export const CREDIT_MARKER = '<!--imprint-credits-->';
 
+/* Sources, above the imprint on the same page. The book had no notes page and
+   no bibliography: every number was inline-attributed in the prose or in a
+   margin note, which is the right register for personal essays but leaves a
+   reader who wants to check one with nowhere to go.
+
+   It costs no page. The verso of the title spread was empty from the head down
+   to the imprint at its foot — the grid's `1fr` row — and this is the
+   conventional place for apparatus. At the 130-page ceiling a sources spread
+   would have had to displace something; this displaces nothing.
+
+   Same marker discipline as the credits, and for a sharper reason. Six verified
+   claims in the ledger were for passages the book no longer contains: an Apollo
+   heat shield and a Block Island meteorite whose material breaks were cut in the
+   trim to 130 pages, a peacock and a mimosa from an older selection pass, a
+   Sagrada magic square whose photograph is still not in the repository, and
+   `monastic-acedia`, which is the one that hid — it named a real essay and a
+   real block while the word "acedia" appeared on no page in the book. A sources
+   list generated from the ledger would have printed all six. */
+export const SOURCES_MARKER = '<!--imprint-sources-->';
+
+export const sources = () => `
+    <div class="sources">
+      <h2 class="sources__head">Sources</h2>
+      <ul class="sources__list">${SOURCES_MARKER}</ul>
+    </div>`;
+
+/* One source line. Authors are compressed past two — a page of full author
+   lists is a page of author lists, and the first author plus the journal and
+   year locates any of these in one search. */
+const authorList = (a = '') => {
+  const parts = a.split(/,\s*/).filter(Boolean);
+  if (parts.length <= 2) return parts.join(' & ');
+  return `${parts[0]} et al.`;
+};
+
+/* Titles are not printed. With them the block ran 74 mm past the head of the
+   page — measured, not guessed — and the choice was between dropping the titles
+   and dropping the page. Author, publication and year locate any of these in one
+   search, which is the whole job of the line. The full citation, title and URL
+   included, stays in content/plan/sources.md, and `npm run facts` keeps it. */
+export const sourceLine = (f) => {
+  const s = f.source || {};
+  /* Page ranges take an en dash. They are recorded in the ledger the way the
+     publisher writes them, with a plain hyphen, and that is left alone — this
+     is a typographic fix at the point of setting, not a correction to the
+     source. Only a digit-hyphen-digit run is touched, so hyphenated author
+     names and DOIs are untouched. */
+  const endash = (v) => String(v).replace(/(\d)-(\d)/g, '$1–$2');
+
+  /* An institution is often both the author and the publication, which printed
+     "Pew Research Center. Pew Research Center, 2025", "Vodafone. Vodafone
+     newsroom, 2017" and "NASA Space Place. NASA, 2024". Where one is a prefix
+     of the other, the longer is the more specific and the shorter is an echo.
+     Compare the publication ALONE: an earlier version tested against
+     publication-plus-year, so "nasaspaceplace" was measured against "nasa2024"
+     and no NASA line ever matched. Where the two merely overlap
+     ("Smithsonian's National Zoo…" against "Smithsonian National Zoo animal
+     record") both are kept — neither contains the other, and guessing there
+     would start losing real information. */
+  const key = (v) => String(v || '').toLowerCase().replace(/[^a-z0-9]/g, '');
+  const [ka, kp] = [key(s.authors), key(s.publication)];
+  const echoed = ka && kp && (ka.startsWith(kp) || kp.startsWith(ka));
+  const year = s.year ? String(s.year) : '';
+
+  let who, tail, join;
+  if (echoed && kp.length >= ka.length) {
+    // The publication is the specific one; it carries the year already.
+    who = '';
+    tail = [s.publication, year].filter(Boolean).map(endash).join(', ');
+    join = '';
+  } else if (echoed) {
+    // The authors are the specific one; only the year survives from the echo.
+    who = esc(authorList(s.authors));
+    tail = year;
+    join = ', ';
+  } else {
+    who = esc(authorList(s.authors));
+    tail = [s.publication, year].filter(Boolean).map(endash).join(', ');
+    /* "Andrews S et al." already ends in a full stop, so a joining "." printed
+       "et al..". Join on the stop only when the authors do not bring their own. */
+    join = !who || /[.]$/.test(who) ? ' ' : '. ';
+  }
+
+  /* The author and publication runs are wrapped so `npm run verify` can tell
+     them from the subject label beside them. Everything inside them is
+     transcribed — "UNESCO World Heritage Centre" is that body's registered
+     name, and Americanising it to "Center" would misname it, the same fault the
+     American-English check already forgives for quoted image titles. The
+     subject label is Adam's own words and stays under house style. */
+  return `<li><span class="sources__what">${esc(f.id.replace(/-/g, ' '))}</span> — `
+    + (who ? `<span class="sources__who">${who}</span>` : '')
+    + (tail ? `${who ? join : ''}<span class="sources__where">${esc(tail)}</span>` : '')
+    + '</li>';
+};
+
 export const imprint = (bookData, images = []) => {
   if (!images.some((i) => i.origin === 'archive')) return '';
   return `
@@ -244,6 +339,7 @@ export const titleSpread = (bookData, images = []) => ({
       cls: 'titlespread titlespread--imprint',
       html: `
         <div class="page__block">
+          ${sources()}
           ${imprint(bookData, images)}
           <div class="titlespread__foot">
             <span class="dot"></span>

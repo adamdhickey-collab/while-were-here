@@ -1182,9 +1182,56 @@
    which requires attribution wherever the work is distributed, and the book
    printed none anywhere before this.                                        */
 
+/* Sources take the head of the page, the imprint keeps the foot, and the `1fr`
+   moves between them so the two blocks stay pinned to their own edges however
+   long the source list runs. The imprint does not move when a claim is added. */
 .titlespread--imprint .page__block {
-  grid-template-rows: 1fr auto auto;
+  grid-template-rows: auto 1fr auto auto;
 }
+
+/* ---- SOURCES ------------------------------------------------------------
+   Every claim the book prints, with somewhere to check it. Generated from
+   content/facts.json at build time and filtered to what the book still says —
+   see the note in scripts/build.mjs. Nothing here is typed.               */
+
+.sources {
+  grid-column: 1 / -1;
+  align-self: start;
+  max-width: 150mm;
+  color: var(--ink-soft);
+  font-family: var(--font-note);
+  font-size: 7pt;
+  line-height: 1.5;
+}
+
+.sources__head {
+  margin: 0 0 2.5mm;
+  font-family: var(--font-note);
+  font-size: 7pt;
+  font-weight: 400;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+
+.sources__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.4mm;
+}
+
+/* The subject is what a reader scans for, so it is the only thing that breaks
+   the column's left edge. Continuation lines indent under it. */
+.sources__list li {
+  padding-left: 4mm;
+  text-indent: -4mm;
+}
+
+.sources__what  { font-style: italic; }
+.sources__where { white-space: nowrap; }
 
 /* 7pt, not 6.4, and --ink-soft, not --ink-faint. This block is an attribution
    before it is a design element: one credited image is CC BY 2.0, which asks
@@ -1192,9 +1239,18 @@
    Crystal Archive at arm's length. 6.4pt of monospace at #6A6559 on cream is
    4.7:1 and near the floor of what a reader will actually read. The page is
    otherwise empty, so the smaller size was buying nothing. */
+/* The rule and the space above it arrived with the source list. Both blocks are
+   7pt monospace in the same colour, so once sources filled the page the grid's
+   `1fr` collapsed and "© 2026 Adam Hickey" ran straight on from the last
+   citation as though it were another one. Separated the way .record__source is:
+   a 0.3pt hairline and room to breathe. The margin holds the gap open even when
+   the list grows enough to take the whole column. */
 .imprint {
   grid-column: 1 / -1;
   align-self: end;
+  margin-top: 9mm;
+  padding-top: 3.5mm;
+  border-top: 0.3pt solid var(--rule);
   max-width: 150mm;
   color: var(--ink-soft);
   font-family: var(--font-note);

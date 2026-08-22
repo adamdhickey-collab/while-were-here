@@ -922,3 +922,87 @@ inches, eleven years under a maple, about a meter an hour, thirty minutes on a
 Thursday afternoon. Demanding a citation for those would drown the signal. The
 margin note is where this book makes claims, so the margin note is where the
 check lives.
+
+---
+
+## The sources page, and the six citations it did not print
+*22 Aug 2026*
+
+Adam asked for a sources page. The book has no pacing blanks — 130 interior
+pages, all of them used, and the ending is fixed: closing spread at 126–127,
+field note at 128–129, handed-over on 130. A new leaf would have made 131.
+
+It did not need one. The verso of the title spread was empty from the head down
+to the imprint at its foot, and that page is already the book's apparatus page:
+copyright, photograph credits, licences. Sources went above them under a 0.3pt
+rule, in the same 7pt monospace. **The book is still 130 pages.**
+
+**Titles are not printed.** With them the block ran 74 mm past the head of the
+page — measured in a browser, not estimated — and the choice was between
+dropping the titles and dropping the page. Author, publication and year locate
+any of these in one search, which is the whole job of the line. The full
+citation, title and URL included, stays in `content/plan/sources.md`.
+
+**The real work was deciding what the page is allowed to say.**
+
+`src/layouts/index.mjs` already carried a warning about this, written when the
+imprint was built: the manifest outlives the layout. Two material breaks were
+cut when spreads were trimmed to 130, their entries stayed in
+`content/images.json`, and the printed imprint credited Poly Haven and two
+Unsplash photographers for work that is not in the object — two of eight lines,
+on the page whose entire job is to be accurate. The fix was to derive the
+credits from the composed HTML, so a credit cannot appear unless its file does.
+
+The fact ledger had drifted the same way, further. Six of 35 verified facts were
+for passages the book no longer contains, and a sources page generated from the
+ledger would have printed all six: an Apollo heat shield and a Block Island
+meteorite whose material breaks went in the same trim, a peacock and a mimosa
+from an older selection pass, a Sagrada magic square whose photograph is still
+not in this repository, and `monastic-acedia`.
+
+**No text matcher can decide this, and both were tried.** Matching a claim's
+numbers against the composed book misses every figure the book spells out — the
+attention essay prints "around eighty-five times a day", so `smartphone-checks`
+reads as absent — while matching looser numbers picks up folios instead
+(`sagrada-magic-square` "matched" on 14 and 33). Matching a claim's words is
+worse: `peacock-structural-colour` matched, and the hit was **Peacock TV**, in a
+list of streaming services. `scripts/facts.mjs` makes the same point about its
+own matcher and reports rather than gates, which is correct and was left alone.
+
+So the printed page filters on `usedIn`, and `usedIn` was made trustworthy. All
+six are marked `Unplaced` — the marker `content/images.json` already uses for a
+cut asset, and the predicate `scripts/credits.mjs` already tests — with the
+reason and the date. The research is kept, because a claim whose passage was cut
+may come back. 28 claims print.
+
+**`monastic-acedia` is the one to remember.** The other five said things like
+`"photo 177 — specimen label"`, a numbering from a selection pass that stopped
+resolving to anything here long ago; unreadable as an address the moment you
+look at one. This one said `"essays/the-secret-life-of-attention.md — flow-1b"`.
+The file exists. The block exists. Only the prose inside it changed, and the word
+"acedia" is on no page of this book. It looked resolvable right up until someone
+grepped for the word.
+
+**An eighteenth check now guards the address**: every `usedIn` must name an
+essay file — and a block, if it names one — or an image id that exists, or be
+marked `Unplaced`. Verified to fail in both shapes by reintroducing them. It
+catches five of the six and **cannot catch the sixth**; the check's own comment
+says so rather than implying a coverage it does not have. The approximate
+reporter that runs alongside it did list `monastic-acedia`.
+
+**Two smaller things fixed while setting it.** Page ranges now take an en dash
+at the point of setting, leaving the ledger's plain hyphens as the publisher
+wrote them. And where an institution is both author and publication the echo is
+dropped — "Pew Research Center. Pew Research Center, 2025" and "Vodafone.
+Vodafone newsroom, 2017". The first version of that test compared the authors
+against publication *plus year*, so "nasaspaceplace" was measured against
+"nasa2024" and no NASA line ever collapsed.
+
+**The American-English check was taught one narrow exemption.** "UNESCO World
+Heritage Centre" is that body's registered name; spelling it "Center" would name
+an organisation that does not exist. Only the author and publication runs are
+skipped, by class — the subject label beside them is Adam's own words and is
+still held to house style, which matters, because one fact id in the ledger
+reads `peacock-structural-colour`. The exemption was tested in both directions:
+"colour" injected into a subject label still fails the check; injected into a
+citation field it passes.

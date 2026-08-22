@@ -23,7 +23,7 @@
       "claim": "The blue and green of a peacock's feathers are not pigment. The barbule cortex holds a two-dimensional photonic crystal of melanin rods in keratin, and the colour comes from the spacing of that lattice.",
       "status": "verified",
       "usedIn": [
-        "photo 177 — specimen label"
+        "Unplaced — was 'photo 177 — specimen label', a numbering from an older selection pass. No peacock specimen is in the book; the only 'peacock' on a page is Peacock TV in a list of streaming services. Verified 22 Aug 2026, not printed, not cited."
       ],
       "source": {
         "authors": "Zi J, Yu X, Li Y, Hu X, Xu C, Wang X, Liu X, Fu R",
@@ -39,7 +39,7 @@
       "claim": "A touched Mimosa pudica leaflet folds in a second or two. Cells in the pulvinus at the leaflet base dump potassium and chloride, lose water and collapse their turgor. The leaf reopens over five to fifteen minutes.",
       "status": "verified",
       "usedIn": [
-        "photo 358 — figure caption, The Intelligence Outside Your Head"
+        "Unplaced — was 'photo 358 — figure caption', a numbering from an older selection pass. Neither 'mimosa' nor 'pulvinus' appears anywhere in the content. Verified 22 Aug 2026, not printed, not cited."
       ],
       "source": {
         "authors": "Volkov AG, Foster JC, Ashby TA, Walker RK, Johnson JA, Markin VS",
@@ -55,7 +55,7 @@
       "claim": "The 4x4 square beside the Kiss of Judas on the Passion facade sums to 33 in every row, column and diagonal. It is adapted from the square in Durer's Melencolia I, repeating 14 and 10 and omitting 12 and 16, so it is not a true magic square.",
       "status": "verified",
       "usedIn": [
-        "photo 365 — figure caption"
+        "Unplaced — was 'photo 365 — figure caption'. Its image, library-10-sagrada-magic-square, is itself Unplaced and its file is not yet in the repository. This is the case scripts/facts.mjs names: a claim registered ahead of its spread. Cite it when the frame lands."
       ],
       "source": {
         "authors": "Basilica de la Sagrada Familia",
@@ -71,7 +71,7 @@
       "claim": "Columbia's heat shield protected the crew by destroying itself. The ablative layer vaporised as it heated, carrying the heat away with it, against a surface running between about 1,500 and 5,000 degrees Fahrenheit.",
       "status": "verified",
       "usedIn": [
-        "photo T023 — material break caption, The Strange Privilege"
+        "Unplaced — was 'photo T023 — material break caption'. Two material breaks were cut when spreads were trimmed to reach 130 pages; this caption went with them. 'ablative' appears nowhere in the content. Verified 22 Aug 2026, not printed, not cited."
       ],
       "source": {
         "authors": "National Air and Space Museum, Smithsonian Institution",
@@ -87,7 +87,7 @@
       "claim": "Block Island is an iron-nickel meteorite about 67 cm across, found on Mars by the Opportunity rover on 17 July 2009. It is the largest meteorite yet found on Mars. The object in the museum is a full-scale model; the meteorite itself is still there.",
       "status": "verified",
       "usedIn": [
-        "photo T033 — plate caption"
+        "Unplaced — was 'photo T033 — plate caption', a numbering from an older selection pass. 'meteorite' appears nowhere in the content. Verified 22 Aug 2026, not printed, not cited."
       ],
       "source": {
         "authors": "NASA Jet Propulsion Laboratory",
@@ -483,7 +483,7 @@
       "source": {
         "authors": "Meta Platforms",
         "title": "Other categories used to reach you",
-        "publication": "Download Your Information, personal export for Adam Hickey",
+        "publication": "Download Your Information, personal export",
         "year": 2026,
         "url": "https://www.facebook.com/dyi"
       },
@@ -500,7 +500,7 @@
       "source": {
         "authors": "Meta Platforms",
         "title": "Advertisers using your activity or information",
-        "publication": "Download Your Information, personal export for Adam Hickey",
+        "publication": "Download Your Information, personal export",
         "year": 2026,
         "url": "https://www.facebook.com/dyi"
       },
@@ -516,7 +516,7 @@
       "source": {
         "authors": "Meta Platforms",
         "title": "Cities you have checked into",
-        "publication": "Download Your Information, personal export for Adam Hickey",
+        "publication": "Download Your Information, personal export",
         "year": 2026,
         "url": "https://www.facebook.com/dyi"
       },
@@ -527,7 +527,7 @@
       "claim": "Distraction is not new: fourth- and fifth-century monastic writers described it at length, naming it acedia — the noonday restlessness that makes a person unable to stay with the task or the cell.",
       "status": "verified",
       "usedIn": [
-        "essays/the-secret-life-of-attention.md — flow-1b"
+        "Unplaced — was 'essays/the-secret-life-of-attention.md — flow-1b'. The passage went in the editorial pass; the essay now reaches the same point through the reader's own afternoon rather than through fourth-century monks. This entry is the one that hid: it named a real essay and a real block, so it read as resolvable while 'acedia' appeared nowhere on any page. Verified 22 Aug 2026, not printed, not cited."
       ],
       "source": {
         "authors": "John Cassian",
@@ -559,7 +559,7 @@
       "claim": "The opening plate of Most of Life Is a Tuesday prints a solar survey over a photograph of a dog asleep in afternoon light: LAT 45.4167 N, LON 75.7000 W, DATE 21/06, TIME 15:00, ALTITUDE 61.2 degrees, AZIMUTH 212.7 degrees.",
       "status": "disputed",
       "usedIn": [
-        "images.json — ordinary-days-01a-dog-afternoon-light (printed inside the image, not in body copy)"
+        "ordinary-days-01a-dog-afternoon-light — printed inside the image, not in body copy"
       ],
       "source": {
         "authors": "NOAA Global Monitoring Laboratory",

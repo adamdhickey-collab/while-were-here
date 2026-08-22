@@ -122,7 +122,16 @@ const BRIT = ['colour', 'colours', 'coloured', 'oxidised', 'organised', 'recogni
    Americanising it would make the attribution wrong, which for a CC BY image is
    the one thing this page exists to get right. Only text in curly quotes is
    skipped, so a British spelling in the book's own prose is still caught. */
-const ownWords = prose.replace(/\u201C[^\u201D]*\u201D/g, ' ');
+/* Citation fields on the sources page are exempt for the same reason and by the
+   same principle. "UNESCO World Heritage Centre" is that body's registered name;
+   spelling it "Center" would name an organisation that does not exist. Only the
+   author and publication runs are skipped \u2014 the subject label beside them is
+   Adam's own words and is still held to house style, which matters because at
+   least one fact id in the ledger reads `peacock-structural-colour`. */
+const citations = stripped
+  .replace(/<span class="sources__(?:who|where)">[\s\S]*?<\/span>/g, ' ')
+  .replace(/<[^>]+>/g, ' ');
+const ownWords = (citations + ' \n ' + altText).replace(/\u201C[^\u201D]*\u201D/g, ' ');
 const brit = BRIT.filter((w) => new RegExp(`\\b${w}\\b`, 'i').test(ownWords));
 check('American English', brit.length === 0, brit.length ? `found: ${brit.join(', ')}` : '');
 
@@ -383,7 +392,56 @@ for (const f of cssFiles) {
 check('vertical text declares text-orientation', vertical.length === 0,
   vertical.length ? vertical.join(', ') : 'no vertical rule leaves orientation to the default');
 
-/* 17. Facts that are verified but have not reached a page. Reported, never
+/* 17. Every `usedIn` in the fact ledger points somewhere real. This is the
+       check that the sources page rests on, because that page prints exactly
+       the claims whose `usedIn` resolves — see scripts/build.mjs.
+
+       It exists because six verified facts were citing passages the book no
+       longer contains when the sources page was written, and one of them would
+       have printed a citation for a paper about fourth-century monks beside a
+       book that never mentions them. Five of the six were the same shape:
+       `usedIn` read "photo 177 — specimen label", a numbering from a selection
+       pass that stopped resolving to anything in this repo long ago. Nothing
+       looked at those strings, so nothing noticed.
+
+       Know its limit. The sixth, `monastic-acedia`, read
+       "essays/the-secret-life-of-attention.md — flow-1b" — a real file and a
+       real block, both of which still exist. Only the passage inside the block
+       changed. No exact check can catch that, which is what the approximate
+       report below is for; it did list monastic-acedia. This check catches
+       drift in the address, not in the prose behind it. */
+/* A claim can be used in two places, so there are two legal address forms: an
+   essay ("essays/x.md — block") for body copy and margin notes, and an image id
+   ("specimen-01-komodo-tongue — label") for a caption or a specimen label. Both
+   are checked against the thing they name. The stale five matched neither. */
+const imageIds = new Set(images.map((i) => i.id));
+const badUse = [];
+for (const f of facts) {
+  for (const u of f.usedIn || []) {
+    if (String(u).startsWith('Unplaced')) continue;      // deliberately not on a page
+    const head = String(u).split('—')[0].trim();
+    if (imageIds.has(head)) continue;                    // a caption on a known image
+    const m = String(u).match(/^([\w./-]+\.md)(?:\s*—\s*(.+))?$/);
+    if (!m) { badUse.push(`${f.id}: "${String(u).slice(0, 40)}" is not an address`); continue; }
+    const file = P('content', m[1]);
+    if (!fs.existsSync(file)) { badUse.push(`${f.id}: ${m[1]} does not exist`); continue; }
+    /* The tail after the em dash may name a block or describe a slot
+       ("marginNote"). Only check it when it looks like a block id. */
+    const tail = (m[2] || '').trim();
+    if (/^[a-z0-9-]+$/.test(tail) && tail !== 'marginNote') {
+      const src = fs.readFileSync(file, 'utf8');
+      if (!new RegExp(`<!--\\s*block:\\s*${tail}\\s*-->`, 'i').test(src)) {
+        badUse.push(`${f.id}: ${m[1]} has no block "${tail}"`);
+      }
+    }
+  }
+}
+check('every fact says where it is used, and means it', badUse.length === 0,
+  badUse.length ? badUse.join(' · ')
+    : `${facts.length} facts, every usedIn resolves to a file and block that exist, `
+      + `or is marked Unplaced`);
+
+/* 18. Facts that are verified but have not reached a page. Reported, never
        failed: registering a claim before its spread exists is correct. */
 const printedLower = text.toLowerCase();
 const STOP = new Set(['about','above','after','their','there','these','those','which','while','would','because','between','through','around','other','under','where','with','from','that','this','than','then','they','been','have','into','more','most','only','over','some','such','were','when']);

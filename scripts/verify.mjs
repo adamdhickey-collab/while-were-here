@@ -417,9 +417,16 @@ if (!lbl.available) {
   note('diagram labels', 'no browser here — not checked. Run `npm run labels` locally.');
 } else {
   const c = lbl.collisions || [];
+  /* `latent` are collisions in figures that exist in src/layouts/diagrams.mjs
+     but are on no page — four of the five are unplaced, waiting on the 130-page
+     ceiling. They cannot fail the build, because nothing prints them. They are
+     carried into this line so the count is not silently dropped: the whole point
+     of measuring them is that somebody sees the warning BEFORE placing one. */
+  const lat = lbl.latent || [];
+  const tail = lat.length ? ` · ${lat.length} in unplaced figures — run \`npm run labels\`` : '';
   check('nothing is drawn through a diagram label', c.length === 0,
     c.length ? c.map((x) => `"${x.text}"`).join(', ')
-             : `${lbl.boxes} labels checked, all clear`);
+             : `${lbl.boxes} labels checked, all placed ones clear${tail}`);
 }
 
 /* 15. Every number in a margin note traces to the fact ledger.

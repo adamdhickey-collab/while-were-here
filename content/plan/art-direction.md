@@ -488,3 +488,32 @@ as a convenience.*
 `stage` remains in the section and essay frontmatter and still drives every
 page's ground, ink and ground-opacity. It is now a private structure, which is
 what it always was.
+
+**The four unplaced figures are now checked too — 22 Aug 2026.** `npm run labels`
+could only ever see figures on a page, which meant it could not see the four
+that are not, and those are the ones that need it: `walking`'s caption-through-
+`correction` collision was found by somebody enlarging a corner by hand, not by
+the check written for that fault. A latent collision prints the first time
+anyone places the figure, when nobody is looking at it with fresh eyes any more.
+
+The unplaced figures are injected into the loaded page — so they inherit the
+book's real inks — and measured by the same code path. `dayField` has no `<text>`
+and drops out on its own. Coverage goes from 6 labels in 1 figure to **20 labels
+in 4**.
+
+**Their findings are ADVISORY and never fail the build**, because nothing prints
+them. Five came back on the first run:
+
+| figure | labels flagged |
+| --- | --- |
+| `observational` | "point of entry", "0", "≈ 4 s" |
+| `walking` | "balance", "inner ear" |
+
+**Treat that list as somewhere to look, not as a verdict, and here is why.** It is
+measured on an injected render at a size nobody has chosen: a figure at 92 mm in
+an inset is not the same geometry as the same figure across a spread. And on a
+full-size render of `observational` the arcs near "0" and "≈ 4 s" do look like
+they cross, but **"point of entry" looked clean to me** — so at least one of the
+five is probably the measurement and not the drawing. They are worth half an
+hour with the file open before any of these four goes on a page. They are not
+worth a change today.

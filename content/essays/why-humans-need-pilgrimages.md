@@ -139,7 +139,7 @@ The body supplies a measure that cannot be argued with for long. A blister chang
 
 <!-- block: flow-2b -->
 
-Pilgrimage is also built by strangers. Historic routes required wells, bridges, hospitals, and places to sleep. Towns learned the rhythm of arriving feet. Food was prepared for people who would leave the next morning. A route becomes durable when hospitality is repeated along it. The route survives because this work repeats. The walker depends on people who did not begin the journey and may not share its reason. This dependence is easy to overlook in accounts centered on private transformation. The path is a social structure. Someone maintains the marker. Someone recognizes the tired person at the door. Solitude on a pilgrimage is supported by a long chain of other people’s work.
+Pilgrimage is also built by strangers. Historic routes required wells, bridges, hospitals, and places to sleep. Towns learned the rhythm of arriving feet. Food was prepared for people who would leave the next morning. A route becomes durable when hospitality is repeated along it. The walker depends on people who did not begin the journey and may not share its reason. This dependence is easy to overlook in accounts centered on private transformation. The path is a social structure. Someone maintains the marker. Someone recognizes the tired person at the door. Solitude on a pilgrimage is supported by a long chain of other people’s work.
 
 <!-- block: flow-2c -->
 

@@ -235,3 +235,49 @@ It is also the easiest photograph in the book to take, and — because the note
 says *"she was asleep when I checked it"* — **it is the same afternoon as the
 dog asleep in the light.** One sitting answers four slots. See
 [shot-list](shot-list.md) items 0 and 0b.
+
+
+---
+
+## Fourteen dog pictures, and where they fall — 22 Aug 2026
+
+Counted because the audit kept meeting the same animal. She appears in
+**fourteen** of the book's images. That is not a criticism — she is a real
+presence in this life and the book is about this life — but the distribution is
+worth deciding on deliberately rather than discovering in print.
+
+| essay / section | images | of which the dog |
+| --- | --- | --- |
+| **01 · Most of Life Is a Tuesday** | 10 | **5** |
+| 02 · The Secret Life of Attention | 7 | 1 (the generated room) |
+| field note II→III · the tag | 2 | **2** |
+| 05 · The Strange Privilege | 10 | 1 |
+| Part IV divider | 1 | 1 |
+| **08 · While We're Here** | 8 | **3** |
+| field note · the fire | 1 | 1 |
+
+**Essay 01 is half dog.** Its opener is a dog in a rectangle of light, its
+contact sheet is three frames of one dog on one walk, and — since 22 Aug — its
+closing plate is that same dog stepping into the river on that same walk. The
+essay opens on her, is centred on her, and closes on her.
+
+**And the book's first and last essays are both dog-framed.** Essay 08 opens on
+her too, in leaves, on that same October afternoon.
+
+Two ways to read that, and it is Adam's call which is true:
+
+* **As structure.** One animal, one life, ordinary days — the creature who does
+  by nature what the essays argue for. The specimen series already does
+  something like this invisibly with a single afternoon at a zoo, and it works.
+* **As repetition.** Five in one essay is a lot, three of them consecutive on a
+  contact sheet, and the closing plate now draws from the same walk as that
+  sheet — which is either a satisfying return or the same afternoon three times.
+
+**One concrete option if it reads as too much.** The essay-01 closing was chosen
+partly *because* it comes from the contact sheet's walk. If that now feels like
+one walk too many, `library-13-cloud-floor-sunset` or the lake at last light
+would close the essay on the same register with no animal in it. The frame is
+registered and unplaced.
+
+Nothing here is a defect. It is the one pattern in the book's imagery that only
+becomes visible when you count.

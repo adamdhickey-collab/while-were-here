@@ -10,7 +10,7 @@ stageTitle: what is left
 statement: >-
   Nothing here is permanent.
   Nothing here is therefore smaller.
-blurb: Distance, arrival, ordinary rooms, and the people who will not always be here.
+blurb: Distance, arrival, ordinary rooms, and the time we get to spend in them together.
 essays:
   - The Body Cannot Skip the Hill
   - While We’re Here

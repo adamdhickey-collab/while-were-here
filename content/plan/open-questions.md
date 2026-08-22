@@ -240,6 +240,20 @@ served by item 8, which shares a session with item 4.
 
 ---
 
+### 11 · The back-cover botanical, from the editorial pass
+The outside read questioned the mycelium drawing on the back cover: the book
+has developed its own visual vocabulary, and ending on something as botanically
+familiar as mushrooms "risks feeling more familiar than the material preceding
+it." It is a fair note and it is a cover decision, so it is Adam's.
+
+Options, none urgent: keep it (a quiet counterweight is a legitimate choice);
+replace it with something from the book's own vocabulary — a small survey mark,
+or the front's off-true ring, which would tie the two covers together; or let
+the back carry type alone. The full editorial pass, including everything it
+protected, is in [editorial-pass.md](editorial-pass.md).
+
+---
+
 ## The photo library
 
 ### 6 · The edited export — **DONE**, 21 Aug 18:14

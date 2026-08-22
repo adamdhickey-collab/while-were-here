@@ -266,11 +266,11 @@ Later generations inherit revolutions as furniture. Electric light becomes a swi
 
 <!-- block: flow-1b -->
 
-The fragments accumulate. In 1971, Intel’s 4004 placed 2,300 transistors on one chip. Its specifications now look small enough to be mistaken for a classroom exercise. At the time, it helped establish the microprocessor as a general device that could be programmed for different purposes. Computation began moving out of specialized rooms and into calculators, appliances, and cars. No single household object contained the revolution. The change was the growing ability to put logic almost anywhere. Each reduction in size altered what could be designed next. A machine stopped being one machine. It became a component that could disappear inside another object and quietly change what that object was able to do.
+The fragments accumulate. In 1971, a chip smaller than a fingernail started computation on its long walk out of the specialized rooms — into calculators, then appliances, then cars. No single household object contained the revolution. A machine stopped being one machine. It became a component that could disappear inside another object and quietly change what that object was able to do.
 
 <!-- block: flow-2a -->
 
-Learning systems make a different movement. Traditional software follows rules written in advance. A learned model is shaped by examples. During training, it adjusts internal values until its outputs fit patterns in the data closely enough to be useful. The resulting behavior can be difficult to reduce to a short list of instructions. In 2017, researchers described the transformer, an architecture built around attention mechanisms that could process relationships within sequences efficiently in parallel. The paper addressed translation. The underlying method proved useful far beyond it. Language became one of the materials that large computational systems could model, continue, classify, and rearrange.
+Learning systems make a different movement. Traditional software follows rules written in advance. A learned model is shaped by examples. During training, it adjusts internal values until its outputs fit patterns in the data closely enough to be useful. The resulting behavior can be difficult to reduce to a short list of instructions. In 2017, a research paper about machine translation described a better way for a system to weigh words against one another. The method proved useful far beyond the problem it was written for. Language became one of the materials that large computational systems could model, continue, classify, and rearrange.
 
 <!-- block: flow-2b -->
 
@@ -278,7 +278,7 @@ The public encounter with this change has been unusually direct. Earlier advance
 
 <!-- block: flow-2c -->
 
-The reach is already wider than conversation. Systems predict protein structures, find patterns in medical images, and help search spaces too large for manual inspection. These tools do not remove experiments or expertise. They alter where effort begins. A predicted structure can narrow a laboratory question. A generated prototype can make an idea concrete enough to criticize. Code can be drafted before every dependency has been understood. The first result arrives sooner, which changes the value of the next action. A scientist can spend less time locating one candidate and more time deciding which uncertainty deserves an experiment. Less time is spent producing one possible answer. More attention can be spent choosing among answers, checking their foundations, and deciding whether the problem was framed correctly.
+The reach is already wider than conversation. Systems predict protein structures, find patterns in medical images, and help search spaces too large for manual inspection. These tools do not remove experiments or expertise. They alter where effort begins. A predicted structure can narrow a laboratory question. A generated prototype can make an idea concrete enough to criticize. Code can be drafted before every dependency has been understood. A scientist can spend less time locating one candidate and more time deciding which uncertainty deserves an experiment.
 
 <!-- block: flow-3a -->
 
@@ -286,7 +286,7 @@ This is where the privilege becomes strange. Most people who live after a major 
 
 <!-- block: flow-3b -->
 
-Professions change inside that overlap. A designer can produce more variations before a meeting. A programmer can begin with a proposed function instead of an empty file. Review becomes a larger part of the craft. None of this determines who benefits. Faster production can create room for judgment, or it can become the reason more production is demanded. A task removed from one role may reappear as review in another. Skill does not simply vanish. Its location and visibility change. The person who once made every first draft may become responsible for detecting the subtle failure that an effortless draft conceals.
+Professions change inside that overlap. A designer can produce more variations before a meeting. A programmer can begin with a proposed function instead of an empty file. Review becomes a larger part of the craft. Faster production can create room for judgment, or it can become the reason more production is demanded. The person who once made every first draft becomes responsible for detecting the subtle failure that an effortless draft conceals.
 
 <!-- block: flow-4a -->
 

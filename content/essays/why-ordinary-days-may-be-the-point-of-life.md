@@ -261,13 +261,11 @@ The route repeats. The world does not.
 
 <!-- block: s8b -->
 
-This is what makes ordinary routines more interesting than they first appear. They provide a stable frame around constant change.
+A routine is a stable frame around constant change.
 
 The morning coffee is similar. You aren’t. The neighborhood looks similar. It isn’t. Even your body is continuously rebuilding itself.
 
 The apparently static world is moving everywhere. Just slowly enough that distraction mistakes it for stillness.
-
-Pay attention long enough and ordinary reality becomes almost impossibly complex.
 
 <!-- block: s9a -->
 
@@ -288,8 +286,6 @@ But every person around us contains an entire private universe. Memories you’l
 
 A person you’ve known for thirty years remains fundamentally mysterious. That mystery can disappear beneath routine.
 
-Love depends partly on resisting that disappearance, loving what has become familiar without allowing familiarity to make it invisible.
-
 Romantic love often begins with novelty. Everything about the person is interesting. How they laugh. What they eat.
 
 Then years pass. The extraordinary person becomes the person standing in the kitchen. And maybe mature love is partly remembering that those are the same person.
@@ -304,15 +300,11 @@ Make something you’re proud of.
 Have the adventure.  
 Celebrate the milestone.
 
-Those moments give life peaks.
-
-But mountains are mostly made of everything below the summit. You don’t live on the peak. You visit it. Then you come down. And you make breakfast.
+Then you come down. And you make breakfast.
 
 <!-- block: s10b -->
 
 A good life isn’t one containing the maximum number of extraordinary experiences. Maybe it is one in which ordinary experience stops feeling like something you need to escape.
-
-A life where a quiet morning can be enough. Where walking somewhere familiar still occasionally surprises you. Where the people you’ve known longest don’t become invisible. Where nothing remarkable needs to happen for you to feel that the day counted.
 
 Because eventually, when we look backward, I suspect much of what we’ll want won’t be another accomplishment.
 

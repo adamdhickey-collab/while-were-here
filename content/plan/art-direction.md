@@ -396,3 +396,30 @@ image cannot keep one.
 attending to the actual world. The reader is told, in as many words, to look
 again. A picture that punishes the second look is arguing against the page it
 sits on.
+
+---
+
+## The hierarchy of visual languages — 21 Aug 2026, from the editorial pass
+
+The book runs many visual languages — photography, survey overlay, field note,
+diagram, handwriting, specimen card, metadata record, map, macro texture — and
+the outside read found them independently good but competing for equal
+authority. The fix is not removal. It is a stated order, so the outliers read
+as intentional rather than eclectic:
+
+1. **Primary — documentary observation.** The photographs. What was actually
+   there, at the size and prominence of testimony.
+2. **Secondary — analytical and survey overlay.** The drafted diagrams and
+   surveys, always in service of a photograph or an observation, never
+   free-floating.
+3. **Tertiary — found record, archive, specimen.** The Meta records, catalogue
+   cards, handwriting, ephemera. Small, boxed, labelled; the register where
+   *numbers* live (a spread says a figure once, here, not twice).
+
+Two corollaries already applied: the 4004's transistor count comes out of body
+prose because the margin note owns it, and no fourth reproduced dataset joins
+the three records — three is intentional, six is a device.
+
+And one push the critique made that this document endorses: **Part II may get
+stranger, never tamer.** The hidden-systems material is the book's
+distinctiveness — "the reader should feel the aperture opening."

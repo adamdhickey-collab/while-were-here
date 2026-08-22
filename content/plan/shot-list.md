@@ -178,3 +178,50 @@ The Renwick *Wonder* frames (`P1050270`–`P1050283`) are **blocked on rights**:
 photographs of copyrighted three-dimensional works by living artists. Either
 write to the artists or leave the exhibition out. `P1050330`, the Audubon
 flamingo, is fine — public-domain print, Adam's photograph, real credit.
+
+---
+
+## Re-ranked by what each shot does for the story — 22 Aug 2026
+
+The list above was ordered by how cheap each shot is and how much dpi it buys.
+Adam's correction on 22 Aug — *"I'm more concerned about getting the right
+imagery in there in the first place to tell a compelling story alongside the
+text"* — reorders it. Resolution is a constraint to clear, not a reason to
+shoot. Full reasoning in [imagery-audit](imagery-audit.md).
+
+### 0 · THE DOG ASLEEP IN A RECTANGLE OF AFTERNOON LIGHT
+**Before everything else on this list.**
+
+The book opens on it — *"the sun came in low and crossed half the floor between
+two and five, and the dog crossed with it… about a meter an hour"* — and closes
+on it — *"a dog lies in a rectangle of afternoon light on the floor. The bright
+edge moves slowly across the boards."* Essay 01 currently answers that with a
+generated room. Essay 08 answers it with a real photograph of the dog **outdoors
+on autumn leaves**, which is not the scene.
+
+**Verified absent from the library.** All 871 dog frames were searched by Photos'
+own scene labels; the 170 indoor ones were all looked at. It does not exist.
+
+No staging. A clear afternoon, the floor she already chooses, and the patience
+to let her fall asleep in it. Shoot it wide enough to crop square for essay 01
+and to crop 4:3 for essay 08 — one sitting can serve both ends of the book.
+If she moves with the light, photograph it twice an hour apart; the essay's
+whole claim is that the light moved and she followed it.
+
+### The workshop, in one session · items 4, 8, and the essay-04 opener
+Essay 04 is the thinnest essay in the book: **one photograph Adam took**, and it
+is a page from a book he made as a child. Its opener, its tall plate and its
+closing are all generated or stock. Three of those slots are the same bench at
+three moments — the pencil line, the bench ready, the bench finished. Also
+verified absent from the library: the `Tool` label returns cutlery.
+
+### The evening light on a far wall · essay 08's tall plate
+The easiest photograph on this list, in his own house, on any clear evening.
+Its caption is already written: *"The room is doing this whether or not anyone
+is in it."* Also verified absent — the `Wall` × `Light` search returns
+moving-day documentation.
+
+### Then the rest, as before
+The kitchen table, the artifact array, the cursor, the four-season sequence, and
+the rephotograph of the child's book page (item 11), which settles a sentence
+the book quotes twice.

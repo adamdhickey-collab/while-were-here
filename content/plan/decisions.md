@@ -1151,3 +1151,36 @@ Verified in both directions: greyhound, organism and programmer injected into th
 built page all pass; "watercolour" and "neighbourhoods" both fail and are named
 individually. The stem list also grew from 22 words to 58, which is how `kerb`
 was found at all — it was never on the old list in any form.
+
+---
+
+## The fact check could not read the numbers the book actually prints
+*22 Aug 2026*
+
+Check 17, "every number in a margin note is in the fact ledger", has been green
+since it was written and reported **"150 distinct figures, no margin note citing
+anything else."** It matched `\b\d[\d,.]*\b`. Digits only.
+
+**This book sets most of its figures as words.** The attention essay prints
+"people picked up their phones around eighty-five times a day". Ten margin notes
+contain a spelled-out number, and **three contain no digit at all** — so for
+those three the check was verifying nothing whatsoever while reporting a total
+that made it sound exhaustive. Two of the three carry the whole claim:
+`eighty-five` IS `smartphone-checks`, and `four` IS `working-memory-four-chunks`.
+
+This is the same shape as the two other faults found today — a check that looks
+like it works, on exactly the inputs nobody uses. `-webkit-hyphenate-limit-lines`
+was a property the engine ignores; `\bcolour\b` could not see "watercolour"; this
+one could not see any number the book spells out.
+
+**Numbers words are normalised on both sides, not evaluated.** "thirty trillion"
+contributes 30 rather than thirty million million, and the ledger's own "thirty
+trillion" contributes 30 as well, so the two agree without this check becoming a
+number parser. Scale words are ignored deliberately, and compounds are read
+before bare words so "eighty-five" gives 85 and not 80 and 5.
+
+**The book was already right.** All ten notes resolve against the ledger; the
+figure count went 150 → 153 and nothing failed. That is the moment worth fixing
+a blind check — while it still costs nothing. Verified by changing "eighty-five"
+to "ninety-three" in the essay: the old check passed it silently, the new one
+reports `the-secret-life-of-attention: 93`.

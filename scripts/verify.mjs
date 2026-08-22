@@ -418,12 +418,54 @@ if (!lbl.available) {
       ledger, including source publication years, not against one best-matching
       fact. Matching per-fact was tried first and produced two false positives
       immediately. */
+/* SPELLED-OUT numbers count too, and for a long time they did not. This book
+   sets most of its figures as words — the attention essay prints "around
+   eighty-five times a day" — and `grabNums` only ever matched digits. Three
+   margin notes contain no digit at all, so this check was verifying nothing
+   whatsoever for them while reporting "150 distinct figures, no margin note
+   citing anything else". Two of the three carry the load: "eighty-five" IS
+   smartphone-checks, and "four" IS working-memory-four-chunks.
+
+   The words are normalised on BOTH sides rather than evaluated. "thirty
+   trillion" contributes 30, not 30000000000000, and the ledger's own "thirty
+   trillion" contributes 30 as well, so the two agree without this check having
+   to become a number parser. Scale words are deliberately ignored for the same
+   reason. Compounds are read before bare words so "eighty-five" gives 85 rather
+   than 80 and 5.
+
+   Every spelled number in the book already resolved when this was added — the
+   book was right and the check was blind, which is the combination worth fixing
+   before it stops being true. */
+const UNIT_WORDS = { zero: 0, one: 1, two: 2, three: 3, four: 4, five: 5, six: 6, seven: 7,
+  eight: 8, nine: 9, ten: 10, eleven: 11, twelve: 12, thirteen: 13, fourteen: 14, fifteen: 15,
+  sixteen: 16, seventeen: 17, eighteen: 18, nineteen: 19 };
+const TENS_WORDS = { twenty: 20, thirty: 30, forty: 40, fifty: 50, sixty: 60, seventy: 70,
+  eighty: 80, ninety: 90 };
+const TENS_RE = Object.keys(TENS_WORDS).join('|');
+const UNIT_RE = Object.keys(UNIT_WORDS).join('|');
+const wordNums = (t) => {
+  const s = String(t).toLowerCase();
+  const out = new Set();
+  for (const m of s.matchAll(new RegExp(`\\b(${TENS_RE})[- ](${UNIT_RE})\\b`, 'g'))) {
+    out.add(String(TENS_WORDS[m[1]] + UNIT_WORDS[m[2]]));
+  }
+  const rest = s.replace(new RegExp(`\\b(${TENS_RE})[- ](${UNIT_RE})\\b`, 'g'), ' ');
+  for (const [w, v] of Object.entries({ ...UNIT_WORDS, ...TENS_WORDS })) {
+    if (new RegExp(`\\b${w}\\b`).test(rest)) out.add(String(v));
+  }
+  return out;
+};
+
 const ledgerNums = new Set();
 const grabNums = (t) => String(t).replace(/<[^>]+>/g, ' ').match(/\b\d[\d,.]*\b/g) || [];
+const feed = (t) => {
+  for (const n of grabNums(t)) ledgerNums.add(n.replace(/,/g, ''));
+  for (const n of wordNums(t)) ledgerNums.add(n);
+};
 for (const f of facts) {
-  for (const n of grabNums(f.claim)) ledgerNums.add(n.replace(/,/g, ''));
-  for (const n of grabNums(f.note || '')) ledgerNums.add(n.replace(/,/g, ''));
-  for (const v of Object.values(f.source || {})) for (const n of grabNums(v)) ledgerNums.add(n.replace(/,/g, ''));
+  feed(f.claim);
+  feed(f.note || '');
+  for (const v of Object.values(f.source || {})) feed(v);
 }
 const unsourced = [];
 for (const file of fs.readdirSync(P('content/essays')).filter((n) => n.endsWith('.md'))) {
@@ -431,8 +473,10 @@ for (const file of fs.readdirSync(P('content/essays')).filter((n) => n.endsWith(
   for (const m of src.matchAll(/^\s*marginNote:\s*>-?\n((?:\s{6,}.*\n)+)/gm)) {
     const note = m[1];
     if (note.length < 60) continue;
-    const miss = [...new Set(grabNums(note).map((n) => n.replace(/,/g, '')))]
-      .filter((n) => !ledgerNums.has(n));
+    const miss = [...new Set([
+      ...grabNums(note).map((n) => n.replace(/,/g, '')),
+      ...wordNums(note),
+    ])].filter((n) => !ledgerNums.has(n));
     if (miss.length) unsourced.push(`${file.replace('.md','')}: ${miss.join(', ')}`);
   }
 }

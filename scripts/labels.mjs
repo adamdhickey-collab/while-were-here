@@ -21,6 +21,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { chromium } from 'playwright-core';
 import { execSync } from 'node:child_process';
+import { diagrams } from '../src/layouts/diagrams.mjs';
 
 const args = process.argv.slice(2);
 const asJson = args.includes('--json');
@@ -60,6 +61,51 @@ await page.waitForTimeout(500);
 /* Per-figure, never the whole book. A full-page shot of 132 pages at 300 mm
    exhausts Chromium's tile memory and the renderer dies — measured. Each
    fieldnote SVG is small, so shoot the element itself, twice. */
+/* THE UNPLACED DIAGRAMS ARE CHECKED TOO, and they are the ones that need it.
+   src/layouts/diagrams.mjs exports five figures; only `attention-diagram` is on
+   a page. The other four are written, working and waiting on the 130-page
+   ceiling — see content/plan/art-direction.md — so they appear in no build
+   output and this check could never see them.
+
+   That is exactly backwards. `walking` had its rust caption lying across the
+   word `correction`, the same collision Figure 02.1 had, and it was found by
+   somebody enlarging a corner by hand rather than by the check written for that
+   fault. A latent collision in an unplaced figure prints the first time anyone
+   places it, and by then nobody is looking at it with fresh eyes.
+
+   So the unplaced ones are injected into the loaded page — which already has
+   the book's stylesheet, so they inherit the real inks and weights — and
+   measured by the same code path. `day-field` has no <text> at all and drops
+   out on its own. */
+const placed = await page.evaluate(() =>
+  [...document.querySelectorAll('svg.fieldnote')].map((s) => (s.getAttribute('aria-label') || '')));
+const unplacedSvg = Object.entries(diagrams)
+  .map(([key, fn]) => {
+    let markup = '';
+    try { markup = fn(); } catch { markup = ''; }
+    return { key, markup };
+  })
+  .filter(({ markup }) => markup && /<text/.test(markup))
+  .filter(({ markup }) => {
+    const label = (markup.match(/aria-label="([^"]*)"/) || [])[1] || '';
+    return !placed.some((p) => p && label && p === label);
+  });
+
+if (unplacedSvg.length) {
+  await page.evaluate((figs) => {
+    const host = document.createElement('div');
+    host.id = 'unplaced-diagrams';
+    host.style.cssText = 'position:absolute;left:0;top:0;width:900px;background:#EFE9DC;padding:0;';
+    host.innerHTML = figs.map(({ markup }) =>
+      `<div style="width:900px;padding:24px;box-sizing:border-box">${markup}</div>`).join('');
+    document.body.appendChild(host);
+  }, unplacedSvg);
+  await page.waitForTimeout(250);
+}
+
+const injectedLabels = new Set(unplacedSvg
+  .map(({ markup }) => (markup.match(/aria-label="([^"]*)"/) || [])[1]).filter(Boolean));
+
 const figures = await page.$$('svg.fieldnote');
 const findings = [];
 let boxes = 0;
@@ -82,7 +128,8 @@ for (const fig of figures) {
   const bare = await fig.screenshot({ type: 'png' });
   await setHide(false);
   fs.writeFileSync('/tmp/.labels-bare.png', bare);
-  findings.push({ name: meta.name, labels: meta.labels, bare: '/tmp/.labels-bare.png' });
+  findings.push({ name: meta.name, labels: meta.labels, bare: '/tmp/.labels-bare.png',
+                  placed: !injectedLabels.has(meta.name) });
   /* measure immediately, one figure at a time, so the buffer is never stale */
   const out = JSON.parse(execSync(`./.venv/bin/python scripts/label_ink.py /tmp/.labels-bare.png '${JSON.stringify(meta.labels).replace(/'/g, "")}' ${meta.figW}`).toString());
   /* Text-on-text is invisible to the render method, because that method hides
@@ -102,9 +149,34 @@ for (const fig of figures) {
 }
 await browser.close(); server.close();
 
-const bad = findings.flatMap((f) => (f.hits || []).map((h) => ({ figure: f.name, ...h })));
-if (asJson) { console.log(JSON.stringify({ available: true, boxes, collisions: bad })); process.exit(0); }
-if (!bad.length) { say(`\n  ✓ diagram labels                                 ${boxes} labels across ${findings.length} figure(s), nothing drawn through any of them\n`); process.exit(0); }
+/* Split by whether the figure is on a page. A collision in a PLACED figure is a
+   fault in the object and fails the build. A collision in an UNPLACED one cannot
+   be — nothing prints it — so it is advisory, and it stays advisory even though
+   it is the more useful of the two: it is a warning to whoever places the figure
+   later, delivered before they do.
+
+   Advisory also because these are measured on an injected render at a size
+   nobody has chosen yet. The geometry of a figure at 92 mm in an inset is not
+   the geometry of the same figure across a spread, and at least one of the first
+   hits — "point of entry" in `observational` — could not be confirmed by eye on
+   a full-size render. Treat the list as somewhere to look, not as a verdict. */
+const all = findings.flatMap((f) => (f.hits || []).map((h) => ({ figure: f.name, placed: f.placed, ...h })));
+const bad = all.filter((h) => h.placed);
+const latent = all.filter((h) => !h.placed);
+if (asJson) { console.log(JSON.stringify({ available: true, boxes, collisions: bad, latent })); process.exit(0); }
+const latentNote = () => {
+  if (!latent.length) return;
+  say(`\n  · ${latent.length} label(s) obstructed in figures that are NOT on a page.`);
+  say('    Advisory: nothing prints these yet. Look before placing one.');
+  for (const h of latent) say(`      "${h.text}"  in ${h.figure}  — ${h.axis}, ${h.pct}% of the box`);
+  say('');
+};
+if (!bad.length) {
+  const placedFigs = findings.filter((f) => f.placed).length;
+  say(`\n  ✓ diagram labels                                 ${boxes} labels across ${findings.length} figure(s) (${placedFigs} on a page), nothing drawn through any placed label`);
+  latentNote();
+  process.exit(0);
+}
 say(`\n  ⚠ ${bad.length} label(s) obstructed:\n`);
 for (const b of bad) say(b.axis === 'label-on-label'
   ? `    "${b.text}"  in ${b.figure}  — labels overlap by ${b.pct}% of a box`

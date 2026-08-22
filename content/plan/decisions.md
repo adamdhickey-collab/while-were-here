@@ -537,3 +537,31 @@ slot, the sharpest plate in the book. The termite section is Unplaced; its
 argument lives whole in flow-2b's prose. Essay 03's plates are now the hive,
 the dome, and Adam's two insets, with the two archive bands (starlings, slime
 mold) as the only pictures in it he didn't take.
+
+## The light on the wall enters essay 02, and the crop found the phone — 21 Aug 2026, Adam's call
+
+"Place the light on a wall." The slot: essay 02's image-essay spread, whose
+prose is flow-2 — "Sitting still works. Ten minutes in front of one painting
+works better than a museum" — and whose plate was the generated dog time-motion
+diagram. She is the prose's argument performed: alone in a stone room, watching
+colored light on a bare wall.
+
+**The vertical crop found something the landscape reading missed: her phone is
+in her hands, behind her back.** In the essay whose narrator confesses to
+"usually checking something I do not need to check," that gesture — the thing
+carried, held, and pointed away — is the argument's cost photographed. It was
+first seen at crop scale, which is the day's oldest lesson arriving one more
+time: the subject line was rewritten from the crop, not from memory. The
+sidebar names the phone once, flatly, and nothing else points at it.
+
+The copy that traveled with the swap: caption rewritten to the room and the
+light; all four field-note lines rewritten against what the crop contains
+(rope, window out of frame, phone, the hour); the hand note is now "ten
+minutes, one wall." The spelling check caught "coloured" in the new copy before
+it reached a proof — the first time that check has fired on live copy, and it
+paid for itself.
+
+Crop A of three (offset 600 px): full light scatter, rope, receding amphorae;
+the rejected slice admitted a stacked chair. 566 dpi at the tall slot. The dog
+time-motion plate is Unplaced — the dog's argument stays in flow-2's prose, and
+the dog herself is in six real photographs elsewhere.

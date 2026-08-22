@@ -71,19 +71,20 @@ spreads:
         - "Wi-Fi Usage"
   - type: image-essay
     variant: tall
-    image: attention-03-dog-sunlight
+    image: attention-03-light-on-a-wall
     blocks: [flow-2]
     caption: >-
-      <b>Plate 3.</b> A dog tracking a rectangle of afternoon light across a
-      floor, ten minutes at a time, for nine years.
+      <b>Plate 3.</b> A bare wall, a window out of frame, and a scatter of
+      colored light between them. She has the room to herself, and this is
+      what she is looking at.
     sidebar:
       title: Field notes
       lines:
-        - The animal is not concentrating. Concentration is effortful and this is not.
-        - It tracks the light without ever appearing to decide to.
-        - Nine years of the same square yard and no evidence of boredom.
-        - Whatever this is, it is not available to me by trying harder.
-    hand: it isn’t trying
+        - The rope protects the amphorae. What she is watching needs no protection.
+        - The window throwing the color is somewhere behind her. She has not turned to find it.
+        - The phone is in her hands, behind her back.
+        - Standing still is the whole technique. In an hour the wall will be bare again.
+    hand: ten minutes, one wall
     specimen:
       image: specimen-07-amur-tiger
       Specimen: Panthera tigris altaica

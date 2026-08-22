@@ -159,6 +159,9 @@ empty, and the empty answers are worth as much as the full one** — they conver
 | **A workbench, tools laid out** (essay 04, three slots) | 821 `Tool` frames intersected with wood/table/desk | **Not there.** Photos' `Tool` label is catching cutlery on dining tables; the only real hit was a boxed tool kit in its retail packaging. |
 | **Evening light on a far interior wall** (essay 08) | 330 `Wall` × 499 `Light` frames | **Not there.** The hits are empty-room documentation — moving-day and real-estate frames, flat and overhead-lit. |
 | **A kitchen table with an open laptop** (essay 05) | `Laptop`/`Computer` × `Kitchen`/`Table` | 8 frames, none of them the scene. |
+| **Rain on a window, one drop meeting another** (essay 08) | 1,533 `Window` × water/rain labels | **Not there.** 63 hits: windows onto snow, windows onto Niagara, windows onto Venice. Never the drop. |
+| **Starlings on a wire above a wet sidewalk** (Part I divider) | bird labels × wire/sky/street | **Not there.** 102 hits — hawks, an owl, pigeon flocks in a plaza, geese, one cardinal alone on a wire. No starlings, no wire above a sidewalk. |
+| **A dog asleep under a desk** (essay 05) | 871 `Dog` × desk/office/computer | 57 hits, none the scene. |
 
 **The conclusion is firm, and it is not a resolution conclusion.** The generated
 photographs in this book are mostly not replaceable from twenty-four thousand
@@ -177,3 +180,31 @@ ordinary thing long enough to see it.
 and they are not literal. `Tool` means cutlery as often as it means a chisel.
 The method finds candidates; it does not identify pictures. Every hit above was
 looked at.
+
+
+---
+
+## What the archive is actually rich in, and what it is missing — 22 Aug 2026
+
+Eight generated scenes have now been put to the library. **Every one came back
+negative.** That is too consistent to be luck, and the searches were not wasted:
+they describe the shape of the archive.
+
+**Twenty-four thousand photographs are strong in** travel, animals, weather,
+food, and above all *people* — plazas full of pigeons, hawks on branches, geese
+on grass, snow out of windows, dogs on sofas, dinners, Niagara from a hotel
+room, Fabiola laughing, family at a table.
+
+**They are nearly empty of** the room with nobody in it. The tool put down. The
+light on its way out. A drop of water on glass. A dog asleep in a rectangle of
+afternoon sun.
+
+That is not a gap in Adam's photography. It is the difference between what
+people photograph and what this book is about. **Cameras come out for events and
+for the people in them.** The essays argue for the opposite — the unphotographed
+Tuesday — and the archive is honest evidence for their thesis: he has been
+living the argument for twenty years without documenting it, because
+documenting it is precisely what nobody does.
+
+Which is the strongest possible reason to take the shots. They are not gap-
+filling. **Each one is the book's own argument, performed once with a camera.**

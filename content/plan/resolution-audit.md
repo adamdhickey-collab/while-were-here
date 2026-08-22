@@ -109,3 +109,49 @@ Crystal Archive HD, and photographic printing is more forgiving of low input
 resolution than offset litho is — but "more forgiving" is not a number, and
 nothing in this repository is entitled to guess it. Ask, then read this table
 again with the real floor in hand.
+
+---
+
+## The lowest-resolution plate in the book was a crop of a crop
+*22 Aug 2026*
+
+`here-01-dog-late-light` opened the final essay at **960 × 960 — 81 dpi on a
+300 mm full bleed**, the worst figure in the book. Every previous pass had
+treated that as a fact about the photograph and looked for a better picture.
+
+**It was not a fact about the photograph. It was a fact about the file.** The
+picture is good and its description is exact — a dog nose-down on a slope of
+yellow leaves with tree shadows raking across it. The camera original was in the
+library the whole time: **`P1080153.JPG`, 4000 × 3000**, from the walk on
+21 October 2018 that the *why-ordinary-days* captions already quote by the
+minute ("2:58 p.m. / the leaves came down all week").
+
+Recropped square from the original at 3000 × 3000. **81 dpi becomes 254.** Same
+frame, same composition, three times the resolution, nothing regenerated and no
+new photograph needed.
+
+**The method is repeatable and worth stating plainly.** Index the archive by
+date, find the day, find the original, re-cut. The crop was matched to the
+placed file mechanically rather than by eye — slide a square window across the
+4000 px frame, score each position against the existing 960 px crop, take the
+best: x = 1000…4000, score 0.4. That is how you re-cut a frame without
+re-deciding its composition.
+
+**What this does NOT fix, checked and reported rather than assumed.**
+
+* `systems-01-observation-hive` is also 960 × 960 at 81 dpi, and its original is
+  **not in this library**. The book's specimen captions are all dated 20 July
+  2014 and the whole of 2014 is **eight frames** in this export. That visit is
+  archived somewhere else, or not at all.
+* `pilgrimage-01-worn-threshold` — 1536 × 1536, 130 dpi, a long public staircase
+  with the photographer's shadow down it — carries no EXIF date, so it cannot be
+  located by index. Duluth was the obvious guess, since the city is known for
+  long public stairways and there are four Duluth trips in the archive. **Tested
+  and wrong**: all 47 Duluth frames are waterfront — lighthouse, lift bridge,
+  piers, no stairs anywhere. It is somewhere else and needs a content search or
+  Adam's memory.
+* `before-time-01-father-portrait` and `before-time-06-thanksgiving` are scans of
+  prints from the 1980s. There is no digital original to find.
+
+Under-120 dpi plates: **9 → 8**, and the one that moved was the opener of the
+last essay in the book.

@@ -281,3 +281,34 @@ registered and unplaced.
 
 Nothing here is a defect. It is the one pattern in the book's imagery that only
 becomes visible when you count.
+
+
+---
+
+## Front matter and closing page, checked — 22 Aug 2026
+
+**The contents page numbers are right, and they cannot drift.** The page prints
+011, 025, 043, 055, 071, 087, 103 and 117; every one lands on the recto of its
+essay's opener spread, verified against the built sections. They are also not
+typed — `scripts/build.mjs` composes the book twice, pass 1 to find the folios
+and pass 2 to print them, with a comment saying why: *"re-pacing the book must
+not be able to leave a page lying."* That is a better guarantee than the check
+added today, which only compares titles and order.
+
+**The closing catalogue page is correct after the mount fix.** Both plates now
+shrink-wrap their photographs with a true 4 mm border on four sides, and both
+printed dates match the manifest to the minute — 20 June 2017, 2:39 p.m. and
+4 October 2021, 1:56 p.m.
+
+One thing that could be better and is on the shot list now: the *Misery Is…*
+cover is an honest snapshot — the book against a wall, filling about half its
+frame. On a catalogue page it prints as a mounted plate, and a plate wants its
+object filling the mount. Two minutes more in the same session as item 11.
+
+**The material break's caption was measured rather than judged.** *"Oxidized
+metal · rust bloom and verdigris · raking light"* sits at roughly 2.5 mm cap
+height at a **1.76 : 1** contrast ratio against the verdigris. That is very low,
+and it is deliberate — an immersive full-bleed crossover with a caption a reader
+finds rather than reads. Unlike the imprint, which was raised on 21 Aug because
+a CC BY attribution has to be legible, this one carries no obligation. Recorded
+so the number is known, not because it needs changing.

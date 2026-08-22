@@ -38,6 +38,11 @@ export function attentionDiagram() {
      through the word — between the B and the E, in blue, at 300 mm. Leader now
      ends at 832 and the label starts at 840. Measured on the composed spread. */
 
+  /* The observer's caption sits at y=532, not 538. The Available frame's bottom
+     edge is at y=540 (rect y=40 + height 500), and a baseline two units above a
+     rule puts the line through the label's descenders — flagged by
+     `npm run labels` as a 100% horizontal run across the box. Eight units clear. */
+
   // Sightlines from a very small figure to the field.
   let rays = '';
   for (let i = 0; i < 7; i++) {
@@ -68,7 +73,7 @@ export function attentionDiagram() {
     <circle cx="118" cy="470" r="6"/>
     <path d="M118 476 L118 500 M118 484 L108 494 M118 484 L128 494 M118 500 L110 516 M118 500 L126 516"/>
   </g>
-  <text x="96" y="538" font-size="10">You, arriving</text>
+  <text x="96" y="532" font-size="10">You, arriving</text>
 
   <!-- measure -->
   <g class="fn-hair">

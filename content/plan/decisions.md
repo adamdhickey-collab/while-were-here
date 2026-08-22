@@ -830,3 +830,37 @@ shape of a life"), the legend is qualitative, and the axis is labelled *one
 afternoon*, which makes the drawing about a duration rather than a measurement.
 The page is honest. Only the code comment overstated, and it is the sort of
 thing that misleads the next person to open the file.
+
+## A check for lines drawn through words — 22 Aug 2026
+
+Two figures have now printed with something across a label: Figure 02.1 had the
+Admitted ring between the B and the E of REMEMBERED, and `walking` had its rust
+curve caption laid over the word `correction`. A third turned up while building
+the check — the Available frame's bottom edge running two units under the
+baseline of *You, arriving*, through its descenders.
+
+Three of the same fault, all found by chance, all invisible at thumbnail size.
+That is a check.
+
+**`npm run labels`** renders each code-drawn figure twice — once with every
+`<text>` hidden — and looks inside each label's box in the second render. Whatever
+ink is there is ink that prints under the words. No bounding boxes for beziers,
+no geometry: the browser has already done the drawing.
+
+**Two calibrations were needed, and the first version was wrong.**
+
+*Ink percentage is the wrong measure.* `attention-diagram` lays a 1,400-dot
+stipple across its whole field, so every label inside it reads 5–6% ink. The
+first run flagged all of them. What separates a fault from texture is
+CONTINUITY: a stroke crossing a word leaves a long unbroken run across the box;
+stipple leaves specks. It now measures the longest consecutive run of ink in any
+row and column and flags only runs spanning more than half the box.
+
+*Hiding all the text hides text-on-text.* The `walking` fault was two labels
+overlapping — invisible to a method whose whole trick is hiding labels. So the
+boxes are also compared with each other, pairwise.
+
+Verified to fail on both modes: restoring the frame line under *You, arriving*
+reports a 100% horizontal run; adding a second label over `Admitted` reports a
+40% box overlap. Sixteen checks now, and this is the second in two days that
+exists because the same mistake happened twice.

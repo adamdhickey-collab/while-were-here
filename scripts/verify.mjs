@@ -298,7 +298,32 @@ check('the contents page agrees with the book', tocFlat === bookFlat,
     ? `${realParts.length} parts, ${realParts.reduce((a, p) => a + p.essays.length, 0)} essays, same titles in the same order`
     : `contents: ${tocFlat}  ≠  book: ${bookFlat}`);
 
-/* 14. Vertical text declares its orientation. This is the one check that reads
+/* 14. Nothing is drawn through a diagram's own labels.
+
+      Twice a figure has printed with a line across a word — Figure 02.1 had the
+      Admitted ring between the B and the E of REMEMBERED, and `walking` had its
+      curve caption laid over `correction`. Both were invisible at thumbnail
+      size and obvious at 4x, and both were found because somebody happened to
+      enlarge that corner. `scripts/labels.mjs` does it deliberately: it renders
+      each figure twice, once with the labels hidden, and looks for a continuous
+      stroke inside each label's box — plus a plain box-overlap test, because
+      hiding all the text makes text-on-text collisions invisible to the first
+      method. Needs a browser; a note, never a pass, without one. */
+let lbl = { available: false };
+try {
+  lbl = JSON.parse(execFileSync('node', [P('scripts/labels.mjs'), '--json'],
+    { encoding: 'utf8', stdio: ['ignore', 'pipe', 'ignore'] }));
+} catch { /* covered by the note below */ }
+if (!lbl.available) {
+  note('diagram labels', 'no browser here — not checked. Run `npm run labels` locally.');
+} else {
+  const c = lbl.collisions || [];
+  check('nothing is drawn through a diagram label', c.length === 0,
+    c.length ? c.map((x) => `"${x.text}"`).join(', ')
+             : `${lbl.boxes} labels checked, all clear`);
+}
+
+/* 15. Vertical text declares its orientation. This is the one check that reads
        a stylesheet rather than the built page, and it is here because the book's
        own title printed as "WHILE WE· RE HERE" on the spine for weeks.
        `writing-mode: vertical-rl` with the default `text-orientation: mixed`
@@ -318,7 +343,7 @@ for (const f of cssFiles) {
 check('vertical text declares text-orientation', vertical.length === 0,
   vertical.length ? vertical.join(', ') : 'no vertical rule leaves orientation to the default');
 
-/* 15. Facts that are verified but have not reached a page. Reported, never
+/* 16. Facts that are verified but have not reached a page. Reported, never
        failed: registering a claim before its spread exists is correct. */
 const printedLower = text.toLowerCase();
 const STOP = new Set(['about','above','after','their','there','these','those','which','while','would','because','between','through','around','other','under','where','with','from','that','this','than','then','they','been','have','into','more','most','only','over','some','such','were','when']);

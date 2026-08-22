@@ -88,7 +88,7 @@ spreads:
       lines:
         - A boot rests on a stone step polished lower at its center.
         - Two walkers compare stamps in folded paper booklets beside a fountain.
-        - A yellow arrow points down an ordinary lane between parked cars.
+        - A shrine is set into the rock at one of the turns, where anyone walking would stop anyway.
         - The destination remains hidden while the path continues through rain.
     hand: earned by distance
     specimen:

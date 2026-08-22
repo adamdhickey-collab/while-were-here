@@ -289,3 +289,45 @@ nothing more gets added to this essay, especially nothing about mortality.*
 3. **The two applied fixes** (orphaned ants, doubled hospitality sentence)
    are the only prose changes made by this pass. Counts: essay 3 −0/+2 words,
    essay 7 −8 words. Everything else awaits Adam's pointing finger.
+
+
+---
+
+## Post-placement audit — 22 Aug 2026
+
+Eight images were placed on 21 August in quick succession. This is what a
+careful read of the changed spreads found afterwards. Two prose consequences,
+both created by the swaps rather than inherited:
+
+**APPLIED — essay 07, the orphaned field note.** The bridge spread's sidebar
+read *"A yellow arrow points down an ordinary lane between parked cars."* The
+essay's closing paragraph reads *"The yellow arrow points through a residential
+street where laundry moves above parked cars."* Two near-identical sentences,
+two spreads apart. That echo was tolerable while the yellow arrow was a
+photograph on the page — the note captioned something visible. Removing the
+arrow band on 21 Aug left the note captioning nothing and previewing the
+ending, which is the one thing a field note must not do to a closing this good.
+
+Replaced with an observation that keeps the notebook character, belongs to the
+essay's own subject (the route's furniture and the people who maintain it), and
+is true to a frame that was verified by eye: *"A shrine is set into the rock at
+one of the turns, where anyone walking would stop anyway."*
+
+The old line is preserved here so reverting is one edit. **"yellow arrow" now
+appears exactly once in the whole book**, in the closing paragraph, where it
+belongs.
+
+**KEPT DELIBERATELY — essay 07, the stamps note.** *"Two walkers compare stamps
+in folded paper booklets beside a fountain"* also lost its picture when the
+stamped booklet was displaced by the bridge. It stays, and it is now doing more
+work than before: it is the only place the stamps appear as an image in the
+reader's head, and the observation (comparing, beside a fountain) is distinct
+from the prose's bare list. Losing a picture is a reason to keep a sentence,
+not to cut it.
+
+**CHECKED AND CLEAN.** Essay 03's field notes (ants, starlings, rainwater,
+honeycomb) still read correctly against the dome — none of them referenced the
+displaced termite drawing. Essay 02's four notes were rewritten with the
+placement itself. No caption, margin note or block of prose anywhere in the
+book still refers to a displaced image; verified mechanically across all
+content files and the built pages.

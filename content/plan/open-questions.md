@@ -52,6 +52,31 @@ The audit and the two images that were checked and cleared are in
 [personal-data.md](personal-data.md). Its conclusion is worth repeating here: a
 count of consent notes cannot find the image nobody looked at.
 
+### 3b · What the children are wearing in the Thanksgiving frame
+
+Not a consent question — that is item 3, and it is handled. This is about what
+the picture shows, surfaced 22 Aug 2026 while checking descriptions against
+frames.
+
+The alt text said "two of them children wearing paper crowns". Only one is a
+crown. The girl wears a pink paper crown; **the boy wears a paper headdress with
+upright feathers** — the Thanksgiving craft a lot of American schools made in
+that era. The description now says so, because a description that rounds it off
+to "paper crowns" is describing a different photograph.
+
+**Flagging it because it is a decision, not a defect.** The frame is an inset
+beside the paragraph on growing up before ordinary life produced a continuous
+public record, and it is a real photograph of a real afternoon — which is
+exactly the book's argument for using it. It is also a costume some people would
+now think twice about printing in a bound object that goes to family and might
+later be sold. Adam may want it in unchanged, may want a different Thanksgiving
+frame, or may want it kept and unremarked. All three are defensible and none is
+mine to pick.
+
+What is not defensible is the version where nobody noticed, so it is written
+down. If it stays, nothing needs doing — the description is now accurate, and
+accurate is the whole standard this book holds itself to.
+
 ---
 
 ## Writing and photographs only Adam can make

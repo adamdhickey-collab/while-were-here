@@ -892,3 +892,33 @@ page count.
 **Checked at the same time and clean:** the other two reproduced records claim
 only *"Reproduced in full, unedited"*, and their counts match their items
 exactly — 31 and 23. No arithmetic to get wrong, which is the safer design.
+
+## The margin notes were verified, and now they stay verified — 22 Aug 2026
+
+The margin notes are the book's factual apparatus: starling flock sizes, Pew
+adoption figures, working-memory capacity, the Camino's distance, how long
+sunlight takes to arrive. Twenty substantive ones, against a 35-fact ledger.
+
+**Checked in both directions for the first time and they are clean.** Every note
+matches a fact; twenty facts declare a `usedIn` margin note; and **every number
+printed in a note traces to the ledger** — 150 distinct figures, nothing typed
+in from memory.
+
+Nothing checked the second direction before. Facts declared which note they
+served; no note declared which facts it drew on. A figure edited by hand after
+the fact was written would have been answerable to nothing.
+
+**A seventeenth check now closes that**, and building it needed one correction.
+The first version matched each note to its single best-matching fact and
+immediately reported two failures — both false. The before-time note draws on
+**two** facts at once (home broadband and smartphone ownership), and the Physarum
+note's "2010" lives in the source's publication year rather than in the claim
+text. So numbers are matched against the whole ledger, source metadata included,
+not against one fact. Verified to fail by changing 35 percent to 37.
+
+**Scope is deliberately narrow.** Body prose is full of numbers that are
+observations rather than claims — a pencil line at thirty-seven and a quarter
+inches, eleven years under a maple, about a meter an hour, thirty minutes on a
+Thursday afternoon. Demanding a citation for those would drown the signal. The
+margin note is where this book makes claims, so the margin note is where the
+check lives.

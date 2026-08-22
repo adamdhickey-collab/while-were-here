@@ -323,7 +323,47 @@ if (!lbl.available) {
              : `${lbl.boxes} labels checked, all clear`);
 }
 
-/* 15. Vertical text declares its orientation. This is the one check that reads
+/* 15. Every number in a margin note traces to the fact ledger.
+
+      The margin notes are this book's factual apparatus — starling flock sizes,
+      Pew adoption figures, working-memory capacity, the Camino's distance. Each
+      is meant to come from `content/facts.json`, and the facts declare which
+      note they serve. Nothing checked the other direction: a number typed into
+      a note, or edited afterwards, was answerable to nothing.
+
+      Scope is deliberately just the notes. Body prose is full of numbers that
+      are observations rather than claims — a pencil line at thirty-seven and a
+      quarter inches, eleven years under a maple, about a meter an hour — and
+      demanding a citation for those would make the check noise.
+
+      A note may draw on SEVERAL facts (the before-time note cites broadband and
+      smartphone adoption together), so numbers are matched against the whole
+      ledger, including source publication years, not against one best-matching
+      fact. Matching per-fact was tried first and produced two false positives
+      immediately. */
+const ledgerNums = new Set();
+const grabNums = (t) => String(t).replace(/<[^>]+>/g, ' ').match(/\b\d[\d,.]*\b/g) || [];
+for (const f of facts) {
+  for (const n of grabNums(f.claim)) ledgerNums.add(n.replace(/,/g, ''));
+  for (const n of grabNums(f.note || '')) ledgerNums.add(n.replace(/,/g, ''));
+  for (const v of Object.values(f.source || {})) for (const n of grabNums(v)) ledgerNums.add(n.replace(/,/g, ''));
+}
+const unsourced = [];
+for (const file of fs.readdirSync(P('content/essays')).filter((n) => n.endsWith('.md'))) {
+  const src = fs.readFileSync(P('content/essays', file), 'utf8');
+  for (const m of src.matchAll(/^\s*marginNote:\s*>-?\n((?:\s{6,}.*\n)+)/gm)) {
+    const note = m[1];
+    if (note.length < 60) continue;
+    const miss = [...new Set(grabNums(note).map((n) => n.replace(/,/g, '')))]
+      .filter((n) => !ledgerNums.has(n));
+    if (miss.length) unsourced.push(`${file.replace('.md','')}: ${miss.join(', ')}`);
+  }
+}
+check('every number in a margin note is in the fact ledger', unsourced.length === 0,
+  unsourced.length ? unsourced.join(' · ')
+    : `${facts.length} facts, ${ledgerNums.size} distinct figures, no margin note citing anything else`);
+
+/* 16. Vertical text declares its orientation. This is the one check that reads
        a stylesheet rather than the built page, and it is here because the book's
        own title printed as "WHILE WE· RE HERE" on the spine for weeks.
        `writing-mode: vertical-rl` with the default `text-orientation: mixed`
@@ -343,7 +383,7 @@ for (const f of cssFiles) {
 check('vertical text declares text-orientation', vertical.length === 0,
   vertical.length ? vertical.join(', ') : 'no vertical rule leaves orientation to the default');
 
-/* 16. Facts that are verified but have not reached a page. Reported, never
+/* 17. Facts that are verified but have not reached a page. Reported, never
        failed: registering a claim before its spread exists is correct. */
 const printedLower = text.toLowerCase();
 const STOP = new Set(['about','above','after','their','there','these','those','which','while','would','because','between','through','around','other','under','where','with','from','that','this','than','then','they','been','have','into','more','most','only','over','some','such','were','when']);

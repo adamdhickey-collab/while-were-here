@@ -156,7 +156,21 @@ const citations = stripped
   .replace(/<span class="sources__(?:who|where)">[\s\S]*?<\/span>/g, ' ')
   .replace(/<[^>]+>/g, ' ');
 const ownWords = (citations + ' \n ' + altText).replace(/\u201C[^\u201D]*\u201D/g, ' ');
-const brit = BRIT.filter((w) => new RegExp(`\\b${w}\\b`, 'i').test(ownWords));
+/* NO leading word boundary. `\bcolour\b` cannot see "watercolour", because there
+   is no boundary between "water" and "colour" — so three "watercolour" and two
+   "millimetres" sat in printed alt text for as long as this check has existed,
+   passing every run. One of them was written by this session, an hour after the
+   check had already caught a bare "centre" in the same field: the check looked
+   like it was working, and it was, on exactly the words nobody compounds.
+
+   Only the LEADING boundary goes. The trailing one stays and is load-bearing —
+   `grey\b` must not fire on "greyhound", which is spelled that way in American
+   English too. No American word ends in -colour, -metre, -centre or -honour, so
+   dropping the leading boundary adds no false positives; it only reaches the
+   compounds. The whole offending token is reported rather than the stem, so the
+   message says "watercolour" and not "colour". */
+const brit = [...new Set(BRIT.flatMap((w) =>
+  [...ownWords.matchAll(new RegExp(`\\w*${w}\\b`, 'gi'))].map((m) => m[0].toLowerCase())))];
 check('American English', brit.length === 0, brit.length ? `found: ${brit.join(', ')}` : '');
 
 /* 5. Images: a file on disk is either in the book or says it is not. An entry

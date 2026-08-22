@@ -418,5 +418,54 @@ instructions and all, not a description of the result. They score highest on any
 "falsifiable claims" ranking because the prompts are full of counts, which is a
 trap: nothing they say is ever spoken or printed.
 
+### Fourth batch — and the pattern behind all of it
+
+The maple was not one bad sentence. **Every image drawn by a recorded recipe had
+its concept brief in the `subject` field instead of a description of the plate.**
+All four survey plates run through the same code — `field`, `warp_mask`,
+`draw_contours`, `paint_washes`, `draw_network` — and differ only in warp shape
+and four counts, so what they can possibly contain is knowable exactly.
+
+| plate | claimed | `survey.py` actually draws |
+| --- | --- | --- |
+| `survey-02-corner-maple` | eleven offset rings | `levels=30`, one field, seven crown lobes |
+| `survey-04-two-roads` | "a folded, creased and annotated network" and "a single clean line laid over it" | two identical contour ridges, same treatment on both |
+| `survey-01-familiar-lake` | "the walking route as a single hairline returning to itself" | a nearest-neighbor graph — which on a concentric form *does* emerge as a ring, but a chain with chords across it, not one closed line |
+| `survey-03-workbench-field` | "tools as small dense masses" | noise maxima; every named element has a visual counterpart, so this was the least wrong |
+
+All four now describe the plate that exists, with the concept kept only where it
+is true. **`draw_network` joins each point to its two nearest neighbors with a
+capped length** — it cannot draw a route, and three of the four descriptions said
+it did.
+
+**The pattern is testable and was tested.** Scanning every spoken description for
+brief language — "must", "should", "the form here is", "reading as" — against
+`origin`: **44 photographs, zero hits.** Every hit was generated or original
+artwork. Descriptions written from a photograph describe the photograph;
+descriptions written from a brief describe the brief. That is where to look next
+if this continues.
+
+### The cover, and a fault that is not one
+
+`cover-01-watercolor-systems` carries a 24-hour scale along its foot. It reads
+**0 · 6 · 6 · 12 · 1A. · 2A · 24h** — a repeated 6, and two garbled tokens where
+18 and 24 belong. Confirmed at magnification: the second glyph in each is plainly
+a letter A.
+
+**It is not on the printed cover.** `.cover__art--bleed img` scales the plate to
+106% anchored to the top, so the visible band is the top 94.3% and the labels sit
+below the trim. Verified by looking at the rendered cover, not by arithmetic: the
+colored strip shows, its numbers do not. This is what the CSS comment means by
+"carries its busiest band below the trim."
+
+Recorded so that nobody finds it later and panics — **and so that nobody changes
+that crop without knowing what is waiting underneath it.** Reducing the oversize
+below about 106% would bring garbled numerals onto the front cover of the book.
+
+The block of marks at the middle right is also *not* the open-question-8 fault.
+Those spines spell wrong words — "Hnadtoo drdrtatr" — that resolve into letters.
+The cover's text block never resolves; it is abstract greeking, the convention an
+architectural drawing uses, and reads as texture at any size.
+
 **Seventy-three images have not been checked this way.** That is the honest
 state. No check can do it; it needs eyes on each frame beside its sentence.

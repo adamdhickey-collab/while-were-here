@@ -467,5 +467,22 @@ Those spines spell wrong words — "Hnadtoo drdrtatr" — that resolve into lett
 The cover's text block never resolves; it is abstract greeking, the convention an
 architectural drawing uses, and reads as texture at any size.
 
-**Seventy-three images have not been checked this way.** That is the honest
+### Third batch
+
+| image | verdict |
+| --- | --- |
+| `privilege-09-crosswalk` | **incomplete** — described an empty crosswalk, three people and the Washington Monument, and never mentioned that the whole middle band of the frame is a **construction site**: chain-link fence, concrete barriers, two excavators, broken concrete, mounds of bare earth running the full width. A screen reader was given a quiet street. Fixed. |
+| `systems-06-geese-path` | **exact, and precisely so.** It claims "exactly two are out on the asphalt, standing abreast and facing the same way." At thumbnail size I counted three and was about to correct it. Magnified: two, abreast, both facing left. The third bird is on the grass. Same lesson as the VHS spine — **check at size before correcting anything.** |
+| `here-06-empty-room` | exact. |
+| `north-01-gorge-cut` | exact. |
+
+**The printed CAPTIONS were audited too, separately from alt text** — 29 of them,
+all resolving to a known image. Almost all are short lines that make no
+falsifiable claim ("The path was poured for other feet"). One does:
+`here-07-ceremony` reads **"Thirty minutes, on a Thursday afternoon."** The
+placed file carries no EXIF date, so that cannot currently be checked. If
+`scripts/findsource.py` locates the camera original it will settle it, since the
+original will carry a timestamp.
+
+**Sixty-nine images have not been checked this way.** That is the honest
 state. No check can do it; it needs eyes on each frame beside its sentence.

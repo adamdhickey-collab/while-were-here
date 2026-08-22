@@ -208,3 +208,30 @@ documenting it is precisely what nobody does.
 
 Which is the strongest possible reason to take the shots. They are not gap-
 filling. **Each one is the book's own argument, performed once with a camera.**
+
+
+---
+
+## The field notes, checked as a set — 22 Aug 2026
+
+Four personal interludes, one between each part. They are the best short prose
+in the book and they follow its hardest rule: observation, no conclusion.
+
+**Three of the four are already Adam's own photographs and are exactly right.**
+The lake note describes mooring lines lifting and a loose line tapping a mast,
+beside his photograph of that lake. The street note describes somebody stopping
+mid-errand under utility wires, beside his photograph of exactly that, framed
+wide on purpose so the two figures stay incidental. The fire note describes
+carrying chairs out before the light went, beside his photograph of the lit
+bowl at dusk.
+
+**The fourth is the exception, and it is the sharpest case in the book of the
+problem this document is about.** The tag note is first-person and specific —
+*her* collar, *her* code, *his* kitchen, and a server somewhere confirming she
+was not missing. Both images on the spread are generated: a fabricated tag on a
+fabricated dog.
+
+It is also the easiest photograph in the book to take, and — because the note
+says *"she was asleep when I checked it"* — **it is the same afternoon as the
+dog asleep in the light.** One sitting answers four slots. See
+[shot-list](shot-list.md) items 0 and 0b.

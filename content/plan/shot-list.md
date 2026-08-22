@@ -208,6 +208,35 @@ and to crop 4:3 for essay 08 — one sitting can serve both ends of the book.
 If she moves with the light, photograph it twice an hour apart; the essay's
 whole claim is that the light moved and she followed it.
 
+### 0b · HER TAG, THE SAME AFTERNOON · `field-note-02-dog-tag` + `-tag-code`
+**Two slots, and they belong to the same sitting as item 0.**
+
+The field note between Parts II and III is the most personal paragraph in the
+book and it is written in the first person about an object in the house:
+
+> *"The tag on her collar has a name on one side and a square code on the other.
+> **She was asleep when I checked it.** … I scanned it once, standing in the
+> kitchen, to see what would happen. Somewhere a server confirmed that she was
+> not missing."*
+
+Both images on that spread are **generated** — a fabricated tag on a fabricated
+dog. They are good-looking and they are illustrating a true story about a real
+collar with a real code that really resolves to a page with her photograph on
+it.
+
+**And the note says she was asleep.** So this is the same afternoon as item 0:
+one sleeping dog, one clear light, and four of the book's slots answered —
+the essay-01 opener, the essay-08 opener, the tag, and the tag close-up.
+
+Two rules when shooting it, both already established in this project:
+* **The code must not resolve.** The existing plate is framed so no code
+  content is legible and the field-note rule is explicit — this book prints no
+  scannable codes and no personal data it does not mean to. Shoot the code at
+  an angle, or turned, or soft.
+* **Her name is a decision, not an accident.** One side carries it. Printing it
+  is fine and would be lovely; it just has to be chosen rather than discovered
+  on a proof.
+
 ### The workshop, in one session · items 4, 8, and the essay-04 opener
 Essay 04 is the thinnest essay in the book: **one photograph Adam took**, and it
 is a page from a book he made as a child. Its opener, its tall plate and its

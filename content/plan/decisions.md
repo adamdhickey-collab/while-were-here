@@ -1309,3 +1309,41 @@ are printed every run: `page count`, which cannot be mutated without breaking
 the build, and `every reproduced entry reaches the page`, where the build prints
 every entry it has so a discrepancy has to be manufactured somewhere the harness
 cannot reach with a string swap.
+
+---
+
+## Auditing the PDF, and auditing the checker that audits it
+*22 Aug 2026*
+
+With `pdfcheck` in place, four more questions were put to the delivered file.
+All four came back clean, which is worth recording — a negative result measured
+is worth more than an assumption held.
+
+* **Images.** Every page whose HTML carries an `<img>` or `<svg>` has an image
+  or drawing on the corresponding PDF page. None dropped. The gap between "93
+  unique images" from `npm run dpi` and 78 XObjects in the PDF is deduplication:
+  a ground spans two pages and is embedded once.
+* **Dark grounds.** Stages III and IV invert — `--ground: charcoal/void`,
+  `--ink: paper`. If one of those grounds failed to print, pale ink would land
+  on cream and the page would be blank. 29 stage-3/4 text pages measured, all
+  dark. And the inverse, which is just as bad: 40 stage-1/2/5 text pages, none
+  printing dark.
+* **CJK.** All 24 CJK characters in the book reach the PDF. They appear in the
+  reproduced Meta advertiser list — "Yuguo雨果跨境" on page 75 — where a missing
+  glyph would be a hole in a record the book reproduces *because* it is exact.
+
+**And the check itself was wrong.** `pdfcheck` compared text after
+`re.sub(r'[^a-z0-9]', '', s.lower())`, which deletes every non-ASCII character
+before comparing. It could not have seen a missing CJK glyph or a dropped
+accent — the very thing the third bullet was testing. Written this session,
+blind from birth, and found the same way everything else was found today: by
+testing the check instead of reading its output.
+
+Now `''.join(c for c in unicodedata.normalize('NFKC', s).lower() if c.isalnum())`
+— letters and digits in any script, NFKC first so a decomposed accent from the
+PDF matches a composed one in the DOM. Proven both directions: a real string
+containing 雨果跨境 is found, the same string with one glyph changed is not, and
+the old ASCII-only comparison **passed the corrupted string**.
+
+That makes six checks in one day found looking at the wrong thing. The last one
+was mine, written an hour earlier, to catch exactly this class of fault.

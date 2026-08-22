@@ -23,9 +23,12 @@ of the PDF, so nothing could have caught it.
 
 WHAT IT CHECKS. Every text-bearing element in the built HTML — paragraphs,
 headings, captions, list items, quotes — must appear in the PDF's extracted
-text. Comparison is on letters and digits only, because the PDF's text layer
-breaks lines, drops soft hyphens and spaces letters differently from the DOM;
-what matters is that the words are present at all, not how they are spaced.
+text. Comparison keeps letters and digits in ANY script and drops everything
+else, because the PDF's text layer breaks lines, drops soft hyphens and spaces
+glyphs differently from the DOM; what matters is that the words are there at
+all, not how they are spaced. "Any script" is load-bearing: the first version
+stripped to ASCII and could not have seen a missing CJK glyph, and this book
+embeds 27 of them across 11 subsets.
 
 WHAT IT CANNOT SEE. Whether the text is in the right PLACE, the right size, or
 the right colour, and whether an image printed. It answers one question — is the
@@ -34,6 +37,7 @@ content there — which is the question nobody was asking.
 import json
 import re
 import sys
+import unicodedata
 import html as H
 from pathlib import Path
 
@@ -75,7 +79,19 @@ except ImportError:
 
 doc = fitz.open(PDF)
 pdf_text = ' '.join(doc[i].get_text() for i in range(doc.page_count))
-squash = lambda s: re.sub(r'[^a-z0-9]', '', s.lower())
+def squash(s):
+    """Letters and digits in ANY script, normalised.
+
+    The first version was `re.sub(r'[^a-z0-9]', '', s.lower())`, which silently
+    deleted every non-ASCII character before comparing — so this check could not
+    have seen a missing CJK glyph, and the book embeds 27 of them across 11
+    subsets for the reproduced Meta records. It could not have seen a dropped
+    accent either. Found by testing the check rather than reading its output,
+    which is the only way any of this session's blind checks surfaced.
+
+    NFKC first, so a PDF text layer that emits a decomposed accent still matches
+    a composed one in the DOM."""
+    return ''.join(c for c in unicodedata.normalize('NFKC', s).lower() if c.isalnum())
 haystack = squash(pdf_text)
 
 raw = HTML.read_text(encoding='utf-8')

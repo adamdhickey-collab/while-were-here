@@ -17,13 +17,14 @@ spreads:
     variant: two
     dropCap: true
     blocks: [flow-1a, flow-1b]
-    bandImage: pilgrimage-02-yellow-arrow
+    bandImage: pilgrimage-02-fatima-esplanade
     ground: ground-07-convergent-routes
     marginNote: >-
       The Shikoku Henro links 88 temples across Japan’s four Shikoku
       prefectures. The full circuit covers approximately 1,200 kilometers and
       generally takes more than 40 days to complete on foot.
-    insetOn: verso
+    noteOn: recto
+    insetOn: recto
     inset:
       image: north-01-gorge-cut
       caption: Worn by something that only went one way.

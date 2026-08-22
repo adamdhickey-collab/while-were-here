@@ -565,3 +565,29 @@ Crop A of three (offset 600 px): full light scatter, rope, receding amphorae;
 the rejected slice admitted a stacked chair. 566 dpi at the tall slot. The dog
 time-motion plate is Unplaced — the dog's argument stays in flow-2's prose, and
 the dog herself is in six real photographs elsewhere.
+
+## The esplanade takes essay 07's first band, and a layout rule surfaced — 21 Aug 2026, Adam's call
+
+"Place the fatima esplanade." The first library frame horizontal enough for a
+3:1 band, and the band under flow-1a/1b is the right one: "A shrine reached
+after forty days is physically the same structure that could be reached by
+bus," over the shrine itself — basilica, colonnade, the gilded Sacred Heart on
+its column, crowd barriers ready across wet paving, and a few dozen people on
+ground built for a hundred thousand. The band crop (offset 1300 px, three
+candidates by eye) is the only slice that holds both verticals complete.
+
+**The placement surfaced a layout rule nobody had written down: a verso inset
+card covers the left two-fifths of the band beneath it.** The yellow arrow —
+a kerb close-up — survived that occlusion for weeks without anyone noticing
+the overlap was structural. The esplanade's basilica vanished behind the gorge
+card on the first composed render, which is what made the rule visible. Fix:
+the inset moved to the recto (where "worn by something that only went one way"
+sits happily beside the Henro and Camino prose), and the margin note stayed
+recto after a second discovery — **a note assigned to the verso of a banded
+spread is silently covered by the band.** It rendered in the HTML and appeared
+nowhere on the page; only looking caught it, twice in one placement.
+
+The yellow arrow is Unplaced but not diminished: flow-4b closes the essay on
+it in prose, which is where its real work always was. 615 dpi at the band. The
+consent note was rewritten for the band scale — every figure under a
+centimeter — with the old full-bleed caution kept for anyone who enlarges it.

@@ -184,6 +184,21 @@ if (dirty) {
   process.exit(1);
 }
 
+/* Which checks have no mutation at all. Reported because a suite that says
+   "14 proven to bite" and stops is claiming a coverage it does not have — the
+   same failure mode as the checks this script exists to catch. These are the
+   ones whose faults are awkward to synthesise, not ones believed to be fine. */
+const UNMUTATED = [
+  ['page count', 'needs a page added or removed — every mutation also breaks the build'],
+  ['no entry claims a spread it is not on', 'needs a manifest spread that contradicts the composed page'],
+  ['imprint credits only what is in the book', 'needs a credited image cut from the book but left in the manifest'],
+  ['every master has a web derivative', 'needs a derivative deleted from disk, not a text edit'],
+  ['every reproduced record counts what it prints', 'needs a record count edited away from its entry list'],
+  ['every reproduced entry reaches the page', 'needs an entry that exists but is not printed'],
+  ['every ground agrees with its essay about the stage', 'needs a stage number moved in one place and not the other'],
+  ['nothing is drawn through a diagram label', 'needs geometry moved so a stroke crosses a label — not a string swap'],
+];
+
 const missed = results.filter((r) => r.state === 'MISSED');
 const caught = results.filter((r) => r.state === 'caught');
 const other = results.filter((r) => r.state === 'skipped' || r.state === 'unreadable');
@@ -193,6 +208,11 @@ console.log('  Working tree restored and clean.');
 if (missed.length) {
   console.log('\n  A check that cannot fail is not a check. Blind:');
   for (const r of missed) console.log(`    · ${r.id}`);
+}
+if (!only) {
+  console.log(`\n  ${UNMUTATED.length} check(s) in the suite have NO mutation here, so nothing`);
+  console.log('  below is known to bite. Not a clean bill of health — a gap:');
+  for (const [name, why] of UNMUTATED) console.log(`    · ${name}\n        ${why}`);
 }
 console.log('');
 process.exit(strict && missed.length ? 1 : 0);

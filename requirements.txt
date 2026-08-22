@@ -1,0 +1,8 @@
+# Python side of the toolchain. Install with:
+#   ./.venv/bin/pip install -r requirements.txt
+numpy
+pillow
+pillow-heif
+scipy
+osxphotos
+pymupdf      # scripts/pdfcheck.py — reads the delivered PDF

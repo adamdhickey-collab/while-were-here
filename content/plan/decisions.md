@@ -512,3 +512,28 @@ The stamps lose nothing — flow-1b still carries them in prose, and the field
 notes sidebar still mentions the booklets. Essay 07 is now photographed by Adam
 end to end: opener, band insets, image-essay plate, and closing, with only the
 two generated bands (yellow arrow, tending feet) remaining.
+
+## The dome enters beside the honeycomb, named as the exception — 21 Aug 2026, Adam's call
+
+"Place the muqarnas dome." The frame carried a condition from photo-selection-04
+— it is designed, which is the objection; it looks grown, which is the use;
+caption it as the exception or not at all — so the slot had to be one with a
+caption. Essay 03's image-essay spread had the right prose and the wrong plate:
+its text is flow-2c, the honeycomb passage ("the geometry tempts us to imagine
+a diagram passed through the hive"), while its termite drawing illustrates
+flow-2b, one spread earlier. Same mispairing the bridge fixed in essay 07,
+found the same way: by reading what actually sits beside the slot.
+
+The dome now faces the honeycomb prose as the case where the temptation was
+true. The caption names it — "The essay's exception — this ceiling had a
+diagram" — and the spread's handwritten annotation changed from "without a
+foreman" to **"this one had a foreman"**, which had to change anyway: the old
+note would have printed a false claim beside a royal commission. A terminology
+gloss ("honeycomb vaulting") was drafted and dropped rather than introduce an
+unsourced naming claim; the visual rhyme is already on the page.
+
+Centre crop, 3808 × 5712 — the vault is symmetric — for 755 dpi at the 192 mm
+slot, the sharpest plate in the book. The termite section is Unplaced; its
+argument lives whole in flow-2b's prose. Essay 03's plates are now the hive,
+the dome, and Adam's two insets, with the two archive bands (starlings, slime
+mold) as the only pictures in it he didn't take.

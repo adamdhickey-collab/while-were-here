@@ -42,11 +42,12 @@ spreads:
       caption: No brain in this one either.
   - type: image-essay
     variant: tall
-    image: systems-03-termite-section
+    image: systems-03-muqarnas-vault
     blocks: [flow-2c]
     caption: >-
-      <b>Figure 2.</b> A section nobody can stand back and see. Floors, ramps
-      and chambers, none of them measured by any termite.
+      <b>Figure 2.</b> A muqarnas vault at the Alhambra: thousands of small
+      cells stepping inward to one form. The essay's exception — this ceiling
+      had a diagram.
     specimen:
       image: specimen-02-queen-butterfly
       Specimen: Danaus gilippus
@@ -65,7 +66,7 @@ spreads:
         - A starling flock compresses above bare trees, then opens at one edge.
         - Rainwater splits around a leaf and rejoins below it.
         - The honeycomb changes angle where it meets the wooden frame.
-    hand: without a foreman
+    hand: this one had a foreman
   - type: reading
     variant: aside
     blocks: [flow-3a, flow-3b]

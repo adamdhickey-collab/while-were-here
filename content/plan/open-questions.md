@@ -259,6 +259,49 @@ protected, is in [editorial-pass.md](editorial-pass.md).
 
 ---
 
+### 11 · The dividers announce Stages I, II, IV, V — and never III
+Not a defect. A structural decision that has never been written down, and one a
+careful reader can see.
+
+The book has **five stages and four parts**, so a part divider can only name the
+stage its part opens in. Traced as a reader meets it:
+
+    DIVIDER  Look Again              announces Stage 1   light
+      essay  Most of Life Is a Tuesday        Stage 1   cream
+      essay  The Secret Life of Attention     Stage 1   cream
+    DIVIDER  What Are We?            announces Stage 2   light
+      essay  The Beauty of Systems…           Stage 2   cream
+      essay  The Intelligence Outside…        Stage 3   DARK   ← the page inverts here
+    DIVIDER  The World Is Changing   announces Stage 4   dark
+      …
+
+**The book turns dark in the middle of Part II, with no divider to announce it.**
+`The Intelligence Outside Your Head` runs at Stage III on charcoal, and the last
+label the reader saw said Stage II on cream. Then the next divider says Stage IV.
+
+There is a good case that this is exactly right: the inversion arrives
+unannounced, mid-part, the way the essays keep saying a change actually arrives —
+*"a revolution is easiest to miss when it arrives as a convenience."* Part III's
+divider then names Stage IV having already gone dark, which reads as the book
+catching up with something the reader has been inside for sixteen pages.
+
+There is also a case it is a gap: the labels run I, II, IV, V, and anyone who
+counts finds III missing.
+
+**Three ways, and it is Adam's call:**
+1. **Leave it.** The inversion is better unannounced, and the labels are
+   atmospheric rather than an index.
+2. **Part II's divider names both** — "Stages II–III" — which is honest and
+   costs nothing but gives away the turn before it happens.
+3. **Drop the numerals from the divider labels**, keeping the phrases
+   ("Observe the surface", "Notice the patterns"). Then nothing is missing
+   because nothing is being counted.
+
+Recorded because it is invisible in any single spread and obvious the moment
+somebody reads the four dividers in a row.
+
+---
+
 ## The photo library
 
 ### 6 · The edited export — **DONE**, 21 Aug 18:14

@@ -17,6 +17,8 @@ from PIL import Image
 import numpy as np
 
 png, boxes = sys.argv[1], json.loads(sys.argv[2])
+# The CSS width of the figure element the PNG was shot from. Required.
+fig_w = float(sys.argv[3])
 a = np.asarray(Image.open(png).convert('RGB')).astype(int)
 H, W, _ = a.shape
 vals, counts = np.unique(a.reshape(-1, 3), axis=0, return_counts=True)
@@ -30,7 +32,23 @@ def longest_run(v):
         best = max(best, run)
     return best
 
-scale = W / max(1, max(b['x'] + b['w'] for b in boxes)) if boxes else 1
+"""Pixels per CSS pixel, from the figure's own width.
+
+An earlier version derived this from the boxes themselves —
+`W / max(x + w for boxes)` — which assumes the rightmost label touches the right
+edge of the figure. No label does. Every box was therefore placed a few percent
+too far right, and the check sampled a window offset from the word it was
+supposed to be guarding.
+
+That is why it reported "nothing drawn through any of them" for a diagram whose
+Remembered label sat at x=768 with the leader `M613 300 L 832 300` running
+straight through it. Shifted right, the sample window caught only the tail of
+the leader — about 52% of the box against a 55% threshold — and passed by three
+points. The check was written to catch exactly that collision, which had already
+shipped once.
+
+The figure width is now passed in from labels.mjs, which knows it exactly."""
+scale = W / fig_w if fig_w else 1
 out = []
 for b in boxes:
     x0 = int((b['x'] + b['w'] * 0.10) * scale); x1 = int((b['x'] + b['w'] * 0.90) * scale)

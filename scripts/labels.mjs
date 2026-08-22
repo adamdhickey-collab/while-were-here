@@ -71,7 +71,7 @@ for (const fig of figures) {
       return { text: (t.textContent || '').trim().slice(0, 40),
                x: b.x - r.x, y: b.y - r.y, w: b.width, h: b.height };
     }).filter((l) => l.w > 3 && l.h > 3);
-    return { name: (svg.getAttribute('aria-label') || 'figure').slice(0, 46), labels };
+    return { name: (svg.getAttribute('aria-label') || 'figure').slice(0, 46), labels, figW: r.width };
   });
   if (!meta.labels.length) continue;
   boxes += meta.labels.length;
@@ -84,7 +84,7 @@ for (const fig of figures) {
   fs.writeFileSync('/tmp/.labels-bare.png', bare);
   findings.push({ name: meta.name, labels: meta.labels, bare: '/tmp/.labels-bare.png' });
   /* measure immediately, one figure at a time, so the buffer is never stale */
-  const out = JSON.parse(execSync(`./.venv/bin/python scripts/label_ink.py /tmp/.labels-bare.png '${JSON.stringify(meta.labels).replace(/'/g, "")}'`).toString());
+  const out = JSON.parse(execSync(`./.venv/bin/python scripts/label_ink.py /tmp/.labels-bare.png '${JSON.stringify(meta.labels).replace(/'/g, "")}' ${meta.figW}`).toString());
   /* Text-on-text is invisible to the render method, because that method hides
      ALL text to see what is underneath. `walking` failed exactly this way — its
      curve caption lay across the word `correction`, both of them text. So the

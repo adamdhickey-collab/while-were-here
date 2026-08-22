@@ -11,10 +11,21 @@ import { diagrams } from './diagrams.mjs';
 const nb = (s = '') => String(s).replace(/ (\w{1,3})$/, '&nbsp;$1');
 
 /* Stages and parts are NOT the same sequence and must not be assumed to align —
-   see content/plan/art-direction.md. The divider printed the part number under
-   the word "Stage", which was invisible while the two happened to match and
-   wrong the moment Part IV arrived at Stage V. */
-const ROMAN = { 1: 'I', 2: 'II', 3: 'III', 4: 'IV', 5: 'V' };
+   see content/plan/art-direction.md. The divider once printed the part number
+   under the word "Stage", which was invisible while the two happened to match
+   and wrong the moment Part IV arrived at Stage V.
+
+   The numeral is gone entirely now, on Adam's call, 22 Aug 2026. Four dividers
+   cannot announce five stages: they printed I, II, IV, V, and Stage III — where
+   the book actually inverts to a dark ground, in the middle of Part II — was
+   never named at all. Three options were on the table and this was the chosen
+   one: keep the phrases, drop the counting. Nothing is missing now because
+   nothing is being counted, and the inversion still arrives unannounced, which
+   is what the essays keep saying a real change does.
+
+   `stage` remains in the section frontmatter and still drives the page's tone —
+   it just no longer prints. Do not reintroduce a numeral here without deciding
+   what Part II's divider says about containing two of them. */
 
 /* Counts on the contents page are set as words, and they are derived rather
    than typed so that re-pacing the book cannot leave the page lying. */
@@ -378,7 +389,7 @@ export const divider = (section, ctx) => ({
       html: `
         <div class="page__block">
           <div class="divider__stage">
-            <p class="label"><b>Stage ${esc(ROMAN[section.stage] || section.number)}</b> ${esc(section.imperative || '')}${
+            <p class="label"><b>${esc(section.imperative || '')}</b>${
               section.stageTitle ? ' ' + esc(section.stageTitle) : ''}</p>
           </div>
           <div class="divider__head">

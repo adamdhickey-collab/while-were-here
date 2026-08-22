@@ -454,3 +454,37 @@ printed the first time anyone placed it.
 **Placing any of these costs a page**, and the book is at its 130-page ceiling.
 That is the only reason they are not proposals. `punctuation` is small enough to
 sit in a margin or an inset and might cost nothing at all.
+
+---
+
+## The divider labels lost their numerals — 22 Aug 2026, Adam's call
+
+The four part dividers used to print **Stage I, Stage II, Stage IV, Stage V**.
+Stage III never appeared, because the book has five stages and four parts: Part
+II contains both Stage II (*The Beauty of Systems Nobody Designed*, cream) and
+Stage III (*The Intelligence Outside Your Head*, charcoal), and a divider can
+only name the stage its part opens in. So the page inverted to a dark ground in
+the middle of a part, under a label that still said Stage II, and the next
+divider jumped to Stage IV.
+
+The numerals are gone. The labels are now the phrases alone:
+
+    — OBSERVE the surface
+    — NOTICE the patterns
+    — EXPAND the aperture
+    — INTEGRATE what is left
+
+The imperative keeps its weight and the object stays light, so the two-tone the
+design relies on is unchanged; only the counting has stopped. They read as
+instructions to the reader rather than as an index to a system, which suits a
+book that never explains its own devices.
+
+**What this preserves deliberately:** the inversion still arrives unannounced,
+mid-part, with no label to warn of it. That is the effect the alternative
+options would have cost — naming "Stages II–III" on Part II's divider gives away
+the turn sixteen pages early. *A revolution is easiest to miss when it arrives
+as a convenience.*
+
+`stage` remains in the section and essay frontmatter and still drives every
+page's ground, ink and ground-opacity. It is now a private structure, which is
+what it always was.

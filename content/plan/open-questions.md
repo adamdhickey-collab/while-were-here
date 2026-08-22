@@ -259,9 +259,23 @@ protected, is in [editorial-pass.md](editorial-pass.md).
 
 ---
 
-### 11 · The dividers announce Stages I, II, IV, V — and never III
-Not a defect. A structural decision that has never been written down, and one a
-careful reader can see.
+### 11 · The dividers announce Stages I, II, IV, V — and never III — **DECIDED**
+**Adam's call, 22 Aug 2026: option 3. The numerals are gone.** The dividers now
+read *Observe the surface · Notice the patterns · Expand the aperture ·
+Integrate what is left* — the imperative in weight, the object light, the rust
+rule unchanged. Nothing is missing now because nothing is being counted, and the
+inversion still arrives unannounced in the middle of Part II, which is the
+effect worth keeping.
+
+`stage` stays in the section frontmatter and still drives each page's tone; it
+simply no longer prints. `src/layouts/index.mjs` carries a note not to
+reintroduce a numeral without first deciding what Part II's divider would say
+about containing two stages.
+
+The reasoning that led here is kept below.
+
+Not a defect. A structural decision that had never been written down, and one a
+careful reader could see.
 
 The book has **five stages and four parts**, so a part divider can only name the
 stage its part opens in. Traced as a reader meets it:

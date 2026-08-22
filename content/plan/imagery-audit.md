@@ -140,3 +140,40 @@ the calçada, the serpent on the spheres, the organ, the moss trunk, the cat at
 the water channel, the pigeon and its shadow. None of them is a dog asleep in
 the light, and none of them should be forced into a slot that wants something
 else — which is the whole point of this document.
+
+
+---
+
+## What the library was asked for, and what it does not contain — 22 Aug 2026
+
+Photos runs its own scene classification over the whole library and stores the
+labels; `osxphotos` exposes them. That makes the library searchable by *what is
+in the picture* rather than by filename or date, which is how the dog question
+above was settled. Four generated scenes were put to it. **Three came back
+empty, and the empty answers are worth as much as the full one** — they convert
+"maybe we already have this" into "this has to be shot."
+
+| the generated scene | searched | result |
+| --- | --- | --- |
+| **A dog asleep in a rectangle of afternoon light** (essays 01 + 08) | 871 Dog frames → 170 indoor with furniture/window/floor, all viewed | **Not there.** Dogs on sofas, dogs on beds, dogs standing on floorboards, two frames with hard light bars across a couch. Never the scene. |
+| **A workbench, tools laid out** (essay 04, three slots) | 821 `Tool` frames intersected with wood/table/desk | **Not there.** Photos' `Tool` label is catching cutlery on dining tables; the only real hit was a boxed tool kit in its retail packaging. |
+| **Evening light on a far interior wall** (essay 08) | 330 `Wall` × 499 `Light` frames | **Not there.** The hits are empty-room documentation — moving-day and real-estate frames, flat and overhead-lit. |
+| **A kitchen table with an open laptop** (essay 05) | `Laptop`/`Computer` × `Kitchen`/`Table` | 8 frames, none of them the scene. |
+
+**The conclusion is firm, and it is not a resolution conclusion.** The generated
+photographs in this book are mostly not replaceable from twenty-four thousand
+existing pictures, because they depict a kind of moment Adam has never
+photographed: the room with nobody in it, the tool put down, the light on its
+way out. That is not an accident of his archive. **It is the subject of the
+book, and it is the one thing the archive does not hold** — people photograph
+each other, and dinners, and dogs on sofas.
+
+Which reframes the shot list. These are not chores to raise a dpi number. Each
+one is a picture the book argues for and its author has never taken, and taking
+them is the same act the essays keep describing: stopping in front of the
+ordinary thing long enough to see it.
+
+**One caution for whoever runs a search like this next.** The labels are useful
+and they are not literal. `Tool` means cutlery as often as it means a chisel.
+The method finds candidates; it does not identify pictures. Every hit above was
+looked at.

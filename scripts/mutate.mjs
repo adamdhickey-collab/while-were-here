@@ -91,9 +91,13 @@ const MUTATIONS = [
     from: 'text-orientation: sideways;', to: '/* mutated */',
     expect: 'vertical text declares', why: 'vertical text left to the default orientation' },
 
+  /* The first version of this mutation truncated the subject instead of emptying
+     it — it replaced a prefix, so the tail of the sentence survived and the alt
+     text was merely shorter. The check passed, correctly, and was recorded as
+     blind when it was not. A mutation has to produce the fault it names. */
   { id: 'alt-text', file: 'content/images.json',
-    from: '"subject": "The lake, on an ordinary afternoon.',
-    to:   '"subject": "',
+    from: '"subject": "A tablet propped on a speckled counter running a grill controller: grill 190 °F, food 124 °F, a countdown at 03:09:35, and a button reading Select Grill Profile."',
+    to:   '"subject": ""',
     expect: 'every content image speaks', why: 'a placed photograph with no description' },
 
   { id: 'licence', file: 'content/images.json',

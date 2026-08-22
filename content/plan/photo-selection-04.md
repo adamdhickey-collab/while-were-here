@@ -944,3 +944,43 @@ match a reader is looking at.
 at 363 dpi, most of them in Adam's own crop and grade — against a book at its
 130-page ceiling where **every one of them costs an existing spread.** The
 photographs are no longer the constraint. The editing is.
+
+### The document is closed: all 39 frames resolved — 21 Aug, night
+
+The render export finished — 6,276 files, zero errors, resumable machinery
+recorded in [open-questions](open-questions.md) item 6 — and the last frames
+were opened against their lines.
+
+- **`IMG_2944 (1)`** — three small dogs looking out through a white
+  balustrade, each in its own bay. Exactly the line, at exactly 3099 × 3099.
+  The last of the 39 to be located.
+- **`IMG_5210` / `IMG_5214`** — the dinghies and the fleet at distance, both
+  carrying the document's own date (4 Oct 2025, the lake-field-note
+  afternoon). The screen-door dog and the suburban house were collisions, as
+  predicted.
+- **`IMG_0821`** — the cat drinking from the marble channel at the Alhambra,
+  rings spreading in the water, twelve minutes before the dome. Written off as
+  Vesuvius this afternoon; one more collision.
+
+**Final ledger, all 39 named frames:**
+
+| outcome | count |
+| --- | --- |
+| verified as described, registered (`library-01…30`, minus refusals) | 28 |
+| verified, blocked on consent (sleeping couple; airport stranger) | 2 |
+| right frame, line abstracted Fabiola out of it (Güell, FABIOLA wall, pavement) | 3 of the 28, noted per entry |
+| right frame, wrong argument (the orchestra crowd) | 1 of the 28 |
+| line wrong about the picture in smaller ways (motorway; lantern; "four storeys") | noted per entry |
+| named frames that do not exist as described | **0** |
+
+**Zero.** Every photograph this document described from memory existed. The
+whole day's chase — dimension guards, crop parents, base stems, parenthesised
+duplicates, extension collisions — was never about whether the frames were
+real. It was about a library where a filename is not an identity. The
+document's memory of the pictures was nearly perfect; its lines misread a
+frame's *subject* a handful of times (usually by reading past Fabiola), and its
+filenames were honest but unusable as addresses.
+
+The reconciler's job is done and its output now says so. What remains is
+placement, which is a person's job: thirty verified frames, a 130-page book
+with no slack, and a contact sheet already in Adam's hands.

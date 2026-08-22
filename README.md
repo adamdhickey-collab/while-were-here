@@ -52,7 +52,7 @@ If you cloned before installing LFS, `git lfs pull` fixes it in place.
 | `npm run fonts:cjk` | Rebuild `fonts-cjk/` when the book gains a character the Latin faces cannot set. |
 | `npm run credits` | Rebuild the attribution page from the manifest. |
 | `npm run facts` | Check `content/facts.json` and rebuild the sources page. `--strict` fails on anything unverified. |
-| `npm run verify` | **The pre-press checks, in one command.** Twelve pass/fail, run against the built pages rather than the sources, plus what it cannot check and says so. `--strict` exits non-zero on any failure, which is what CI uses. |
+| `npm run verify` | **The pre-press checks, in one command.** Thirteen pass/fail, run against the built pages rather than the sources, plus what it cannot check and says so. `--strict` exits non-zero on any failure, which is what CI uses. |
 | `npm run selection` | Reconcile `content/plan/photo-selection-04.md` against the exported photo library — which selected frames exist yet, at what size, and the dpi they would give. |
 | `npm run overflow` | Does any page's copy run past the page? Drives the preview's own rule in a headless browser and names the folio and the millimetres. `npm run verify` calls this when a browser is present. |
 | `npm run shots` | Render spreads to PNG at trim size. `-- --all` for every spread. |

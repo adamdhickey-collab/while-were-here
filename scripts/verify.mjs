@@ -234,7 +234,32 @@ check('every content image speaks to a screen reader', silent.length === 0,
   silent.length ? `silent: ${[...new Set(silent)].join(', ')}`
     : `${named.length} described, ${groundFiles.size} grounds decorative by role, 3 plates covered by their stack's aria-label`);
 
-/* 12. Vertical text declares its orientation. This is the one check that reads
+/* 12. The manifest agrees with the essays about what stage a ground is on.
+
+      Grounds are labelled by STAGE, not by part, because the stage system is
+      what decides whether a page is cream or charcoal — and a ground drawn for
+      one and printed on the other is nearly invisible. Four of the eight had
+      drifted a stage behind their essay when this was written: the essays'
+      stages moved as the arc was proved on 21 Aug and the manifest labels did
+      not follow. The artwork turned out to be right in every case, so the drift
+      was documentation only — but the next drift might not be, and nothing was
+      watching. */
+const romans = { 1: 'I', 2: 'II', 3: 'III', 4: 'IV', 5: 'V' };
+const essayStage = {};
+for (const f of fs.readdirSync(P('content/essays')).filter((n) => n.endsWith('.md'))) {
+  const src = fs.readFileSync(P('content/essays', f), 'utf8');
+  const title = (src.match(/^title:\s*(.+)$/m) || [])[1]?.trim();
+  const stage = Number((src.match(/^stage:\s*(\d+)/m) || [])[1]);
+  if (title && stage) essayStage[title] = stage;
+}
+const drifted = images.filter((i) => i.role === 'ground' && essayStage[i.essay])
+  .filter((i) => String(i.section || '').trim() !== `Stage ${romans[essayStage[i.essay]]}`)
+  .map((i) => `${i.id} says "${i.section}", essay is Stage ${romans[essayStage[i.essay]]}`);
+check('every ground agrees with its essay about the stage', drifted.length === 0,
+  drifted.length ? drifted.join('; ')
+    : `${images.filter((i) => i.role === 'ground').length} grounds, all matching their essay`);
+
+/* 13. Vertical text declares its orientation. This is the one check that reads
        a stylesheet rather than the built page, and it is here because the book's
        own title printed as "WHILE WE· RE HERE" on the spine for weeks.
        `writing-mode: vertical-rl` with the default `text-orientation: mixed`
@@ -254,7 +279,7 @@ for (const f of cssFiles) {
 check('vertical text declares text-orientation', vertical.length === 0,
   vertical.length ? vertical.join(', ') : 'no vertical rule leaves orientation to the default');
 
-/* 13. Facts that are verified but have not reached a page. Reported, never
+/* 14. Facts that are verified but have not reached a page. Reported, never
        failed: registering a claim before its spread exists is correct. */
 const printedLower = text.toLowerCase();
 const STOP = new Set(['about','above','after','their','there','these','those','which','while','would','because','between','through','around','other','under','where','with','from','that','this','than','then','they','been','have','into','more','most','only','over','some','such','were','when']);

@@ -1227,3 +1227,43 @@ needs geometry moved rather than a string swapped, the derivative check needs a
 file deleted from disk. **That list is the honest part of the output.** A suite
 that reports "14 proven to bite" and stops is claiming a coverage it does not
 have, which is the exact failure this script exists to catch.
+
+---
+
+## The mutation harness found a fault the check was written to catch
+*22 Aug 2026*
+
+Three of the eight checks recorded as "awkward to synthesise" were not. Two were
+ordinary string edits and the third needed only a moment's thought about what
+the check actually reads — the spread check fires on a file that is on disk,
+absent from the book, and not marked `Unplaced`, so the mutation is to take a
+legitimately unplaced image and delete only its marker. **Listing a check as
+hard to mutate is a claim that should be re-tested, not inherited.** Seventeen
+mutations now, five checks still uncovered and printed every run.
+
+**One of the three found a live fault, and it is the best argument for the whole
+exercise.**
+
+`ground-stage` reported blind. My first instinct was that the mutation was bad
+again — it had been twice already. It was not. A ground carries **two** stage
+records: `section`, a string reading "Stage IV", and `stage`, a number. The
+check read only `section`.
+
+`ground-05-imagine-to-make` said `section: "Stage IV"` and `stage: 3`. Its own
+revision note records the section being corrected from III to IV on 22 August —
+**the same day, by a correction aimed directly at this drift** — and the number
+beside it was left behind. The check then reported "8 grounds, all matching their
+essay", because it never looked at the number.
+
+Nothing printed wrong. The build takes its stage from the essay frontmatter, not
+from the image record, so the numeric field is documentation and `ctx.stage`
+never saw it. But this is precisely the drift the check exists to catch, one
+field over, and it survived a correction aimed at it because the check was only
+half-looking. Both records are now compared against the essay.
+
+**The pattern across today.** Four checks have now been found looking at the
+wrong thing: a CSS property Chromium ignores, a regex that could not see
+compounds, a matcher that could not read spelled-out numbers, and a comparison
+that read one of two fields. None of them ever failed. All four looked healthy.
+The only reason any of them surfaced is that something went looking for faults
+they should have caught rather than reading their output.

@@ -260,3 +260,56 @@ moving-day documentation.
 The kitchen table, the artifact array, the cursor, the four-season sequence, and
 the rephotograph of the child's book page (item 11), which settles a sentence
 the book quotes twice.
+
+---
+
+## Found, not needed: the Año Viejo, Tunja, 31 Dec 2018 → 1 Jan 2019
+*22 Aug 2026*
+
+Everything else on this list is a photograph that does not exist yet. This one
+exists, is in the archive, and is better than most of what it would replace.
+
+Pulled at full resolution from the GPS sweep (see personal-archive.md). Four
+frames, one night, and the EXIF is the whole argument:
+
+| frame | taken | what it is | px | dpi at 300 mm |
+| --- | --- | --- | --- | --- |
+| `IMG_9597` | 31 Dec **15:48** | the finished effigy, a person posed beside it | 3024 × 4032 | 256 |
+| **`IMG_9602`** | 31 Dec **18:20** | **the effigy alone, slumped against a wall** | 3024 × 4032 | 256 |
+| `IMG_9626` | 1 Jan **00:01:07** | a tall flame, one minute after midnight | 3024 × 3024 | 256 |
+| **`IMG_9634`** | 1 Jan **00:09:16** | **the same figure burning on the verge** | 4032 × 3024 | 256 |
+
+**`IMG_9602` is the find.** A stuffed Año Viejo sitting in the dirt beside a
+doorway under a sodium light: black hood with a face crudely stitched in yellow,
+a white ruana over dark clothes, white gloved hands, two mismatched trainers, a
+beer bottle pushed into its chest, head lolling forward. It reads as a spent
+drunk, which is exactly what it is meant to be — the old year, finished, waiting.
+
+Why it belongs in THIS book, in the book's own terms:
+
+* **It is an object with nobody in it.** `personal-archive.md` has said since the
+  beginning that this archive is rich in people and travel and nearly empty of
+  the room with nobody in it. This is the room with nobody in it, and it is about
+  a year ending.
+* **It is a year made into a thing so that it can be ended.** The book's fifth
+  stage is about what you do with the time you get. Nothing else in the archive
+  states that as an object.
+* **The pair carries it further than either frame alone.** The same figure at
+  18:20 and at 00:09 — five hours and forty-nine minutes, across the turn of the
+  year. Two facing pages, before and after, and the caption is two timestamps.
+* **The resolution is not a problem.** 256 dpi at 300 mm full bleed, and both
+  crop square to 3024 px without losing the subject. Several plates already in
+  the book print at 81–130 dpi.
+* **No consent question in either of the two.** `IMG_9597` has an identifiable
+  person and is the weaker frame anyway; `9602` and `9634` have nobody in them.
+
+**Honest about the rest of it.** The other three New Years are thinner. 2016 is
+motion-blurred handheld at 207 dpi. 2023 has good tall flames (`IMG_7130`,
+`IMG_7132`) but no effigy before the burn. 2025 has no fire frames at all. The
+2018/19 night is the one that got photographed properly, and it got photographed
+twice — which is the only reason the pair exists.
+
+**And a correction on how this was found.** The two twenty-frame batches on
+28 Dec 2015 and 30 Dec 2018 looked like effigy-building from their dates and
+counts. They are an arcade and a Christmas lights tour. The dates were a
+hypothesis, not evidence; the frames had to be opened.

@@ -488,3 +488,27 @@ The book's images by Adam: 38 of 105 in the book. The generated inset count in
 essay 01 drops by one; the essay that opens the book now holds a photograph of
 the person the dedication will likely name beside the dog, the lake, and the
 tree.
+
+## The bridge takes essay 07's image-essay spread — 21 Aug 2026, Adam's call
+
+"Place the cordoba bridge." The slot chose itself once the spread's prose was
+read: the image-essay page sits beside flow-2c — the passage about encounters
+on the shared route, ending "different lives have been given the same temporary
+direction" — and its plate was the generated stamped booklet, which illustrates
+the stamps prose from two spreads earlier. Two walkers going away up the Roman
+bridge at night, a lantern beside them, the Mezquita floodlit on the far bank:
+that is flow-2c photographed.
+
+The caption changed with the picture: "Crossing the Roman bridge at Córdoba,
+after dark. The route asks everyone for the same next step." One honesty rule
+shaped it — the two walkers are together, so the caption must not borrow
+flow-2c's strangers; the tie is the shared next step, not the not-knowing.
+
+The 2:3 crop (offset 336 px from the left, three candidates by eye) holds the
+whole floodlit Mezquita and gives the walkers the space they are walking into.
+533 dpi at the 192 mm slot. A faint lens flare sits mid-sky: as shot.
+
+The stamps lose nothing — flow-1b still carries them in prose, and the field
+notes sidebar still mentions the booklets. Essay 07 is now photographed by Adam
+end to end: opener, band insets, image-essay plate, and closing, with only the
+two generated bands (yellow arrow, tending feet) remaining.

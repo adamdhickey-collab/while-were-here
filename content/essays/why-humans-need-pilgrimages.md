@@ -76,11 +76,11 @@ spreads:
       caption: Nobody gets down without taking every turn.
   - type: image-essay
     variant: tall
-    image: pilgrimage-05-stamped-booklet
+    image: pilgrimage-05-cordoba-bridge
     blocks: [flow-2c]
     caption: >-
-      <b>Figure 6.</b> A paper credential, stamped at each stop. The proof of
-      a walk is a document nobody checks.
+      <b>Figure 6.</b> Crossing the Roman bridge at Córdoba, after dark. The
+      route asks everyone for the same next step.
     sidebar:
       title: Field notes
       lines:

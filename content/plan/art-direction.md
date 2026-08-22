@@ -423,3 +423,34 @@ the three records — three is intentional, six is a device.
 And one push the critique made that this document endorses: **Part II may get
 stranger, never tamer.** The hidden-systems material is the book's
 distinctiveness — "the reader should feel the aperture opening."
+
+---
+
+## Four finished diagrams are sitting unused — 22 Aug 2026
+
+`src/layouts/diagrams.mjs` exports five original figures, drawn in code so they
+inherit the book's inks and stay vector-sharp at 300 mm. **Only one is placed.**
+The other four are written, registered in the `diagrams` map, and appear nowhere
+in the book. Rendered and looked at for the first time today; all four work.
+
+| figure | what it is | where it obviously belongs |
+| --- | --- | --- |
+| **`punctuation`** | A life as a single line from **birth** to **not birth**, with seven rust ticks on it and nothing else | The whole book's thesis in one mark. Essay 01 argues that chapter headings are not the book; this draws the headings and leaves the rest as line |
+| **`dayField`** | **Thirty thousand marks** — one per day of a long life — across a two-page spread, with **two hundred picked out in rust**: the ones that end up in an album | Essay 01, or the Part I divider. It is the single most on-thesis image in the repository and it has never been on a page |
+| **`observational`** | Concentric ripples from a point of entry, scaled `0 … ≈ 4 s` | The lake field note, whose prose is *"the same motions to repeat without becoming identical"* |
+| **`walking`** | A figure and four systems — balance, vision, placement, correction — with *continuous, unasked* | Essay 01's walking passage: *"You shift your weight forward. One leg catches you. Then the other."* |
+
+**`dayField` deserves its own sentence.** Thirty thousand days is about
+eighty-two years; two hundred of them are marked. The book's argument is that
+the marked ones are not the life. Drawn, working, unplaced.
+
+**One defect found and fixed while looking.** `walking` had the same collision
+Figure 02.1 had: the rust curve's caption sat at x=60, y=110 and ran straight
+through the word `correction` at x=92. It now sits under the curve at x=18,
+y=127, clear of the stack's column and far enough below its last sub-label to
+read as its own line. Latent — the diagram is unused — but it would have
+printed the first time anyone placed it.
+
+**Placing any of these costs a page**, and the book is at its 130-page ceiling.
+That is the only reason they are not proposals. `punctuation` is small enough to
+sit in a margin or an inset and might cost nothing at all.

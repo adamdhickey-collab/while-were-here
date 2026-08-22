@@ -176,6 +176,13 @@ export function observational() {
 }
 
 /** One step, four systems — the amount of work a body does to cross a room. */
+/* One step, four systems. NOTE the label geometry: the stack's fourth row puts
+   `correction` at x=92, y=108, and its sub-label at y=118. The rust curve's own
+   caption used to sit at x=60, y=110 and ran straight through `correction` —
+   the same collision Figure 02.1 had. It now sits under the curve at x=18,
+   y=127: clear of the stack's column horizontally AND far enough below its
+   last sub-label to read as its own line. The viewBox is 132 tall, so 127 plus
+   descenders still fits. */
 export function walking() {
   const stack = [
     ['balance', 'inner ear'],
@@ -197,7 +204,7 @@ export function walking() {
             <text x="92" y="${y + 17}" font-size="6" fill="#8C8679">${v}</text>`;
   }).join('')}
   <path class="fn-rust" d="M18 106q10 -9 18 0t18 0"/>
-  <text x="60" y="110" font-size="6.5">weight, transferred</text>
+  <text x="18" y="127" font-size="6.5">weight, transferred</text>
 </svg>`;
 }
 

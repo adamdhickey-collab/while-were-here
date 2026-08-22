@@ -362,3 +362,47 @@ words appear nowhere in its subject. A crude version of that check over the
 whole manifest returned 18 hits, of which 2 were real — too noisy to automate
 and cheap to run by eye whenever a plate is swapped. Worth doing at swap time,
 not on every build.
+
+---
+
+## The specimen series is one afternoon, and the book never says so — 22 Aug 2026
+
+Seven of the eight essays carry a specimen card on their image-essay spread: a
+zoo animal Adam photographed, with a written note. Checked as a set for the
+first time, and they hold together better than anything else in the book.
+
+| essay | animal | what the note does |
+| --- | --- | --- |
+| 02 Attention | Amur tiger | *"The animal is not looking at the grass. It is reading it."* Attention as active reading |
+| 03 Systems | Queen butterfly | *"the pattern is held in place by the birds"* — order maintained by something outside the participants |
+| 04 Intelligence | Komodo dragon | *"It is not picturing the field. It is standing in it and taking the difference."* Cognition in the body, not a model |
+| 05 Privilege | Hyacinth macaw | *"It arrived with the bird, took no training, and cost nothing to carry. Every tool in this essay had to be built, learned, and kept charged."* |
+| 06 Waiting | Eurasian eagle-owl | *"The bird is holding a map of a room it has not looked at."* Knowing position without looking — the pre-network condition |
+| 07 Pilgrimage | Bactrian camel | A body full of instructions for a hard route, swimming on an easy afternoon in Minnesota |
+| 08 While We're Here | Prairie dog | The colony keeps its sentries and burrows; this one is *"doing nothing whatever on an ordinary afternoon"* |
+
+Not one of them needs changing. The macaw note may be the sharpest sentence in
+Part III.
+
+**And every one of the seven was taken on the same afternoon.** 20 July 2014,
+between **1:29 p.m. and 4:46 p.m.** — three hours and seventeen minutes at one
+zoo, threaded invisibly through seven essays and four parts of a book whose
+argument is that ordinary afternoons are the substance of a life.
+
+**The book does not point at this, and it must not start.** The fact is already
+on the page: each card prints its own date and time in the small print, seven
+times. A reader who notices, notices. Explaining it would turn a structure into
+a caption, which is the one thing this book has consistently refused to do.
+
+**What this means practically: do not swap a specimen card for a better animal.**
+Any replacement from another day breaks a spine that took eleven years to
+become visible and cost nothing to keep.
+
+**On the evidence.** These frames carry no EXIF — they are Facebook-archive
+files and the times come from the export's `Taken` field. That is a single
+source. It was independently validated on 21 Aug by a different route: the
+21 Oct 2018 dog walk exists in both the Facebook archive and the Photos
+library, and Facebook's `Taken` times matched the camera's EXIF **exactly**
+across four frames. The zoo afternoon itself is not in the Photos library at
+all, so it cannot be cross-checked directly — but the source has been tested
+and found faithful.

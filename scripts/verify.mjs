@@ -259,7 +259,33 @@ check('every ground agrees with its essay about the stage', drifted.length === 0
   drifted.length ? drifted.join('; ')
     : `${images.filter((i) => i.role === 'ground').length} grounds, all matching their essay`);
 
-/* 13. Vertical text declares its orientation. This is the one check that reads
+/* 13. The contents page agrees with the book.
+
+      `content/contents.json` restates, by hand, what `book.json` and the essay
+      frontmatter already know: the parts, their titles, and the essays under
+      each in order. Nothing keeps the two in step. Rename an essay, reorder a
+      part, or move an essay between parts and the printed contents keeps the
+      old answer — silently, on page five, where it is the first thing a reader
+      uses and the last thing anyone re-reads.
+      It agreed when this was written. That is the moment to add the check. */
+const tocParts = JSON.parse(fs.readFileSync(P('content/contents.json'), 'utf8')).parts;
+const seq = JSON.parse(fs.readFileSync(P('content/book.json'), 'utf8')).sequence;
+const front = (rel) => fs.readFileSync(P('content', rel), 'utf8');
+const field = (src, k) => (src.match(new RegExp(`^${k}:\\s*(.+)$`, 'm')) || [])[1]?.trim().replace(/^["']|["']$/g, '');
+const realParts = [];
+for (const e of seq) {
+  if (e.type === 'divider') realParts.push({ number: field(front(e.source), 'number'), title: field(front(e.source), 'title'), essays: [] });
+  if (e.type === 'essay' && realParts.length) realParts.at(-1).essays.push(field(front(e.source), 'title'));
+}
+const flat = (ps) => ps.map((p) => `${p.number}|${p.title}|${p.essays.join('~')}`).join(' // ');
+const tocFlat = flat(tocParts.map((p) => ({ number: p.number, title: p.title, essays: p.essays.map((x) => x.title) })));
+const bookFlat = flat(realParts);
+check('the contents page agrees with the book', tocFlat === bookFlat,
+  tocFlat === bookFlat
+    ? `${realParts.length} parts, ${realParts.reduce((a, p) => a + p.essays.length, 0)} essays, same titles in the same order`
+    : `contents: ${tocFlat}  ≠  book: ${bookFlat}`);
+
+/* 14. Vertical text declares its orientation. This is the one check that reads
        a stylesheet rather than the built page, and it is here because the book's
        own title printed as "WHILE WE· RE HERE" on the spine for weeks.
        `writing-mode: vertical-rl` with the default `text-orientation: mixed`
@@ -279,7 +305,7 @@ for (const f of cssFiles) {
 check('vertical text declares text-orientation', vertical.length === 0,
   vertical.length ? vertical.join(', ') : 'no vertical rule leaves orientation to the default');
 
-/* 14. Facts that are verified but have not reached a page. Reported, never
+/* 15. Facts that are verified but have not reached a page. Reported, never
        failed: registering a claim before its spread exists is correct. */
 const printedLower = text.toLowerCase();
 const STOP = new Set(['about','above','after','their','there','these','those','which','while','would','because','between','through','around','other','under','where','with','from','that','this','than','then','they','been','have','into','more','most','only','over','some','such','were','when']);

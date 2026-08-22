@@ -718,3 +718,31 @@ because the photograph is the subject, but `composite: true` and the revision
 both state that the leaf around it is still drawn. The book's tally of Adam's
 photographs should be read with that in mind — this is a real picture in a drawn
 mount, not a photograph of a notebook.
+
+## Two more checks, both added while the answer was still correct — 22 Aug 2026
+
+Written during the imagery audit, not after a failure. Both guard things that
+were right at the time, which is the only moment worth adding a check: a fault
+found by a reader is a fault that already printed.
+
+**Grounds agree with their essays about the stage.** Grounds are labelled by
+stage, not by part, because the stage decides whether a page is cream or
+charcoal — and a ground drawn for one and printed on the other is nearly
+invisible. Four of the eight had already drifted a stage behind when this was
+noticed: the essays' stages moved as the arc was proved on 21 Aug and the
+manifest labels did not follow. Every one of the four turned out to be right
+artistically — checked on the page, pale linework on charcoal where it belonged
+— so the drift was documentation only. Nothing was watching, and now something
+is.
+
+**The contents page agrees with the book.** `contents.json` restates by hand
+what `book.json` and the essay frontmatter already know: four parts, their
+titles, and the essays under each in order. Nothing kept them in step. Rename an
+essay, reorder a part, move one between parts, and the printed contents keeps
+the old answer — silently, on page five, where it is the first thing a reader
+uses and the last thing anyone re-reads. Verified to fail on both drift modes:
+one word changed in a title, and two essays swapped within a part.
+
+Fourteen checks now. The three added in the last day — alt text, grounds,
+contents — all guard things no proof would show and no reader would report
+politely.

@@ -650,3 +650,35 @@ silencing one real plate, and to keep passing with the grounds still empty.
 While checking that aria-label's claim — "watching a dog swim" — the frame was
 enlarged 3× and the dog is there: a head with an ear, and a wake ring around
 it, abstracted by the screen-print reduction but present. The label is honest.
+
+## Resolution is not the brief — 22 Aug 2026, Adam's correction
+
+Adam, mid-audit: *"Don't be overly concerned about maximizing the DPI on the
+images. I'm more concerned about getting the right imagery in there in the first
+place to tell a compelling story alongside the text."*
+
+Recorded because the work was actively going the wrong way when he said it. A
+measuring tool (`npm run dpi`) had just been built, the composed book measured,
+and the two lowest plates identified as Adam's own Facebook-capped frames — and
+the next step underway was swapping the essay-08 opener for the same photograph
+at three times the pixels. **The same picture. No storytelling gain whatsoever.**
+That swap was abandoned mid-crop.
+
+**The standing priority, from here:** does each picture earn its place beside the
+text it sits with? Resolution is a constraint to respect, not a target to chase.
+An 81 dpi photograph that is the right photograph beats a 363 dpi one that is
+merely available — and this book already has an example, `before-time-01-father-portrait`
+at 108 dpi, kept deliberately because the frame was chosen on the photograph and
+not on the arithmetic.
+
+`npm run dpi` stays. It answers "will this print acceptably", which is a real
+question at the end. It must not be allowed to become the question that drives
+selection.
+
+**One thing worth keeping from the abandoned line:** the entire 21 Oct 2018 dog
+walk is in the library at 4000 × 3000 — 175 frames, camera times matching the
+Facebook "Taken" times exactly, including all four the book uses. That matters
+not because of pixels but because **the book currently shows four small crops of
+a walk it has 175 frames of.** If the contact sheet or the essay-08 opener is
+ever reconsidered, there is a whole afternoon to choose from rather than four
+squares somebody already picked.

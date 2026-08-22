@@ -40,8 +40,9 @@ cleared.** Fine for family copies; every one needs asking before a sale.
 The heaviest is no longer the Thanksgiving frame. It is **`field-note-01-lake`**,
 found on 21 Aug by opening files rather than reading manifest lines: a child
 fishing at the railing, in profile, face clearly visible, printed **300 mm full
-bleed** — about 55 mm of figure and 8 mm of face, the largest an unconsented
-person appears anywhere in the book. Not Adam's child. `before-time-06-thanksgiving`
+bleed** — about 30 mm of figure and 8.6 mm of face, the largest an unconsented
+person appears anywhere in the book (re-measured 22 Aug 2026 — the earlier 55 mm was his
+estimated full stature, not what prints; he is cut off by the bottom edge). Not Adam's child. `before-time-06-thanksgiving`
 is second — identifiable adults and two children, whose parents have to be asked
 on their behalf.
 

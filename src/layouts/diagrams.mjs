@@ -32,6 +32,12 @@ export function attentionDiagram() {
     return d + 'Z';
   };
 
+  /* The Remembered leader has to clear the Admitted ring before its label
+     starts. The ring is rx=210 about cx=600 and wobbles up to +3.5%, so its
+     right edge reaches x≈817. The label sat at x=768 and the ring ran straight
+     through the word — between the B and the E, in blue, at 300 mm. Leader now
+     ends at 832 and the label starts at 840. Measured on the composed spread. */
+
   // Sightlines from a very small figure to the field.
   let rays = '';
   for (let i = 0; i < 7; i++) {
@@ -54,8 +60,8 @@ export function attentionDiagram() {
   <text x="600" y="112" font-size="11" text-anchor="middle" fill="#536D8E">Admitted</text>
 
   <circle class="fn-fill-rust" cx="600" cy="300" r="13"/>
-  <path class="fn-rust" d="M613 300 L 760 300"/>
-  <text x="768" y="304" font-size="11" fill="#A95738">Remembered</text>
+  <path class="fn-rust" d="M613 300 L 832 300"/>
+  <text x="840" y="304" font-size="11" fill="#A95738">Remembered</text>
 
   <!-- the observer, to scale -->
   <g class="fn-ink">

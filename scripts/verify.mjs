@@ -97,6 +97,19 @@ const hits = PLACEHOLDERS.flatMap((re) => {
 }).filter((s) => !/displacement/i.test(s));
 check('no placeholder text', hits.length === 0, hits.length ? `found: ${[...new Set(hits)].join(', ')}` : '');
 
+/* 3b. Build artifacts. Template literals are how every page in this book is
+       assembled, and a mistake inside one does not throw — it prints.
+       Added 22 Aug after `{/* … *\/}` — JSX comment syntax, which is not a
+       comment inside a JS template string — was written into an SVG and reached
+       build/book.html as visible text on a diagram. Nothing caught it; it was
+       found by grepping the output on a hunch.
+       All seven of these patterns were absent when this was written, so any of
+       them appearing is leakage by definition. */
+const ARTIFACTS = [/\{\/\*/, /\*\/\}/, /\$\{/, /\[object Object\]/, /\bundefined\b/, /\bNaN\b/];
+const leaked = ARTIFACTS.filter((re) => re.test(allBuilt)).map((re) => String(re));
+check('no build artifacts in the output', leaked.length === 0,
+  leaked.length ? `found: ${leaked.join(', ')}` : 'checked every page the build emits');
+
 /* 4. American English on the printed page. The manifest's credit fields became
       printed text when the imprint was added, and brought "colour-graded" with
       them. */

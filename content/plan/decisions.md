@@ -796,3 +796,37 @@ page instead of resting on it.
 real work — it measured, it reasoned, and it wrote down a conclusion. It
 compared the asset to a token instead of to the composed page, and a token is
 not what prints.
+
+## A diagram label had the ring drawn through it — 22 Aug 2026
+
+Figure 02.1, *What the editor kept*, on the attention essay's diagram spread.
+The word **REMEMBERED** sat at x=768 while the Admitted ring reaches x≈817, so
+the blue ring ran straight through the word, between the B and the E, in colour,
+at 300 mm. Found by enlarging the composed spread — invisible at thumbnail size
+and obvious at 4×. The leader now runs to 832 and the label starts at 840.
+
+**And fixing it introduced a worse bug, which is the part worth recording.** The
+note explaining the geometry was written as `{/* … */}` — JSX comment syntax —
+*inside a JavaScript template literal*, where it is not a comment at all. It
+printed. Four lines of explanation went into the SVG as visible text on a
+diagram, the build succeeded, and every one of the fourteen checks passed.
+
+It was caught by grepping the built HTML on a hunch, which is not a system.
+
+**So there is a fifteenth check now: no build artifacts in the output.** It
+looks in every emitted page for `{/*`, `*/}`, `${`, `[object Object]`,
+`undefined` and `NaN`. All six were absent when it was written, which is what
+makes it a clean signal — any of them appearing is leakage by definition. Proven
+to fail by injecting a stray JSX comment.
+
+Every page of this book is assembled from template literals. A mistake inside
+one does not throw. **It prints.** That was worth learning cheaply.
+
+Also checked and left alone on that spread: the diagram's proportions are
+unsourced — Admitted reads as 24% of Available, Remembered as 0.1% — and its
+code comment called them "to scale". No source exists for such a ratio and none
+is claimed on the page: the prose hedges precisely ("something like them is the
+shape of a life"), the legend is qualitative, and the axis is labelled *one
+afternoon*, which makes the drawing about a duration rather than a measurement.
+The page is honest. Only the code comment overstated, and it is the sort of
+thing that misleads the next person to open the file.

@@ -33,6 +33,11 @@ embeds 27 of them across 11 subsets.
 WHAT IT CANNOT SEE. Whether the text is in the right PLACE, the right size, or
 the right colour, and whether an image printed. It answers one question — is the
 content there — which is the question nobody was asking.
+
+That blind spot has a sharp edge, so the script now checks the PDF's age before
+anything else: a change that adds no WORDS — a swapped image, a stylesheet edit —
+leaves this check reporting a clean bill of health on a file that is no longer
+the book. It says so now instead of quietly passing.
 """
 import json
 import re
@@ -76,6 +81,27 @@ except ImportError:
         ['pymupdf is not installed, so the PDF was NOT checked.',
          'Install it with `./.venv/bin/pip install pymupdf`.'])
     sys.exit(1 if strict else 0)
+
+# IS THIS PDF EVEN THE CURRENT BOOK? Checked first, because everything below
+# is meaningless if it is not, and the failure is silent: this script reads the
+# TEXT layer, so a PDF that predates an image swap or a stylesheet change passes
+# with a clean bill of health while being the wrong file. That happened — the
+# Año Viejo went onto the closing page and this script went on certifying a PDF
+# built forty minutes earlier, because the change added no words.
+stale = PDF.stat().st_mtime < HTML.stat().st_mtime
+if stale:
+    import datetime
+    age = (HTML.stat().st_mtime - PDF.stat().st_mtime) / 60
+    msg = (f'the PDF is OLDER than build/book.html by {age:.0f} min — '
+           'it is not the current book. Run `npm run pdf`.')
+    if as_json:
+        print(json.dumps({'available': True, 'stale': True, 'staleMinutes': round(age),
+                          'checked': 0, 'missing': [], 'missingCount': 0}))
+        sys.exit(0)
+    print(f'\n  ⚠ {msg}')
+    print('    Checking it anyway, but a pass below only means the OLD file was')
+    print('    complete — this script reads text, so an image or CSS change')
+    print('    leaves no trace here.\n')
 
 doc = fitz.open(PDF)
 pdf_text = ' '.join(doc[i].get_text() for i in range(doc.page_count))

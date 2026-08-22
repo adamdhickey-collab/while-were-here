@@ -390,6 +390,48 @@ approximate reporter that has always run alongside it did list that one.
 
 A reader who wants to check the Pew figure can now do so.
 
+### 13 · The maple plate is called a stack and stacks nothing — Adam's call
+
+Found 22 Aug 2026 while checking alt text against the actual frames.
+
+`survey-02-corner-maple` carries the printed caption **"Eleven years, drawn at
+once."** on folio 34. Its `purpose` field says "The plate draws all eleven years
+at once, which is the one view the essay says attention never gives you." Its
+generator preset is named **`radial-stack`** and its note reads "one street tree,
+eleven years stacked."
+
+**Nothing in the code stacks anything.** The plate is drawn by
+`scripts/survey.py maple --size 1600 --seed 7`, and the maple preset is
+`warp='radial-stack', octaves=4, levels=30, blooms=4, dots=38`. That produces
+ONE warped radial field with thirty contour levels, seven crown lobes from
+`cos(th * 7.0)`, and a soft root-mass band at `dy = 0.16`. There is no stack
+parameter, no eleven of anything, and no repeated offset copies. Confirmed by
+reading the generator, not by squinting at the picture.
+
+**What was actually wrong, and is now fixed.** The alt text restated the caption
+literally — "eleven faint rings of the same shape offset behind it, as if the
+tree had been drawn once a year and the drawings left stacked" — and described a
+plate that does not exist. A screen-reader user was being told to picture
+something absent. It now describes the plate that is there.
+
+**What is left, and it is a design decision, not a fault.** The caption survives
+as poetry: "eleven years, drawn at once" can fairly mean *this is what eleven
+years of a tree looks like compressed into one image*, and it promises no
+countable rings. Read that way nothing needs to change. Two other readings are
+available and both are Adam's:
+
+* **Implement the stack.** Add a stack of eleven offset contour passes to
+  `radial-stack`, so the preset does what its name and note say and the caption
+  becomes literally true. The plate would change; it is a fixed-size inset card,
+  so nothing reflows and the page count cannot move.
+* **Soften the apparatus.** Leave the artwork, and reword the `purpose` field,
+  which currently asserts the plate does something it does not. The caption can
+  stay.
+
+The plate as it stands is one of the best-looking things in the book. This is not
+a request to fix it — it is a note that its own metadata over-claims, so nobody
+later reads `purpose` and believes the artwork was verified against it.
+
 ---
 
 ## The photo library

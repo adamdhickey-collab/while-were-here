@@ -224,6 +224,41 @@ def scan():
 
 
 def report(rows):
+    """PLACE THE GPS-LESS FRAMES BY DATE FIRST.
+
+    6,991 frames — 29 percent of the library — carry no GPS, and they are almost
+    all Panasonic camera files: P1040…, P1050…, P1080…. The first version of this
+    report simply dropped them, so every table it printed was a table of PHONE
+    photographs. That is backwards. The camera frames are the deliberate ones —
+    4000 x 3000, carried on purpose — and they are exactly what the book wants.
+
+    It surfaced when scripts/findsource.py matched the book's Villa de Leyva
+    plaza to P1050042.JPG, a camera file with no GPS, on a day this report had
+    already described. I had said in writing that Villa de Leyva "has essentially
+    no frames in this library". It has plenty; none of them could be seen.
+
+    A frame with no GPS taken on a day when other frames DO have GPS is on the
+    same trip. That is an inference and it is labelled as one — `viaDay` — but it
+    is a safe one at this granularity: nobody flies between countries and keeps
+    shooting the same afternoon."""
+    byday = {}
+    for r in rows:
+        if r.get('lat') and r.get('day'):
+            byday.setdefault(r['day'], []).append((r['lat'], r['lon']))
+    borrowed = 0
+    for r in rows:
+        if r.get('lat') or not r.get('day'):
+            continue
+        same = byday.get(r['day'])
+        if not same:
+            continue
+        r['lat'] = sum(x for x, _ in same) / len(same)
+        r['lon'] = sum(y for _, y in same) / len(same)
+        r['viaDay'] = True
+        borrowed += 1
+    print(f"  {borrowed} GPS-less frames placed by date "
+          f"({sum(1 for r in rows if not r.get('lat'))} still unplaced)")
+
     withgps = [r for r in rows if r.get('lat')]
     print(f"\n{len(rows)} images · {len(withgps)} with GPS · "
           f"{sum(1 for r in rows if r['edited'])} that Adam edited\n")

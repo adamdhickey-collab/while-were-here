@@ -243,6 +243,36 @@ in one cell.
 | Chicago / DC / Grand Canyon / Duluth | 433 | 204 | 2015–2024 |
 | UAE, Dominican Rep, Hawaii, Mexico | 58 | 20 | — |
 
+**CORRECTION, and it changes every number below — the sweep was blind to the
+camera.** `scripts/findsource.py` matched the book's Villa de Leyva plaza to
+**`P1050042.JPG`, 4000 × 3000, 29 December 2015** — a frame I had stated in
+writing was "not from this export", on a day this file had already described.
+
+It was invisible because it carries no GPS. **6,991 frames — 29 percent of the
+library — have none**, and they are overwhelmingly Panasonic camera files:
+P1040…, P1050…, P1080…. So the first table was a table of PHONE photographs, and
+the camera frames are the deliberate ones: 4000 × 3000, carried on purpose,
+usually the better picture.
+
+`places.py` now places a GPS-less frame using the frames that DO have GPS from
+the same day, flagged `viaDay`. 4,731 of the 6,991 recover. What that changes:
+
+| trip | GPS only | with the camera files |
+| --- | --- | --- |
+| Seattle | 94 | **269** |
+| Portland | 30 | **359** |
+| Olympic NP | 21 | **151** |
+| Grand Canyon | 123 | **410** |
+| Miami | 73 | **331** |
+| Washington DC | 125 | **222** |
+| Colombia | 1,493 | **1,895** |
+
+**Know what the inference is worth.** It is trip-level, not town-level: a day is
+given one averaged position, so a day that ran Tunja → Villa de Leyva lands
+between them and belongs to neither. It answers "which trip" reliably and "which
+town" only when the day stayed put. The remaining 2,260 are days with no GPS at
+all — camera-only days, mostly older — and they cannot be placed this way.
+
 **Two things this sweep found that matter more than the table.**
 
 **Colombia is the second-largest body of work in the archive and is entirely

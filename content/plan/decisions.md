@@ -1104,3 +1104,50 @@ would be the last one rather than absent.
 It also checks the fault no CSS property can prevent: a word hyphenated across
 the **foot of a column**, where the reader turns the leaf holding half of it.
 There are none, and there were none before.
+
+---
+
+## The house-style check was two word boundaries away from working
+*22 Aug 2026*
+
+`npm run verify` has policed American spelling since the imprint brought
+"colour-graded" onto a printed page. It passed every run. It was matching each
+word as `\b<word>\b`, and each of those two boundaries was hiding a different
+class of fault.
+
+**The leading boundary hid compounds.** `\bcolour\b` cannot see "watercolour" —
+there is no boundary between "water" and "colour". Three of those and two
+"millimetres" were in printed alt text.
+
+**The trailing boundary hid inflections.** The list held `neighbour` and
+`realised`; "neighbours" and "realise" both walked past, and so did "centred",
+because the list has "centre". The list had already tried to solve this by
+listing "colours" and "coloured" beside "colour" — which is the tell. A list of
+base forms cannot be completed by adding more base forms.
+
+Between them: **`watercolour` ×3, `millimetres` ×2, `realise` ×2, `centred`,
+`neighbours`, `kerb`** — nine spellings on the page, every run green.
+
+**Two of them were written by this session.** "Watercolour blooms" went into the
+maple alt text an hour after the same check had caught a bare "centre" in the
+same field, and "nearest neighbours" went into it in the same edit — while the
+three sibling plates got "neighbors". The check looked like it was working, and
+it was, on exactly the words nobody compounds or inflects.
+
+**Now matched by stem**, `\w*stem\w*`, which reaches compounds and inflections at
+once, with the whole offending token reported rather than the stem. Two guards
+were needed and both came from real false positives on the first run:
+
+* `BRIT_ALLOW` — "organism" and "organist" contain `organis`; "programmer" and
+  "programming" contain `programme`. All correct American English. Without the
+  set the check would have failed on the Physarum credit and on the essay about
+  machines.
+* **`grey` keeps a hard tail.** It is the one stem that cannot take `\w*`,
+  because "greyhound" is spelled that way on both sides of the Atlantic. It gets
+  an explicit `(s|ed|ing)?\b` instead, so greys and greyed are caught and the dog
+  is not.
+
+Verified in both directions: greyhound, organism and programmer injected into the
+built page all pass; "watercolour" and "neighbourhoods" both fail and are named
+individually. The stem list also grew from 22 words to 58, which is how `kerb`
+was found at all — it was never on the old list in any form.

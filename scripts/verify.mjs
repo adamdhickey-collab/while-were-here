@@ -137,9 +137,39 @@ check('no build artifacts in the output', leaked.length === 0,
 /* 4. American English on the printed page. The manifest's credit fields became
       printed text when the imprint was added, and brought "colour-graded" with
       them. */
-const BRIT = ['colour', 'colours', 'coloured', 'oxidised', 'organised', 'recognised', 'realised',
-  'centre', 'metre', 'metres', 'grey', 'travelled', 'labelled', 'analyse', 'behaviour',
-  'favourite', 'neighbour', 'honour', 'catalogue', 'licence', 'defence', 'practise'];
+/* STEMS, not whole words, and the reason is that two word boundaries were each
+   hiding faults in a different direction.
+
+   The leading one hid compounds: `\bcolour\b` cannot see "watercolour", because
+   there is no boundary between "water" and "colour". Three of those and two
+   "millimetres" were in printed alt text.
+
+   The trailing one hid inflections: the list held "neighbour" and "realised",
+   so "neighbours" and "realise" both walked past it, as did "centred" — the
+   list has "centre". A list of base forms cannot be completed by adding more
+   base forms; that is what "colours" and "coloured" sitting beside "colour"
+   were an attempt at, and it still missed three words on this page.
+
+   So each stem is matched as `\w*stem\w*`, which reaches compounds and
+   inflections at once, and the whole offending token is reported rather than the
+   stem, so the message says "watercolour" and not "colour". */
+const BRIT_STEMS = [
+  'colour', 'centre', 'metre', 'neighbour', 'honour', 'behaviour', 'favourit',
+  'labour', 'armour', 'harbour', 'rumour', 'vapour', 'flavour', 'parlour',
+  'saviour', 'endeavour', 'splendour', 'kerb', 'catalogue', 'licence', 'defence',
+  'offence', 'oxidis', 'organis', 'recognis', 'realis', 'apologis', 'criticis',
+  'specialis', 'utilis', 'travell', 'labell', 'cancell', 'modell', 'marvell',
+  'mould', 'smoulder', 'sombre', 'lustre', 'calibre', 'fibre', 'litre', 'theatre',
+  'aluminium', 'programme', 'storey', 'plough', 'draught', 'cheque', 'jewellery',
+  'pyjamas', 'sceptic', 'manoeuvre', 'learnt', 'spelt', 'practis', 'skilful', 'wilful',
+];
+/* Words that CONTAIN a stem and are correct American English. Every one of these
+   was a real false positive when the stem list was first run against the book:
+   "organism" and "organist" contain `organis`, "programmer" and "programming"
+   contain `programme`. Without this set the check would have cried wolf on the
+   Physarum credit and on the essay about machines. */
+const BRIT_ALLOW = new Set(['greyhound', 'greyhounds', 'organism', 'organisms',
+  'organist', 'organists', 'programmer', 'programmers', 'programming']);
 /* Quoted titles are exempt, and this is not a loophole — it is the difference
    between house style and misquoting somebody. The imprint credits Rob
    Cruickshank's photograph "Slime mould (P. polycephalum)". That is its title.
@@ -156,21 +186,21 @@ const citations = stripped
   .replace(/<span class="sources__(?:who|where)">[\s\S]*?<\/span>/g, ' ')
   .replace(/<[^>]+>/g, ' ');
 const ownWords = (citations + ' \n ' + altText).replace(/\u201C[^\u201D]*\u201D/g, ' ');
-/* NO leading word boundary. `\bcolour\b` cannot see "watercolour", because there
-   is no boundary between "water" and "colour" — so three "watercolour" and two
-   "millimetres" sat in printed alt text for as long as this check has existed,
-   passing every run. One of them was written by this session, an hour after the
-   check had already caught a bare "centre" in the same field: the check looked
-   like it was working, and it was, on exactly the words nobody compounds.
-
-   Only the LEADING boundary goes. The trailing one stays and is load-bearing —
-   `grey\b` must not fire on "greyhound", which is spelled that way in American
-   English too. No American word ends in -colour, -metre, -centre or -honour, so
-   dropping the leading boundary adds no false positives; it only reaches the
-   compounds. The whole offending token is reported rather than the stem, so the
-   message says "watercolour" and not "colour". */
-const brit = [...new Set(BRIT.flatMap((w) =>
-  [...ownWords.matchAll(new RegExp(`\\w*${w}\\b`, 'gi'))].map((m) => m[0].toLowerCase())))];
+const britHits = new Set();
+for (const stem of BRIT_STEMS) {
+  for (const m of ownWords.matchAll(new RegExp(`\\w*${stem}\\w*`, 'gi'))) {
+    const t = m[0].toLowerCase();
+    if (!BRIT_ALLOW.has(t)) britHits.add(t);
+  }
+}
+/* `grey` is the one stem that cannot take a loose tail: "greyhound" is spelled
+   that way on both sides of the Atlantic. It keeps an explicit inflection list
+   and a hard boundary, so greys/greyed/greying are caught and the dog is not. */
+for (const m of ownWords.matchAll(/\w*grey(s|ed|ing)?\b/gi)) {
+  const t = m[0].toLowerCase();
+  if (!BRIT_ALLOW.has(t)) britHits.add(t);
+}
+const brit = [...britHits];
 check('American English', brit.length === 0, brit.length ? `found: ${brit.join(', ')}` : '');
 
 /* 5. Images: a file on disk is either in the book or says it is not. An entry

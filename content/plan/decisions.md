@@ -864,3 +864,31 @@ Verified to fail on both modes: restoring the frame line under *You, arriving*
 reports a 100% horizontal run; adding a second label over `Admitted` reports a
 40% box overlap. Sixteen checks now, and this is the second in two days that
 exists because the same mistake happened twice.
+
+## The advertisers page said eleven and meant forty-six — 22 Aug 2026
+
+The reproduced-record spread in *The Strange Privilege* prints 154 advertiser
+names on one charcoal page and explains itself underneath:
+
+> Meta Platforms, "Advertisers using your activity or information". Personal
+> data export generated 19 August 2026. Of the first 160 entries in export
+> order, 154 are printed here unedited and unsorted; six are withheld. The 7,165
+> beyond them are not printed because they would fill **eleven more pages**.
+
+Two of the three claims check out — 160 − 154 = six withheld, and
+7,325 − 160 = 7,165 beyond. The third is wrong and wrong by a lot. At the
+density actually on the page, 7,165 names need **46.5 pages**. Eleven would
+require 651 names per page, **4.2× what is printed**.
+
+It matters more than an ordinary slip because this spread's whole claim is
+fidelity — *"printed here unedited and unsorted"* — and it is a page a reader
+can audit by counting one column and multiplying. The one number that was not
+derived from the data was the one that was wrong.
+
+Now: *"they would fill this page forty-six times over."* The page the reader is
+holding becomes the unit, which is both accurate and better writing than a bare
+page count.
+
+**Checked at the same time and clean:** the other two reproduced records claim
+only *"Reproduced in full, unedited"*, and their counts match their items
+exactly — 31 and 23. No arithmetic to get wrong, which is the safer design.

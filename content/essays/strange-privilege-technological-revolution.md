@@ -39,7 +39,7 @@ spreads:
         Personal data export generated 19 August 2026. Of the first 160 entries
         in export order, 154 are printed here unedited and unsorted; six are
         withheld. The 7,165 beyond them are not printed because they would fill
-        eleven more pages.
+        this page forty-six times over.
       items:
         - "Uniagency"
         - "LEGO"

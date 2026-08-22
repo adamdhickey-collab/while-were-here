@@ -79,6 +79,7 @@ spreads:
       image: here-08-dog-resting
       caption: Resting, and not in charge of most of it.
   - type: closing
+    image: here-10-ano-viejo-burning
     quote: The temporary thing is not less real. It is the only kind we have.
     line: For now, that is where we are.
     blocks: [flow-4a, flow-4b]

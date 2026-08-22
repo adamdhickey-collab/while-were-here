@@ -1055,6 +1055,28 @@
    Same treatment as the quote spread, because it is the same job: one sentence,
    alone, with nothing to read it against. */
 .closing--quote .page__block { display: grid; align-content: center; }
+
+/* A QUOTE OVER A PLATE is a different job from a quote on paper, and the rule
+   above assumes paper — "one sentence, alone, with nothing to read it against".
+   Every other closing in the book is image OR quote, never both, so the case
+   never arose until the final essay took the Año Viejo onto its closing recto
+   and kept its sentence.
+
+   Set as it was, the charcoal Didone landed on a night photograph and all but
+   vanished — the same fault the stage-3 and stage-4 grounds already guard
+   against, where the note reads "this page is a DARK ground, so the ink must be
+   PALE". The type inverts here for the same reason.
+
+   IT HOLDS ITSELF WITH A SHADOW, NOT A SCRIM. A soft radial scrim was tried
+   first and `npm run overflow` refused it: an absolutely positioned ::before at
+   `inset: -6mm -8mm` grows the block's scroll height, and three closing rectos
+   went 5.8–6.1 mm past their box. A shadow does the same job — holds the line
+   wherever the flame happens to be bright — and adds no box to overflow. */
+.closing--plate.closing--quote .pull-quote {
+  color: var(--paper);
+  text-shadow: 0 0 14mm rgba(10, 8, 6, 0.72), 0 0 4mm rgba(10, 8, 6, 0.55);
+}
+.closing--plate.closing--quote .quote-mark { background: var(--paper); }
 .closing--quote .pull-quote { grid-column: 1 / 13; font-size: var(--t-quote); }
 .closing--quote .quote-mark {
   grid-column: 1 / 13;

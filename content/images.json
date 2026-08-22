@@ -507,15 +507,18 @@
       "essay": "Most of Life Is a Tuesday",
       "section": "I — Look Again",
       "spread": "Closing spread (verso, full bleed) · 01I",
-      "subject": "The last leaf of a field notebook: one photograph taped in — late-afternoon lake, an empty path, or a dog walking away — with a single line of handwriting beneath it and three-quarters of the page left blank. The ruling shows through.",
+      "subject": "The last leaf of a field notebook: one photograph taped in — a black dog stepping into the flooded edge of a river in late afternoon, autumn leaves down to the waterline, leaning trees doubled in still water — with a single line of handwriting beneath it and three-quarters of the page left blank. The ruling shows through.",
       "concept": "The book putting you back down where it found you.",
-      "purpose": "Closing image. Not spectacular; that is the requirement, not a limitation.",
+      "purpose": "Closing image. Not spectacular; that is the requirement, not a limitation. The photograph is now the same afternoon the contact sheet three spreads earlier is drawn from — 23 minutes after the last of those three frames — so the essay ends on the end of the day it has been showing.",
       "aspect": "1:1",
       "target": "4000 × 4000 px",
       "status": "generated",
-      "selection": "—",
-      "revision": "Specimen color moss #68735B, used once, small. The blank is doing the work — do not fill it.",
-      "composite": true
+      "selection": "Chosen by eye from a 132-frame contact sheet of the whole 21 Oct 2018 walk. Deliberately not P1080372, which is another dog-nose-down-in-leaves and would echo both `walk-01` and the essay-08 opener.",
+      "revision": "Photograph replaced 22 Aug 2026. The taped-in image was generated and its own subject line could not decide what it showed: “late-afternoon lake, an empty path, OR a dog walking away.” It is now `P1080416.JPG`, Adam's, and it is the first two of those three things at once. Composited INTO the existing mount rather than replacing the plate: the ruled leaf, the tape, the print border, the illegible squiggle and the blank three-quarters are all original artwork and all untouched. Measured mount box 568,505–2232,1558 at 4000 px; the 4:3 original was cropped to the mount's 1.58 from 234 px down, which trims empty sky and keeps the dog, the bank and the reflections. THE PAGE AROUND THE PHOTOGRAPH IS STILL DRAWN — this entry reads `own photograph` because the photograph is the subject, but the leaf is a treatment. Specimen color moss #68735B, used once, small. The blank is doing the work — do not fill it.",
+      "composite": true,
+      "origin": "own photograph",
+      "captured": "Oct 21, 2018 3:34:10 pm",
+      "capturedSource": "EXIF in P1080416.JPG. Camera time, from the original file, not an album's metadata."
     },
     {
       "id": "ordinary-days-01k-room-survey",
@@ -2731,23 +2734,6 @@
       "capturedSource": "EXIF in the render — 4 Oct 2025, 12:22.",
       "render": "~/Desktop/photo library edits/IMG_5214.jpeg — Adam's own crop.",
       "selection": "iPhoto library, verified by eye 21 Aug 2026."
-    },
-    {
-      "id": "library-31-walk-water-edge",
-      "filename": "—",
-      "kind": "personal",
-      "role": "personal",
-      "essay": "Most of Life Is a Tuesday",
-      "section": "I — Look Again",
-      "spread": "Unplaced — a CANDIDATE for the essay's closing plate, which is currently the generated `ordinary-days-01j-quiet-close`. File at `~/Desktop/photo library 2/P1080416.JPG`. Registered 22 Aug 2026. Placing it means displacing the generated notebook page, which is a composite treatment — the taped-in photograph is the variable, so this could sit inside that treatment rather than replace it.",
-      "subject": "The dog stepping into the flooded edge of the river in late afternoon: autumn leaves down to the waterline, leaning trees doubled in water still enough to hold them, the far bank in fall color, low sun behind. She is walking away from the camera into the shallows.",
-      "concept": "An ordinary afternoon, ending.",
-      "purpose": "The essay's closing plate cannot decide what it shows — its own subject line reads “late-afternoon lake, an empty path, OR a dog walking away.” This one frame is the first two of those three, really, and it closes the loop the essay opens: the contact sheet three spreads earlier is from this same walk, and this was taken 23 minutes after the last of those three frames. “Maybe the ordinary days were the important parts” over the end of the afternoon those pages already showed.",
-      "aspect": "4:3",
-      "target": "4000 × 3000 px native",
-      "origin": "own photograph",
-      "capturedSource": "EXIF in the file — 21 Oct 2018, 15:34:10.",
-      "selection": "Chosen by eye from a 132-frame contact sheet of the whole walk. Deliberately NOT `P1080372`, which is lovely but is another dog-nose-down-in-leaves and would echo both `walk-01` and the essay-08 opener. This one is the quiet frame: the action of `walk-03-found-water` has passed and the water is still."
     }
   ]
 }

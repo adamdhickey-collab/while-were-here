@@ -682,3 +682,39 @@ not because of pixels but because **the book currently shows four small crops of
 a walk it has 175 frames of.** If the contact sheet or the essay-08 opener is
 ever reconsidered, there is a whole afternoon to choose from rather than four
 squares somebody already picked.
+
+## The essay-01 closing photograph is real now, and the page around it is not — 22 Aug 2026, Adam's call
+
+"place P1080416." The closing plate of *Most of Life Is a Tuesday* is a drawn
+field-notebook leaf with a photograph taped to it, and the photograph was
+generated. Its own subject line could not decide what it showed: *"late-afternoon
+lake, an empty path, **or** a dog walking away."*
+
+**The photograph was swapped, not the plate.** The mount was measured
+(568,505–2232,1558 at 4000 px, axis-aligned, no rotation) and the real frame
+composited into it. The ruled leaf, the tape, the print border, the illegible
+squiggle and the blank three-quarters are original artwork and are untouched —
+including the instruction that came with them, *"the blank is doing the work —
+do not fill it."*
+
+That treatment was worth keeping and the imagery audit's own argument says why.
+The leaf does not pretend to be a moment that happened; it is openly a drawing,
+and a good one. What was wrong was the photograph inside it claiming to be a
+day. Now it is one: **21 Oct 2018, 3:34 p.m.** — the same walk the contact sheet
+three spreads earlier is drawn from, twenty-three minutes after the last of
+those three frames. The essay ends on the end of the afternoon it has been
+showing, under "Maybe the ordinary days were the important parts."
+
+Chosen from a 132-frame contact sheet of the whole walk, and deliberately not
+`P1080372`, which is lovely and is another dog-nose-down-in-leaves — it would
+have echoed both `walk-01` on the same spread and the essay-08 opener.
+
+The 4:3 original was cropped to the mount's 1.58, trimming empty sky from the
+top. The crop is better than the full frame, which is worth saying plainly: the
+mount's shape improved the photograph.
+
+**One honesty note carried in the entry.** It now reads `origin: own photograph`
+because the photograph is the subject, but `composite: true` and the revision
+both state that the leaf around it is still drawn. The book's tally of Adam's
+photographs should be read with that in mind — this is a real picture in a drawn
+mount, not a photograph of a notebook.

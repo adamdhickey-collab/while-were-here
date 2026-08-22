@@ -1182,11 +1182,47 @@
    which requires attribution wherever the work is distributed, and the book
    printed none anywhere before this.                                        */
 
-/* Sources take the head of the page, the imprint keeps the foot, and the `1fr`
-   moves between them so the two blocks stay pinned to their own edges however
-   long the source list runs. The imprint does not move when a claim is added. */
+/* NOT A GRID, and this is the fix for a fault that reached the PDF.
+
+   This page used the book's 12-column grid with `grid-template-rows: auto 1fr
+   auto auto` — sources at the head, imprint pinned to the foot. In Chromium it
+   was exactly right. In the PDF the ENTIRE sources block was gone: all 28
+   entries, leaving a hairline rule with a blank half-page above it and nothing
+   to say why. Vivliostyle lays this grid out differently and the first item did
+   not survive it.
+
+   Bisected on a one-page harness built from the composed section, which turns a
+   multi-minute PDF into seconds. Removing the negative text-indent: no. Taking
+   the list out of flex: no — and that one appeared to work on a first run and
+   did not reproduce, so the earlier note blaming flex was wrong. Forcing the
+   item to row 1: no. `display: block` on this page's block: yes, immediately.
+
+   Block flow is also the right shape for what this page is. It stacks three
+   things down a page — sources, imprint, dot. It never needed twelve columns,
+   and the `1fr` that pinned the imprint to the foot was never honoured by the
+   PDF renderer anyway. `grid-column: 1 / -1` on the children is now inert and
+   harmless.
+
+   WHY NOTHING CAUGHT IT. `npm run overflow` measures a browser. `npm run verify`
+   reads the built HTML. Both were right — the sources were in book.html and fit
+   their slot. The PDF is a different renderer, and until this was found nothing
+   in the project had ever read what came out of it. */
 .titlespread--imprint .page__block {
-  grid-template-rows: auto 1fr auto auto;
+  display: block;
+  position: relative;
+}
+
+/* The dot comes out of the flow. In the grid it cost nothing, because the `1fr`
+   row absorbed its 34 mm top margin; in block flow that margin is real height
+   and the page ran 24.1 mm past its box — caught by `npm run overflow`, which is
+   the browser-side check doing exactly its job on a change made for the PDF's
+   sake. Shrinking the margin would have moved the dot up the page in both
+   renderers. Absolute keeps it on the foot in both and contributes no height. */
+.titlespread--imprint .titlespread__foot {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  margin-top: 0;
 }
 
 /* ---- SOURCES ------------------------------------------------------------
@@ -1214,14 +1250,18 @@
   color: var(--ink-faint);
 }
 
+/* Margins rather than a flex column. This was NOT the fault — see the note on
+   `.titlespread--imprint .page__block`, which is where the sources were actually
+   being lost — and an earlier version of this comment said it was, on the
+   strength of one bisect run that did not reproduce. It is kept as margins
+   anyway: a vertical list of single lines wants margins, and it is one less
+   flex container on a print path that has now demonstrably surprised us once. */
 .sources__list {
   list-style: none;
   margin: 0;
   padding: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 1.4mm;
 }
+.sources__list li + li { margin-top: 1.4mm; }
 
 /* The subject is what a reader scans for, so it is the only thing that breaks
    the column's left edge. Continuation lines indent under it. */

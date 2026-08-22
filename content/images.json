@@ -188,14 +188,14 @@
       "essay": "Most of Life Is a Tuesday",
       "section": "I — Look Again",
       "spread": "Image pair (recto, close crop) · 01C",
-      "subject": "One drop of water from the view opposite, at 400×: diatoms, rotifers, desmids and a ciliate mid-turn, in saturated bioluminescent teal, acid green, coral and cobalt against a dark ground. A real scale bar reading 50 µm, and a small key numbering four organisms.",
+      "subject": "One drop of water from the view opposite, seen down a microscope: diatoms, rotifers, desmids and a ciliate mid-turn, in saturated bioluminescent teal, acid green, coral and cobalt against a dark ground. A scale bar reading 50 µm, and a small key numbering four organisms.",
       "concept": "What the place was doing the whole time.",
       "purpose": "Right half of the pair, and the loudest plate in Part I. The payoff for a page of politeness.",
       "aspect": "3:2",
       "target": "6000 × 4000 px",
       "status": "generated",
       "selection": "—",
-      "revision": "Specimen color moss #68735B on the chip only — the plate itself is full spectrum and must be the most saturated thing in the first forty pages. This is the image that proves Stage I is quiet in layout, not in color.",
+      "revision": "Magnification removed from the subject line 22 Aug 2026. It read “at 400×”, and the plate's own scale bar contradicts that: 50 µm measures 1,565 px on a 6,000 px frame, so the field is 192 µm across. A 400× total magnification gives roughly a 500 µm field — 2.6× wider than the plate shows; 192 µm implies something nearer 1000×. The bar is printed and the alt text was not, so the bar wins and the number is gone. The plate needs no magnification figure: it has a scale bar. Specimen color moss #68735B on the chip only — the plate itself is full spectrum and must be the most saturated thing in the first forty pages. This is the image that proves Stage I is quiet in layout, not in color.",
       "composite": true
     },
     {

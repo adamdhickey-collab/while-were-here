@@ -312,3 +312,50 @@ and it is deliberate — an immersive full-bleed crossover with a caption a read
 finds rather than reads. Unlike the imprint, which was raised on 21 Aug because
 a CC BY attribution has to be legible, this one carries no obligation. Recorded
 so the number is known, not because it needs changing.
+
+
+---
+
+## The micrograph is the hardest case in the book — 22 Aug 2026
+
+`ordinary-days-01c3-location-detail` faces the "ordinary photograph nobody would
+keep" on essay 01's image-pair spread: one drop of that same lake water, seen
+down a microscope. It is the loudest plate in Part I and it earns that.
+
+**It is also generated, and it carries the full apparatus of a scientific
+document** — a numbered key (1 Rotifer · 2 Ciliate (mid-turn) · 3 Diatoms ·
+4 Desmid) and a scale bar reading 50 µm. Both are **baked into the generated
+image**, not overlaid by the layout: none of that text appears anywhere in
+build/book.html.
+
+By the rule in [art-direction](art-direction.md), generated pictures may not
+contain legible text. This one does, at full legibility, in a serif italic, with
+numbered markers placed on organisms.
+
+**And yet it holds up better than that rule predicts.** Measured:
+
+* the key is **accurate** — marker ① sits on a form that is genuinely a
+  rotifer, corona and all;
+* the scale bar is **internally coherent** — 50 µm measures 1,565 px on a
+  6,000 px frame, making the field 192 × 128 µm, and the rotifer measures
+  86 × 128 µm within it. Small for a rotifer, and inside the range;
+* the diatom is a credible pennate form at a credible size.
+
+So the details are not lying. **The genre is.** This is a fabricated specimen
+presented with the instruments of measurement, in a book whose argument is
+attention to the actual world — the same shape of problem as the solar plate's
+Ottawa coordinates, but harder, because everything inside the frame is
+consistent. A reader has no way to catch it. That is precisely what makes it the
+strongest case, not the weakest.
+
+**One inconsistency was found and fixed.** The alt text claimed "at 400×", which
+the plate's own bar contradicts: a 192 µm field implies something nearer 1000×,
+while 400× would give roughly 500 µm — 2.6× wider than what is shown. The bar is
+printed and the alt text was not, so the bar wins. The number is gone; the plate
+never needed one, because it has a scale bar.
+
+**Is there an alternative?** Honestly, not a cheap one. Unlike the sleeping dog
+or the workbench, this cannot be answered with a phone and an afternoon — it
+needs a microscope and a drop of pond water. Recorded as the one generated plate
+in the book with no realistic path to being real, so that nobody spends a
+weekend discovering that.

@@ -15,3 +15,4 @@ dist/
 # The Plattner Type EULA prohibits redistribution and prohibits serving the
 # desktop OTFs from a website. This repo is public. See LICENSING.md.
 fonts-licensed/
+.cache/

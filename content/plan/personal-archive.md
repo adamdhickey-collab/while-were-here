@@ -212,3 +212,67 @@ white label in ballpoint, and the earlier line counted it as one of the four
 titled tapes — so the alt text undercounted the shelf and lost the only
 home-made object on it, which in an essay about obsolete formats is the one that
 matters most.
+
+---
+
+## Where the archive actually is — a GPS sweep
+*22 Aug 2026*
+
+Adam asked whether the library could be swept broadly for the visually
+interesting places rather than opened folder by folder. It can, and it needed no
+new tooling: **117 of every 120 files carry GPS in EXIF**, and every one carries
+a capture date. `scripts/places.py` indexes all 24,418 originals in about three
+minutes; `scripts/sheet.py` builds a contact sheet for any place or month.
+
+**Everything resolves offline.** Coordinates are personal data and none of them
+leave the machine — places come from bounding boxes and city centroids written
+into the script, not from a geocoding service. This file's own rule about
+`messages/` is the same rule.
+
+**17,427 frames carry GPS. Home is Minneapolis** (44.85, −93.30), 6,778 frames
+in one cell.
+
+| where | frames | edited | when |
+| --- | --- | --- | --- |
+| Spain | 889 | 377 | Sep 2024 — Barcelona 267, Granada 240, Seville 176, Córdoba 125, Montserrat 81 |
+| Portugal | 850 | 344 | Sep–Oct 2024 — Sintra 287, Lisbon 116, Óbidos 110, Nazaré 83, Fátima 72, Porto 71 |
+| **Colombia** | **1,493** | **506** | eleven separate trips, 2015–2025 — Villa de Leyva 900+, Cartagena 255, Bogotá 214, Barichara, San Gil |
+| **Italy + Como** | **304** | **280** | **May 2019** — Milan, Como, Venice, Cinque Terre, Florence, Pompeii, Amalfi, Rome |
+| New York | 333 | 288 | Sep 2018, Sep 2024 |
+| Seattle · Portland · Olympic NP | 145 | 38 | Jun–Jul 2017 |
+| Chicago / DC / Grand Canyon / Duluth | 433 | 204 | 2015–2024 |
+| UAE, Dominican Rep, Hawaii, Mexico | 58 | 20 | — |
+
+**Two things this sweep found that matter more than the table.**
+
+**Colombia is the second-largest body of work in the archive and is entirely
+unexamined.** Eleven trips over ten years, 1,493 frames, most of them Villa de
+Leyva — which is already in the book as `pilgrimage-08-plaza-stones`, placed
+without anyone knowing it sat on top of nine hundred more frames from the same
+town across a decade. *The same place, photographed over ten years* is the
+book's own subject, sitting in the archive unremarked.
+
+**Italy, May 2019, is the honeymoon**, and it has the highest edit rate anywhere:
+280 of 304. A clean two-week itinerary, and **not one frame of it is in the
+book** — the only manifest hit for "Roman" is the Córdoba bridge, in Spain.
+
+**Be careful with the edit rate, though — it is weaker evidence than it looks.**
+"Edited" means Photos recorded an adjustment, and that includes rotating a
+sideways phone shot, cropping a screenshot of an airline seat map, and saving a
+joke greetings card. A high rate marks a trip Adam went back through, not a trip
+that yielded printable frames. Looking at the Italy and Seattle sheets, most of
+what is there is couple portraits and documentary snapshots. The book wants the
+room with nobody in it. **The honest expectation is a handful of frames per
+trip, not dozens** — which is still worth the looking, because a handful is what
+the remaining gaps need.
+
+**Two bugs found while building this, both mine, both worth knowing about.**
+
+* **iPhone filenames repeat.** `IMG_0856` exists in 2019 and again in 2024. The
+  first contact sheet keyed the image lookup on filename alone and printed
+  Granada's Generalife captioned "Rome 2019-05-27". Anything pairing a frame
+  with its metadata must load the actual file the metadata came from.
+* **The first country boxes put Canada before the USA**, and Canada's box spans
+  41.6–70°N — so Seattle, Chicago, Boston and New York were all filed as Canada.
+  12,642 frames in the wrong country, and Seattle invisible until Adam asked for
+  it by name. The border is approximated per-longitude now.

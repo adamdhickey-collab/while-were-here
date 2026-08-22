@@ -458,3 +458,33 @@ cursor) is not lost to the book — the machine timeline plate inside essay 05
 carries the same argument, and the cursor still closes that essay. The book's
 generated full-bleed count drops by one more; the dividers are now three real
 photographs (birds, baths, screen-print) against one generated (branching).
+
+## The FABIOLA sign goes into essay 01, beside the sentence it makes literal — 21 Aug 2026, Adam's call
+
+"Place the fabiola street sign." No pre-agreed slot, so the slot was chosen by
+argument: essay 01's third reading spread carries the passage about turning
+people into categories — "The label makes someone familiar enough that we
+occasionally stop seeing the person underneath it" — and its inset was a
+generated survey plate. The photograph of Fabiola smiling from the foot of a
+blank Seville wall, under a tiled sign bearing her own name, is that sentence
+made literal. Caption: "The label, and the person underneath it."
+
+Two compositional moves rode along, both improvements the swap exposed rather
+than costs it imposed: the inset moved from verso to recto, onto the page whose
+prose it answers, and the habituation margin note moved from recto to verso,
+beside the routine-and-change prose it actually annotates — it had been sitting
+next to the people passage, which it has nothing to say about.
+
+The crop (4:3 landscape from the portrait original, offset 900 px, from three
+candidates by eye) keeps the sign whole at the top, the blank wall's expanse in
+the middle — which is the joke — and her face and smile at the bottom.
+
+**The consent note travels with the entry and is still open.** She is posed and
+looking at the lens, so the candid rule never applied — but it is her picture
+as much as Adam's, and the manifest still says: ask her before it is printed.
+That ask is Adam's, and it is now the ninth on the list.
+
+The book's images by Adam: 38 of 105 in the book. The generated inset count in
+essay 01 drops by one; the essay that opens the book now holds a photograph of
+the person the dedication will likely name beside the dog, the lake, and the
+tree.

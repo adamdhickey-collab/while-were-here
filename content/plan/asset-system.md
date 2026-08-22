@@ -406,3 +406,39 @@ library, and Facebook's `Taken` times matched the camera's EXIF **exactly**
 across four frames. The zoo afternoon itself is not in the Photos library at
 all, so it cannot be cross-checked directly — but the source has been tested
 and found faithful.
+
+---
+
+## Finding a placed image's camera original
+*22 Aug 2026*
+
+`scripts/findsource.py`. Thirty-three placed own-photographs are under 2500 px,
+and at least one of them — the final essay's opener — turned out to be a 960 px
+crop of a 4000 px frame that was in the library the whole time. Re-cutting it
+took 81 dpi to 254 with no new photograph.
+
+**It matches on pixels, not on dates, and that is the whole point.** Guessing
+from metadata has been expensive: a 970-frame cluster read as Villa de Leyva was
+Tunja, two twenty-frame batches before New Year that looked like effigy-building
+were an arcade and a Christmas lights tour, and the staircase plate was
+confidently placed in Duluth until all 47 Duluth frames turned out to be
+waterfront. Dates and counts generate candidates. They do not identify anything.
+
+**The method.** Placed images are CROPS, so comparing whole frames misses them.
+Every archive frame with a short edge of 2200 px or more is stored as a small
+aspect-preserved grayscale thumbnail. A query slides a square window across each
+thumbnail, scores every position against the placed file, and keeps the best —
+which finds a square crop taken from anywhere inside a 4:3 original. Scores are
+mean absolute difference after per-window contrast normalisation, so a re-graded
+crop still matches the frame it came from.
+
+Under about 12 is a confident match, 12–20 is worth opening, above that is noise.
+**The score is a hint and not a verdict** — the pair gets looked at before
+anything is replaced. That rule is written into the script's own docstring
+because the temptation to trust a number is exactly what produced the four wrong
+identifications above.
+
+**What it cannot do.** It only searches `photo library 2`. Anything photographed
+before the export — the July 2014 zoo visit behind all seven specimen plates, the
+1980s prints of Adam's father and the Thanksgiving rug — has no original here to
+find. Eight frames in this entire archive are from 2014.

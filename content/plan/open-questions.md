@@ -139,7 +139,21 @@ So: **read it off the paper.** The book is in the house. Failing that,
 re-photograph that one page close and square — five minutes, and it also gives
 the inset a better file than a 1536 px frame.
 
-Nobody should quietly normalise it to *you in* in the meantime. A tidied-up
+Nobody should quietly normalise it to *you in* in the meantime.
+
+**Looked at again, independently, 22 Aug 2026 — and it still does not settle.**
+Magnified 4× from the placed 1536 px file, the letters after *you* are two
+arched strokes before *front*. They read most naturally as **nn**, which is what
+the manifest already says. But the first arch has a distinctly taller left stem
+than the second, which keeps **rn** and **rin** open, and there are stray
+graphite marks above the second arch that are either a dot or the paper. A
+second reader reaching the same wall is worth recording: **the file is the
+limit, not the reading.**
+
+If `scripts/findsource.py` turns up a larger camera original of this frame in
+the archive, that settles it without anyone leaving the house. If it does not,
+the instruction above stands — read it off the paper, or re-photograph that one
+page close and square. A tidied-up
 child's sentence is worth nothing, and the page exists to keep the thing as it
 was made — the manifest already records that an earlier draft did exactly that
 and it was caught.

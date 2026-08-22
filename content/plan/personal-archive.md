@@ -246,11 +246,27 @@ in one cell.
 **Two things this sweep found that matter more than the table.**
 
 **Colombia is the second-largest body of work in the archive and is entirely
-unexamined.** Eleven trips over ten years, 1,493 frames, most of them Villa de
-Leyva — which is already in the book as `pilgrimage-08-plaza-stones`, placed
-without anyone knowing it sat on top of nine hundred more frames from the same
-town across a decade. *The same place, photographed over ten years* is the
-book's own subject, sitting in the archive unremarked.
+unexamined.** Eleven trips over ten years, 1,493 frames.
+
+**CORRECTED, same day.** The first version of this paragraph said "most of them
+Villa de Leyva" and claimed the book's `pilgrimage-08-plaza-stones` sat on top of
+nine hundred more frames of the same town. **That was wrong.** The cluster is
+**Tunja** — a city of 170,000, twenty kilometres away — and Villa de Leyva has
+essentially NO frames in this library at all. The book's plaza photograph carries
+no EXIF whatsoever, so where it came from cannot be established from the file;
+it is not from this export.
+
+The cause is worth keeping, because it will happen again. `nearest_city` had no
+entry for Tunja, so 970 frames snapped to the nearest name it *did* hold, 0.16°
+away. **A nearest-centroid match never returns nothing — it always returns
+something, and the something reads exactly like an answer.** The snap radius was
+0.45° (~50 km), which guarantees a hit almost anywhere in the country. It is
+0.22° now, and Tunja, Sogamoso, Duitama, Paipa, Ráquira and Chiquinquirá are in
+the table. Wherever a cluster is large, check the table holds the place before
+believing the label.
+
+The corrected Colombia picture: **Tunja 545, Sogamoso 326, Cartagena 255,
+Bogotá 211**, and small numbers in Barichara, San Gil, Duitama, Monguí.
 
 **Italy, May 2019, is the honeymoon**, and it has the highest edit rate anywhere:
 280 of 304. A clean two-week itinerary, and **not one frame of it is in the
@@ -266,12 +282,33 @@ room with nobody in it. **The honest expectation is a handful of frames per
 trip, not dozens** — which is still worth the looking, because a handful is what
 the remaining gaps need.
 
-**Two bugs found while building this, both mine, both worth knowing about.**
+**What the Tunja decade actually holds.** Ten New Years, four of them
+photographed — 2016, 2019, 2023, 2025 — and the recurring subject is the **Año
+Viejo**: the effigy of the old year, built in the days before, sat on a chair in
+the street, and burned at midnight. The 2016 frames are small fires along a dark
+dirt road with figures standing near them; 2018-12-31 has someone posed beside a
+finished effigy in a mask and jacket; 2023-01-01 has the fire at full height.
+Around it: elaborate neighbourhood light installations, a pesebre laid out across
+a whole yard, the same kitchen table, the same people ten years apart, a child
+who appears in 2021 and is running by 2025.
+
+**A fire lit in the same street at the turn of every year for a decade** is as
+close to this book's thesis as anything in the archive. It is also, honestly,
+*hard material*: the night frames are handheld at midnight and most are motion-
+blurred, and almost every daylight frame has identifiable family in it. The
+realistic yield is one or two frames, not a spread — most likely a fire, and
+possibly the effigy sitting in a chair before anyone lights it, which is the
+single most on-thesis object here: a year made into a thing so it can be ended.
+
+**Three bugs found while building this, all mine, all worth knowing about.**
 
 * **iPhone filenames repeat.** `IMG_0856` exists in 2019 and again in 2024. The
   first contact sheet keyed the image lookup on filename alone and printed
   Granada's Generalife captioned "Rome 2019-05-27". Anything pairing a frame
   with its metadata must load the actual file the metadata came from.
+* **`nearest_city` had no Tunja**, and mislabelled a city as a village for an
+  entire analysis — see the correction above. Silent, because the function
+  always returns its nearest entry and never says how far away it was.
 * **The first country boxes put Canada before the USA**, and Canada's box spans
   41.6–70°N — so Seattle, Chicago, Boston and New York were all filed as Canada.
   12,642 frames in the wrong country, and Seattle invisible until Adam asked for

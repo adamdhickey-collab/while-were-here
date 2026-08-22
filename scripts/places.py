@@ -121,6 +121,14 @@ CITIES = [
     ('Marrakesh', 31.63, -8.01), ('Tangier', 35.78, -5.81),
     ('Bogotá', 4.71, -74.07), ('Medellín', 6.24, -75.58), ('Cartagena', 10.39, -75.51),
     ('Bucaramanga', 7.12, -73.13), ('Villa de Leyva', 5.63, -73.52), ('Barichara', 6.63, -73.22),
+    # Tunja was missing and 970 frames snapped to Villa de Leyva, 0.16° away —
+    # a city of 170,000 read as a colonial village for a whole analysis. A
+    # nearest-centroid match is only ever as good as the table it searches, and
+    # it fails SILENTLY: it always returns something, and the something looks
+    # like an answer. Anywhere a cluster is large, check the table has the place.
+    ('Tunja', 5.54, -73.36), ('Duitama', 5.82, -73.03), ('Sogamoso', 5.71, -72.93),
+    ('Paipa', 5.78, -73.12), ('Ráquira', 5.54, -73.63), ('Chiquinquirá', 5.62, -73.82),
+    ('Zipaquirá', 5.03, -74.00), ('Monguí', 5.72, -72.85),
     ('San Gil', 6.55, -73.13), ('Santa Marta', 11.24, -74.20), ('Guatapé', 6.23, -75.16),
     ('Salento', 4.64, -75.57), ('San Andrés', 12.58, -81.70), ('Cali', 3.45, -76.53),
     ('Dubai', 25.20, 55.27), ('Abu Dhabi', 24.45, 54.38), ('Honolulu', 21.31, -157.86),
@@ -174,7 +182,7 @@ def country(lat, lon):
     return None
 
 
-def nearest_city(lat, lon, limit=0.45):
+def nearest_city(lat, lon, limit=0.22):   # ~24 km, not ~50
     best, bestd = None, 1e9
     for name, cy, cx in CITIES:
         d = ((lat - cy) ** 2 + ((lon - cx) * 0.75) ** 2) ** 0.5

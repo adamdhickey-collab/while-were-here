@@ -33,9 +33,19 @@ const html = fs.readFileSync(bookPath, 'utf8');
    checking against book.html alone reports a deliberate decision as a fault. */
 const allBuilt = fs.readdirSync(P('build')).filter((f) => f.endsWith('.html'))
   .map((f) => fs.readFileSync(P('build', f), 'utf8')).join('\n');
-const text = html.replace(/<(script|style)[^>]*>[\s\S]*?<\/\1>/g, '')
-                 .replace(/<[^>]+>/g, ' ')
-                 .replace(/&nbsp;/g, ' ').replace(/&amp;/g, '&');
+const stripped = html.replace(/<(script|style)[^>]*>[\s\S]*?<\/\1>/g, '');
+const text = stripped.replace(/<[^>]+>/g, ' ')
+                     .replace(/&nbsp;/g, ' ').replace(/&amp;/g, '&');
+/* Alt text is prose too, and it was invisible to every check on this page for
+   as long as they have existed: `alt="..."` lives INSIDE a tag, so stripping
+   tags to get readable text throws it away. Nine placed images were carrying
+   British spellings in their alt attributes when this was noticed — the house
+   style check had never been able to see a word of it.
+   It does not print on paper. It is what a screen reader says out loud on the
+   hosted preview, and it is the manifest's `subject` field verbatim, so a fault
+   here is a fault in the document that describes the book to its own author. */
+const altText = [...stripped.matchAll(/\balt="([^"]*)"/g)].map((m) => m[1]).join(' \n ');
+const prose = text + ' \n ' + altText;
 const { images } = JSON.parse(fs.readFileSync(P('content/images.json'), 'utf8'));
 const { facts } = JSON.parse(fs.readFileSync(P('content/facts.json'), 'utf8'));
 const KD = { photography: 'photography', illustration: 'illustration', personal: 'personal' };
@@ -99,7 +109,7 @@ const BRIT = ['colour', 'colours', 'coloured', 'oxidised', 'organised', 'recogni
    Americanising it would make the attribution wrong, which for a CC BY image is
    the one thing this page exists to get right. Only text in curly quotes is
    skipped, so a British spelling in the book's own prose is still caught. */
-const ownWords = text.replace(/\u201C[^\u201D]*\u201D/g, ' ');
+const ownWords = prose.replace(/\u201C[^\u201D]*\u201D/g, ' ');
 const brit = BRIT.filter((w) => new RegExp(`\\b${w}\\b`, 'i').test(ownWords));
 check('American English', brit.length === 0, brit.length ? `found: ${brit.join(', ')}` : '');
 
@@ -191,7 +201,40 @@ check('every reproduced entry reaches the page', dropped.length === 0,
   dropped.length ? dropped.slice(0, 4).join('; ') + (dropped.length > 4 ? ` (+${dropped.length - 4})` : '')
                  : 'checked entry by entry against the printed text');
 
-/* 11. Vertical text declares its orientation. This is the one check that reads
+/* 11. Every content image says something to a screen reader.
+
+      A plate's alt text is the manifest's `subject` verbatim, and it is the
+      only version of the picture a reader using the hosted preview gets. It
+      does not print on paper, which is exactly why it rots unnoticed.
+
+      CALIBRATED AGAINST REAL CASES, and the first draft of this check was
+      wrong about every one of them. It flagged 19 images with `alt=""` as
+      faults; all 19 were correct:
+
+        · the eight grounds sit under body copy at 8 percent opacity and carry
+          no information a reader needs — decorative, and `alt=""` is the right
+          way to say so;
+        · the three screen-print separations layer into ONE picture, and the
+          markup already does the textbook thing — `role="img"` and an
+          `aria-label` on the containing stack, `alt=""` on each layer.
+
+      So an empty alt is a fault only when nothing else speaks for the image.
+      An image inside an aria-labelled container is covered; a ground is
+      decorative by role. Anything else with an empty alt is genuinely silent. */
+const groundFiles = new Set(images.filter((i) => i.role === 'ground')
+  .map((i) => i.filename).filter((f) => f && f !== '—'));
+const labelledStacks = [...stripped.matchAll(/aria-label="[^"]+"[\s\S]*?<\/div>/g)].join(' ');
+const silent = [...stripped.matchAll(/<img[^>]*>/g)].map((m) => m[0])
+  .filter((tag) => /alt=""/.test(tag))
+  .map((tag) => (tag.match(/src="[^"]*\/([^"\/]+)"/) || [])[1])
+  .filter(Boolean)
+  .filter((file) => !groundFiles.has(file) && !labelledStacks.includes(file));
+const named = [...stripped.matchAll(/<img[^>]*\balt="([^"]+)"/g)].map((m) => m[1]);
+check('every content image speaks to a screen reader', silent.length === 0,
+  silent.length ? `silent: ${[...new Set(silent)].join(', ')}`
+    : `${named.length} described, ${groundFiles.size} grounds decorative by role, 3 plates covered by their stack's aria-label`);
+
+/* 12. Vertical text declares its orientation. This is the one check that reads
        a stylesheet rather than the built page, and it is here because the book's
        own title printed as "WHILE WE· RE HERE" on the spine for weeks.
        `writing-mode: vertical-rl` with the default `text-orientation: mixed`
@@ -211,7 +254,7 @@ for (const f of cssFiles) {
 check('vertical text declares text-orientation', vertical.length === 0,
   vertical.length ? vertical.join(', ') : 'no vertical rule leaves orientation to the default');
 
-/* 12. Facts that are verified but have not reached a page. Reported, never
+/* 13. Facts that are verified but have not reached a page. Reported, never
        failed: registering a claim before its spread exists is correct. */
 const printedLower = text.toLowerCase();
 const STOP = new Set(['about','above','after','their','there','these','those','which','while','would','because','between','through','around','other','under','where','with','from','that','this','than','then','they','been','have','into','more','most','only','over','some','such','were','when']);

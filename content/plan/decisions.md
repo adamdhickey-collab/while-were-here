@@ -613,3 +613,40 @@ answers exactly. **Essay 07's two reading spreads are now architecturally
 symmetric**: full band on the verso, inset card and margin note on the recto.
 The essay carries eight of Adam's photographs and zero generated images — the
 first essay in the book to get there.
+
+## Alt text was invisible to every check on the page — 22 Aug 2026
+
+Found by auditing the eight images placed on 21 August, not by a failure. The
+audit asked a narrow question — do the subject lines I wrote in a hurry describe
+the pictures? — and turned up something structural underneath.
+
+**`verify.mjs` could not see alt text at all.** It builds its readable text by
+stripping tags, and `alt="..."` lives inside a tag, so every check that reads
+prose has been blind to it for as long as the checks have existed. Nine placed
+images were carrying British spellings in their alt attributes; the house-style
+check had never been able to read a word of any of them. Fixed: the checks now
+read printed text **plus** alt text. It fired immediately on all nine.
+
+Fifty-two manifest fields were corrected to American spellings by a pass that
+**skips anything inside curly quotes**, so Rob Cruickshank's "Slime mould
+(P. polycephalum)" is untouched on the imprint — the exemption written this
+morning doing its job unattended.
+
+**Four subject lines described the crop instead of the picture** — "cropped
+square", "a 3:1 band from the Montserrat frame". That is the format, not the
+content, and a screen reader would have read the aspect ratio aloud in place of
+the mountain. All four rewritten as pure description; the crop reasoning was
+already in `revision`, which is where it belongs. **New rule: `subject` is what
+is in the frame. How the frame was made goes in `revision`.**
+
+**A twelfth check now guards this**, and its first draft was wrong about every
+case it found. It flagged 19 empty alts as faults; all 19 were correct — eight
+decorative grounds at 8 percent opacity, and three screen-print separations
+whose containing stack already carries `role="img"` and an accurate
+`aria-label`. The check now knows both exemptions, and the comment in the file
+records the calibration so nobody re-litigates it. Verified to fail by
+silencing one real plate, and to keep passing with the grounds still empty.
+
+While checking that aria-label's claim — "watching a dog swim" — the frame was
+enlarged 3× and the dog is there: a head with an ear, and a wake ring around
+it, abstracted by the screen-print reduction but present. The label is honest.

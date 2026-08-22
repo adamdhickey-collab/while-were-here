@@ -462,10 +462,34 @@ const feed = (t) => {
   for (const n of grabNums(t)) ledgerNums.add(n.replace(/,/g, ''));
   for (const n of wordNums(t)) ledgerNums.add(n);
 };
+/* Citation metadata contributes YEARS ONLY, and this was measured rather than
+   assumed. Feeding whole `source` strings in put page ranges, volume numbers and
+   issue numbers into the pool — "Behavioral and Brain Sciences 24(1): 87-114"
+   alone contributes 24, 1, 87 and 114 — and the pool then answered yes to 28% of
+   every integer from 1 to 200. `npm run mutate` caught it: changing the Shikoku
+   note from 88 temples to 87 passed silently, because 87 is a page number in an
+   unrelated paper about working memory.
+
+   Years still have to be admitted. Notes legitimately cite them — "In a 2008
+   field study", "Four experiments published in 2011" — and the Physarum note's
+   2010 exists nowhere but its source's publication year. So a four-digit 18xx,
+   19xx or 20xx passes and nothing else does.
+
+   That takes the pool from 153 figures to 98 and the automatic-pass rate from
+   28% to 22%. Still not tight — the claims themselves hold many small integers,
+   and a wrong "four" will always look like some other four — but it closes the
+   class of false negative that page ranges were creating. Verified: no real
+   margin note fails under the narrower pool. */
+const YEAR = /^(18|19|20)\d\d$/;
 for (const f of facts) {
   feed(f.claim);
   feed(f.note || '');
-  for (const v of Object.values(f.source || {})) feed(v);
+  for (const v of Object.values(f.source || {})) {
+    for (const n of grabNums(v)) {
+      const clean = n.replace(/,/g, '');
+      if (YEAR.test(clean)) ledgerNums.add(clean);
+    }
+  }
 }
 const unsourced = [];
 for (const file of fs.readdirSync(P('content/essays')).filter((n) => n.endsWith('.md'))) {

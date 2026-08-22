@@ -591,3 +591,25 @@ The yellow arrow is Unplaced but not diminished: flow-4b closes the essay on
 it in prose, which is where its real work always was. 615 dpi at the band. The
 consent note was rewritten for the band scale — every figure under a
 centimeter — with the old full-bleed caution kept for anyone who enlarges it.
+
+## The cloud takes the last generated band in essay 07 — 22 Aug 2026, Adam's call
+
+"Place the montserrat cloud." A portrait frame and a 3:1 slot — the hardest
+pairing yet, and it worked because the pour crosses the frame diagonally: the
+middle slice carries cloud breaking over the dark cliff with the Catalan plain
+running to weather at the left. Three candidates: the higher slice holds the
+summit cross but loses the pour's force (and the cross would print three
+millimetres at band scale); the lower is inside the cloud and loses the plain.
+The pour won.
+
+It sits under flow-2a — "Heat decides when to stop... attention returns to
+water, grade, weather, and the next marker" — weather as the route's arbiter.
+The tending-feet band is Unplaced; the blister keeps its life in the prose.
+
+The switchbacks inset moved to the recto, per the occlusion rule the esplanade
+surfaced yesterday, and its caption lands beside "the path is a social
+structure. Someone maintains the marker" — which a mule train on a canyon wall
+answers exactly. **Essay 07's two reading spreads are now architecturally
+symmetric**: full band on the verso, inset card and margin note on the recto.
+The essay carries eight of Adam's photographs and zero generated images — the
+first essay in the book to get there.

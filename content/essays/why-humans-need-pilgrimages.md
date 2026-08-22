@@ -65,13 +65,14 @@ spreads:
   - type: reading
     variant: two
     blocks: [flow-2a, flow-2b]
-    bandImage: pilgrimage-04-tending-feet
+    bandImage: pilgrimage-04-montserrat-cloud
     marginNote: >-
       Spain’s official tourism site describes roughly 800 kilometers between
       the Pyrenean starting routes and Santiago de Compostela. The Compostela
       requires stated spiritual or religious motivation and at least the final
       100 continuous kilometers on foot.
-    insetOn: verso
+    noteOn: recto
+    insetOn: recto
     inset:
       image: pilgrimage-07-switchbacks
       caption: Nobody gets down without taking every turn.

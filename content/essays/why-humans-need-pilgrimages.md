@@ -116,7 +116,7 @@ spreads:
       image: pilgrimage-08-plaza-stones
       caption: Come a long way, to stand on old stones.
   - type: closing
-    image: pilgrimage-06-closing-stone
+    image: pilgrimage-06-closing-nave
     line: Tomorrow the body will turn back toward ordinary rooms, carrying the route in its feet.
     blocks: [flow-4a, flow-4b]
 ---

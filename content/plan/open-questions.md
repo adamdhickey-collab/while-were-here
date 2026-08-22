@@ -217,7 +217,12 @@ Five print at **363 dpi across a 300 mm page**.
 **Three plates in the book print at 87 dpi**, all of them essay closings, all of
 them composited from stock photographs. They are shot-list items 8–10.
 
-One pairing is strong enough to name. `pilgrimage-06-closing-stone` closes *The
+**DECIDED, 21 Aug: option 2 — the nave is placed.** Adam said "place the
+alcobaca nave"; the closing recto now carries `pilgrimage-06-closing-nave` at
+363 dpi, the imprint dropped to five credits, and shot-list item 10 is
+superseded. The paragraph below is kept as the record of the choice as it stood.
+
+One pairing was strong enough to name. `pilgrimage-06-closing-stone` closed *The
 Body Cannot Skip the Hill* at 87 dpi, and the library holds **`IMG_1638`, the
 Alcobaça nave at 4284 × 5712 — 363 dpi.** An empty Cistercian nave, benches on
 both sides, light at the far end, nobody in it. For an essay about distance the

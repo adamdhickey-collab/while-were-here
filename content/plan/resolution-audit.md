@@ -24,7 +24,7 @@ Reproduce it by loading `build/book.html` and measuring `img` boxes against a
     87   part-3-divider-machine-dark    1024 × 1024    generated, capped
     87   intelligence-06-closing-hands  1024 × 1024    generated, capped
     87   privilege-06-closing-cursor    1024 × 1024    generated, capped
-    87   pilgrimage-06-closing-stone    1024 × 1024    generated, capped
+    87   pilgrimage-06-closing-stone    1024 × 1024    REPLACED 21 Aug — the closing recto now carries the Alcobaça nave at 363 dpi
    106   intelligence-01-pencil-mark    1254 × 1254    generated, capped
    106   field-note-02-dog-tag          1254 × 1254    generated, capped
    106   privilege-01-kitchen-laptop    1254 × 1254    ON THE SHOT LIST
@@ -59,7 +59,9 @@ essay.
 
 **Added 21 Aug, after this table was first written.** Three more of the eleven
 above are 300 mm full bleeds that *close* an essay — `intelligence-06-closing-hands`,
-`privilege-06-closing-cursor`, `pilgrimage-06-closing-stone`, all at 87 dpi, all
+`privilege-06-closing-cursor`, and `pilgrimage-06-closing-stone` — the last of which
+was replaced on 21 Aug by the Alcobaça nave from the library, 87 → 363 dpi. The
+other two remain at 87 dpi, all
 composited from Pexels photographs. They are now items 8–10 on the shot list.
 Shooting them takes them from 87 dpi to 256 and removes three of the six images
 in the book that are not Adam's, in one pass. The bench closing shares a setup

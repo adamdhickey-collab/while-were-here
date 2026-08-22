@@ -103,7 +103,7 @@ gain is real and it is not the argument.
 | --- | --- | --- | --- |
 | `intelligence-06-closing-hands` | The Intelligence Outside Your Head | 87 dpi | **256 dpi** |
 | `privilege-06-closing-cursor` | The Strange Privilege | 87 dpi | **256 dpi** |
-| `pilgrimage-06-closing-stone` | The Body Cannot Skip the Hill | 87 dpi | **256 dpi** |
+| ~~`pilgrimage-06-closing-stone`~~ | The Body Cannot Skip the Hill | ~~87 dpi~~ | **placed: the nave, 363 dpi** |
 
 All three are composites adapted from Pexels photographs. None is hard to shoot,
 and between them they halve the number of pictures in this book that somebody
@@ -133,7 +133,15 @@ a real screen, a real room, lights off, focus pulled off the glass so the text i
 unreadable. **Nothing on the screen may be legible** — not a name, not a URL, not
 a message. The picture is the blink, not the content.
 
-### 10 · The hand on stone · `pilgrimage-06-closing-stone`
+### 10 · The hand on stone — **SUPERSEDED, 21 Aug 2026**
+The slot this shot existed for is filled: the closing recto of *The Body Cannot
+Skip the Hill* now carries the Alcobaça nave (`pilgrimage-06-closing-nave`,
+Adam's own photograph, 363 dpi against the stock composite's 87). The hand on
+worn stone remains a good photograph to own — but it no longer has a page
+waiting for it, and shooting it would mean displacing something. Struck rather
+than deleted so the brief survives if the slot ever reopens.
+
+### 10 · (superseded) The hand on stone · `pilgrimage-06-closing-stone`
 **1:1 · prints 300 mm full bleed · want 3543 px square**
 One hand flat against cold worn stone, close, the wear of other hands visible in
 the surface around it.

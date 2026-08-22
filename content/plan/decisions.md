@@ -399,3 +399,33 @@ confidence. Then say the file cannot answer, and go to the object.
 **What made the difference in the one case that went right** was noticing the
 pixel budget before trusting the reading. That check costs one line of
 arithmetic and it is the only thing separating a correction from a fabrication.
+
+## The nave takes the closing of essay 07 — 21 Aug 2026, Adam's call
+
+"Place the alcobaca nave." The closing recto of *The Body Cannot Skip the Hill*
+now carries `pilgrimage-06-closing-nave` — Adam's photograph of the Alcobaça
+nave (29 Sep 2024) — in place of the 87 dpi Pexels composite of a hand on
+stone.
+
+**The square crop was chosen by eye from three candidates**: vault-weighted,
+centred, and benches-forward. Benches-forward won (full 4284 px width, offset
+1128 px from the top) for one reason: it keeps the pool of sunlight lying
+across the pavement in the foreground, and the spread's display line is
+"carrying the route in its feet." The floor is the argument. Adam's own 9:16
+render keeps more vault but yields 272 dpi in a square against the original's
+363, so the crop was taken from the original instead, and the entry's revision
+records both paths.
+
+**What moved with it:** the imprint dropped from six credits to five without
+being touched — the build derives credits from the composed pages, so Elle
+Hughes's attribution left when her photograph did. Five of the six remaining
+non-Adam images at the start of today are now four. Shot-list item 10 (the hand
+on stone) is superseded; items 8 and 9 stand. The three-worst-plates list is
+now two: the bench closing and the cursor closing, both still 87 dpi, both
+still stock.
+
+**And the prose needed nothing.** The worry recorded this morning — that the
+essay "ends on the gesture in the photograph" — turned out to be conservative:
+the closing blocks end on the yellow arrow and ordinary steps, not on the hand.
+Beside the empty nave, "The visible place cannot contain every reason brought
+toward it" reads as a caption that was waiting for this picture.

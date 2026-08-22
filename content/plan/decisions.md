@@ -1006,3 +1006,46 @@ still held to house style, which matters, because one fact id in the ledger
 reads `peacock-structural-colour`. The exemption was tested in both directions:
 "colour" injected into a subject label still fails the check; injected into a
 citation field it passes.
+
+---
+
+## One margin note was spending a payoff two pages early
+*22 Aug 2026*
+
+`why-ordinary-days-may-be-the-point-of-life.md` carried
+`marginNote: The route repeats. The world does not.` on the spread ending at
+folio 18. That sentence is also the closing line of block **s8a**, on folio 20 —
+where it lands as the payoff of a deliberate build:
+
+> The light changes. / Birds arrive and leave. / A house gets painted. /
+> Someone who used to walk beside you no longer does.
+> **The route repeats. The world does not.**
+
+A reader met the line in the margin, turned one page, and found it again as the
+thing the passage had been walking toward. The payoff was spent before it
+arrived. The margin note is gone; the body copy keeps it, because that is where
+it is earned. The slot is left empty — `.reading__note` is placed at
+`grid-column: 8/13; grid-row: 3`, so removing it empties that cell and nothing
+reflows; on the page it now reads as air beside the taped-in lake survey.
+
+**Two other things made this a fault rather than a device.** It was the only
+margin note in the book that duplicated body copy. And every margin note in
+every other essay is a sourced claim from the fact ledger — starlings, Physarum,
+the London taxi drivers, the Pew figures. This essay has two aphorisms instead;
+the other, "Most of life is not a highlight reel", is not duplicated anywhere
+and was left alone.
+
+**The same audit found two more repeated sentences, and neither is a fault.**
+Recorded here so a later pass does not "fix" them:
+
+* `It was what happened when a body moved beyond the length of a wire.` —
+  body copy near folio 88, restated by the **closing** spread near folio 96. The
+  essay ends by returning to its own line. That is a callback, and it works.
+* `You have never once experienced a room. You have experienced a paraphrase.` —
+  a dedicated `type: pull-quote` spread near folio 22, then the line in flow near
+  folio 27. A pull quote is *pulled from* the text by definition; five pages and
+  a spread of its own read as foreshadowing, not as an accident.
+
+The third repeat, `Personal data export generated 19 August 2026.`, appears three
+times because each of the three reproduced Meta records states its own
+provenance. That is correct and must stay.

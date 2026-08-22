@@ -65,8 +65,15 @@ spreads:
     variant: two
     subhead: The Ordinary Is Not the Interruption
     blocks: [s6a+s6b, s7a+s7b]
-    noteOn: verso
-    marginNote: The route repeats. The world does not.
+    # No margin note on this spread. It carried "The route repeats. The world
+    # does not." — which is the closing line of block s8a, two pages later, where
+    # it lands as the payoff of a build: the light changes, birds arrive and
+    # leave, a house gets painted, someone who used to walk beside you no longer
+    # does. Printing it in the margin first spent the line before the passage
+    # reached it. It was also the only margin note in the book that duplicated
+    # body copy, and one of only two that are not sourced claims from the fact
+    # ledger. The body copy keeps it; this slot stays empty. The spread still
+    # carries the overwriting hand and the lake survey.
     handOn: verso
     hand:
       image: hand-02-overwriting-diagram

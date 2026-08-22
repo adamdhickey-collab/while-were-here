@@ -242,7 +242,26 @@ served by item 8, which shares a session with item 4.
 
 ## The photo library
 
-### 6 · The edited export — RESTARTED, differently, 21 Aug evening
+### 6 · The edited export — **DONE**, 21 Aug 18:14
+All **6,278 iCloud-only renders are fetched** — the applet ran the whole queue
+in about 22 minutes with zero errors and exited cleanly ("all done" in
+`~/.cache/render-export/applet.log`). `~/Desktop/photo library edits` holds
+6,276 files: every edited photograph in the library, as Adam's own crop and
+grade, named after its original with ` (1)`-style suffixes where names collide.
+Together with `photo library 2` (all originals) and `photo library rendered`
+(clean-named local files), **the library is now fully on disk in every form the
+book needs.** The six-hour GUI export this replaced was still less than half
+done when it died.
+
+One loose end: minutes after completion, macOS revoked this session's access to
+Desktop folders ("Operation not permitted" on every listing — TCC, not disk).
+If a permission dialog is waiting on screen, allowing it restores access; the
+files themselves are fine. Two straggler checks remain for after that: the
+render of the pebble pavement (`IMG_3329 (1).jpeg` or similar — the bare name
+went to a 2015 asset) and the three-dogs square (`IMG_2944`), plus re-running
+`npm run selection` for the final count.
+
+### The restart plan, kept for the record — RESTARTED, differently, 21 Aug evening
 The GUI re-run is no longer the plan. What actually happened, in order:
 
 1. **The full accounting**: every original is already local (23,687 of 23,775)

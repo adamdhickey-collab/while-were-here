@@ -263,12 +263,35 @@
   margin-top: var(--sp-6);
 }
 .cover-back__art .figure { position: absolute; inset: 0; background: transparent; }
-/* The botanical is opaque, but it was drawn on this book's own paper: its ground
-   averages within one value of --ground, varying ±8 as the drawing's own tone.
-   So it needs no blend. Do not add mix-blend-mode here — `darken` snaps the
-   lighter lower band flat to the page and costs the drawing that tone, and
-   nothing would apply anyway while .cover__inner holds a z-index and seals the
-   page's background out of the stacking context. */
+
+/* THE DRAWING MUST PAINT UNDER THE COVER'S OWN LIGHT, not on top of it.
+
+   The botanical is an opaque PNG whose ground matches --linen closely — an
+   earlier note here checked exactly that and concluded it needed no blend. The
+   comparison was right and the reference was wrong: the rendered cover at that
+   spot is NOT --linen. `.cover::before` lays a white highlight, a warm lower
+   gradient and the linen texture over the whole field, and `.cover__inner`
+   carried `z-index: 2`, so every child of it — including this drawing — painted
+   ABOVE that overlay. The page got lit; the drawing did not. Measured on the
+   composed cover: page (241,236,226) against the drawing's ground (238,231,216),
+   a hard-edged rectangle about 92 mm wide on a cream cover.
+
+   Two baked fixes were tried and both failed, which is why this is CSS:
+     · Keying the paper to alpha is impossible on this artwork. Pure paper runs
+       230.4–234.2 and the faintest network lines sit at 232.3 — INSIDE the
+       paper's own variation. No threshold keeps the lines and drops the ground.
+     · A flat colour correction cannot work either. The drawing carries its own
+       vertical tone and the cover carries its own gradient; matching the top
+       overcorrects the bottom.
+
+   Letting the overlay fall across the drawing fixes it for good and at any
+   position, because the drawing then receives exactly the light the paper
+   beside it receives. The text keeps painting above the overlay: `.cover__inner`
+   is positioned and comes after `::before` in DOM order, so it wins on order
+   alone once it stops forcing a stacking context of its own. */
+.cover-back { isolation: isolate; }        /* contain the -1 below, or it falls behind the page */
+.cover-back .cover__inner { z-index: auto; }
+.cover-back__art { z-index: -1; }
 .cover-back__art img { object-fit: contain; object-position: left bottom; }
 .cover-back .cover__inner { grid-template-rows: auto auto 1fr auto auto; }
 

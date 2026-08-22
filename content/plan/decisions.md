@@ -746,3 +746,53 @@ one word changed in a title, and two essays swapped within a part.
 Fourteen checks now. The three added in the last day — alt text, grounds,
 contents — all guard things no proof would show and no reader would report
 politely.
+
+## The back cover's drawing was printing as a pasted box — 22 Aug 2026
+
+Found by looking at the back cover, which had never been examined closely — it
+is the surface Adam's parents will read first when they pick the book up.
+
+The botanical drawing sat in a **visible rectangle**: its ground measured
+(238,232,217) against a cover of (243,239,230) beside it, a hard-edged panel
+about 92 mm wide on cream. Δ of (4,7,13), and the eye finds that instantly on a
+flat field.
+
+**A note already in this file said the drawing needed no blend, and it was right
+about the wrong thing.** It compared the drawing's ground to `--linen` and found
+them within a value or two, which is true. But the rendered cover at that spot
+is not `--linen`: `.cover::before` lays a white highlight, a warm lower gradient
+and the linen texture across the whole field, and `.cover__inner` carried
+`z-index: 2` — so every child of it, this drawing included, painted **above**
+that overlay. The paper got lit. The drawing did not.
+
+**Two baked fixes were tried and both failed. They are worth recording because
+each looked obviously right.**
+
+*Keying the paper to alpha.* A line drawing should not carry an opaque ground at
+all, so the plan was to make the paper transparent and let the cover show
+through the ink. It cannot be done on this artwork: pure paper runs 230.4–234.2
+and **the faintest mycorrhizal lines sit at 232.3 — inside the paper's own
+variation.** No threshold keeps the lines and drops the ground. The first
+attempt erased the quietest passage of the drawing and I only caught it by
+comparing renders.
+
+*A flat colour correction.* Shift the ground by the measured Δ and leave the ink
+alone. Also fails: the drawing carries its own vertical tone and the cover
+carries its own gradient, so matching the top overcorrects the bottom. It
+produced a box that was too light instead of too dark.
+
+**The fix is three lines of CSS and no change to the artwork.** `isolation:
+isolate` on `.cover-back` to contain a negative z-index, `z-index: auto` on its
+inner grid so it stops forcing a stacking context, and `z-index: -1` on the art
+so the overlay falls across it. The drawing now receives exactly the light the
+paper beside it receives — measured Δ **(0,1,2)** — and it will keep doing so at
+any position, at any cover size, if the gradients are ever retuned.
+
+The ink lightens very slightly under the overlay. That is correct: it is the
+same veil the cover's own texture sits under, and the drawing now belongs to the
+page instead of resting on it.
+
+**The lesson is the one this project keeps paying for.** The earlier note did
+real work — it measured, it reasoned, and it wrote down a conclusion. It
+compared the asset to a token instead of to the composed page, and a token is
+not what prints.

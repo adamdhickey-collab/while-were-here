@@ -1267,3 +1267,45 @@ compounds, a matcher that could not read spelled-out numbers, and a comparison
 that read one of two fields. None of them ever failed. All four looked healthy.
 The only reason any of them surfaced is that something went looking for faults
 they should have caught rather than reading their output.
+
+---
+
+## The label check had been measuring the wrong part of the picture
+*22 Aug 2026*
+
+`npm run labels` exists because a leader line once ran through the word
+REMEMBERED, between the B and the E, in blue, at 300 mm, and shipped. The fix
+moved the label to x=840. The check was written so it could not happen again.
+
+Putting the label back at x=768 — the exact geometry that shipped, with the
+leader `M613 300 L 832 300` running straight through it — the check reported
+**"6 labels across 1 figure, nothing drawn through any of them."**
+
+`scripts/label_ink.py` was deriving its pixels-per-CSS-pixel scale from the
+label boxes themselves:
+
+```python
+scale = W / max(1, max(b['x'] + b['w'] for b in boxes))
+```
+
+That assumes the rightmost label touches the right edge of the figure. **No
+label does.** Every box was placed a few percent too far right, so the check
+sampled a window offset from the word it was guarding. On the mutated diagram
+the window caught only the tail of the leader — about 52% of the box against a
+55% threshold — and passed **by three points.**
+
+The scale is now the figure's own CSS width, which `labels.mjs` already knew
+exactly and simply was not passing. With that one argument the same mutation
+reports *"a stroke runs down it, 100% of the box."*
+
+**This is the fifth check today found looking at the wrong thing**, and the
+sharpest of them. The other four were blind to a category of input — a property
+the engine ignores, compounds, spelled-out numbers, one of two fields. This one
+was blind to *the fault it was built for*, on the exact geometry that caused it,
+and it had been reporting all clear the whole time.
+
+Twenty of twenty-two checks are now proven to bite. The two without mutations
+are printed every run: `page count`, which cannot be mutated without breaking
+the build, and `every reproduced entry reaches the page`, where the build prints
+every entry it has so a discrepancy has to be manufactured somewhere the harness
+cannot reach with a string swap.

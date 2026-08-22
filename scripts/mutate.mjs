@@ -137,6 +137,30 @@ const MUTATIONS = [
     from: '"spread": "Unplaced, replaced 21 Aug 2026.',
     to:   '"spread": "Reading · two column, inset. Replaced 21 Aug 2026.',
     expect: 'no entry claims a spread', why: 'an image claiming a spread it is not on' },
+
+  /* The label check was recorded as needing "geometry moved, not a string
+     swapped". It needs a string swapped: the geometry IS a string, and
+     diagrams.mjs records the exact historical fault in a comment above it —
+     the Remembered label sat at x=768 and the Admitted ring ran through the
+     word, between the B and the E, in blue, at 300 mm. Putting it back is a
+     one-token edit and reproduces a fault that actually shipped once. */
+  { id: 'diagram-label', file: 'src/layouts/diagrams.mjs',
+    from: '<text x="840" y="304"', to: '<text x="768" y="304"',
+    expect: 'nothing is drawn through a diagram label', why: 'a leader line drawn through its own label' },
+
+  /* The imprint check flags an archive image that is NOT in the book but whose
+     credit label appears in the printed text. linen weave is one of the two
+     material breaks cut when spreads were trimmed to 130 — the exact pair that
+     were being credited to Poly Haven and Unsplash while appearing nowhere in
+     the object. Putting the phrase into an essay recreates that. */
+  { id: 'imprint-phantom', file: 'content/essays/while-were-here.md',
+    from: 'Technology changes what can happen inside that interval.',
+    to:   'Technology changes what can happen inside that interval, like linen weave.',
+    expect: 'imprint credits only what is in the book', why: 'a credit for something not in the book' },
+
+  /* Not a text edit — the only mutation here that touches the filesystem. */
+  { id: 'web-derivative', deletePath: null,
+    expect: 'every master has a web derivative', why: 'a press master with no screen derivative' },
 ];
 
 const runVerify = () => {
@@ -146,6 +170,21 @@ const runVerify = () => {
   } catch (e) {
     return `${e.stdout || ''}${e.stderr || ''}`;   // non-zero exit is the normal case here
   }
+};
+
+/* Pick a web derivative that has a master beside it, so deleting it produces
+   exactly the fault the check names and nothing else. */
+const pickDerivative = () => {
+  const webRoot = P('public/images-web');
+  if (!fs.existsSync(webRoot)) return null;
+  for (const dir of fs.readdirSync(webRoot)) {
+    const d = path.join(webRoot, dir);
+    if (!fs.statSync(d).isDirectory()) continue;
+    for (const f of fs.readdirSync(d)) {
+      if (fs.existsSync(P('public/images', dir, f))) return path.join(d, f);
+    }
+  }
+  return null;
 };
 
 const build = () => {
@@ -171,6 +210,33 @@ console.log(`\n  Mutating ${chosen.length} of ${MUTATIONS.length} checks. Each f
 
 const results = [];
 for (const m of chosen) {
+  /* A deletePath mutation moves a real file aside instead of editing text.
+     Restoration is the same shape: remember what was there, put it back in the
+     `finally`. */
+  if ('deletePath' in m) {
+    const target = m.deletePath || pickDerivative();
+    let verdict;
+    if (!target) {
+      verdict = { id: m.id, state: 'skipped', note: 'no derivative found to move aside' };
+    } else {
+      const kept = fs.readFileSync(target);
+      try {
+        fs.unlinkSync(target);
+        build();
+        const st = statusOf(runVerify(), m.expect);
+        verdict = { id: m.id,
+          state: st === 'fail' ? 'caught' : st === 'pass' ? 'MISSED' : 'unreadable',
+          note: st === 'fail' ? m.why : st === 'pass' ? `${m.why} — NOT NOTICED` : `could not read "${m.expect}"` };
+      } finally {
+        fs.writeFileSync(target, kept);
+      }
+    }
+    results.push(verdict);
+    const mk = { caught: '✓', MISSED: '✗', skipped: '·', unreadable: '?' }[verdict.state];
+    console.log(`  ${mk} ${verdict.id.padEnd(22)} ${verdict.note}`);
+    continue;
+  }
+
   const file = P(m.file);
   const before = fs.readFileSync(file, 'utf8');
   let verdict;
@@ -211,10 +277,7 @@ if (dirty) {
    ones whose faults are awkward to synthesise, not ones believed to be fine. */
 const UNMUTATED = [
   ['page count', 'needs a page added or removed, and every edit that does so also breaks the build'],
-  ['imprint credits only what is in the book', 'needs a credited image cut from the book but left in the manifest'],
-  ['every master has a web derivative', 'needs a derivative deleted from disk — this harness only edits text'],
-  ['every reproduced entry reaches the page', 'needs an entry that exists in the record but is not printed'],
-  ['nothing is drawn through a diagram label', 'needs geometry moved so a stroke crosses a label, not a string swapped'],
+  ['every reproduced entry reaches the page', 'needs an entry present in the record but absent from the page — the build prints all of them'],
 ];
 
 const missed = results.filter((r) => r.state === 'MISSED');

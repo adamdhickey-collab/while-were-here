@@ -1184,3 +1184,46 @@ figure count went 150 → 153 and nothing failed. That is the moment worth fixin
 a blind check — while it still costs nothing. Verified by changing "eighty-five"
 to "ninety-three" in the essay: the old check passed it silently, the new one
 reports `the-secret-life-of-attention: 93`.
+
+---
+
+## Mutation testing: who checks the checks
+*22 Aug 2026*
+
+Three checks in `npm run verify` were found blind in one day, each by accident,
+each having reported success for as long as it existed. A green check and an
+inert check are indistinguishable from outside. The only way to tell them apart
+is to break something on purpose and see whether anything notices.
+
+`npm run mutate` does that. Each mutation names a file, an exact string, and the
+check that should go red; it patches the file, runs `verify`, reads that check's
+line, and puts the file back. It refuses to start unless the working tree is
+clean, snapshots every file before touching it, restores in a `finally`, and
+re-checks the tree at the end.
+
+**Fourteen mutations, and the first run found two problems — one real, one mine.**
+
+**The real one.** Changing the Shikoku margin note from "88 temples" to "87"
+passed silently. 87 is in the ledger: it is a page number in *Behavioral and
+Brain Sciences* 24(1): 87–114, a paper about working memory. The check pooled
+every figure anywhere in the ledger, including page ranges, volumes and issue
+numbers, and that pool answered yes to **28% of every integer from 1 to 200**.
+Citation metadata now contributes **years only** — notes do legitimately cite
+them, and the Physarum note's 2010 exists nowhere but a publication year. Pool
+153 → 98 figures, automatic-pass 28% → 22%, and no real margin note fails under
+the narrower rule. Still not tight, and it should not be oversold: a wrong
+"four" will always resemble some other four. It closes the page-range class.
+
+**Mine.** The alt-text mutation replaced a *prefix* of a subject rather than the
+whole value, so the sentence was merely shortened and the alt text was still
+present. The check passed — correctly — and I recorded it as blind. A mutation
+that does not produce the fault it names slanders the check. Rewritten to empty
+the whole value; it bites.
+
+**Fourteen of fourteen now caught. Eight checks have no mutation at all**, and
+the script prints them every run with the reason each is awkward to synthesise —
+page count cannot be mutated without breaking the build, the diagram-label check
+needs geometry moved rather than a string swapped, the derivative check needs a
+file deleted from disk. **That list is the honest part of the output.** A suite
+that reports "14 proven to bite" and stops is claiming a coverage it does not
+have, which is the exact failure this script exists to catch.

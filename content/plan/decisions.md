@@ -429,3 +429,32 @@ essay "ends on the gesture in the photograph" — turned out to be conservative:
 the closing blocks end on the yellow arrow and ordinary steps, not on the hand.
 Beside the empty nave, "The visible place cannot contain every reason brought
 toward it" reads as a caption that was waiting for this picture.
+
+## The baths open Part III — 21 Aug 2026, Adam's call
+
+"Place the alcazar baths." They had no pre-agreed slot, so the slot was chosen
+by the documents' own logic: photo-selection-04 called the frame "the single
+best find in this pass" and said Stage III's definition — luminous line work on
+a dark ground — "this photograph already is that." The Part III divider is the
+page where the book inverts, described in its own manifest entry as "the first
+page that is not cream," and it was carrying a generated drawing at 85 dpi.
+
+Now it carries `part-3-divider-alcazar-baths`: the twelfth-century cistern
+beneath the Alcázar, gold vaults doubled exactly in still black water, at 363
+dpi. The part statement beside it — "You are inside the change, not after it"
+— and the blurb's "a world that has already stopped being the previous one"
+both read differently, and better, over a piece of infrastructure that has
+outlived eight centuries of the world changing around it. The divider's dark
+recto now continues the photograph's own water.
+
+The square crop (offset 250 px, full width, from three candidates by eye) keeps
+the vault crowns and the pierced window completing its oval in the reflection;
+the water-forward candidate carried a soft blur intruding at the original's
+bottom edge and was rejected for it. Colour as shot — the selection note's
+instruction "do not lift the shadows" is now the entry's standing rule.
+
+What this displaces: the machine drawing's subject (room-sized computer, chip,
+cursor) is not lost to the book — the machine timeline plate inside essay 05
+carries the same argument, and the cursor still closes that essay. The book's
+generated full-bleed count drops by one more; the dividers are now three real
+photographs (birds, baths, screen-print) against one generated (branching).

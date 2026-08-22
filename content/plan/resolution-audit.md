@@ -21,7 +21,7 @@ Reproduce it by loading `build/book.html` and measuring `img` boxes against a
     81   systems-01-observation-hive     960 × 960     archive, capped
     81   here-01-dog-late-light          960 × 960     archive, capped
     87   part-2-divider-branching       1024 × 1024    generated, capped
-    87   part-3-divider-machine-dark    1024 × 1024    generated, capped
+    87   part-3-divider-machine-dark    1024 × 1024    REPLACED 21 Aug — the divider now carries the Alcázar baths at 363 dpi
     87   intelligence-06-closing-hands  1024 × 1024    generated, capped
     87   privilege-06-closing-cursor    1024 × 1024    generated, capped
     87   pilgrimage-06-closing-stone    1024 × 1024    REPLACED 21 Aug — the closing recto now carries the Alcobaça nave at 363 dpi

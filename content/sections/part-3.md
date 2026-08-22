@@ -3,7 +3,7 @@ id: part-3
 number: "III"
 stage: 4
 title: The World Is Changing
-image: part-3-divider-machine-dark
+image: part-3-divider-alcazar-baths
 theme: dark
 imperative: Expand
 stageTitle: the aperture

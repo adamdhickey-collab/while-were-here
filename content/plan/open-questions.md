@@ -316,6 +316,45 @@ somebody reads the four dividers in a row.
 
 ---
 
+### 12 · The book prints no sources, and mostly does not need to
+Surfaced by checking how the margin notes attribute themselves. Not a defect —
+a decision that has never been made explicitly.
+
+**Thirteen of the twenty substantive margin notes name their source in the
+printed text**: *"Pew Research Center surveys found…"*, *"In a 2010
+experiment…"*, *"In a 2000 MRI study…"*, *"UNESCO's French Santiago
+property…"*. That is the book's convention and it works — attribution inside
+the sentence, no superscripts, no apparatus.
+
+**Seven state a figure bare, and six of those are reference-book facts**:
+sunlight takes 8 minutes 20 seconds, Earth turns once in 24 hours and moves at
+29–30 km/s, a resting adult breathes 12–20 times a minute, the first SMS was
+3 December 1992, the Shikoku Henro links 88 temples. Nobody needs a citation for
+those and giving them one would look nervous.
+
+**The seventh was different and has been fixed.** The starling note stated
+Ballerini et al.'s topological-distance finding — six or seven neighbours
+regardless of radius — as if it were common knowledge. It is the single research
+result essay 03's whole argument rests on, and it was the only non-obvious study
+in the book stated without provenance. It now opens *"In a 2008 field study…"*,
+matching the convention the other twelve already follow. Still fits the margin;
+overflow checked.
+
+**What remains open, and it is Adam's call.** The book carries no notes page, no
+bibliography, no sources spread. `content/plan/sources.md` already exists and is
+auto-generated from the ledger — 35 verified claims with full citations, authors,
+journals, years and URLs — but it is a plan document, not a page.
+
+* **Leave it.** Inline attribution is the right register for personal essays,
+  and a bibliography would make the book look like it is defending itself.
+* **Add one page.** It would cost a page at the 130 ceiling, so something goes.
+  The content is already written and would stay correct automatically.
+
+There is no wrong answer here. It is worth deciding on purpose rather than by
+default, because a reader who wants to check the Pew figure currently cannot.
+
+---
+
 ## The photo library
 
 ### 6 · The edited export — **DONE**, 21 Aug 18:14

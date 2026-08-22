@@ -20,9 +20,10 @@ spreads:
     bandImage: systems-02-starling-flock
     ground: ground-03-local-rules-flocking
     marginNote: >-
-      European starlings in a large flock interact with about six or seven
-      nearby birds, whatever the physical distance between them. A turn can
-      cross the whole flock through local updates, with nobody giving an order.
+      In a 2008 field study, European starlings in a large flock were found to
+      interact with about six or seven nearby birds, whatever the physical
+      distance between them. A turn can cross the whole flock through local
+      updates, with nobody giving an order.
     insetOn: recto
     inset:
       image: here-06-empty-room

@@ -391,5 +391,32 @@ are all what the scene is *like* from memory. None of them survives thirty
 seconds with the file open. This is the same failure that once read **EAST** for
 **FAST** on a VHS spine at 1200 px — plausible, confident, and wrong.
 
-**Seventy-seven images have not been checked this way.** That is the honest
+### Second batch
+
+Four more, chosen because their descriptions make the most falsifiable claims —
+readable text and countable things, which is where the first batch failed.
+
+| image | verdict |
+| --- | --- |
+| `privilege-08-vhs-shelf` | **wrong, twice** — "written on a white label in ballpoint" over an ink that is plainly **red**, and no mention of the **earlier title scribbled out above it in the same pen**. A tape recorded over and relabelled is this book's whole subject; it was the best detail in the frame and it was missing. Both fixed. |
+| `pilgrimage-08-plaza-stones` | **wrong** — "a dozen other people". Counted across the frame it is nearer **three or four dozen**, and most are along the arcades rather than out on the stones, which "scattered across it" also misplaced. |
+| `privilege-07-grill-screen` | exact — 190°, 124°, 03:09:35 and "Select Grill Profile" all read as written. |
+| `specimen-05-bactrian-swim` | exact, and better than exact: "bodies overlapping so the count is not readable — four or five" is the honest form. It refuses a number the picture cannot support. That is the register the rest of this file should be in. |
+
+**The VHS spine was re-checked deliberately.** `Life in the Fast Lane` is the
+frame where an earlier pass read **EAST** for **FAST** at 1200 px and nearly
+wrote a false correction into printed alt text. Magnified at native resolution
+the first glyph has a top bar and a middle bar with an open foot: an F. Context
+agrees — the shelf is skate videos, "Welcome to Hell" is a Toy Machine tape, and
+*Life in the East Lane* is not a thing. **The alt text was right. No change.**
+Worth recording that a re-check confirmed the copy rather than changed it.
+
+**The eight grounds are NOT part of this audit, and should not be added to it.**
+They carry `alt=""` — correctly decorative — so no screen reader ever reads
+them, and their `subject` field is the *generation prompt*, composition
+instructions and all, not a description of the result. They score highest on any
+"falsifiable claims" ranking because the prompts are full of counts, which is a
+trap: nothing they say is ever spoken or printed.
+
+**Seventy-three images have not been checked this way.** That is the honest
 state. No check can do it; it needs eyes on each frame beside its sentence.

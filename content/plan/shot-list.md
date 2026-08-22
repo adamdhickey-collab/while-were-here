@@ -157,6 +157,12 @@ copy, both written about wear that turned out not to be in the photograph.
 ## One rephotograph, and it settles a quotation
 
 ### 11 · The inside page of *Misery Is…* · `intelligence-07-child-hand`
+**And while it is out, reshoot the cover too** (`handed-02-misery-is`). The
+existing frame is an honest snapshot — the green book against a wall, standing
+on a floor, with the object filling maybe half the frame and grey wall either
+side. On the closing catalogue page it prints as a mounted plate, and a
+catalogue plate wants the object filling its mount: square on, even light, the
+staples and the crayon lettering edge to edge. Same session, two minutes more.
 **4:3 · prints 92 mm in an inset · anything a phone gives clears it**
 The ruled page, close and square, filling the frame. Even light, no flash, no
 angle — this one is a document, so shoot it the way a document is shot.

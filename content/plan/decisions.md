@@ -1049,3 +1049,58 @@ Recorded here so a later pass does not "fix" them:
 The third repeat, `Personal data export generated 19 August 2026.`, appears three
 times because each of the three reproduced Meta records states its own
 provenance. That is correct and must stay.
+
+---
+
+## The book had no ladder protection, only a declaration that said it did
+*22 Aug 2026*
+
+`src/styles/typography.css` carried `-webkit-hyphenate-limit-lines: 2` in the
+body rule. It is a WebKit property. Blink has never shipped it, and neither it
+nor the unprefixed `hyphenate-limit-lines` is supported in the Chromium that
+renders this book's press PDF — `CSS.supports` in that same binary answers
+**false to both** and true to `hyphenate-limit-chars`. The declaration had never
+done anything. Asking for a limit is not the same as getting one, and the rule
+read as protection for as long as it sat there.
+
+Two three-line hyphen ladders were sitting in the composed pages as a result:
+
+* folio 64, the closing spread of *The Intelligence Outside Your Head* —
+  **vulnerable / database / understanding**
+* folio 121, the closing movement of the final essay —
+  **photograph / knowledge / attention**
+
+The second is the worse one. That is the last essay in the book arriving at its
+point, and it was arriving down a staircase of hyphens.
+
+**The fix is a less eager minimum, not a per-word intervention.** Nothing in
+this book is justified — the prose is ragged right — so hyphenation here is
+tightening the rag, not preventing rivers, and being less eager about it costs
+nothing. Raising `hyphenate-limit-chars` from `8 4 4` to `10 4 4` clears both.
+Measured across the whole book:
+
+| minimum | hyphenated lines | ladders |
+| --- | --- | --- |
+| 8 | 70 of 1074 (6.5%) | 2 |
+| 9 | 58 (5.4%) | 0 |
+| 10 | 40 (3.7%) | 0 |
+| 11 | 27 (2.5%) | 0 |
+
+**9 was rejected even though it passes.** "knowledge" and "attention" are nine
+letters, so a minimum of 9 leaves both hyphenatable and clears that ladder only
+through a reflow any copy edit could undo. 10 removes them by rule. No page
+overflowed at any setting, and the page count held at 130 throughout.
+
+**`npm run breaks` is the real guard**, and it is now the nineteenth check in
+`npm run verify`. Worth knowing how it finds a hyphenated line, because the
+hyphen is not findable: Chromium inserts it into the line box as generated
+content, so it is in no text node and no Range. The script never looks for the
+glyph. It maps every character to the line box it landed in, then asks whether
+the character following a line's last character is also a letter — if it is, the
+browser split a word, which is what a hyphen *is*. Exact, and it cannot be
+fooled by a real hyphen in the copy, because a real hyphen is a character and
+would be the last one rather than absent.
+
+It also checks the fault no CSS property can prevent: a word hyphenated across
+the **foot of a column**, where the reader turns the leaf holding half of it.
+There are none, and there were none before.

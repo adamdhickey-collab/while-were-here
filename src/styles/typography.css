@@ -123,14 +123,39 @@
 .prose:not(.prose--cols) { max-width: 58ch; }
 .prose--cols { max-width: none; }
 
-/* ---- Body --------------------------------------------------------------- */
+/* ---- Body ----------------------------------------------------------------
+   The minimum word length is 10, not 8, and there is no line limit here because
+   no such property exists in the engine that prints this book.
+
+   `-webkit-hyphenate-limit-lines: 2` sat in this rule and did nothing. It is a
+   WebKit property; Blink has never shipped it, and neither it nor the unprefixed
+   `hyphenate-limit-lines` is supported in the Chromium that renders the press
+   PDF — checked with `CSS.supports` in the same binary, which answers false to
+   both and true to `hyphenate-limit-chars`. Asking for a limit is not the same
+   as getting one, and for as long as that line was here the book looked like it
+   had ladder protection it did not have. Two three-line hyphen ladders were
+   sitting in the composed pages: one in the closing spread of "Intelligence
+   Outside Your Head" (vulnerable / database / understanding) and one in the
+   final essay's closing movement (photograph / knowledge / attention).
+
+   Raising the minimum from 8 to 10 clears both, and clears them by rule rather
+   than by luck: "knowledge" and "attention" are nine letters, so a limit of 9
+   would have left them hyphenatable and fixed that ladder only through a
+   reflow that any copy edit could undo. Measured across the whole book —
+   8 → 70 hyphenated lines and 2 ladders, 9 → 58 and none, 10 → 40 and none,
+   11 → 27 and none. 3.7 percent of lines is a healthy figure for RAGGED-RIGHT
+   setting at this measure; nothing in this book is justified, so hyphenation is
+   tightening the rag rather than preventing rivers, and being less eager about
+   it costs nothing. No page overflowed at any of those settings.
+
+   `npm run breaks` is what actually guards this now. Re-run it after any change
+   to the body face, the measure, or this rule.                              */
 .prose p {
   margin: 0;
   orphans: 3;
   widows: 3;
   hyphens: auto;
-  hyphenate-limit-chars: 8 4 4;
-  -webkit-hyphenate-limit-lines: 2;
+  hyphenate-limit-chars: 10 4 4;
   text-wrap: pretty;
 }
 .prose p + p {

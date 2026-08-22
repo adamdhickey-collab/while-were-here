@@ -88,6 +88,30 @@ if (!flow.available) {
       : `${flow.pages} pages measured in a browser, none overflowing`);
 }
 
+/* 2b. Bad line breaks, from the same browser. A word hyphenated across the foot
+       of a column means the reader turns the leaf holding half of it, and a
+       hyphen ladder is the fault the CSS believed it had already prevented —
+       `-webkit-hyphenate-limit-lines` is not implemented in Chromium, so that
+       declaration did nothing for as long as it existed. See the note in
+       src/styles/typography.css. Same degradation as the overflow check: no
+       browser, no claim. */
+let breaks = { available: false };
+try {
+  breaks = JSON.parse(execFileSync('node', [P('scripts/breaks.mjs'), '--json'],
+    { encoding: 'utf8', stdio: ['ignore', 'pipe', 'ignore'] }));
+} catch { /* no browser — the note below covers it */ }
+
+if (!breaks.available) {
+  note('line breaks', 'no browser here — not checked. Run `npm run breaks` locally.');
+} else {
+  const bad = breaks.findings || [];
+  const t = breaks.tally || {};
+  check('no word broken across a column foot, no hyphen ladders', bad.length === 0,
+    bad.length
+      ? `${bad.length}: ${bad.map((b) => `folio ${b.folio} ${b.kind}`).join(', ')} — run \`npm run breaks\``
+      : `${t.lines} lines, ${t.hyphenated} hyphenated (${(t.hyphenated / t.lines * 100).toFixed(1)}%), ragged right`);
+}
+
 /* 3. Placeholder text. "ISBN & barcode placement" printed on the back cover of
       every proof for weeks before anyone read it as text rather than as layout. */
 const PLACEHOLDERS = [/\bplacement\b(?![^.]*likely)/i, /\bTK\b/, /placeholder/i, /lorem/i, /\bTODO\b/, /\bFIXME\b/, /coming soon/i];

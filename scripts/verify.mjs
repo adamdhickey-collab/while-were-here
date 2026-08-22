@@ -342,9 +342,31 @@ for (const f of fs.readdirSync(P('content/essays')).filter((n) => n.endsWith('.m
   const stage = Number((src.match(/^stage:\s*(\d+)/m) || [])[1]);
   if (title && stage) essayStage[title] = stage;
 }
+/* BOTH stage records are checked, because a ground carries two — `section`, a
+   string reading "Stage IV", and `stage`, a number — and this check used to read
+   only the first. `npm run mutate` found the gap and the gap had a real fault
+   sitting in it: ground-05-imagine-to-make said `section: "Stage IV"` and
+   `stage: 3`. Its own revision note records the section being corrected from III
+   to IV on 22 Aug; the number beside it was left behind, and the check reported
+   "8 grounds, all matching their essay" because it never looked at the number.
+
+   That is the same drift this check was written to catch, one field over. The
+   numeric field is documentation — the build takes its stage from the essay, not
+   from the image record, so nothing printed wrong — but the next drift might not
+   be documentation, and a half-checked record is how this one survived a
+   correction aimed directly at it. */
 const drifted = images.filter((i) => i.role === 'ground' && essayStage[i.essay])
-  .filter((i) => String(i.section || '').trim() !== `Stage ${romans[essayStage[i.essay]]}`)
-  .map((i) => `${i.id} says "${i.section}", essay is Stage ${romans[essayStage[i.essay]]}`);
+  .flatMap((i) => {
+    const want = essayStage[i.essay];
+    const out = [];
+    if (String(i.section || '').trim() !== `Stage ${romans[want]}`) {
+      out.push(`${i.id} section says "${i.section}", essay is Stage ${romans[want]}`);
+    }
+    if (i.stage !== undefined && Number(i.stage) !== want) {
+      out.push(`${i.id} stage says ${i.stage}, essay is ${want}`);
+    }
+    return out;
+  });
 check('every ground agrees with its essay about the stage', drifted.length === 0,
   drifted.length ? drifted.join('; ')
     : `${images.filter((i) => i.role === 'ground').length} grounds, all matching their essay`);

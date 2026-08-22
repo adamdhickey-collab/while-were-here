@@ -359,3 +359,37 @@ or the workbench, this cannot be answered with a phone and an afternoon — it
 needs a microscope and a drop of pond water. Recorded as the one generated plate
 in the book with no realistic path to being real, so that nobody spends a
 weekend discovering that.
+
+---
+
+## Alt text against the actual frame
+*22 Aug 2026*
+
+`npm run verify` has a check called **every content image speaks to a screen
+reader**. It confirms that alt text *exists*, is not empty, and is not a
+filename. Nothing in the repository confirms that it is *true*. The `subject`
+field is what a screen reader reads out and what the manifest uses to describe
+the book to its own author, so a wrong one is not a cosmetic fault — it is the
+book describing a picture it does not contain.
+
+The only way to check is to open the frame and read the sentence beside it.
+**Six of the eighty-three described images have now been checked this way.**
+Three were wrong, one had a significant omission, two were exact.
+
+| image | verdict |
+| --- | --- |
+| `ordinary-days-01l-fabiola-sign` | **wrong** — called the wall "blank" and "empty" twice. It is ruled with dozens of close horizontal scored lines and holds a bricked-up doorway directly behind her. The sign does read FABIOLA; that was checked. |
+| `pilgrimage-05-cordoba-bridge` | **wrong** — "throwing their shadows forward". The bollard-lantern is *ahead* of the pair, so the shadows fall back toward the camera. The truth is the better picture: they walk away while their shadows reach toward the reader. |
+| `part-3-divider-alcazar-baths` | **wrong** — "still black water". The water is amber; it carries the gold of the vaults, which is the most striking thing about the frame. A reader who cannot see it was being given the opposite impression. |
+| `pilgrimage-02-fatima-esplanade` | **incomplete** — every claim true, but a tall mesh-clad scaffold tower stands on the paving between the basilica and the monument and was not mentioned at all. Now it is, and it belongs: a temporary scaffold on an esplanade built for a hundred thousand is part of the honest picture. |
+| `pilgrimage-04-montserrat-cloud` | exact. |
+| `systems-03-muqarnas-vault` | exact — "lattice-light falling across the lower wall" is precisely the bright patch at lower right. |
+
+**What the pattern suggests.** All four faults are of one kind: a detail
+recalled rather than looked at. "Blank wall", "black water", "shadows forward"
+are all what the scene is *like* from memory. None of them survives thirty
+seconds with the file open. This is the same failure that once read **EAST** for
+**FAST** on a VHS spine at 1200 px — plausible, confident, and wrong.
+
+**Seventy-seven images have not been checked this way.** That is the honest
+state. No check can do it; it needs eyes on each frame beside its sentence.

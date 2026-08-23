@@ -1067,15 +1067,33 @@
    against, where the note reads "this page is a DARK ground, so the ink must be
    PALE". The type inverts here for the same reason.
 
-   IT HOLDS ITSELF WITH A SHADOW, NOT A SCRIM. A soft radial scrim was tried
-   first and `npm run overflow` refused it: an absolutely positioned ::before at
-   `inset: -6mm -8mm` grows the block's scroll height, and three closing rectos
-   went 5.8–6.1 mm past their box. A shadow does the same job — holds the line
-   wherever the flame happens to be bright — and adds no box to overflow. */
-.closing--plate.closing--quote .pull-quote {
-  color: var(--paper);
-  text-shadow: 0 0 14mm rgba(10, 8, 6, 0.72), 0 0 4mm rgba(10, 8, 6, 0.55);
+   THE SCRIM GOES ON THE FIGURE, and getting there took two wrong turns worth
+   recording, because both looked right in the browser.
+
+   First a radial ::before on the page__block at `inset: -6mm -8mm`. That grows
+   the block's scroll height and `npm run overflow` refused it — three closing
+   rectos went 5.8–6.1 mm past their box.
+
+   Then a `text-shadow` on the quote instead, which adds no box at all. The
+   browser rendered it perfectly. **Vivliostyle draws each shadow as a separate
+   text run**, so the PDF's text layer came out with the sentence THREE TIMES,
+   interleaved line by line: "The temporary The temporary The temporary thing is
+   not less thing is not less…". The page looked right and its text layer was
+   ruined — copy, search and any screen reader on the PDF would have got that.
+   `npm run pdfcheck` caught it; nothing else could have.
+
+   So the scrim sits on `.closing__figure`, which is already `position:
+   absolute; inset: 0`. It contributes no height, so overflow stays happy, and
+   it is one painted box rather than a repeated glyph run, so the text layer
+   stays clean. */
+.closing--plate.closing--quote .closing__figure::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 50% 42%, rgba(10, 8, 6, 0.55), rgba(10, 8, 6, 0) 68%);
+  pointer-events: none;
 }
+.closing--plate.closing--quote .pull-quote { color: var(--paper); }
 .closing--plate.closing--quote .quote-mark { background: var(--paper); }
 .closing--quote .pull-quote { grid-column: 1 / 13; font-size: var(--t-quote); }
 .closing--quote .quote-mark {

@@ -1441,3 +1441,34 @@ page that was always fine:
 | Beauty of Systems | cream, no plate | **1.07:1** | **14.27:1** |
 | Last Generation | dark, no plate | 16.23:1 | 16.23:1 |
 | While We're Here | the fire, scrimmed | — | **16.36:1** |
+
+## Numbers in the body copy — swept 23 Aug 2026, and deliberately NOT made a check
+
+`verify.mjs` checks that every figure in a MARGIN NOTE is in the fact ledger.
+The body prose was never swept, and it carries figures too. It has now been
+swept: eleven numeric claims across the essays, six of them in the ledger and
+five not.
+
+**All five are correctly outside it**, and the line the book is drawing is
+sharp:
+
+| in the copy | what it actually is |
+| --- | --- |
+| a maple "I did not see for **eleven years**" | Adam's own life |
+| "in the last **twenty years** an entire industry has been built" | general history |
+| "a feed is **ten thousand** suggestions" | deliberate rhetoric |
+| "if you live for **eighty years**" | a hypothetical |
+| "a child can spend **twenty minutes** watching water move" | illustrative |
+
+Every number that is a claim ABOUT THE WORLD is in the ledger — four chunks of
+working memory, ninety seconds, the eight minutes of sunlight. Every number that
+is personal, hypothetical or rhetorical is not. That is the correct rule and the
+book already follows it.
+
+**So this is not becoming a check, and that is the finding.** A checker that
+flagged body figures against the ledger would report all five of these on a
+clean book. Five false positives is not a strict check, it is a check that gets
+switched off — and the same reasoning kept the layout-reference check's phrase
+list narrow on the same day. The distinction between a claim and a turn of
+phrase is not mechanical, and pretending otherwise would cost more than it
+catches.

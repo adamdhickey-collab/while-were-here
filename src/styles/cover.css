@@ -555,7 +555,21 @@
   justify-items: center;
   text-align: center;
 }
-.cover-back--seed .cover-back__line { align-self: start; max-width: 190mm; }
+/* `balance`, not the `pretty` the base rule sets. At Ultra this line runs four
+   lines and pretty left a rag 406 px wide on a 718 px measure — a short second
+   line, a long third, and a last line of two words. Balanced it is 111 px, and
+   the last line carries four. Measured, not assumed.
+
+   VERIFY THIS IN THE PDF, NOT THE BROWSER. `text-wrap` is a hint an engine may
+   decline, and the press PDF comes from Vivliostyle rather than Chromium — the
+   same difference that drew the closing quote three times over and dropped the
+   sources page. If Vivliostyle ever stops honouring it, narrow `max-width`
+   instead; every engine honours that. */
+.cover-back--seed .cover-back__line {
+  align-self: start;
+  max-width: 190mm;
+  text-wrap: balance;
+}
 .cover-back--seed .cover-back__meta { align-self: end; justify-content: center; margin-top: 0; }
 /* Both foot lines darken on this board. --ink-soft and --ink-faint were chosen
    against bare cream; over a drawing, even a scrimmed one, they are the

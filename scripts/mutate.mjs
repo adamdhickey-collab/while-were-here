@@ -290,6 +290,18 @@ if (dirty) {
 const UNMUTATED = [
   ['page count', 'needs a page added or removed, and every edit that does so also breaks the build'],
   ['every reproduced entry reaches the page', 'needs an entry present in the record but absent from the page — the build prints all of them'],
+  /* This one is NOT untested — it is untested HERE. Every mutation in this file
+     is a text substitution, and the fault this check exists to catch is a real
+     QR code inside a binary image, which no `from`/`to` pair can produce. It was
+     proven by hand twice on 23 Aug 2026: a working QR was encoded into
+     field-note-02-tag-code.png, the check went red and named the file, and the
+     plate was restored from a copy taken first — once against the original scan
+     and again after that scan was rewritten to be bounded and cached, because an
+     optimisation is exactly the kind of edit that can quietly blind a check.
+     scripts/codes.py also carries a positive control on every run, which is a
+     stronger guarantee than a mutation: it refuses to report at all unless it
+     has just encoded a known symbol and decoded it back. */
+  ['nothing printed in this book scans', 'needs a real QR code inside a binary image — proven by hand instead, and the check carries its own positive control'],
 ];
 
 const missed = results.filter((r) => r.state === 'MISSED');

@@ -129,6 +129,35 @@ if (!breaks.available) {
       : 'one voice, one weight');
 }
 
+/* 2c. Does anything on these pages actually scan? The field note between Parts
+   II and III says this book prints no scannable codes and no personal data it
+   does not mean to, and until now nothing enforced it. Both tag plates are
+   generated today and their drawn square has no finder patterns, so it is safe
+   by accident; shot-list item 0b schedules replacing them with photographs of
+   the REAL tag, whose code does resolve.
+
+   scripts/codes.py carries its own positive control — it encodes a known symbol
+   and decodes it back, and refuses to report at all if that round trip fails.
+   That matters more than usual here: the first version of this check used a
+   real photograph of a QR code as its control, the control did not decode, and
+   the reassuring negative result on the tag plates was worth nothing. Results
+   are cached per file, so this costs about a tenth of a second unless an image
+   changed. */
+let codes = { available: false };
+try {
+  codes = JSON.parse(execFileSync(P('.venv/bin/python'), [P('scripts/codes.py'), '--json'],
+    { encoding: 'utf8', stdio: ['ignore', 'pipe', 'ignore'] }));
+} catch { /* no venv, or no opencv — reported below, never silently passed */ }
+if (!codes.available) {
+  note('scannable codes', `${codes.reason || 'not checked'} — run \`npm run codes\``);
+} else {
+  const hits = codes.hits || [];
+  check('nothing printed in this book scans', hits.length === 0,
+    hits.length
+      ? `${hits.length}: ${hits.map((h) => h.image).join(', ')} — payloads deliberately not printed`
+      : `${codes.scanned} placed images, ${codes.control}`);
+}
+
 /* 3. Placeholder text. "ISBN & barcode placement" printed on the back cover of
       every proof for weeks before anyone read it as text rather than as layout. */
 const PLACEHOLDERS = [/\bplacement\b(?![^.]*likely)/i, /\bTK\b/, /placeholder/i, /lorem/i, /\bTODO\b/, /\bFIXME\b/, /coming soon/i];

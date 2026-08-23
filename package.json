@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "description": "WHILE WE'RE HERE — a print-first coffee-table book built with HTML, CSS and Vivliostyle.",
+  "description": "WHILE WE'RE HERE \u2014 a print-first coffee-table book built with HTML, CSS and Vivliostyle.",
   "author": "Adam Hickey",
   "scripts": {
     "build": "node scripts/build.mjs",
@@ -19,7 +19,7 @@
     "build:web": "BOOK_WEB=1 node scripts/build.mjs",
     "credits": "node scripts/credits.mjs",
     "fonts:convert": "./.venv/bin/python scripts/otf2ttf.py fonts-licensed fonts-licensed/.ttf-cache",
-    "venv": "python3 -m venv .venv && ./.venv/bin/pip install -q \"fonttools[woff]\" pillow pillow-heif numpy scipy",
+    "venv": "python3 -m venv .venv && ./.venv/bin/pip install -q \"fonttools[woff]\" pillow pillow-heif numpy scipy opencv-python-headless",
     "fonts:setup": "npm run venv && npm run fonts:convert",
     "reground": "./.venv/bin/python scripts/reground.py",
     "pdf:proof": "npm run build && node scripts/proof.mjs && vivliostyle build build/book.html -o dist/while-were-here-proof.pdf && npm run build",
@@ -39,7 +39,8 @@
     "labels": "npm run build && node scripts/labels.mjs",
     "breaks": "npm run build && node scripts/breaks.mjs",
     "mutate": "node scripts/mutate.mjs",
-    "pdfcheck": "./.venv/bin/python scripts/pdfcheck.py"
+    "pdfcheck": "./.venv/bin/python scripts/pdfcheck.py",
+    "codes": "npm run build && ./.venv/bin/python scripts/codes.py"
   },
   "devDependencies": {
     "@fontsource-variable/fraunces": "^5.3.0",

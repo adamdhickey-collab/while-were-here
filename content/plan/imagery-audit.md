@@ -736,3 +736,31 @@ machine divider — all precise. The seasons, the shadow card, the condensation 
 the linen — all wrong about what the camera actually did.
 
 **Ten unplaced descriptions still have files and have not been checked.**
+
+### Fourth batch — six checked, and the pattern turns out to be wrong
+
+| image | verdict |
+| --- | --- |
+| `micro-01-graphite-ridge` | **WRONG** — "fibres of the sheet visible under and between them". `scripts/micrograph.py` draws no fibres: the paper is `gaussian_filter(rng.random(...), size/300) * 0.16`, a soft noise field. The plate confirms it — the ground behind the flakes is an even blur with no linear structure at any magnification. The flakes themselves are right. |
+| `micro-02-die-surface` | **incomplete** — accurate as far as it went, but silent about the two features that most say *die*: the elbows where traces turn, and the ~120 ringed vias stitching the layers. Both are drawn, both are visible. Added. |
+| `micro-03-tape-oxide` | exact, and unusually so — 3,800 needles combed one way, ~6% crossing (`rng.random() < 0.06`), angles scattered `normal(comb, 9)`, binder at 0.12. Every clause in the description has a line of code under it. |
+| `pilgrimage-02-yellow-arrow` | exact — small painted arrow low on the kerb, ordinary lane, parked cars, bare trees. |
+| `pilgrimage-04-tending-feet` | exact — two walkers sitting against a white roadside wall, boots off beside them, heads down over their feet. |
+| `pilgrimage-05-stamped-booklet` | exact — booklet open on a rough wooden surface against a plain wall, stamps in blue, red and violet, one to a stop. |
+
+**This batch breaks the pattern the third batch proposed.** "Every drawn plate is
+exact" was the wrong rule; it just happened to hold for ten plates. The real
+division is not drawn versus photographed, it is **described from the output
+versus described from the brief**. Every plate whose description was written by
+looking is exact, whatever made it. Every plate described from the instruction
+that produced it — all four survey plates, and now `micro-01` — drifted, because
+a brief says what was *asked for* and the code does something slightly narrower.
+`micro-03` is the control: same generator, same recipe, and it is exact, because
+whoever wrote it read the code.
+
+`micro-01` also shows the failure is not always an overclaim about a photograph.
+It is an overclaim about *anything not looked at* — here, a synthetic image whose
+source is forty lines of Python sitting in the repository.
+
+**All unplaced descriptions with files have now been checked.** The one
+remaining, `here-09-ano-viejo`, was written from the frame during this session.

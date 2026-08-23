@@ -36,6 +36,10 @@ from datetime import datetime
 from pathlib import Path
 
 from PIL import Image
+import sys
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from lib.library import originals, edits          # noqa: E402
+
 
 try:
     import pillow_heif
@@ -44,8 +48,8 @@ except Exception:
     pass
 
 HOME = Path.home()
-ORIGINALS = HOME / 'Desktop' / 'photo library 2'
-EDITS = HOME / 'Desktop' / 'photo library edits'
+ORIGINALS = originals()
+EDITS = edits()
 OUT = Path(__file__).resolve().parent.parent / '.cache' / 'places.json'
 
 IMG_EXT = {'.heic', '.jpg', '.jpeg', '.png', '.rw2', '.tif', '.tiff'}

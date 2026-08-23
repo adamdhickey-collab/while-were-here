@@ -70,7 +70,7 @@ except Exception:
     pass
 
 ROOT = Path(__file__).resolve().parent.parent
-ORIGINALS = Path.home() / 'Desktop' / 'photo library 2'
+ORIGINALS = originals()
 PLACES = ROOT / '.cache' / 'places.json'
 CACHE = ROOT / '.cache' / 'archive-index.npz'
 SCRATCH = Path('/private/tmp/claude-501/-Users-adamhickey-Projects-while-were-here'
@@ -132,6 +132,10 @@ ap.add_argument('--thumb', type=int, default=300)
 a = ap.parse_args()
 
 import importlib.util
+import sys
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from lib.library import originals, edits          # noqa: E402
+
 spec = importlib.util.spec_from_file_location('places', ROOT / 'scripts' / 'places.py')
 places = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(places)

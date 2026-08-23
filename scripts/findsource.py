@@ -36,6 +36,10 @@ from pathlib import Path
 
 import numpy as np
 from PIL import Image, ImageOps
+import sys
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from lib.library import originals, edits          # noqa: E402
+
 
 try:
     import pillow_heif
@@ -44,7 +48,7 @@ except Exception:
     pass
 
 ROOT = Path(__file__).resolve().parent.parent
-ORIG = Path.home() / 'Desktop' / 'photo library 2'
+ORIG = originals()
 CACHE = ROOT / '.cache' / 'archive-index.npz'
 LONG = 96          # thumbnail long edge
 Q = 32             # comparison resolution
@@ -197,9 +201,25 @@ for tid in targets:
     pw, ph = Image.open(placed).size
     res = search(placed, names, data, offs, shapes, a.top)
     print(f"{tid}  ({pw}x{ph})")
+    gone = 0
     for score, nm, x, y in res:
-        ow, oh = Image.open(ORIG / nm).size
+        src = ORIG / nm
+        if not src.exists():
+            # THE INDEX OUTLIVES THE LIBRARY. Frames get renamed, re-exported or
+            # deleted between one index build and the next, and the first version
+            # of this loop opened every hit unconditionally and died on the first
+            # one that had moved — a crash that reads like a bug in the matcher
+            # when it is really a stale cache. Missing hits are counted and
+            # reported instead, because the count is the signal: a handful is
+            # normal drift, a lot means re-run `--index`.
+            gone += 1
+            print(f"   {score:6.1f}  {nm:<22} — no longer in the library")
+            continue
+        ow, oh = Image.open(src).size
         gain = min(ow, oh) / min(pw, ph)
         flag = '  <-- confident' if score < 12 else ('  <- look' if score < 20 else '')
         print(f"   {score:6.1f}  {nm:<22} {ow}x{oh}  {gain:.1f}x{flag}")
+    if gone:
+        print(f"   ({gone} of {len(res)} hits have left the library — "
+              f"re-run with --index if this keeps happening)")
     print()

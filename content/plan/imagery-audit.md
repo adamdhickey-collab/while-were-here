@@ -687,3 +687,35 @@ construction site was found in batch three — but the yield is now low enough t
 it should not crowd out other work.
  That is the honest
 state. No check can do it; it needs eyes on each frame beside its sentence.
+
+
+---
+
+## The unplaced descriptions
+*22 Aug 2026*
+
+The 83 spoken descriptions are done. This is the tier below them: **26 unplaced
+images that have files**. They do not print, so they are not an accessibility
+question — but they are what Adam reads when deciding whether to place
+something, and a wrong one produces a wrong placement decision. That is exactly
+what the back-cover "mushrooms" line did to open question 11.
+
+### First two batches — ten checked, two wrong
+
+The four-season sequence is written up in [shot-list.md](shot-list.md): one
+generated photograph recoloured four ways, described as four visits, beside an
+essay that claims a real sequence. **The one generated plate that would
+contradict the copy it illustrates.**
+
+| image | verdict |
+| --- | --- |
+| `ordinary-days-01f1-pavement-shadow` | **wrong** — "a railing, a branch, **a person out of frame**". Checked across the whole photograph at 2.2×: railing balusters, dappled foliage, a fallen twig, a few dry petals. **No human shadow anywhere.** |
+| `ordinary-days-01e-two-walking` | exact, and precisely so. The panel header reads **"MUSCLE FIRING ORDER (11)"** and lists eleven, gluteus maximus through abdominals — the description's "eleven muscles numbered in sequence" is literally what is drawn. Centre-of-mass arc, ground-reaction vectors and both moments all present. |
+| `ordinary-days-01c-lake-quiet` | exact, down to the legend: depth contours, soundings, algae-green shallows, the dashed shore path, and a cross keyed **"UNEXPLAINED STOP"**. |
+| `ordinary-days-01f2-bird-shoreline` | exact — one sandpiper, low water, the label reading *4:05 PM / low water*. |
+| `ordinary-days-01f3-dog-nose-grass` | exact. |
+| `attention-02-field-notes` | exact — the room drawn twice, once in fine blue hairline and once as four or five red marks. |
+| `ordinary-days-01k-room-survey` | exact — cobalt dimension lines over the window, sofa and table; rust hairlines following the monstera. |
+| `ordinary-days-01i-kitchen-light` | plausible at reproduction size; the individual items on the album leaf were not separately identified. |
+
+**Sixteen unplaced descriptions still have files and have not been checked.**

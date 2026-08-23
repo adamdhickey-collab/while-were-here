@@ -134,6 +134,13 @@ const MUTATIONS = [
     expect: 'every focus: names a focal class that exists',
     why: 'a focus: naming a focal class that does not exist' },
 
+  /* A photograph refiled as something a model made. The fault is invisible on
+     the page today and would not be if a plate specimen card ever rendered it. */
+  { id: 'photograph-generated', file: 'content/images.json',
+    from: '"id": "walk-01-leaf-light",', to: '"id": "walk-01-leaf-light", "status": "generated",',
+    expect: 'no photograph is filed as generated',
+    why: 'one of Adam\'s own photographs filed as generated' },
+
   { id: 'contents-drift', file: 'content/contents.json',
     from: 'Most of Life Is a Tuesday', to: 'Most of Life Is a Wednesday',
     expect: 'the contents page agrees', why: 'a contents title that no longer matches the essay' },

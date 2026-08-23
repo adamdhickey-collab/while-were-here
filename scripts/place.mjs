@@ -131,7 +131,21 @@ if (img.origin === 'archive' && (!img.source || !img.license)) {
   warn.push('archival asset with no source or licence — record it now, not at press');
 }
 
-img.status = 'generated';
+/* NOT 'generated' for everything. This line wrote `status: 'generated'` onto
+   whatever was being placed, photographs included, and 31 of Adam's own
+   photographs carried it — walk-01-leaf-light, the father portrait, the
+   observation hive, the whole `specimen-*` set.
+
+   Nothing on a page said so, and that was luck rather than design:
+   `src/layouts/helpers.mjs` PRINTS `image.status` on a plate specimen card,
+   beside the aspect and the target. Only two plates use that helper today and
+   both carry a real date. Route any of those 31 through it and the book states,
+   in its own apparatus, that a photograph Adam took was generated — in a book
+   whose entire argument is about looking at what is actually there.
+
+   `status` here means "the asset is in the repository", not "a model made it".
+   The word was doing two jobs and only had one meaning. */
+img.status = /photograph|archive|original/.test(String(img.origin || '')) ? 'placed' : 'generated';
 fs.writeFileSync(manifestPath, JSON.stringify(manifest, null, 2) + '\n');
 
 console.log(`✓ ${img.id}`);

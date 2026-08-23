@@ -689,6 +689,37 @@ check('every focus: names a focal class that exists', focusBad.length === 0,
     ? `${focusBad.map((u) => `${u.file}: focus: ${u.value}`).join(', ')} — defined: ${[...focusDefined].join(', ')}`
     : `${focusUsed.length} in use, ${focusDefined.size} defined (${[...focusDefined].join(', ')})`);
 
+/* No photograph may be filed as generated.
+
+   `status` means "the asset is in the repository". `scripts/place.mjs` wrote
+   'generated' for everything it placed, so 31 of Adam's own photographs said a
+   model had made them — the father portrait, the observation hive, the walk in
+   the woods, the whole specimen set.
+
+   It matters because `src/layouts/helpers.mjs` PRINTS `image.status` on a plate
+   specimen card. Only two plates use that helper today, and both carry a real
+   date, so nothing false has ever reached a page. That is luck. Route one of
+   those photographs through the same helper and the book asserts, in its own
+   apparatus, that a photograph Adam took was generated — inside a book arguing
+   for looking at what is actually there. A claim that is wrong in the data and
+   merely unprinted is still wrong.
+
+   ORIGIN, NOT KIND, IS THE DISCRIMINATOR, and the first version of this check
+   got it wrong twice over. `kind: photography` covers two images a model made,
+   so kind cannot decide it. And `origin: original` does NOT mean an original
+   photograph — it means original artwork, which is exactly what the fifteen
+   `survey-*` plates are; matching on it turned this check red against records
+   that were right all along. Only these three origins mean a camera was
+   involved. The eight `archive` ones matter most: each carries a `source` and a
+   `licence` naming a real photographer — Yuri Elizegi, Tima Miroshnichenko,
+   Artem Podrez, Elle Hughes — beside a field saying a model made the picture. */
+const CAMERA = new Set(['own photograph', 'archive', 'personal archive']);
+const misfiled = images.filter((i) => CAMERA.has(String(i.origin || '')) && i.status === 'generated');
+check('no photograph is filed as generated', misfiled.length === 0,
+  misfiled.length
+    ? `${misfiled.length}: ${misfiled.slice(0, 4).map((i) => i.id).join(', ')}${misfiled.length > 4 ? '…' : ''}`
+    : `${images.filter((i) => CAMERA.has(String(i.origin || ''))).length} photographs, none claiming a model made them`);
+
 const pad = (s, n) => (s + ' '.repeat(n)).slice(0, n);
 console.log('');
 let failed = 0;

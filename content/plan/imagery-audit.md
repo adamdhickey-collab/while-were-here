@@ -589,7 +589,29 @@ This is the second time today a wrong description has propagated into a
 downstream judgement — the first was `here-07-ceremony`, where "all small in
 frame" had been written into a consent note that then argued from it.
 
-**Forty-eight images have not been checked this way**, and on this trend most of
+### Eighth batch — two wrong, and one of them contradicted a printed rule
+
+| image | verdict |
+| --- | --- |
+| `field-note-02-tag-code` | **WRONG.** Called the pet tag's marking "a square **scannable** code" — in a book whose own rule is that it **prints no scannable codes**. The plate is generated, so the pattern encodes nothing; it is a picture of a code. It also said the tag "fills the frame" when it takes about a third of it. Both fixed, and the entry now says explicitly why the plate is inside the rule rather than leaving a reader to reconcile the two. |
+| `field-note-03-street-and-dog` | **WRONG, twice.** "An empty suburban street" has a car coming toward the camera with its headlights on, a motorcyclist, and vehicles parked along both curbs. "Two small figures stopped on the sidewalk" is one woman crouching with the dog — and she is in the near foreground, not small. |
+| `intelligence-02-cards-table` | exact. |
+| `intelligence-04-route-line` | exact. |
+| `privilege-02-machine-timeline` | exact — three artefacts drawn separately, not a timeline, exactly as claimed. |
+| `field-note-04-firepit` | plausible on everything checkable at this size; "seated in profile" is arguable, since she is turned toward the fire holding something to her ear. Not changed. |
+
+**A note on the street entry, for whoever revisits consent.** Its consent note
+argues she is "not identifiable at that size". The corrected description
+deliberately does NOT name her, although `ordinary-days-01l-fabiola-sign` names
+her outright. Alt text is read aloud, and putting a name to a figure whose
+consent argument rests on anonymity would quietly undo that argument. If the
+naming convention should be consistent, make it consistent by decision.
+
+**And the American-English check caught me writing "kerbs"** — the very word I
+added to its stem list earlier today after finding "kerb" in this same manifest.
+Third time today that check has caught my own writing rather than the archive's.
+
+**Forty-two images have not been checked this way**, and on this trend most of
 them are fine. Continuing is still worth doing — the crosswalk's missing
 construction site was found in batch three — but the yield is now low enough that
 it should not crowd out other work.

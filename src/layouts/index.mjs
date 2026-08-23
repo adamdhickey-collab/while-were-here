@@ -175,14 +175,31 @@ export const coverBack = (bookData, ctx, variant) => {
     folio: false,
     cls: `cover cover-back cover-back--${key}`,
     label: 'back cover',
-    /* The line in the hand, then the botanical, then the mark. cover.css sets
-       five rows for exactly this order — `auto auto 1fr auto auto` — so the
-       mark takes the flexible middle and the coda stays pinned to the foot. */
+    /* Two structures, because the two artworks want opposite things.
+
+       `botanical` keeps the original: a small plate INSIDE the text block, with
+       cover.css setting five rows for exactly that order — `auto auto 1fr auto
+       auto` — so the mark takes the flexible middle and the coda stays pinned
+       to the foot.
+
+       `seed` puts the artwork on the board itself, as a sibling of the text
+       block rather than a row in it, because Adam asked for it large and
+       centred and a 92 mm row cannot become a 300 mm board. The plate keeps
+       `z-index: -1` under the isolation on `.cover-back`, exactly as the small
+       one did, so it still paints UNDER `.cover::before` and receives the
+       board's own light — see the long note on that rule in cover.css. It is
+       the only thing on this board that must not be reordered.
+
+       The radiant mark is not emitted on the seed board. It is a small
+       starburst whose job was to put one mark on an almost empty cream field,
+       and the field is no longer empty — the artwork carries a dozen marks of
+       its own. Restoring it is one line if the board ever wants it back. */
     html: `
+      ${key === 'seed' ? `<div class="cover-back__plate">${figure(art, { root: ctx.root })}</div>` : ''}
       <div class="cover__inner">
-        <p class="cover-back__line hand">${esc(bookData.backCoverLine)}</p>
-        <div class="cover-back__art">${figure(art, { root: ctx.root })}</div>
-        <div class="cover-back__mark">${radiant(15)}</div>
+        <p class="cover-back__line">${esc(bookData.backCoverLine)}</p>
+        ${key === 'seed' ? '' : `<div class="cover-back__art">${figure(art, { root: ctx.root })}</div>
+        <div class="cover-back__mark">${radiant(15)}</div>`}
         <div class="cover-back__meta">
           <p class="cover-back__blurb">${esc(bookData.backCoverBlurb)}</p>
           ${/* Only when there is an ISBN to print. This block used to be

@@ -286,10 +286,31 @@ served by item 8, which shares a session with item 4.
 ---
 
 ### 11 · The back-cover botanical, from the editorial pass — **DECIDED**
-**Adam's call, 23 Aug 2026: the seed.** `backCoverVariant` is set to `seed` in
-content/book.json and the composed book carries `cover-back--seed`. The back
-board is now his own drawing of a seed in section, and the boards are tied
-together by a circle at both ends. The botanical is not deleted — it stays as
+**Adam's call, 23 Aug 2026: the seed, large.** `backCoverVariant` is set to
+`seed` in content/book.json and the composed book carries `cover-back--seed`.
+The back board is now his own drawing of a seed in section at the full size of
+the board, centred, with the type above and below it, and the boards are tied
+together by an emblem at both ends.
+
+Three things changed with it, all his call:
+  · **The artwork owns the board.** It is emitted as a sibling of the text block
+    rather than a row inside it — a 92 mm row cannot become a 300 mm board. It
+    keeps the `z-index: -1` that makes it receive the board's own light.
+  · **The script is gone.** `.cover-back__line` is set in Falutin Title, the
+    same face as the essay titles and the front board, and the dead
+    `.cover-back__line.hand` rule was deleted rather than left to mislead.
+    `--font-hand` is still live for the margin script INSIDE the book, which was
+    not part of this decision.
+  · **The type is centred**, because the drawing is symmetric about a vertical
+    axis it actually draws. Two veils in one pseudo-element keep the head and
+    foot legible without hiding the drawing: measured on the composed board, the
+    quote holds 9.5:1 at the worst place it crosses, the blurb 12.8:1 and the
+    coda 6.8:1.
+
+The cost is resolution: on the board the file runs at **106 dpi**, against 346
+at the 92 mm placement. cover-03 was accepted at 82, so this is not new, but it
+is the one thing worth regenerating at a larger canvas if that becomes
+possible. The botanical is not deleted — it stays as
 the other half of the comparison and `botanical` still selects it. The rest of
 this entry is the reasoning, kept because the premise turned out to matter.
 

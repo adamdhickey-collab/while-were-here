@@ -83,12 +83,18 @@
   text-align: left;
 }
 .cover-back__mark { align-self: start; margin-top: var(--sp-5); color: var(--ink-faint); }
+/* THE DISPLAY FACE, not the hand and not the text face. Adam's call, 23 Aug
+   2026: the script was the one thing on the board he did not want, so this line
+   is now set in the same face as the essay titles and the cover itself. A
+   Didone at this size wants a little more leading than the text face did and no
+   negative tracking — the counters close up otherwise. `.hand` is gone from the
+   markup; the override that used to sit further down this file went with it. */
 .cover-back__line {
   align-self: center;
-  font-family: var(--font-text);
+  font-family: var(--font-display);
   font-size: var(--t-title-xs);
-  line-height: 1.32;
-  letter-spacing: -0.01em;
+  line-height: 1.24;
+  letter-spacing: 0;
   margin: 0;
   max-width: 178mm;
   text-wrap: pretty;
@@ -247,15 +253,12 @@
 }
 .cover__author { align-self: end; margin-top: 0; }
 
-/* Back cover: a line in the hand, and one small botanical plate. */
-.cover-back__line.hand {
-  font-family: var(--font-hand);
-  font-size: var(--t-sub);
-  line-height: 1.5;
-  max-width: 168mm;
-  color: var(--ink);
-  transform: none;
-}
+/* Back cover: one small botanical plate. The `.cover-back__line.hand` rule that
+   used to sit here is deleted, not disabled — the class is off the markup and a
+   rule that can never match is worse than no rule, because the next reader
+   assumes the board is still set in the hand. `--font-hand` is still live for
+   `.hand` in typography.css, which is the script in the INSIDE margins; that is
+   a different element and was not part of this decision. */
 .cover-back__art {
   position: relative;
   width: 92mm;
@@ -491,9 +494,72 @@
    own light. That is not optional — see the long note on that rule. This
    artwork was regrounded to #EFE9DC, so its paper already matches; the overlay
    is what keeps it matching once the cover's gradients are laid over the top. */
-.cover-back--seed .cover-back__art {
-  width: 92mm;
-  height: 92mm;
-  margin-top: var(--sp-5);
+/* The artwork IS the board. Adam's call, 23 Aug 2026: large and centred rather
+   than a small plate in the corner. So it is emitted as a sibling of the text
+   block, not as a row inside it — a 92 mm grid row cannot become a 300 mm
+   board, and fighting the grid to make it one produces a plate that moves every
+   time the copy above it rewraps.
+
+   `z-index: -1` and the isolation on `.cover-back` are carried over from the
+   small plate and are the load-bearing part: they keep the drawing UNDER
+   `.cover::before`, so it receives the board's own highlight, warm lower
+   gradient and linen texture. Without them the page gets lit and the drawing
+   does not, and a hard-edged rectangle appears on the cream. That failure is
+   documented at length above and it is the same failure at 300 mm as at 92 mm —
+   only now it would be the whole board.
+
+   Full-board rather than inset: the artwork carries its own cream margin, so
+   the DRAWN circle lands at about 85% of the trim on its own. Insetting it
+   further would have shrunk the drawing twice. */
+.cover-back--seed .cover-back__plate {
+  position: absolute;
+  inset: calc(-1 * var(--bleed-out));
+  z-index: -1;
 }
-.cover-back--seed .cover-back__art img { object-position: left bottom; }
+.cover-back--seed .cover-back__plate .figure { position: absolute; inset: 0; background: transparent; }
+.cover-back--seed .cover-back__plate img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
+
+/* Two veils in one pseudo-element, top and bottom, so the type has quiet paper
+   to sit on without hiding any of the drawing. `::after` and not `::before`:
+   both are children of the plate, painted in DOM order, so only `::after`
+   lands ABOVE the image. Colour matches the bleed cover's scrims exactly. */
+.cover-back--seed .cover-back__plate::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(to bottom, rgba(243,239,229,0.90) 0%, rgba(243,239,229,0.58) 15%, rgba(243,239,229,0) 29%),
+    /* The foot band is held near-flat to 24% before it fades, rather than
+       falling away from the edge like the head. The head only has to quiet a
+       few ring arcs; the foot carries three lines of 9.5 pt over the busiest
+       corner of the drawing — the blue field, the cell mass and the plotted
+       dots — and a gradient that is already down to 0.15 where the blurb
+       actually sits is a scrim in name only. Measured against the composed
+       board: blurb top at 0.795 of the height, coda foot at 0.90. */
+    linear-gradient(to top,    rgba(243,239,229,0.93) 0%, rgba(243,239,229,0.93) 24%,
+                               rgba(243,239,229,0.55) 29%, rgba(243,239,229,0) 36%);
+  pointer-events: none;
+}
+
+/* Centred, and for a reason rather than by default: this drawing is bilaterally
+   symmetric about a vertical axis it actually draws — a hairline running the
+   full height of the plate with dots set on it. Centred type sits on that axis.
+   The front board stays left-aligned and large; the back answers it with the
+   opposite structure, which is what a back board is for.
+
+   Three children now, not five — the artwork left the block and the mark is not
+   emitted. Row two takes the slack, so the line holds the head and the blurb
+   and coda sit down at the foot. */
+.cover-back--seed .cover__inner {
+  grid-template-rows: auto 1fr auto;
+  justify-items: center;
+  text-align: center;
+}
+.cover-back--seed .cover-back__line { align-self: start; max-width: 190mm; }
+.cover-back--seed .cover-back__meta { align-self: end; justify-content: center; margin-top: 0; }
+/* Both foot lines darken on this board. --ink-soft and --ink-faint were chosen
+   against bare cream; over a drawing, even a scrimmed one, they are the
+   difference between quiet and unreadable. */
+.cover-back--seed .cover-back__blurb { max-width: 132mm; color: var(--ink); }
+.cover-back--seed .cover-back__coda { color: var(--ink-soft); }
+.cover-back--seed .cover-back__coda { align-self: end; justify-self: center; margin-top: var(--sp-5); }

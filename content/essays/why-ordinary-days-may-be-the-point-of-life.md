@@ -60,7 +60,7 @@ spreads:
       captions:
         - October 21, 2018, 2:58 p.m. / the leaves came down all week
         - October 21, 2018, 3:11 p.m. / the route ran into water
-        - October 21, 2018, 3:26 p.m. / same corner, twenty-eight minutes on
+        - October 21, 2018, 3:26 p.m. / same woods, twenty-eight minutes on
   - type: reading
     variant: two
     subhead: The Ordinary Is Not the Interruption

@@ -764,3 +764,45 @@ source is forty lines of Python sitting in the repository.
 
 **All unplaced descriptions with files have now been checked.** The one
 remaining, `here-09-ano-viejo`, was written from the frame during this session.
+
+## The three captions that print — checked against the source, 23 Aug 2026
+
+The description audit covered manifest metadata, which mostly does not print.
+**The book has exactly three captions, and all three make falsifiable claims:**
+a date, three clock times, and an interval. They sit under the contact sheet in
+"Why Ordinary Days May Be the Point of Life."
+
+The times do not come from EXIF — the placed crops have none, and the JPEGs lost
+theirs. They come from a Facebook export's album HTML "Taken" field, recorded on
+21 Aug. That export is still on disk, so the claims were re-checked against it
+rather than against the note that describes it.
+
+**The walk of 21 Oct 2018 is twelve frames**, 2:51 pm to 3:49 pm. All three
+printed times are in it — 2:58, 3:11, 3:26 — and 2:58 to 3:26 really is
+twenty-eight minutes.
+
+**Then the check that matters: are the times on the right photographs?** This is
+the failure that captioned Granada as Rome on the first contact sheet — correct
+metadata beside a different picture. Each export frame was matched to its placed
+file by pixels: **0.3, 0.1 and 0.0.** They are the same photographs. The times
+are right and they are on the right frames.
+
+### One caption overclaimed, and it printed
+
+> `October 21, 2018, 3:26 p.m. / same corner, twenty-eight minutes on`
+
+The twelve frames show a walk that kept **moving** — leaf floor, floodwater, a
+log, a dirt path, sand, a wooded track. The 2:58 and 3:26 frames are visibly
+different ground: dense trunks with hard parallel shadows in one, taller open
+woods with a path and distant figures in the other. Nothing supports returning
+to one corner.
+
+**The manifest already had the honest word.** The image is filed as
+`walk-02-same-woods` and its own subject line reads *"The same **woods**, the
+same dog"*. Its concept is *"The route repeats."* The caption tightened *woods*
+into *corner*, which is a different and unsupported claim. Corrected to **"same
+woods, twenty-eight minutes on"** — the manifest's own word, the essay's own
+argument, and true.
+
+Same failure as the whole description audit — a line written a shade tighter
+than the photograph earns — except this one was printing.

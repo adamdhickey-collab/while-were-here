@@ -108,6 +108,18 @@ const MUTATIONS = [
     from: 'hyphenate-limit-chars: 10 4 4;', to: 'hyphenate-limit-chars: 4 2 2;',
     expect: 'no word broken across a column foot', why: 'hyphenation loose enough to ladder' },
 
+  /* The display serif at the wrong weight. This one is aimed at a rule that
+     has now been broken TWICE in this repository — the dedication, and then
+     `.cover-back__line` on the day it moved to the display face — and both
+     times nothing caught it. The check that catches it lives in breaks.mjs.
+     The mutation puts the fault where it actually occurred both times: a
+     component stylesheet, loading after typography.css, quietly winning. */
+  { id: 'display-weight', file: 'src/styles/cover.css',
+    from: '.cover-back__line {\n  align-self: center;',
+    to:   '.cover-back__line {\n  font-weight: 500;\n  align-self: center;',
+    expect: 'every element in the display serif is at weight 900',
+    why: 'a display-serif element dropped below black by a component stylesheet' },
+
   { id: 'overflow', file: 'content/essays/while-were-here.md',
     from: 'Technology changes what can happen inside that interval.',
     to:   'Technology changes what can happen inside that interval. ' + 'The interval widens. '.repeat(120),

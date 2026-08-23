@@ -749,6 +749,33 @@ if (!contrast.available) {
       : `${contrast.measured} runs measured, worst ${contrast.worst ? contrast.worst.cr.toFixed(1) : '—'}:1`);
 }
 
+/* Nothing printed may point at where something sits on the page.
+
+   These pages are COMPOSED, not flowed — every one is written to fit its slot —
+   and the book has been re-paced hard: spreads were cut to reach the 130-page
+   ceiling, a record was withdrawn on 23 Aug 2026 and a plate took its verso,
+   two material breaks went entirely. Any sentence that says "the photograph
+   opposite" or "overleaf" is a claim about a layout that has already moved
+   several times and will move again.
+
+   It holds today: swept across everything the book prints, there are zero.
+   That is worth keeping rather than rediscovering, because the sentence that
+   breaks it will be written months from now by someone describing a spread
+   that is true at the time.
+
+   THE LIST IS DELIBERATELY NARROW. "above", "below" and "opposite" on their own
+   are ordinary English and the book uses all three innocently — a flock "not
+   controlled from above", a plane passing "above the roof", anxiety producing
+   "the opposite in me". Matching those would cry wolf four times on a clean
+   book, and a check that cries wolf gets switched off. Only phrases that can
+   ONLY mean the page are here. */
+const LAYOUT_REF = /\b(overleaf|on the facing page|the facing page|on the next page|the previous page|see page \d+|pictured opposite|shown opposite|photograph opposite|the plate opposite|top of this page|bottom of this page)\b/gi;
+const layoutRefs = [...text.matchAll(LAYOUT_REF)].map((m) => m[0]);
+check('nothing printed points at where it sits on the page', layoutRefs.length === 0,
+  layoutRefs.length
+    ? `${layoutRefs.length}: ${[...new Set(layoutRefs)].join(', ')} — composed pages move`
+    : 'no page in this book describes its own furniture');
+
 const pad = (s, n) => (s + ' '.repeat(n)).slice(0, n);
 console.log('');
 let failed = 0;

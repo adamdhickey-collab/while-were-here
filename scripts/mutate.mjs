@@ -159,6 +159,14 @@ const MUTATIONS = [
     expect: 'every run of type is legible on its own ground',
     why: 'display type set light on a light page' },
 
+  /* Copy that describes a layout. The book has been re-paced repeatedly; a
+     sentence pointing at the facing page is a claim with a shelf life. */
+  { id: 'layout-reference', file: 'content/essays/why-humans-need-pilgrimages.md',
+    from: 'The body supplies a measure that cannot be argued with for long.',
+    to:   'The body supplies a measure that cannot be argued with for long, as the photograph opposite shows.',
+    expect: 'nothing printed points at where it sits on the page',
+    why: 'copy that points at the facing page in a book whose spreads move' },
+
   { id: 'contents-drift', file: 'content/contents.json',
     from: 'Most of Life Is a Tuesday', to: 'Most of Life Is a Wednesday',
     expect: 'the contents page agrees', why: 'a contents title that no longer matches the essay' },

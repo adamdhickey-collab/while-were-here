@@ -156,70 +156,92 @@ def search(query_path, names, data, offs, shapes, top=5):
     return scored[:top]
 
 
-ap = argparse.ArgumentParser()
-ap.add_argument('ids', nargs='*')
-ap.add_argument('--index', action='store_true')
-ap.add_argument('--all', action='store_true')
-ap.add_argument('--top', type=int, default=4)
-a = ap.parse_args()
+def main():
+    """EVERYTHING BELOW RUNS ONLY IN THE PARENT.
 
-if a.index:
-    build_index()
-    sys.exit(0)
+       macOS starts subprocesses with `spawn`, not `fork`: each worker imports
+       this file again to reach `_thumb_one`. Without this guard that import
+       re-executes the argparse block and `build_index()` in every child.
 
-if not CACHE.exists():
-    raise SystemExit('No index. Run with --index first (slow, once).')
+       The docstring below claims re-indexing is "a few minutes" after the pool
+       was added. It was not. Measured 23 Aug 2026 on a 32,533-frame library:
+       ONE process at 10% of a single core, thirty minutes in, with nothing
+       written — the workers were re-parsing an argv with no `--index` in it and
+       exiting on argparse's own SystemExit while the parent fed a pool that
+       never returned. The parallel version had been quietly running worse than
+       the serial one it replaced, and it looked like a slow disk.
 
-imgs = json.loads((ROOT / 'content' / 'images.json').read_text())['images']
-book = (ROOT / 'build' / 'book.html').read_text(encoding='utf-8')
-by_id = {i['id']: i for i in imgs}
+       scripts/interesting.py hit exactly this and was fixed on the same day.
+       This file was not, because nobody re-ran it until the library moved. Any
+       script here that builds a Pool needs this guard."""
+    ap = argparse.ArgumentParser()
+    ap.add_argument('ids', nargs='*')
+    ap.add_argument('--index', action='store_true')
+    ap.add_argument('--all', action='store_true')
+    ap.add_argument('--top', type=int, default=4)
+    a = ap.parse_args()
 
-targets = a.ids
-if a.all:
-    targets = []
-    for i in imgs:
-        fn = i.get('filename', '—')
-        if fn == '—' or fn not in book:
-            continue
-        if 'photograph' not in str(i.get('origin', '')):
-            continue
-        hits = list((ROOT / 'public' / 'images').rglob(fn))
-        if hits and min(Image.open(hits[0]).size) < 2500:
-            targets.append(i['id'])
+    if a.index:
+        build_index()
+        sys.exit(0)
 
-names, data, offs, shapes = load_index()
-print(f"index: {len(names)} archive frames\n")
+    if not CACHE.exists():
+        raise SystemExit('No index. Run with --index first (slow, once).')
 
-for tid in targets:
-    rec = by_id.get(tid)
-    if not rec:
-        print(f"{tid}: not in the manifest"); continue
-    hits = list((ROOT / 'public' / 'images').rglob(rec.get('filename', '')))
-    if not hits:
-        print(f"{tid}: file not found"); continue
-    placed = hits[0]
-    pw, ph = Image.open(placed).size
-    res = search(placed, names, data, offs, shapes, a.top)
-    print(f"{tid}  ({pw}x{ph})")
-    gone = 0
-    for score, nm, x, y in res:
-        src = ORIG / nm
-        if not src.exists():
-            # THE INDEX OUTLIVES THE LIBRARY. Frames get renamed, re-exported or
-            # deleted between one index build and the next, and the first version
-            # of this loop opened every hit unconditionally and died on the first
-            # one that had moved — a crash that reads like a bug in the matcher
-            # when it is really a stale cache. Missing hits are counted and
-            # reported instead, because the count is the signal: a handful is
-            # normal drift, a lot means re-run `--index`.
-            gone += 1
-            print(f"   {score:6.1f}  {nm:<22} — no longer in the library")
-            continue
-        ow, oh = Image.open(src).size
-        gain = min(ow, oh) / min(pw, ph)
-        flag = '  <-- confident' if score < 12 else ('  <- look' if score < 20 else '')
-        print(f"   {score:6.1f}  {nm:<22} {ow}x{oh}  {gain:.1f}x{flag}")
-    if gone:
-        print(f"   ({gone} of {len(res)} hits have left the library — "
-              f"re-run with --index if this keeps happening)")
-    print()
+    imgs = json.loads((ROOT / 'content' / 'images.json').read_text())['images']
+    book = (ROOT / 'build' / 'book.html').read_text(encoding='utf-8')
+    by_id = {i['id']: i for i in imgs}
+
+    targets = a.ids
+    if a.all:
+        targets = []
+        for i in imgs:
+            fn = i.get('filename', '—')
+            if fn == '—' or fn not in book:
+                continue
+            if 'photograph' not in str(i.get('origin', '')):
+                continue
+            hits = list((ROOT / 'public' / 'images').rglob(fn))
+            if hits and min(Image.open(hits[0]).size) < 2500:
+                targets.append(i['id'])
+
+    names, data, offs, shapes = load_index()
+    print(f"index: {len(names)} archive frames\n")
+
+    for tid in targets:
+        rec = by_id.get(tid)
+        if not rec:
+            print(f"{tid}: not in the manifest"); continue
+        hits = list((ROOT / 'public' / 'images').rglob(rec.get('filename', '')))
+        if not hits:
+            print(f"{tid}: file not found"); continue
+        placed = hits[0]
+        pw, ph = Image.open(placed).size
+        res = search(placed, names, data, offs, shapes, a.top)
+        print(f"{tid}  ({pw}x{ph})")
+        gone = 0
+        for score, nm, x, y in res:
+            src = ORIG / nm
+            if not src.exists():
+                # THE INDEX OUTLIVES THE LIBRARY. Frames get renamed, re-exported or
+                # deleted between one index build and the next, and the first version
+                # of this loop opened every hit unconditionally and died on the first
+                # one that had moved — a crash that reads like a bug in the matcher
+                # when it is really a stale cache. Missing hits are counted and
+                # reported instead, because the count is the signal: a handful is
+                # normal drift, a lot means re-run `--index`.
+                gone += 1
+                print(f"   {score:6.1f}  {nm:<22} — no longer in the library")
+                continue
+            ow, oh = Image.open(src).size
+            gain = min(ow, oh) / min(pw, ph)
+            flag = '  <-- confident' if score < 12 else ('  <- look' if score < 20 else '')
+            print(f"   {score:6.1f}  {nm:<22} {ow}x{oh}  {gain:.1f}x{flag}")
+        if gone:
+            print(f"   ({gone} of {len(res)} hits have left the library — "
+                  f"re-run with --index if this keeps happening)")
+        print()
+
+
+if __name__ == '__main__':
+    main()

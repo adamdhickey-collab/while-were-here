@@ -135,9 +135,18 @@ const MUTATIONS = [
     why: 'a focus: naming a focal class that does not exist' },
 
   /* A photograph refiled as something a model made. The fault is invisible on
-     the page today and would not be if a plate specimen card ever rendered it. */
+     the page today and would not be if a plate specimen card ever rendered it.
+
+     THE ANCHOR HAS TO CARRY THE LINE ABOVE IT. The first version of this
+     mutation INSERTED `"status": "generated"` after the id line, which changed
+     nothing: the record already had a `status` further down, and a JSON parser
+     takes the last of two duplicate keys. It reported blind, and the check was
+     fine — the mutation was. `"status": "placed"` on its own is not unique
+     either; `ephemera-01-window-plant` is the one record whose preceding line
+     makes the pair unique in the file. */
   { id: 'photograph-generated', file: 'content/images.json',
-    from: '"id": "walk-01-leaf-light",', to: '"id": "walk-01-leaf-light", "status": "generated",',
+    from: '"target": "1200 \u00d7 1200 px (native \u2014 435 dpi at 70 mm, and nothing larger)",\n      "status": "placed"',
+    to:   '"target": "1200 \u00d7 1200 px (native \u2014 435 dpi at 70 mm, and nothing larger)",\n      "status": "generated"',
     expect: 'no photograph is filed as generated',
     why: 'one of Adam\'s own photographs filed as generated' },
 

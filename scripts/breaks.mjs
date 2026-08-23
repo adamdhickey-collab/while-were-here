@@ -246,7 +246,7 @@ await browser.close();
 server.close();
 
 if (asJson) {
-  console.log(JSON.stringify({ available: true, findings: report, tally }));
+  console.log(JSON.stringify({ available: true, findings: report, tally, weights }));
   process.exit(0);
 }
 

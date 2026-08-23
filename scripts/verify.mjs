@@ -110,6 +110,23 @@ if (!breaks.available) {
     bad.length
       ? `${bad.length}: ${bad.map((b) => `folio ${b.folio} ${b.kind}`).join(', ')} — run \`npm run breaks\``
       : `${t.lines} lines, ${t.hyphenated} hyphenated (${(t.hyphenated / t.lines * 100).toFixed(1)}%), ragged right`);
+
+  /* The display serif at 900 and no other weight — typography.css states the
+     rule, a list of selectors enforces it, and the list has been forgotten
+     twice: the dedication, then `.cover-back__line` on the day it moved to the
+     display face and printed Medium beside a front board printing Ultra.
+
+     It is surfaced HERE rather than only in breaks.mjs, and that is the whole
+     point of this block. scripts/mutate.mjs reads pass/fail by scanning
+     verify's ✓/✗ lines; a check that only ever prints inside breaks.mjs is
+     invisible to it. The first version of this check lived there alone and
+     mutation reported `? display-weight — could not read`. A check nothing can
+     prove bites is a check nobody should trust. */
+  const w = breaks.weights || [];
+  check('every element in the display serif is at weight 900', w.length === 0,
+    w.length
+      ? `${w.length}: ${w.map((x) => `.${x.cls} at ${x.weight}`).join(', ')} — run \`npm run breaks\``
+      : 'one voice, one weight');
 }
 
 /* 3. Placeholder text. "ISBN & barcode placement" printed on the back cover of

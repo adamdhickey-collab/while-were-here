@@ -484,5 +484,31 @@ placed file carries no EXIF date, so that cannot currently be checked. If
 `scripts/findsource.py` locates the camera original it will settle it, since the
 original will carry a timestamp.
 
-**Sixty-nine images have not been checked this way.** That is the honest
+### Fourth batch — and the yield is falling, which is the point
+
+| image | verdict |
+| --- | --- |
+| `walk-03-found-water` | exact, including "her reflection breaking under her". |
+| `ephemera-01-window-plant` | exact. |
+| `walk-02-same-woods` | **overstated** — the dog is in the near ground, not "the middle distance", and four or five people stand much further back among the trunks and were unmentioned. |
+| `north-02-aspen-up` | **overstated** — "looking straight up" is an upward angle of maybe forty-five degrees, not a vertical one. Now "steeply up". |
+
+Two exact, two small overstatements, no outright errors. **The hit rate is
+dropping — first batch three wrong of six, this one none wrong of four — which
+is what should happen if the earlier passes caught the worst of it.**
+
+### What the pixel matcher CANNOT do, tried and recorded
+
+`findsource.py` was pointed at `attention-01-familiar-room`, the generated
+opener whose book spines are gibberish (open question 8), on the theory that
+querying a fake room would surface real ones. **It does not work.** Every score
+came back around 26 — the noise band — and the six nearest frames were two
+selfies, a seascape, a mountain, a road and a screenshot.
+
+The tool compares composition and tone, so it finds THE SAME PHOTOGRAPH and
+nothing else. It is not a semantic search and cannot be made into one by
+pointing it at a subject. Open question 8 still needs Adam's own room
+photographed, or the crop.
+
+**Sixty-five images have not been checked this way.** That is the honest
 state. No check can do it; it needs eyes on each frame beside its sentence.

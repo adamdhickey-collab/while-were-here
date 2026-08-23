@@ -648,3 +648,46 @@ frame placed from it carries its own verified date, and `capturedSource` should
 cite the photograph rather than an album's HTML. It is also large — near 350 GB
 finished, against 638 GB free at the time of writing, with the unmodified export
 still growing. **Do not start a third export before deleting one of these two.**
+
+---
+
+### 15 · Nothing printed in this book scans — **CHECKED, 23 Aug 2026**
+The field note between Parts II and III is the most personal paragraph in the
+book, and it is about a real collar with a real code that really resolves to a
+page with the dog's photograph on it. The spread's own rule: **this book prints
+no scannable codes and no personal data it does not mean to.** Nothing enforced
+that rule until today.
+
+**Result: nothing on any of the 94 placed images decodes.** And the reason is
+weaker than it looks — both tag plates are generated, and the square they draw
+has **no finder patterns**, the three corner squares every QR needs. It cannot
+resolve because it is not a QR code. That is safety by accident.
+
+**Why that matters now.** [shot-list.md](shot-list.md) item 0b schedules
+replacing both plates with photographs of the ACTUAL TAG, whose code does
+resolve, and the instruction is "shoot the code at an angle, or turned, or
+soft". A rule enforced by remembering it on the day is not enforced.
+
+`scripts/codes.py` now scans every placed image and `npm run verify` carries it
+as its twenty-first check. It is cached per file, so it costs about a tenth of a
+second unless an image changed.
+
+**The control is the part worth knowing about.** A scanner reporting "nothing
+decoded" is indistinguishable from a broken one, and this session found six
+checks that had never once failed because they were looking at the wrong thing.
+So the script encodes a known symbol and decodes it back on every run, and
+refuses to report at all if that round trip fails. That is not theoretical: the
+first attempt used a real photograph of a QR code from the archive as its
+control, **the control did not decode**, and the reassuring result on the tag
+plates had to be thrown away.
+
+Proven to bite by hand, twice — a working QR encoded into
+`field-note-02-tag-code.png` turned the check red and named the file, and the
+plate was restored from a copy taken first. Twice because the scan was rewritten
+to be bounded and cached after the first proof, and an optimisation is exactly
+the kind of edit that quietly blinds a check.
+
+**Nothing here is for Adam to decide.** It is recorded because the rule is his,
+and because after item 0b is shot this check is the thing standing between a
+lovely photograph of a real tag and a book that prints a working link to a page
+about his dog.

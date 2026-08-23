@@ -315,6 +315,40 @@ or the front's off-true ring, which would tie the two covers together; or let
 the back carry type alone. The full editorial pass, including everything it
 protected, is in [editorial-pass.md](editorial-pass.md).
 
+**A fourth option now exists and is built, 23 Aug 2026.** Adam generated a
+drawing of a seed in longitudinal section — laminated coat, green cotyledon,
+the hypocotyl hooking out through the base — with the book's own notation laid
+over it: concentric off-true rings, dots set on them like readings, a vertical
+axis through the whole plate. It is `cover-04-seed-section`, and it answers the
+option above almost literally: the ring that would tie the two boards together,
+except drawn rather than borrowed.
+
+`build/back-options.html` now shows both back boards at trim size, which is
+something this question never had — until today the back could only be compared
+by rebuilding the wrap twice, which is part of why it stayed open so long.
+
+What the comparison shows:
+  · **Resolution is not the problem.** 1254 px at the 92 mm placement is 346 dpi.
+  · **The ground is not the problem.** It arrived on its own cream, fourteen
+    values light of the page in red, which would have printed as a bright panel;
+    `scripts/reground.py` fixed it. Measured on the composed board, its paper now
+    sits 3.2 levels from the board against the botanical's own 4.1.
+  · **The real question is the one the editorial read was asking.** cover-02 is
+    hatching, no colour, and at 92 mm it very nearly disappears into the board.
+    cover-04 is in colour and circular, so the back stops being a counterweight
+    and becomes a second emblem. That is a change of concept, not of artwork,
+    and it is still Adam's.
+
+Set `backCoverVariant` in `content/book.json` to `botanical` or `seed`. The
+default is unchanged, so nothing has been decided by building this.
+
+**It is also offered as a front board** — `seed` in `build/cover-options.html`.
+Two honest cautions there. At 300 mm the file is 106 dpi, and what would suffer
+is exactly what the drawing is made of, the hairline rings and the dots on them;
+cover-03 sits at 82 dpi so this is not a new compromise, but the back placement
+asks nothing of anybody.
+
+
 ---
 
 ### 12 · The book prints no sources, and mostly does not need to — **RESOLVED**, 22 Aug 2026

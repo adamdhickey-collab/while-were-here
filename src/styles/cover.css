@@ -454,6 +454,46 @@
   line-height: 0.82;
   margin-left: -3mm;
 }
-.cover--orb .cover__foot { align-self: end; display: grid; gap: var(--sp-4); }
-.cover--orb .cover__sub { margin: 0; text-align: left; text-indent: 0; }
-.cover--orb .cover__author { margin: 0; text-align: left; }
+/* Keyed to the INNER, not to the page variant. These three read `.cover--orb`
+   until 23 Aug 2026, and the `seed` front — which reuses `.cover__inner--orb`
+   because it wants exactly the same furniture — matched none of them. Without
+   `align-self: end` the foot stretched across the whole 1fr row and printed the
+   subtitle and the author line at 44% of the board height, straight through the
+   busiest part of the drawing, illegible. The rule that positions a child
+   should key on the parent that lays it out; keyed this way, the next variant
+   to reuse this inner inherits a working foot instead of finding this bug. On
+   the orb cover itself these select exactly what they selected before. */
+.cover__inner--orb .cover__foot { align-self: end; display: grid; gap: var(--sp-4); }
+.cover__inner--orb .cover__sub { margin: 0; text-align: left; text-indent: 0; }
+.cover__inner--orb .cover__author { margin: 0; text-align: left; }
+
+/* ---- SEED (cover-04) ----------------------------------------------------
+   Adam's drawing of a seed in section, 23 Aug 2026. It arrives already
+   composed as a circle on a square cream field, which means it needs the
+   opposite of everything the `orb` treatment does: no clip, no oversizing, no
+   object-position. `--drawn` already turns the clip off; this only stops the
+   container from cropping and lets the plate sit at its own scale. */
+.cover__orb--seed {
+  left: 50%;
+  bottom: 3%;
+  width: 96%;
+  transform: translateX(-50%);
+}
+.cover__orb--seed img { object-fit: contain; }
+
+/* Back board. The botanical is 4:3 and lands bottom-left; this one is square,
+   so it is given a square box in the same corner at 92 mm — the width the back
+   board was already built around, and 346 dpi for this file, which is the
+   argument for putting it here rather than on the front.
+
+   It inherits `.cover-back__art { z-index: -1 }` and the isolation above it, so
+   like the botanical it paints UNDER `.cover::before` and receives the board's
+   own light. That is not optional — see the long note on that rule. This
+   artwork was regrounded to #EFE9DC, so its paper already matches; the overlay
+   is what keeps it matching once the cover's gradients are laid over the top. */
+.cover-back--seed .cover-back__art {
+  width: 92mm;
+  height: 92mm;
+  margin-top: var(--sp-5);
+}
+.cover-back--seed .cover-back__art img { object-position: left bottom; }

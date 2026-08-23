@@ -95,6 +95,30 @@ export const coverVariants = {
     </div>`;
   },
 
+  /* SEED — cover-04 as the front board. The artwork is already a circle on a
+     square cream field, so unlike `orb` nothing has to be clipped or oversized
+     to make the shape; the drawing arrives composed. The title takes the top
+     third, which the artwork leaves quiet on its own.
+
+     THE RESOLUTION IS THE ARGUMENT AGAINST THIS ONE. cover-04 is 1254 px. At
+     300 mm that is 106 dpi, and what would suffer is precisely what the drawing
+     is made of — five concentric hairlines and the dots set on them. cover-03
+     is on the same footing at 82 dpi, so this is not a new compromise, but the
+     back-cover placement at 92 mm gives the same artwork 346 dpi and asks
+     nothing of anybody. Shown here so the comparison can be made at trim size
+     rather than argued about. */
+  seed: (b, ctx) => `
+    <div class="cover__orb cover__orb--drawn cover__orb--seed">${figure(ctx.image('cover-04-seed-section'), { root: ctx.root })}</div>
+    <div class="cover__inner cover__inner--orb">
+      <div class="cover__head">
+        <h1 class="cover__title cover__title--orb"><span>While</span><span>We’re</span><span>Here</span></h1>
+      </div>
+      <div class="cover__foot">
+        <p class="cover__sub">${esc(b.subtitle)}</p>
+        <p class="cover__author">${esc(b.author)}</p>
+      </div>
+    </div>`,
+
   /* WINDOW — the artwork shows only through the letterforms. The title stops
      being type on top of a picture and becomes the aperture onto it, which is
      the book's argument in one move: the systems are already there, and you see
@@ -127,12 +151,29 @@ export const coverFront = (bookData, ctx, variant) => ({
   }],
 });
 
-export const coverBack = (bookData, ctx) => ({
+/* Two artworks can sit on the back board and they are not the same proposition.
+
+   `botanical` (cover-02) is fine ink hatching, no colour, 92 x 70 mm — drawn to
+   be a quiet counterweight to a loud front. `seed` (cover-04) is in full colour
+   and is circular, which makes the back read as a second emblem rather than a
+   counterweight. That is the whole decision and it is Adam's; open question 11
+   already had the back board open, which is why this became selectable instead
+   of one being swapped for the other. Set `backCoverVariant` in
+   content/book.json; build/back-options.html shows both at trim size. */
+export const backCoverVariants = {
+  botanical: 'cover-02-back-botanical',
+  seed: 'cover-04-seed-section',
+};
+
+export const coverBack = (bookData, ctx, variant) => {
+  const key = variant || bookData.backCoverVariant || 'botanical';
+  const art = ctx.image(backCoverVariants[key] || backCoverVariants.botanical);
+  return {
   pair: false,
   pages: [{
     spread: 'cover',
     folio: false,
-    cls: 'cover cover-back',
+    cls: `cover cover-back cover-back--${key}`,
     label: 'back cover',
     /* The line in the hand, then the botanical, then the mark. cover.css sets
        five rows for exactly this order — `auto auto 1fr auto auto` — so the
@@ -140,7 +181,7 @@ export const coverBack = (bookData, ctx) => ({
     html: `
       <div class="cover__inner">
         <p class="cover-back__line hand">${esc(bookData.backCoverLine)}</p>
-        <div class="cover-back__art">${figure(ctx.image('cover-02-back-botanical'), { root: ctx.root })}</div>
+        <div class="cover-back__art">${figure(art, { root: ctx.root })}</div>
         <div class="cover-back__mark">${radiant(15)}</div>
         <div class="cover-back__meta">
           <p class="cover-back__blurb">${esc(bookData.backCoverBlurb)}</p>
@@ -160,7 +201,8 @@ export const coverBack = (bookData, ctx) => ({
         <p class="cover-back__coda">Look closer. Stay curious. Be kind.</p>
       </div>`,
   }],
-});
+  };
+};
 
 /* ---- Front matter -------------------------------------------------------- */
 

@@ -293,6 +293,47 @@ ${preview ? '<script src="scripts/preview.js"></script>' : ''}
   return { screen: doc(true), print: doc(false) };
 }
 
+/* The two back boards at trim size, for open question 11. The front variants
+   have had a page like this since the beginning and the back never did, which
+   is part of why the back board stayed undecided for so long — it could only be
+   compared by rebuilding the wrap twice. */
+function backOptionsDoc(book) {
+  const notes = {
+    botanical: 'cover-02. Ink hatching, no colour, 92 x 70 mm. Drawn to be a quiet counterweight — the back board deliberately not competing with the front.',
+    seed: 'cover-04. Adam’s seed in section, in colour, 92 mm square, 346 dpi here. Ties the boards together by repeating the front’s circle — and by doing so stops being a counterweight and becomes a second emblem.',
+  };
+  const pages = Object.keys(L.backCoverVariants).map((v) => {
+    const p = L.coverBack(book, ctxBase, v).pages[0];
+    return `<section class="page page--verso stage-1 ${p.cls}" data-side="verso"
+              data-spread="back cover · ${v}" data-label="${v}">${p.html}</section>`;
+  });
+  const doc = (preview) => `<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><title>Back cover options — ${esc(book.title)}</title>
+${['geometry.css', ...STYLES].map((h) => `<link rel="stylesheet" href="${h}">`).join('\n')}
+${preview ? '<link rel="stylesheet" href="styles/preview.css">' : ''}
+<style>
+  /* Inside the page, not above it — same reason as cover-options.html. */
+  .cover-note { position:absolute; left:0; right:0; bottom:0; z-index:9;
+    padding:4mm 6mm; background:rgba(20,19,17,.88); color:#C9C1B0;
+    font:400 8pt/1.5 var(--font-note); letter-spacing:.04em; }
+  .cover-note b { color:#F0E9D9; text-transform:uppercase; letter-spacing:.16em; }
+</style></head>
+<body class="${preview ? 'preview is-proof-screen' : 'book'}">
+${pages.join('\n')}
+<script>
+  document.querySelectorAll('.page').forEach((p) => {
+    const n = document.createElement('div');
+    n.className = 'cover-note';
+    n.innerHTML = '<b>' + p.dataset.label + '</b> — ' + ${JSON.stringify(notes)}[p.dataset.label];
+    p.appendChild(n);
+  });
+</script>
+${preview ? '<script src="scripts/preview.js"></script>' : ''}
+</body></html>
+`;
+  return { screen: doc(true), print: doc(false) };
+}
+
 function coverWrapDoc(book) {
   const front = L.coverFront(book, ctxBase).pages[0];
   const back = L.coverBack(book, ctxBase).pages[0];
@@ -354,7 +395,8 @@ ${['geometry.css', ...STYLES].map((h) => `<link rel="stylesheet" href="${h}">`).
   <a href="preview.html"><b>Spread preview</b><span>${count} pp &nbsp;·&nbsp; guides &amp; navigation</span></a>
   <a href="book.html"><b>Print document</b><span>raw pages &nbsp;·&nbsp; no chrome</span></a>
   <a href="cover-wrap.html"><b>Cover wrap</b><span>back | spine | front</span></a>
-  <a href="cover-options.html"><b>Cover options</b><span>three treatments at trim</span></a>
+  <a href="cover-options.html"><b>Cover options</b><span>front treatments at trim</span></a>
+  <a href="back-options.html"><b>Back cover options</b><span>botanical | seed &mdash; question 11</span></a>
   <a href="direction.html"><b>Art direction</b><span>stages · spectrum · voices</span></a>
   <a href="type.html"><b>Type tester</b><span>candidate stacks at trim size</span></a>
   <footer>
@@ -949,12 +991,15 @@ export async function build() {
      plan notes carry characters the book never prints, and embedding a face
      for those would be paying for glyphs nobody sees. */
   const covers = coverOptionsDoc(book);
+  const backs = backOptionsDoc(book);
   const docs = {
     'book.html': document_({ title: `${book.title} — ${book.author}`, body, preview: false }),
     'preview.html': document_({ title: `${book.title} — preview`, body, preview: true }),
     'cover-wrap.html': coverWrapDoc(book),
     'cover-options.html': covers.screen,
     'cover-options-print.html': covers.print,
+    'back-options.html': backs.screen,
+    'back-options-print.html': backs.print,
     'direction.html': directionDoc(book),
     'type.html': typeDoc(book),
     'index.html': indexDoc(book, count),

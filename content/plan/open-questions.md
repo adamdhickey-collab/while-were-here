@@ -285,7 +285,14 @@ served by item 8, which shares a session with item 4.
 
 ---
 
-### 11 · The back-cover botanical, from the editorial pass
+### 11 · The back-cover botanical, from the editorial pass — **DECIDED**
+**Adam's call, 23 Aug 2026: the seed.** `backCoverVariant` is set to `seed` in
+content/book.json and the composed book carries `cover-back--seed`. The back
+board is now his own drawing of a seed in section, and the boards are tied
+together by a circle at both ends. The botanical is not deleted — it stays as
+the other half of the comparison and `botanical` still selects it. The rest of
+this entry is the reasoning, kept because the premise turned out to matter.
+
 The outside read questioned the mycelium drawing on the back cover: the book
 has developed its own visual vocabulary, and ending on something as botanically
 familiar as mushrooms "risks feeling more familiar than the material preceding

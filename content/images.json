@@ -1896,14 +1896,14 @@
       "concept": "An object made by one person for one reader.",
       "purpose": "First entry in the closing catalog. It is a book with a print run of one.",
       "aspect": "4:3",
-      "target": "900 × 660 px (native crop — 320 dpi at 72 mm, far above what a catalogue cell needs)",
+      "target": "3830 × 2808 px (1351 dpi at 72 mm, measuring the width against the slot width as every other entry here does) — camera original. Was 320 dpi.",
       "status": "generated",
       "composite": false,
       "origin": "own photograph",
       "captured": "Jun 20, 2017 2:39:36 pm",
       "capturedSource": "Facebook data export, album HTML \"Taken\" field. The JPEG EXIF was stripped on upload; Facebook kept the capture timestamp in its own metadata and returns it in the export.",
       "selection": "Facebook archive, Photos. Two frames exist of this book; the open one carries the sentence and the hand.",
-      "revision": "Cropped from 960 × 720 to trim table above and left. Not retouched, not upscaled."
+      "revision": "RE-CUT FROM THE CAMERA ORIGINAL 22 Aug 2026, score 3.6, window (161,216)–(3991,3024). NO CHANGE ON THE PAGE: 900 px already gave 320 dpi in a 72 mm catalogue cell. Taken because a master should be the master and this frame may be wanted larger. — earlier note follows. Cropped from 960 × 720 to trim table above and left. Not retouched, not upscaled."
     },
     {
       "id": "handed-02-misery-is",
@@ -1917,14 +1917,14 @@
       "concept": "A surface that held a thought until somebody found it again.",
       "purpose": "Second entry. Made by the author as a child and kept by somebody else for long enough to be photographed in 2021.",
       "aspect": "3:4",
-      "target": "1280 × 1750 px (native crop — 450 dpi at 72 mm)",
+      "target": "2506 × 3426 px (884 dpi at 72 mm, measuring the width against the slot width as every other entry here does) — camera original. Was 451 dpi.",
       "status": "generated",
       "composite": false,
       "origin": "own photograph",
       "captured": "Oct 04, 2021 1:56:29 pm",
       "capturedSource": "Facebook data export, album HTML \"Taken\" field. The JPEG EXIF was stripped on upload; Facebook kept the capture timestamp in its own metadata and returns it in the export.",
       "selection": "Facebook archive, Mobile uploads. Three frames of this book survive — the cover, a crayon page, and the sentence. The cover carries the title and the author’s name, which is what a catalog entry needs.",
-      "revision": "Cropped from 1536 × 2048 to sit the book in its cell. Not retouched, not upscaled. The catalog entry quotes the book's interior sentence exactly, including the child's run-together \"younn\" for \"you in\". An earlier draft silently normalized it to \"you in front\", which is a direct quotation corrected without saying so. Checked against the page at full resolution before printing."
+      "revision": "RE-CUT FROM THE CAMERA ORIGINAL 22 Aug 2026, score 6.2, window (310,242)–(2816,3668). NO CHANGE ON THE PAGE: the placed file already gave 450 dpi at 72 mm. Same reason as love-of-my-life — the master should be the master. — earlier note follows. Cropped from 1536 × 2048 to sit the book in its cell. Not retouched, not upscaled. The catalog entry quotes the book's interior sentence exactly, including the child's run-together \"younn\" for \"you in\". An earlier draft silently normalized it to \"you in front\", which is a direct quotation corrected without saying so. Checked against the page at full resolution before printing."
     },
     {
       "id": "systems-06-geese-path",
@@ -2000,14 +2000,14 @@
       "concept": "A revolution that arrived as a number on a screen and stopped being remarkable.",
       "purpose": "Inset beside “Later generations inherit revolutions as furniture… The machinery disappears behind a reliable action.” This is the machinery, disappeared.",
       "aspect": "4:3",
-      "target": "720 × 540 px (native crop — 199 dpi at 92 mm)",
+      "target": "3024 × 2268 px (834 dpi at 92 mm, measuring the width against the slot width as every other entry here does) — camera original. Was 199 dpi.",
       "status": "generated",
       "composite": false,
       "origin": "own photograph",
       "captured": "Sep 16, 2017 —",
       "capturedSource": "Facebook data export, album HTML \"Taken\" field. The JPEG EXIF was stripped on upload; Facebook kept the capture timestamp in its own metadata and returns it in the export.",
       "selection": "Facebook archive, Photos. Chosen over a weather app showing a nine-minute hail warning, which says the same thing but is a portrait frame the 4:3 inset plate would ruin.",
-      "revision": "Cropped 4:3 from 720 × 960, 34% down, to center the screen. Not retouched, not upscaled."
+      "revision": "RE-CUT FROM THE CAMERA ORIGINAL 22 Aug 2026. Found by scripts/findsource.py, score 14.8 — in the band the script calls \"worth opening\", not \"confident\", and it needed opening: three of the seven candidates in that band were false positives on pale documents. This one was real. IMG_2376.JPG shows the whole iPad on its stand; the placed file was a 720 px crop of just the screen. Re-cut to the same view at 3024 px. THIS ONE MATTERS: 199 dpi was under the 300 a press wants, and it is now 835. — earlier note follows. Cropped 4:3 from 720 × 960, 34% down, to center the screen. Not retouched, not upscaled."
     },
     {
       "id": "before-time-06-thanksgiving",
@@ -2106,14 +2106,14 @@
       "concept": "A layer that was once simply how things worked.",
       "purpose": "Inset beside “Most people who live after a major transition see only the stable layer… A generation living through machine intelligence can still see the joins.” These are a join, still on a shelf.",
       "aspect": "4:3",
-      "target": "960 × 720 px (native, uncropped — 265 dpi at 92 mm)",
+      "target": "4032 × 3024 px (1113 dpi at 92 mm, measuring the width against the slot width as every other entry here does) — camera original. Was 265 dpi.",
       "status": "generated",
       "composite": false,
       "origin": "own photograph",
       "captured": "Nov 22, 2016 7:17:30 pm",
       "capturedSource": "Facebook data export, album HTML \"Taken\" field. The JPEG EXIF was stripped on upload; Facebook kept the capture timestamp in its own metadata and returns it in the export.",
       "selection": "Facebook archive, Photos. The only obsolete-format object in the archive that is photographed as an object rather than in use.",
-      "revision": "Subject corrected 21 Aug 2026: the shelf holds FIVE cassettes, not four. The fifth is the hand-recorded one, and an earlier line counted it as one of the four titled tapes rather than as its own object — so the alt text undercounted the shelf and lost the only home-made thing on it. Not cropped, not retouched, not upscaled. Natively 4:3. The caption makes no claim about whether a player still exists in the house, because the photograph does not show one."
+      "revision": "RE-CUT FROM THE CAMERA ORIGINAL 22 Aug 2026, score 0.4 — the placed 960 px file was a straight downscale of this frame, not a crop, so the whole original is the picture. 265 dpi becomes 1113. 265 was marginally under what a press wants; this closes it. — earlier note follows. Subject corrected 21 Aug 2026: the shelf holds FIVE cassettes, not four. The fifth is the hand-recorded one, and an earlier line counted it as one of the four titled tapes rather than as its own object — so the alt text undercounted the shelf and lost the only home-made thing on it. Not cropped, not retouched, not upscaled. Natively 4:3. The caption makes no claim about whether a player still exists in the house, because the photograph does not show one."
     },
     {
       "id": "here-09-ano-viejo",

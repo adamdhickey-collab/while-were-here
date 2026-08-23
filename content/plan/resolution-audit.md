@@ -155,3 +155,51 @@ re-deciding its composition.
 
 Under-120 dpi plates: **9 → 8**, and the one that moved was the opener of the
 last essay in the book.
+
+---
+
+## Seven candidates, four real, three false positives
+*22 Aug 2026*
+
+`scripts/findsource.py` returned one confident match and seven in the band it
+labels "worth opening" — 12 to 20. **Opening them was the point: three of the
+seven were false positives.**
+
+| placed | candidate | score | verdict |
+| --- | --- | --- | --- |
+| `handed-02-misery-is` | `IMG_5605.HEIC` | 12.1 | real |
+| `privilege-07-grill-screen` | `IMG_2376.JPG` | 14.8 | real |
+| `specimen-03-eagle-owl` | `IMG_3175 (2).HEIC` | 16.3 | **false** — a notebook page |
+| `systems-07-moon-jelly` | `IMG_5477.JPG` | 17.4 | **false** — a blank wall |
+| `privilege-08-vhs-shelf` | `IMG_2058.JPG` | 17.5 | real |
+| `handed-01-love-of-my-life` | `IMG_2254.JPG` | 17.6 | real |
+| `specimen-04-hyacinth-macaw` | `IMG_1221.HEIC` | 18.0 | **false** — a page of handwritten accounts |
+
+**The three failures share a cause worth knowing.** All are pale, low-contrast
+subjects matched against pale, low-contrast documents. Contrast normalisation is
+what lets a re-graded crop match its original, and the price is that it makes
+flat images resemble each other. **A score in the teens on a low-contrast
+subject means very little.** The two specimens were never going to be found
+anyway — the whole of 2014 is eight frames in this export.
+
+**The four real ones, re-cut by finding the window of the original that best
+matches the placed framing.** Two change what prints and two do not, and the
+manifest says which is which:
+
+| image | was | now | matters? |
+| --- | --- | --- | --- |
+| `privilege-07-grill-screen` | 199 dpi | **834** | **yes** — 199 was under the 300 a press wants |
+| `privilege-08-vhs-shelf` | 265 dpi | **1113** | **yes** — 265 was marginally under |
+| `handed-01-love-of-my-life` | 320 dpi | 1351 | no — already adequate |
+| `handed-02-misery-is` | 451 dpi | 884 | no — already adequate |
+
+`privilege-08-vhs-shelf` scored **0.4**: the placed file was a straight downscale
+of the whole frame, not a crop at all.
+
+**One arithmetic error, made and fixed here.** The first pass computed dpi from
+the SHORT edge and wrote 626 and 834 into the manifest. Every other entry in this
+file measures the **width against the slot width** — a landscape inset in a 92 mm
+slot divides its width by 92 mm. Corrected. Worth recording because the numbers
+looked plausible and would have sat there being wrong.
+
+Plates at 300 dpi and above: **64 → 66**.

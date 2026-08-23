@@ -560,7 +560,36 @@ faults here are the same shape as the good ones elsewhere: **a plausible word
 that nobody re-checked against the picture.** "Handwriting" for a wavy line and
 a card described entirely by its text while a photograph sits on half of it.
 
-**Fifty-three images have not been checked this way**, and on this trend most of
+### Seventh batch — and one of them reaches an open question
+
+| image | verdict |
+| --- | --- |
+| `cover-02-back-botanical` | **WRONG, and it matters beyond the alt text — see below.** |
+| `ordinary-days-01a-dog-afternoon-light` | exact, and it is the most detailed claim in the book: sun altitude **61.2°**, azimuth, the window aperture in plan, the light parallelogram dimensioned in millimetres, and the dog marked **OPTIMUM POSITION X: 1325 Y: 190**. Every element is on the plate. |
+| `hand-02-overwriting-diagram` | exact — four lines, within its stated "four or five", at a slight angle. |
+| `material-02-oxidized-metal` | exact. |
+| `ordinary-days-01c2-location-broad` | exact — corner mounts, the pencil note reading *"same path, same water — 17 May"*, and the torn strip of tide table taped alongside. |
+
+**The back-cover botanical is not mushrooms.** Magnified, it is a row of slender
+stemmed plants — thin upright stems with whorls of drooping needle-like leaves,
+one topped by a small ring of spore-like dots — over root systems and a mat of
+fine mycorrhizal threads. **There is no cap or stipe anywhere in the drawing.**
+The manifest called it "a cluster of mushrooms with their mycelium threads".
+
+**That word had travelled.** Open question 11 records an outside editorial read
+saying the back cover ends on "something as botanically familiar as **mushrooms**"
+and asks whether to replace the artwork. The manifest is the likeliest source of
+the word, and the note has been annotated: the drawing that exists is not the
+drawing the critique describes. *This does not settle the question* — "too
+botanically familiar" may hold for plants and roots too, and it is Adam's cover
+decision either way. It only means the decision should be taken about the actual
+artwork.
+
+This is the second time today a wrong description has propagated into a
+downstream judgement — the first was `here-07-ceremony`, where "all small in
+frame" had been written into a consent note that then argued from it.
+
+**Forty-eight images have not been checked this way**, and on this trend most of
 them are fine. Continuing is still worth doing — the crosswalk's missing
 construction site was found in batch three — but the yield is now low enough that
 it should not crowd out other work.

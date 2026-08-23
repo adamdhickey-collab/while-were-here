@@ -291,6 +291,24 @@ has developed its own visual vocabulary, and ending on something as botanically
 familiar as mushrooms "risks feeling more familiar than the material preceding
 it." It is a fair note and it is a cover decision, so it is Adam's.
 
+**The premise is worth re-testing, 22 Aug 2026, before this is decided.** The
+drawing is **not mushrooms.** Magnified, it is a row of slender stemmed plants —
+thin upright stems with whorls of drooping needle-like leaves, one topped by a
+small ring of spore-like dots — over root systems and a mat of fine mycorrhizal
+threads. **There is no cap or stipe anywhere in it.**
+
+`content/images.json` described it as "a cluster of mushrooms with their mycelium
+threads", which is where that word almost certainly came from, and that
+description has now been corrected. Whether the outside reader was looking at
+the drawing or at the manifest line cannot be known from here — "as botanically
+familiar as mushrooms" reads as a comparison and may have been meant as one. But
+the note and the manifest agreed on a thing the artwork does not show, and that
+is worth knowing before the artwork is changed on the strength of it.
+
+**None of which settles it.** "Too botanically familiar" may well still be true
+of plants and roots; it is a cover decision and it is Adam's. The only claim here
+is that the decision should be taken about the drawing that exists.
+
 Options, none urgent: keep it (a quiet counterweight is a legitimate choice);
 replace it with something from the book's own vocabulary — a small survey mark,
 or the front's off-true ring, which would tie the two covers together; or let

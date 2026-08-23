@@ -1135,7 +1135,14 @@ const closing = (spread, essay, ctx) => ({
     {
       spread: 'closing',
       folio: false,
-      cls: `closing closing--plate${spread.quote ? ' closing--quote' : ''}`,
+      /* `closing--plate` goes on every closing recto whether or not a plate
+         exists — it names the slot, not the contents. `closing--onplate` is
+         added only when there really is a photograph, because CSS that
+         lightens type for a dark image must not fire on a bare page. It did:
+         the pull quote closing 'The Beauty of Systems Nobody Designed' was
+         set in paper cream on a cream page at 1.07:1 — a full page of
+         display type nobody could read. */
+      cls: `closing closing--plate${spread.image ? ' closing--onplate' : ''}${spread.quote ? ' closing--quote' : ''}`,
       /* The recto of a closing spread is otherwise blank. An essay that has no
          pull-quote spread of its own puts its sentence here, which is the
          treatment a pull quote wanted anyway — one line alone on a page — at no

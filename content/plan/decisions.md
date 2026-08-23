@@ -1409,3 +1409,35 @@ The general rule, worth keeping: **a check that cannot be mutated is a check
 nobody should trust.** If a new check lives in a browser script, surface it
 through verify's JSON handoff, and add the mutation in the same edit — not the
 next one.
+
+## A pull quote nobody could read — 23 Aug 2026
+
+`closing--plate` goes on every closing recto. It names the SLOT, not the
+contents: the figure inside it renders only when the spread declares an
+`image:`. Two closings declare none.
+
+Earlier today the closing quote over the Año Viejo fire got a scrim and pale
+type, keyed on `.closing--plate.closing--quote`. That selector is true of pages
+with no photograph at all, so the rule fired on a bare cream page and set a full
+page of display type in paper cream on cream. **Measured 1.07:1.** It is the
+pull quote that closes "The Beauty of Systems Nobody Designed" — *Order is
+sometimes a verb performed by many small things* — and it was invisible.
+
+The class now tells the truth: `closing--onplate` is added only when a
+photograph exists, and the three lightening rules key on that.
+
+**The other imageless closing was fine, and knowing why matters.** "The Last
+People Who Remember Waiting" closes at stage 4, where the ground is already
+dark, so its pale quote read at 16.23:1 — not because the rule was right but
+because the page happened to be dark under it. One bug, two pages, and only one
+of them showed it.
+
+Measured after, on rendered pixels rather than computed styles — computed style
+cannot see a photograph behind text, and reported a meaningless 1.00:1 for the
+page that was always fine:
+
+| closing | ground | before | after |
+| --- | --- | --- | --- |
+| Beauty of Systems | cream, no plate | **1.07:1** | **14.27:1** |
+| Last Generation | dark, no plate | 16.23:1 | 16.23:1 |
+| While We're Here | the fire, scrimmed | — | **16.36:1** |

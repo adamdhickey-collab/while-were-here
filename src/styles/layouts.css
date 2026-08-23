@@ -1105,15 +1105,15 @@
    absolute; inset: 0`. It contributes no height, so overflow stays happy, and
    it is one painted box rather than a repeated glyph run, so the text layer
    stays clean. */
-.closing--plate.closing--quote .closing__figure::after {
+.closing--onplate.closing--quote .closing__figure::after {
   content: '';
   position: absolute;
   inset: 0;
   background: radial-gradient(ellipse at 50% 42%, rgba(10, 8, 6, 0.55), rgba(10, 8, 6, 0) 68%);
   pointer-events: none;
 }
-.closing--plate.closing--quote .pull-quote { color: var(--paper); }
-.closing--plate.closing--quote .quote-mark { background: var(--paper); }
+.closing--onplate.closing--quote .pull-quote { color: var(--paper); }
+.closing--onplate.closing--quote .quote-mark { background: var(--paper); }
 .closing--quote .pull-quote { grid-column: 1 / 13; font-size: var(--t-quote); }
 .closing--quote .quote-mark {
   grid-column: 1 / 13;

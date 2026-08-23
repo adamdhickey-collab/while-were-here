@@ -718,4 +718,21 @@ contradict the copy it illustrates.**
 | `ordinary-days-01k-room-survey` | exact — cobalt dimension lines over the window, sofa and table; rust hairlines following the monstera. |
 | `ordinary-days-01i-kitchen-light` | plausible at reproduction size; the individual items on the album leaf were not separately identified. |
 
-**Sixteen unplaced descriptions still have files and have not been checked.**
+### Third batch — three wrong of six, and one contradicted the stylesheet
+
+| image | verdict |
+| --- | --- |
+| `material-03-glass-condensation` | **WRONG, and self-contradictory.** Claimed "droplets holding tiny inverted images of whatever is outside" while also saying the world beyond is "entirely out of focus". At 5× the droplets hold nothing — they are dark rings with pale centres. They could not hold an image: **a background with no detail in it has nothing to invert.** Same shape as `here-04-window-water`; both water descriptions overclaimed optics. |
+| `cover-03-circular-systems` | **WRONG** — "sitting on warm cream paper **with nothing outside it**". There are four small circular vignettes in the cream around the disc and several tiny scale figures along the bottom. **The stylesheet already knew**: `src/styles/cover.css` turns the orb clip off for this artwork *precisely because* it has "inset figures and scale figures outside it in the cream". The manifest and the CSS disagreed, and the CSS was right. |
+| `material-01-linen-weave` | **wrong in one clause** — "lit raking from one side so the weave throws its own shadows". The light is flat and even; nothing casts a shadow. The slubs and thread irregularities it also claims ARE clearly visible at 4×, through tone rather than shadow. |
+| `attention-03-dog-sunlight` | exact — the light patch really is plotted at **six** numbered positions with displacement arrows in cm h⁻¹, and it shares its solar geometry with `ordinary-days-01a` down to **altitude 61.2°**. |
+| `systems-03-termite-section` | exact — parallel floors, connected ramps, chambers. |
+| `part-3-divider-machine-dark` | exact — room-sized computer with a figure for scale, a fingernail chip, a blinking cursor, one line weight on dark. |
+
+**The pattern in this tier is sharp: every DRAWN plate is exact, every
+PHOTOGRAPHIC one has drifted.** The lake survey down to "unexplained stop", the
+eleven numbered muscles, the six light positions, the termite section, the
+machine divider — all precise. The seasons, the shadow card, the condensation and
+the linen — all wrong about what the camera actually did.
+
+**Ten unplaced descriptions still have files and have not been checked.**

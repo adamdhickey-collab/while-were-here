@@ -317,63 +317,6 @@ protected, is in [editorial-pass.md](editorial-pass.md).
 
 ---
 
-### 11 · The dividers announce Stages I, II, IV, V — and never III — **DECIDED**
-**Adam's call, 22 Aug 2026: option 3. The numerals are gone.** The dividers now
-read *Observe the surface · Notice the patterns · Expand the aperture ·
-Integrate what is left* — the imperative in weight, the object light, the rust
-rule unchanged. Nothing is missing now because nothing is being counted, and the
-inversion still arrives unannounced in the middle of Part II, which is the
-effect worth keeping.
-
-`stage` stays in the section frontmatter and still drives each page's tone; it
-simply no longer prints. `src/layouts/index.mjs` carries a note not to
-reintroduce a numeral without first deciding what Part II's divider would say
-about containing two stages.
-
-The reasoning that led here is kept below.
-
-Not a defect. A structural decision that had never been written down, and one a
-careful reader could see.
-
-The book has **five stages and four parts**, so a part divider can only name the
-stage its part opens in. Traced as a reader meets it:
-
-    DIVIDER  Look Again              announces Stage 1   light
-      essay  Most of Life Is a Tuesday        Stage 1   cream
-      essay  The Secret Life of Attention     Stage 1   cream
-    DIVIDER  What Are We?            announces Stage 2   light
-      essay  The Beauty of Systems…           Stage 2   cream
-      essay  The Intelligence Outside…        Stage 3   DARK   ← the page inverts here
-    DIVIDER  The World Is Changing   announces Stage 4   dark
-      …
-
-**The book turns dark in the middle of Part II, with no divider to announce it.**
-`The Intelligence Outside Your Head` runs at Stage III on charcoal, and the last
-label the reader saw said Stage II on cream. Then the next divider says Stage IV.
-
-There is a good case that this is exactly right: the inversion arrives
-unannounced, mid-part, the way the essays keep saying a change actually arrives —
-*"a revolution is easiest to miss when it arrives as a convenience."* Part III's
-divider then names Stage IV having already gone dark, which reads as the book
-catching up with something the reader has been inside for sixteen pages.
-
-There is also a case it is a gap: the labels run I, II, IV, V, and anyone who
-counts finds III missing.
-
-**Three ways, and it is Adam's call:**
-1. **Leave it.** The inversion is better unannounced, and the labels are
-   atmospheric rather than an index.
-2. **Part II's divider names both** — "Stages II–III" — which is honest and
-   costs nothing but gives away the turn before it happens.
-3. **Drop the numerals from the divider labels**, keeping the phrases
-   ("Observe the surface", "Notice the patterns"). Then nothing is missing
-   because nothing is being counted.
-
-Recorded because it is invisible in any single spread and obvious the moment
-somebody reads the four dividers in a row.
-
----
-
 ### 12 · The book prints no sources, and mostly does not need to — **RESOLVED**, 22 Aug 2026
 Surfaced by checking how the margin notes attribute themselves. Not a defect —
 a decision that has never been made explicitly.
@@ -489,6 +432,63 @@ available and both are Adam's:
 The plate as it stands is one of the best-looking things in the book. This is not
 a request to fix it — it is a note that its own metadata over-claims, so nobody
 later reads `purpose` and believes the artwork was verified against it.
+
+---
+
+### 14 · The dividers announce Stages I, II, IV, V — and never III — **DECIDED**
+**Adam's call, 22 Aug 2026: option 3. The numerals are gone.** The dividers now
+read *Observe the surface · Notice the patterns · Expand the aperture ·
+Integrate what is left* — the imperative in weight, the object light, the rust
+rule unchanged. Nothing is missing now because nothing is being counted, and the
+inversion still arrives unannounced in the middle of Part II, which is the
+effect worth keeping.
+
+`stage` stays in the section frontmatter and still drives each page's tone; it
+simply no longer prints. `src/layouts/index.mjs` carries a note not to
+reintroduce a numeral without first deciding what Part II's divider would say
+about containing two stages.
+
+The reasoning that led here is kept below.
+
+Not a defect. A structural decision that had never been written down, and one a
+careful reader could see.
+
+The book has **five stages and four parts**, so a part divider can only name the
+stage its part opens in. Traced as a reader meets it:
+
+    DIVIDER  Look Again              announces Stage 1   light
+      essay  Most of Life Is a Tuesday        Stage 1   cream
+      essay  The Secret Life of Attention     Stage 1   cream
+    DIVIDER  What Are We?            announces Stage 2   light
+      essay  The Beauty of Systems…           Stage 2   cream
+      essay  The Intelligence Outside…        Stage 3   DARK   ← the page inverts here
+    DIVIDER  The World Is Changing   announces Stage 4   dark
+      …
+
+**The book turns dark in the middle of Part II, with no divider to announce it.**
+`The Intelligence Outside Your Head` runs at Stage III on charcoal, and the last
+label the reader saw said Stage II on cream. Then the next divider says Stage IV.
+
+There is a good case that this is exactly right: the inversion arrives
+unannounced, mid-part, the way the essays keep saying a change actually arrives —
+*"a revolution is easiest to miss when it arrives as a convenience."* Part III's
+divider then names Stage IV having already gone dark, which reads as the book
+catching up with something the reader has been inside for sixteen pages.
+
+There is also a case it is a gap: the labels run I, II, IV, V, and anyone who
+counts finds III missing.
+
+**Three ways, and it is Adam's call:**
+1. **Leave it.** The inversion is better unannounced, and the labels are
+   atmospheric rather than an index.
+2. **Part II's divider names both** — "Stages II–III" — which is honest and
+   costs nothing but gives away the turn before it happens.
+3. **Drop the numerals from the divider labels**, keeping the phrases
+   ("Observe the surface", "Notice the patterns"). Then nothing is missing
+   because nothing is being counted.
+
+Recorded because it is invisible in any single spread and obvious the moment
+somebody reads the four dividers in a row.
 
 ---
 

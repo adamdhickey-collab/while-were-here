@@ -125,6 +125,15 @@ const MUTATIONS = [
     to:   'Technology changes what can happen inside that interval. ' + 'The interval widens. '.repeat(120),
     expect: 'copy overflow', why: 'a paragraph grown past its slot' },
 
+  /* A focal name nobody styles. `focus:` is an open vocabulary at the point of
+     use and a closed one at the point of definition, and the gap between them
+     is silent: an unstyled class crops to the middle exactly as if the line had
+     never been written. */
+  { id: 'focus-vocabulary', file: 'content/essays/why-humans-need-pilgrimages.md',
+    from: '    focus: low', to: '    focus: middle',
+    expect: 'every focus: names a focal class that exists',
+    why: 'a focus: naming a focal class that does not exist' },
+
   { id: 'contents-drift', file: 'content/contents.json',
     from: 'Most of Life Is a Tuesday', to: 'Most of Life Is a Wednesday',
     expect: 'the contents page agrees', why: 'a contents title that no longer matches the essay' },

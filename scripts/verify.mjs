@@ -661,6 +661,34 @@ const unreached = facts.filter((f) => f.status === 'verified').filter((f) => {
   return w.length >= 4 && w.filter((x) => printedLower.includes(x)).length / w.length < 0.5;
 });
 
+/* Every `focus:` a spread declares must be a focal class that exists.
+
+   `focus:` was added on 23 Aug 2026 so a spread can say which band of a source
+   to keep when the plate and the slot are different shapes. The layout turns
+   `focus: low` into `figure--focus-low`, and CSS defines three of those. Write
+   `focus: middle` and you get a class nobody styles: no error, no warning, and
+   a page that silently crops to the middle exactly as if you had said nothing.
+
+   That is the failure this repository keeps meeting — a rule written down and
+   not applied, a property asked for and not supported. `-webkit-hyphenate-limit-
+   lines` was one, the display-weight list was two more. A vocabulary that is
+   open at the point of use and closed at the point of definition has to be
+   checked where the two meet. */
+const FOCUS_RE = /^\s*focus:\s*([a-z-]+)\s*$/gm;
+const focusCss = fs.readFileSync(P('src/styles/layouts.css'), 'utf8');
+const focusDefined = new Set([...focusCss.matchAll(/figure--focus-([a-z-]+)/g)].map((m) => m[1]));
+const focusUsed = [];
+for (const f of fs.readdirSync(P('content/essays'))) {
+  if (!f.endsWith('.md')) continue;
+  const src = fs.readFileSync(P('content/essays', f), 'utf8');
+  for (const m of src.matchAll(FOCUS_RE)) focusUsed.push({ file: f, value: m[1] });
+}
+const focusBad = focusUsed.filter((u) => !focusDefined.has(u.value));
+check('every focus: names a focal class that exists', focusBad.length === 0,
+  focusBad.length
+    ? `${focusBad.map((u) => `${u.file}: focus: ${u.value}`).join(', ')} — defined: ${[...focusDefined].join(', ')}`
+    : `${focusUsed.length} in use, ${focusDefined.size} defined (${[...focusDefined].join(', ')})`);
+
 const pad = (s, n) => (s + ' '.repeat(n)).slice(0, n);
 console.log('');
 let failed = 0;

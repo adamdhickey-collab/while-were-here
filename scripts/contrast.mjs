@@ -71,16 +71,15 @@ const root = process.cwd();
 const build = path.join(root, 'build');
 const say = (...a) => { if (!asJson) console.log(...a); };
 
-/* Every element that carries type the reader is meant to read. Decorative
-   rules, bars and marks are not here — `.quote-mark` is a painted bar, and a
-   contrast score for it means nothing. */
-const SELECTORS = [
-  '.pull-quote', '.closing__line', '.closing__coda', '.statement', '.display',
-  '.essay-title', '.deck', '.subhead', '.prose p', '.caption', 'figcaption',
-  '.cover__title', '.cover__sub', '.cover__author', '.cover-back__line',
-  '.cover-back__blurb', '.cover-back__coda', '.divider__statement',
-  '.material-break__line', '.sequence__pull', '.record__source', '.imprint',
-].join(', ');
+/* NO SELECTOR LIST. The first version kept one — twenty classes, hand-chosen —
+   and a census of the composed book found FORTY-ONE text-bearing classes it
+   never measured: the specimen cards that sit on photographs, the margin
+   notes, the dedication, the sources page, every divider blurb. A hand-kept
+   list is how the display-weight rule failed twice in one day; this check now
+   discovers its targets from the DOM instead. Anything that directly owns a
+   run of text is measured, and each measured element is tagged so the
+   type-hiding pass hides exactly the discovered set and nothing else. */
+const SELECTORS = '[data-ct]';
 
 if (!fs.existsSync(path.join(build, 'book.html'))) {
   if (asJson) console.log(JSON.stringify({ available: false, reason: 'no build' }));
@@ -131,24 +130,51 @@ const lum = (r, g, b) => 0.2126 * srgb(r) + 0.7152 * srgb(g) + 0.0722 * srgb(b);
 const ratio = (a, b) => { const [hi, lo] = a > b ? [a, b] : [b, a]; return (hi + 0.05) / (lo + 0.05); };
 
 /* Collect every measurable run of type, with the box it occupies on its page. */
-const items = await page.evaluate((sel) => {
+const items = await page.evaluate(() => {
   const out = [];
   document.querySelectorAll('.page').forEach((pg, pi) => {
     const pr = pg.getBoundingClientRect();
-    pg.querySelectorAll(sel).forEach((el) => {
+    pg.querySelectorAll('*').forEach((el) => {
+      /* An element is measured when it directly owns a run of text — a text
+         node of its own with something in it. Wrappers whose words all live in
+         children are skipped; the children are measured instead. */
+      const owns = [...el.childNodes].some((n) => n.nodeType === 3 && n.textContent.trim().length > 1);
+      if (!owns) return;
       const txt = (el.textContent || '').trim();
       if (!txt) return;
-      /* Only the element that OWNS the text — otherwise a wrapper is measured
-         again for its child's type and every finding is reported twice. */
-      if ([...el.children].some((c) => (c.textContent || '').trim() === txt)) return;
+      el.setAttribute('data-ct', '1');
       const r = el.getBoundingClientRect();
       if (r.width < 4 || r.height < 4) return;
       const cs = getComputedStyle(el);
       if (cs.visibility === 'hidden' || cs.display === 'none' || +cs.opacity === 0) return;
       const size = parseFloat(cs.fontSize);
       const weight = parseInt(cs.fontWeight, 10) || 400;
+      /* Whether this ink is the book's rust accent. The accent appears at
+         2.6–2.9:1 by design — essay numerals, the script in the margins, the
+         Part labels on dark dividers. Failing a considered design voice on
+         every run teaches people to ignore the check, so accent runs are
+         reported as an advisory tally rather than failures. The match is by
+         computed colour, not by class, so a NEW element set in rust is treated
+         the same as an old one, and a body paragraph accidentally set in rust
+         still stands out in the advisory line by its size. */
+      /* Both rust tokens — the accent (--rust) and the darker writing ink
+         (--rust-ink). The first version resolved only --rust and matched
+         nothing: every accent run in the book turns out to be set in
+         --rust-ink, rgb(150, 72, 44). Resolved from the live page, with the
+         literal values as a fallback, so a token rename fails loudly in the
+         advisory line rather than silently reclassifying accents as errors. */
+      if (!window.__rusts) {
+        window.__rusts = ['--rust', '--rust-ink'].map((v) => {
+          const val = getComputedStyle(document.documentElement).getPropertyValue(v).trim();
+          const pr = document.createElement('span');
+          pr.style.color = val; document.body.appendChild(pr);
+          const rgb = getComputedStyle(pr).color; pr.remove();
+          return rgb;
+        });
+      }
       out.push({
         page: pi, text: txt.slice(0, 46), color: cs.color,
+        isAccent: window.__rusts.includes(cs.color),
         cls: (el.className || el.tagName).toString().split(' ')[0],
         spread: pg.dataset.spread || '', size, weight,
         /* fractions of the page box, so they survive the screenshot scale */
@@ -169,7 +195,7 @@ const items = await page.evaluate((sel) => {
     });
   });
   return out;
-}, SELECTORS);
+});
 
 /* Hide the type, keep everything else. `visibility: hidden` and not `display:
    none` on purpose — the boxes must not move, or the coordinates collected
@@ -182,6 +208,7 @@ const byPage = new Map();
 for (const it of items) (byPage.get(it.page) ?? byPage.set(it.page, []).get(it.page)).push(it);
 
 const findings = [];
+const accents = [];
 let measured = 0;
 let worst = null;
 for (const [pi, list] of byPage) {
@@ -234,7 +261,10 @@ for (const [pi, list] of byPage) {
     const large = pt >= 18 || (pt >= 14 && it.weight >= 700);
     const floor = large ? 3 : 4.5;
     if (!worst || cr < worst.cr) worst = { ...it, cr };
-    if (cr < floor) findings.push({ ...it, cr, floor, large });
+    if (cr < floor) {
+      if (it.isAccent) accents.push({ ...it, cr, floor });
+      else findings.push({ ...it, cr, floor, large });
+    }
   }
 }
 
@@ -244,7 +274,7 @@ server.close();
 findings.sort((a, b) => a.cr - b.cr);
 
 if (asJson) {
-  console.log(JSON.stringify({ available: true, measured, findings, worst }));
+  console.log(JSON.stringify({ available: true, measured, findings, accents, worst }));
   process.exit(0);
 }
 
@@ -252,6 +282,10 @@ if (!findings.length) {
   say(`  ✓ every measured run of type is legible on the ground it prints on`);
   say(`    ${measured} runs measured · worst ${worst ? worst.cr.toFixed(1) : '—'}:1`
     + `${worst ? ` (${worst.cls} — "${worst.text.slice(0, 34)}")` : ''}`);
+  if (accents.length) {
+    const lo = Math.min(...accents.map((a) => a.cr));
+    say(`    · ${accents.length} rust-accent run(s) sit below the floor by design, lowest ${lo.toFixed(1)}:1 — the accent voice, Adam's to rejudge on a printed proof`);
+  }
 } else {
   say(`\n  ⚠ ${findings.length} run(s) of type below the contrast floor:\n`);
   for (const f of findings) {

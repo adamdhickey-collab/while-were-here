@@ -18,3 +18,34 @@
 generated or original and need no third-party attribution. Original diagrams are
 drawn in code — see `src/layouts/diagrams.mjs`.
 
+
+## The licence URI, added 23 Aug 2026
+
+The imprint already existed because of one image. `systems-05-physarum-network`
+is **CC BY 2.0**, and that licence requires attribution wherever the work is
+distributed — the comment above the imprint block in `src/layouts/index.mjs`
+says as much, and before that block existed the book printed no attribution
+anywhere.
+
+Read again with the licence text open, the credit was complete in every respect
+but one. It named the creator (Rob Cruickshank), gave the title, said where it
+came from, declared the modifications, and named the licence. **What it did not
+carry was the licence itself.** CC BY 2.0 §4(a) asks that a copy of the licence,
+or its URI, travel with every copy of the work. Naming a licence is not the same
+as supplying it, and nothing in the book pointed at the terms:
+`creativecommons.org` appeared zero times in 132 pages.
+
+It now prints after the licence name, from a new `licenseUri` field:
+
+> physarum network — Rob Cruickshank, "Slime mould (P. polycephalum)", via
+> Wikimedia Commons. Cropped, masked, composited and color-graded for this
+> book · CC BY 2.0 · creativecommons.org/licenses/by/2.0/
+
+**Only where the licence asks for it.** The other four placed archival images
+are Pexels, Unsplash and CC0, none of which require attribution at all. They
+carry no `licenseUri` and render none. A URI beside a licence that never asked
+for one is noise on the emptiest page in the book.
+
+Checked after: no overflow, and the credit still sits on the title spread's
+verso. This matters more if open question 3 is ever answered "sold" — but CC BY
+does not distinguish, and a gift is still distribution.

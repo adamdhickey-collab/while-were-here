@@ -387,6 +387,14 @@ export const imprint = (bookData, images = []) => {
 export const creditLine = (i) =>
   `<li><span class="imprint__what">${esc(creditLabel(i.id))}</span> — ${esc(i.credit || '')}`
   + (i.license ? `&nbsp;·&nbsp;<span class="imprint__lic">${esc(i.license)}</span>` : '')
+  /* The licence URI, for the one licence that asks for it. CC BY 2.0 §4a
+     says a copy of the licence, or its URI, travels with every copy of the
+     work — naming the licence is not the same as supplying it. Pexels,
+     Unsplash and CC0 require no attribution at all, so they carry no URI
+     and this renders nothing for them. Only set `licenseUri` where the
+     licence actually requires it; a URI beside a licence that does not ask
+     for one is noise on the emptiest page in the book. */
+  + (i.licenseUri ? `&nbsp;·&nbsp;<span class="imprint__uri">${esc(i.licenseUri)}</span>` : '')
   + '</li>';
 
 export const titleSpread = (bookData, images = []) => ({

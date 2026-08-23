@@ -701,7 +701,8 @@
       "origin": "archive",
       "source": "https://commons.wikimedia.org/wiki/File:Slime_mould_(P._polycephalum).jpg",
       "license": "CC BY 2.0",
-      "credit": "Rob Cruickshank, “Slime mould (P. polycephalum)”, via Wikimedia Commons. Cropped, masked, composited and color-graded for this book"
+      "credit": "Rob Cruickshank, “Slime mould (P. polycephalum)”, via Wikimedia Commons. Cropped, masked, composited and color-graded for this book",
+      "licenseUri": "creativecommons.org/licenses/by/2.0/"
     },
     {
       "id": "systems-03-termite-section",

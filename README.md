@@ -227,11 +227,15 @@ The book is a progression, not a collection: observe, notice, understand,
 expand, integrate. A stage is declared once — `stage: 3` on a section or an
 essay — and every page inside it inherits its ground, the ink that survives on
 that ground, its three accents, and how dense the annotation layer may become.
-Stages III and IV invert to a dark page.
+Stages III and IV sink into deep teal and ink-navy — chromatic depth, not
+darkness.
 
 A spread never names a colour. It uses `--accent-1/2/3` and the act decides what
 those resolve to, so re-pacing the book is a frontmatter change, not a redesign.
-Full direction in [`content/plan/art-direction.md`](content/plan/art-direction.md).
+Full direction in [`docs/art-direction.md`](docs/art-direction.md) (final,
+2026-08 — stages III/IV now sink into deep teal and ink-navy rather than
+inverting to charcoal); the earlier locked direction stays at
+[`content/plan/art-direction.md`](content/plan/art-direction.md) as history.
 
 ## Typography
 
@@ -272,9 +276,9 @@ embeds exactly these faces:
 | Voice | Board specifies | Currently | Why |
 | --- | --- | --- | --- |
 | Display | GT Super Bold | **Falutin Title** (purchased), Fraunces fallback | A Didone display cut with teardrop terminals, 7 weights. Licensed from Plattner Type and **not in this repo** — see [LICENSING.md](LICENSING.md). Builds without it fall back to Fraunces automatically. |
-| Body | Söhne Buch | **Hanken Grotesk** | A humanist grotesque, the warmest of the four candidates — calligraphic residue in the letterforms. Chosen 20 Aug 2026 for friendliness over Familjen Grotesk, which stays in the type tester for comparison. Body copy re-measured at 65 characters per line after the swap. |
+| Body | Söhne Buch | **Source Sans 3** | Named by the final art-direction brief (2026-08), replacing Hanken Grotesk, which moves to the type-tester candidates. Measure re-probed after the swap: single-column cap 60ch ≈ 69 characters per line. |
 | Annotations | GT America Mono | **IBM Plex Mono** | Neo-grotesque mono, warmer than Roboto Mono. |
-| Hand | script accent | **Caveat** | Natural handwriting, closest to the board's sample. |
+| Hand | script accent | **Kalam** | The face the final brief suggests for the temporary hand. Replaced Caveat 2026-08. |
 | CJK | — | **Noto Sans JP / KR** | Last resort in every stack, for the Korean, Japanese and Chinese entries in the advertiser record. Only the unicode-range subsets carrying characters the book prints are committed, in `fonts-cjk/` — 27 characters, 131 KB, against 130 MB for the two packages. Without them the print path writes those glyphs as Type 3 outlines or drops them. Regenerate with `npm run fonts:cjk`. |
 
 ### Moving to Adobe Fonts

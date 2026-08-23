@@ -1,8 +1,12 @@
 # Art direction — Field Notes & Hidden Systems
 
-**Status: locked.** Implemented in `src/styles/tokens.css` (spectrum + acts),
-`src/styles/typography.css` (third voice), `src/styles/placeholders.css`
-(handmade layer). Built at true trim size in `build/direction.html`.
+**Status: superseded 2026-08 by [`docs/art-direction.md`](../../docs/art-direction.md)**
+(the final visual direction). This document stays as the record of how the
+direction was reached; its measured lessons (Stage I quiet-in-layout, the
+rust-as-type failure, expanded-perception-not-psychedelia) carry forward
+unchanged. Where the two disagree — most visibly the Stage III/IV grounds,
+which are now deep teal and ink-navy rather than charcoal and void — the new
+document wins.
 
 > Design a 300 mm square hardcover art book that begins as a quiet observational
 > field journal and gradually evolves into a vibrant, immersive exploration of

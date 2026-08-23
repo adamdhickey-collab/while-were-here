@@ -372,31 +372,36 @@ ${['geometry.css', ...STYLES].map((h) => `<link rel="stylesheet" href="${h}">`).
    Not part of the book — a working document that happens to be a 12" object. */
 
 const ACTS = [
-  { n: 1, name: 'Calm · observational',  ground: 'var(--paper)',      cue: 'Cream paper, soft light, sparse photography, restrained annotation, a great deal of breathing room.' },
-  { n: 2, name: 'Discovery · hidden systems', ground: 'var(--bone)',  cue: 'Diagrams, overlays, specimens, cutaways. More colour. The book opens up and starts showing its work.' },
-  { n: 3, name: 'Perceptual expansion', ground: 'var(--paper-deep)',  cue: 'Deeper contrast, spectral colour, larger spreads, bolder type, layered image systems. The most adventurous zone.' },
-  { n: 4, name: 'Return · integration', ground: 'var(--paper)',       cue: 'Less density, calmer pages, fewer overlays, warmer tones, emotionally direct photography. The exhale.' },
+  { n: 1, name: 'Observe · calm, observational', ground: 'var(--paper)', cue: 'Warm cream, daylight photography, quiet pages carrying full-colour evidence. Wide margins, one idea at a time.' },
+  { n: 2, name: 'Notice · discovery', ground: 'var(--bone)', cue: 'Specimen plates multiply. Brighter teal, cobalt and amber arrive; diagrams gain keys and callouts.' },
+  { n: 3, name: 'Understand · enter the systems', ground: 'var(--teal-deep)', cue: 'The page sinks into deep water — chromatic depth, not night — and the diagrams start glowing.' },
+  { n: 4, name: 'Expand · the peak', ground: 'var(--navy)', cue: 'Spectral colour on ink-navy: magenta, violet, sparing acid. Immersive full bleeds, the boldest type.' },
+  { n: 5, name: 'Integrate · the return', ground: 'var(--paper)', cue: 'Back to cream with dusk pink, lake blue and botanical green. The same world, seen with more in it.' },
 ];
 
 const SPECTRUM = [
-  ['Warm paper', '--paper'], ['Bone', '--bone'], ['Charcoal', '--ink'],
-  ['Moss', '--moss'], ['Algae', '--algae'], ['Lake', '--lake'],
-  ['Oxidised rust', '--rust'], ['Amber', '--amber'], ['Bioluminescent teal', '--biolume'],
-  ['Ultraviolet', '--ultraviolet'], ['Coral', '--coral'], ['Signal orange', '--signal'],
-  ['Acid', '--acid'],
+  ['Warm paper', '--paper'], ['Bone', '--bone'], ['Ink charcoal', '--ink'],
+  ['Moss', '--moss'], ['Sage', '--sage'], ['Lake teal', '--biolume'],
+  ['Lake blue', '--lake'], ['Cobalt', '--cobalt'], ['Amber', '--amber'],
+  ['Orange', '--orange'], ['Coral', '--coral'], ['Magenta', '--magenta'],
+  ['Violet', '--ultraviolet'], ['Acid', '--acid'], ['Oxidised rust', '--rust'],
+  ['Dusk pink', '--dusk'], ['Deep teal', '--teal-deep'], ['Ink navy', '--navy'],
 ];
 
 function directionDoc(book) {
   const pg = (side, act, body) =>
-    `<section class="page page--${side} act-${act} dir" data-side="${side}" data-spread="direction" data-label="direction">${body}</section>`;
+    `<section class="page page--${side} stage-${act} dir" data-side="${side}" data-spread="direction" data-label="direction">${body}</section>`;
 
+  /* The stage class is scoped to the swatches only: on the whole row it would
+     also flip --ink to the dark-ground light value, and the row's text sits on
+     cream — acts 3 and 4 rendered with invisible labels until this was split. */
   const actRow = (a) => `
-    <div class="dir-act act-${a.n}">
-      <div class="dir-act__chip" style="background:${a.ground}"><span>${a.n}</span></div>
+    <div class="dir-act">
+      <div class="dir-act__chip stage-${a.n}" style="background:${a.ground}"><span>${a.n}</span></div>
       <div class="dir-act__body">
         <p class="label"><b>Act ${a.n}</b> ${esc(a.name)}</p>
         <p class="caption">${esc(a.cue)}</p>
-        <div class="dir-act__accents">
+        <div class="dir-act__accents stage-${a.n}">
           <i style="background:var(--accent-1)"></i>
           <i style="background:var(--accent-2)"></i>
           <i style="background:var(--accent-3)"></i>
@@ -407,18 +412,19 @@ function directionDoc(book) {
   const pages = [
     pg('verso', 1, `
       <div class="page__block dir-open">
-        <p class="label"><b>Art direction</b> locked</p>
-        <h1 class="essay-title">Field Notes &amp;<br>Hidden Systems</h1>
-        <p class="deck">A 300 mm square hardcover that begins as a quiet observational field
-          journal and opens, act by act, into a vivid exploration of hidden systems, perception
-          and ordinary life.</p>
+        <p class="label"><b>Art direction</b> final · docs/art-direction.md</p>
+        <h1 class="essay-title">A Vibrant, Handmade,<br>Scientific Adventure</h1>
+        <p class="deck">A 12&Prime; square hardcover that begins as a bright observational field
+          guide and opens, stage by stage, into an immersive exploration of the hidden systems
+          of ordinary life — then returns to the same world with changed attention.</p>
         <p class="specimen">Natural-history elegance · editorial collage · spectral, ecological
-          and microscopic colour. Handmade, curious, alive. Never corporate, never cliché.</p>
+          and microscopic colour. Vibrant, tactile, curious, alive. Never dark, never corporate,
+          never cliché psychedelic.</p>
       </div>`),
 
     pg('recto', 1, `
       <div class="page__block dir-block">
-        <p class="label"><b>Fig. 1</b> The progression</p>
+        <p class="label"><b>Fig. 1</b> The progression — cream &rarr; teal &rarr; navy &rarr; cream</p>
         <div class="dir-acts">${ACTS.map(actRow).join('')}</div>
         <p class="specimen dir-foot">An act is declared once, on a section or an essay.
           Every page inside it inherits its ground, its three accents and how dense the
@@ -465,7 +471,7 @@ function directionDoc(book) {
   ];
 
   return `<!DOCTYPE html>
-<html lang="en"><head><meta charset="utf-8"><title>Art direction — Field Notes &amp; Hidden Systems</title>
+<html lang="en"><head><meta charset="utf-8"><title>Art direction — final visual direction</title>
 ${['geometry.css', ...STYLES].map((h) => `<link rel="stylesheet" href="${h}">`).join('\n')}
 <link rel="stylesheet" href="styles/preview.css">
 </head>
@@ -622,31 +628,30 @@ const FONTS = [
     family: 'Fraunces', weight: '600', style: 'normal' },
   { file: '@fontsource/fraunces/files/fraunces-latin-700-normal.woff2',
     family: 'Fraunces', weight: '700', style: 'normal' },
-  /* Hanken Grotesk — the body voice from 20 Aug 2026. The warmest of the four
-     candidates, chosen for exactly that: humanist skeleton, calligraphic
-     residue in the letterforms. Familjen moves down to the candidates so the
-     comparison stays runnable in the type tester. */
-  { file: '@fontsource/hanken-grotesk/files/hanken-grotesk-latin-400-normal.woff2',
-    family: 'Hanken Grotesk', weight: '400', style: 'normal' },
-  { file: '@fontsource/hanken-grotesk/files/hanken-grotesk-latin-400-italic.woff2',
-    family: 'Hanken Grotesk', weight: '400', style: 'italic' },
-  { file: '@fontsource/hanken-grotesk/files/hanken-grotesk-latin-500-normal.woff2',
-    family: 'Hanken Grotesk', weight: '500', style: 'normal' },
-  { file: '@fontsource/hanken-grotesk/files/hanken-grotesk-latin-600-normal.woff2',
-    family: 'Hanken Grotesk', weight: '600', style: 'normal' },
-  { file: '@fontsource/hanken-grotesk/files/hanken-grotesk-latin-700-normal.woff2',
-    family: 'Hanken Grotesk', weight: '700', style: 'normal' },
+  /* Source Sans 3 — the body voice named by the final art-direction brief
+     (2026-08), replacing Hanken Grotesk. Hanken moves down to the candidates
+     so the comparison stays runnable in the type tester. */
+  { file: '@fontsource/source-sans-3/files/source-sans-3-latin-400-normal.woff2',
+    family: 'Source Sans 3', weight: '400', style: 'normal' },
+  { file: '@fontsource/source-sans-3/files/source-sans-3-latin-400-italic.woff2',
+    family: 'Source Sans 3', weight: '400', style: 'italic' },
+  { file: '@fontsource/source-sans-3/files/source-sans-3-latin-500-normal.woff2',
+    family: 'Source Sans 3', weight: '500', style: 'normal' },
+  { file: '@fontsource/source-sans-3/files/source-sans-3-latin-600-normal.woff2',
+    family: 'Source Sans 3', weight: '600', style: 'normal' },
+  { file: '@fontsource/source-sans-3/files/source-sans-3-latin-700-normal.woff2',
+    family: 'Source Sans 3', weight: '700', style: 'normal' },
   { file: '@fontsource/ibm-plex-mono/files/ibm-plex-mono-latin-400-normal.woff2',
     family: 'IBM Plex Mono', weight: '400', style: 'normal' },
-  { file: '@fontsource/caveat/files/caveat-latin-500-normal.woff2',
-    family: 'Caveat', weight: '500', style: 'normal' },
+  { file: '@fontsource/kalam/files/kalam-latin-400-normal.woff2',
+    family: 'Kalam', weight: '400', style: 'normal' },
 ];
 
 /* Body-face candidates, loaded for the type tester only so they can be judged
    at trim size against real copy rather than from a specimen card. Static
    instances, for the same reason as everything else here: a variable instance
    is written into the PDF as Type 3 glyph procedures. Delete the ones that lose. */
-const CANDIDATES = ['archivo', 'schibsted-grotesk', 'familjen-grotesk', 'epilogue']
+const CANDIDATES = ['archivo', 'schibsted-grotesk', 'familjen-grotesk', 'epilogue', 'hanken-grotesk']
   .flatMap((name) => [
     ['400', 'normal'], ['400', 'italic'], ['500', 'normal'], ['600', 'normal'],
   ].map(([weight, style]) => ({

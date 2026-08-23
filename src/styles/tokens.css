@@ -5,16 +5,23 @@
 
 :root {
   /* ---- Grounds ----------------------------------------------------------- */
-  --paper:        #F3EFE5;  /* warm paper                                    */
-  --bone:         #EDE7DA;  /* the ground Act 2 sits on                      */
-  --paper-deep:   #EAE4D6;  /* a half-tone down, for panels and interludes   */
-  --paper-pale:   #F8F5EE;  /* lifted paper, for quiet spreads               */
-  --linen:        #EFE9DC;  /* cover field                                   */
-  --charcoal:     #1C1E20;  /* the ground Stage III inverts to               */
-  --void:         #14111C;  /* Stage IV, a shade cooler and deeper           */
+  --paper:        #F4ECD9;  /* warm cream — the brief's paper-warm           */
+  --bone:         #EEE3CB;  /* the ground Stage II sits on, a half-tone down */
+  --paper-deep:   #EADFC6;  /* another half-tone, for panels and interludes  */
+  --paper-pale:   #FAF6EC;  /* lifted paper — the brief's paper-light        */
+  --linen:        #EFE9DC;  /* cover field (decided with the bleed cover —
+                               leave unless the cover is re-judged on proof) */
+  --teal-deep:    #0C3D43;  /* the ground Stage III sinks into: lake-teal
+                               carried down, not black. The inversion keeps
+                               its drama and loses the gloom — the page reads
+                               as deep water, not as night.                  */
+  --navy:         #112E42;  /* Stage IV — the brief's ink-navy as a ground.
+                               The most vivid accents sit on this.           */
+  --charcoal:     #1C1E20;  /* retired as a ground; kept for reference       */
+  --void:         #14111C;  /* retired as a ground; kept for reference       */
 
   /* ---- Ink --------------------------------------------------------------- */
-  --ink:          #191919;  /* near-black                                    */
+  --ink:          #1D282B;  /* rich charcoal, faintly blue — never pure black */
   --ink-soft:     #4A4741;  /* secondary text                                */
   --ink-faint:    #6A6559;  /* captions, folios, metadata                    */
                             /* 4.69:1 on paper. Was #8C8679 at 3.15:1, which
@@ -31,23 +38,28 @@
      A field-guide palette, not a rainbow: stained slides, algae blooms,
      topographic and thermal charts, spectral bands, risograph overprints.
      Which of these an act may use is decided below, not here.               */
-  --rust:         #A95738;  /* oxidised iron — marks, rules, swatches         */
+  --rust:         #A95534;  /* oxidised iron — marks, rules, swatches         */
   --rust-ink:     #96482C;  /* the same colour, darkened for TEXT. Rust at its
-                               full value is 4.23:1 on linen and 4.45:1 on
-                               paper: it reads as an accent and fails as type.
-                               Use --rust for anything that is not read. */
-  --moss:         #68735B;
-  --algae:        #4E6B4A;
-  --cobalt:       #536D8E;
-  --lake:         #3E6B87;
-  --amber:        #C8862F;
-  --biolume:      #2AA79B;  /* bioluminescent teal                           */
-  --ultraviolet:  #6B4E9B;
-  --coral:        #E8705A;
+                               full value is 4.30:1 on linen and 4.42:1 on the
+                               new paper: it reads as an accent and fails as
+                               type. Use --rust for anything that is not read.
+                               (Re-measured against the 2026-08 spectrum.) */
+  --moss:         #7F9956;
+  --sage:         #A8C4A1;  /* the quiet green — washes, botanical fills     */
+  --algae:        #4E6B4A;  /* the deep green — kept for depth work          */
+  --cobalt:       #2C63A5;
+  --lake:         #197FAE;  /* the brief's lake-blue                         */
+  --amber:        #EDA824;
+  --orange:       #F47621;  /* a colour now, not only an event               */
+  --biolume:      #148A8C;  /* the brief's lake-teal — luminous on dark      */
+  --ultraviolet:  #7955A1;  /* the brief's violet                            */
+  --coral:        #F26355;
   --signal:       #E44E2D;  /* signal orange — an event, not a colour        */
-  --acid:         #B5C334;  /* acidic yellow-green                           */
-  --magenta:      #CE4A82;  /* the hot note in Expansion                     */
+  --acid:         #A6B922;  /* acidic yellow-green — sparingly, per brief    */
+  --magenta:      #CF3E7E;  /* the hot note in Expansion. 3.1:1 on navy —
+                               display and marks only, never a small label   */
   --lavender:     #9A93D6;
+  --dusk:         #E6AAA0;  /* dusk pink — the Integration accent            */
 
   /* ---- Stage defaults (Stage I) ------------------------------------------
      Every page carries a stage class. The stage sets the ground, the ink that
@@ -73,13 +85,13 @@
   /* Resolved by build/fonts.css, which knows whether the licensed display face
      is present on this machine. The fallback here is what a fresh clone gets. */
   --font-display: var(--display-family, "Fraunces", "Hoefler Text", "Noto Sans JP", "Noto Sans KR", serif);
-  --font-text:    "Hanken Grotesk", "Avenir Next", "Helvetica Neue", Helvetica, "Noto Sans JP", "Noto Sans KR", sans-serif;
+  --font-text:    "Source Sans 3", "Avenir Next", "Helvetica Neue", Helvetica, "Noto Sans JP", "Noto Sans KR", sans-serif;
   /* The third voice: specimen labels, diagram callouts, field notations.
      This is where the book gets its personality. */
   --font-note:    "IBM Plex Mono", Menlo, "SF Mono", "Noto Sans JP", "Noto Sans KR", monospace;
   /* The fourth voice: field-note script. Used for a hand in the margin, never
      for anything the reader has to read. */
-  --font-hand:    "Caveat", "Bradley Hand", Noteworthy, "Noto Sans JP", "Noto Sans KR", cursive;
+  --font-hand:    "Kalam", "Bradley Hand", Noteworthy, "Noto Sans JP", "Noto Sans KR", cursive;
 
   /* The two Noto names above are the last resort in every stack. The book
      prints a verbatim data export with Korean, Japanese and Chinese entries in
@@ -177,8 +189,9 @@
 /* ==========================================================================
    The five stages
    From observation to revelation and back. Each stage carries an imperative
-   and a ground; stages III and IV invert to a dark page, which is where the
-   book stops describing systems and puts you inside one.
+   and a ground; stages III and IV sink into deep teal and ink-navy — chromatic
+   depth rather than darkness — which is where the book stops describing
+   systems and puts you inside one.
 
        I    OBSERVE     the surface
        II   NOTICE      the patterns
@@ -196,52 +209,58 @@
   --annotation: 0;
 }
 
-/* II — Notice the patterns. Specimen plates, repetition, the first diagrams. */
+/* II — Notice the patterns. Specimen plates, repetition, the first diagrams.
+   Brighter teal, cobalt and amber arrive; orange waits for the peak. */
 .stage-2 {
   --ground: var(--bone);
-  --accent-1: var(--lake);
-  --accent-2: var(--algae);
+  --accent-1: var(--biolume);
+  --accent-2: var(--cobalt);
   --accent-3: var(--amber);
   --annotation: 1;
 }
 
-/* III — Enter the systems. The page goes dark and the diagrams start glowing. */
+/* III — Enter the systems. The page sinks into deep water and the diagrams
+   start glowing. Chromatic depth, not night: the final direction keeps the
+   inversion's drama and refuses its gloom. */
 .stage-3 {
-  --ground: var(--charcoal);
-  --ink: var(--paper);
-  --ink-soft: rgba(243, 239, 229, 0.78);
-  --ink-faint: rgba(243, 239, 229, 0.62);
-  --rule: rgba(243, 239, 229, 0.24);
-  --paper-deep: #23262A;
-  --paper-pale: #1F2226;
+  --ground: var(--teal-deep);
+  --ink: #FAF6EC;  /* literal paper-light: --paper-pale is redefined below,
+                      and custom properties resolve at use time, not here */
+  --ink-soft: rgba(250, 246, 236, 0.80);
+  --ink-faint: rgba(250, 246, 236, 0.64);
+  --rule: rgba(250, 246, 236, 0.24);
+  --paper-deep: #114850;  /* panels: a shade up from the ground, still teal */
+  --paper-pale: #0F444B;
   --accent-1: var(--biolume);
   --accent-2: var(--lake);
-  --accent-3: var(--amber);
+  --accent-3: var(--coral);
   --annotation: 2;
   --ground-opacity: 0.14;
 }
 
-/* IV — Expand awareness. The most vivid zone in the book. */
+/* IV — Expand awareness. The most vivid zone in the book: spectral colour on
+   ink-navy. Magenta at display sizes only — 3.1:1 on this ground. */
 .stage-4 {
-  --ground: var(--void);
-  --ink: var(--paper);
-  --ink-soft: rgba(243, 239, 229, 0.80);
-  --ink-faint: rgba(243, 239, 229, 0.64);
-  --rule: rgba(243, 239, 229, 0.26);
-  --paper-deep: #1B1622;
-  --paper-pale: #171320;
+  --ground: var(--navy);
+  --ink: #FAF6EC;  /* literal for the same reason as stage-3 */
+  --ink-soft: rgba(250, 246, 236, 0.82);
+  --ink-faint: rgba(250, 246, 236, 0.66);
+  --rule: rgba(250, 246, 236, 0.26);
+  --paper-deep: #1A3A52;  /* panels: navy lifted, faintly cobalt */
+  --paper-pale: #16354C;
   --accent-1: var(--magenta);
-  --accent-2: var(--lavender);
+  --accent-2: var(--ultraviolet);
   --accent-3: var(--acid);
   --annotation: 2;
   --ground-opacity: 0.14;
 }
 
-/* V — Return with wonder. The book exhales, warmer than it began. */
+/* V — Return with wonder. The book exhales — cream, dusk pink, lake blue,
+   botanical green. The same world, seen with more in it. */
 .stage-5 {
   --ground: var(--paper);
-  --accent-1: var(--rust);
-  --accent-2: var(--amber);
+  --accent-1: var(--dusk);
+  --accent-2: var(--lake);
   --accent-3: var(--moss);
   --annotation: 0;
 }

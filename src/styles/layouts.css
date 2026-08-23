@@ -499,7 +499,7 @@
 .dir-block .label { margin-bottom: var(--sp-6); }
 .dir-foot { margin-top: auto; padding-top: var(--sp-6); max-width: 150mm; color: var(--ink-faint); }
 
-/* Fig. 1 — the four acts */
+/* Fig. 1 — the five stages */
 .dir-acts { display: grid; gap: var(--sp-5); }
 .dir-act { display: grid; grid-template-columns: 38mm 1fr; gap: var(--sp-5); align-items: start; }
 .dir-act__chip {

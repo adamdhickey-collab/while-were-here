@@ -111,16 +111,18 @@
    Calibrated, not assumed. `ch` is the advance of "0", and its relationship to
    the average lowercase letter is a property of the face, not a constant: in
    Archivo the zero ran narrower, so a 68ch cap delivered 79 characters; in
-   Familjen Grotesk it runs 1.23× wider, so the same 58ch cap now delivers 69.
+   Familjen Grotesk a 58ch cap delivered 69.
    The number below is right for the current face and would be wrong for the
    next one.
 
    **Re-measure on any body-face change** — set the cap by probing rendered
    copy, not by reasoning about the unit.
 
-   Measured across the book in Familjen Grotesk: two-column reading 53, decks
-   and prompts ~52, single-column prose 69, captions 49. All inside 45–75. */
-.prose:not(.prose--cols) { max-width: 58ch; }
+   Re-probed 2026-08 for Source Sans 3 (the body face the final art-direction
+   brief names): avg lowercase advance is 0.870× the zero, so 58ch delivered
+   only 66.7 characters. The cap moves to 60ch, which restores 69 on the same
+   probe sample. All text styles remain inside 45–75. */
+.prose:not(.prose--cols) { max-width: 60ch; }
 .prose--cols { max-width: none; }
 
 /* ---- Body --------------------------------------------------------------- */

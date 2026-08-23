@@ -922,3 +922,35 @@ inches, eleven years under a maple, about a meter an hour, thirty minutes on a
 Thursday afternoon. Demanding a citation for those would drown the signal. The
 margin note is where this book makes claims, so the margin note is where the
 check lives.
+
+## The final visual direction lands — 2026-08
+
+The full brief is `docs/art-direction.md`; it supersedes
+`content/plan/art-direction.md`. What actually changed in the build:
+
+- **Stages III and IV no longer go dark.** Grounds moved from charcoal/void to
+  deep teal (`#0C3D43`) and ink-navy (`#112E42`) — the inversion keeps its
+  drama and loses the gloom. Token-only change; no layout touched it, which is
+  what the stage system was for.
+- **The spectrum brightened to the brief's values** (lake `#197FAE`, teal
+  `#148A8C`, amber `#EDA824`, coral `#F26355`, magenta `#CF3E7E`…), and sage,
+  orange and dusk-pink joined it. Contrast rules re-measured: rust still fails
+  as type, magenta is display-only on navy, `--ink-faint` keeps its measured
+  value because the tidier blue-gray fails AA on bone.
+- **Body voice is Source Sans 3** (brief-named), replacing Hanken Grotesk,
+  which moves to the type-tester candidates. Measure re-probed: SS3's lowercase
+  runs 0.870× its zero, so the single-column cap moved 58ch → 60ch to keep 69
+  characters per line. Overflow checker: 132 pages, none overflowing, before
+  and after.
+- **The hand is Kalam** (brief-suggested), replacing Caveat.
+- **The cover did not change** beyond inheriting the new ink. `bleed` was
+  decided on proof twice; the brief's cover asks (cream ground, stacked serif
+  title, one lively structure, readable spine, quiet back) were already what
+  the bleed treatment does.
+- **The four-part structure did not change.** The brief sketches five section
+  identities; the book is at the 130-page ceiling and the five intensities
+  live in the stage system (1 · 2→3 · 4 · 5) rather than as a fifth part.
+- **Not done, deliberately:** the brief's prototype margins (18/18/19/23,
+  safe 12) were not adopted over the proven 30/34/30/34, safe 8 — every page
+  is composed against the current text block and the printer template is the
+  real authority. Recorded in open-questions.md.

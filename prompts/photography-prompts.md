@@ -1,8 +1,16 @@
-# Photography prompts — QUIET SURREAL DOCUMENTARY
+# Photography prompts — QUIET SURREAL DOCUMENTARY, ALIVE
 
 The house photographic style. Every image in the book is generated or shot against
 this preamble; the per-image sections below only add subject, composition and
 purpose.
+
+**Revised 2026-08 with the final art direction** (`docs/art-direction.md` §
+Photography): the photography is believable, vivid and full of life — more
+alive than the earlier dark contact-sheet reading of this style. Varied
+weather and seasons; clear summer greens, blue water, amber sunlight, flowers,
+birds in movement, warm domestic scenes balance the quieter frames. Not every
+image is dusk, gray, underexposed, melancholy, empty, brown or vignetted.
+Photography should say: *look at the world.*
 
 The emotional question behind every frame is the same:
 
@@ -16,12 +24,14 @@ Paste this ahead of any subject description.
 
 > A believable documentary photograph of the real world. Quiet, contemplative,
 > observant, naturalistic, cinematic, very slightly uncanny. Natural available
-> light only — late afternoon or early morning. Restrained composition with
-> strong negative space and imperfect, slightly off-centre framing, as if the
-> photographer did not have time to fix it. Believable lens behaviour: mild
-> vignetting, real depth of field, no exaggerated bokeh. Muted colour — warm
-> neutrals, faded blue, moss green, occasional amber light. Subtle 35 mm film
-> grain and real surface texture. Emotionally present but never sentimental.
+> light only — at any believable hour, not only dusk: clear mornings, full
+> daylight, changing weather. Restrained composition with strong negative
+> space and imperfect, slightly off-centre framing, as if the photographer did
+> not have time to fix it. Believable lens behaviour: real depth of field, no
+> exaggerated bokeh, vignetting only when the light itself produces it. Rich
+> but credible colour — living greens, blue water, warm cream, amber light,
+> true surface texture. Subtle 35 mm film grain. Emotionally present but never
+> sentimental, and never gloomy.
 > Shot on a 35 mm or 50 mm prime, medium format feel, shallow-to-normal depth.
 
 ## Master negative constraints

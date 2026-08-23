@@ -544,7 +544,23 @@ the geese I nearly "fixed" from two to three, the Physarum network that looked
 like blobs, and the VHS spine that once read EAST. The method that works is
 always the same one: open it at size before changing anything.
 
-**Fifty-nine images have not been checked this way**, and on this trend most of
+### Sixth batch — the one real error was a word
+
+| image | verdict |
+| --- | --- |
+| `ordinary-days-01j-quiet-close` | **WRONG.** Said "a single line of **handwriting** beneath it". Magnified, there are no letterforms at all — it is a **drawn wavering trace** running along the ruling and ending in a small dark dot, the kind of line a plotted reading makes. A screen reader was being promised words. |
+| `ordinary-days-01b-tabletop-object` | **incomplete** — listed every entry on the specimen card correctly and never mentioned that **a photograph of the mug is taped to its left half**, which is half the picture. |
+| `ordinary-days-01c3-location-detail` | exact — the scale bar really reads **50 µm** and the key really numbers **four**: rotifer, ciliate, diatoms, desmid. |
+| `part-2-divider-branching` | exact — four systems, and the street grid really is a grid. |
+| `intelligence-07-child-hand` | exact on everything checkable here: **five lines**, ruled page, green cover along the edge. The disputed word is item 7 and is Adam's, not mine. |
+| `attention-04-lake-weather` | exact, and the hardest claim in the batch to test: "two isobars and a frontal boundary … drawn so lightly they could be missed on the first pass". They are invisible at normal contrast and appear at 2.2×. The description is right about them being nearly invisible, which is the part that would have been easiest to get wrong. |
+
+Two wrong of six, after none of six — so the yield has not gone to zero, and both
+faults here are the same shape as the good ones elsewhere: **a plausible word
+that nobody re-checked against the picture.** "Handwriting" for a wavy line and
+a card described entirely by its text while a photograph sits on half of it.
+
+**Fifty-three images have not been checked this way**, and on this trend most of
 them are fine. Continuing is still worth doing — the crosswalk's missing
 construction site was found in batch three — but the yield is now low enough that
 it should not crowd out other work.

@@ -638,6 +638,19 @@ sound right and cannot be trusted.**
 | `specimen-06-prairie-dog` | lying flat, legs out behind, on sand: all confirmed. **"Eyes closed" I could NOT verify** — the file is 1280 × 960 and the head is too small to resolve the eye. Left alone rather than changed on a guess. |
 | `here-08-dog-resting` | the bed and the wall of small art cards are right. **"Front paws crossed" and "ears forward" I could not settle** at this angle — one foreleg is extended with a paw at the frame edge and the ears read as relaxed rather than pricked, but neither is clear enough to call. Left alone. |
 
+### Recorded late: the batch that only reached the commit log
+
+These four were checked on 22 Aug in the same pass as `here-07-ceremony` and
+written up in the commit message rather than here. A commit message is not where
+anyone looks. Added so this file is the whole record.
+
+| image | verdict |
+| --- | --- |
+| `pilgrimage-07-switchbacks` | **wrong** — said "three walkers far below". There are **six** people: three walking alongside the mule train and three more below. "The figures are a few pixels each" was replaced with the measurement that supports the judgement: under four millimeters on the page, none identifiable, which is why it correctly carries no consent note. |
+| `before-time-06-thanksgiving` | **wrong** — "two of them children wearing paper crowns". Only one is a crown; the boy wears a **paper headdress with upright feathers**. Logged as open question 3b, since whether that frame stays is a decision and not a defect. |
+| `systems-07-moon-jelly` | exact, including **four horseshoe-shaped gonads**, which is correct *Aurelia* anatomy and correct to the frame. |
+| `here-10-ano-viejo-burning` | written from the frame during placement rather than audited afterwards — the same standard, arrived at from the other direction. |
+
 ## The audit is complete — all 83 spoken descriptions checked
 
 **About twenty carried a fault.** They fell into four kinds, and the kinds are

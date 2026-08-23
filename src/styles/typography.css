@@ -158,8 +158,26 @@
   hyphenate-limit-chars: 10 4 4;
   text-wrap: pretty;
 }
+/* BLOCK PARAGRAPHS, not indented ones — Adam's call, 22 Aug 2026. He found the
+   indents unclean, and they were doing the job twice: an indent AND the ragged
+   line above it both mark a paragraph break, so one of them is redundant.
+
+   The gap is `--sp-4`, 6 mm, which is not a new number — `.note-page .prose p +
+   p` has used exactly that with `text-indent: 0` since the note page was built.
+   This makes the rest of the book agree with a decision it had already taken in
+   one place. At 11.5 pt on 1.62 the line is about 6.6 mm, so the gap is a little
+   under one blank line: enough to separate decisively, not so much that the
+   column falls apart. 3 mm was tried and rejected — you have to look for the
+   break.
+
+   THE SECOND RULE IS THE ONE THAT MATTERS. `.prose--cols > p + p` in
+   layouts.css also set `text-indent: 5mm`, and it is more specific, so changing
+   only this rule left every two-column reading page — most of the book —
+   indented exactly as before, while the gap appeared. The first render of this
+   change looked like it had half worked because it had. */
 .prose p + p {
-  text-indent: 5mm;
+  text-indent: 0;
+  margin-top: var(--sp-4);
 }
 /* First paragraph of a flow never indents, and opens with a raised initial. */
 .prose > p:first-child {

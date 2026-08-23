@@ -1347,3 +1347,35 @@ the old ASCII-only comparison **passed the corrupted string**.
 
 That makes six checks in one day found looking at the wrong thing. The last one
 was mine, written an hour earlier, to catch exactly this class of fault.
+
+---
+
+## Block paragraphs, not indented ones
+*22 Aug 2026 — Adam's call*
+
+The indents read as unclean. They were also doing the job twice: an indent and
+the ragged line above it both mark a paragraph break, and one of them is
+redundant. The book now sets paragraphs flush left with a **6 mm gap**.
+
+**6 mm is not a new number.** `.note-page .prose p + p` has used `margin-top:
+var(--sp-4); text-indent: 0` since the note page was built, so the rest of the
+book now agrees with a decision it had already taken in one place. At 11.5 pt on
+1.62 the line is about 6.6 mm, so the gap is a little under one blank line —
+enough to separate decisively without the column falling apart. **3 mm was tried
+and rejected**: the break is there but you have to look for it.
+
+**It cost nothing.** The obvious worry was that this book is composed, not
+flowed — every page is written to fit its slot, so adding space to every
+paragraph should push copy past the trim. Swept at 2, 2.5, 3, 4 and 6 mm:
+**zero pages overflow at any of them.** 130 interior pages, unchanged, and the
+hyphenation figures barely move (1077 lines to 1073). The composed pages had
+more slack than anyone had measured.
+
+**One trap, and it is the reason to write this down.** There are TWO indent
+rules. `.prose p + p` in typography.css is the obvious one; `.prose--cols > p +
+p` in layouts.css is more specific and covers the two-column reading pages,
+which is most of the book. Changing only the first produces a page that has
+gained its paragraph gap AND kept its indent — which looks, at a glance, like
+the change half worked. It had: the rule applied everywhere except where it
+mattered. **Both have to move together**, and each now carries a note pointing
+at the other.

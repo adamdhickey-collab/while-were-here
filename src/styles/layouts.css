@@ -68,7 +68,10 @@
   font-size: var(--t-body);
   line-height: 1.66;
 }
-.prose--cols > p + p { text-indent: 5mm; }
+/* Block paragraphs — see the note on `.prose p + p` in typography.css. This
+   rule is more specific than that one and covers the two-column reading
+   pages, which is most of the book; both have to change together. */
+.prose--cols > p + p { text-indent: 0; margin-top: var(--sp-4); }
 .reading__note { grid-column: 8 / 13; grid-row: 3; align-self: end; }
 
 /* An image interrupting the text, held on the bottom edge of the verso. */

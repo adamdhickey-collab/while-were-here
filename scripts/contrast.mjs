@@ -37,32 +37,20 @@
  * judged on the ground most of it sits on, and a mean would split the
  * difference and call it grey.
  *
- * OCCLUSION IS NOT CHECKED HERE, AND WAS TRIED TWICE. Four captions in this
- * book printed their last words underneath the photograph beside them —
- * "Figure 7. The far wall, for under a minute. The roo…" — because the
- * caption's width and the figure's width were two numbers nobody had tied
- * together. Overflow could not see it, since the text never left its box. This
- * check cannot see it either, since the glyphs are not dim, only buried. It was
- * found by reading a page and noticing a word stop in mid-air.
+ * THE CAPTION THAT LOST ITS LAST WORDS, and the three instruments it defeated.
+ * Four captions printed with their tails unreadable across the photograph
+ * beside them — "Figure 7. The far wall, for under a minute. The roo…". The
+ * first diagnosis called it occlusion and built two pixel-differencing
+ * detectors; both failed, and the diagnosis itself was wrong: the figure
+ * paints BEFORE the caption in tree order, so the words were on top of the
+ * photograph all along — at 1.19:1. It was always a contrast fault.
  *
- * Attempt one compared ink counts with the pictures hidden. That collapses
- * whenever the text's own colour IS the page colour: the quote closing the book
- * is paper cream over a photograph of a fire, so with the photograph hidden
- * every pixel in its box matched "ink" and a perfectly legible page reported as
- * buried.
- *
- * Attempt two raised the type with `z-index` and compared against the page as
- * printed, per line so that one line losing its last word would register.
- * Measured against the real fault, reintroduced on purpose: NOT CAUGHT.
- * `z-index` only orders siblings within a stacking context, and the caption and
- * the figure are not in one — lifting the caption inside its own parent does
- * not raise it above the figure at all.
- *
- * Both attempts were removed rather than left in. A check that cannot be shown
- * to catch its own fault is worse than no check, because the green line is
- * read as evidence. If occlusion is worth catching, the honest instrument is
- * geometric — compare each text line's box against the boxes of opaque
- * elements painted after it — not photographic.
+ * Element-median contrast missed it because three of the four lines sat on
+ * cream. Line-median missed it because the strayed tail was 10% of its line.
+ * What catches it — proven against the reintroduced fault, not assumed — is a
+ * SLIDING WINDOW one line-height wide along every line, judged at the worst
+ * window: about two glyphs, the smallest covered run a reader would notice.
+ * The same run against the clean book stays at zero findings, worst 4.7:1.
  *
  * THRESHOLDS are WCAG's — 4.5:1, and 3:1 for large type (>=18pt, or >=14pt
  * bold). This is print, not a screen, and ink on paper behaves differently from
@@ -166,6 +154,17 @@ const items = await page.evaluate((sel) => {
         /* fractions of the page box, so they survive the screenshot scale */
         x: (r.left - pr.left) / pr.width, y: (r.top - pr.top) / pr.height,
         w: r.width / pr.width, h: r.height / pr.height,
+        /* Every line separately. The caption that lost its last words to the
+           photograph beside it was judged legible by this check's first
+           version, because the element's MEDIAN ground was cream — three of
+           its four lines were. The line that strayed onto the photograph was
+           the defect, and only line-level grounds can see it. */
+        lines: (() => {
+          const rng = document.createRange(); rng.selectNodeContents(el);
+          return [...rng.getClientRects()].filter((l) => l.width > 3 && l.height > 3)
+            .map((l) => ({ x: (l.left - pr.left) / pr.width, y: (l.top - pr.top) / pr.height,
+                           w: l.width / pr.width, h: l.height / pr.height }));
+        })(),
       });
     });
   });
@@ -193,19 +192,43 @@ for (const [pi, list] of byPage) {
     const y0 = Math.max(0, Math.round(it.y * png.height));
     const x1 = Math.min(png.width, Math.round((it.x + it.w) * png.width));
     const y1 = Math.min(png.height, Math.round((it.y + it.h) * png.height));
-    const ls = [];
-    for (let y = y0; y < y1; y += 2) {
-      for (let x = x0; x < x1; x += 2) {
-        const i = (png.width * y + x) << 2;
-        ls.push(lum(png.data[i], png.data[i + 1], png.data[i + 2]));
-      }
-    }
-    if (!ls.length) continue;
-    ls.sort((a, b) => a - b);
-    const bg = ls[Math.floor(ls.length / 2)];              // median, not mean
     const [r, g, b] = it.color.match(/\d+(\.\d+)?/g).map(Number);
     const ink = lum(r, g, b);
-    const cr = ratio(ink, bg);
+    const boxes = (it.lines && it.lines.length) ? it.lines : [it];
+    let elWorst = null;
+    for (const ln of boxes) {
+      const lx0 = Math.max(0, Math.round(ln.x * png.width));
+      const ly0 = Math.max(0, Math.round(ln.y * png.height));
+      const lx1 = Math.min(png.width, Math.round((ln.x + ln.w) * png.width));
+      const ly1 = Math.min(png.height, Math.round((ln.y + ln.h) * png.height));
+      /* A sliding window along the line, judged at the WORST window. A line
+         median is still blind to a strayed tail: the caption line that ran 13px
+         onto the photograph was 90% cream, so its median was cream and the
+         defect page passed. The window is one line-height wide — about two
+         glyphs — which is the smallest run of covered text a reader would
+         notice losing. The ground comes from the type-hidden render, so glyph
+         pixels never pollute the sample. */
+      const lh = Math.max(8, ly1 - ly0);
+      const step = Math.max(4, Math.floor(lh / 2));
+      for (let wx = lx0; wx < lx1; wx += step) {
+        const we = Math.min(lx1, wx + lh);
+        const ls = [];
+        for (let y = ly0; y < ly1; y += 2) {
+          for (let x = wx; x < we; x += 2) {
+            const i = (png.width * y + x) << 2;
+            ls.push(lum(png.data[i], png.data[i + 1], png.data[i + 2]));
+          }
+        }
+        if (!ls.length) continue;
+        ls.sort((a, b) => a - b);
+        const bg = ls[Math.floor(ls.length / 2)];
+        const cr = ratio(ink, bg);
+        if (!elWorst || cr < elWorst) elWorst = cr;
+        if (we >= lx1) break;
+      }
+    }
+    if (elWorst === null) continue;
+    const cr = elWorst;
     measured += 1;
     const pt = it.size * 0.75;                             // css px -> pt
     const large = pt >= 18 || (pt >= 14 && it.weight >= 700);

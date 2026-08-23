@@ -205,12 +205,62 @@ const { out: report, tally } = await page.evaluate(() => {
   return { out, tally };
 });
 
+/* THE DISPLAY SERIF AT THE WRONG WEIGHT — a third fault a correct
+   configuration does not prevent.
+
+   typography.css states the house rule plainly: "the display serif appears at
+   900 and at no other weight. Anything that is not black is set in the text
+   face." It enforces that with a LIST OF SELECTORS, and a list is only as good
+   as the last person to remember it. It has now been forgotten twice — the
+   dedication, which read as a different family on the one page everybody
+   opens, and `.cover-back__line`, which printed FalutinTitle-Medium on the back
+   board while the front board two inches away printed Ultra. Both times the
+   rule was written down, both times nothing caught it, and both times it was
+   found by eye long after the fact.
+
+   So this stops trusting the list and asks the browser instead: find every
+   element that actually renders in the display family and is not at 900. That
+   is the rule as stated, measured rather than configured, and it cannot be
+   fooled by a selector nobody added. */
+const weights = await page.evaluate(() => {
+  const disp = getComputedStyle(document.documentElement)
+    .getPropertyValue('--font-display').split(',')[0].replace(/["']/g, '').trim().toLowerCase();
+  const bad = [];
+  for (const el of document.querySelectorAll('.page *')) {
+    if (!el.textContent.trim()) continue;
+    const cs = getComputedStyle(el);
+    const fam = cs.fontFamily.split(',')[0].replace(/["']/g, '').trim().toLowerCase();
+    if (fam !== disp) continue;
+    /* Only the element that OWNS the text, or every ancestor of a heading is
+       reported for the heading's own type. */
+    if ([...el.children].some((c) => c.textContent.trim() === el.textContent.trim())) continue;
+    if (cs.fontWeight === '900') continue;
+    const pg = el.closest('.page');
+    bad.push({ weight: cs.fontWeight, cls: el.className || el.tagName.toLowerCase(),
+               spread: pg?.dataset.spread || '?', text: el.textContent.trim().slice(0, 46) });
+  }
+  return bad;
+});
+
 await browser.close();
 server.close();
 
 if (asJson) {
   console.log(JSON.stringify({ available: true, findings: report, tally }));
   process.exit(0);
+}
+
+if (weights.length) {
+  say(`\n  ⚠ ${weights.length} element(s) set in the display serif below weight 900:\n`);
+  for (const w of weights) {
+    say(`    ${w.spread}`);
+    say(`        .${w.cls} at ${w.weight} — "${w.text}"`);
+  }
+  say('\n  typography.css: the display serif appears at 900 and at no other weight.');
+  say('  Add the selector to the 900 list there, not to the component stylesheet —');
+  say('  cover.css and layouts.css load later and a stray font-weight silently wins.');
+} else {
+  say(`  ✓ every element in the display serif is at weight 900`);
 }
 
 if (!report.length) {
@@ -228,4 +278,4 @@ if (!report.length) {
   say('  the slot, or setting `hyphens: none` on the block that is misbehaving.');
 }
 
-process.exit(strict && report.length ? 1 : 0);
+process.exit(strict && (report.length || weights.length) ? 1 : 0);

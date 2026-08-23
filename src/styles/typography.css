@@ -32,8 +32,15 @@
    These are static weights, not a variable axis: a variable instance is written
    into the PDF as Type 3 glyph procedures, which prepress cannot subset. */
 .cover__title, .titlespread__title, .display, .spine__text,
-.essay-title, .pull-quote, .statement, .closing__line,
+.essay-title, .pull-quote, .statement, .closing__line, .cover-back__line,
 .prose--drop > p:first-child::first-letter { font-weight: 900; }
+/* `.cover-back__line` joined this list on 23 Aug 2026, the same day it moved to
+   the display face — and it should have joined on the same edit. It did not,
+   so it inherited 400 and printed as FalutinTitle-Medium while the front board
+   two inches away printed Ultra. That is the second time this exact thing has
+   happened, the dedication below being the first, and both times the rule was
+   written down and simply not applied. Verified in the built PDF rather than
+   in the stylesheet: page 132 now reports FalutinTitle-Ultra. */
 /* .dedication__line belongs to this rule too and is set in layouts.css beside
    the rest of that page's type. It is called out here because it was missing
    from this list for weeks and nothing caught it: the dedication is a <p>, so
@@ -44,7 +51,14 @@
 /* The text face doing the work the serif used to do. Weight carries the
    hierarchy now that the family cannot. */
 .subhead, .diagram__title, .contents__part-title { font-weight: 600; }
-.cover-back__line, .material-break__line, .divider__statement,
+/* `.cover-back__line` left this list on 23 Aug 2026 when it moved to the
+   display face. It belonged here while the back board was set in the text face
+   and it was correct then. Adding it to the 900 list above was not enough on
+   its own: both lists are one class deep, this one comes later in the file, and
+   later wins — so the line went on printing at 500 with a rule two dozen lines
+   above it saying 900. A selector in BOTH lists is worse than a selector in
+   neither, because the file reads as though it were handled. */
+.material-break__line, .divider__statement,
 .sequence__pull, .prose .beat, .closing .prose > p:first-child { font-weight: 500; }
 .numeral, .stage-mark, .plate__subject { font-weight: 500; }
 .divider__essays li { font-weight: 400; }

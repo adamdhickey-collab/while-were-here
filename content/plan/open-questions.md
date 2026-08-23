@@ -691,3 +691,57 @@ the kind of edit that quietly blinds a check.
 and because after item 0b is shot this check is the thing standing between a
 lovely photograph of a real tag and a book that prints a working link to a page
 about his dog.
+
+---
+
+### 16 · What the three reproduced records actually disclose — **ADAM'S CALL**
+Read entry by entry, 23 Aug 2026. The codes check settled one half of the field
+note's rule; this is the other half — *no personal data it does not mean to* —
+and no check can settle it, because every one of these entries is there **on
+purpose**. The question is not whether they are personal. It is whether each one
+is personal in a way Adam has actually chosen.
+
+All three records carry the line **"Reproduced in full, unedited."** That is the
+argument: an unedited machine record is evidence, an edited one is an
+illustration. Removing a single entry falsifies that caption, and `verify.mjs`
+checks the counts (31 + 154 + 23 = 208), so a cut has to be a deliberate change
+to both the data and the sentence describing it.
+
+**Record 1 · 31 ad-targeting categories.** Nothing here names anyone else. It
+does say, of Adam: birthday in November, away from family and hometown,
+frequent international traveller, console gamer, and *"Household income: top
+25%–50% of ZIP codes (US)."* An income bracket is a real disclosure, and it is
+also precisely the exhibit — Meta's guess, printed as evidence of what Meta
+guesses. Recommend keeping.
+
+**Record 2 · 154 advertisers.** Overwhelmingly brands. Three exceptions:
+
+  · **"Chris May 2"** — reads as a person's name, not a company. It is an ad
+    account name rather than a friend, but it is the only entry in 208 that
+    looks like an individual human being, and it will read that way to a
+    stranger.
+  · **"ZnanyLekarz"** — *znany lekarz* is Polish for "well-known doctor"; the
+    name reads as a doctor-booking service. A health-adjacent advertiser in a
+    list of things that hold your data is a different order of personal from
+    LEGO and Weber Grills.
+  · **"Huntington National Bank"** — names a banking relationship.
+
+**Record 3 · 23 places.** This one is a **location history**, and it is the
+record worth the most thought. Minneapolis, Edina, Richfield, Bloomington,
+Wayzata, Afton, Ramsey — home and the suburbs around it — plus Door County,
+the North Shore, Milwaukee, Seattle, Dubai. Read with Record 1's income bracket
+and birthday month, it narrows where Adam lives more than any other page in the
+book.
+
+**Why this is being raised now rather than later.** For the Christmas 2026
+edition this is close to a non-issue: it is a gift to parents who know where
+their son lives and what month he was born. **Open question 3 asks what happens
+if the book is ever sold**, and that is the version where a location history, an
+income bracket and a birthday month sit on a shelf in a shop. The decision is
+much cheaper to take now than after a print run.
+
+Three options, and only Adam can pick: keep all three whole and accept the
+disclosure; drop Record 3 entirely, which costs the spread but removes the
+location history in one move; or keep it and change the caption from
+"Reproduced in full, unedited" to something honest about what was withheld —
+which weakens the argument the spread exists to make.

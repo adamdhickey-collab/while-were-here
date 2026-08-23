@@ -23,6 +23,37 @@ html, body {
   break-inside: avoid;
   overflow: visible;      /* the engine clips at the bleed box */
 }
+/* THE GROUND ITSELF BLEEDS. Measured on the 23 Aug 2026 press PDF: only 11 of
+   132 pages carried any ink past the trim — the closings, field-note plates
+   and dividers, whose figures extend by --bleed-out. Every OTHER page's
+   ground, cream and dark stages alike, stopped dead at the trim line, so the
+   3 mm bleed ring printed paper-white. Any outward cut drift would have put a
+   white sliver on the fore-edge of nearly every page, most visibly on the
+   dark stage-III/IV spreads.
+
+   A pseudo-element rather than a wider .page box, because everything in the
+   book positions against .page as the trim.
+
+   NO z-index, and that is load-bearing. The first version set z-index: -1 so
+   the extension would sit under the content — and it vanished from the press
+   PDF entirely: .page is position: relative with z-index auto, so it is not a
+   stacking context, and a negative z-index child fell behind the page
+   container's own white. Measured, not theorised: with -1 the cream ran 0.0 mm
+   past trim on 110 edges; without it, the ring fills. Painting order does the
+   layering instead — the pseudo is the first box in the section and every
+   piece of page content is absolutely positioned, so all of it paints above.
+   On a proof --bleed-out is 0 and this collapses to nothing. */
+.page::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  /* A solid shadow ring, not a wider box. Vivliostyle fragments any layout box
+     that crosses the page bottom — the inset version of this rule painted the
+     top, left and right of the ring and was clipped dead at the bottom edge on
+     every page. A box-shadow is ink, not layout; fragmentation never sees it.
+     Spread 0 on a proof, the full bleed on press. */
+  box-shadow: 0 0 0 var(--bleed-out) var(--ground);
+}
 .page:last-of-type { break-after: auto; }
 
 /* Screen preview shows the trimmed page, so anything past trim is clipped. */
@@ -76,12 +107,17 @@ html, body {
 /* ---- Bleed -------------------------------------------------------------- */
 /* --bleed-out is 0 on a proof and the real bleed on a press build, so the same
    markup produces a trimmed proof and a press file with live bleed.          */
+/* Scaled, not inset-extended, and the difference is the bottom edge: an inset
+   extension makes the layout box cross the page bottom, and Vivliostyle
+   fragments it there — measured at 0.0 mm of bottom bleed across the whole
+   book while top, left and right carried their full 3 mm. Scaling keeps the
+   layout box inside the page and grows only the paint, which fragmentation
+   never touches. The enlargement changes the visible crop exactly as much as
+   the inset did: not at all for object-fit: cover imagery. */
 .bleed {
   position: absolute;
-  top:    calc(-1 * var(--bleed-out));
-  left:   calc(-1 * var(--bleed-out));
-  right:  calc(-1 * var(--bleed-out));
-  bottom: calc(-1 * var(--bleed-out));
+  inset: 0;
+  transform: scale(var(--bleed-scale));
 }
 /* Bleed on the three outer edges only; the fourth runs into the fold. */
 .page--verso .bleed--crossover { right: 0; }

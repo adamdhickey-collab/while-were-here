@@ -5,14 +5,17 @@
    inside/outside margin, never by duplicating a layout.
    ========================================================================== */
 
-/* A figure asked to bleed sits outside the trim by exactly --bleed-out, which
-   is zero on a proof and the real allowance on a press build. */
+/* A figure asked to bleed KEEPS ITS LAYOUT BOX AT THE TRIM and scales its
+   paint out by --bleed-scale. It used to extend by negative insets, and that
+   version silently lost its bottom edge: Vivliostyle fragments any layout box
+   that crosses the page bottom, so every full-bleed plate in the press PDF
+   stopped dead at the bottom trim while bleeding correctly on the other three
+   sides. Scale is paint, fragmentation never sees it, and for object-fit:
+   cover imagery the visible crop is identical. 1 on a proof. */
 .figure--bleed {
   position: absolute;
-  top:    calc(-1 * var(--bleed-out));
-  left:   calc(-1 * var(--bleed-out));
-  right:  calc(-1 * var(--bleed-out));
-  bottom: calc(-1 * var(--bleed-out));
+  inset: 0;
+  transform: scale(var(--bleed-scale));
 }
 /* The fold edge takes no bleed — the crossover is continuous. */
 .page--verso .figure--spread-left  { right: 0; }
@@ -22,7 +25,11 @@
    Verso: one image, full bleed, no words at all.
    Recto: eyebrow, title, deck at the top; the first paragraphs held low.     */
 
-.opener__verso .figure { position: absolute; inset: 0; }
+/* Full-page photograph, so it must reach the bleed edge, not the trim. All
+   eight essay openers printed with their artwork stopping dead at the trim on
+   the 23 Aug 2026 press PDF. Scaled rather than inset-extended — see
+   .figure--bleed for why the inset version loses its bottom edge. */
+.opener__verso .figure { position: absolute; inset: 0; transform: scale(var(--bleed-scale)); }
 
 .opener__recto .page__block { align-content: space-between; }
 .opener__eyebrow {

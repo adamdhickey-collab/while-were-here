@@ -308,7 +308,11 @@
 /* ---- BLEED --------------------------------------------------------------
    Artwork edge to edge, title large enough to run off the trim. */
 
-.cover__art--bleed { top: 0; bottom: 0; left: 0; right: 0; }
+/* To the bleed edge, not the trim: `--bleed` in the variant's name was only
+   ever true inside the trim until 23 Aug 2026 — the artwork stopped at the
+   trim line on the press PDF and the board's bleed ring printed white. The img
+   inside is already oversized to 106%, so extending the box costs no new crop. */
+.cover__art--bleed { top: calc(-1 * var(--bleed-out)); bottom: calc(-1 * var(--bleed-out)); left: calc(-1 * var(--bleed-out)); right: calc(-1 * var(--bleed-out)); }
 .cover__art--bleed .figure { position: absolute; inset: 0; background: transparent; }
 /* The artwork is square and so is the page, so object-fit had nothing to crop —
    object-position did nothing at all. The image is oversized explicitly instead,

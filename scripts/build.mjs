@@ -55,6 +55,12 @@ function geometryCss() {
   --spine-w: ${mm(spineWidth())};
   /* Live bleed only on a press build; a proof is trimmed. */
   --bleed-out: ${press ? mm(g.bleed) : '0mm'};
+  /* For photographic bleeds. Vivliostyle FRAGMENTS any layout box that crosses
+     the page's bottom edge — a figure extended by -3mm insets paints its top,
+     left and right bleed and is clipped dead at the bottom. Paint-only
+     overflow survives, so full-bleed imagery keeps its layout box inside the
+     page and scales up instead. 1 on a proof, (trim + 2*bleed)/trim on press. */
+  --bleed-scale: ${press ? ((g.trimWidth + 2 * g.bleed) / g.trimWidth).toFixed(4) : '1'};
   --texture-linen: ${LINEN_TEXTURE};
 }
 

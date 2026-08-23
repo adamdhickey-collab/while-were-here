@@ -1472,3 +1472,46 @@ switched off — and the same reasoning kept the layout-reference check's phrase
 list narrow on the same day. The distinction between a claim and a turn of
 phrase is not mechanical, and pretending otherwise would cost more than it
 catches.
+
+## The press PDF did not bleed, and nothing could see it — 23 Aug 2026
+
+**The file that goes to Saal carried live bleed on 11 of its 132 pages.** The
+closings, field-note plates and dividers extended their 3 mm; the cover, all
+eight essay openers, and every page's own ground — cream and dark stages alike —
+stopped dead at the trim line. Any outward drift in the cut would have printed a
+paper-white sliver along the fore-edge of nearly every page, most visibly on the
+dark spreads.
+
+No check could see it. `verify` reads the composed HTML, where `--bleed-out` is
+0 by design. `pdfcheck` reads the text layer, and bleed has no words. The @page
+rule reserved the bleed box and drew the crop marks, so the file looked like a
+press file in every viewer, including this project's own.
+
+**The cause took three wrong hypotheses to reach**, each killed by a
+one-page harness rather than a seven-minute build: not the pseudo-element's
+z-index, not `var()` resolution, not `marks: crop cross`. The harness matrix
+settled it: **Vivliostyle fragments any layout box that crosses the page's
+bottom edge.** Ink may overhang the top, left and right; the bottom is clipped
+dead. The first harness "proved" bleed worked because it only measured the top —
+the same one-edge blindness that made 11 pages look like a working system.
+
+**Two escapes survive fragmentation, both paint rather than layout:**
+
+* every page's ground now bleeds through a `box-shadow` ring on `.page::before`
+  — a shadow is ink, not a box, and fragmentation never sees it;
+* every full-bleed photograph keeps its layout box at the trim and scales its
+  paint by `--bleed-scale` (306/300 on press, 1 on proof). For `object-fit:
+  cover` imagery the visible crop is identical to the old inset extension.
+
+The directional cases — band tops, field-note sides — were already correct,
+because only the bottom edge fragments. The scrim gradients that cross the
+bottom still stop at trim; their residual exposure is an unscrimmed photograph
+sliver, not white, and is accepted.
+
+`scripts/bleed.py` (`npm run bleed`) keeps it fixed: it walks in from every
+trim edge of every page and fails when ink that touches the trim does not
+continue past it. Its own history is part of the record — its first threshold
+counted the book's cream as bare paper and reported 64 failures on a file with
+eleven, and its success path crashed the first time it ever passed, because
+the failure path had been exercised all afternoon and the success path never
+once. **526 edges judged across 132 pages, all clean.**

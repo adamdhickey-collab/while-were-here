@@ -720,6 +720,35 @@ check('no photograph is filed as generated', misfiled.length === 0,
     ? `${misfiled.length}: ${misfiled.slice(0, 4).map((i) => i.id).join(', ')}${misfiled.length > 4 ? '…' : ''}`
     : `${images.filter((i) => CAMERA.has(String(i.origin || ''))).length} photographs, none claiming a model made them`);
 
+/* Can the type be read off the ground it prints on?
+
+   Two legibility failures went into this book on 23 Aug 2026 and no check could
+   see either: the back-cover foot printed over the busiest corner of a drawing,
+   and the pull quote closing "The Beauty of Systems Nobody Designed" printed
+   paper-cream ON CREAM at 1.07:1 — a full page of display type nobody could
+   read. Same root both times: a rule assuming a background it cannot see.
+
+   `scripts/contrast.mjs` shoots each page twice, once as printed and once with
+   the type hidden, so the second shot is the true ground under every run of
+   type — photographs, scrims and all. Computed style cannot do this: asked for
+   its background, the quote over the Año Viejo fire reports paper-on-paper,
+   1.00:1, on a page that is in fact legible at 16.4:1. A check built that way
+   would have cried wolf on the good page and stayed silent on the ruined one. */
+let contrast = { available: false };
+try {
+  contrast = JSON.parse(execFileSync('node', [P('scripts/contrast.mjs'), '--json'],
+    { encoding: 'utf8', maxBuffer: 1 << 24, stdio: ['ignore', 'pipe', 'ignore'] }));
+} catch { /* no browser here — reported, never silently passed */ }
+if (!contrast.available) {
+  note('contrast', `${contrast.reason || 'not checked'} — run \`npm run contrast\``);
+} else {
+  const dim = contrast.findings || [];
+  check('every run of type is legible on its own ground', dim.length === 0,
+    dim.length
+      ? `${dim.length}: ${dim.slice(0, 3).map((f) => `${f.cr.toFixed(2)}:1 .${f.cls}`).join(', ')} — run \`npm run contrast\``
+      : `${contrast.measured} runs measured, worst ${contrast.worst ? contrast.worst.cr.toFixed(1) : '—'}:1`);
+}
+
 const pad = (s, n) => (s + ' '.repeat(n)).slice(0, n);
 console.log('');
 let failed = 0;

@@ -150,6 +150,15 @@ const MUTATIONS = [
     expect: 'no photograph is filed as generated',
     why: 'one of Adam\'s own photographs filed as generated' },
 
+  /* Type that cannot be read on the ground it prints on. This puts back the
+     exact fault of 23 Aug 2026: a rule that lightens type for a dark photograph,
+     keyed on a class that is also true of pages with no photograph at all. */
+  { id: 'contrast', file: 'src/styles/layouts.css',
+    from: '.closing--onplate.closing--quote .pull-quote { color: var(--paper); }',
+    to:   '.closing--plate.closing--quote .pull-quote { color: var(--paper); }',
+    expect: 'every run of type is legible on its own ground',
+    why: 'display type set light on a light page' },
+
   { id: 'contents-drift', file: 'content/contents.json',
     from: 'Most of Life Is a Tuesday', to: 'Most of Life Is a Wednesday',
     expect: 'the contents page agrees', why: 'a contents title that no longer matches the essay' },

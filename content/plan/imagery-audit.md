@@ -611,7 +611,25 @@ naming convention should be consistent, make it consistent by decision.
 added to its stem list earlier today after finding "kerb" in this same manifest.
 Third time today that check has caught my own writing rather than the archive's.
 
-**Forty-two images have not been checked this way**, and on this trend most of
+### Ninth batch — one wrong, and it had borrowed the book's own sentence
+
+| image | verdict |
+| --- | --- |
+| `here-04-window-water` | **WRONG.** Claimed "one drop meeting another and changing direction". Magnified, the glass carries several hundred small static droplets — a few touching, **nothing running, no trail, no drop changing course anywhere.** |
+| `before-time-04-waiting-clock` | exact, and the claim that matters is the one it gets right: "**none of them holding anything**". Three people, hands at their sides or in pockets. That absence is the whole point of the frame. |
+| `specimen-02-queen-butterfly` | exact, and precise about a hard thing. It names "white spots scattered across the forewing", which is the feature that separates a **Queen** from a Monarch on a closed-wing view — Monarchs carry their white spots on the black apex and margins. The book has a fact about exactly that mimicry, so the identification is load-bearing and it is right. |
+| `privilege-04-two-reviewing` | exact. |
+| `here-02-house-section` | plausible; the five systems are not separable at reproduction size and were not counted. |
+| `specimen-01-komodo-tongue` | description exact — head at rest, one eye open, nostril and jawline. **No tongue is visible anywhere in the frame**, and the description does not claim one; it is the *id* that says "tongue". The specimen label beside it discusses the forked tongue as a fact about the animal, which is normal for a plate. Same class as `systems-01-observation-hive`, whose id still carries the ants it replaced. Not worth renaming; worth knowing. |
+
+**Where the wrong sentence came from is the interesting part.** The book's own
+field note reads *"Water strikes the window, joins another drop, and changes
+direction."* The description restated the prose instead of describing the
+photograph — the same fault as the four survey plates, which described their
+generation briefs. **A description written from the text beside it will always
+sound right and cannot be trusted.**
+
+**Thirty-six images have not been checked this way**, and on this trend most of
 them are fine. Continuing is still worth doing — the crosswalk's missing
 construction site was found in batch three — but the yield is now low enough that
 it should not crowd out other work.

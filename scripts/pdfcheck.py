@@ -88,6 +88,20 @@ except ImportError:
 # with a clean bill of health while being the wrong file. That happened — the
 # Año Viejo went onto the closing page and this script went on certifying a PDF
 # built forty minutes earlier, because the change added no words.
+# AND EVERY OTHER PDF IN dist/, because this script only ever examined one.
+# `dist/` holds three deliverables — the proof, the press file and the trimmed
+# proof — and only the first was ever checked for age. On 23 Aug 2026 the press
+# PDF was two days old: it predated the seed cover, the block paragraphs, a
+# withdrawn record, a caption that printed under a photograph and a pull quote
+# nobody could read. Nothing said so, and it is the file that would go to Saal.
+#
+# The others are not opened or validated here — only their age is reported.
+# Knowing a deliverable is stale is most of the value; the rest of this script
+# reads text and could not see those changes anyway.
+others = sorted(q for q in PDF.parent.glob('*.pdf') if q != PDF) if PDF.parent.is_dir() else []
+aged = [(q, (HTML.stat().st_mtime - q.stat().st_mtime) / 3600)
+        for q in others if q.stat().st_mtime < HTML.stat().st_mtime]
+
 stale = PDF.stat().st_mtime < HTML.stat().st_mtime
 if stale:
     import datetime
@@ -146,9 +160,25 @@ if as_json:
     print(json.dumps(payload))
     sys.exit(0)
 
+def report_siblings():
+    """Age of the other deliverables. Reported whatever the text check says,
+       because a stale press file is a hazard on its own."""
+    if not aged:
+        if others:
+            print(f'    {len(others)} other deliverable(s) in dist/, all newer than the build')
+        return
+    print(f'\n  ⚠ {len(aged)} other deliverable(s) in dist/ are OLDER than the build:\n')
+    for q, hours in aged:
+        when = f'{hours:.0f} h' if hours < 48 else f'{hours/24:.1f} days'
+        print(f'    {q.name:<34} {when} behind')
+    print('\n    These are not opened here — only their age is reported. The press')
+    print('    file is the one that goes to the printer; rebuild it before sending.')
+
 if not missing:
     print(f'\n  ✓ the PDF contains the book                       '
-          f'{len(chunks)} text elements across {doc.page_count} pages, none missing\n')
+          f'{len(chunks)} text elements across {doc.page_count} pages, none missing')
+    report_siblings()
+    print('')
     sys.exit(0)
 
 print(f'\n  ⚠ {len(missing)} text element(s) in the HTML are NOT in the PDF:\n')
@@ -158,5 +188,7 @@ if len(missing) > 20:
     print(f'    … and {len(missing) - 20} more')
 print('\n  The PDF is rendered by Vivliostyle, not by the browser. Layout that')
 print('  works in the preview can still drop content here — CSS Grid did exactly')
-print('  that once. Bisect with a one-page harness rather than full PDF builds.\n')
+print('  that once. Bisect with a one-page harness rather than full PDF builds.')
+report_siblings()
+print('')
 sys.exit(1 if strict else 0)

@@ -203,3 +203,44 @@ slot divides its width by 92 mm. Corrected. Worth recording because the numbers
 looked plausible and would have sat there being wrong.
 
 Plates at 300 dpi and above: **64 → 66**.
+
+---
+
+## The rest of the thirty-three
+*22 Aug 2026*
+
+All 33 candidates have now been through `findsource.py` and every hit has been
+looked at. **Nine real matches, four false positives, twenty with nothing in the
+archive to find.**
+
+**The one that changes the printed page:**
+
+`pilgrimage-01-worn-threshold` — the opener of the pilgrimage essay, a **300 mm
+full bleed printing at 130 dpi**, now **243**. Its original is `IMG_5596.HEIC`,
+matched at 4.7.
+
+That frame is the argument for the whole tool. It had already been hunted by
+hand and missed: the long public staircase looked like **Duluth**, a city known
+for exactly those stairways, with four Duluth trips in the archive. All 47
+Duluth frames turned out to be waterfront. Pixel matching found it in minutes.
+
+**Its crop was chosen against the score, not by it.** The window search returned
+19.0 — on a high-detail subject a 48 × 48 comparison is noisy — and a plain
+centred square scored better while framing worse. The pick was settled by putting
+all three side by side and looking. The docstring's rule earned its place.
+
+**The three that do not change the page**, and the manifest says so in each:
+`north-03-lake-horizon` (371 dpi already, and its original is a **16374 × 3628
+panorama**), `walk-01-leaf-light` (464), `north-01-gorge-cut` (557). Better
+masters, no printed difference.
+
+**The false positives, now four of thirteen hits.** `specimen-03-eagle-owl`,
+`specimen-04-hyacinth-macaw` and `systems-07-moon-jelly` matched pale documents;
+`systems-01-observation-hive` matched a **landscape panorama of a wooded hill**
+at 13.9. That last one is worth keeping: the hive is the other 81 dpi plate in
+the book and it would have been a satisfying find. It is not there. The whole of
+2014 is eight frames in this export, and **the earlier conclusion stands.**
+
+Distribution after all of it — 120–149 dpi: **4 → 3**. 300 dpi and above: 64 → 66.
+The remaining under-120 are generated plates and 1980s prints, and no archive
+search will help them.

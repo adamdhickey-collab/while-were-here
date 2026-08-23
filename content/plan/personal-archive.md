@@ -404,3 +404,43 @@ gets seen. The filter now drops paperwork before it is ever drawn — 240 frames
 across the library. It is not airtight: a QR code on a screen (`IMG_5615`)
 scored highly and got through, on a page whose own rule is that this book prints
 no scannable codes.
+
+## The observation hive has no original — verified 23 Aug 2026
+
+`systems-01-observation-hive` prints at **81 dpi**, the worst figure in the book:
+a 960 × 960 file on a 300 mm full bleed. `scripts/findsource.py` was built for
+exactly this and has earned it twice — `here-01-dog-late-light` went 81 → 254 dpi
+and `pilgrimage-01-worn-threshold` 130 → 243, both from originals that were in
+the library the whole time.
+
+**Not this one.** The six best matches score 13.9 to 14.9, which the tool's own
+scale calls "worth opening" rather than confident, and opening them settles it:
+a hilltop panorama, a dry savannah plain, a second panorama, a marsh with a line
+of distant animals, baboons on rock, and a Portuguese rooftop. Not one is a
+beehive. At that band the matcher is returning noise, which is what a scale with
+no confident hit is supposed to look like.
+
+**So the placed file is all there is.** The plate stays at 81 dpi unless Adam
+re-photographs the hive or a larger copy turns up somewhere that is not this
+library. Recorded so nobody spends another hour on it — the same service item 0
+does for the dog asleep in afternoon light, where all 871 dog frames were
+searched and the photograph simply does not exist.
+
+### And the library did not grow
+
+An earlier note today said `photo library 2` had gone from 24,418 frames to
+32,533. **That was wrong**, and the error was reading `ls | wc -l` as a
+photograph count. Of 32,533 entries, 8,161 are not images: 5,774 `.aae` edit
+sidecars, 1,323 movies, 746 Panasonic RAW. The real figure is **24,372 images**,
+against 24,418 indexed in August — essentially the same library.
+
+Which means the archive index was never stale, and the re-index started on the
+strength of that mistake was unnecessary. **The only real fault was the path**:
+the libraries moved into `~/Desktop/photo libraries/` and five scripts had the
+old location hardcoded. That is fixed in `scripts/lib/library.py`.
+
+**One thing the miscount did turn up.** There are 746 `.rw2` RAW files in the
+library, and nothing in this toolchain can read them — `findsource.py` indexes
+`.heic/.jpg/.jpeg/.png` only. If any placed Panasonic frame is still short of
+resolution, its RAW may hold more than the JPEG beside it. Not pursued: it needs
+`rawpy`, and no placed plate is currently known to depend on it.

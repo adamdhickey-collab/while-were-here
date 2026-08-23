@@ -1379,3 +1379,33 @@ gained its paragraph gap AND kept its indent — which looks, at a glance, like
 the change half worked. It had: the rule applied everywhere except where it
 mattered. **Both have to move together**, and each now carries a note pointing
 at the other.
+
+## The weight check, and why it had to move — 23 Aug 2026
+
+`typography.css` states the house rule plainly: *the display serif appears at
+900 and at no other weight.* A list of selectors enforces it. **The list has now
+been forgotten twice** — the dedication, which read as a different family on the
+page that gets read hardest, and `.cover-back__line`, which printed
+FalutinTitle-Medium on the back board while the front board two inches away
+printed Ultra.
+
+Both times the rule was written down and simply not applied, and both times it
+was found by eye long afterwards. So the check stopped trusting the list and
+started asking the browser: every element that actually renders in the display
+family and is not at 900. It caught the fault on its first run.
+
+**And then mutation testing caught the check.** It reported
+`? display-weight — could not read`. Not a failure of the check — a failure to
+be *readable*: `scripts/mutate.mjs` decides pass or fail by scanning verify's
+✓/✗ lines, and the check lived only inside `breaks.mjs`, which prints `⚠`. It
+was invisible to the one tool whose job is proving checks bite.
+
+`hyphen-ladder` had the answer already: breaks emits `--json` and verify
+consumes it and prints its own line. The weight findings now travel the same
+way. Verify has twenty checks, and mutation reports **21 of 21 proven to bite,
+0 blind.**
+
+The general rule, worth keeping: **a check that cannot be mutated is a check
+nobody should trust.** If a new check lives in a browser script, surface it
+through verify's JSON handoff, and add the mutation in the same edit — not the
+next one.

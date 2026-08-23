@@ -148,9 +148,31 @@
 .page--recto.image-essay--tall .image-essay__figure { left: 0; }
 .image-essay--tall .figure { position: absolute; inset: 0; }
 
+/* THE CAPTION STOPS WHERE THE PHOTOGRAPH STARTS, and it is derived rather than
+   guessed. It used to be `width: 26%` beside a figure of `width: 64%`, two
+   numbers that were never tied to each other. On a 300 mm page: the caption ran
+   from the 34 mm fore-edge margin to 112 mm, and the photograph began at 108 mm.
+
+   **A 4 mm overlap, and it printed.** The figure is opaque and paints after the
+   text, so the last words of four captions in the book were simply covered —
+   `Figure 7. The far wall, for under a minute. The roo…`, and the same on Plate
+   3, Figure 3 and Figure 4. Nothing caught it: the text does not overflow its
+   box, so `npm run overflow` is happy; it is not low-contrast, so the contrast
+   check is happy; and the page looks composed until you try to read the line.
+
+   Now the caption's inner edge is the figure's outer edge less one gutter, so
+   the two cannot drift apart again. Change the 64% and this follows. */
 .image-essay__caption { position: absolute; bottom: var(--m-bottom); width: 26%; }
 .page--verso .image-essay__caption { left: var(--m-outside); }
 .page--recto .image-essay__caption { right: var(--m-outside); }
+.page--verso.image-essay--tall .image-essay__caption {
+  width: auto;
+  right: calc(64% + var(--gutter));
+}
+.page--recto.image-essay--tall .image-essay__caption {
+  width: auto;
+  left: calc(64% + var(--gutter));
+}
 
 .image-essay--text .page__block { align-content: start; grid-template-rows: auto 1fr; }
 .image-essay--text .image-essay__text { grid-column: 1 / 8; }

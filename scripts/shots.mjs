@@ -71,7 +71,19 @@ const targets = await page.evaluate(({ all, only }) => {
   return out;
 }, { all, only });
 
+/* CLEAR THE DIRECTORY FIRST. It was never cleared, so renders from earlier runs
+   sat alongside current ones and looked identical. On 23 Aug 2026 the book went
+   from 68 spreads to 61; `spread-068.png` stayed behind, twenty hours stale,
+   showing a back cover that had since been replaced — the handwriting face and
+   the botanical, both long gone. It was mistaken for the current page.
+
+   The same staleness sent a search for a spread to three wrong pages earlier
+   the same day. A render nobody re-made is not evidence, and there is no way to
+   tell one from a fresh one by looking. */
 fs.mkdirSync(outDir, { recursive: true });
+for (const f of fs.readdirSync(outDir)) {
+  if (f.endsWith('.png')) fs.unlinkSync(path.join(outDir, f));
+}
 for (const t of targets) {
   const name = `${t.id || `spread-${String(t.i).padStart(3, '0')}`}.png`;
   await page.locator('.spread').nth(t.i).screenshot({ path: path.join(outDir, name) });

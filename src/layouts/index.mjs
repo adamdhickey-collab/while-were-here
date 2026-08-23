@@ -877,7 +877,7 @@ const pullQuote = (spread, essay, ctx) => ({
       cls: 'quote-spread quote-spread--verso',
       html: `
         ${record(spread.record)}
-        ${spread.image && !spread.record ? `<div class="quote-spread__figure">${figure(ctx.image(spread.image), { root: ctx.root, dark: (ctx.stage || 1) >= 3 })}</div>` : ''}
+        ${spread.image && !spread.record ? `<div class="quote-spread__figure">${figure(ctx.image(spread.image), { root: ctx.root, dark: (ctx.stage || 1) >= 3, className: spread.focus ? `figure--focus-${esc(spread.focus)}` : '' })}</div>` : ''}
         <div class="page__block">
           ${spread.variant === 'bare' && !spread.notice && !spread.noticeSteps
             ? `<div class="quote-spread__mark">${radiant(16, 24)}</div>` : ''}

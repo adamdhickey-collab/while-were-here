@@ -694,7 +694,33 @@ about his dog.
 
 ---
 
-### 16 · What the three reproduced records actually disclose — **ADAM'S CALL**
+### 16 · What the three reproduced records actually disclose — **DECIDED**
+**Adam's call, 23 Aug 2026: drop Record 3.** "Cities you have checked into" —
+the 23-place location history — is out of the book. The two remaining records
+renumbered themselves to "Record 1 of 2" and "Record 2 of 2" without anyone
+touching them, because those counts are derived rather than typed, and
+`verify.mjs` now reports 2 records and 185 entries. The "Reproduced in full,
+unedited" line stays true of both survivors: nothing inside a record was
+touched, a whole record was withdrawn.
+
+**The page it owned did not go bare, and did not cost a page either.** The
+record held the verso of a pull-quote spread, so removing it would have left
+that page empty. `pilgrimage-05-stamped-booklet` — unplaced until today, in this
+same essay — took the slot: a paper credential open on a table, each stop
+stamped in a different ink. Its own concept line had been sitting there the
+whole time saying *"the proof of a walk is a document nobody checks"*, which is
+exactly the opposite of a record kept automatically, continuously, by a company.
+Meta's log of where he had been, replaced by the version stamped by hand.
+
+The plate is portrait and the slot is a landscape band, so the first composition
+printed a wall with the booklet sliced off along the bottom edge. That produced
+`focus:` — a spread may now say which band of a source to keep, declared beside
+the image in the content file because it is a fact about the photograph rather
+than about the page. See `.figure--focus-*` in layouts.css.
+
+The original reasoning follows, kept because open question 3 will need it.
+
+
 Read entry by entry, 23 Aug 2026. The codes check settled one half of the field
 note's rule; this is the other half — *no personal data it does not mean to* —
 and no check can settle it, because every one of these entries is there **on

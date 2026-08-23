@@ -103,6 +103,22 @@
   height: 54%;
 }
 .quote-spread__figure .figure { position: absolute; inset: 0; }
+
+/* WHERE TO CROP A PLATE THAT DOES NOT SHARE THE SLOT'S SHAPE.
+
+   This slot is a fixed landscape band — 54% of trim height across the text
+   column — and `object-fit: cover` crops to the middle of whatever it is given.
+   A portrait plate whose subject sits low therefore loses its subject: the
+   stamped booklet went in at 1024 x 1536 and the page printed a wall, with the
+   booklet sliced off along the bottom edge.
+
+   `focus:` in the spread's frontmatter says which band of the source to keep.
+   It is a property of the PHOTOGRAPH, not of the page, which is why it is
+   declared beside the image in the content file rather than hidden in a rule
+   keyed to a filename here. Any plate can use it; most need nothing. */
+.quote-spread__figure .figure--focus-low img    { object-position: center 78%; }
+.quote-spread__figure .figure--focus-high img   { object-position: center 22%; }
+.quote-spread__figure .figure--focus-bottom img { object-position: center bottom; }
 .page--verso .quote-spread__figure { left: var(--m-outside); right: var(--m-inside); }
 .page--recto .quote-spread__figure { left: var(--m-inside);  right: var(--m-outside); }
 .quote-spread__lede { grid-column: 1 / 13; }

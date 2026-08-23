@@ -256,8 +256,31 @@ Its caption is already written: *"The room is doing this whether or not anyone
 is in it."* Also verified absent — the `Wall` × `Light` search returns
 moving-day documentation.
 
+### The four-season sequence — read this before placing the stand-ins
+
+`ordinary-days-01g1` … `01g4` exist as files and describe themselves as "the same
+stretch of lakeshore in spring / summer / autumn / winter, identical framing".
+**They are one generated photograph recoloured four ways.**
+
+Measured 22 Aug 2026: spring against summer differs by **5.5** on a 0–255
+grayscale, spring against autumn by **3.4**. Two genuinely different photographs
+of this same shoreline differ by **44**. Winter reads 42.5, but only because it
+carries a heavy desaturation — its rocks and driftwood are the same rocks and
+driftwood. All four descriptions now say so.
+
+**Why this one matters more than the other stand-ins.** The essay beside it
+claims a real sequence in its own voice: *"one tree I have photographed four
+times now — same tree, same angle, one photograph a season … The tree never once
+repeated itself."* Placing four recolours of a single frame under that sentence
+would print a fabrication of precisely the thing the paragraph says took four
+visits to earn. It is the one generated plate in the book that would contradict
+the copy it illustrates.
+
+The deadline note above still holds: a real sequence costs a year, so it starts
+in August or it does not exist for this edition.
+
 ### Then the rest, as before
-The kitchen table, the artifact array, the cursor, the four-season sequence, and
+The kitchen table, the artifact array, the cursor, and
 the rephotograph of the child's book page (item 11), which settles a sentence
 the book quotes twice.
 

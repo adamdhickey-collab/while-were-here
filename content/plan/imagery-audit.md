@@ -629,7 +629,46 @@ photograph — the same fault as the four survey plates, which described their
 generation briefs. **A description written from the text beside it will always
 sound right and cannot be trusted.**
 
-**Thirty-six images have not been checked this way**, and on this trend most of
+### Tenth batch — and that is all of them
+
+| image | verdict |
+| --- | --- |
+| `attention-03-light-on-a-wall` | exact, and it gets the detail the essay turns on: *"her phone is in her hands, behind her back"* while she watches the light. The rope barrier, the line of clay amphorae along the wall's foot, the scatter of colored light high on bare ashlar — all there. |
+| `specimen-07-amur-tiger` | exact — head low, whiskers forward, following something at ground level. |
+| `specimen-06-prairie-dog` | lying flat, legs out behind, on sand: all confirmed. **"Eyes closed" I could NOT verify** — the file is 1280 × 960 and the head is too small to resolve the eye. Left alone rather than changed on a guess. |
+| `here-08-dog-resting` | the bed and the wall of small art cards are right. **"Front paws crossed" and "ears forward" I could not settle** at this angle — one foreleg is extended with a paw at the frame edge and the ears read as relaxed rather than pricked, but neither is clear enough to call. Left alone. |
+
+## The audit is complete — all 83 spoken descriptions checked
+
+**About twenty carried a fault.** They fell into four kinds, and the kinds are
+more useful than the list:
+
+1. **A detail recalled instead of looked at.** "Blank wall", "black water",
+   "shadows forward", "paper crowns", "a dozen people". Each is what the scene is
+   *like* from memory. None survives thirty seconds with the file open.
+2. **A description written from the brief.** All four survey plates described the
+   concept they were generated from rather than the plate that came out —
+   "eleven faint rings" that the code never draws.
+3. **A description written from the prose beside it.** `here-04-window-water`
+   claimed "one drop meeting another and changing direction" because the field
+   note next to it says exactly that. The glass holds several hundred static
+   droplets.
+4. **A true description that left out the biggest thing in the frame.** The
+   crosswalk's construction site, the lake's boy, the specimen card's taped
+   photograph, the scaffold tower at Fátima.
+
+**Two of them had propagated into decisions.** `here-07-ceremony`'s "all small in
+frame" had been written into a consent note that then argued from it; and
+`cover-02-back-botanical`'s "mushrooms" is the likeliest source of an outside
+editorial read that asks whether to replace the back cover. A wrong description
+does not stay in the manifest.
+
+**And the method, which held up every time.** Three times a thumbnail nearly made
+me *introduce* an error into correct copy — the two geese I read as three, the
+Physarum network that looked like blobs, the VHS spine that once read EAST.
+**Open it at size before changing anything.** Where size could not settle it —
+the prairie dog's eye, the dog's paws — say so and leave it.
+, and on this trend most of
 them are fine. Continuing is still worth doing — the crosswalk's missing
 construction site was found in batch three — but the yield is now low enough that
 it should not crowd out other work.

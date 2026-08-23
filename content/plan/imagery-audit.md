@@ -510,5 +510,43 @@ nothing else. It is not a semantic search and cannot be made into one by
 pointing it at a subject. Open question 8 still needs Adam's own room
 photographed, or the crop.
 
-**Sixty-five images have not been checked this way.** That is the honest
+### Fifth batch — six checked, nothing wrong
+
+`part-1-divider-sidewalk-birds`, `attention-05-crosswalk-strangers`,
+`hand-01-marginalia-set`, `field-note-02-dog-tag`, `systems-05-physarum-network`,
+`systems-02-starling-flock`. **All six accurate**, including three precise claims
+that were specifically tested:
+
+* the crosswalk survey's shadow polygon really is **hatched**, not merely
+  outlined;
+* `hand-01` really does carry **seven** annotations, inside its stated "six to
+  eight", with the bracket, arrow, underline and crossing-out it names;
+* the Physarum dish really does show **thick trunks and thin branches** — fine
+  yellow veins running between the oat flakes.
+
+**The scannable-code rule was verified rather than assumed.** `shot-list.md`
+states that "this book prints no scannable codes", and `field-note-02-dog-tag`
+shows a square code on a pet tag. Magnified 5×, the pattern has **no QR finder
+squares and no Data Matrix L-border** — it is structurally not a valid symbology
+in either format and cannot decode. It is a generated plate, so the code is a
+picture of a code. The rule holds. Worth confirming, and worth remembering that
+the REAL tag will be scannable when that shot is finally taken; the shot list
+already says to shoot it at an angle.
+
+### The trend, and what it means for carrying on
+
+Batch one: **three wrong of six.** Batch three: one of four. Batch four: two
+small overstatements of four. Batch five: **none of six.**
+
+That is convergence, and it is the expected shape — the early passes took the
+worst. **Three times today a thumbnail misled me and magnification corrected it**:
+the geese I nearly "fixed" from two to three, the Physarum network that looked
+like blobs, and the VHS spine that once read EAST. The method that works is
+always the same one: open it at size before changing anything.
+
+**Fifty-nine images have not been checked this way**, and on this trend most of
+them are fine. Continuing is still worth doing — the crosswalk's missing
+construction site was found in batch three — but the yield is now low enough that
+it should not crowd out other work.
+ That is the honest
 state. No check can do it; it needs eyes on each frame beside its sentence.

@@ -1533,3 +1533,32 @@ risk — press-only differences that no proof check can see:
   foliage. A wrong image would not respond to counter-scaling at all. The 2%
   centre-magnification is the same visible-crop change the old inset extension
   produced; what the reader sees is unchanged.
+
+## The contrast check learns to see the whole book — 23 Aug 2026, evening
+
+The check's selector list covered twenty classes. A census of the composed book
+found **forty-one text-bearing classes it never measured** — the specimen cards
+that sit on photographs, the margin script, the dedication, the sources page,
+every divider blurb. A hand-kept list is how the display-weight rule failed
+twice in one day, so the list is gone: the check now discovers every element
+that directly owns a run of text and measures all of it. Coverage went from
+233 runs to **948**.
+
+What the wider net caught is a finding about the design, not a defect: **every
+run below the floor is the rust ink, and only the rust ink.** Eight runs, all
+`--rust-ink` (#96482C), at 2.9:1 on cream and 2.6:1 on the dark stages — the
+essay numerals, the script in the margins, the Part labels on the dividers.
+That is the book's accent voice, used deliberately and small.
+
+These now report as an **advisory tally, not failures**, matched by computed
+colour rather than by class — so a brand-new element set in rust is treated the
+same as an old one, and a body paragraph accidentally set in rust would still
+surface. Failing a considered design choice on every run teaches people to
+ignore the check, and an ignored check protects nothing.
+
+**Left open for Adam, on paper rather than on screen:** whether rust at 2.6:1
+on the dark dividers holds up on Crystal Archive. Screen ratios understate
+print in some directions and overstate it in others; the numerals and margin
+script are ornamental, but "Part III" on a dark divider is wayfinding. One
+glance at the printed proof settles it, and the advisory line will keep
+reporting the numbers until then.

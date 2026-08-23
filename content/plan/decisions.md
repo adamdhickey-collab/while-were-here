@@ -1515,3 +1515,21 @@ counted the book's cream as bare paper and reported 64 failures on a file with
 eleven, and its success path crashed the first time it ever passed, because
 the failure path had been exercised all afternoon and the success path never
 once. **526 edges judged across 132 pages, all clean.**
+
+### The fix validated against the proof, not just against its own check
+
+Two follow-ups the same afternoon, because the surgery created a new class of
+risk — press-only differences that no proof check can see:
+
+* **No text sits inside a scaled element.** Swept the composed book: every
+  `figure--bleed` and `.bleed` element contains imagery only. Had a caption
+  lived inside one, it would have printed 2% larger on press than on every
+  proof anyone had ever reviewed.
+* **Every press page was diffed against its proof page inside the trim.**
+  Median difference across 132 pages: **0.17** — identical. The full-bleed
+  pages differ exactly as designed: counter-scaling the press render by 1/1.02
+  about the centre collapses page 117 from 39.8 to 13.4, page 103 from 31.2 to
+  9.9, page 43 from 24.2 to 6.6 — the residue being resampling noise on busy
+  foliage. A wrong image would not respond to counter-scaling at all. The 2%
+  centre-magnification is the same visible-crop change the old inset extension
+  produced; what the reader sees is unchanged.

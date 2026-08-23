@@ -90,7 +90,28 @@ def looks_like_paper(t):
 
 
 def score(t):
-    """Higher is more photograph. Returns None for paperwork."""
+    """Higher is more photograph. Returns None for paperwork.
+
+       WHAT THIS SCORE IS AND IS NOT. Edge energy plus tonal range. It finds
+       TEXTURE, and texture is not interest. Measured over the whole library the
+       top six are hoarfrost, a striped shirt at ranks two, three and five, and
+       bare branches on sky. The shirt is the proof: the score is reading
+       stripes. It still earns its place, because the frost at rank one is a
+       real find nobody would have reached by scrolling 24,418 frames.
+
+       A `--spare` mode was added and REMOVED on 23 Aug 2026. The reasoning was
+       that this book's photographs are nearly all one subject on a plain ground
+       in strong light — the dog in a rectangle of light, the effigy against a
+       wall, the walkers against white plaster — so inverting the edge term
+       should surface them. It does not. `2*tonal - 0.85*edges` over the home
+       archive returns pocket shots, dark blurry indoor snaps and a finger over
+       the lens, because "few edges and a wide tonal range" is a precise
+       description of OUT OF FOCUS AND BADLY LIT. Restraint and failure look
+       identical to a grayscale statistic. Do not re-add it.
+
+       So: the filter below is the part of this script that works. The ranking
+       is a way of shuffling the deck, not a judgement — and every sheet still
+       has to be looked at."""
     if looks_like_paper(t):
         return None
     g = t.astype(np.float32)

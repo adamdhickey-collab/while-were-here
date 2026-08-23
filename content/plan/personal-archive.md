@@ -343,3 +343,64 @@ single most on-thesis object here: a year made into a thing so it can be ended.
   41.6–70°N — so Seattle, Chicago, Boston and New York were all filed as Canada.
   12,642 frames in the wrong country, and Seattle invisible until Adam asked for
   it by name. The border is approximated per-longitude now.
+
+## The home archive, swept 23 Aug 2026 — one find, and two rankings that failed
+
+Every earlier sweep went after travel: Colombia, Italy, Spain, Portugal,
+Seattle, the Grand Canyon, Duluth. The bulk was never touched — **13,770 USA
+frames, 10,290 of them at home in Minneapolis.**
+
+### What was found
+
+**`IMG_2763.HEIC`, 12 Dec 2024 — hoarfrost on dark ice.** 4032 × 3024, **256 dpi
+at 300 mm.** Feathered crystal rosettes, densely packed, silver-white on
+near-black, filling the frame edge to edge. `IMG_2764` is the same surface a
+moment later. It is the only frame in this sweep that belongs in this book: it
+is a real photograph of a real system doing something structural, at printable
+resolution, and stages III–IV already invert to a dark ground with pale ink.
+
+**It has nowhere to go, and that is the honest position.** The two Material
+Break plates it would naturally replace — `material-01-linen-weave` and
+`material-03-glass-condensation` — are BOTH UNPLACED, cut when the book hit the
+130-page ceiling, so replacing them buys nothing. The Part II divider was the
+other candidate and it fails on concept: `part-2-divider-branching` argues *"the
+same structural logic arriving in four unrelated materials"* and draws four —
+delta, roots, street grid, capillary bed. Frost is one material. Swapping it in
+would take the plate from 87 dpi to 256 and delete the argument the plate exists
+to make. Recorded as a candidate for Adam, not placed.
+
+Lesser candidates, all Minneapolis, all 256 dpi: `IMG_7643` (a heart-shaped leaf
+face-down on gravel), `IMG_0430` (a live hawk perched on a heron sculpture),
+`IMG_9833`/`IMG_9834` (railing shadows thrown across snow), `IMG_1013` (shelf
+fungus on rock).
+
+### Two rankings that did not work, recorded so they are not retried
+
+`scripts/interesting.py` ranks and filters. **The filter works; the ranker is a
+way of shuffling the deck.**
+
+* **Busy — edges plus tonal range.** Finds texture, and texture is not interest.
+  On the whole library the top six are the hoarfrost, **a striped shirt at ranks
+  two, three and five**, and bare branches on sky. The shirt is the proof. It
+  earned its keep anyway: nobody reaches the frost by scrolling 24,418 frames.
+* **Spare — the same terms inverted.** The reasoning was sound and the result was
+  not. Nearly every photograph placed in this book is one subject on a plain
+  ground in strong light, so penalising edges should surface them. It returns
+  pocket shots, dark blurry indoor snaps and a finger over the lens, because
+  *few edges and a wide tonal range* precisely describes OUT OF FOCUS AND BADLY
+  LIT. **Restraint and failure are identical to a grayscale statistic.** Removed.
+
+### And the sweep found something that is not a photograph
+
+`edited` is not a curation flag. It marks what has been processed. Filtering on
+it and sampling 36 frames returned a flight itinerary, a bank deposit slip, a
+handwritten ledger, a car odometer, a clothing label, an empty room and a
+lightbulb box — and **a passport with a name and number, and an email carrying
+somebody's phone number.**
+
+[personal-data.md](personal-data.md) governs what the BOOK may print. Nothing
+governed what a CONTACT SHEET may surface, and the sheet is where a frame first
+gets seen. The filter now drops paperwork before it is ever drawn — 240 frames
+across the library. It is not airtight: a QR code on a screen (`IMG_5615`)
+scored highly and got through, on a page whose own rule is that this book prints
+no scannable codes.

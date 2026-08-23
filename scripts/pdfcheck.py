@@ -98,9 +98,34 @@ except ImportError:
 # The others are not opened or validated here — only their age is reported.
 # Knowing a deliverable is stale is most of the value; the rest of this script
 # reads text and could not see those changes anyway.
+# MEASURED AGAINST THE SOURCES, NOT AGAINST build/book.html — and the
+# difference is the whole point. The documented press workflow ENDS with
+# `npm run build`, which rewrites build/book.html after the press PDF has
+# already been written. Compared to the build, a press file is therefore always
+# a few minutes "stale", every single time. The first version of this did that
+# and reported a PDF built ninety seconds earlier as behind.
+#
+# A check that fires on a correct workflow gets ignored, and then it is not a
+# check. What actually decides whether a deliverable is out of date is the
+# newest SOURCE it was made from.
+def newest_source():
+    newest = 0.0
+    for d in ('content', 'src'):
+        base = ROOT / d
+        if not base.is_dir():
+            continue
+        for f in base.rglob('*'):
+            if f.is_file() and not f.name.startswith('.'):
+                newest = max(newest, f.stat().st_mtime)
+    cfg = ROOT / 'book.config.js'
+    if cfg.exists():
+        newest = max(newest, cfg.stat().st_mtime)
+    return newest
+
+SRC_MTIME = newest_source()
 others = sorted(q for q in PDF.parent.glob('*.pdf') if q != PDF) if PDF.parent.is_dir() else []
-aged = [(q, (HTML.stat().st_mtime - q.stat().st_mtime) / 3600)
-        for q in others if q.stat().st_mtime < HTML.stat().st_mtime]
+aged = [(q, (SRC_MTIME - q.stat().st_mtime) / 3600)
+        for q in others if q.stat().st_mtime < SRC_MTIME]
 
 stale = PDF.stat().st_mtime < HTML.stat().st_mtime
 if stale:
@@ -165,7 +190,7 @@ def report_siblings():
        because a stale press file is a hazard on its own."""
     if not aged:
         if others:
-            print(f'    {len(others)} other deliverable(s) in dist/, all newer than the build')
+            print(f'    {len(others)} other deliverable(s) in dist/, all newer than the sources')
         return
     print(f'\n  ⚠ {len(aged)} other deliverable(s) in dist/ are OLDER than the build:\n')
     for q, hours in aged:

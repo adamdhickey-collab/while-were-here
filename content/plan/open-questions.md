@@ -33,6 +33,26 @@ A press PDF built *without* the preflight is already verified correct: 132 pages
 TrimBox 300 × 300 mm, BleedBox 306 × 306 mm, all seven faces subset-embedded.
 That is a file a printer can work from.
 
+### 2b · What shape does Saal's intake want — one file, or interior + wrap?
+The press PDF is **132 pages: the front cover is page 1 and the back cover is
+page 132**, with the 130 interior pages between them. Photographic layflat
+intake very often wants the opposite: the interior alone, and the cover as a
+separate wrap built on the printer's own template — which this repo already
+half-expects, since the spine note in `cover.css` says Saal produce the real
+wrap from their template and the mockup exists only to check against it.
+
+Both shapes now exist, so whichever they ask for is ready:
+
+* `dist/while-were-here-press.pdf` — 132 pp, covers included
+* `dist/while-were-here-interior.pdf` — 130 pp, covers stripped, same trim,
+  bleed and marks. Cut with pymupdf after verifying by text that pages 1 and
+  132 really were the covers; the interior is untouched, so nothing inside
+  moved.
+
+**One question to Saal, same as questions 1 and 2** — and the interior file is
+derived, so if the answer is "one file" it can simply be deleted. `pdfcheck`
+watches its staleness along with the others either way.
+
 ### 3 · Consent, if this is ever sold
 **Eight** images carry a `consent` note in `content/images.json`. **None are
 cleared.** Fine for family copies; every one needs asking before a sale.

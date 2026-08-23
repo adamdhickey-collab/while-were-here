@@ -37,6 +37,33 @@
  * judged on the ground most of it sits on, and a mean would split the
  * difference and call it grey.
  *
+ * OCCLUSION IS NOT CHECKED HERE, AND WAS TRIED TWICE. Four captions in this
+ * book printed their last words underneath the photograph beside them —
+ * "Figure 7. The far wall, for under a minute. The roo…" — because the
+ * caption's width and the figure's width were two numbers nobody had tied
+ * together. Overflow could not see it, since the text never left its box. This
+ * check cannot see it either, since the glyphs are not dim, only buried. It was
+ * found by reading a page and noticing a word stop in mid-air.
+ *
+ * Attempt one compared ink counts with the pictures hidden. That collapses
+ * whenever the text's own colour IS the page colour: the quote closing the book
+ * is paper cream over a photograph of a fire, so with the photograph hidden
+ * every pixel in its box matched "ink" and a perfectly legible page reported as
+ * buried.
+ *
+ * Attempt two raised the type with `z-index` and compared against the page as
+ * printed, per line so that one line losing its last word would register.
+ * Measured against the real fault, reintroduced on purpose: NOT CAUGHT.
+ * `z-index` only orders siblings within a stacking context, and the caption and
+ * the figure are not in one — lifting the caption inside its own parent does
+ * not raise it above the figure at all.
+ *
+ * Both attempts were removed rather than left in. A check that cannot be shown
+ * to catch its own fault is worse than no check, because the green line is
+ * read as evidence. If occlusion is worth catching, the honest instrument is
+ * geometric — compare each text line's box against the boxes of opaque
+ * elements painted after it — not photographic.
+ *
  * THRESHOLDS are WCAG's — 4.5:1, and 3:1 for large type (>=18pt, or >=14pt
  * bold). This is print, not a screen, and ink on paper behaves differently from
  * light on glass. They are used anyway because the failures worth catching are

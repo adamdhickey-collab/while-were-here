@@ -87,3 +87,37 @@ stated order of authority, so the outliers read as intentional:
    catalogue cards, the handwriting.
 
 Recorded in [art-direction.md](art-direction.md) as a standing rule.
+
+## The book's rhythm and tone, measured spread by spread — 24 Aug 2026
+
+Reviewed as it is read — 68 openings, not 132 pages — now that the spreads PDF
+exists to make that possible.
+
+**Rhythm: no run longer than two.** Every essay follows the same spine (opener →
+reading → a set piece → asymmetric reading → closing) without any two essays
+running the same length: they range six to eight spreads. Part dividers fall at
+6, 22, 36 and 52; field notes after essays 2, 4, 6 and 8. Three spread types
+appear exactly once in the whole book — the image pair, the diagram, the
+material break — which reads as a surprise rather than an inconsistency, and is
+worth leaving alone.
+
+**Tone: four transitions in sixty-eight spreads.** Measured by mean luminance
+off the rendered spreads:
+
+```
+ 1-34  ░░░░░░▒░░░░░░░░░░░░░░░▒░░░░░▓▓▓▓▓▓
+35-68  ▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒▒░░░░░▒▒░░░░▒░░░
+```
+
+Twenty-two dark spreads, arriving at 29 and lifting at 52. **The descent begins
+mid-Part-II, not at a divider** — which is exactly what the divider decision of
+22 Aug set out to preserve: *"the inversion still arrives unannounced, which is
+what the essays keep saying a real change does."* It is now confirmed to survive
+into the rendered book, not just the intention.
+
+**The one wobble is the best thing in the sequence.** Spread 35 sits at tone 137
+between two spreads at 58 and 47 — the field note about the dog's collar, on
+cream, between the dark close of *The Intelligence Outside Your Head* and the
+dark Part III divider. A single lit page between two dark passages, and it
+happens to be the most personal paragraph in the book. Nothing to fix; worth
+knowing it is there so nobody smooths it out later.

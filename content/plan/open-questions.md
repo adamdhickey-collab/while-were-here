@@ -8,6 +8,17 @@ on the book.
 
 ## Before anything is printed
 
+### 0 · The email that closes questions 1, 2 and 2b — **DRAFTED**
+All three printer questions are one reply away, and the draft is written:
+[saal-email.md](saal-email.md). It asks the caliper, the PDF/X preference and
+the intake shape in one message, carries the exact file specifications, and
+records what changes in this repository for each possible answer.
+
+It also asks Saal's opinion on the two low-resolution plates — they will have
+seen more Crystal Archive at this size than anyone here.
+
+Sending it is Adam's; nothing else in the book moves until it is answered.
+
 ### 1 · Saal's paper caliper
 `book.config.js` carries `paperCaliper: 0.17`, a placeholder that assumes
 uncoated stock. This book prints on FUJIFILM Crystal Archive HD at 368 g/m², and

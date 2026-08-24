@@ -8,16 +8,31 @@ on the book.
 
 ## Before anything is printed
 
-### 0 · The email that closes questions 1, 2 and 2b — **DRAFTED**
-All three printer questions are one reply away, and the draft is written:
-[saal-email.md](saal-email.md). It asks the caliper, the PDF/X preference and
-the intake shape in one message, carries the exact file specifications, and
-records what changes in this repository for each possible answer.
+### 0 · Choosing a printer — **SAAL IS OUT**, brief written 23 Aug 2026
+**Adam's call: Saal Digital is too expensive.** Every printer question below
+was therefore rewritten to be printer-agnostic:
+[printer-brief.md](printer-brief.md), to send to three or four and compare.
 
-It also asks Saal's opinion on the two low-resolution plates — they will have
-seen more Crystal Archive at this size than anyone here.
+The brief states what the book is and asks what each printer can do with it —
+square sizes offered, layflat availability, maximum page count, stock caliper,
+PDF/X preference, and file shape.
 
-Sending it is Adam's; nothing else in the book moves until it is answered.
+**The size question was measured rather than assumed**, because every page here
+is composed to fit its slot rather than flowed. Rebuilding at each trim and
+counting overflows: **305 mm (12 × 12 in) costs nothing — zero of 132 pages
+overflow**; 285 mm costs 3 pages; 254 mm costs 19; 210 mm costs 64. So 12 × 12
+inch is a free move to a size almost every printer offers, and anything below
+about 285 mm is a different project.
+
+Two things that were constraints under Saal may now be choices. **The 130-page
+ceiling was Saal's**, and it cost this book two material breaks, a withdrawn
+record and several spreads that paid for each other — a printer allowing more
+would give that back. **Crystal Archive was Saal's stock**, not a requirement;
+layflat binding is the premium actually worth paying for here, because of the
+crossover spreads.
+
+Questions 1, 2 and 2b below are superseded by the brief, and are kept only for
+the reasoning they carry.
 
 ### 1 · Saal's paper caliper
 `book.config.js` carries `paperCaliper: 0.17`, a placeholder that assumes

@@ -102,11 +102,25 @@ accurate is the whole standard this book holds itself to.
 
 ## Writing and photographs only Adam can make
 
-### 4 · The dedication
-Still reads *"For my father, who handed me the right book."* He is rewriting it
-toward family generally. **The layout is ready** — tested at trim with five
-candidate texts including comma-less and four-line ones; nothing breaks or
-overflows. Write anything.
+### 4 · The dedication — **WRITTEN**, 23 Aug 2026
+> For my parents, who taught me to look, and for Fabiola, who looks with me
+
+Adam's call from five drafts, each composed on the real page at trim size
+before he chose rather than judged as lines in a list. It replaces *"For my
+father, who handed me the right book"*, which he had been rewriting toward
+family generally — this one widens without abandoning the original's shape,
+and names rather than evokes.
+
+It carries the book's own verb. *Look* is what the whole thing argues for —
+"Look Again" titles Part I, "look closer" closes the back cover — so the
+dedication says the parents taught the book's subject and Fabiola practises it.
+Two clauses, four lines set, no overflow.
+
+**One thing to confirm before press:** the relationship word for Fabiola is
+absent by design — the line names her and nothing else — but check the spelling
+of her name against how she writes it. It is the one word in the book that
+would be unforgivable to get wrong, and nothing in this repository can verify
+it.
 
 ### 5 · The shot list — [shot-list.md](shot-list.md)
 Ten photographs the library provably does not contain. Four cost minutes each

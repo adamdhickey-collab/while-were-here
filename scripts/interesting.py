@@ -194,8 +194,21 @@ for i, (nm, sc) in enumerate(pick):
     except Exception:
         continue
     x, y = (i % COLS) * TH, (i // COLS) * TH
-    sheet.paste(im, (x + (TH - im.width) // 2, y + 24 + (TH - 30 - im.height) // 2))
-    draw.text((x + 6, y + 6), f"{nm[:17]} {day.get(nm, '')} {sc:.2f}", fill=(40, 38, 34))
+    px, py = x + (TH - im.width) // 2, y + 24 + (TH - 30 - im.height) // 2
+    sheet.paste(im, (px, py))
+    # ON THE THUMBNAIL, NOT AT THE CELL CORNER, and the full name rather than
+    # the first 17 characters. The cells are a regular grid but the images are
+    # CENTRED inside them, so a row mixing portrait and landscape puts each
+    # picture at a different height and the label at the cell corner drifts away
+    # from the picture it names. Reading a 30-up sheet, that produced three
+    # separate wrong identifications on 24 Aug 2026 — a magnolia portrait and a
+    # Pride parade both shortlisted as a warbler on a garden hose — each of
+    # which cost a full-size render to disprove. Truncating at 17 characters
+    # made it worse: "IMG_7252 (2).HEIC" is exactly 17, so longer names lost the
+    # ` (1)` / ` (2)` suffix that is the only thing telling four files apart.
+    label = f"{nm} {day.get(nm, '')} {sc:.2f}"
+    draw.rectangle([px, py, px + im.width, py + 15], fill=(255, 255, 255))
+    draw.text((px + 3, py + 3), label, fill=(20, 19, 17))
 
 out = SCRATCH / f'rank-{a.name}.jpg'
 sheet.save(out, quality=88)

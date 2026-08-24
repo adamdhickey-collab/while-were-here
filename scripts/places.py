@@ -273,6 +273,20 @@ def report(rows):
     for r in withgps:
         r['country'] = country(r['lat'], r['lon'])
         r['city'] = nearest_city(r['lat'], r['lon'])
+
+    # AND WRITTEN BACK, which it was not until 24 Aug 2026. Re-resolving in
+    # memory fixes the REPORT and leaves the CACHE holding the old answer, so
+    # every other reader of places.json keeps getting the bug this file has
+    # already fixed. That is exactly what happened: the Canada box was corrected
+    # after it swallowed 12,642 American frames (see BOXES above), the report
+    # started printing the truth, and .cache/places.json went on saying Canada.
+    # A day later a review of the trips was built on the cache and reported to
+    # Adam that home was Canada and that there were 3,174 away-from-home frames.
+    # Both were wrong, and 1,493 Colombia frames across nine trips — the country
+    # the closing photograph of this book was taken in — did not appear at all,
+    # because their stale country was null. A cache that disagrees with the code
+    # that fills it is worse than no cache: it is a confident wrong answer.
+    OUT.write_text(json.dumps(rows, ensure_ascii=False))
     by = Counter(r.get('country') or 'unplaced' for r in withgps)
     ed = Counter(r.get('country') or 'unplaced' for r in withgps if r['edited'])
     print(f"{'country':<14}{'frames':>8}{'edited':>8}")

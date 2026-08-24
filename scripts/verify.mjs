@@ -833,6 +833,50 @@ check('every image filed as placed is on a page, and the reverse', wrong.length 
                : `${judged.filter(onPage).length} on the page, ${judged.length - judged.filter(onPage).length} held back, `
                  + `${images.length - judged.length} generated records silent on placement`);
 
+/* Do the frames this book is still waiting on actually resolve?
+
+   Twenty-two records in the manifest describe a photograph in full — subject,
+   essay, the slot it was made for — and carry `filename: "—"`, because the file
+   is not in the repository yet. Each one names where it lives, and that path is
+   the ONLY way back to the frame: the thumbnail is not here, the id is ours not
+   the camera's, and the description is prose. Lose the path and the record
+   describes a picture nobody can find.
+
+   Every one of them was stale. The libraries were reorganised into
+   `~/Desktop/photo libraries/` on 23 Aug 2026 and all 23 recorded paths still
+   pointed at `~/Desktop/photo library 2/…` — the Montserrat switchbacks, the
+   organ en chamade, the Sagrada magic square, the Granada street flow, the
+   Fátima pigeon. Every file was still there under the new location, so nothing
+   was lost, but nothing said so either, and the same move had already broken
+   five scripts at once (see scripts/lib/library.py). Worse is already true one
+   level up: `~/Desktop/Photos from iphoto`, the source cited by photo-selection
+   01 through 04 and by five PLACED photographs, no longer exists at all.
+
+   A NOTE, NEVER A PASS OR A FAIL, and that is the honest shape. These paths are
+   outside the repository and on one particular Desktop; CI has no libraries and
+   neither does a fresh clone, so a check that failed there would be failing on
+   the absence of somebody's hard drive. It reports only when a library is
+   actually present, which is exactly when the answer means anything. */
+const libRefs = images.flatMap((i) =>
+  [...String(i.spread || '').matchAll(/`(~\/Desktop\/[^`]+)`/g)].map((m) => ({ id: i.id, p: m[1] })));
+const home = process.env.HOME || '';
+if (libRefs.length) {
+  const abs = (p) => p.replace('~', home);
+  const anyLibrary = fs.existsSync(`${home}/Desktop/photo libraries`);
+  if (!anyLibrary) {
+    note('archive paths', `${libRefs.length} recorded, not checked — no photo library on this machine`);
+  } else {
+    const gone = libRefs.filter((r) => !fs.existsSync(abs(r.p)));
+    if (gone.length) {
+      note('archive paths', `${gone.length} of ${libRefs.length} recorded frames no longer resolve — `
+        + `${gone.slice(0, 3).map((r) => r.id).join(', ')}${gone.length > 3 ? '…' : ''}. `
+        + 'The path is the only way back to an unplaced frame.');
+    } else {
+      note('archive paths', `all ${libRefs.length} recorded frames still resolve on this machine`);
+    }
+  }
+}
+
 /* Can the type be read off the ground it prints on?
 
    Two legibility failures went into this book on 23 Aug 2026 and no check could

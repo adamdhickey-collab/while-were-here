@@ -2249,7 +2249,7 @@
       "origin": "own photograph",
       "capturedSource": "EXIF in the file. Read it off the photograph rather than an album's HTML — these are unmodified originals.",
       "selection": "iPhoto library, verified by eye 21 Aug 2026 against the document's line. One of three frames out of eight shape-matches that turned out to be the photograph described.",
-      "render": "~/Desktop/photo library edits/IMG_0831.jpeg — Adam's own crop and grade, rendered by Photos at 3213 × 5712. Where his crop is the composition this is the file to place; the original above has more pixels for re-cropping. Verify the render against the subject line before use: the subject describes the ORIGINAL framing, and a crop can exclude parts of it.",
+      "render": "~/Desktop/photo libraries/photo library edits/IMG_0831.jpeg — Adam's own crop and grade, rendered by Photos at 3213 × 5712. Where his crop is the composition this is the file to place; the original above has more pixels for re-cropping. Verify the render against the subject line before use: the subject describes the ORIGINAL framing, and a crop can exclude parts of it.",
       "status": "placed",
       "revision": "Was registered as `library-01-muqarnas-dome`. 2:3 crop from the 4284 × 5712 original (IMG_0831.heic), centred — the vault is symmetric and the center crop holds the crown, the window ring and the lattice light. Not retouched, not upscaled."
     },
@@ -2269,7 +2269,7 @@
       "origin": "own photograph",
       "capturedSource": "EXIF in the file.",
       "selection": "iPhoto library, verified by eye 21 Aug 2026. The document says the lantern is between the two figures; it is beside them. Everything else in the line is exact.",
-      "render": "~/Desktop/photo library edits/IMG_0964.jpeg — Adam's own crop and grade, rendered by Photos at 2268 × 4032. Where his crop is the composition this is the file to place; the original above has more pixels for re-cropping. Verify the render against the subject line before use: the subject describes the ORIGINAL framing, and a crop can exclude parts of it.",
+      "render": "~/Desktop/photo libraries/photo library edits/IMG_0964.jpeg — Adam's own crop and grade, rendered by Photos at 2268 × 4032. Where his crop is the composition this is the file to place; the original above has more pixels for re-cropping. Verify the render against the subject line before use: the subject describes the ORIGINAL framing, and a crop can exclude parts of it.",
       "status": "placed",
       "revision": "Was registered as `library-02-cordoba-bridge-night`. 2:3 crop from the 3024 × 4032 original (IMG_0964.heic), offset 336 px from the left — chosen from three candidates by eye to hold the whole floodlit Mezquita at the right and give the walkers the space they are walking into. A faint lens flare sits mid-sky; as shot, not retouched, not upscaled."
     },
@@ -2280,7 +2280,7 @@
       "role": "plate",
       "essay": "The Body Cannot Skip the Hill",
       "section": "Part IV · While We're Here",
-      "spread": "Unplaced, and the file is not in this repository yet — it is still in the export at `~/Desktop/photo library 2/IMG_0775.heic`. Registered 21 Aug 2026 so the frame is discoverable rather than living only in photo-selection-04. Copy it into public/images/personal/ and run `npm run derive` when a slot is decided. The book is at its 130-page ceiling, so placing this means removing something, and that trade is a decision, not a build step.",
+      "spread": "Unplaced, and the file is not in this repository yet — it is still in the export at `~/Desktop/photo libraries/photo library 2/IMG_0775.heic`. Registered 21 Aug 2026 so the frame is discoverable rather than living only in photo-selection-04. Copy it into public/images/personal/ and run `npm run derive` when a slot is decided. The book is at its 130-page ceiling, so placing this means removing something, and that trade is a decision, not a build step.",
       "subject": "A paved footpath switchbacking down a limestone mountainside at Montserrat, folding back on itself four times through scrub and pine, a small carved shrine set into the rock at one turn, and one walking figure alone on the path, a few millimetres tall.",
       "concept": "The distance is the same whether or not you want it to be.",
       "purpose": "The essay's title is its argument and this is that argument photographed. Note the essay already carries `pilgrimage-07-switchbacks`, a mule train on a canyon wall — two switchback pictures in one essay only earn their place if the difference between them is legible.",
@@ -2289,7 +2289,7 @@
       "origin": "own photograph",
       "capturedSource": "EXIF in the file.",
       "selection": "iPhoto library, verified by eye 21 Aug 2026. The line and the photograph agree exactly.",
-      "render": "~/Desktop/photo library edits/IMG_0775.jpeg — Adam's own crop and grade, rendered by Photos at 2268 × 4032. Where his crop is the composition this is the file to place; the original above has more pixels for re-cropping. Verify the render against the subject line before use: the subject describes the ORIGINAL framing, and a crop can exclude parts of it."
+      "render": "~/Desktop/photo libraries/photo library edits/IMG_0775.jpeg — Adam's own crop and grade, rendered by Photos at 2268 × 4032. Where his crop is the composition this is the file to place; the original above has more pixels for re-cropping. Verify the render against the subject line before use: the subject describes the ORIGINAL framing, and a crop can exclude parts of it."
     },
     {
       "id": "pilgrimage-06-closing-nave",
@@ -2307,7 +2307,7 @@
       "origin": "own photograph",
       "capturedSource": "EXIF in the file.",
       "selection": "iPhoto library. NOTE: `IMG_1638.JPG` in the same folder is a night street parade with a brass band, and an earlier pass wrote this frame off on the strength of it. The HEIC is the nave.",
-      "render": "~/Desktop/photo library edits/IMG_1638.jpeg — Adam's own crop and grade, rendered by Photos at 3213 × 5712. Where his crop is the composition this is the file to place; the original above has more pixels for re-cropping. Verify the render against the subject line before use: the subject describes the ORIGINAL framing, and a crop can exclude parts of it.",
+      "render": "~/Desktop/photo libraries/photo library edits/IMG_1638.jpeg — Adam's own crop and grade, rendered by Photos at 3213 × 5712. Where his crop is the composition this is the file to place; the original above has more pixels for re-cropping. Verify the render against the subject line before use: the subject describes the ORIGINAL framing, and a crop can exclude parts of it.",
       "status": "placed",
       "revision": "Was registered as `library-04-alcobaca-nave`. Square crop from the 4284 × 5712 original (IMG_1638.HEIC), full width, offset 1128 px from the top — chosen from three candidates by eye for the sunlit pavement in the foreground; Adam's own 9:16 render (3213 × 5712) keeps more vault but gives 272 dpi in a square against the original's 363. Not retouched, not upscaled."
     },
@@ -2327,7 +2327,7 @@
       "origin": "own photograph",
       "capturedSource": "EXIF in the file.",
       "selection": "iPhoto library, verified by eye 21 Aug 2026. Face not visible.",
-      "render": "~/Desktop/photo library edits/IMG_1735.jpeg — Adam's own crop and grade, rendered by Photos at 5712 × 3213. Where his crop is the composition this is the file to place; the original above has more pixels for re-cropping. Verify the render against the subject line before use: the subject describes the ORIGINAL framing, and a crop can exclude parts of it.",
+      "render": "~/Desktop/photo libraries/photo library edits/IMG_1735.jpeg — Adam's own crop and grade, rendered by Photos at 5712 × 3213. Where his crop is the composition this is the file to place; the original above has more pixels for re-cropping. Verify the render against the subject line before use: the subject describes the ORIGINAL framing, and a crop can exclude parts of it.",
       "status": "placed",
       "revision": "Was registered as `library-05-light-on-a-wall`. 2:3 vertical crop from the 5712 × 4284 landscape original (IMG_1735.HEIC), offset 600 px — chosen from three candidates by eye for the full light scatter, the rope, and the receding amphorae, and against a slice that admitted a stacked chair. The phone in her hands was first seen at this crop's scale and the subject line was written from the crop, not from memory. Not retouched, not upscaled."
     },
@@ -2338,7 +2338,7 @@
       "role": "plate",
       "essay": "The Body Cannot Skip the Hill",
       "section": "Part IV · While We're Here",
-      "spread": "Unplaced, and the file is not in this repository yet — it is still in the export at `~/Desktop/photo library 2/IMG_1562.HEIC`. Registered 21 Aug 2026, verified by eye against photo-selection-04's line. Copy it into public/images/personal/ and run `npm run derive` when a slot is decided. The book is at its 130-page ceiling, so placing this means removing something.",
+      "spread": "Unplaced, and the file is not in this repository yet — it is still in the export at `~/Desktop/photo libraries/photo library 2/IMG_1562.HEIC`. Registered 21 Aug 2026, verified by eye against photo-selection-04's line. Copy it into public/images/personal/ and run `npm run derive` when a slot is decided. The book is at its 130-page ceiling, so placing this means removing something.",
       "subject": "Two people walking away along a plank boardwalk through dense bamboo, backs turned, the frame closed on both sides by the fibrous trunks of two palms.",
       "concept": "A path narrow enough that it can only be taken in order.",
       "purpose": "Route rather than destination. Nobody's face is visible.",
@@ -2347,7 +2347,7 @@
       "origin": "own photograph",
       "capturedSource": "EXIF in the file.",
       "selection": "iPhoto library, verified by eye 21 Aug 2026.",
-      "render": "~/Desktop/photo library edits/IMG_1562.jpeg — Adam's own crop and grade, rendered by Photos at 5712 × 3213. Where his crop is the composition this is the file to place; the original above has more pixels for re-cropping. Verify the render against the subject line before use: the subject describes the ORIGINAL framing, and a crop can exclude parts of it."
+      "render": "~/Desktop/photo libraries/photo library edits/IMG_1562.jpeg — Adam's own crop and grade, rendered by Photos at 5712 × 3213. Where his crop is the composition this is the file to place; the original above has more pixels for re-cropping. Verify the render against the subject line before use: the subject describes the ORIGINAL framing, and a crop can exclude parts of it."
     },
     {
       "id": "library-07-moss-trunk",
@@ -2356,7 +2356,7 @@
       "role": "material",
       "essay": "—",
       "section": "Material break",
-      "spread": "Unplaced, and the file is not in this repository yet — it is still in the export at `~/Desktop/photo library 2/IMG_1390.HEIC`. Registered 21 Aug 2026, verified by eye against photo-selection-04's line. Copy it into public/images/personal/ and run `npm run derive` when a slot is decided. The book is at its 130-page ceiling, so placing this means removing something.",
+      "spread": "Unplaced, and the file is not in this repository yet — it is still in the export at `~/Desktop/photo libraries/photo library 2/IMG_1390.HEIC`. Registered 21 Aug 2026, verified by eye against photo-selection-04's line. Copy it into public/images/personal/ and run `npm run derive` when a slot is decided. The book is at its 130-page ceiling, so placing this means removing something.",
       "subject": "Moss and lichen up the flank of a tree trunk, filling the frame: bright green cushion moss over gray-pink bark, pale lichen crusts, sunlight coming through the leaves behind.",
       "concept": "Surface, at the scale where it stops being a tree.",
       "purpose": "A candidate for a material break. photo-selection-04 defines that brief as SURFACE — no edge, no scale — and this frame nearly meets it: the trunk fills the frame, but background foliage at the left gives away both. A tighter crop from 4284 × 5712 would satisfy it and still clear 300 dpi.",
@@ -2365,7 +2365,7 @@
       "origin": "own photograph",
       "capturedSource": "EXIF in the file.",
       "selection": "iPhoto library, verified by eye 21 Aug 2026.",
-      "render": "~/Desktop/photo library edits/IMG_1390.jpeg — Adam's own crop and grade, rendered by Photos at 3213 × 5712. Where his crop is the composition this is the file to place; the original above has more pixels for re-cropping. Verify the render against the subject line before use: the subject describes the ORIGINAL framing, and a crop can exclude parts of it."
+      "render": "~/Desktop/photo libraries/photo library edits/IMG_1390.jpeg — Adam's own crop and grade, rendered by Photos at 3213 × 5712. Where his crop is the composition this is the file to place; the original above has more pixels for re-cropping. Verify the render against the subject line before use: the subject describes the ORIGINAL framing, and a crop can exclude parts of it."
     },
     {
       "id": "library-08-organ-en-chamade",
@@ -2374,7 +2374,7 @@
       "role": "plate",
       "essay": "The Beauty of Systems Nobody Designed",
       "section": "Part II · What Are We?",
-      "spread": "Unplaced, and the file is not in this repository yet — it is still in the export at `~/Desktop/photo library 2/IMG_1026.HEIC`. Registered 21 Aug 2026, verified by eye against photo-selection-04's line. Copy it into public/images/personal/ and run `npm run derive` when a slot is decided. The book is at its 130-page ceiling, so placing this means removing something.",
+      "spread": "Unplaced, and the file is not in this repository yet — it is still in the export at `~/Desktop/photo libraries/photo library 2/IMG_1026.HEIC`. Registered 21 Aug 2026, verified by eye against photo-selection-04's line. Copy it into public/images/personal/ and run `npm run derive` when a slot is decided. The book is at its 130-page ceiling, so placing this means removing something.",
       "subject": "A cathedral organ case seen from below: two ranks of horizontal en chamade trumpet pipes fanning out of the case at an angle, dense vertical ranks of pewter and gilt pipework behind them, deep red casework and heavy gilt carving, a coat of arms at the foot.",
       "concept": "Hundreds of identical parts, each tuned to do one thing.",
       "purpose": "Every pipe is one note and nothing else, and the instrument exists only in the arrangement. It is a designed object, so it carries the same caveat photo-selection-04 attaches to the muqarnas dome: name the design rather than pretending it emerged.",
@@ -2383,7 +2383,7 @@
       "origin": "own photograph",
       "capturedSource": "EXIF in the file.",
       "selection": "iPhoto library, verified by eye 21 Aug 2026. `IMG_1026.JPG` in the same folder is a different frame.",
-      "render": "~/Desktop/photo library edits/IMG_1026.jpeg — Adam's own crop and grade, rendered by Photos at 4032 × 2268. Where his crop is the composition this is the file to place; the original above has more pixels for re-cropping. Verify the render against the subject line before use: the subject describes the ORIGINAL framing, and a crop can exclude parts of it."
+      "render": "~/Desktop/photo libraries/photo library edits/IMG_1026.jpeg — Adam's own crop and grade, rendered by Photos at 4032 × 2268. Where his crop is the composition this is the file to place; the original above has more pixels for re-cropping. Verify the render against the subject line before use: the subject describes the ORIGINAL framing, and a crop can exclude parts of it."
     },
     {
       "id": "library-09-serpent-on-spheres",
@@ -2392,7 +2392,7 @@
       "role": "specimen",
       "essay": "The Beauty of Systems Nobody Designed",
       "section": "Part II · What Are We?",
-      "spread": "Unplaced, and the file is not in this repository yet — it is still in the export at `~/Desktop/photo library 2/IMG_1305.HEIC`. Registered 21 Aug 2026, verified by eye against photo-selection-04's line. Copy it into public/images/personal/ and run `npm run derive` when a slot is decided. The book is at its 130-page ceiling, so placing this means removing something.",
+      "spread": "Unplaced, and the file is not in this repository yet — it is still in the export at `~/Desktop/photo libraries/photo library 2/IMG_1305.HEIC`. Registered 21 Aug 2026, verified by eye against photo-selection-04's line. Copy it into public/images/personal/ and run `npm run derive` when a slot is decided. The book is at its 130-page ceiling, so placing this means removing something.",
       "subject": "A wall of carved stone hemispheres, rank on rank, with a scaled serpent creature carved across them on a string course — head raised, mouth open, body looping over and under itself. A yellow rendered wall at the left edge, diamond-point rustication at the right.",
       "concept": "A rule, and the one thing that breaks it.",
       "purpose": "Two hundred identical units and a single figure crossing them. It is an inset-scale picture: at 92 mm the spheres read as texture and the serpent as an event, which is the argument.",
@@ -2401,7 +2401,7 @@
       "origin": "own photograph",
       "capturedSource": "EXIF in the file.",
       "selection": "iPhoto library, verified by eye 21 Aug 2026.",
-      "render": "~/Desktop/photo library edits/IMG_1305.jpeg — Adam's own crop and grade, rendered by Photos at 4032 × 2268. Where his crop is the composition this is the file to place; the original above has more pixels for re-cropping. Verify the render against the subject line before use: the subject describes the ORIGINAL framing, and a crop can exclude parts of it."
+      "render": "~/Desktop/photo libraries/photo library edits/IMG_1305.jpeg — Adam's own crop and grade, rendered by Photos at 4032 × 2268. Where his crop is the composition this is the file to place; the original above has more pixels for re-cropping. Verify the render against the subject line before use: the subject describes the ORIGINAL framing, and a crop can exclude parts of it."
     },
     {
       "id": "library-10-sagrada-magic-square",
@@ -2410,7 +2410,7 @@
       "role": "specimen",
       "essay": "The Intelligence Outside Your Head",
       "section": "Part II · What Are We?",
-      "spread": "Unplaced, and the file is not in this repository yet — it is still in the export at `~/Desktop/photo library 2/IMG_2946.heic`. Registered 21 Aug 2026, verified by eye against photo-selection-04's line. Copy it into public/images/personal/ and run `npm run derive` when a slot is decided. The book is at its 130-page ceiling, so placing this means removing something. Found under the stripped base stem: the document writes it `IMG_2946 2`, and Photos disambiguated the same filename collision by extension in this export rather than by a ` 2` suffix.",
+      "spread": "Unplaced, and the file is not in this repository yet — it is still in the export at `~/Desktop/photo libraries/photo library 2/IMG_2946.heic`. Registered 21 Aug 2026, verified by eye against photo-selection-04's line. Copy it into public/images/personal/ and run `npm run derive` when a slot is decided. The book is at its 130-page ceiling, so placing this means removing something. Found under the stripped base stem: the document writes it `IMG_2946 2`, and Photos disambiguated the same filename collision by extension in this export rather than by a ` 2` suffix.",
       "subject": "A four-by-four grid of numbers cut into a stone panel on the Passion façade of the Sagrada Família, set into rusticated ashlar beside a carved figure. The numbers read 1 14 14 4 / 11 7 6 9 / 8 10 10 5 / 13 2 3 15.",
       "concept": "A thought held by a wall so nobody has to hold it.",
       "purpose": "The essay's argument in one object: the arithmetic is not in anyone's head, it is in the stone, and it will still be there when everyone who can do it has gone. It also carries the verified claim `sagrada-magic-square` in content/facts.json, which currently has no page.",
@@ -2428,7 +2428,7 @@
       "role": "material",
       "essay": "The Beauty of Systems Nobody Designed",
       "section": "Part II · What Are We?",
-      "spread": "Unplaced, and the file is not in this repository yet — it is still in the export at `~/Desktop/photo library 2/IMG_3329.heic`. Registered 21 Aug 2026, verified by eye against photo-selection-04's line. Copy it into public/images/personal/ and run `npm run derive` when a slot is decided. The book is at its 130-page ceiling, so placing this means removing something. Found under the stripped base stem: the document writes it `IMG_3329 2`, and Photos disambiguated the same filename collision by extension in this export rather than by a ` 2` suffix.",
+      "spread": "Unplaced, and the file is not in this repository yet — it is still in the export at `~/Desktop/photo libraries/photo library 2/IMG_3329.heic`. Registered 21 Aug 2026, verified by eye against photo-selection-04's line. Copy it into public/images/personal/ and run `npm run derive` when a slot is decided. The book is at its 130-page ceiling, so placing this means removing something. Found under the stripped base stem: the document writes it `IMG_3329 2`, and Photos disambiguated the same filename collision by extension in this export rather than by a ` 2` suffix.",
       "subject": "Portuguese pebble pavement seen at a low angle: thousands of hand-set black and white limestone cubes laid in a foliate pattern of leaves and tendrils, a cast-iron drain grate at the top corner, a whitewashed wall behind.",
       "concept": "A pattern laid one stone at a time by many hands.",
       "purpose": "Every unit is placed by a person and no person places the pattern. It is the essay's argument in a pavement, and unlike the dome and the organ it is genuinely closer to a craft tradition than a design.",
@@ -2445,7 +2445,7 @@
       "role": "plate",
       "essay": "The Secret Life of Attention",
       "section": "I — Look Again",
-      "spread": "Unplaced, and the file is not in this repository yet — it is still in the export at `~/Desktop/photo library 2/IMG_0623.heic`. Registered 21 Aug 2026, verified by eye against photo-selection-04's line. Copy it into public/images/personal/ and run `npm run derive` when a slot is decided. The book is at its 130-page ceiling, so placing this means removing something. Found under the stripped base stem: the document writes it `IMG_0623 2`, and Photos disambiguated the same filename collision by extension in this export rather than by a ` 2` suffix.",
+      "spread": "Unplaced, and the file is not in this repository yet — it is still in the export at `~/Desktop/photo libraries/photo library 2/IMG_0623.heic`. Registered 21 Aug 2026, verified by eye against photo-selection-04's line. Copy it into public/images/personal/ and run `npm run derive` when a slot is decided. The book is at its 130-page ceiling, so placing this means removing something. Found under the stripped base stem: the document writes it `IMG_0623 2`, and Photos disambiguated the same filename collision by extension in this export rather than by a ` 2` suffix.",
       "subject": "Petal-shaped stained-glass lights in the Sagrada Família, radiating from a round center against a black interior: orange through yellow to deep red, each petal carrying a shrine name lettered into the glass.",
       "concept": "Colour arriving through a wall.",
       "purpose": "The lettering is real architectural lettering photographed, not fabricated, so it clears the rule that generated pictures may not invite reading.",
@@ -2454,7 +2454,7 @@
       "origin": "own photograph",
       "capturedSource": "EXIF in the file.",
       "selection": "iPhoto library, verified by eye 21 Aug 2026.",
-      "render": "~/Desktop/photo library edits/IMG_0623.jpeg — Adam's own crop and grade, rendered by Photos at 2268 × 4032. Where his crop is the composition this is the file to place; the original above has more pixels for re-cropping. Verify the render against the subject line before use: the subject describes the ORIGINAL framing, and a crop can exclude parts of it."
+      "render": "~/Desktop/photo libraries/photo library edits/IMG_0623.jpeg — Adam's own crop and grade, rendered by Photos at 2268 × 4032. Where his crop is the composition this is the file to place; the original above has more pixels for re-cropping. Verify the render against the subject line before use: the subject describes the ORIGINAL framing, and a crop can exclude parts of it."
     },
     {
       "id": "library-13-cloud-floor-sunset",
@@ -2463,7 +2463,7 @@
       "role": "plate",
       "essay": "The Last People Who Remember Waiting",
       "section": "Part III · The World Is Changing",
-      "spread": "Unplaced, and the file is not in this repository yet — it is still in the export at `~/Desktop/photo library 2/IMG_4904.jpg`. Registered 21 Aug 2026, verified by eye against photo-selection-04's line. Copy it into public/images/personal/ and run `npm run derive` when a slot is decided. The book is at its 130-page ceiling, so placing this means removing something. Found under the stripped base stem: the document writes it `IMG_4904 2`, and Photos disambiguated the same filename collision by extension in this export rather than by a ` 2` suffix.",
+      "spread": "Unplaced, and the file is not in this repository yet — it is still in the export at `~/Desktop/photo libraries/photo library 2/IMG_4904.jpg`. Registered 21 Aug 2026, verified by eye against photo-selection-04's line. Copy it into public/images/personal/ and run `npm run derive` when a slot is decided. The book is at its 130-page ceiling, so placing this means removing something. Found under the stripped base stem: the document writes it `IMG_4904 2`, and Photos disambiguated the same filename collision by extension in this export rather than by a ` 2` suffix.",
       "subject": "An unbroken floor of small clouds seen from altitude at sunset, running flat to a horizon banded orange under a gray-violet sky. No ground, no aircraft, no wing.",
       "concept": "Distance, from the one place it stops feeling like distance.",
       "purpose": "An essay about waiting, opened or closed on the view from the thing that abolished waiting. Nothing in the frame dates it, and nothing in it is anybody.",
@@ -2480,7 +2480,7 @@
       "role": "personal",
       "essay": "—",
       "section": "—",
-      "spread": "DO NOT PLACE. Recorded 21 Aug 2026 so that nobody rediscovers it and places it. The file is at `~/Desktop/photo library 2/IMG_5360.jpg`.",
+      "spread": "DO NOT PLACE. Recorded 21 Aug 2026 so that nobody rediscovers it and places it. The file is at `~/Desktop/photo libraries/photo library 2/IMG_5360.jpg`.",
       "subject": "Two people asleep against each other on a flight, leaning together over a tray table.",
       "concept": "—",
       "purpose": "Registered as a REFUSAL, not a candidate. photo-selection-04 named this frame and it is a good photograph; that is not the question.",
@@ -2507,7 +2507,7 @@
       "origin": "own photograph",
       "capturedSource": "EXIF in the file — 25 Sep 2024, 13:29.",
       "selection": "iPhoto library, verified by eye 21 Aug 2026. Found only after `find_all` learned about parenthesised duplicates: `IMG_1112.HEIC` under the bare name is a 2019 frame.",
-      "render": "~/Desktop/photo library edits/IMG_1112.jpeg — Adam's own crop and grade, rendered by Photos at 3213 × 5712. Where his crop is the composition this is the file to place; the original above has more pixels for re-cropping. Verify the render against the subject line before use: the subject describes the ORIGINAL framing, and a crop can exclude parts of it.",
+      "render": "~/Desktop/photo libraries/photo library edits/IMG_1112.jpeg — Adam's own crop and grade, rendered by Photos at 3213 × 5712. Where his crop is the composition this is the file to place; the original above has more pixels for re-cropping. Verify the render against the subject line before use: the subject describes the ORIGINAL framing, and a crop can exclude parts of it.",
       "status": "placed",
       "revision": "Was registered as `library-15-alcazar-baths`. Square crop from the 4284 × 5712 original (IMG_1112 (1).HEIC), full width, offset 250 px from the top — chosen from three candidates by eye to keep the vault crowns and the window's completed oval; the water-forward crop carries a soft blur intruding at the original's bottom edge and was rejected for it. Colour as shot, per the selection note: do not lift the shadows. Not retouched, not upscaled. Essay and section corrected 22 Aug 2026: both were inherited from the frame's library registration under the pilgrimage essay and survived the placement — the entry claimed a Part IV divider was in Part IV's essay while sitting on Part III's page. Dividers belong to a part, not an essay, which is why every other one reads `essay: —`."
     },
@@ -2528,7 +2528,7 @@
       "capturedSource": "EXIF in the file — 30 Sep 2024, 12:14.",
       "consent": "A few dozen people, all under 10 mm at band size, none identifiable. The earlier note about the left-foreground man applied to full-bleed framing; at this band he prints smaller than a fingernail. Do not enlarge this frame without revisiting that.",
       "selection": "iPhoto library, verified by eye 21 Aug 2026.",
-      "render": "~/Desktop/photo library edits/IMG_1746.jpeg — Adam's own crop and grade, rendered by Photos at 5712 × 3213. Where his crop is the composition this is the file to place; the original above has more pixels for re-cropping. Verify the render against the subject line before use: the subject describes the ORIGINAL framing, and a crop can exclude parts of it.",
+      "render": "~/Desktop/photo libraries/photo library edits/IMG_1746.jpeg — Adam's own crop and grade, rendered by Photos at 5712 × 3213. Where his crop is the composition this is the file to place; the original above has more pixels for re-cropping. Verify the render against the subject line before use: the subject describes the ORIGINAL framing, and a crop can exclude parts of it.",
       "status": "placed",
       "revision": "Was registered as `library-16-fatima-esplanade`. 3:1 band crop from the 5712 × 4284 original (IMG_1746 (1).HEIC), offset 1300 px from the top — chosen from three candidates by eye as the only slice that holds both verticals complete: the bell tower and the gilded statue on its column. Not retouched, not upscaled."
     },
@@ -2548,7 +2548,7 @@
       "origin": "own photograph",
       "capturedSource": "EXIF in the file — 18 Sep 2024, 10:08.",
       "selection": "iPhoto library, verified by eye 21 Aug 2026.",
-      "render": "~/Desktop/photo library edits/IMG_0707.jpeg — Adam's own crop and grade, rendered by Photos at 2268 × 4032. Where his crop is the composition this is the file to place; the original above has more pixels for re-cropping. Verify the render against the subject line before use: the subject describes the ORIGINAL framing, and a crop can exclude parts of it.",
+      "render": "~/Desktop/photo libraries/photo library edits/IMG_0707.jpeg — Adam's own crop and grade, rendered by Photos at 2268 × 4032. Where his crop is the composition this is the file to place; the original above has more pixels for re-cropping. Verify the render against the subject line before use: the subject describes the ORIGINAL framing, and a crop can exclude parts of it.",
       "status": "placed",
       "revision": "Was registered as `library-17-montserrat-cloud`. 3:1 band crop from the 3024 × 4032 portrait original (IMG_0707 (1).HEIC), offset 1400 px — chosen from three candidates by eye: the higher slice holds the summit cross but loses the pour's force; the lower is inside the cloud and loses the plain. Not retouched, not upscaled."
     },
@@ -2569,7 +2569,7 @@
       "capturedSource": "EXIF in the file — 24 Sep 2024, 15:05.",
       "consent": "Fabiola, posed and looking at the lens. Outside the candid rule, which exists for strangers and does not apply here — but it is her picture as much as Adam's, so ask her before it is printed.",
       "selection": "iPhoto library, verified by eye 21 Aug 2026.",
-      "render": "~/Desktop/photo library edits/IMG_1051.jpeg — Adam's own crop and grade, rendered by Photos at 3213 × 5712. Where his crop is the composition this is the file to place; the original above has more pixels for re-cropping. Verify the render against the subject line before use: the subject describes the ORIGINAL framing, and a crop can exclude parts of it.",
+      "render": "~/Desktop/photo libraries/photo library edits/IMG_1051.jpeg — Adam's own crop and grade, rendered by Photos at 3213 × 5712. Where his crop is the composition this is the file to place; the original above has more pixels for re-cropping. Verify the render against the subject line before use: the subject describes the ORIGINAL framing, and a crop can exclude parts of it.",
       "status": "placed",
       "revision": "Was registered as `library-18-fabiola-street`. 4:3 landscape crop from the 4284 × 5712 portrait original (IMG_1051 (1).HEIC), full width, offset 900 px — chosen from three candidates by eye to keep the sign whole at the top, the blank wall's expanse, and her face and smile at the bottom. Not retouched, not upscaled."
     },
@@ -2580,7 +2580,7 @@
       "role": "personal",
       "essay": "—",
       "section": "—",
-      "spread": "Unplaced, and the file is not in this repository yet — it is still in the export at `~/Desktop/photo library 2/IMG_5008 (1).JPG`. Registered 21 Aug 2026, verified by eye. Copy it into public/images/personal/ and run `npm run derive` when a slot is decided. The book is at its 130-page ceiling, so placing this means removing something.",
+      "spread": "Unplaced, and the file is not in this repository yet — it is still in the export at `~/Desktop/photo libraries/photo library 2/IMG_5008 (1).JPG`. Registered 21 Aug 2026, verified by eye. Copy it into public/images/personal/ and run `npm run derive` when a slot is decided. The book is at its 130-page ceiling, so placing this means removing something.",
       "subject": "Fabiola standing in the leaning rubble colonnade at Park Güell, dead center, sunglasses and sun hat, smiling at the camera, a shopping bag in one hand; the helicoidal columns and stone vaults running away behind her, half a dozen other visitors along the walkway.",
       "concept": "A person mid-trip, delighted, in a corridor built to lean.",
       "purpose": "photo-selection-04 lists this as “Park Güell's leaning stone colonnade”, an architecture frame — but the photograph is a portrait, and the line simply does not mention the person filling the middle of it. Like the FABIOLA street sign it belongs to the book's personal register or not at all: as architecture it is unusable, because the subject is looking at the lens.",
@@ -2598,7 +2598,7 @@
       "role": "personal",
       "essay": "The Last People Who Remember Waiting",
       "section": "Part III · The World Is Changing",
-      "spread": "EFFECTIVELY BLOCKED — recorded 21 Aug 2026 so the frame is not re-proposed. The file is at `~/Desktop/photo library 2/IMG_3161 (1).heic`.",
+      "spread": "EFFECTIVELY BLOCKED — recorded 21 Aug 2026 so the frame is not re-proposed. The file is at `~/Desktop/photo libraries/photo library 2/IMG_3161 (1).heic`.",
       "subject": "A woman in a straw hat and scarf sitting on an airport bench, reading a printed leaflet, hands in her lap, luggage handles crossing the foreground; behind her a row of travellers, several of them on phones.",
       "concept": "The last person in the terminal who is just waiting.",
       "purpose": "The essay's thesis, found in the wild — she is reading paper in a row of screens. That is why the frame was selected, and it is real. It still cannot be printed.",
@@ -2616,7 +2616,7 @@
       "role": "plate",
       "essay": "—",
       "section": "Stage III → IV, the dark ground",
-      "spread": "Unplaced, and the file is not in this repository yet — Adam's crop is at `~/Desktop/photo library edits/IMG_2630.jpeg` (5712 × 3213) and the uncropped original at `~/Desktop/photo library 2/IMG_2630 (2).HEIC` (5712 × 4284). Registered 21 Aug 2026, verified by eye. The book is at its 130-page ceiling, so placing this means removing something.",
+      "spread": "Unplaced, and the file is not in this repository yet — Adam's crop is at `~/Desktop/photo libraries/photo library edits/IMG_2630.jpeg` (5712 × 3213) and the uncropped original at `~/Desktop/photo libraries/photo library 2/IMG_2630 (2).HEIC` (5712 × 4284). Registered 21 Aug 2026, verified by eye. The book is at its 130-page ceiling, so placing this means removing something.",
       "subject": "Heavy broken cloud over a flat lake at last light, the sun a pale disc behind the overcast, the far shore a black tree line doubled in the water, a few waterfowl as specks. Almost no color beyond gray and a last brown in the reeds.",
       "concept": "The day withdrawing, watched from the shore.",
       "purpose": "photo-selection-04 holds it for the dark stages, and it is the right register: a picture that is mostly weight. Shot at home in Minnesota two weeks after the trip, which suits the arc — the dark stages are not elsewhere, they are here.",
@@ -2624,7 +2624,7 @@
       "target": "5712 × 3213 px (Adam's crop) — 272 dpi at 300 mm full bleed, 346 as a band",
       "origin": "own photograph",
       "capturedSource": "EXIF in the file — 14 Oct 2024.",
-      "render": "~/Desktop/photo library edits/IMG_2630.jpeg — Adam's own crop and grade; the subject line above describes this crop.",
+      "render": "~/Desktop/photo libraries/photo library edits/IMG_2630.jpeg — Adam's own crop and grade; the subject line above describes this crop.",
       "selection": "iPhoto library, verified by eye 21 Aug 2026 from the render, which carries the asset identity the bare filename never did."
     },
     {
@@ -2634,7 +2634,7 @@
       "role": "plate",
       "essay": "The Beauty of Systems Nobody Designed",
       "section": "Part II · What Are We?",
-      "spread": "Unplaced, and the file is not in this repository yet — Adam's crop is at `~/Desktop/photo library edits/IMG_0936.jpeg`. Registered 21 Aug 2026, verified by eye from the render. The book is at its 130-page ceiling, so placing this means removing something.",
+      "spread": "Unplaced, and the file is not in this repository yet — Adam's crop is at `~/Desktop/photo libraries/photo library edits/IMG_0936.jpeg`. Registered 21 Aug 2026, verified by eye from the render. The book is at its 130-page ceiling, so placing this means removing something.",
       "subject": "A narrow Granada shopping street at dusk, packed edge to edge with people walking both ways between lit shopfronts and balconied facades — no leader, no center, one coherent flow filling the canyon of the street to its vanishing point.",
       "concept": "A crowd with no one in charge of it, behaving like a fluid.",
       "purpose": "photo-selection-04's flocking pair, human half. The essay's starling argument, performed by people who would each say they were just going somewhere.",
@@ -2643,7 +2643,7 @@
       "origin": "own photograph",
       "capturedSource": "EXIF in the render — 21 Sep 2024, 19:43.",
       "consent": "Dozens of people, many facing the camera, several clearly identifiable in the foreground. At a 236 mm band the nearest faces print around 10 mm. Fine as crowd-as-texture at inset size; at band size or larger this needs the same consent thinking as the Thanksgiving frame.",
-      "render": "~/Desktop/photo library edits/IMG_0936.jpeg — Adam's own 16:9 crop; the subject line describes this crop.",
+      "render": "~/Desktop/photo libraries/photo library edits/IMG_0936.jpeg — Adam's own 16:9 crop; the subject line describes this crop.",
       "selection": "iPhoto library, verified by eye 21 Aug 2026. The bare-name IMG_0936.heic is a 2019 dog on a lawn — the collision that hid this frame all day."
     },
     {
@@ -2653,7 +2653,7 @@
       "role": "plate",
       "essay": "—",
       "section": "—",
-      "spread": "Unplaced, and the file is not in this repository yet — Adam's crop is at `~/Desktop/photo library edits/IMG_0915.jpeg`. Registered 21 Aug 2026, verified by eye from the render. The book is at its 130-page ceiling, so placing this means removing something.",
+      "spread": "Unplaced, and the file is not in this repository yet — Adam's crop is at `~/Desktop/photo libraries/photo library edits/IMG_0915.jpeg`. Registered 21 Aug 2026, verified by eye from the render. The book is at its 130-page ceiling, so placing this means removing something.",
       "subject": "Granada Cathedral floodlit at blue hour, several hundred people standing in the square before it, all facing an orchestra on a lit stage at the foot of the façade.",
       "concept": "Several hundred people, arranged by a conductor.",
       "purpose": "Registered with its WRONG reading struck out: photo-selection-04 filed this under flocking as a crowd 'arranged by nothing', and the photograph contains the conductor. It cannot serve the flocking argument. It can serve as what it is — a city turned toward music at night — if a slot ever wants that.",
@@ -2662,7 +2662,7 @@
       "origin": "own photograph",
       "capturedSource": "EXIF in the render — 20 Sep 2024.",
       "consent": "Hundreds of identifiable faces, some large in the foreground. Heavy — same class as the Thanksgiving frame or worse.",
-      "render": "~/Desktop/photo library edits/IMG_0915.jpeg — Adam's own crop.",
+      "render": "~/Desktop/photo libraries/photo library edits/IMG_0915.jpeg — Adam's own crop.",
       "selection": "iPhoto library, verified by eye 21 Aug 2026."
     },
     {
@@ -2672,7 +2672,7 @@
       "role": "specimen",
       "essay": "The Secret Life of Attention",
       "section": "I — Look Again",
-      "spread": "Unplaced, and the file is not in this repository yet — Adam's crop is at `~/Desktop/photo library edits/IMG_1749.jpeg`. Registered 21 Aug 2026, verified by eye from the render. The book is at its 130-page ceiling, so placing this means removing something.",
+      "spread": "Unplaced, and the file is not in this repository yet — Adam's crop is at `~/Desktop/photo libraries/photo library edits/IMG_1749.jpeg`. Registered 21 Aug 2026, verified by eye from the render. The book is at its 130-page ceiling, so placing this means removing something.",
       "subject": "A white fantail pigeon walking on gray asphalt in hard noon sun, leg-banded, its shadow thrown beside it so black and complete that the shadow reads as a second bird.",
       "concept": "The quiet oddity: the shadow is the better bird.",
       "purpose": "photo-selection-04's 'quiet oddities' set. Shot at Fátima three minutes after the esplanade frame — the enormous shrine, and Adam photographing a pigeon. That fact is the book's whole argument about attention, and worth a caption if placed.",
@@ -2680,7 +2680,7 @@
       "target": "4032 × 2268 px (Adam's crop) — 626 dpi at a 92 mm inset",
       "origin": "own photograph",
       "capturedSource": "EXIF in the render — 30 Sep 2024, 12:17.",
-      "render": "~/Desktop/photo library edits/IMG_1749.jpeg — Adam's own crop; the subject line describes this crop.",
+      "render": "~/Desktop/photo libraries/photo library edits/IMG_1749.jpeg — Adam's own crop; the subject line describes this crop.",
       "selection": "iPhoto library, verified by eye 21 Aug 2026. The bare-name jpg is a 2017 hibiscus — another collision."
     },
     {
@@ -2690,7 +2690,7 @@
       "role": "specimen",
       "essay": "—",
       "section": "—",
-      "spread": "Unplaced, and the file is not in this repository yet — Adam's crop is at `~/Desktop/photo library edits/IMG_0970.jpeg`. Registered 21 Aug 2026, verified by eye from the render. The book is at its 130-page ceiling, so placing this means removing something.",
+      "spread": "Unplaced, and the file is not in this repository yet — Adam's crop is at `~/Desktop/photo libraries/photo library edits/IMG_0970.jpeg`. Registered 21 Aug 2026, verified by eye from the render. The book is at its 130-page ceiling, so placing this means removing something.",
       "subject": "A black cat walking the white gable parapet of a Córdoba museum building against a flat pale sky, storeys above a street of flags, balconies and a hanging exhibition banner.",
       "concept": "One animal, above the whole apparatus of culture, ignoring it.",
       "purpose": "Quiet-oddities set. Adam's crop already excludes the parked car whose number plate blocked the original.",
@@ -2698,7 +2698,7 @@
       "target": "2268 × 4032 px (Adam's crop) — 626 dpi at a 92 mm inset",
       "origin": "own photograph",
       "capturedSource": "EXIF in the render — 23 Sep 2024.",
-      "render": "~/Desktop/photo library edits/IMG_0970.jpeg — Adam's own crop, which is also what removed the legible number plate. Place from this file, not the original.",
+      "render": "~/Desktop/photo libraries/photo library edits/IMG_0970.jpeg — Adam's own crop, which is also what removed the legible number plate. Place from this file, not the original.",
       "selection": "iPhoto library, verified by eye 21 Aug 2026."
     },
     {
@@ -2708,7 +2708,7 @@
       "role": "plate",
       "essay": "The Strange Privilege of Living Through a Technological Revolution",
       "section": "Part III · The World Is Changing",
-      "spread": "Unplaced, and the file is not in this repository yet — Adam's crop is at `~/Desktop/photo library edits/IMG_1698.jpeg`. Registered 21 Aug 2026, verified by eye from the render. The book is at its 130-page ceiling, so placing this means removing something.",
+      "spread": "Unplaced, and the file is not in this repository yet — Adam's crop is at `~/Desktop/photo libraries/photo library edits/IMG_1698.jpeg`. Registered 21 Aug 2026, verified by eye from the render. The book is at its 130-page ceiling, so placing this means removing something.",
       "subject": "A Spanish motorway seen from the passenger seat through the side window, morning sun flaring above ranks of polytunnel greenhouses running to hazy hills, the window frame and a corner of windscreen sticker visible at the edge.",
       "concept": "Covering in an hour what the essay's walkers give a week to.",
       "purpose": "photo-selection-04 wanted 'an empty motorway at dawn through the windscreen' and the photograph is none of those three things — side window, not empty of context, 09:17 not dawn. Registered with the honest description; whether the real picture serves the slot is Adam's call, not the line's.",
@@ -2716,7 +2716,7 @@
       "target": "5712 × 3213 px (Adam's crop) — 272 dpi at 300 mm full bleed",
       "origin": "own photograph",
       "capturedSource": "EXIF in the render — 30 Sep 2024, 09:17.",
-      "render": "~/Desktop/photo library edits/IMG_1698.jpeg — Adam's own crop; the subject line describes this crop.",
+      "render": "~/Desktop/photo libraries/photo library edits/IMG_1698.jpeg — Adam's own crop; the subject line describes this crop.",
       "selection": "iPhoto library, verified by eye 21 Aug 2026."
     },
     {
@@ -2726,7 +2726,7 @@
       "role": "specimen",
       "essay": "The Secret Life of Attention",
       "section": "I — Look Again",
-      "spread": "Unplaced, and the file is not in this repository yet — Adam's render is at `~/Desktop/photo library edits/IMG_0821.jpeg`. Registered 21 Aug 2026, verified by eye. The book is at its 130-page ceiling, so placing this means removing something.",
+      "spread": "Unplaced, and the file is not in this repository yet — Adam's render is at `~/Desktop/photo libraries/photo library edits/IMG_0821.jpeg`. Registered 21 Aug 2026, verified by eye. The book is at its 130-page ceiling, so placing this means removing something.",
       "subject": "A dark gray cat crouched on the marble curb of a water channel at the Alhambra, head down, drinking — rings spreading across the tea-colored water, whiskers at the surface, one green smudge of moss on the stone.",
       "concept": "The palace, used as a water bowl.",
       "purpose": "Quiet-oddities set. Shot twelve minutes before the muqarnas dome, and the pair make the book's argument between them: the ceiling everyone photographs, and the animal using the same building for the one thing it actually provides.",
@@ -2734,7 +2734,7 @@
       "target": "4032 × 2268 px (Adam's crop) — 626 dpi at a 92 mm inset",
       "origin": "own photograph",
       "capturedSource": "EXIF in the render — 20 Sep 2024, 08:47.",
-      "render": "~/Desktop/photo library edits/IMG_0821.jpeg — Adam's own crop; the subject line describes this crop.",
+      "render": "~/Desktop/photo libraries/photo library edits/IMG_0821.jpeg — Adam's own crop; the subject line describes this crop.",
       "selection": "iPhoto library, verified by eye 21 Aug 2026. Written off earlier the same day as a Vesuvius landscape — the bare-name collision again; the render carries the right asset."
     },
     {
@@ -2744,7 +2744,7 @@
       "role": "specimen",
       "essay": "—",
       "section": "—",
-      "spread": "Unplaced, and the file is not in this repository yet — Adam's render is at `~/Desktop/photo library edits/IMG_2944 (1).jpeg`. Registered 21 Aug 2026, verified by eye. The book is at its 130-page ceiling, so placing this means removing something.",
+      "spread": "Unplaced, and the file is not in this repository yet — Adam's render is at `~/Desktop/photo libraries/photo library edits/IMG_2944 (1).jpeg`. Registered 21 Aug 2026, verified by eye. The book is at its 130-page ceiling, so placing this means removing something.",
       "subject": "Three small dogs looking out through a white balustrade — a chihuahua, a Boston terrier and a yorkie, each standing in its own bay between the balusters — above a stone wall with crown-of-thorns in bloom along its foot.",
       "concept": "An audience of three, each in its own box seat.",
       "purpose": "Quiet-oddities set. The square crop is Adam's; each dog gets a column of the grid.",
@@ -2752,7 +2752,7 @@
       "target": "3099 × 3099 px (Adam's crop) — 856 dpi at a 92 mm inset",
       "origin": "own photograph",
       "capturedSource": "EXIF in the render — 8 Jan 2025.",
-      "render": "~/Desktop/photo library edits/IMG_2944 (1).jpeg — Adam's own square crop; the subject line describes this crop.",
+      "render": "~/Desktop/photo libraries/photo library edits/IMG_2944 (1).jpeg — Adam's own square crop; the subject line describes this crop.",
       "selection": "iPhoto library, verified by eye 21 Aug 2026 — the last of the document's 39 frames to be located."
     },
     {
@@ -2762,7 +2762,7 @@
       "role": "plate",
       "essay": "—",
       "section": "I — Look Again",
-      "spread": "Unplaced, and the file is not in this repository yet — Adam's render is at `~/Desktop/photo library edits/IMG_5210.jpeg`. Registered 21 Aug 2026, verified by eye. The book is at its 130-page ceiling, so placing this means removing something.",
+      "spread": "Unplaced, and the file is not in this repository yet — Adam's render is at `~/Desktop/photo libraries/photo library edits/IMG_5210.jpeg`. Registered 21 Aug 2026, verified by eye. The book is at its 130-page ceiling, so placing this means removing something.",
       "subject": "Sailing dinghies moored in a row off a floating dock, sails up and luffing, small figures crouched on the planks readying boats, the far shore a band of trees.",
       "concept": "A fleet not yet sailing.",
       "purpose": "Stage I/II plate per photo-selection-04. Shot on Lake Harriet the same afternoon as the lake field note — 4 Oct 2025 — so it extends an existing thread of the book rather than opening one.",
@@ -2770,7 +2770,7 @@
       "target": "4032 × 2268 px (Adam's crop) — 244 dpi as a 236 mm band",
       "origin": "own photograph",
       "capturedSource": "EXIF in the render — 4 Oct 2025, 12:16.",
-      "render": "~/Desktop/photo library edits/IMG_5210.jpeg — Adam's own crop.",
+      "render": "~/Desktop/photo libraries/photo library edits/IMG_5210.jpeg — Adam's own crop.",
       "selection": "iPhoto library, verified by eye 21 Aug 2026."
     },
     {
@@ -2780,7 +2780,7 @@
       "role": "plate",
       "essay": "—",
       "section": "Stage III → IV, the dark ground",
-      "spread": "Unplaced, and the file is not in this repository yet — Adam's render is at `~/Desktop/photo library edits/IMG_5214.jpeg`. Registered 21 Aug 2026, verified by eye. The book is at its 130-page ceiling, so placing this means removing something.",
+      "spread": "Unplaced, and the file is not in this repository yet — Adam's render is at `~/Desktop/photo libraries/photo library edits/IMG_5214.jpeg`. Registered 21 Aug 2026, verified by eye. The book is at its 130-page ceiling, so placing this means removing something.",
       "subject": "The same fleet at distance on dark glittering water, sails as pale triangles against a black tree line, the lake surface carrying most of the frame — almost monochrome.",
       "concept": "The same boats, at the distance where they stop being boats.",
       "purpose": "photo-selection-04: “the second is the better picture and the quieter one. Hold the darkness.” A candidate for the dark stages alongside library-21.",
@@ -2788,7 +2788,7 @@
       "target": "4032 × 2268 px (Adam's crop) — 244 dpi as a 236 mm band",
       "origin": "own photograph",
       "capturedSource": "EXIF in the render — 4 Oct 2025, 12:22.",
-      "render": "~/Desktop/photo library edits/IMG_5214.jpeg — Adam's own crop.",
+      "render": "~/Desktop/photo libraries/photo library edits/IMG_5214.jpeg — Adam's own crop.",
       "selection": "iPhoto library, verified by eye 21 Aug 2026."
     }
   ]

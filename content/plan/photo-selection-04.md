@@ -444,7 +444,7 @@ esplanade, the Alcobaça nave, the bamboo path.
 **What to do.** A second export of the same library, this time
 `File → Export → Export N Photos…` — the ordinary one, not *Unmodified
 Original* — which renders each photograph **as edited**: Adam's crops, his
-black-and-white, his grades. Send it to `~/Desktop/photo library edited`.
+black-and-white, his grades. Send it to `~/Desktop/photo libraries/photo library edited`.
 `npm run selection` already reads every `~/Desktop/photo library*` folder.
 
 Keep both. They answer different questions:
@@ -859,7 +859,7 @@ require the edited export at all — the rest resolved from originals.
 
 The export is restarted as three pieces instead of one fragile GUI run — see
 [open-questions](open-questions.md) item 6 for the machinery. What matters for
-this document: `~/Desktop/photo library edits` is filling with the **rendered
+this document: `~/Desktop/photo libraries/photo library edits` is filling with the **rendered
 crops themselves**, and the first wanted frame to land, `IMG_0831.jpeg`, measures
 **exactly 3213 × 5712 — the dimensions this document states.** After a day of
 inferring the crops from their 4:3 parents, the crops are simply here.

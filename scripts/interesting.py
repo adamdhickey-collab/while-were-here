@@ -58,6 +58,7 @@ where to look. It does not decide anything.
 """
 import argparse
 import json
+import sys
 from pathlib import Path
 
 import numpy as np
@@ -68,6 +69,15 @@ try:
     pillow_heif.register_heif_opener()
 except Exception:
     pass
+
+# ABOVE ITS FIRST USE, and it was not. `from lib.library import originals` sat
+# 64 lines below `ORIGINALS = originals()`, so this script raised NameError on
+# import and had not run since the libraries were reorganised on 23 Aug 2026 —
+# the same fault, in the same place, that broke sheet.py. A resolver import
+# belongs with the other imports; putting it beside the code that uses argparse
+# results reads tidy and executes in the wrong order.
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from lib.library import originals, edits          # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 ORIGINALS = originals()
@@ -132,9 +142,6 @@ ap.add_argument('--thumb', type=int, default=300)
 a = ap.parse_args()
 
 import importlib.util
-import sys
-sys.path.insert(0, str(Path(__file__).resolve().parent))
-from lib.library import originals, edits          # noqa: E402
 
 spec = importlib.util.spec_from_file_location('places', ROOT / 'scripts' / 'places.py')
 places = importlib.util.module_from_spec(spec)

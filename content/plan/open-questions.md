@@ -627,7 +627,7 @@ somebody reads the four dividers in a row.
 ### 6 · The edited export — **DONE**, 21 Aug 18:14
 All **6,278 iCloud-only renders are fetched** — the applet ran the whole queue
 in about 22 minutes with zero errors and exited cleanly ("all done" in
-`~/.cache/render-export/applet.log`). `~/Desktop/photo library edits` holds
+`~/.cache/render-export/applet.log`). `~/Desktop/photo libraries/photo library edits` holds
 6,276 files: every edited photograph in the library, as Adam's own crop and
 grade, named after its original with ` (1)`-style suffixes where names collide.
 Together with `photo library 2` (all originals) and `photo library rendered`
@@ -653,10 +653,10 @@ The GUI re-run is no longer the plan. What actually happened, in order:
    the six-hour GUI export was really doing, and why it was slow.
 2. **`osxphotos`** (installed under `~/.cache/osxphotos-venv`, needs the Full
    Disk Access Adam granted) exported everything with a local file to
-   `~/Desktop/photo library rendered` — 7,088 files, clean names, resumable.
+   `~/Desktop/photo libraries/photo library rendered` — 7,088 files, clean names, resumable.
 3. **The 6,278 iCloud renders** are being fetched by a tiny AppleScript applet
    at `~/.cache/render-export/Render Export.app`, which drives Photos in
-   batches of 20 into `~/Desktop/photo library edits`, **September 2024 trip
+   batches of 20 into `~/Desktop/photo libraries/photo library edits`, **September 2024 trip
    first**, resumable via `all.txt`/`done.txt` beside it. Log:
    `~/.cache/render-export/applet.log`. Output confirmed 16:9/9:16 — the real
    crops, at last. If it dies, `open` the app again; it picks up where it was.

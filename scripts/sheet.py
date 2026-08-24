@@ -23,6 +23,10 @@ from pathlib import Path
 
 from PIL import Image, ImageDraw, ImageOps
 
+import sys
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from lib.library import originals, edits          # noqa: E402
+
 try:
     import pillow_heif
     pillow_heif.register_heif_opener()
@@ -31,6 +35,10 @@ except Exception:
 
 ROOT = Path(__file__).resolve().parent.parent
 INDEX = ROOT / '.cache' / 'places.json'
+# Resolved by scripts/lib/library.py. The resolver import briefly sat BELOW this
+# line — a patch inserted it after the last `import` statement in the file, and
+# this file has one mid-flow (`import importlib.util`), so the insertion landed
+# after the first use and every run died on a NameError. Imports go at the top.
 ORIGINALS = originals()
 SCRATCH = Path('/private/tmp/claude-501/-Users-adamhickey-Projects-while-were-here'
                '/a381c33c-d901-4a4e-a0a0-f30f201837c5/scratchpad')
@@ -47,9 +55,6 @@ ap.add_argument('--thumb', type=int, default=330)
 a = ap.parse_args()
 
 import importlib.util
-import sys
-sys.path.insert(0, str(Path(__file__).resolve().parent))
-from lib.library import originals, edits          # noqa: E402
 
 spec = importlib.util.spec_from_file_location('places', ROOT / 'scripts' / 'places.py')
 places = importlib.util.module_from_spec(spec)

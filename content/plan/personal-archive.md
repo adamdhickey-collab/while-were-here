@@ -444,3 +444,36 @@ library, and nothing in this toolchain can read them — `findsource.py` indexes
 `.heic/.jpg/.jpeg/.png` only. If any placed Panasonic frame is still short of
 resolution, its RAW may hold more than the JPEG beside it. Not pursued: it needs
 `rawpy`, and no placed plate is currently known to depend on it.
+
+## The whole GPS'd archive has now been looked at — 23 Aug 2026, late
+
+New York (288 edited), Chicago (93), Washington DC (65), the 704 edited USA
+frames near no known city, and the four smallest country buckets (Switzerland
+29, UAE 24, Dominican 20, Hawaii 11) were contact-sheeted for the first time.
+With them, **every GPS bucket in the 24,372-frame library has been eyeballed at
+least once.** Two candidates worth keeping, no placements — the book is at its
+ceiling and neither displaces anything deliberate.
+
+### `IMG_1789.JPG` — Apollo 11's *Columbia*, Air and Space, 12 May 2016
+Adam's own photograph, close: the hatch, both windows, and the **scorched
+ablative heat shield filling the bottom edge, honeycomb char pattern visible**.
+3264 × 2448 — 207 dpi at a full 300 mm page, 415 at a half.
+
+Why it is recorded: the fact ledger holds `apollo-heat-shield`, **verified but
+Unplaced** since the material break it captioned was cut to reach 130 pages.
+The claim about ablative material now has a photograph OF THE ACTUAL ARTIFACT,
+by Adam. If that spread ever returns, it needs no stock image — and "the proof
+was in his own library the whole time" is by now this project's oldest pattern.
+
+### `IMG_8407.HEIC` — Grand Central's Mercury clock, 23 Sept 2018
+The god of speed standing on the clock everyone waited under, "GRAND CENTRAL
+TERMINAL" carved beneath — made for *The Last People Who Remember Waiting*
+thematically. Honestly graded: flat grey sky, steep angle, underexposed
+carving. A small-plate candidate, not an opener. 4032 × 3024.
+
+### And one census correction
+The "Switzerland: 29" line in the by-country table is **Lake Como** — Varenna,
+the honeymoon, May 2019. The country bounding box misfiles it, the same class
+of error as the Canada box that swallowed the northern USA. Nothing depends on
+the country labels, so the box is not being tuned; the table's Switzerland row
+should be read as Italy.

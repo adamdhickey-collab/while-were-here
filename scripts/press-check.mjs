@@ -36,14 +36,19 @@ console.error(`
     Docker Desktop                  heavier, matches press-ready's own docs
 
   Or decide the preflight is not wanted. PDF/X-1a and the grayscale flag are
-  offset-litho conventions. This book prints photographically at Saal on
-  FUJIFILM Crystal Archive HD, and that workflow may not want PDF/X at all —
-  worth asking them before installing anything. Without the preflight:
+  offset-litho conventions, and this book prints photographically — see
+  content/plan/printer-brief.md, which asks each printer directly rather than
+  assuming. Without the preflight:
 
-    BOOK_PRESS=1 node scripts/build.mjs && \\
-      vivliostyle build build/book.html -o dist/while-were-here-press.pdf && \\
-      npm run build
+    npm run pdf:press:plain
 
   That still gives real bleed and crop marks, which is the part that matters.
+  It is a script rather than three lines to paste BECAUSE the three lines do
+  not work when pasted: vivliostyle is a local devDependency, on PATH only
+  inside an npm script. Run from a shell it exits 127 — and if any part of the
+  chain is piped, even into \`tail\`, the pipeline reports the pipe's status
+  instead and the whole thing prints success while writing no file. That
+  happened twice on 24 Aug 2026, to a press PDF that stayed eighteen hours old
+  through two builds that both said they had worked.
 `);
 process.exit(1);

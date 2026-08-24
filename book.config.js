@@ -6,8 +6,15 @@
  * (for layout code) and literal values inside `@page` rules (because paged-media
  * engines cannot reliably resolve `var()` inside `size`, `bleed` or `marks`).
  *
- * NOTHING printer-specific is hard-coded anywhere else in the project. When the
- * Saal Digital production template arrives, change the numbers here only.
+ * NOTHING printer-specific is hard-coded anywhere else in the project. When a
+ * printer's production template arrives, change the numbers here only.
+ *
+ * THE PRINTER IS NOT CHOSEN. Every printer-specific number below came from Saal
+ * Digital, and Saal was ruled out on price on 23 Aug 2026. They are kept because
+ * they are the only measured numbers this project has and the book is built to
+ * them — not because they are still authoritative. Each one is now a question in
+ * content/plan/printer-brief.md, which asks three or four printers the same
+ * things and lists, per answer, exactly what changes in this file.
  */
 
 export const geometry = {
@@ -35,20 +42,24 @@ export const geometry = {
   // Spine width cannot be calculated until final page count and paper stock are
   // fixed. Formula: pages / 2 * caliper + boardAllowance.
   cover: {
-    // Saal Digital Professional Line 30 x 30 accepts a minimum of 26 pages
-    // and a MAXIMUM OF 130. 128 is the working target: eight essays at the
-    // density Part I already proves, plus front matter, dividers, material
-    // breaks and credits, with a spread of slack.
-    // MEASURED 19 Aug 2026: the full eight-essay book builds to exactly 130
-    // pages, which is the ceiling. This is now the actual count, not a target.
-    // There is no slack left: any spread added has to take one out. That has
-    // already happened once — essay 01's seventh spread came back and the
+    // 130 WAS SAAL'S CEILING, and Saal is no longer the printer. Their
+    // Professional Line 30 x 30 accepted a minimum of 26 pages and a maximum of
+    // 130, and every pacing decision in this book was made against that number:
+    // two material breaks cut, a reproduced record withdrawn, spreads paying for
+    // each other one at a time. Essay 01's seventh spread came back and the
     // blank between the cover and the half title paid for it.
-    pageCount: 130,        // actual, and the ceiling at this printer
+    // MEASURED 19 Aug 2026: the full eight-essay book builds to exactly 130
+    // pages, so this is the actual count as well as the old limit.
+    // It stays 130 until a printer says otherwise, and the brief asks each one
+    // what their maximum is — an answer of 150 or 180 makes several cut spreads
+    // recoverable from git history rather than lost.
+    pageCount: 130,        // actual; the ceiling it was written against is gone
     paperCaliper: 0.17,    // mm per leaf — PROVISIONAL AND ALMOST CERTAINLY LOW.
-                           // Saal prints this book on FUJIFILM Crystal Archive HD
-                           // at 368 g/m2, layflat, not on the uncoated stock this
-                           // number assumes. Replace from the production template.
+                           // It assumes an uncoated stock. Every photographic
+                           // layflat stock quoted for this book is heavier: Saal's
+                           // was FUJIFILM Crystal Archive HD at 368 g/m2, and any
+                           // replacement printer's will be in that range too.
+                           // Replace from whichever production template arrives.
                            //
                            // HOW WRONG THIS CAN BE, 21 Aug 2026. spineWidth() is
                            // linear: at 130 pages it is 65 x caliper + 4, so every
@@ -59,10 +70,11 @@ export const geometry = {
                            // not a rounding error, it is a misprinted case.
                            //
                            // Nothing here asserts what the true caliper IS. That
-                           // number comes from Saal's production template for this
-                           // exact product and nowhere else. Get it before the
-                           // cover wrap is sent, and treat every spine figure the
-                           // build prints as provisional until it is in.
+                           // number comes from the production template of whoever
+                           // prints this book, for that exact product, and from
+                           // nowhere else. Get it before the cover wrap is sent,
+                           // and treat every spine figure the build prints as
+                           // provisional until it is in.
     boardAllowance: 4,     // mm added for hardcover board and hinge
     wrapTurnIn: 15,        // mm folded around the board
     hingeGap: 8,           // mm groove either side of the spine
@@ -120,9 +132,10 @@ export default geometry;
  * `npm run press:check` now runs first and fails in a second.
  *
  * Before installing anything, decide whether the preflight is wanted at all.
- * PDF/X-1a and the grayscale flag are offset-litho conventions. This book
- * prints photographically at Saal on FUJIFILM Crystal Archive HD, and that
- * workflow may not ask for PDF/X — worth one question to them. Dropping the
- * preflight still leaves real bleed and crop marks, which is the part that
- * makes a file press-ready in the sense this book needs.
+ * PDF/X-1a and the grayscale flag are offset-litho conventions and this book
+ * prints photographically, so the answer may well be no — it is one of the two
+ * smaller questions in content/plan/printer-brief.md, asked rather than assumed.
+ * Dropping the preflight still leaves real bleed and crop marks, which is the
+ * part that makes a file press-ready in the sense this book needs:
+ * `npm run pdf:press:plain` does exactly that.
  */

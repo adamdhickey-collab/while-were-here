@@ -52,8 +52,12 @@ hanging for 81 minutes). PDF/X-1a and the grayscale flag are offset-litho
 conventions and this book prints photographically.
 
 - **If they want it** — `brew install ghostscript`.
-- **If they do not** — take the preflight flags out of the script rather than
-  leave them implying a requirement nobody confirmed.
+- **If they do not** — `npm run pdf:press:plain` is the same build without the
+  preflight, and is what has actually produced every press file so far.
+
+Added 24 Aug 2026: that used to be three lines printed inside `press:check`'s
+error message, to paste into a terminal. They do not work pasted — `vivliostyle`
+is a local devDependency and is on PATH only inside an npm script.
 
 A press PDF built *without* the preflight is already verified correct: 132 pages,
 TrimBox 300 × 300 mm, BleedBox 306 × 306 mm, all seven faces subset-embedded.
@@ -71,9 +75,13 @@ Both shapes now exist, so whichever they ask for is ready:
 
 * `dist/while-were-here-press.pdf` — 132 pp, covers included
 * `dist/while-were-here-interior.pdf` — 130 pp, covers stripped, same trim,
-  bleed and marks. Cut with pymupdf after verifying by text that pages 1 and
-  132 really were the covers; the interior is untouched, so nothing inside
-  moved.
+  bleed and marks. `npm run pdf:interior` cuts it, refusing unless page 1
+  carries the title and subtitle and page 132 carries the back-cover line, both
+  read out of `content/book.json`; the interior is untouched, so nothing inside
+  moved. It was a hand-run pymupdf snippet until 24 Aug 2026, which meant a
+  derived file with no derivation and a staleness check watching it — every
+  content change made it stale and every rebuild needed somebody to remember an
+  unwritten command.
 
 **One question to Saal, same as questions 1 and 2** — and the interior file is
 derived, so if the answer is "one file" it can simply be deleted. `pdfcheck`

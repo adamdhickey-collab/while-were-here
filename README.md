@@ -8,14 +8,17 @@ the production system; the deliverable is a press-ready PDF for a 300 × 300 mm
 hardcover. It is not a website.
 
 **Status: complete draft, not press-final.** Eight essays laid out across the
-full set of spread types, plus covers and front matter — **130 interior pages**,
-which is the printer's hard maximum rather than a target. Adding a spread now
-means removing one.
+full set of spread types, plus covers and front matter — **130 interior pages**.
+That was Saal's hard maximum, and every pacing decision in the book was made
+against it; Saal was ruled out on price on 23 Aug 2026, so it is now the actual
+count rather than a limit. Adding a spread still means removing one until a
+printer says otherwise.
 
-Three things stand between this and a press file, and none of them is code:
-Saal's real paper caliper, whether Saal wants PDF/X-1a, and consent from anyone
-identifiable if the book is ever sold. They live in
-[open-questions.md](content/plan/open-questions.md).
+Four things stand between this and a press file, and none of them is code:
+choosing a printer, that printer's paper caliper, whether they want PDF/X-1a,
+and consent from anyone identifiable if the book is ever sold. They live in
+[open-questions.md](content/plan/open-questions.md), and
+[printer-brief.md](content/plan/printer-brief.md) is the enquiry to send.
 
 ---
 
@@ -44,6 +47,8 @@ If you cloned before installing LFS, `git lfs pull` fixes it in place.
 | `npm run spreads` | The book as **facing spreads**, which is how it is read → a vector copy in `dist/` and a 15 MB published copy in `public/download/`. Pairing comes from each page's own `data-side`, never assumed. |
 | `npm run spreads:check` | Is the **published** spreads PDF the current book? It is committed to the repository, so a stale one ships on the next push. |
 | `npm run pdf:press` | Press PDF → `dist/while-were-here-press.pdf` (bleed + crop marks). **Needs Ghostscript** — `npm run press:check` runs first and says so, because press-ready hangs rather than failing without it. **Check the build line says `PRESS: bleed + crop marks`**: this script once ran the trimmed proof build behind a press-ready preflight, and the file had no bleed at all. |
+| `npm run pdf:press:plain` | The same press build **without** the Ghostscript preflight — bleed and crop marks, no PDF/X. This is what has actually produced every press file so far, and it is a script rather than three lines to paste because `vivliostyle` is a local devDependency: run from a shell those lines exit 127, and if any of them is piped the pipeline reports the pipe's status and prints success while writing nothing. |
+| `npm run pdf:interior` | Cuts the 130-page interior out of the 132-page press PDF, for printers whose intake wants the cover as a separate wrap. Refuses unless page 1 carries the title and subtitle and page 132 the back-cover line, both read from `content/book.json` — it will not strip the outer pages just because they are the outer pages. |
 | `npm run press:check` | Confirm the press preflight can actually run before committing to a long build. |
 | `npm run prompts` | Regenerate the full prompt library from the manifest. |
 | `npm run brief` | Write a self-contained brief for the assets not yet made. |
@@ -98,9 +103,11 @@ Current values — trim 300 × 300 mm, bleed 3 mm, safe area 8 mm, margins
 30 / 34 / 30 / 34 mm, a 12-column grid with a 6 mm gutter.
 
 > **Nothing here is press-final.** Bleed, spine, fold and cover geometry are
-> provisional until the printer's own production template arrives and page count
-> and paper stock are fixed. Target printer is the Saal Digital Professional Line
-> 30 × 30 cm photo book, but no Saal-specific number is hard-coded anywhere.
+> provisional until a printer's own production template arrives and page count
+> and paper stock are fixed. **No printer is chosen.** Every printer-specific
+> number in `book.config.js` came from Saal Digital, who were ruled out on price;
+> they are kept because they are the only measured numbers this project has, not
+> because they still bind. Nothing printer-specific is hard-coded anywhere else.
 
 Spine width is computed, not typed: `pages / 2 × caliper + board allowance`. At
 130 pp on a 0.17 mm leaf it comes to **15.1 mm**. Change the page count in
@@ -109,7 +116,7 @@ Spine width is computed, not typed: `pages / 2 × caliper + board allowance`. At
 **That 0.17 is a placeholder and the spine is linear in it** — 0.65 mm of spine
 per 0.01 mm of caliper, so a guess that is wrong by four hundredths puts the
 wrap out by 2.6 mm and the title off centre on a finished book. Get the number
-from Saal before anything is printed.
+from whoever prints it, before anything is printed.
 
 ### Proof vs press
 

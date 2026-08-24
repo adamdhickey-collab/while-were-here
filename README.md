@@ -39,8 +39,10 @@ If you cloned before installing LFS, `git lfs pull` fixes it in place.
 | `npm run build` | Compose `build/` from content. Fast, no browser. |
 | `npm run dev` | Build, watch content, and serve `build/` on port 4321. |
 | `npm run preview` | Open the real Vivliostyle paginator on `build/book.html`. |
-| `npm run pdf` | Full-resolution PDF → `dist/while-were-here.pdf`. Around 200 MB with real imagery — correct for a printer, unwieldy on a laptop. |
-| `npm run pdf:proof` | Review PDF at screen resolution → `dist/while-were-here-proof.pdf`, 90 MB. |
+| `npm run pdf` | Full-resolution PDF → `dist/while-were-here.pdf`. Around 410 MB with real imagery — correct for a printer, unwieldy on a laptop. |
+| `npm run pdf:proof` | Review PDF at screen resolution. Not kept in `dist/` by default: the spreads PDF below supersedes it for reading. |
+| `npm run spreads` | The book as **facing spreads**, which is how it is read → a vector copy in `dist/` and a 15 MB published copy in `public/download/`. Pairing comes from each page's own `data-side`, never assumed. |
+| `npm run spreads:check` | Is the **published** spreads PDF the current book? It is committed to the repository, so a stale one ships on the next push. |
 | `npm run pdf:press` | Press PDF → `dist/while-were-here-press.pdf` (bleed + crop marks). **Needs Ghostscript** — `npm run press:check` runs first and says so, because press-ready hangs rather than failing without it. **Check the build line says `PRESS: bleed + crop marks`**: this script once ran the trimmed proof build behind a press-ready preflight, and the file had no bleed at all. |
 | `npm run press:check` | Confirm the press preflight can actually run before committing to a long build. |
 | `npm run prompts` | Regenerate the full prompt library from the manifest. |
@@ -52,11 +54,18 @@ If you cloned before installing LFS, `git lfs pull` fixes it in place.
 | `npm run fonts:cjk` | Rebuild `fonts-cjk/` when the book gains a character the Latin faces cannot set. |
 | `npm run credits` | Rebuild the attribution page from the manifest. |
 | `npm run facts` | Check `content/facts.json` and rebuild the sources page. `--strict` fails on anything unverified. |
-| `npm run verify` | **The pre-press checks, in one command.** Seventeen pass/fail, run against the built pages rather than the sources, plus what it cannot check and says so. `--strict` exits non-zero on any failure, which is what CI uses. |
+| `npm run verify` | **The pre-press checks, in one command.** Twenty-six pass/fail, run against the built pages rather than the sources, plus what it cannot check and says so. `--strict` exits non-zero on any failure, which is what CI uses. |
 | `npm run selection` | Reconcile `content/plan/photo-selection-04.md` against the exported photo library — which selected frames exist yet, at what size, and the dpi they would give. |
 | `npm run labels` | Renders each code-drawn figure twice — once with its labels hidden — and reports any label with a stroke through it, or two labels overlapping. `npm run verify` calls this when a browser is present. |
 | `npm run overflow` | Does any page's copy run past the page? Drives the preview's own rule in a headless browser and names the folio and the millimetres. `npm run verify` calls this when a browser is present. |
-| `npm run shots` | Render spreads to PNG at trim size. `-- --all` for every spread. |
+| `npm run shots` | Render spreads to PNG at trim size. `-- --all` for every spread. Clears the directory first, so a render from a book that no longer exists cannot be mistaken for a current one. |
+| `npm run contrast` | Can every run of type be read off the ground it prints on? Shoots each page twice — once as printed, once with the type hidden — because CSS cannot see what is behind an element. Measures 948 runs, per line, at the worst window along each. |
+| `npm run bleed` | Does the press PDF actually bleed? Walks in from every trim edge of every page. Vivliostyle fragments any layout box crossing the page bottom, so a book can look like a press file and carry no bleed at all on three quarters of its pages. |
+| `npm run codes` | Does anything printed here scan? Carries its own positive control and refuses to report unless a known symbol encodes and decodes first. |
+| `npm run breaks` | Hyphen ladders, words broken across a column foot, and any display-serif element below weight 900. |
+| `npm run dpi` | Every placed image measured at the size it actually prints. |
+| `npm run pdfcheck` | Is the delivered PDF the current book, and does it contain every text element? Reports the age of the other deliverables too. |
+| `npm run mutate` | **Breaks the book on purpose, twenty-six ways, to prove the checks catch it.** A check that has never failed looks exactly like a check that cannot fail. Refuses to run on a dirty tree. |
 | `npm run clean` | Remove `build/` and `dist/`. |
 
 `npm run pdf` downloads a Chromium build the first time it runs (~130 MB, via
@@ -309,28 +318,33 @@ run `npm run dev` and watch the overflow outlines before trusting a swap.
   eight field notes. There is no slack left — 130 is the printer's maximum, so
   a new spread has to displace an existing one, and that trade is the decision,
   not the layout.
-- **Image resolution is now set by the generator, not by the press.** Thirty-two
-  manifest targets were lowered on 20 August 2026 to the largest canvas ChatGPT
-  actually produces — 1024 × 1024, 1536 × 1024, 1024 × 1536 — because the
-  previous figures asked for a resolution no available generator could reach.
-  The cost, at the sizes these pictures actually print:
+- ~~**Image resolution is set by the generator, not by the press.**~~
+  **Settled, 23 August 2026.** Thirty-two manifest targets had been lowered to
+  the largest canvas ChatGPT actually produces — 1024 px square and its
+  variants — which put a full-bleed opener at 85 dpi and left eleven plates
+  under 120. The README's own suggested fix was to *"upscale a generation
+  already judged good"*, and that is what happened: **twelve generated
+  artworks were upscaled 2× with EDSR**, judged first on the content most
+  likely to fail (a drawing's hairline rings, a photograph's grain), and
+  measured after.
 
-  | Placement | Canvas | Effective |
+  | Placement | Was | Now |
   | --- | --- | --- |
-  | Full-bleed page, 306 mm | 1024 × 1024 | **85 dpi** |
-  | Image essay, tall, 192 mm | 1024 × 1536 | **135 dpi** |
-  | Reading band, 236 mm | 1536 × 512 | **165 dpi** |
+  | Full-bleed page, 306 mm | 85 dpi | **170 dpi** |
+  | Image essay, tall, 192 mm | 135 dpi | **270 dpi** |
+  | The cover artwork | 106 dpi | **200 dpi** |
 
-  Press work normally wants 300 dpi. Lowering the target changed what the
-  manifest asks for, not what the paper will show, so a full-bleed opener is
-  the one to revisit first — either upscale a generation already judged good,
-  or place it smaller. **Every image has since been measured in the composed
-  book** — see [resolution-audit.md](content/plan/resolution-audit.md). Eleven
-  are under 120 dpi and all eleven are 300 mm full bleeds; three of those are
-  essay closings at 87 dpi, and a phone would take them to 256. Note the band was never the problem it looked like: its
-  old 9000 px target implied 969 dpi across a 236 mm placement, because it was
-  spec'd as though it ran the full 600 mm across the fold. It does not —
-  `.reading__band` sits inside one page's text block.
+  Under 120 dpi went from eight plates to **two**, and both survivors are
+  deliberate: `systems-01-observation-hive` (81 dpi) and
+  `before-time-01-father-portrait` (108) are a real photograph and a scan of a
+  1980s print. Resampling a camera's grain is a different decision from
+  resampling a drawing, and it was not taken — those two need a re-shoot and a
+  re-scan. See [resolution-audit.md](content/plan/resolution-audit.md).
+
+  The reading band was never the problem it looked like. Its old 9000 px target
+  implied 969 dpi across a 236 mm placement, because it was spec'd as though it
+  ran the full 600 mm across the fold. It does not — `.reading__band` sits
+  inside one page's text block.
 
   Screen prints are exempt. They are separated from personal photographs by
   `scripts/separate.py` at 3000 px and never touch a generator.

@@ -13,6 +13,7 @@ spreads:
   - type: opener
     variant: facing
     image: ordinary-days-01a-dog-afternoon-light
+    blocks: [open]
   - type: reading
     variant: two
     subhead: The Life Between the Milestones
@@ -104,9 +105,11 @@ spreads:
     blocks: [s10a+s10b]
 ---
 
-<!-- block: s2a -->
+<!-- block: open -->
 
 The dog moved twice this afternoon and never woke. The sun came in low and crossed half the floor between two and five, and the dog crossed with it — a slow pursuit conducted entirely in sleep. I measured it once, out of curiosity. About a meter an hour. That is the honest record of the day, and I have started to suspect that days like this one are not the packaging around my life. They are the substance.
+
+<!-- block: s2a -->
 
 Most of life does not happen during the big moments.  
 It happens in between them.

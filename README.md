@@ -70,7 +70,7 @@ If you cloned before installing LFS, `git lfs pull` fixes it in place.
 | `npm run breaks` | Hyphen ladders, words broken across a column foot, and any display-serif element below weight 900. |
 | `npm run dpi` | Every placed image measured at the size it actually prints. |
 | `npm run pdfcheck` | Is the delivered PDF the current book, and does it contain every text element? Reports the age of the other deliverables too. |
-| `npm run mutate` | **Breaks the book on purpose, thirty-one ways, to prove the checks catch it.** A check that has never failed looks exactly like a check that cannot fail. Refuses to run on a dirty tree. |
+| `npm run mutate` | **Breaks the book on purpose, thirty-two ways, to prove the checks catch it.** A check that has never failed looks exactly like a check that cannot fail. Refuses to run on a dirty tree. |
 | `npm run clean` | Remove `build/` and `dist/`. |
 
 `npm run pdf` downloads a Chromium build the first time it runs (~130 MB, via

@@ -47,6 +47,13 @@ import html as H
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
+
+# `content/plan/` is documentation ABOUT the book, never an input TO it —
+# verified against build.mjs, which reads only book/contents/facts/images/
+# type-candidates and content/essays. Including it meant that editing a
+# planning note marked every deliverable stale, and a check that fires on
+# correct work is a check that gets switched off.
+SKIP_DIRS = {'plan'}
 PDF = ROOT / 'dist' / 'while-were-here.pdf'
 HTML = ROOT / 'build' / 'book.html'
 
@@ -109,12 +116,25 @@ except ImportError:
 # check. What actually decides whether a deliverable is out of date is the
 # newest SOURCE it was made from.
 def newest_source():
+    """MTIME, WITH ITS ONE BLIND SPOT NAMED. This asks when a source file was
+       last written, not when its CONTENT last changed, and those differ: on
+       24 Aug 2026 a `cp` restoring an identical book.config.js after a trim-size
+       experiment moved its mtime eleven minutes past the press PDF and reported
+       a correct deliverable as stale. `git diff` said the content was untouched.
+
+       Content hashing would fix it and is not worth the cost — a false STALE
+       costs one rebuild, while a false CURRENT ships the wrong file to a
+       printer. The check is deliberately biased toward crying wolf. If it
+       fires and you believe it is wrong, check `git diff` on the sources
+       before dismissing it."""
     newest = 0.0
     for d in ('content', 'src'):
         base = ROOT / d
         if not base.is_dir():
             continue
         for f in base.rglob('*'):
+            if SKIP_DIRS & set(f.parts):
+                continue
             if f.is_file() and not f.name.startswith('.'):
                 newest = max(newest, f.stat().st_mtime)
     cfg = ROOT / 'book.config.js'

@@ -40,6 +40,13 @@ import time
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
+
+# `content/plan/` is documentation ABOUT the book, never an input TO it —
+# verified against build.mjs, which reads only book/contents/facts/images/
+# type-candidates and content/essays. Including it meant that editing a
+# planning note marked every deliverable stale, and a check that fires on
+# correct work is a check that gets switched off.
+SKIP_DIRS = {'plan'}
 SRC = ROOT / 'dist' / 'while-were-here.pdf'
 VECTOR = ROOT / 'dist' / 'while-were-here-spreads.pdf'
 WEB = ROOT / 'public' / 'download' / 'while-were-here-spreads.pdf'
@@ -85,6 +92,8 @@ if check_only:
         base = ROOT / d
         if base.is_dir():
             for f in base.rglob('*'):
+                if SKIP_DIRS & set(f.parts):
+                    continue
                 if f.is_file() and not f.name.startswith('.'):
                     newest = max(newest, f.stat().st_mtime)
     stale = []

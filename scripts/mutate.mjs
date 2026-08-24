@@ -150,6 +150,58 @@ const MUTATIONS = [
     expect: 'no photograph is filed as generated',
     why: 'one of Adam\'s own photographs filed as generated' },
 
+  /* The two Año Viejo photographs are the same figure six hours apart, and they
+     mutate in opposite directions, because a placement field can lie both ways.
+     here-09 sits on no page — filing it `placed` retires a good image nobody
+     will look at again, which is the fault found on 24 Aug 2026 in five records
+     at once. here-10 is printed on the closing recto — filing it `unplaced`
+     is the same fault wearing the other shoe, and a check written in one
+     direction only would sail past it.
+
+     The `target` line above each is what makes the pair unique: both records
+     carry a 3024 × 3024 square crop and differ only in how it was taken. */
+  { id: 'placed-but-off-page', file: 'content/images.json',
+    from: 'biased down the frame to keep the feet and the ground)",\n      "status": "unplaced"',
+    to:   'biased down the frame to keep the feet and the ground)",\n      "status": "placed"',
+    expect: 'every image filed as placed is on a page, and the reverse',
+    why: 'an image filed as placed that is on no page' },
+
+  { id: 'on-page-but-filed-away', file: 'content/images.json',
+    from: 'biased right to centre the fire and clip the UNAD sign)",\n      "status": "placed"',
+    to:   'biased right to centre the fire and clip the UNAD sign)",\n      "status": "unplaced"',
+    expect: 'every image filed as placed is on a page, and the reverse',
+    why: 'an image printed in the book but filed as unplaced' },
+
+  /* An essay opener with nothing on its recto below the deck. This is the fault
+     of 24 Aug 2026 put back exactly: essay 01 shipped with no `blocks:` on its
+     opener spread, so two-thirds of the first essay page in the book printed
+     blank and the reading time floated alone above the rule. */
+  { id: 'opener-no-lede', file: 'content/essays/why-ordinary-days-may-be-the-point-of-life.md',
+    from: '    image: ordinary-days-01a-dog-afternoon-light\n    blocks: [open]',
+    to:   '    image: ordinary-days-01a-dog-afternoon-light',
+    expect: 'every essay opener carries its lede',
+    why: 'an essay opener with no lede declared' },
+
+  /* The same emptiness reached by a typo rather than an omission, and the reason
+     that check reads the composed HTML instead of the frontmatter: `blocks` is
+     present and non-empty here, so every YAML-level test passes, and the named
+     block still matches no comment in the markdown. The page comes out blank
+     either way. */
+  { id: 'opener-lede-misnamed', file: 'content/essays/the-secret-life-of-attention.md',
+    from: '    image: attention-01-familiar-room\n    blocks: [open]',
+    to:   '    image: attention-01-familiar-room\n    blocks: [opn]',
+    expect: 'every essay opener carries its lede',
+    why: 'an opener naming a lede block that does not exist' },
+
+  /* The measure narrower than the line the layout chose to set. 128mm is the
+     value that shipped on 24 Aug 2026, and it broke the dedication's second
+     clause in the middle of "and for Fabiola" — the <br> intact, two more
+     breaks added underneath it by the width. */
+  { id: 'stack-remeasured', file: 'src/styles/layouts.css',
+    from: '  max-width: 168mm;\n}', to: '  max-width: 128mm;\n}',
+    expect: 'every deliberate line break survives the measure',
+    why: 'a decided line stack re-broken by too narrow a measure' },
+
   /* Type that cannot be read on the ground it prints on. This puts back the
      exact fault of 23 Aug 2026: a rule that lightens type for a dark photograph,
      keyed on a class that is also true of pages with no photograph at all. */

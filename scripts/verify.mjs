@@ -127,6 +127,18 @@ if (!breaks.available) {
     w.length
       ? `${w.length}: ${w.map((x) => `.${x.cls} at ${x.weight}`).join(', ')} — run \`npm run breaks\``
       : 'one voice, one weight');
+
+  /* Surfaced here for the same reason as the weights above: mutate.mjs reads
+     verify's ✓/✗ lines, so a check that only prints inside breaks.mjs cannot be
+     proven to bite. This one exists because the dedication printed "and for" and
+     "Fabiola" on separate lines — the <br> was right, the 128mm measure was
+     narrower than the 149.8mm clause, and the width silently added two breaks of
+     its own on top of the one the layout chose. */
+  const st = breaks.stacks || [];
+  check('every deliberate line break survives the measure', st.length === 0,
+    st.length
+      ? `${st.map((x) => `.${x.cls.split(' ').pop()} declared ${x.declared}, renders ${x.rendered}`).join('; ')} — run \`npm run breaks\``
+      : 'the dedication and the divider titles stack where they were told to');
 }
 
 /* 2c. Does anything on these pages actually scan? The field note between Parts
@@ -443,6 +455,47 @@ check('the contents page agrees with the book', tocFlat === bookFlat,
     ? `${realParts.length} parts, ${realParts.reduce((a, p) => a + p.essays.length, 0)} essays, same titles in the same order`
     : `contents: ${tocFlat}  ≠  book: ${bookFlat}`);
 
+/* 13b. No essay opener arrives without its lede.
+
+      Every essay opens on a facing pair: a full-bleed plate on the verso, and on
+      the recto the eyebrow, the title, the deck, then a paragraph of lede set
+      with a small-caps lead-in, with the reading time tucked against its right.
+      The lede is the essay's own first block, lifted onto the opener — which is
+      why the reading spread's drop cap falls on the SECOND block in all eight.
+
+      On 24 Aug 2026, essay 01 — the first essay in the book — had no `blocks:`
+      on its opener spread and no `open` block to name. The lower two-thirds of
+      that recto printed blank, "7 MIN" floated alone above the rule, and the
+      essay's real opening sentence sat inside the reading spread instead. The
+      reader met the pattern in its broken form first and every later opener
+      appeared to have gained something.
+
+      Nothing caught it and nothing could. `copy overflow` measures type that is
+      too long for its slot and has no opinion about a slot left empty. The
+      frontmatter was valid YAML; the layout mapped an absent `blocks` key to an
+      empty array and emitted `<div class="prose prose--lead opener__lede">` with
+      nothing inside, which collapses to zero height and reads, to every check
+      in this file, exactly like a page that was never meant to carry text. The
+      fingerprint was in the file rather than the render: all eight essays are
+      structurally identical, and essay 01's `dropCap: true` sat on line 19
+      where the other seven have it on line 18, short by exactly the missing line.
+
+      MEASURED IN THE COMPOSED HTML, not the frontmatter, and the difference is
+      the whole point. `blocks: [opn]` is a typo that passes any check reading the
+      YAML — the key is present, the list is non-empty — and still resolves to
+      nothing, because the block name matches no comment in the markdown. Only
+      the rendered element knows whether words arrived. */
+const openerLedes = [...html.matchAll(/<div class="prose prose--lead opener__lede">([\s\S]*?)<\/div>/g)]
+  .map((m) => m[1].replace(/<[^>]+>/g, '').trim());
+const openerCount = (html.match(/class="page[^"]*\bopener__recto\b/g) || []).length;
+const emptyLedes = openerLedes.filter((t) => t.length === 0).length;
+check('every essay opener carries its lede', emptyLedes === 0 && openerLedes.length === openerCount,
+  emptyLedes
+    ? `${emptyLedes} of ${openerLedes.length} opener rectos print an empty lede — the essay is missing \`blocks:\` on its opener spread, or names a block that does not exist`
+    : openerLedes.length !== openerCount
+      ? `${openerCount} opener rectos but ${openerLedes.length} lede elements — one is not emitting the element at all`
+      : `${openerLedes.length} openers, every one carrying words`);
+
 /* 14. Nothing is drawn through a diagram's own labels.
 
       Twice a figure has printed with a line across a word — Figure 02.1 had the
@@ -720,6 +773,66 @@ check('no photograph is filed as generated', misfiled.length === 0,
     ? `${misfiled.length}: ${misfiled.slice(0, 4).map((i) => i.id).join(', ')}${misfiled.length > 4 ? '…' : ''}`
     : `${images.filter((i) => CAMERA.has(String(i.origin || ''))).length} photographs, none claiming a model made them`);
 
+/* Nothing filed as placed is off the page, and nothing on the page is filed away.
+
+   `status` is the one field in the manifest that makes a claim about the BOOK
+   rather than about the asset, and it is typed by hand, so it drifts. On 24 Aug
+   2026 five records said `placed` while their own `spread` field, two lines
+   below, began with the word "Unplaced" — material-01, material-03,
+   intelligence-03, pilgrimage-06 and here-09. Every one had a real reason to be
+   off the page (the 130-page ceiling took four of them; a better photograph
+   replaced the fifth), and every one had been swept to `placed` by the pass that
+   correctly relabelled 39 photographs whose `generated` was a provenance lie.
+   The sweep keyed on origin, which is the right discriminator for provenance and
+   the wrong one for placement.
+
+   It matters because `content/plan/` and `npm run brief` read this field to say
+   what is outstanding, and a record that claims to be in the book is a record
+   nobody looks at again. Four of these five are good images waiting on a freed
+   spread; filed as `placed` they were quietly retired instead of queued.
+
+   RESOLVED BY SLUG AS WELL AS FILENAME, and the first version of this check was
+   wrong for want of it. A screen-print record carries `filename: "—"` and ships
+   as three separations named from its `slug` — `print-01-river-figure-plate-1`
+   and so on. Matching on filename alone reported `part-4-divider-return` as
+   off the page when its three plates are the Part IV divider, printed. Absence
+   of the reference you happened to look for is not absence from the book.
+
+   BOTH DIRECTIONS, from one resolver. Checking only that `placed` is printed
+   would let the opposite drift through — a record marked `unplaced` while its
+   plate sits on page 90 — and that is the same fault wearing the other shoe.
+
+   WHAT A PASS DOES NOT MEAN, because `status` still does two jobs. Only four of
+   its five values say anything about placement: `placed` claims the page,
+   `unplaced`, `not generated` and an absent status all disclaim it, and those
+   are what this check reads. `generated` says a model made the picture and is
+   SILENT about placement — 42 of its 64 records print, 22 do not, and nothing
+   distinguishes them. So a generated artwork that quietly falls off a page
+   still passes here. Fixing that means splitting provenance from placement
+   across 147 records and the plate card in helpers.mjs that prints the field,
+   which is not a change to make to a book this close to press. The gap is
+   named rather than covered, so the green line is not read as more than it is. */
+const CLAIMS_OFF_PAGE = new Set(['unplaced', 'not generated', '']);
+const plateDir = P('public/images/plates');
+const plateFiles = fs.existsSync(plateDir) ? fs.readdirSync(plateDir) : [];
+const assetsOf = (i) => {
+  const out = i.filename && i.filename !== '—' ? [i.filename] : [];
+  const stem = i.slug || i.id;
+  out.push(...plateFiles.filter((f) => f.startsWith(`${stem}-plate-`)));
+  return out;
+};
+const printed = new Set([...html.matchAll(/<img[^>]*src="[^"]*?([^"/]+)"/g)].map((m) => m[1]));
+const onPage = (i) => assetsOf(i).some((f) => printed.has(f));
+const ghosts = images.filter((i) => i.status === 'placed' && !onPage(i));
+const orphans = images.filter((i) => CLAIMS_OFF_PAGE.has(String(i.status || '')) && onPage(i));
+const wrong = [...ghosts.map((i) => `${i.id} filed placed, on no page`),
+               ...orphans.map((i) => `${i.id} prints but is filed ${i.status || 'nothing'}`)];
+const judged = images.filter((i) => i.status === 'placed' || CLAIMS_OFF_PAGE.has(String(i.status || '')));
+check('every image filed as placed is on a page, and the reverse', wrong.length === 0,
+  wrong.length ? wrong.slice(0, 5).join('; ') + (wrong.length > 5 ? ` … and ${wrong.length - 5} more` : '')
+               : `${judged.filter(onPage).length} on the page, ${judged.length - judged.filter(onPage).length} held back, `
+                 + `${images.length - judged.length} generated records silent on placement`);
+
 /* Can the type be read off the ground it prints on?
 
    Two legibility failures went into this book on 23 Aug 2026 and no check could
@@ -811,7 +924,8 @@ for (const r of results) {
 console.log(`\n  · ${unreached.length} verified claim(s) may not be on a page (approximate — look, do not delete)`);
 if (unreached.length) console.log(`    ${unreached.map((f) => f.id).join(', ')}`);
 console.log('\n  Not checked here, and none of it is optional before press:');
-console.log('    · paper caliper — book.config.js still holds a placeholder; get Saal\'s number');
+console.log('    · a printer — Saal was ruled out on price; content/plan/printer-brief.md goes to three or four');
+console.log('    · paper caliper — book.config.js still holds a placeholder; it comes from whoever prints it');
 console.log('    · a press PDF must come from a run that printed "PRESS: bleed + crop marks"');
 console.log('    · consent from everyone identifiable, if this is ever sold');
 console.log('');

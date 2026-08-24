@@ -242,11 +242,79 @@ const weights = await page.evaluate(() => {
   return bad;
 });
 
+/* A DECIDED LINE STACK THAT THE MEASURE OVERRODE — a fourth fault of the same
+   family, and the one that reached a printed page.
+
+   Some lines in this book are broken on purpose rather than by width: the
+   dedication breaks at a comma, the divider titles stack by phrase. The rule
+   they share is stated in index.mjs — "the stack is a decision, not a
+   by-product of the measure" — and a decision expressed as `<br>` is only kept
+   while every resulting line still fits. Past that the measure re-breaks it,
+   silently, wherever the width happens to fall.
+
+   On 24 Aug 2026 the dedication printed:
+
+     For my parents,
+     who taught me to look, and for
+     Fabiola, who looks with me
+
+   The `<br>` was placed correctly; the second line was 149.8mm of type in a
+   128mm measure, so the width picked the other two breaks and put a person's
+   name on a different line from the preposition introducing her. The layout
+   had been tested against five candidate dedications and passed all five. It
+   then got a sixth, longer than any of them, on the page that opens the book.
+
+   Measured by counting rendered line boxes against declared breaks: a decided
+   stack is correct only when it renders in exactly `<br>` + 1 lines. Nothing
+   here says which break is right — only that the one somebody chose survived. */
+const stacks = await page.evaluate(() => {
+  const bad = [];
+  for (const el of document.querySelectorAll('.dedication__line, .divider__title')) {
+    /* Two ways this book declares a stack. The dedication uses <br>; the
+       divider titles wrap each phrase in a span set to display:block. Count
+       whichever is in use, or one line if neither. */
+    const brs = el.querySelectorAll('br').length;
+    const blocks = [...el.children]
+      .filter((c) => getComputedStyle(c).display === 'block').length;
+    const declared = brs ? brs + 1 : (blocks || 1);
+
+    /* Distinct line-box tops, taken one character at a time — the same method
+       the hyphenation pass above uses, and for the same reason. Asking a Range
+       spanning the whole element for its rects does NOT give line boxes: over
+       block-level children it returns a rect per block on top of the per-line
+       ones, and the divider titles, whose phrases are spans set to block,
+       came back as six lines for three. Characters have exactly one box each. */
+    const walker = document.createTreeWalker(el, NodeFilter.SHOW_TEXT);
+    const r = document.createRange();
+    const tops = new Set();
+    for (let n = walker.nextNode(); n; n = walker.nextNode()) {
+      const v = n.nodeValue;
+      for (let i = 0; i < v.length; i++) {
+        if (!/\S/.test(v[i])) continue;
+        r.setStart(n, i);
+        r.setEnd(n, i + 1);
+        const box = r.getBoundingClientRect();
+        if (box.height) tops.add(Math.round(box.top * 2) / 2);
+      }
+    }
+    // Sub-pixel baselines can split one line across two neighbouring tops.
+    const sorted = [...tops].sort((a, b) => a - b);
+    let rendered = 0, last = -Infinity;
+    for (const t of sorted) { if (t - last > 1) { rendered++; last = t; } }
+
+    if (rendered !== declared) {
+      bad.push({ cls: el.className, declared, rendered,
+                 text: el.textContent.trim().replace(/\s+/g, ' ').slice(0, 60) });
+    }
+  }
+  return bad;
+});
+
 await browser.close();
 server.close();
 
 if (asJson) {
-  console.log(JSON.stringify({ available: true, findings: report, tally, weights }));
+  console.log(JSON.stringify({ available: true, findings: report, tally, weights, stacks }));
   process.exit(0);
 }
 
@@ -261,6 +329,18 @@ if (weights.length) {
   say('  cover.css and layouts.css load later and a stray font-weight silently wins.');
 } else {
   say(`  ✓ every element in the display serif is at weight 900`);
+}
+
+if (stacks.length) {
+  say(`\n  ⚠ ${stacks.length} decided line stack(s) re-broken by the measure:\n`);
+  for (const s2 of stacks) {
+    say(`    .${s2.cls} — declared ${s2.declared} line(s), renders ${s2.rendered}`);
+    say(`        "${s2.text}"`);
+  }
+  say('\n  The <br> was kept; the measure added its own breaks on top of it.');
+  say('  Widen the max-width to fit the longest declared line, or shorten the line.');
+} else {
+  say(`  ✓ every deliberate line break survives the measure`);
 }
 
 if (!report.length) {

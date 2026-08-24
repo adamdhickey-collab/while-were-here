@@ -2,8 +2,9 @@
 
 Written 24 Aug 2026, after a $500 quote for one copy.
 
-**Recommendation: 80 pages at 254 mm, four essays instead of eight, and majority
-real photographs.** Reasoning below, in the order the decisions have to be made.
+**Recommendation: ~90 pages at 254 mm, four essays instead of eight, and majority
+real photographs.** (The first version of this document said 80. Drafting the
+Part I merge showed why that was wrong — see §3.) Reasoning below, in the order the decisions have to be made.
 
 ---
 
@@ -26,12 +27,12 @@ levers multiply:
 | scenario | leaves | total paper | vs now |
 | --- | --- | --- | --- |
 | **current** — 300 mm, 130 pp | 65 | 11.70 m² | 100% |
-| 300 mm, 80 pp | 40 | 7.20 m² | **62%** |
+| 300 mm, 90 pp | 45 | 8.10 m² | **69%** |
 | 254 mm, 130 pp | 65 | 8.39 m² | 72% |
-| **254 mm, 80 pp** | 40 | 5.16 m² | **44%** |
-| 210 mm, 80 pp | 40 | 3.53 m² | 30% |
+| **254 mm, 90 pp** | 45 | 5.81 m² | **50%** |
+| 210 mm, 90 pp | 45 | 3.97 m² | 34% |
 
-Cutting pages alone gets to 62%. Cutting pages *and* trim gets to 44%, because
+Cutting pages alone gets to 69%. Cutting pages *and* trim gets to 50%, because
 they multiply. Anything at or below 210 mm is a different book — the type was
 measured at every size and 210 mm overflows 64 of 132 pages.
 
@@ -78,30 +79,46 @@ photographs:
 **This is the strongest argument for the shorter book, and it has nothing to do
 with money.** There are 54 real photographs in the book and 68 more selected and
 waiting in [06](photo-selection-06.md), [07](photo-selection-07.md) and
-[08](photo-selection-08.md). An 80-page book needs about 55 plates. **The
+[08](photo-selection-08.md). A 90-page book needs about 55 plates. **The
 condensed edition can be almost entirely real photographs** — which matters in a
 book whose whole argument is looking at what is actually there.
 
 ---
 
-## 3 · Target: 80 pages
+## 3 · Target: ~90 pages, and why it is not 80
 
-| | pages |
-| --- | --- |
-| front matter — cover, half title, title spread, dedication, contents, opening note | 9 |
-| four part dividers | 8 |
-| four essays at ~14 pp | 56 |
-| two field notes (the lake, the tag) | 4 |
-| Handed Over | 2 |
-| back cover | 1 |
-| **total** | **80** |
+**Corrected 24 Aug 2026 after drafting the Part I merge, which showed the first
+estimate was wrong.** The original figure here — four essays at 14 pages each —
+assumed a merged essay costs what a single essay costs now. It does not. A merge
+saves **apparatus**: one opener instead of two, one closing instead of two. It
+barely touches the prose, because the merged essay has to carry nearly both
+essays' words.
 
-Eighty is not a round number chosen for looks. It is what four essays cost at
-this book's own density, plus the apparatus it already has. Six essays lands at
-~104; keeping all eight and squeezing the air lands at ~114 and is not worth
-doing.
+Measured: the eight essays hold **9,143 words of prose** across **106 pages** —
+**86 prose-words per essay page**, counting every opener, plate and pull quote.
+The Part I merge compressed 2,319 words to 1,827, a 21% cut. Four merges at that
+rate give 7,308 words, which is **85 pages of essay** and a 109-page book.
 
----
+So the real options, with 24 pages of non-essay apparatus in every row:
+
+| approach | prose | w/pg | essay pp | total | paper at 254 mm |
+| --- | --- | --- | --- | --- | --- |
+| merge only, at Part I's rate | 7,308 | 86 | 85 | **109** | 60% |
+| six essays, no merging | 6,860 | 86 | 80 | **104** | 57% |
+| **merge + drop the pull-quote and image-essay spreads** | 7,308 | 110 | 66 | **90** | **50%** |
+| merge + a hard 40% prose cut | 5,486 | 86 | 64 | **88** | 49% |
+| merge + 40% cut + denser pages | 5,486 | 110 | 50 | **74** | 41% |
+
+**Recommended: 90 pages.** It keeps the writing — the Part I draft reads better
+than either source essay and loses almost nothing worth having — and pays for the
+length in layout instead. What it gives up is two of the most striking spread
+types in the book, the pull quote and the tall image-essay, at roughly two per
+essay.
+
+**That is the real trade, and it is a design decision rather than an editorial
+one: this book can keep its air or its length, not both.** Ninety pages at 254 mm
+is half the paper of the current book. Getting below about 88 means cutting prose
+that is good, and the drafting says so plainly.
 
 ## 4 · What survives, and what goes
 
@@ -117,13 +134,17 @@ doing.
 * **The field notes**, at least two. The most personal writing in the book.
 * **The dedication.**
 
-**Merge — four pairs into four essays.** Each new essay takes the stronger
-opening, the better middle, and the ending that lands. Roughly 2,000 words each
-against the current 1,550, so this is a compression of about 40% of the prose,
-not a halving of it.
+**Merge — four pairs into four essays.** One essay in each pair is the argument
+and the other is the images; the argument is the frame and the images hang on it.
+Measured on Part I: 2,319 words become 1,827, a 21% compression. See
+[merge-part-1-draft.md](merge-part-1-draft.md), which is a finished reading draft,
+not a sketch.
 
 **Cut:**
 * four essay openers, four closings — the pairs collapse into one of each
+* the pull-quote spread and the tall image-essay spread, at ~2 per essay. This is
+  where the 90-page target is actually paid for, and it hurts: they are two of
+  the best layouts in the book
 * the diagram spread, the material break, the image-pair spread
 * most generated plates, replaced from the 68 photographs already selected
 * two field notes

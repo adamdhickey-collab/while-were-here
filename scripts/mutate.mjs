@@ -304,6 +304,7 @@ for (const m of chosen) {
 
   const file = P(m.file);
   const before = fs.readFileSync(file, 'utf8');
+  const beforeTimes = fs.statSync(file);   // captured BEFORE the mutation, see the restore
   let verdict;
   try {
     if (!before.includes(m.from)) {
@@ -328,10 +329,14 @@ for (const m of chosen) {
        date. The `spreads-stale` mutation was the worst of them: it edits
        content/book.json, so it tripped its own check permanently after
        running. Restoring the mtime leaves no trace at all, which is what
-       "working tree restored and clean" is supposed to mean. */
-    const when = fs.statSync(file);
+       "working tree restored and clean" is supposed to mean.
+
+       The timestamp is captured with `before`, ABOVE, and not here: the first
+       version of this stat'd the file inside the `finally`, by which point it
+       held the mutation's own write time, so it restored the clock to the very
+       value it was trying to undo. It reported success and changed nothing. */
     fs.writeFileSync(file, before);
-    fs.utimesSync(file, when.atime, when.mtime);
+    fs.utimesSync(file, beforeTimes.atime, beforeTimes.mtime);
   }
   results.push(verdict);
   const mark = { caught: '✓', MISSED: '✗', skipped: '·', unreadable: '?' }[verdict.state];

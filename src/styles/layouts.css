@@ -1378,6 +1378,15 @@
   align-self: end;
   margin-top: 9mm;
   padding-top: 3.5mm;
+  /* CLEARANCE FOR THE FOOT DOT, which is absolutely positioned at the block's
+     bottom-left and knows nothing about how long this text is. The imprint has
+     grown twice since the dot was pinned there — the sources block, then the
+     CC licence URI on 23 Aug 2026 — and the second growth put the dot squarely
+     on top of the word "for" in the last credit line. Found by looking at the
+     rendered page; the contrast check's window medians could not see it,
+     because the dot covers about a third of a window and the median stayed
+     cream. 8mm clears the dot with room for one more credit line. */
+  padding-bottom: 8mm;
   border-top: 0.3pt solid var(--rule);
   max-width: 150mm;
   color: var(--ink-soft);

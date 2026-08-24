@@ -638,7 +638,7 @@
       "target": "1024 × 1024 px (ChatGPT's largest for 1:1 — 85 dpi at 306 mm)",
       "status": "generated",
       "composite": false,
-      "revision": "A screen print of a forest horizon was tried here and pulled. See content/plan/screen-print.md. Target lowered 20 Aug 2026 to the largest canvas ChatGPT actually produces. The previous figure asked for a resolution no available generator could reach."
+      "revision": "UPSCALED 2× 23 Aug 2026 with EDSR (eugenesiow/edsr-base), the same pass that took the seed cover from 106 to 200 dpi. Judged before replacing, on the plates most likely to fail: the hairline rings of a drawing, and the clamp edges, wood scratches and film grain of the two photographic composites — SR was cleaner than Lanczos on all of them, with no invented detail. The originals are preserved in git history. Adam's own camera photographs were NOT upscaled; resampling a real photograph's texture is a different decision and was not taken here. — earlier note follows. A screen print of a forest horizon was tried here and pulled. See content/plan/screen-print.md. Target lowered 20 Aug 2026 to the largest canvas ChatGPT actually produces. The previous figure asked for a resolution no available generator could reach."
     },
     {
       "id": "systems-01-observation-hive",
@@ -1095,7 +1095,7 @@
       "composite": false,
       "origin": "generated",
       "target": "1024 × 1024 px (ChatGPT's largest for 1:1)",
-      "revision": "Generated 21 Aug 2026 in place of a shot. Framed so the animal is unidentifiable — the real dog appears in real photographs elsewhere in the book, and a generated stand-in must not claim to be her. Face, eyes and markings stay out of frame. Replace with the real photograph whenever it is taken; the slot and framing rule are unchanged."
+      "revision": "UPSCALED 2× 23 Aug 2026 with EDSR (eugenesiow/edsr-base), the same pass that took the seed cover from 106 to 200 dpi. Judged before replacing, on the plates most likely to fail: the hairline rings of a drawing, and the clamp edges, wood scratches and film grain of the two photographic composites — SR was cleaner than Lanczos on all of them, with no invented detail. The originals are preserved in git history. Adam's own camera photographs were NOT upscaled; resampling a real photograph's texture is a different decision and was not taken here. — earlier note follows. Generated 21 Aug 2026 in place of a shot. Framed so the animal is unidentifiable — the real dog appears in real photographs elsewhere in the book, and a generated stand-in must not claim to be her. Face, eyes and markings stay out of frame. Replace with the real photograph whenever it is taken; the slot and framing rule are unchanged."
     },
     {
       "id": "field-note-02-tag-code",
@@ -1210,7 +1210,7 @@
       "target": "1024 × 1024 px (ChatGPT's largest for 1:1 — 85 dpi at 306 mm)",
       "status": "generated",
       "composite": false,
-      "revision": "Target lowered 20 Aug 2026 to the largest canvas ChatGPT actually produces. The previous figure asked for a resolution no available generator could reach."
+      "revision": "UPSCALED 2× 23 Aug 2026 with EDSR (eugenesiow/edsr-base), the same pass that took the seed cover from 106 to 200 dpi. Judged before replacing, on the plates most likely to fail: the hairline rings of a drawing, and the clamp edges, wood scratches and film grain of the two photographic composites — SR was cleaner than Lanczos on all of them, with no invented detail. The originals are preserved in git history. Adam's own camera photographs were NOT upscaled; resampling a real photograph's texture is a different decision and was not taken here. — earlier note follows. Target lowered 20 Aug 2026 to the largest canvas ChatGPT actually produces. The previous figure asked for a resolution no available generator could reach."
     },
     {
       "id": "intelligence-02-cards-table",
@@ -1282,7 +1282,7 @@
       "target": "1024 × 1536 px (ChatGPT's largest for 2:3 — 135 dpi at 192 mm)",
       "status": "generated",
       "composite": false,
-      "revision": "Target lowered 20 Aug 2026 to the largest canvas ChatGPT actually produces. The previous figure asked for a resolution no available generator could reach."
+      "revision": "UPSCALED 2× 23 Aug 2026 with EDSR (eugenesiow/edsr-base), the same pass that took the seed cover from 106 to 200 dpi. Judged before replacing, on the plates most likely to fail: the hairline rings of a drawing, and the clamp edges, wood scratches and film grain of the two photographic composites — SR was cleaner than Lanczos on all of them, with no invented detail. The originals are preserved in git history. Adam's own camera photographs were NOT upscaled; resampling a real photograph's texture is a different decision and was not taken here. — earlier note follows. Target lowered 20 Aug 2026 to the largest canvas ChatGPT actually produces. The previous figure asked for a resolution no available generator could reach."
     },
     {
       "id": "privilege-01-kitchen-laptop",
@@ -1299,7 +1299,7 @@
       "target": "1024 × 1024 px (ChatGPT's largest for 1:1 — 85 dpi at 306 mm)",
       "status": "generated",
       "composite": false,
-      "revision": "Target lowered 20 Aug 2026 to the largest canvas ChatGPT actually produces. The previous figure asked for a resolution no available generator could reach."
+      "revision": "UPSCALED 2× 23 Aug 2026 with EDSR (eugenesiow/edsr-base), the same pass that took the seed cover from 106 to 200 dpi. Judged before replacing, on the plates most likely to fail: the hairline rings of a drawing, and the clamp edges, wood scratches and film grain of the two photographic composites — SR was cleaner than Lanczos on all of them, with no invented detail. The originals are preserved in git history. Adam's own camera photographs were NOT upscaled; resampling a real photograph's texture is a different decision and was not taken here. — earlier note follows. Target lowered 20 Aug 2026 to the largest canvas ChatGPT actually produces. The previous figure asked for a resolution no available generator could reach."
     },
     {
       "id": "privilege-02-machine-timeline",
@@ -1367,7 +1367,7 @@
       "target": "1024 × 1536 px (ChatGPT's largest for 2:3 — 135 dpi at 192 mm)",
       "status": "generated",
       "composite": false,
-      "revision": "Target lowered 20 Aug 2026 to the largest canvas ChatGPT actually produces. The previous figure asked for a resolution no available generator could reach."
+      "revision": "UPSCALED 2× 23 Aug 2026 with EDSR (eugenesiow/edsr-base), the same pass that took the seed cover from 106 to 200 dpi. Judged before replacing, on the plates most likely to fail: the hairline rings of a drawing, and the clamp edges, wood scratches and film grain of the two photographic composites — SR was cleaner than Lanczos on all of them, with no invented detail. The originals are preserved in git history. Adam's own camera photographs were NOT upscaled; resampling a real photograph's texture is a different decision and was not taken here. — earlier note follows. Target lowered 20 Aug 2026 to the largest canvas ChatGPT actually produces. The previous figure asked for a resolution no available generator could reach."
     },
     {
       "id": "before-time-01-father-portrait",
@@ -1457,7 +1457,7 @@
       "target": "1024 × 1536 px (ChatGPT's largest for 2:3 — 135 dpi at 192 mm)",
       "status": "generated",
       "composite": false,
-      "revision": "Target lowered 20 Aug 2026 to the largest canvas ChatGPT actually produces. The previous figure asked for a resolution no available generator could reach."
+      "revision": "UPSCALED 2× 23 Aug 2026 with EDSR (eugenesiow/edsr-base), the same pass that took the seed cover from 106 to 200 dpi. Judged before replacing, on the plates most likely to fail: the hairline rings of a drawing, and the clamp edges, wood scratches and film grain of the two photographic composites — SR was cleaner than Lanczos on all of them, with no invented detail. The originals are preserved in git history. Adam's own camera photographs were NOT upscaled; resampling a real photograph's texture is a different decision and was not taken here. — earlier note follows. Target lowered 20 Aug 2026 to the largest canvas ChatGPT actually produces. The previous figure asked for a resolution no available generator could reach."
     },
     {
       "id": "pilgrimage-01-worn-threshold",
@@ -1546,7 +1546,7 @@
       "target": "1024 × 1536 px (ChatGPT's largest for 2:3 — 135 dpi at 192 mm)",
       "status": "generated",
       "composite": false,
-      "revision": "PLACED 23 Aug 2026, on the page the location record used to hold. Adam dropped Record 3, “Cities you have checked into” — 23 places, a location history — and the verso it owned would otherwise have gone bare. This plate replaces it, and the substitution is the argument rather than a patch: Meta's automatic log of where he had been, swapped for a credential stamped by hand at each stop. Its own concept line already said it — “the proof of a walk is a document nobody checks” — against a record that is checked continuously and by a company. 1024 × 1536, so it is placed at page size rather than full bleed. — earlier note follows. Target lowered 20 Aug 2026 to the largest canvas ChatGPT actually produces. The previous figure asked for a resolution no available generator could reach."
+      "revision": "UPSCALED 2× 23 Aug 2026 with EDSR (eugenesiow/edsr-base), the same pass that took the seed cover from 106 to 200 dpi. Judged before replacing, on the plates most likely to fail: the hairline rings of a drawing, and the clamp edges, wood scratches and film grain of the two photographic composites — SR was cleaner than Lanczos on all of them, with no invented detail. The originals are preserved in git history. Adam's own camera photographs were NOT upscaled; resampling a real photograph's texture is a different decision and was not taken here. — earlier note follows. PLACED 23 Aug 2026, on the page the location record used to hold. Adam dropped Record 3, “Cities you have checked into” — 23 places, a location history — and the verso it owned would otherwise have gone bare. This plate replaces it, and the substitution is the argument rather than a patch: Meta's automatic log of where he had been, swapped for a credential stamped by hand at each stop. Its own concept line already said it — “the proof of a walk is a document nobody checks” — against a record that is checked continuously and by a company. 1024 × 1536, so it is placed at page size rather than full bleed. — earlier note follows. Target lowered 20 Aug 2026 to the largest canvas ChatGPT actually produces. The previous figure asked for a resolution no available generator could reach."
     },
     {
       "id": "here-01-dog-late-light",
@@ -1856,7 +1856,7 @@
       "target": "1024 × 1024 px (ChatGPT's largest for 1:1 — 85 dpi at 306 mm)",
       "status": "placed",
       "composite": false,
-      "revision": "Target lowered 20 Aug 2026 to the largest canvas ChatGPT actually produces. The previous figure asked for a resolution no available generator could reach.",
+      "revision": "UPSCALED 2× 23 Aug 2026 with EDSR (eugenesiow/edsr-base), the same pass that took the seed cover from 106 to 200 dpi. Judged before replacing, on the plates most likely to fail: the hairline rings of a drawing, and the clamp edges, wood scratches and film grain of the two photographic composites — SR was cleaner than Lanczos on all of them, with no invented detail. The originals are preserved in git history. Adam's own camera photographs were NOT upscaled; resampling a real photograph's texture is a different decision and was not taken here. — earlier note follows. Target lowered 20 Aug 2026 to the largest canvas ChatGPT actually produces. The previous figure asked for a resolution no available generator could reach.",
       "origin": "archive",
       "source": "Pexels photo 6790754 (Tima Miroshnichenko)",
       "license": "Pexels License",
@@ -1877,7 +1877,7 @@
       "target": "1024 × 1024 px (ChatGPT's largest for 1:1 — 85 dpi at 306 mm)",
       "status": "placed",
       "composite": false,
-      "revision": "Target lowered 20 Aug 2026 to the largest canvas ChatGPT actually produces. The previous figure asked for a resolution no available generator could reach.",
+      "revision": "UPSCALED 2× 23 Aug 2026 with EDSR (eugenesiow/edsr-base), the same pass that took the seed cover from 106 to 200 dpi. Judged before replacing, on the plates most likely to fail: the hairline rings of a drawing, and the clamp edges, wood scratches and film grain of the two photographic composites — SR was cleaner than Lanczos on all of them, with no invented detail. The originals are preserved in git history. Adam's own camera photographs were NOT upscaled; resampling a real photograph's texture is a different decision and was not taken here. — earlier note follows. Target lowered 20 Aug 2026 to the largest canvas ChatGPT actually produces. The previous figure asked for a resolution no available generator could reach.",
       "origin": "archive",
       "source": "Pexels photo 6279111 (Artem Podrez)",
       "license": "Pexels License",

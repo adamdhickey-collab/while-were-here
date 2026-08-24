@@ -442,26 +442,47 @@ export const dedication = (bookData) => ({
     html: `
       <div class="page__block">
         <p class="dedication__line">${(() => {
-          /* Break at the first comma, deliberately — the divider titles' own
-             rule: the stack is a decision, not a by-product of the measure.
-             "who handed me the right book" runs 104mm in the display face, so
-             no width cap produces this break and text-wrap: balance actively
-             prefers the wrong one.
+          /* Break at a comma, deliberately — the divider titles' own rule: the
+             stack is a decision, not a by-product of the measure. "who handed me
+             the right book" runs 104mm in the display face, so no width cap
+             produces this break and text-wrap: balance actively prefers the
+             wrong one.
 
-             TESTED against a rewrite, 21 Aug 2026, because Adam is changing
-             this line and it should not need a layout change to do it. Rendered
-             at trim with five candidates — no comma and short, no comma and
-             long, two commas, and one running to four lines. Nothing broke,
-             nothing overflowed, and `max-width: 128mm` wraps the comma-less
-             ones into balanced lines on its own.
+             AT THE COMMA NEAREST THE MIDDLE, not the first one. It broke at the
+             first comma until 24 Aug 2026, and the line Adam chose on 23 Aug
+             printed:
 
-             One case is mild and worth knowing rather than fixing: with TWO
-             commas the first-comma rule can leave a short opening line, as in
-             "For my mother, / my father, and the dog who / walked it with me".
-             Still correct, just stackier. Anything is safe to write here. */
-          const i = bookData.dedication.indexOf(',');
-          return i < 0 ? esc(bookData.dedication)
-            : `${esc(bookData.dedication.slice(0, i + 1))}<br>${esc(bookData.dedication.slice(i + 1).trim())}`;
+               For my parents,
+               who taught me to look, and for
+               Fabiola, who looks with me
+
+             — because breaking at the first comma left a tail too long for the
+             128mm measure, so the tail wrapped where the measure fell, which
+             was in the middle of "and for Fabiola". A dedication that splits a
+             person's name off the preposition that introduces her, on the
+             quietest page of a book given to the people it names.
+
+             The rule had been TESTED, 21 Aug 2026, against five candidates —
+             no comma and short, no comma and long, two commas, one running to
+             four lines — and it passed all five. It then got a sixth. The
+             recorded two-comma finding even predicted the shape of this and
+             filed it as acceptable: "still correct, just stackier". It is only
+             stackier while the tail still fits on one line; past that the
+             measure takes over and picks the break.
+
+             Nearest-the-middle is the same decision made better. It is a strict
+             improvement on the old candidates — the two-comma case that used to
+             go stacky now reads "For my mother, my father, / and the dog who
+             walked it with me" — and it is what the sentence itself wants here,
+             where two parallel clauses are joined by "and for". Single comma
+             and comma-less lines are unaffected. Anything is safe to write. */
+          const text = bookData.dedication;
+          const commas = [...text.matchAll(/,/g)].map((m) => m.index);
+          if (!commas.length) return esc(text);
+          const mid = text.length / 2;
+          const i = commas.reduce((best, c) =>
+            Math.abs(c - mid) < Math.abs(best - mid) ? c : best);
+          return `${esc(text.slice(0, i + 1))}<br>${esc(text.slice(i + 1).trim())}`;
         })()}</p>
       </div>`,
   }],

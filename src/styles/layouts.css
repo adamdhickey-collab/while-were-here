@@ -394,7 +394,18 @@
   font-weight: 900;
   font-size: var(--t-title-xs);
   line-height: 1.3;
-  max-width: 128mm;
+  /* 168mm, MEASURED, not chosen for looks. This was 128mm, which is narrower
+     than the clause Adam's dedication actually contains: "For my parents, who
+     taught me to look," sets 149.8mm in the display face at this size, so the
+     measure re-broke a line the layout had already broken on purpose, and the
+     page printed "and for" and "Fabiola" on separate lines. Widening it to fit
+     the longest clause was tried at every candidate: 149.8, 135.1, 132.8,
+     117.1, 97.8mm. 168 clears all of them with room, and is still 68mm inside
+     the 236mm the grid column offers, so the page keeps its left weight and a
+     comma-less dedication too long for one line still wraps into balanced ones
+     rather than running the full width. See the break rule in index.mjs — the
+     two are one decision and neither works alone. */
+  max-width: 168mm;
 }
 
 .note-page .page__block { align-content: center; }

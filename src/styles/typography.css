@@ -152,24 +152,37 @@
    Outside Your Head" (vulnerable / database / understanding) and one in the
    final essay's closing movement (photograph / knowledge / attention).
 
-   Raising the minimum from 8 to 10 clears both, and clears them by rule rather
+   Raising the minimum from 8 to 10 cleared both, and cleared them by rule rather
    than by luck: "knowledge" and "attention" are nine letters, so a limit of 9
    would have left them hyphenatable and fixed that ladder only through a
    reflow that any copy edit could undo. Measured across the whole book —
    8 → 70 hyphenated lines and 2 ladders, 9 → 58 and none, 10 → 40 and none,
-   11 → 27 and none. 3.7 percent of lines is a healthy figure for RAGGED-RIGHT
-   setting at this measure; nothing in this book is justified, so hyphenation is
+   11 → 27 and none. Nothing in this book is justified, so hyphenation was
    tightening the rag rather than preventing rivers, and being less eager about
-   it costs nothing. No page overflowed at any of those settings.
+   it cost nothing. No page overflowed at any of those settings.
 
-   `npm run breaks` is what actually guards this now. Re-run it after any change
-   to the body face, the measure, or this rule.                              */
+   OFF ENTIRELY, 24 Aug 2026, and it is the same argument carried to its end.
+   That sweep never tested `none` — the word "none" in it counts LADDERS, not a
+   setting — and two words were still breaking across a COLUMN boundary in the
+   composed book: "them-/selves" on folio 21 and "measure-/ment" on folio 120,
+   the second of them across the gutter. `npm run breaks` was watching for
+   exactly that and could not see it; the reason is recorded in breaks.mjs.
+
+   Turning hyphenation off costs one line in 1,073 across the whole book, and no
+   page overflows. It also makes the fault structurally impossible rather than
+   absent by luck: with `hyphens: auto`, every copy edit reshuffles where the
+   breaks fall, so a fix at folio 21 is a fault somewhere else next week. The
+   eight lines the check still counts as hyphenated end on a real hyphen in the
+   copy, which is a character rather than a break, and none of them lands on a
+   boundary.
+
+   `npm run breaks` is what actually guards this. Re-run it after any change to
+   the body face, the measure, or this rule.                                 */
 .prose p {
   margin: 0;
   orphans: 3;
   widows: 3;
-  hyphens: auto;
-  hyphenate-limit-chars: 10 4 4;
+  hyphens: none;
   text-wrap: pretty;
 }
 /* BLOCK PARAGRAPHS, not indented ones — Adam's call, 22 Aug 2026. He found the

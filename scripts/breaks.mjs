@@ -178,11 +178,33 @@ const { out: report, tally } = await page.evaluate(() => {
       spread: pg?.dataset.spread || '',
     };
 
-    // 1. A word broken across the last line of the block.
-    const lastLine = lines.length - 1;
-    if (hyph[lastLine]) {
-      out.push({ ...label, kind: 'split at the foot of a column',
-        detail: word(lines[lastLine].lastIdx) });
+    /* 1. A word broken across a column or page boundary.
+
+       EVERY BOUNDARY, NOT JUST THE END OF THE PARAGRAPH, and for eight weeks
+       this tested only `lines.length - 1`. That is the last line of the BLOCK,
+       which is a boundary only when the paragraph happens to end at the foot of
+       its column. A paragraph that CONTINUES into the next column breaks
+       somewhere in the middle of this array, and the middle was never looked at.
+
+       It shipped. Folio 21 of the printed book ends its first column with
+       "Childhood versions of them-" and opens the second with "selves." — the
+       exact fault this check was written for, sitting on a page, under a green
+       line, for as long as the check has existed.
+
+       A boundary inside a paragraph is visible in the geometry: the next line's
+       top jumps back UP, because a new column starts at the top of the page.
+       Nothing else moves text upward. */
+    const boundaries = [lines.length - 1];
+    for (let i = 1; i < lines.length; i++) {
+      if (lines[i].top < lines[i - 1].top - 4) boundaries.push(i - 1);
+    }
+    for (const bi of [...new Set(boundaries)].sort((a, b) => a - b)) {
+      if (hyph[bi]) {
+        out.push({ ...label,
+          kind: bi === lines.length - 1 ? 'split at the foot of a column'
+                                        : 'split across a column break',
+          detail: word(lines[bi].lastIdx) });
+      }
     }
 
     /* 2. Hyphen ladders: three or more consecutive broken lines. Reported once

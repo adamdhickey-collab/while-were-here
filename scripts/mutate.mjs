@@ -193,6 +193,21 @@ const MUTATIONS = [
     expect: 'every essay opener carries its lede',
     why: 'an opener naming a lede block that does not exist' },
 
+  /* A word broken across a column break. Putting `hyphens: auto` back restores
+     the exact state the book shipped in until 24 Aug 2026: "them-/selves" on
+     folio 21 and "measure-/ment" on folio 120, the second across the gutter.
+
+     THIS MUTATION WOULD HAVE REPORTED BLIND BEFORE THE SAME DAY, and that is
+     the point of it. breaks.mjs tested `lines.length - 1` — the last line of the
+     PARAGRAPH, which is a column foot only when the paragraph happens to end
+     there. Both real faults were mid-paragraph, so the check looked straight
+     past them and printed a ✓. The check now tests every boundary, found by the
+     one thing that moves text upward: the next line's top jumping back. */
+  { id: 'hyphen-across-column', file: 'src/styles/typography.css',
+    from: '  hyphens: none;\n  text-wrap: pretty;', to: '  hyphens: auto;\n  text-wrap: pretty;',
+    expect: 'no word broken across a column foot',
+    why: 'a word hyphenated across a column break' },
+
   /* The measure narrower than the line the layout chose to set. 128mm is the
      value that shipped on 24 Aug 2026, and it broke the dedication's second
      clause in the middle of "and for Fabiola" — the <br> intact, two more

@@ -167,6 +167,15 @@ const MUTATIONS = [
     expect: 'nothing printed points at where it sits on the page',
     why: 'copy that points at the facing page in a book whose spreads move' },
 
+  /* A spreads PDF older than the book. It is the only deliverable committed to
+     the repository, so a stale one ships to the public site on the next push
+     without anyone choosing to send it. Touching a source file is enough to put
+     the committed PDF behind. */
+  { id: 'spreads-stale', file: 'content/book.json',
+    from: '"dedication"', to: '"dedication "',
+    expect: 'the published spreads PDF is the current book',
+    why: 'a spreads PDF older than the sources it was built from' },
+
   { id: 'contents-drift', file: 'content/contents.json',
     from: 'Most of Life Is a Tuesday', to: 'Most of Life Is a Wednesday',
     expect: 'the contents page agrees', why: 'a contents title that no longer matches the essay' },

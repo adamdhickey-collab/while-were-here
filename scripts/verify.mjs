@@ -776,6 +776,30 @@ check('nothing printed points at where it sits on the page', layoutRefs.length =
     ? `${layoutRefs.length}: ${[...new Set(layoutRefs)].join(', ')} — composed pages move`
     : 'no page in this book describes its own furniture');
 
+/* Is the spreads PDF on the public site the current book?
+
+   `public/download/while-were-here-spreads.pdf` is committed to this repository
+   and published by GitHub Pages, which makes it the one deliverable that can go
+   stale WITHOUT ANYONE REBUILDING IT — every other file in dist/ is local until
+   someone chooses to send it. A push after a copy change ships whatever spread
+   PDF happens to be committed, and it is the version most people will actually
+   read. Measured against the newest source, for the same reason pdfcheck is:
+   the workflow rebuilds the reader PDF last, so deliverable-to-deliverable
+   comparison flags a correct build as behind. */
+let spreads = { ok: null };
+try {
+  const outp = execFileSync(P('.venv/bin/python'), [P('scripts/spreads.py'), '--check'],
+    { encoding: 'utf8', stdio: ['ignore', 'pipe', 'ignore'] });
+  spreads = { ok: outp.includes('✓'), detail: outp.trim().split('\n').filter(Boolean) };
+} catch { /* no venv or no pymupdf — reported, never silently passed */ }
+if (spreads.ok === null) {
+  note('spreads PDF', 'not checked — run `npm run spreads:check`');
+} else {
+  check('the published spreads PDF is the current book', spreads.ok,
+    spreads.ok ? '68 spreads, newer than every source'
+      : 'out of date — run `npm run spreads`, it is committed and ships on push');
+}
+
 const pad = (s, n) => (s + ' '.repeat(n)).slice(0, n);
 console.log('');
 let failed = 0;

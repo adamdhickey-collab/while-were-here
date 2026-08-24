@@ -133,3 +133,20 @@ hand-edit the imprint into a template.
 Still outstanding before any sale, and not a licensing matter but a consent one:
 the `consent` fields on `before-time-01-father-portrait`, `before-time-06-thanksgiving`,
 `here-07-ceremony` and `pilgrimage-08-plaza-stones`.
+
+### The spreads PDF on the public site — added 24 Aug 2026
+
+`public/download/while-were-here-spreads.pdf` is published by GitHub Pages and
+**embeds Falutin Title**. That is deliberate and it is permitted: the EULA's
+*"Ebooks and other digital documents"* clause is exactly this case, and the
+faces are embedded subset rather than linked. What stays prohibited is the raw
+font software — the OTFs and any WOFF2 conversion of them — which is why
+`fonts-licensed/` remains gitignored and the HTML preview still falls back to
+Fraunces.
+
+So the hosted site now shows the real typeface in the PDF and the substitute in
+the HTML, which is not an inconsistency but the licence drawn accurately: a
+document may carry the face, a website may not serve it.
+
+The file is rasterised at 110 dpi — 15 MB against the 394 MB vector original,
+which is both over GitHub's 100 MB file limit and pointless on a screen.

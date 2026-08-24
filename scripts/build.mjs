@@ -398,6 +398,7 @@ ${['geometry.css', ...STYLES].map((h) => `<link rel="stylesheet" href="${h}">`).
 <body><div class="hub">
   <h1>While We’re Here</h1>
   <p class="sub">${esc(book.author)} &nbsp;·&nbsp; prototype</p>
+  <a href="download/while-were-here-spreads.pdf"><b>Read it as spreads</b><span>68 spreads &nbsp;·&nbsp; PDF &nbsp;·&nbsp; the real typeface</span></a>
   <a href="preview.html"><b>Spread preview</b><span>${count} pp &nbsp;·&nbsp; guides &amp; navigation</span></a>
   <a href="book.html"><b>Print document</b><span>raw pages &nbsp;·&nbsp; no chrome</span></a>
   <a href="cover-wrap.html"><b>Cover wrap</b><span>back | spine | front</span></a>

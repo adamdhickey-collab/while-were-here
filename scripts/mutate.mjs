@@ -283,6 +283,7 @@ for (const m of chosen) {
       verdict = { id: m.id, state: 'skipped', note: 'no derivative found to move aside' };
     } else {
       const kept = fs.readFileSync(target);
+      const keptTimes = fs.statSync(target);
       try {
         fs.unlinkSync(target);
         build();
@@ -292,6 +293,7 @@ for (const m of chosen) {
           note: st === 'fail' ? m.why : st === 'pass' ? `${m.why} — NOT NOTICED` : `could not read "${m.expect}"` };
       } finally {
         fs.writeFileSync(target, kept);
+        if (keptTimes) fs.utimesSync(target, keptTimes.atime, keptTimes.mtime);
       }
     }
     results.push(verdict);
@@ -319,7 +321,17 @@ for (const m of chosen) {
       };
     }
   } finally {
+    /* CONTENT AND TIMESTAMP BOTH. Restoring only the bytes leaves the file
+       looking newer than it is, and this project has three mtime-based
+       staleness checks — pdfcheck, spreads:check and their siblings — so a
+       mutation run used to end by making every deliverable report as out of
+       date. The `spreads-stale` mutation was the worst of them: it edits
+       content/book.json, so it tripped its own check permanently after
+       running. Restoring the mtime leaves no trace at all, which is what
+       "working tree restored and clean" is supposed to mean. */
+    const when = fs.statSync(file);
     fs.writeFileSync(file, before);
+    fs.utimesSync(file, when.atime, when.mtime);
   }
   results.push(verdict);
   const mark = { caught: '✓', MISSED: '✗', skipped: '·', unreadable: '?' }[verdict.state];

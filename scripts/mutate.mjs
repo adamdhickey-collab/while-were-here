@@ -59,21 +59,21 @@ const MUTATIONS = [
     to:   'A large organic form built from fine centred contour lines',
     expect: 'American English', why: 'a British spelling in an inflected form' },
 
-  { id: 'placeholder', file: 'content/essays/while-were-here.md',
-    from: 'Technology changes what can happen inside that interval.',
-    to:   'Technology changes what can happen inside that interval. TODO fix this.',
+  { id: 'placeholder', file: 'content/essays/while-were-here-merged.md',
+    from: 'Human life occupies a narrow bracket.',
+    to:   'Human life occupies a narrow bracket. TODO fix this.',
     expect: 'no placeholder text', why: 'a TODO left in the copy' },
 
-  { id: 'build-artifact', file: 'content/essays/while-were-here.md',
-    from: 'Technology changes what can happen inside that interval.',
-    to:   'Technology changes what can happen inside that ${interval}.',
+  { id: 'build-artifact', file: 'content/essays/while-were-here-merged.md',
+    from: 'Human life occupies a narrow bracket.',
+    to:   'Human life occupies a narrow ${bracket}.',
     expect: 'no build artifacts', why: 'an unresolved template literal reaching the page' },
 
-  { id: 'margin-note-digits', file: 'content/essays/why-humans-need-pilgrimages.md',
-    from: 'links 88 temples', to: 'links 87 temples',
+  { id: 'margin-note-digits', file: 'content/essays/the-strange-privilege.md',
+    from: '52 percent of U.S. adults used the', to: '53 percent of U.S. adults used the',
     expect: 'every number in a margin note', why: 'a margin-note figure not in the ledger' },
 
-  { id: 'margin-note-words', file: 'content/essays/the-secret-life-of-attention.md',
+  { id: 'margin-note-words', file: 'content/essays/most-of-life-is-a-tuesday.md',
     from: 'around eighty-five times a day', to: 'around ninety-three times a day',
     expect: 'every number in a margin note', why: 'a SPELLED-OUT figure not in the ledger' },
 
@@ -120,19 +120,27 @@ const MUTATIONS = [
     expect: 'every element in the display serif is at weight 900',
     why: 'a display-serif element dropped below black by a component stylesheet' },
 
-  { id: 'overflow', file: 'content/essays/while-were-here.md',
-    from: 'Technology changes what can happen inside that interval.',
-    to:   'Technology changes what can happen inside that interval. ' + 'The interval widens. '.repeat(120),
+  { id: 'overflow', file: 'content/essays/while-were-here-merged.md',
+    from: 'Human life occupies a narrow bracket.',
+    to:   'Human life occupies a narrow bracket. ' + 'The bracket widens. '.repeat(400),
     expect: 'copy overflow', why: 'a paragraph grown past its slot' },
+  /* 400, not 120. At 120 repetitions this reported blind on the condensed
+     edition and the check was right: 360 extra words genuinely FIT. These pages
+     run about 40% full, so a block can grow several times over before anything
+     leaves its slot. Measured: 360 words fit, 1,200 overflow. An under-powered
+     mutation looks exactly like a blind check and is not the same thing. */
 
-  /* A focal name nobody styles. `focus:` is an open vocabulary at the point of
-     use and a closed one at the point of definition, and the gap between them
-     is silent: an unstyled class crops to the middle exactly as if the line had
-     never been written. */
-  { id: 'focus-vocabulary', file: 'content/essays/why-humans-need-pilgrimages.md',
-    from: '    focus: low', to: '    focus: middle',
-    expect: 'every focus: names a focal class that exists',
-    why: 'a focus: naming a focal class that does not exist' },
+  /* focus-vocabulary is REMOVED ON THIS BRANCH, and the reason belongs here rather
+     than in a deleted line. `focus:` lets a spread say which band of a source to
+     keep when the plate and the slot are different shapes. The condensed edition
+     declares it ZERO times — verify reports "0 in use, 3 defined" — because the
+     four image-essay plates all crop correctly from the centre, checked by
+     looking at each of the four spreads.
+
+     So the check now guards nothing here, and there is no honest fault to plant.
+     Adding a `focus:` to a plate that does not need one, purely so a mutation has
+     something to break, would be manufacturing a subject to keep a number up. The
+     eight-essay book on main still uses it once and still tests it. */
 
   /* A photograph refiled as something a model made. The fault is invisible on
      the page today and would not be if a plate specimen card ever rendered it.
@@ -176,7 +184,7 @@ const MUTATIONS = [
      of 24 Aug 2026 put back exactly: essay 01 shipped with no `blocks:` on its
      opener spread, so two-thirds of the first essay page in the book printed
      blank and the reading time floated alone above the rule. */
-  { id: 'opener-no-lede', file: 'content/essays/why-ordinary-days-may-be-the-point-of-life.md',
+  { id: 'opener-no-lede', file: 'content/essays/most-of-life-is-a-tuesday.md',
     from: '    image: ordinary-days-01a-dog-afternoon-light\n    blocks: [open]',
     to:   '    image: ordinary-days-01a-dog-afternoon-light',
     expect: 'every essay opener carries its lede',
@@ -187,9 +195,9 @@ const MUTATIONS = [
      present and non-empty here, so every YAML-level test passes, and the named
      block still matches no comment in the markdown. The page comes out blank
      either way. */
-  { id: 'opener-lede-misnamed', file: 'content/essays/the-secret-life-of-attention.md',
-    from: '    image: attention-01-familiar-room\n    blocks: [open]',
-    to:   '    image: attention-01-familiar-room\n    blocks: [opn]',
+  { id: 'opener-lede-misnamed', file: 'content/essays/nobody-is-holding-the-drawing.md',
+    from: '    image: systems-01-observation-hive\n    blocks: [open]',
+    to:   '    image: systems-01-observation-hive\n    blocks: [opn]',
     expect: 'every essay opener carries its lede',
     why: 'an opener naming a lede block that does not exist' },
 
@@ -244,7 +252,7 @@ const MUTATIONS = [
      book printed until 24 Aug 2026: a lone "Plate 3" on folio 30, followed by
      Figure 2 through Figure 7, so the first numbered thing a reader met was
      Figure 2 and the only Plate in the book was the third one. */
-  { id: 'caption-numbering', file: 'content/essays/the-secret-life-of-attention.md',
+  { id: 'caption-numbering', file: 'content/essays/most-of-life-is-a-tuesday.md',
     from: '<b>Figure 1.</b>', to: '<b>Plate 3.</b>',
     expect: 'numbered captions run 1, 2, 3',
     why: 'a caption sequence starting at 2, with a stray Plate' },
@@ -254,7 +262,7 @@ const MUTATIONS = [
      `<i>` once in a margin note, because the prose is markdown and the note is
      YAML. Identical on the page, different to a screen reader, and invisible to
      every other check in the file. */
-  { id: 'markup-two-ways', file: 'content/essays/beauty-of-systems-nobody-designed.md',
+  { id: 'markup-two-ways', file: 'content/essays/nobody-is-holding-the-drawing.md',
     from: 'In a 2010 experiment, <em>Physarum polycephalum</em> was given food at',
     to:   'In a 2010 experiment, <i>Physarum polycephalum</i> was given food at',
     expect: 'nothing is marked up two different ways',
@@ -287,15 +295,20 @@ const MUTATIONS = [
   /* Type that cannot be read on the ground it prints on. This puts back the
      exact fault of 23 Aug 2026: a rule that lightens type for a dark photograph,
      keyed on a class that is also true of pages with no photograph at all. */
-  { id: 'contrast', file: 'src/styles/layouts.css',
-    from: '.closing--onplate.closing--quote .pull-quote { color: var(--paper); }',
-    to:   '.closing--plate.closing--quote .pull-quote { color: var(--paper); }',
+  /* Retargeted for the condensed edition, which carries no closing pull quote —
+     the old anchor was a rule that now matches nothing, so the mutation changed
+     the stylesheet and not the book. This breaks the thing that actually keeps
+     Part III readable: stage 4 sets light ink on a void ground, and dropping the
+     ink back to charcoal puts dark type on a dark page across the whole part. */
+  { id: 'contrast', file: 'src/styles/tokens.css',
+    from: '  --ground: var(--void);\n  --ink: var(--paper);',
+    to:   '  --ground: var(--void);\n  --ink: var(--charcoal);',
     expect: 'every run of type is legible on its own ground',
     why: 'display type set light on a light page' },
 
   /* Copy that describes a layout. The book has been re-paced repeatedly; a
      sentence pointing at the facing page is a claim with a shelf life. */
-  { id: 'layout-reference', file: 'content/essays/why-humans-need-pilgrimages.md',
+  { id: 'layout-reference', file: 'content/essays/while-were-here-merged.md',
     from: 'The body supplies a measure that cannot be argued with for long.',
     to:   'The body supplies a measure that cannot be argued with for long, as the photograph opposite shows.',
     expect: 'nothing printed points at where it sits on the page',
@@ -319,12 +332,16 @@ const MUTATIONS = [
      moment's thought about what the check actually reads. Listing a check as
      hard to mutate is a claim that should be re-tested, not inherited. */
 
+  /* Retargeted after the four-essay merge repointed every ground at its merged
+     essay: there is no stage 3 ground any more, and every remaining stage value
+     appears twice, so the old one-token anchor was both absent and ambiguous.
+     Anchored on ground-07's own record instead. */
   { id: 'ground-stage', file: 'content/images.json',
-    from: '"stage": 3', to: '"stage": 2',
+    from: ' Every ground sits on a two-column reading spread, which is TWO pages, so it is 2:1 and the layout gives each page its half. Verified in the paginator 19 Aug 2026. Stage 5: warm paper, so the ink is charcoal.",\n      "kind": "illustration",\n      "role": "ground",\n      "origin": "generated",\n      "composite": false,\n      "status": "generated",\n      "selection": "—",\n      "stage": 5', to: ' Every ground sits on a two-column reading spread, which is TWO pages, so it is 2:1 and the layout gives each page its half. Verified in the paginator 19 Aug 2026. Stage 5: warm paper, so the ink is charcoal.",\n      "kind": "illustration",\n      "role": "ground",\n      "origin": "generated",\n      "composite": false,\n      "status": "generated",\n      "selection": "—",\n      "stage": 4',
     expect: 'every ground agrees with its essay', why: 'a ground labelled a stage behind its essay' },
 
-  { id: 'record-count', file: 'content/essays/the-secret-life-of-attention.md',
-    from: 'count: 31 entries', to: 'count: 32 entries',
+  { id: 'record-count', file: 'content/essays/the-strange-privilege.md',
+    from: 'count: 7,325 unique · 154 shown', to: 'count: 7,325 unique · 155 shown',
     expect: 'every reproduced record counts', why: 'a record whose stated count is not what it prints' },
 
   /* The spread check fires on an image that is on disk, absent from the book,
@@ -341,18 +358,23 @@ const MUTATIONS = [
      the Remembered label sat at x=768 and the Admitted ring ran through the
      word, between the B and the E, in blue, at 300 mm. Putting it back is a
      one-token edit and reproduces a fault that actually shipped once. */
-  { id: 'diagram-label', file: 'src/layouts/diagrams.mjs',
-    from: '<text x="840" y="304"', to: '<text x="768" y="304"',
-    expect: 'nothing is drawn through a diagram label', why: 'a leader line drawn through its own label' },
+  /* diagram-label is REMOVED ON THIS BRANCH, for the same reason as
+     focus-vocabulary and recorded here rather than in a deleted line. The
+     condensed edition declares no `type: diagram` spread at all — the diagram
+     lived on the attention essay's spread, which the four-essay merge dissolved.
+     verify still reports "20 labels checked, all placed ones clear · 6 in
+     unplaced figures", and the placed count is zero, so the ✓ is vacuous and
+     says so in its own detail line. There is no honest fault to plant in a
+     figure no page carries. Main still places one and still tests it. */
 
   /* The imprint check flags an archive image that is NOT in the book but whose
      credit label appears in the printed text. linen weave is one of the two
      material breaks cut when spreads were trimmed to 130 — the exact pair that
      were being credited to Poly Haven and Unsplash while appearing nowhere in
      the object. Putting the phrase into an essay recreates that. */
-  { id: 'imprint-phantom', file: 'content/essays/while-were-here.md',
-    from: 'Technology changes what can happen inside that interval.',
-    to:   'Technology changes what can happen inside that interval, like linen weave.',
+  { id: 'imprint-phantom', file: 'content/essays/while-were-here-merged.md',
+    from: 'Human life occupies a narrow bracket.',
+    to:   'Human life occupies a narrow bracket, like linen weave.',
     expect: 'imprint credits only what is in the book', why: 'a credit for something not in the book' },
 
   /* Not a text edit — the only mutation here that touches the filesystem. */

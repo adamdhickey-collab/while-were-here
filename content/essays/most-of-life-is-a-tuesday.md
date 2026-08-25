@@ -52,9 +52,9 @@ spreads:
     blocks: [s3a, s3b]
     noteOn: recto
     marginNote: >-
-      In a study that logged real use for two weeks rather than asking about it,
-      people picked up their phones far more often than they estimated. The gap
-      between the reported number and the logged one is itself the finding.
+      In a study that logged real use rather than asking about it, people checked
+      their phones around eighty-five times a day. Their own estimates came to
+      roughly half that, and the gap between the two is itself the finding.
     insetOn: verso
     inset:
       image: attention-01-familiar-room

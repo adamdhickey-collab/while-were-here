@@ -59,7 +59,7 @@ If you cloned before installing LFS, `git lfs pull` fixes it in place.
 | `npm run fonts:cjk` | Rebuild `fonts-cjk/` when the book gains a character the Latin faces cannot set. |
 | `npm run credits` | Rebuild the attribution page from the manifest. |
 | `npm run facts` | Check `content/facts.json` and rebuild the sources page. `--strict` fails on anything unverified. |
-| `npm run verify` | **The pre-press checks, in one command.** Twenty-nine pass/fail, run against the built pages rather than the sources, plus what it cannot check and says so. `--strict` exits non-zero on any failure, which is what CI uses. |
+| `npm run verify` | **The pre-press checks, in one command.** Thirty-one pass/fail, run against the built pages rather than the sources, plus what it cannot check and says so. `--strict` exits non-zero on any failure, which is what CI uses. |
 | `npm run selection` | Reconcile `content/plan/photo-selection-04.md` against the exported photo library — which selected frames exist yet, at what size, and the dpi they would give. |
 | `npm run labels` | Renders each code-drawn figure twice — once with its labels hidden — and reports any label with a stroke through it, or two labels overlapping. `npm run verify` calls this when a browser is present. |
 | `npm run overflow` | Does any page's copy run past the page? Drives the preview's own rule in a headless browser and names the folio and the millimetres. `npm run verify` calls this when a browser is present. |
@@ -70,7 +70,7 @@ If you cloned before installing LFS, `git lfs pull` fixes it in place.
 | `npm run breaks` | Hyphen ladders, words broken across a column foot, and any display-serif element below weight 900. |
 | `npm run dpi` | Every placed image measured at the size it actually prints. |
 | `npm run pdfcheck` | Is the delivered PDF the current book, and does it contain every text element? Reports the age of the other deliverables too. |
-| `npm run mutate` | **Breaks the book on purpose, thirty-two ways, to prove the checks catch it.** A check that has never failed looks exactly like a check that cannot fail. Refuses to run on a dirty tree. |
+| `npm run mutate` | **Breaks the book on purpose, thirty-four ways, to prove the checks catch it.** A check that has never failed looks exactly like a check that cannot fail. Refuses to run on a dirty tree. |
 | `npm run clean` | Remove `build/` and `dist/`. |
 
 `npm run pdf` downloads a Chromium build the first time it runs (~130 MB, via

@@ -74,7 +74,7 @@ spreads:
     image: attention-03-light-on-a-wall
     blocks: [flow-2]
     caption: >-
-      <b>Plate 3.</b> A bare wall, a window out of frame, and a scatter of
+      <b>Figure 1.</b> A bare wall, a window out of frame, and a scatter of
       colored light between them. She has the room to herself, and this is
       what she is looking at.
     sidebar:

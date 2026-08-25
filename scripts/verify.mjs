@@ -877,6 +877,48 @@ if (libRefs.length) {
   }
 }
 
+/* The numbered captions run 1, 2, 3 … in page order, under one word.
+
+   The book printed Figure 2 through Figure 7 and, on an earlier page than any of
+   them, a single "Plate 3". No Figure 1. No Plate 1 or 2. The first numbered
+   thing a reader met was Figure 2, and the only Plate in the book was the third
+   one.
+
+   Nothing had been cut. Git history has never contained a Figure 1 or a Plate 1:
+   the sequence simply started at 2, and one caption of the seven was called a
+   Plate. All seven sit on the same spread type — `image-essay` — so the two words
+   were labelling identical layouts, and "Plate" was not marking a distinction.
+
+   FIXED WITH ONE LABEL, which is why it is worth recording. In page order the
+   folios run 30, 48, 60, 78, 92, 110, 122, and six of the seven were already
+   numbered 2 through 7 correctly. Renaming the odd one out — Plate 3 on folio
+   30 — to Figure 1 completed the sequence without touching anything else.
+
+   SAFE TO RENUMBER because nothing points at these numbers: no line of body
+   prose in any of the eight essays contains a cross-reference, checked before
+   the change. They are apparatus, not navigation. If a "see Figure 4" is ever
+   written, this check stops being sufficient and the reference needs one too.
+
+   THE DIAGRAMS ARE NOT PART OF THIS SEQUENCE and must not be folded into it.
+   They are labelled `Figure <essay>.1` — Figure 02.1 is the diagram in essay
+   two, not the second figure in the book — which is a different scheme doing a
+   different job. The pattern below requires a period followed by a space, so
+   "Figure 02.1" is not matched. */
+const capNums = [];
+for (const seg of html.split(/(?=<section class="page)/).slice(1)) {
+  const flat = seg.replace(/<[^>]+>/g, ' ').replace(/&nbsp;/g, ' ').replace(/\s+/g, ' ');
+  for (const m of flat.matchAll(/\b(Figure|Plate|Table)\s+(\d+)\.\s/g)) {
+    capNums.push({ word: m[1], n: Number(m[2]) });
+  }
+}
+const words = new Set(capNums.map((c) => c.word));
+const inOrder = capNums.every((c, i) => c.n === i + 1);
+const capOk = capNums.length === 0 || (inOrder && words.size === 1);
+check('numbered captions run 1, 2, 3 … under one word', capOk,
+  capOk ? `${capNums.length} captions, ${[...words][0] || 'none'} 1–${capNums.length}, in page order`
+        : `${capNums.map((c) => `${c.word} ${c.n}`).join(', ')} — ${words.size > 1
+            ? `${words.size} different words` : 'not a complete sequence from 1'}`);
+
 /* Nothing is marked up two different ways.
 
    `Physarum polycephalum` printed four times in `<em>` and once in `<i>`. Both

@@ -193,6 +193,15 @@ const MUTATIONS = [
     expect: 'every essay opener carries its lede',
     why: 'an opener naming a lede block that does not exist' },
 
+  /* The numbered captions with a hole in them. This restores exactly what the
+     book printed until 24 Aug 2026: a lone "Plate 3" on folio 30, followed by
+     Figure 2 through Figure 7, so the first numbered thing a reader met was
+     Figure 2 and the only Plate in the book was the third one. */
+  { id: 'caption-numbering', file: 'content/essays/the-secret-life-of-attention.md',
+    from: '<b>Figure 1.</b>', to: '<b>Plate 3.</b>',
+    expect: 'numbered captions run 1, 2, 3',
+    why: 'a caption sequence starting at 2, with a stray Plate' },
+
   /* The same phrase set two ways. This is the state the book shipped in until
      24 Aug 2026: Physarum polycephalum in `<em>` four times in the prose and in
      `<i>` once in a margin note, because the prose is markdown and the note is

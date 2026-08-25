@@ -705,14 +705,52 @@ check('every fact says where it is used, and means it', badUse.length === 0,
     : `${facts.length} facts, every usedIn resolves to a file and block that exist, `
       + `or is marked Unplaced`);
 
-/* 18. Facts that are verified but have not reached a page. Reported, never
-       failed: registering a claim before its spread exists is correct. */
+/* 18. Facts that are verified but have not reached a page.
+
+   THE LEDGER IS THE AUTHORITY AND THE WORD COUNT IS THE ALARM, which is the
+   opposite of how this worked until 24 Aug 2026. Every fact's `usedIn` says
+   where it is printed or says "Unplaced" and why, in a sentence somebody wrote
+   on purpose. That is a record. The overlap heuristic below is a guess. Asking
+   the guess and ignoring the record got one wrong.
+
+   `block-island-meteorite` is declared Unplaced — its own note reads "'meteorite'
+   appears nowhere in the content, verified 22 Aug 2026, not printed, not cited" —
+   and the heuristic scored it 67% and called it reached, so the report said five
+   unplaced claims when the ledger says six. The words carrying that 67% are
+   `across`, `block`, `found`, `island`, `itself`, `model`, `museum`, `object`,
+   `scale` and `still`, every one of them earning its place in this book for some
+   unrelated reason: the Henro circles an island, a rotary telephone sits in a
+   museum. Meanwhile `meteorite`, `nickel`, `rover`, `opportunity` and `largest`
+   are all absent, which is the whole claim.
+
+   So the two questions are now asked separately, and the second one is the useful
+   one:
+
+     · declared Unplaced — counted, named, never a fault. Registering a claim
+       before its spread exists is correct and this book does it deliberately.
+     · declared PLACED but its words are not on the page — that is a fact that
+       left silently, taking a citation with it, and it is worth knowing about.
+
+   Measured when this was written: the thinnest placed fact is the spider web at
+   62%, and its missing words are `sensing` against the book's `sense` and
+   `extending` against `extends`. Nothing is near the floor, so 55% sits well
+   below the real distribution rather than being tuned to pass. */
 const printedLower = text.toLowerCase();
 const STOP = new Set(['about','above','after','their','there','these','those','which','while','would','because','between','through','around','other','under','where','with','from','that','this','than','then','they','been','have','into','more','most','only','over','some','such','were','when']);
-const unreached = facts.filter((f) => f.status === 'verified').filter((f) => {
+const overlap = (f) => {
   const w = [...new Set((f.claim.toLowerCase().match(/[a-z]{5,}/g) || []))].filter((x) => !STOP.has(x));
-  return w.length >= 4 && w.filter((x) => printedLower.includes(x)).length / w.length < 0.5;
-});
+  return w.length >= 4 ? w.filter((x) => printedLower.includes(x)).length / w.length : 1;
+};
+const declaredUnplaced = (f) => (f.usedIn || []).some((u) => /unplaced/i.test(String(u)));
+const verified = facts.filter((f) => f.status === 'verified');
+const unreached = verified.filter(declaredUnplaced);
+const vanished = verified.filter((f) => !declaredUnplaced(f) && overlap(f) < 0.55);
+check('every placed fact is still on the page', vanished.length === 0,
+  vanished.length
+    ? vanished.map((f) => `${f.id} at ${Math.round(overlap(f) * 100)}%`).join(', ')
+      + ' — the ledger says printed, the page does not agree'
+    : `${verified.length - unreached.length} placed, thinnest at `
+      + `${Math.round(Math.min(...verified.filter((f) => !declaredUnplaced(f)).map(overlap)) * 100)}%`);
 
 /* Every `focus:` a spread declares must be a focal class that exists.
 
@@ -1073,7 +1111,7 @@ for (const r of results) {
   const mark = r.info ? '·' : r.ok ? '✓' : '✗';
   console.log(`  ${mark} ${pad(r.name, 46)} ${r.detail}`);
 }
-console.log(`\n  · ${unreached.length} verified claim(s) may not be on a page (approximate — look, do not delete)`);
+console.log(`\n  · ${unreached.length} verified claim(s) declared Unplaced in the ledger — correct, not a fault`);
 if (unreached.length) console.log(`    ${unreached.map((f) => f.id).join(', ')}`);
 console.log('\n  Not checked here, and none of it is optional before press:');
 console.log('    · a printer — Saal was ruled out on price; content/plan/printer-brief.md goes to three or four');

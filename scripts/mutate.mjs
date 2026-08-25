@@ -193,6 +193,22 @@ const MUTATIONS = [
     expect: 'every essay opener carries its lede',
     why: 'an opener naming a lede block that does not exist' },
 
+  /* A fact whose ledger entry claims a page it is not on. `mimosa-thigmonasty`
+     is honestly declared Unplaced — neither "mimosa" nor "pulvinus" appears
+     anywhere in the content. Pointing its `usedIn` at a real essay and a real
+     block instead makes it claim to be printed, which is what a fact looks like
+     after the spread carrying it has been cut and nobody updated the ledger.
+
+     It has to be a REAL file and block or the wrong check fires: "every fact says
+     where it is used, and means it" already tests that `usedIn` resolves, so an
+     invented path would trip that one instead and this mutation would prove the
+     wrong thing. */
+  { id: 'fact-left-the-page', file: 'content/facts.json',
+    from: '"Unplaced — was \'photo 358 — figure caption\', a numbering from an older selection pass.',
+    to:   '"essays/beauty-of-systems-nobody-designed.md — flow-2b (was photo 358).',
+    expect: 'every placed fact is still on the page',
+    why: 'a fact the ledger says is printed, that is on no page' },
+
   /* The numbered captions with a hole in them. This restores exactly what the
      book printed until 24 Aug 2026: a lone "Plate 3" on folio 30, followed by
      Figure 2 through Figure 7, so the first numbered thing a reader met was

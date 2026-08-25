@@ -193,21 +193,26 @@ const MUTATIONS = [
     expect: 'every essay opener carries its lede',
     why: 'an opener naming a lede block that does not exist' },
 
-  /* A contents page sending the reader to the wrong page. This moves an essay by
-     one spread without touching the contents, which is what happens whenever the
-     pacing changes: every folio after the move shifts and the printed numbers do
-     not. Adding a page before essay 08 is the cheapest way to make that real.
+  /* Every contents number off by one. `openings[...] = n + 2` is the whole folio
+     derivation: an opener is a pair, so the title recto is two pages past the
+     spread's start. Make it n + 1 and all eight numbers move together.
 
-     It should turn the CONTENTS check red rather than the page-count one. The
-     book is at its 130-page ceiling by design and `page count` guards the total,
-     so this mutation is expected to trip both — what matters is that the folio
-     check is one of them, because before 24 Aug 2026 nothing compared a printed
-     folio to the page its essay opens on. */
-  { id: 'contents-folio', file: 'content/book.json',
-    from: '    {\n      "type": "essay",\n      "source": "essays/while-were-here.md"\n    }',
-    to:   '    {\n      "type": "divider",\n      "source": "sections/part-4.md"\n    },\n    {\n      "type": "essay",\n      "source": "essays/while-were-here.md"\n    }',
+     THE FIRST VERSION OF THIS MUTATION REPORTED BLIND, and the reason is worth
+     keeping. It added a divider before essay 08 to shift the pages without
+     touching the contents — the way a contents page goes wrong in a book set by
+     hand. Here it changed nothing, because the folios are DERIVED: pass one
+     found the new page and pass two printed it, so the contents corrected
+     itself and the check stayed green. It was right to stay green.
+
+     That is the actual fault surface for this check. Content cannot drift away
+     from the contents page in this build. Only the arithmetic that produces the
+     numbers can be wrong, and if it is, it is wrong for all eight at once and
+     looks like a formatting change in a diff. */
+  { id: 'contents-folio', file: 'scripts/build.mjs',
+    from: 'openings[L.titleKey(essay.title)] = n + 2;',
+    to:   'openings[L.titleKey(essay.title)] = n + 1;',
     expect: 'the contents page points at the right pages',
-    why: 'an essay that moved without its contents entry' },
+    why: 'an off-by-one in the folio derivation' },
 
   /* A fact whose ledger entry claims a page it is not on. `mimosa-thigmonasty`
      is honestly declared Unplaced — neither "mimosa" nor "pulvinus" appears

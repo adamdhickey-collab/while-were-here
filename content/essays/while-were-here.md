@@ -124,5 +124,3 @@ No instruction can make a person notice everything in time. Attention wanders. D
 <!-- block: flow-4b -->
 
 The light leaves the floor. The dog remains where it was, now resting in shadow. In the kitchen, water runs long enough to fill a pot. Someone outside calls to another person across the street. A plane passes above the roof without appearing between the branches. None of these events asks to be kept. Most will be gone before the room is dark. Their disappearance does not make them incomplete. They occurred inside the available bracket and altered what followed by a small amount. The pot will boil while the dog wakes. Someone will call a name from the next room. While we are here, we answer when we can.
-
-<!-- body word count: 1105 -->

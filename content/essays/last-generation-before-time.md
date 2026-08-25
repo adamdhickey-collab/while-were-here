@@ -125,5 +125,3 @@ That memory will thin. Objects can be preserved, but the expectation around them
 <!-- block: flow-4b -->
 
 The car reaches the next town without using the atlas. A phone has been giving directions from the cup holder, its voice arriving a few seconds before each turn. The paper map remains open anyway. Its route and the blue line agree for most of the distance. At one junction they divide. The driver follows the phone and passes a field that the old road never reached. Nothing dramatic marks the change. One system continues to work while another becomes unnecessary. The before-time ends this way in memory too, not with a closing date, but with an old instruction still legible beside a habit that no longer needs it.
-
-<!-- body word count: 1123 -->

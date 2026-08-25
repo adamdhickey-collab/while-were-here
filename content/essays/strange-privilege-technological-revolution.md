@@ -295,5 +295,3 @@ The costs are also being built into the ordinary layer. Large systems require co
 <!-- block: flow-4b -->
 
 The paragraph on the screen is selected and revised. A specific noun replaces a vague one. The unsupported claim is removed. One sentence remains exactly as the machine produced it because it does the work cleanly. The final page contains no reliable way to separate the origins. It has become a joint artifact, though responsibility still rests with the person who sends it. This small act is not the whole revolution. It is one of the places where the revolution becomes real. The future enters through repeated decisions about what to accept, what to question, and what should never be made effortless.
-
-<!-- body word count: 1115 -->

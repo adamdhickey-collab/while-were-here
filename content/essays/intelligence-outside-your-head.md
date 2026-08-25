@@ -123,5 +123,3 @@ External intelligence is powerful because it is vulnerable. A notebook can be lo
 <!-- block: flow-4b -->
 
 The cut board is carried to the frame and does not fit. The line was clear, but the measurement was wrong. The builder returns to the tape, the drawing, and the opening where the board belongs. Each holds a different part of the error. The corrected length emerges from comparing them. No single object contains the answer. No single glance completes the work. Intelligence appears in the traffic between memory and material. The mind reaches outward, receives resistance, and changes course. The room is not a backdrop for thought. It is one of the places where thought happens. Every tool so far has held the thought it was given. The next one answers back.
-
-<!-- body word count: 1176 -->

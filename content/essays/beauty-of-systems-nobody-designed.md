@@ -128,5 +128,3 @@ Human systems do this too. A footpath appears where enough people cut the same c
 <!-- block: flow-4b -->
 
 A line of ants crosses the pavement, thinner where the surface has cooled. A bicycle passes through it. For a few seconds the route is broken. Ants circle the gap and touch the ground with their antennae. Some return to the curb. Others find the trace on the far side. The line reforms, not exactly where it was, but close enough to reach the same opening. Nothing announces that the repair is complete. There is only movement where movement had stopped. By morning, a different obstacle may bend the route somewhere else. The pattern will persist by changing. The system survives because no single part contains it. It is distributed among the bodies, the pavement, the scent, and the next response.
-
-<!-- body word count: 1254 -->

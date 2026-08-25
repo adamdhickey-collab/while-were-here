@@ -134,5 +134,3 @@ Arrival needs a fixed edge. Without one, a long walk can dissolve into mileage. 
 <!-- block: flow-4b -->
 
 The yellow arrow points through a residential street where laundry moves above parked cars. Nothing in the lane announces that it belongs to an ancient route. A walker follows it past a bakery and a road crew lifting stones. Pilgrimage does not remove ordinary life from the path. It threads purpose through it. The sacred route uses the same pavement as errands and deliveries. That may be why it can return a person to daily life without pretending daily life has been replaced. The destination matters, but the road is made from the world already here. The final marker is reached one ordinary step after another.
-
-<!-- body word count: 1123 -->

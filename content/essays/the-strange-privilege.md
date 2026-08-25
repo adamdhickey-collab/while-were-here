@@ -222,6 +222,19 @@ spreads:
     inset:
       image: privilege-07-grill-screen
       caption: The machinery, disappeared behind a number.
+  - type: image-essay
+    variant: tall
+    image: privilege-05-dog-under-desk
+    blocks: [fig]
+    caption: >-
+      <b>Figure 3.</b> The dog under the desk. Whatever is happening above her is, from the floor, a Tuesday.
+    specimen:
+      image: specimen-01-komodo-tongue
+      Specimen: Varanus komodoensis
+      Common: Komodo dragon
+      Recorded: May 15, 2023, 1:12 p.m., captive
+      notes: >-
+        The tongue is forked so that it can sample two places at once and compare them. Direction is read from the difference.
   - type: reading
     variant: two
     subhead: Fluency and Reliability Arrive Separately
@@ -357,7 +370,7 @@ unavoidable. People argue about names because the categories have not settled. A
 tool can be called a toy for years, then become the place where ordinary work
 begins.
 
-<!-- block: s5a -->
+<!-- block: fig -->
 
 The weaknesses are easy to meet, which is itself new. Earlier advances in machine
 learning arrived inside ranking systems and fraud detection, and their decisions
@@ -368,7 +381,7 @@ invent a source. An image can preserve a difficult lighting condition and
 misunderstand a hand. Fluency and reliability arrive as separate properties, and
 the user has to learn the difference.
 
-<!-- block: s5b -->
+<!-- block: s5a -->
 
 Professions change inside that overlap. A designer can produce more variations
 before a meeting. A programmer can begin with a proposed function instead of an
@@ -377,7 +390,7 @@ create room for judgment, or it can become the reason more production is
 demanded. The person who once made every first draft becomes responsible for
 detecting the subtle failure that an effortless draft conceals.
 
-<!-- block: s6a -->
+<!-- block: s5b -->
 
 The costs are being built into the ordinary layer at the same time. Large systems
 require concentrated computing power and vast collections of data. Their errors
@@ -388,12 +401,14 @@ of its design. Every convenience establishes dependencies. Every interface
 decides what effort becomes invisible. Later, many of these choices will look
 natural, because they will be old.
 
-<!-- block: s6b -->
+<!-- block: s6a -->
 
 The paragraph on the screen is selected and revised. A specific noun replaces a
 vague one. The unsupported claim is removed. One sentence remains exactly as the
 machine produced it, because it does the work cleanly. The final page contains no
 reliable way to separate the origins.
+
+<!-- block: s6b -->
 
 And this seeing will thin, exactly as the other one is thinning. Objects can be
 preserved, but the expectation around them is harder to display. A rotary

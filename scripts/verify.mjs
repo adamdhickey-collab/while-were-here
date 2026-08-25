@@ -141,7 +141,7 @@ if (!breaks.available) {
   check('no figure is drawn over another figure', ov.length === 0,
     ov.length
       ? ov.map((o) => `folio ${o.folio}: ${o.pct}% of the smaller figure covered`).join(', ')
-      : 'insets and bands keep off each other; hand overlays exempt');
+      : 'insets and bands keep off each other; hand and specimen overlays exempt');
 
   const st = breaks.stacks || [];
   check('every deliberate line break survives the measure', st.length === 0,

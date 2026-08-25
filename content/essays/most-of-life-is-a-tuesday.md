@@ -73,6 +73,19 @@ spreads:
       at: over
       rotate: -2.5
       width: 62%
+  - type: image-essay
+    variant: tall
+    image: attention-03-light-on-a-wall
+    blocks: [fig]
+    caption: >-
+      <b>Figure 1.</b> A bare wall, a window out of frame, and a scatter of colored light between them. She has the room to herself and is not doing anything with it.
+    specimen:
+      image: specimen-07-amur-tiger
+      Specimen: Panthera tigris altaica
+      Common: Amur tiger
+      Recorded: August 2, 2015, 11:20 a.m., captive
+      notes: >-
+        Stepping through summer growth, head low, whiskers forward. The largest cat alive, photographed doing the most ordinary thing it does.
   - type: reading
     variant: two
     subhead: The Route Repeats
@@ -150,9 +163,9 @@ refrigerator, the fact that the light has moved four inches since you sat down.
 Your attention is not receiving that room. It is writing a very short summary of
 it and handing you the summary.
 
-You have never once experienced a room. You have experienced a paraphrase.
-
 <!-- block: s2b -->
+
+You have never once experienced a room. You have experienced a paraphrase.
 
 Most of the time the paraphrase is excellent. It keeps you from walking into
 traffic and lets you find your keys. Brains economize: whatever repeats and stays
@@ -165,12 +178,12 @@ But the same machinery that filters refrigerator noise also filters our lives.
 The person you love becomes familiar. Your home becomes familiar. Your body
 becomes familiar. Even being alive becomes familiar.
 
+<!-- block: s3a -->
+
 And familiarity can masquerade as insignificance.
 
 Which raises a question I find genuinely uncomfortable. If attention is doing the
 editing, who is directing the editor?
-
-<!-- block: s3a -->
 
 For most of human history the answer was: your body, and the weather. Hunger.
 Cold. Movement at the edge of a field. Another person's face.
@@ -199,11 +212,11 @@ You get the house. Reach the goal. Take the trip. Finally have enough time. The
 future contains the life you're trying to reach, and the present becomes
 transportation — a bridge between where you are and where you're supposed to be.
 
+<!-- block: s4a -->
+
 The danger is that you can spend decades crossing bridges. Every destination
 eventually becomes another starting point. You arrive, the mind adjusts, and
 almost immediately life begins pointing somewhere else.
-
-<!-- block: s4a -->
 
 Children have not yet learned this. A child can spend twenty minutes watching
 water move through a gutter. A stick becomes an object worth carrying home. The
@@ -214,6 +227,8 @@ lost.
 
 Here is the part I keep returning to. Attention is trainable, but not by force.
 
+<!-- block: s4b -->
+
 You cannot decide to notice more the way you decide to answer an email. I have
 tried, with the enthusiasm of a man who solves things. Concentration can be
 forced; it responds to deadlines and coffee and fear. Noticing cannot. It arrives
@@ -221,12 +236,12 @@ or it doesn't. What you can do is arrange the conditions in which it becomes
 likely, and nearly all of those conditions turn out to be versions of the same
 thing, which is slowness.
 
-<!-- block: s4b -->
-
 Walking works. Sitting still works. Ten minutes in front of one painting works
 better than a museum. Boredom works, though nobody wants to hear it. Grief works,
 unfortunately, and thoroughly. So does a dog, who will stop at the same square
 yard of grass every day for nine years and never once find it uninteresting.
+
+<!-- block: fig -->
 
 What all of these have in common is that they lower the speed of the world until
 the detail can catch up with you.
@@ -238,11 +253,11 @@ This is also why repetition gets a worse reputation than it deserves. We imagine
 a meaningful life as a sequence of new experiences. But repetition may be exactly
 what allows subtle differences to become visible.
 
-<!-- block: s5a -->
-
 On my usual route there is one tree I have photographed four times now — same
 tree, same angle, one photograph a season. Anyone watching would have seen a man
 standing in the street doing nothing. The tree never once repeated itself.
+
+<!-- block: s5a -->
 
 The light changes. Birds arrive and leave. A house gets painted. Someone who used
 to walk beside you no longer does.
@@ -254,14 +269,14 @@ similar; you aren't. The neighborhood looks similar; it isn't. Even your body is
 continuously rebuilding itself. The apparently static world is moving everywhere,
 just slowly enough that distraction mistakes it for stillness.
 
-<!-- block: s5b -->
-
 We do the same thing to people that we do to streets. We turn them into
 categories — wife, husband, mother, father, friend, coworker — and the label
 makes someone familiar enough that we occasionally stop seeing the person
 underneath it. But every person around us contains an entire private universe.
 Memories you'll never see. Things they notice when you're not there. Childhood
 versions of themselves. Internal conversations.
+
+<!-- block: s5b -->
 
 A person you've known for thirty years remains fundamentally mysterious. That
 mystery can disappear beneath routine. Romantic love often begins with novelty —
@@ -273,14 +288,14 @@ William James, writing more than a century before any of this was engineered,
 argued that a life is made of whatever a person consents to notice. He meant it
 as psychology. It reads now as an inventory.
 
-<!-- block: s6a -->
-
 Attention is the only genuinely nonrenewable thing you have. Money comes back.
 Energy comes back. Even time comes back, in the sense that tomorrow arrives
 whether or not you have earned it. Attention does not work that way. Every minute
 of it is spent in the moment it is spent, and the sum of those minutes is not a
 metaphor for your life. It is your life, in the most literal accounting
 available.
+
+<!-- block: s6a -->
 
 This should probably produce anxiety. Mostly it produces the opposite in me.
 
@@ -290,14 +305,14 @@ registered — arranged at expense, photographed carefully, and gone. I have als
 had ten minutes on a back step with a cup of coffee, watching a bird do something
 idiotic in a gutter, that I can still see with total clarity a decade later.
 
-<!-- block: s6b -->
-
 The difference was not the quality of the events. It was whether I showed up for
 them.
 
 We spend enormous effort trying to make our lives more interesting. Very little
 of it goes into becoming more interested. These are not the same project, and
 only one of them is available this afternoon.
+
+<!-- block: s6b -->
 
 None of which requires appreciating every second. That would become another form
 of self-improvement — now you must optimize gratitude too. Ordinary life includes

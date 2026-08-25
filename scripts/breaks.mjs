@@ -346,14 +346,25 @@ const stacks = await page.evaluate(() => {
    when the covering thing matches the ground, and z-index only orders siblings
    inside one stacking context. Two rectangles either overlap or they do not.
 
-   THE HAND OVERLAYS ARE EXEMPT BY NAME. `hand: { at: over }` exists to lay
-   marginalia across a figure; that is the feature working. Anything inside
-   `.hand` is skipped, so the check flags only overlaps nobody asked for. */
+   THE DELIBERATE OVERLAYS ARE EXEMPT BY NAME, and getting that list right took
+   two attempts. `hand: { at: over }` lays marginalia across a figure and
+   `specimen-card` lays a specimen on a tall plate like a card set down on a
+   photograph — both are the feature working. The first version of this check
+   exempted only `.hand`, so it fired on all four image-essay spreads the moment
+   they were added and reported a designed layout as a fault, which is the same
+   crying-wolf this repository has already removed two pixel-based occlusion
+   detectors for.
+
+   The exemption is by CLASS rather than by geometry on purpose. "Small figure
+   fully inside a large one" would have caught the specimen cards too, and would
+   also have missed the real fault — the jellyfish inset only partly covered the
+   Physarum dish. What separates them is not shape. It is whether a layout put
+   one there on purpose, and the layout says so in its class names. */
 const overlaps = await page.evaluate(() => {
   const bad = [];
   for (const pg of document.querySelectorAll('.page')) {
     const figs = [...pg.querySelectorAll('.figure')].filter((f) => {
-      if (f.closest('.hand')) return false;
+      if (f.closest('.hand') || f.closest('.specimen-card')) return false;
       const r = f.getBoundingClientRect();
       return r.width > 8 && r.height > 8;
     });

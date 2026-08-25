@@ -61,6 +61,19 @@ spreads:
     inset:
       image: intelligence-02-cards-table
       caption: The hands make it visible; the eyes return it.
+  - type: image-essay
+    variant: tall
+    image: systems-03-muqarnas-vault
+    blocks: [fig]
+    caption: >-
+      <b>Figure 2.</b> A muqarnas vault at the Alhambra: thousands of small cells stepping inward to one form. The essay's exception — this ceiling had a diagram.
+    specimen:
+      image: specimen-02-queen-butterfly
+      Specimen: Danaus gilippus
+      Common: Queen
+      Recorded: July 20, 2014, 4:46 p.m., captive
+      notes: >-
+        Milkweed as a larva, cardenolides carried into adulthood, and a warning pattern that several unrelated species arrived at independently.
   - type: reading
     variant: two
     subhead: A Small Archive Made Operational
@@ -209,7 +222,7 @@ itself. It does not know what is being built. Still, the cut would be less
 reliable without it. The thought has been divided between a nervous system and a
 surface. One remembers the intention. The other preserves the location.
 
-<!-- block: s5a -->
+<!-- block: fig -->
 
 Human attention is narrow. Under controlled conditions, the active part of
 working memory often holds about four chunks at once. The exact number changes
@@ -221,7 +234,7 @@ cards can be grouped before the categories have names. The hands make a
 possibility visible, then the eyes return it to the brain. Thinking continues
 through the loop.
 
-<!-- block: s5b -->
+<!-- block: s5a -->
 
 Tools do more than increase force. They carry instructions. The bubble in a
 spirit level turns gravity into a readable position. A kitchen scale converts
@@ -233,7 +246,7 @@ bend, which edge needs a guard, and how much tolerance the material allows. That
 learning becomes available to a later user who may never know the history. The
 tool is a small archive made operational.
 
-<!-- block: s6a -->
+<!-- block: s5b -->
 
 Groups have always stored knowledge this way. One person remembers the names.
 Another remembers the sequence. A surgical team does not rely on one mind to
@@ -244,7 +257,7 @@ verification across people and objects. Expertise still matters — the expert i
 partly the person who knows where the knowledge lives, when to call for it, and
 how to recognize a result that does not fit.
 
-<!-- block: s6b -->
+<!-- block: s6a -->
 
 Language is the oldest infrastructure of this kind. A word compresses
 distinctions learned by people who lived before the current speaker. Technical
@@ -256,6 +269,8 @@ individual heads. They allow new thoughts to be assembled from records that no
 single person could have produced or retained. The intelligence belongs to the
 living reader, but the materials arrive from outside. Thinking is inheritance put
 back into motion.
+
+<!-- block: s6b -->
 
 External intelligence is powerful because it is vulnerable. A notebook can be
 lost, and a navigation database can be wrong. A checklist copied without

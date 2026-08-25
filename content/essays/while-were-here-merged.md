@@ -61,6 +61,19 @@ spreads:
     inset:
       image: pilgrimage-02-fatima-esplanade
       caption: Arrival needs a fixed edge.
+  - type: image-essay
+    variant: tall
+    image: here-05-evening-wall
+    blocks: [fig]
+    caption: >-
+      <b>Figure 4.</b> The far wall, for under a minute. The room is doing this whether or not anyone is in it.
+    specimen:
+      image: specimen-06-prairie-dog
+      Specimen: Cynomys ludovicianus
+      Common: Black-tailed prairie dog
+      Recorded: June 8, 2019, 10:05 a.m., captive
+      notes: >-
+        Sitting upright at the mouth of a burrow that is one entrance of many, in a system no single animal has seen the whole of.
   - type: reading
     variant: two
     subhead: The Only Section Available
@@ -208,7 +221,7 @@ remembered, and every choice that changed the next day. The bracket is not an
 error in the larger timeline. It is the only section available for experience.
 Its limits do not make its contents less real. They give the contents a location.
 
-<!-- block: s5a -->
+<!-- block: fig -->
 
 Most of those hours are not milestones. They are preparation, maintenance,
 repetition, and return. Food is put away. The dog is walked. A parent calls with
@@ -220,7 +233,7 @@ in place by hundreds of days that did not announce themselves. A relationship is
 built as much by the repeated greeting as by the photograph chosen to represent
 it.
 
-<!-- block: s5b -->
+<!-- block: s5a -->
 
 Looking closely does not make any of it fragile. It makes the word ordinary less
 precise. A glass of water is plumbing, weather, geology, treatment, and a hand
@@ -230,7 +243,7 @@ without numbers. None of these descriptions replaces the glass or the tree. They
 add depth to what remains directly in front of us. The visible thing can be
 understood as a surface where many processes have arrived at once.
 
-<!-- block: s6a -->
+<!-- block: s5b -->
 
 Attention cannot keep all of those processes present, and it should not. A
 nervous system that treated every hum, shadow, and pressure change as new would
@@ -243,7 +256,7 @@ structure visible again. The aim is not permanent intensity. It is the ability t
 let one familiar thing return to the foreground before loss is the only force
 strong enough to bring it back.
 
-<!-- block: s6b -->
+<!-- block: s6a -->
 
 Other people are beyond supervision too. They carry private rooms of memory,
 worry, and attention that can be approached but never occupied. Love does not
@@ -254,6 +267,8 @@ matters in such ordinary forms. Listening through the end of a sentence. Sitting
 nearby without improving the silence. These acts do not solve the temporary
 nature of a relationship. They are how the relationship exists while it is
 available.
+
+<!-- block: s6b -->
 
 No instruction can make a person notice everything in time. Attention wanders.
 Days are wasted. Familiar voices are answered impatiently. Beauty is missed

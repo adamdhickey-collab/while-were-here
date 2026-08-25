@@ -5,12 +5,18 @@ was written for one printer and assumed its product line. The enquiry below
 asks nothing printer-specific: it states what the book IS and asks what each
 printer can do with it.
 
-**Send it to three or four.** The answers are directly comparable, and the last
-two questions are the ones that decide whether the book changes at all.
+**Send it to three or four.** The answers are directly comparable.
+
+**Updated 25 Aug 2026.** The book now exists in two finished lengths — 130 pages
+and 94 — so the enquiry asks for both prices side by side rather than describing
+one book. It also asks the question that was missing and may matter more than
+the edit did: **what does the same book cost without layflat?** Layflat is in the
+specification because images cross the gutter, it is the most expensive binding
+there is, and nobody has ever priced the alternative.
 
 ---
 
-**Subject:** Square hardcover photo book, 130 pp — specification and four questions
+**Subject:** Square hardcover photo book, 94 or 130 pp — specification and five questions
 
 Hello,
 
@@ -20,26 +26,31 @@ fits than guess at your product line.
 
 **The book**
 
-* 130 interior pages plus a hardcover case
 * Square format, currently laid out at 300 × 300 mm
+* **It exists in two lengths, and the price may well decide which one I print:**
+  a 130-page edition and a 94-page one. Both are finished and both are
+  press-ready — I am not asking you to wait for anything.
 * Photographic and illustrated throughout, many full-bleed pages, several
   images crossing the gutter from one page to the next
 * PDF with 3 mm bleed on all four sides, crop marks, 9 embedded and subset
   fonts, images 150–400 dpi at final size
 * One copy initially; possibly a handful later
 
-**Four questions**
+**Five questions**
 
-1. **What square sizes do you offer?** 300 × 300 mm and 12 × 12 inch are both
+1. **What would each length cost?** 94 pages and 130 pages, same trim, same
+   binding. I would like the two figures side by side.
+2. **What does the same book cost WITHOUT layflat binding?** Several spreads run
+   a single image across the gutter, so layflat matters to this book — but I have
+   never been quoted the alternative and I would like to know what the premium
+   actually is before paying it.
+3. **What square sizes do you offer?** 300 × 300 mm and 12 × 12 inch are both
    ideal. Smaller sizes are possible but would mean rewriting text, so it is
    worth me knowing the exact options before assuming.
-2. **Is layflat binding available, and at what price difference?** Several
-   spreads run a single image across the gutter, so a binding that opens flat
-   matters more to this book than the paper does.
-3. **What is your maximum page count** at that size and binding?
-4. **What is the caliper of the stock, per leaf, in millimetres?** I need it to
-   draw the cover wrap. At 130 pages the spine is `pages ÷ 2 × caliper + board
-   allowance`, so a 0.01 mm error moves the spine 0.65 mm.
+4. **What is your maximum page count** at that size and binding?
+5. **What is the caliper of the stock, per leaf, in millimetres?** I need it to
+   draw the cover wrap. The spine is `pages ÷ 2 × caliper + board allowance`, so
+   a 0.01 mm error moves it 0.65 mm at 130 pages and 0.47 mm at 94.
 
 **Two smaller things, if you have a view**
 

@@ -134,6 +134,15 @@ if (!breaks.available) {
      "Fabiola" on separate lines — the <br> was right, the 128mm measure was
      narrower than the 149.8mm clause, and the width silently added two breaks of
      its own on top of the one the layout chose. */
+  /* Surfaced here for the same reason as the two above: mutate reads verify's
+     ✓/✗ lines. Two insets landed on top of band images in the condensed edition
+     and the printed page showed a grey rectangle with a card on it. */
+  const ov = breaks.overlaps || [];
+  check('no figure is drawn over another figure', ov.length === 0,
+    ov.length
+      ? ov.map((o) => `folio ${o.folio}: ${o.pct}% of the smaller figure covered`).join(', ')
+      : 'insets and bands keep off each other; hand overlays exempt');
+
   const st = breaks.stacks || [];
   check('every deliberate line break survives the measure', st.length === 0,
     st.length

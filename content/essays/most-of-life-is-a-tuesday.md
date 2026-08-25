@@ -41,11 +41,11 @@ spreads:
     subhead: The Editor You Did Not Hire
     ground: ground-02-attention-filter
     blocks: [s2a, s2b]
-    insetOn: verso
+    bandImage: attention-05-crosswalk-strangers
+    insetOn: recto
     inset:
       image: ephemera-01-window-plant
       caption: A plastic lens, deciding.
-    bandImage: attention-05-crosswalk-strangers
   - type: reading
     variant: two
     subhead: Who Is Directing the Editor

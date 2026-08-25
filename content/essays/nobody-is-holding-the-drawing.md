@@ -40,7 +40,7 @@ spreads:
       positions matching cities around Tokyo. The network it built balanced
       cost, transport efficiency and fault tolerance at levels comparable to the
       rail system.
-    insetOn: verso
+    insetOn: recto
     inset:
       image: systems-07-moon-jelly
       caption: No brain in this one either.

@@ -332,11 +332,52 @@ const stacks = await page.evaluate(() => {
   return bad;
 });
 
+/* ONE FIGURE DRAWN OVER ANOTHER.
+
+   A spread can carry a band image across the foot of the verso and an inset card
+   on the same page, and nothing stopped the card landing on top of the band. It
+   happened twice in the condensed edition on 25 Aug 2026: the Physarum dish
+   occupies the left third of a 3:1 band, the jellyfish inset sat exactly there,
+   and the printed page showed a grey rectangle with a polaroid on it. The image
+   was fine. The composition put one picture under another.
+
+   GEOMETRY, NOT PIXELS, and that is deliberate. This repository has tried
+   pixel-differencing for occlusion twice and removed it twice — it collapses
+   when the covering thing matches the ground, and z-index only orders siblings
+   inside one stacking context. Two rectangles either overlap or they do not.
+
+   THE HAND OVERLAYS ARE EXEMPT BY NAME. `hand: { at: over }` exists to lay
+   marginalia across a figure; that is the feature working. Anything inside
+   `.hand` is skipped, so the check flags only overlaps nobody asked for. */
+const overlaps = await page.evaluate(() => {
+  const bad = [];
+  for (const pg of document.querySelectorAll('.page')) {
+    const figs = [...pg.querySelectorAll('.figure')].filter((f) => {
+      if (f.closest('.hand')) return false;
+      const r = f.getBoundingClientRect();
+      return r.width > 8 && r.height > 8;
+    });
+    for (let i = 0; i < figs.length; i++) {
+      for (let j = i + 1; j < figs.length; j++) {
+        const A = figs[i].getBoundingClientRect();
+        const B = figs[j].getBoundingClientRect();
+        const ox = Math.max(0, Math.min(A.right, B.right) - Math.max(A.left, B.left));
+        const oy = Math.max(0, Math.min(A.bottom, B.bottom) - Math.max(A.top, B.top));
+        if (ox <= 1 || oy <= 1) continue;
+        const small = Math.min(A.width * A.height, B.width * B.height);
+        bad.push({ folio: pg.dataset.folio || pg.dataset.label || '—',
+                   pct: Math.round((100 * ox * oy) / small) });
+      }
+    }
+  }
+  return bad;
+});
+
 await browser.close();
 server.close();
 
 if (asJson) {
-  console.log(JSON.stringify({ available: true, findings: report, tally, weights, stacks }));
+  console.log(JSON.stringify({ available: true, findings: report, tally, weights, stacks, overlaps }));
   process.exit(0);
 }
 
@@ -363,6 +404,14 @@ if (stacks.length) {
   say('  Widen the max-width to fit the longest declared line, or shorten the line.');
 } else {
   say(`  ✓ every deliberate line break survives the measure`);
+}
+
+if (overlaps.length) {
+  say(`\n  ⚠ ${overlaps.length} figure(s) drawn over another figure:\n`);
+  for (const o of overlaps) say(`    folio ${o.folio} — ${o.pct}% of the smaller figure covered`);
+  say('\n  Move the inset to the facing page, or drop the band. Hand overlays are exempt.');
+} else {
+  say(`  ✓ no figure is drawn over another figure`);
 }
 
 if (!report.length) {

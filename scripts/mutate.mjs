@@ -230,6 +230,16 @@ const MUTATIONS = [
     expect: 'every placed fact is still on the page',
     why: 'a fact the ledger says is printed, that is on no page' },
 
+  /* An inset card laid on top of a band image. This is the condensed edition's
+     state before 25 Aug 2026: the Physarum dish occupies the left third of a 3:1
+     band, the jellyfish inset sat exactly there, and the page printed a grey
+     rectangle with a polaroid on it. The image was never the problem. */
+  { id: 'figure-over-figure', file: 'content/essays/nobody-is-holding-the-drawing.md',
+    from: '    insetOn: recto\n    inset:\n      image: systems-07-moon-jelly',
+    to:   '    insetOn: verso\n    inset:\n      image: systems-07-moon-jelly',
+    expect: 'no figure is drawn over another figure',
+    why: 'an inset card drawn on top of a band image' },
+
   /* The numbered captions with a hole in them. This restores exactly what the
      book printed until 24 Aug 2026: a lone "Plate 3" on folio 30, followed by
      Figure 2 through Figure 7, so the first numbered thing a reader met was

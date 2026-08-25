@@ -877,6 +877,40 @@ if (libRefs.length) {
   }
 }
 
+/* Nothing is marked up two different ways.
+
+   `Physarum polycephalum` printed four times in `<em>` and once in `<i>`. Both
+   render italic, so the page looked correct and always would have; the
+   difference lived in the markup and in what a screen reader does with it, which
+   is stress the emphasised one and read the other flat. The same species name,
+   in the same essay, announced two ways.
+
+   It was not a decision. It was a mechanism: body prose is markdown, so `*x*`
+   becomes `<em>`, while a margin note lives in YAML where markdown is not
+   processed, so somebody typed `<i>` to get the italic they needed. Two routes
+   to the same italic, and nothing compared them.
+
+   Generalised deliberately. Checking "taxonomic names all use one element" would
+   catch this instance and nothing else. The real rule is that a book should not
+   set the same phrase two ways, whatever the phrase and whichever tags, and that
+   is what is measured: every run inside em/i/b/strong, grouped by its text.
+
+   WHAT THIS DOES NOT COVER: the same phrase marked up in one place and left
+   plain in another. That is usually correct — the first mention of a term is
+   often italicised and later ones are not — so flagging it would be noise. */
+const marked = [...html.matchAll(/<(em|i|b|strong)>([^<]{2,80})<\/\1>/g)];
+const byPhrase = new Map();
+for (const m of marked) {
+  const text = m[2].trim();
+  if (!byPhrase.has(text)) byPhrase.set(text, new Set());
+  byPhrase.get(text).add(m[1]);
+}
+const twoWays = [...byPhrase].filter(([, tags]) => tags.size > 1);
+check('nothing is marked up two different ways', twoWays.length === 0,
+  twoWays.length
+    ? twoWays.map(([t, tags]) => `"${t.slice(0, 40)}" as ${[...tags].join(' and ')}`).join('; ')
+    : `${byPhrase.size} marked-up phrases, each set one way`);
+
 /* Can the type be read off the ground it prints on?
 
    Two legibility failures went into this book on 23 Aug 2026 and no check could

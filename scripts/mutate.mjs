@@ -193,6 +193,17 @@ const MUTATIONS = [
     expect: 'every essay opener carries its lede',
     why: 'an opener naming a lede block that does not exist' },
 
+  /* The same phrase set two ways. This is the state the book shipped in until
+     24 Aug 2026: Physarum polycephalum in `<em>` four times in the prose and in
+     `<i>` once in a margin note, because the prose is markdown and the note is
+     YAML. Identical on the page, different to a screen reader, and invisible to
+     every other check in the file. */
+  { id: 'markup-two-ways', file: 'content/essays/beauty-of-systems-nobody-designed.md',
+    from: 'In a 2010 experiment, <em>Physarum polycephalum</em> was given food at',
+    to:   'In a 2010 experiment, <i>Physarum polycephalum</i> was given food at',
+    expect: 'nothing is marked up two different ways',
+    why: 'one species name italicised with two different elements' },
+
   /* A word broken across a column break. Putting `hyphens: auto` back restores
      the exact state the book shipped in until 24 Aug 2026: "them-/selves" on
      folio 21 and "measure-/ment" on folio 120, the second across the gutter.

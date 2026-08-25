@@ -33,7 +33,7 @@ spreads:
     blocks: [flow-2a, flow-2b]
     bandImage: systems-05-physarum-network
     marginNote: >-
-      In a 2010 experiment, <i>Physarum polycephalum</i> was given food at
+      In a 2010 experiment, <em>Physarum polycephalum</em> was given food at
       positions matching cities around Tokyo. The network it built balanced
       cost, transport efficiency and fault tolerance at levels comparable to the
       rail system.

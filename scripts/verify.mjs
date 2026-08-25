@@ -877,6 +877,38 @@ if (libRefs.length) {
   }
 }
 
+/* Is anything the book prints marked disputed in its own ledger?
+
+   `content/facts.json` grades every claim verified, unverified or disputed, and
+   one is disputed: the solar survey overprinted on the opening plate of essay
+   one. It has been disputed and printed at the same time, and nothing said so
+   out loud — the status sat in a JSON file while the plate sat on page one.
+
+   That plate's whole stated purpose is "to establish on page one that this book
+   measures things", and its numbers do not survive being measured. Recomputed
+   independently from the NOAA equations on 24 Aug 2026: the coordinates are
+   Ottawa to within a kilometre, the altitude is out by 26 degrees, and the
+   altitude contradicts the plate's own drawing, which depicts a patch only a
+   35-degree sun could throw.
+
+   A NOTE AND NOT A FAILURE, deliberately, and the reason is in
+   .github/workflows/pages.yml: CI runs `verify -- --strict` and the site deploy
+   depends on it. Turning a known, already-recorded defect into a red line would
+   stop the deploy without fixing anything, because the numbers are baked into a
+   4000 x 4000 JPEG and cannot be corrected from this repository — only
+   regenerated. So this reports the way `consent` reports: loudly, every run,
+   with the fix written down. It is also in the closing "not checked here" list.
+
+   The fix is small and exact. The DRAWING IS CORRECT; six text values are not.
+   They are recorded in the image's `revision` field and in the fact's own note. */
+const graded = Array.isArray(facts) ? facts : (facts.facts || []);
+const disputed = graded.filter((f) => f.status === 'disputed' || f.status === 'unverified');
+if (disputed.length) {
+  note('disputed claims in the book', `${disputed.length} — `
+    + disputed.map((f) => f.id).join(', ')
+    + '. See the fix in content/images.json and content/facts.json.');
+}
+
 /* The numbered captions run 1, 2, 3 … in page order, under one word.
 
    The book printed Figure 2 through Figure 7 and, on an earlier page than any of
@@ -1046,6 +1078,9 @@ if (unreached.length) console.log(`    ${unreached.map((f) => f.id).join(', ')}`
 console.log('\n  Not checked here, and none of it is optional before press:');
 console.log('    · a printer — Saal was ruled out on price; content/plan/printer-brief.md goes to three or four');
 console.log('    · paper caliper — book.config.js still holds a placeholder; it comes from whoever prints it');
+console.log('    · the opening plate of essay one prints a solar survey that does not compute —');
+console.log('      the drawing is right, six text values are wrong, and the numbers are baked');
+console.log('      into a 4000 x 4000 JPEG. Regenerate it: content/images.json has the fix.');
 console.log('    · a press PDF must come from a run that printed "PRESS: bleed + crop marks"');
 console.log('    · consent from everyone identifiable, if this is ever sold');
 console.log('');

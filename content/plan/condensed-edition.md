@@ -178,3 +178,72 @@ not a sketch.
 6. Re-compose, re-check, re-proof. The 32 checks and the mutation suite carry
    over unchanged — nothing in them assumes 130 pages except `pageCount` in
    `book.config.js`, which is one number.
+
+---
+
+## 7 · Status, 24 Aug 2026 — all four merges drafted
+
+| part | sources | merged | compression | pages |
+| --- | --- | --- | --- | --- |
+| [I](merge-part-1-draft.md) · Look Again | 2,319 | 1,827 | 21% | 17 |
+| [II](merge-part-2-draft.md) · What Are We? | 2,456 | 1,695 | 31% | 15 |
+| [III](merge-part-3-draft.md) · The World Is Changing | 2,128 | 1,496 | 30% | 14 |
+| [IV](merge-part-4-draft.md) · While We're Here | 2,240 | 1,819 | 19% | 17 |
+| **total** | **9,143** | **6,837** | **25%** | **62** |
+
+**62 pages of essay + 24 of apparatus = an 86-page book**, four inside the
+target. The writing fits. Every draft is a reading draft; `content/essays/` is
+untouched and the build is unchanged.
+
+**Each pair turned out to be a different shape**, which is why the compression
+rates range from 19% to 31%:
+
+* **I** — argument + images. The frame was obvious; less deleted cleanly.
+* **II** — two different arguments sharing one *mistake*. The pivot (a spider's
+  web that is both a self-built structure and an external sense organ) was
+  already in the text.
+* **III** — the same argument stated twice about two technologies. Half of it was
+  waste, so it compressed hardest.
+* **IV** — one claim at two scales, a journey and a lifetime. Almost nothing was
+  redundant, so it compressed least. **A merge that compresses little is not a
+  failed merge.**
+
+### The collision check, run and passed
+
+Three collisions were found *during* drafting and removed — two from Part II and
+one from Part IV, all with Part III, which is the hub because machine
+intelligence is what the other three essays reach toward at their edges. Forty
+pages apart nobody notices; adjacent, the second reads as repetition.
+
+Checking all four drafts against each other afterwards: **zero sentence pairs
+above 30% content-word overlap.** The removals were the right ones and nothing
+else collides.
+
+**What the check did find is better than what it was looking for.** Two motifs
+now run as through-lines that the eight-essay book could not support:
+
+* **the route** — Part I establishes it as a repeated path that reveals change
+  (*"The route repeats. The world does not."*), and Part IV pays it off with a
+  worn stair and the Camino.
+* **the map** — Part II has a slime mold drawing one without knowing Tokyo, Part
+  III closes on a paper map going quietly obsolete beside a blue line, and Part
+  IV opens by insisting you cannot arrive early by understanding one.
+
+Neither was designed. Both exist because the material is now close enough
+together to rhyme. **That is an argument for the condensed edition that the cost
+analysis cannot make.**
+
+### What is still Adam's
+
+1. **Send the printer brief.** Still step one, still not done.
+2. **Read the four drafts.** They are the deliverable; the arithmetic is not.
+3. **Part II's title.** The merged essay covers order-without-a-designer *and*
+   mind-outside-the-skull and neither existing title covers both. *"Nobody Is
+   Holding the Drawing"* does — no bee holds it, no head holds it. Inventing a
+   title is a larger liberty than merging, so it is flagged rather than taken.
+4. **The person change in Part IV.** One passage converted from second to third
+   person, the only such edit in four drafts.
+5. **Air or length.** At the current 86 prose-words per essay page these four
+   essays need 104 pages. The 86-page book assumes 110, bought by dropping the
+   pull-quote and tall-image spreads. That is the sharpest decision left and it
+   is not an editorial one.

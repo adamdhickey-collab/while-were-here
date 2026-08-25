@@ -1158,7 +1158,13 @@ if (spreads.ok === null) {
   note('spreads PDF', 'not checked — run `npm run spreads:check`');
 } else {
   check('the published spreads PDF is the current book', spreads.ok,
-    spreads.ok ? '68 spreads, newer than every source'
+    /* The count comes OUT of spreads.py, which counted them. It read
+       '68 spreads' as a literal until 25 Aug 2026 — correct for the eight-essay
+       book, and still printed after the condensed edition dropped to 50. A check
+       that reports a number it did not measure is telling you something it does
+       not know, and this one had been doing it in the one place a reader would
+       trust it: its own green line. */
+    spreads.ok ? `${(spreads.detail.join(' ').match(/\((\d+) spreads\)/) || [null, '?'])[1]} spreads, newer than every source`
       : 'out of date — run `npm run spreads`, it is committed and ships on push');
 }
 

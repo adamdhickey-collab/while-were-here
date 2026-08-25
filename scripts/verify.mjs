@@ -455,6 +455,56 @@ check('the contents page agrees with the book', tocFlat === bookFlat,
     ? `${realParts.length} parts, ${realParts.reduce((a, p) => a + p.essays.length, 0)} essays, same titles in the same order`
     : `contents: ${tocFlat}  ≠  book: ${bookFlat}`);
 
+/* 13a. The contents page sends the reader to the page the essay is actually on.
+
+   Check 13 above compares the contents to the book and passes on parts, titles
+   and order. It has never looked at the numbers, which are the only part of a
+   contents page a reader uses as an instruction. Every one of the eight is
+   right; nothing was confirming it.
+
+   They are derived rather than typed — `build.mjs` runs a first pass to find the
+   folios and a second to print them — so the usual drift cannot happen here. Two
+   other things can. The lookup is by title through `titleKey`, and the layout
+   falls back to an em dash when it misses, which is a silent wrong answer
+   printed in the right shape; the comment on `titleKey` in index.mjs records
+   that exactly this happened once to "While We're Here" over an apostrophe. And
+   a change to pass one could move every number at once, which is the kind of
+   fault that looks like a formatting change in a diff.
+
+   MEASURED FROM THE COMPOSED BOOK, not from the build's own folio map, because
+   asking the map whether the map is right proves nothing. This reads the printed
+   number out of the contents page and finds the page whose printed essay title
+   matches, then compares. `data-folio` equals the section index in this book:
+   the front cover is index 0 and unpaginated, and the half title is page 1.
+
+   The em dash case is caught for free — "—" is not a number, so it fails. */
+/* The same normalisation `titleKey` uses in src/layouts/index.mjs: curly and
+   straight apostrophes folded together, whitespace collapsed, lowercased. It is
+   duplicated rather than imported because a check that shares a helper with the
+   thing it checks agrees with it by construction. */
+const strip = (s) => s.replace(/<[^>]+>/g, '')
+  .replace(/&#39;/g, "'").replace(/&rsquo;|&#8217;/g, '’')
+  .replace(/&amp;/g, '&').replace(/&nbsp;/g, ' ').replace(/\s+/g, ' ').trim();
+const titleKeyOf = (s = '') => String(s)
+  .replace(/[‘’]/g, "'").replace(/\s+/g, ' ').trim().toLowerCase();
+const tocEntries = [...html.matchAll(
+  /<li class="[^"]*">\s*<span>([\s\S]*?)<\/span>\s*<span class="contents__dots"><\/span>\s*<span class="contents__folio">([^<]*)<\/span>/g)]
+  .map((m) => ({ title: strip(m[1]), folio: m[2].trim() }));
+const openerPages = [];
+html.split(/(?=<section class="page)/).slice(1).forEach((seg, i) => {
+  const t = /class="essay-title"[^>]*>([\s\S]*?)<\/h2>/.exec(seg);
+  if (t && /opener__recto/.test(seg)) openerPages.push({ title: strip(t[1]), index: i });
+});
+const tocWrong = tocEntries.filter((e) => {
+  const o = openerPages.find((p) => titleKeyOf(p.title) === titleKeyOf(e.title));
+  return !o || Number(e.folio) !== o.index;
+});
+check('the contents page points at the right pages', tocWrong.length === 0 && tocEntries.length > 0,
+  tocEntries.length === 0 ? 'no contents entries found — the pattern stopped matching'
+    : tocWrong.length
+      ? tocWrong.map((e) => `"${e.title.slice(0, 28)}" says ${e.folio}`).join(', ')
+      : `${tocEntries.length} entries, every folio the page its essay opens on`);
+
 /* 13b. No essay opener arrives without its lede.
 
       Every essay opens on a facing pair: a full-bleed plate on the verso, and on

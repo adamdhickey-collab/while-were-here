@@ -41,12 +41,24 @@ thought it was given. The next one answers back"** — hands directly to Part II
 which is about the tool that answers back. The ants move up to close the first
 movement instead.
 
-**Title:** kept as *The Beauty of Systems Nobody Designed*, but this is the one
-title decision in the four merges that is genuinely open. The merged essay covers
-order-without-a-designer *and* mind-outside-the-skull, and neither existing title
-covers both. A phrase from the hive passage does: **"Nobody Is Holding the
-Drawing."** No bee holds it, and no head holds it. Adam's call — inventing a
-title is a larger liberty than merging.
+**Title: *Nobody Is Holding the Drawing*.** Adam's decision, 24 Aug 2026.
+
+Neither source title survives the merge, and that is the merge working rather
+than failing. *The Beauty of Systems Nobody Designed* names the first half; *The
+Intelligence Outside Your Head* names the second; the essay is now one argument
+that needs both. The new title is not invented — it is lifted from the fifth
+sentence of the opening paragraph, which was already the best line in the pair:
+**"There is no bee at the front holding a drawing."**
+
+It works because it is literally true twice. No bee holds the drawing of the
+comb. No head holds the drawing of a thought. The reader meets it as a fact about
+a hive on the first page and only recognises it as the thesis at the spider, six
+paragraphs later — which is the same delayed turn the essay makes structurally.
+
+It also changes what the opening paragraph is doing. That sentence used to be one
+observation among several; with the title above it, it becomes the claim the rest
+of the essay unpacks, and the hive stops being an example and starts being the
+argument.
 
 **Deck:** Order can arrive without a plan when many small parts keep answering
 one another — and so can a thought.

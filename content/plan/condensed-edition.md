@@ -237,10 +237,10 @@ analysis cannot make.**
 
 1. **Send the printer brief.** Still step one, still not done.
 2. **Read the four drafts.** They are the deliverable; the arithmetic is not.
-3. **Part II's title.** The merged essay covers order-without-a-designer *and*
-   mind-outside-the-skull and neither existing title covers both. *"Nobody Is
-   Holding the Drawing"* does — no bee holds it, no head holds it. Inventing a
-   title is a larger liberty than merging, so it is flagged rather than taken.
+3. ~~Part II's title.~~ **Decided 24 Aug 2026: *Nobody Is Holding the
+   Drawing*.** Lifted from the fifth sentence of the essay's own opening
+   paragraph — "There is no bee at the front holding a drawing" — and true twice
+   over, of the comb and of a thought.
 4. **The person change in Part IV.** One passage converted from second to third
    person, the only such edit in four drafts.
 5. **Air or length.** At the current 86 prose-words per essay page these four

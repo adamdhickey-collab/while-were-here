@@ -73,6 +73,14 @@ spreads:
       at: over
       rotate: -2.5
       width: 62%
+  - type: diagram
+    figure: attention-diagram
+    title: What the editor kept
+    blocks: [diagram-note]
+    legend:
+      - <b>Available.</b> Everything the room was actually doing while you were in it.
+      - <b>Admitted.</b> The fraction that reached awareness at all.
+      - <b>Remembered.</b> The fraction you will still have tomorrow.
   - type: image-essay
     variant: tall
     image: attention-03-light-on-a-wall
@@ -240,6 +248,10 @@ Walking works. Sitting still works. Ten minutes in front of one painting works
 better than a museum. Boredom works, though nobody wants to hear it. Grief works,
 unfortunately, and thoroughly. So does a dog, who will stop at the same square
 yard of grass every day for nine years and never once find it uninteresting.
+
+<!-- block: diagram-note -->
+
+Almost everything that happens near you is discarded before you meet it. This is not a flaw. A version of you that admitted the whole room would be unable to cross a street. But the ratios are worth looking at once, because something like them is the shape of a life.
 
 <!-- block: fig -->
 

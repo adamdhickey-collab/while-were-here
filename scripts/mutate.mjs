@@ -358,14 +358,21 @@ const MUTATIONS = [
      the Remembered label sat at x=768 and the Admitted ring ran through the
      word, between the B and the E, in blue, at 300 mm. Putting it back is a
      one-token edit and reproduces a fault that actually shipped once. */
-  /* diagram-label is REMOVED ON THIS BRANCH, for the same reason as
-     focus-vocabulary and recorded here rather than in a deleted line. The
-     condensed edition declares no `type: diagram` spread at all — the diagram
-     lived on the attention essay's spread, which the four-essay merge dissolved.
-     verify still reports "20 labels checked, all placed ones clear · 6 in
-     unplaced figures", and the placed count is zero, so the ✓ is vacuous and
-     says so in its own detail line. There is no honest fault to plant in a
-     figure no page carries. Main still places one and still tests it. */
+  /* RESTORED 25 Aug 2026, after the diagram came back. It was removed from this
+     branch for one day, on the correct grounds that the condensed edition
+     declared no diagram spread and there was no honest fault to plant in a
+     figure no page carries. Putting "What the editor kept" back into Part I gave
+     it a subject again, and the check went from a vacuous ✓ to a real one — the
+     placed count moved off zero.
+
+     Worth keeping the round trip visible: a mutation with no subject is not a
+     mutation to delete permanently. It is one waiting for the book to have the
+     thing again. */
+  { id: 'diagram-label', file: 'src/layouts/diagrams.mjs',
+    from: '<text x="840" y="304"', to: '<text x="768" y="304"',
+    expect: 'nothing is drawn through a diagram label',
+    why: 'a leader line drawn through its own label' },
+
 
   /* The imprint check flags an archive image that is NOT in the book but whose
      credit label appears in the printed text. linen weave is one of the two

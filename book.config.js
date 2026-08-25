@@ -53,7 +53,7 @@ export const geometry = {
     // It stays 130 until a printer says otherwise, and the brief asks each one
     // what their maximum is — an answer of 150 or 180 makes several cut spreads
     // recoverable from git history rather than lost.
-    pageCount: 94,        // actual; the ceiling it was written against is gone
+    pageCount: 96,        // actual; the ceiling it was written against is gone
     paperCaliper: 0.17,    // mm per leaf — PROVISIONAL AND ALMOST CERTAINLY LOW.
                            // It assumes an uncoated stock. Every photographic
                            // layflat stock quoted for this book is heavier: Saal's

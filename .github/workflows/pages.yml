@@ -51,6 +51,33 @@ jobs:
       # passing — which is the state this repository insists on, because a
       # green tick beside an unrun check is worse than no check.
       - run: npm run verify -- --strict
+
+      # THE CONDENSED EDITION, PUBLISHED ALONGSIDE RATHER THAN INSTEAD.
+      #
+      # `condensed` holds the four-essay, 94-page cut of the same book. Both are
+      # real deliverables and neither supersedes the other yet — the choice waits
+      # on printer quotes — so the site carries both: this book at /, that one at
+      # /condensed/.
+      #
+      # It is safe to nest because every link the build emits is RELATIVE
+      # (`href="book.html"`, `href="download/..."`), checked before this step was
+      # written. An absolute path anywhere would break under a subdirectory and
+      # would need fixing at the source rather than papering over here.
+      #
+      # The second build runs the SAME `verify -- --strict`. A preview that looks
+      # right while its manifest disagrees with it is exactly what this workflow
+      # exists to stop, and that applies to both editions or it is not a rule.
+      #
+      # main's site is untouched by all of this: it is moved aside, the second
+      # build is dropped into a subdirectory of it, and it is moved back.
+      - run: mv build /tmp/site
+      - run: git fetch --depth=1 origin condensed && git checkout condensed
+      - run: npm ci
+      - run: npm run build:web
+      - run: npm run verify -- --strict
+      - run: mkdir -p /tmp/site/condensed && cp -R build/. /tmp/site/condensed/
+      - run: rm -rf build && mv /tmp/site build
+
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

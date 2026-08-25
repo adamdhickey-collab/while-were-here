@@ -14,14 +14,15 @@ every content change makes it stale and every rebuild needs somebody to remember
 an unwritten command. A derived file with no derivation is a file that will one
 day go to a printer three revisions behind the book.
 
-WHAT IT REFUSES TO DO. It will not cut pages 1 and 132 because they are pages 1
-and 132. It reads them and requires the first to carry the book's title and
-subtitle and the last to carry the back-cover line from content/book.json. If
+WHAT IT REFUSES TO DO. It will not cut the first and last pages because they are
+the first and last. It reads them and requires the first to carry the book's
+title and subtitle and the last to carry the back-cover line from book.json. If
 the sequence in book.json ever changes so the covers are not the outer pages,
 this stops rather than quietly shipping an interior with a cover bound into it
 and a page of prose missing from the end.
 """
 import json
+import re
 import sys
 from pathlib import Path
 
@@ -50,14 +51,21 @@ first, last = letters(doc[0].get_text()), letters(doc[-1].get_text())
 want_first = letters(book['title']) + letters(book['subtitle'])
 want_last = letters(book['backCoverLine'])
 
-if doc.page_count != 132:
-    print(f'  ✗ press PDF has {doc.page_count} pages, expected 132 — not cutting blind')
+# DERIVED, NOT TYPED. This read `!= 132` until 24 Aug 2026, a constant standing in
+# for "the interior plus two covers". The condensed edition builds 88, and a script
+# written to protect a derived file refused to run because it had memorised the old
+# book's size. book.config.js is the single source of truth for page count; ask it.
+cfg = (ROOT / 'book.config.js').read_text(encoding='utf-8')
+expected = int(re.search(r'pageCount:\s*(\d+)', cfg).group(1)) + 2
+if doc.page_count != expected:
+    print(f'  ✗ press PDF has {doc.page_count} pages, expected {expected} '
+          f'({expected - 2} interior + 2 covers, from book.config.js) — not cutting blind')
     sys.exit(1)
 if want_first not in first:
     print('  ✗ page 1 does not carry the title and subtitle — it is not the front cover')
     sys.exit(1)
 if want_last not in last:
-    print('  ✗ page 132 does not carry the back-cover line — it is not the back cover')
+    print('  ✗ the last page does not carry the back-cover line — it is not the back cover')
     sys.exit(1)
 
 doc.select(range(1, doc.page_count - 1))

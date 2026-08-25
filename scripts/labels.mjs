@@ -117,7 +117,16 @@ for (const fig of figures) {
       return { text: (t.textContent || '').trim().slice(0, 40),
                x: b.x - r.x, y: b.y - r.y, w: b.width, h: b.height };
     }).filter((l) => l.w > 3 && l.h > 3);
-    return { name: (svg.getAttribute('aria-label') || 'figure').slice(0, 46), labels, figW: r.width };
+    /* `name` is truncated for display; `fullName` is not, and the placed/latent
+       test must use the full one. Comparing the 46-character slice against the
+       untruncated aria-labels in `injectedLabels` silently failed for every
+       figure with a longer label, so a LATENT collision in an unplaced figure
+       was reported as a placed one — a red line for a fault that cannot print.
+       Found on 24 Aug 2026 when the condensed edition dropped the essay that
+       placed the attention diagram: the collision did not move, its
+       classification did. */
+    const aria = svg.getAttribute('aria-label') || 'figure';
+    return { name: aria.slice(0, 46), fullName: aria, labels, figW: r.width };
   });
   if (!meta.labels.length) continue;
   boxes += meta.labels.length;
@@ -129,7 +138,7 @@ for (const fig of figures) {
   await setHide(false);
   fs.writeFileSync('/tmp/.labels-bare.png', bare);
   findings.push({ name: meta.name, labels: meta.labels, bare: '/tmp/.labels-bare.png',
-                  placed: !injectedLabels.has(meta.name) });
+                  placed: !injectedLabels.has(meta.fullName) });
   /* measure immediately, one figure at a time, so the buffer is never stale */
   const out = JSON.parse(execSync(`./.venv/bin/python scripts/label_ink.py /tmp/.labels-bare.png '${JSON.stringify(meta.labels).replace(/'/g, "")}' ${meta.figW}`).toString());
   /* Text-on-text is invisible to the render method, because that method hides

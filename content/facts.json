@@ -6,7 +6,7 @@
       "claim": "People check their phones about 85 times a day and use them for around five hours, and their own estimates of how often are roughly half the real figure.",
       "status": "verified",
       "usedIn": [
-        "essays/the-secret-life-of-attention.md — marginNote"
+        "essays/most-of-life-is-a-tuesday.md — marginNote"
       ],
       "source": {
         "authors": "Andrews S, Ellis DA, Shaw H, Piwek L",
@@ -103,8 +103,7 @@
       "claim": "European starlings in a large flock interact with about six or seven nearby birds, whatever the physical distance between them, so a turn can cross the flock through local updates with nobody giving an order.",
       "status": "verified",
       "usedIn": [
-        "essays/beauty-of-systems-nobody-designed.md — marginNote",
-        "essays/beauty-of-systems-nobody-designed.md — flow-1b"
+        "essays/nobody-is-holding-the-drawing.md — marginNote"
       ],
       "source": {
         "authors": "Ballerini M, Cabibbo N, Candelier R, Cavagna A, Cisbani E, Giardina I, Lecomte V, Orlandi A, Parisi G, Procaccini A, Viale M, Zdravkovic V",
@@ -120,8 +119,7 @@
       "claim": "Given food at positions matching cities around Tokyo, Physarum polycephalum built a network balancing cost, transport efficiency and fault tolerance at levels comparable to the rail system.",
       "status": "verified",
       "usedIn": [
-        "essays/beauty-of-systems-nobody-designed.md — marginNote",
-        "essays/beauty-of-systems-nobody-designed.md — flow-2a"
+        "essays/nobody-is-holding-the-drawing.md — s2a"
       ],
       "source": {
         "authors": "Tero A, Takagi S, Saigusa T, Ito K, Bebber DP, Fricker MD, Yumiki K, Kobayashi R, Nakagaki T",
@@ -137,7 +135,7 @@
       "claim": "A 2016 estimate for a seventy-kilogram reference man counted about thirty trillion human cells and thirty-eight trillion bacterial cells.",
       "status": "verified",
       "usedIn": [
-        "essays/beauty-of-systems-nobody-designed.md — marginNote"
+        "essays/nobody-is-holding-the-drawing.md — marginNote"
       ],
       "source": {
         "authors": "Sender R, Fuchs S, Milo R",
@@ -154,7 +152,7 @@
       "claim": "The subterranean nests of Apicotermes termites, with their parallel floors and connecting ramps, form through local building acts in which new structure changes where later material is likely to be placed.",
       "status": "verified",
       "usedIn": [
-        "essays/beauty-of-systems-nobody-designed.md — flow-2b"
+        "Unplaced — the passage citing it did not survive the four-essay merge, 24 Aug 2026. Verified, not printed, not cited. Recoverable from the eight-essay book on main."
       ],
       "source": {
         "authors": "Heyde A, Guo L, Jost C, Theraulaz G, Mahadevan L",
@@ -170,7 +168,7 @@
       "claim": "Honey-bee cells begin closer to cylinders and become hexagonal through construction behaviour and physical shaping, with new cells starting in the grooves between cells already built. The exact mechanism is still debated.",
       "status": "verified",
       "usedIn": [
-        "essays/beauty-of-systems-nobody-designed.md — flow-2c"
+        "essays/nobody-is-holding-the-drawing.md — s2b"
       ],
       "source": {
         "authors": "Nazzi F",
@@ -186,7 +184,7 @@
       "claim": "Under conditions that block rehearsal and grouping, research on working memory finds a central capacity averaging about four chunks.",
       "status": "verified",
       "usedIn": [
-        "essays/intelligence-outside-your-head.md — marginNote"
+        "essays/nobody-is-holding-the-drawing.md — marginNote"
       ],
       "source": {
         "authors": "Cowan N",
@@ -203,7 +201,7 @@
       "claim": "In a 2000 MRI study, licensed London taxi drivers had greater posterior hippocampal grey-matter volume than controls, and the difference correlated with years spent navigating.",
       "status": "verified",
       "usedIn": [
-        "essays/intelligence-outside-your-head.md — marginNote"
+        "Unplaced — the passage citing it did not survive the four-essay merge, 24 Aug 2026. Verified, not printed, not cited. Recoverable from the eight-essay book on main."
       ],
       "source": {
         "authors": "Maguire EA, Gadian DG, Johnsrude IS, Good CD, Ashburner J, Frackowiak RSJ, Frith CD",
@@ -219,7 +217,7 @@
       "claim": "Four experiments published in 2011 found that people expecting later computer access recalled where information was stored better than the information itself.",
       "status": "verified",
       "usedIn": [
-        "essays/intelligence-outside-your-head.md — marginNote"
+        "essays/nobody-is-holding-the-drawing.md — marginNote"
       ],
       "source": {
         "authors": "Sparrow B, Liu J, Wegner DM",
@@ -235,8 +233,7 @@
       "claim": "An orb web transmits vibration and tension to the spider at its hub, extending the animal's sensing beyond its body.",
       "status": "verified",
       "usedIn": [
-        "essays/intelligence-outside-your-head.md — flow-2c",
-        "intelligence-03-orb-web — figure caption"
+        "essays/nobody-is-holding-the-drawing.md — s4a"
       ],
       "source": {
         "authors": "Japyassú HF, Laland KN",
@@ -252,7 +249,7 @@
       "claim": "Intel introduced the 4004 microprocessor in 1971 with 2,300 transistors on a chip smaller than a fingernail.",
       "status": "verified",
       "usedIn": [
-        "essays/strange-privilege-technological-revolution.md — marginNote"
+        "Unplaced — the passage citing it did not survive the four-essay merge, 24 Aug 2026. Verified, not printed, not cited. Recoverable from the eight-essay book on main."
       ],
       "source": {
         "authors": "Intel Corporation",
@@ -268,7 +265,7 @@
       "claim": "The 2017 transformer paper described a network based on attention rather than recurrence. Its larger model trained for 3.5 days on eight P100 GPUs and set new reported results on two translation tasks.",
       "status": "verified",
       "usedIn": [
-        "essays/strange-privilege-technological-revolution.md — marginNote"
+        "essays/the-strange-privilege.md — marginNote"
       ],
       "source": {
         "authors": "Vaswani A, Shazeer N, Parmar N, Uszkoreit J, Jones L, Gomez AN, Kaiser L, Polosukhin I",
@@ -284,7 +281,7 @@
       "claim": "The AlphaFold Protein Structure Database provides over 200 million predicted protein structures.",
       "status": "verified",
       "usedIn": [
-        "essays/strange-privilege-technological-revolution.md — marginNote"
+        "Unplaced — the passage citing it did not survive the four-essay merge, 24 Aug 2026. Verified, not printed, not cited. Recoverable from the eight-essay book on main."
       ],
       "source": {
         "authors": "EMBL-EBI and Google DeepMind",
@@ -300,7 +297,7 @@
       "claim": "Pew found 52 percent of U.S. adults used the internet in 2000 and 96 percent in 2025. Home broadband was reported by 1 percent of U.S. adults in March 2000.",
       "status": "verified",
       "usedIn": [
-        "essays/last-generation-before-time.md — marginNote"
+        "essays/the-strange-privilege.md — marginNote"
       ],
       "source": {
         "authors": "Pew Research Center",
@@ -316,7 +313,7 @@
       "claim": "Smartphone ownership among U.S. adults rose from 35 percent in Pew's first 2011 measurement to 91 percent in 2025.",
       "status": "verified",
       "usedIn": [
-        "essays/last-generation-before-time.md — marginNote"
+        "essays/the-strange-privilege.md — marginNote"
       ],
       "source": {
         "authors": "Pew Research Center",
@@ -332,7 +329,7 @@
       "claim": "The first SMS message was sent from a computer on 3 December 1992. Early text messages carried a 160-character limit.",
       "status": "verified",
       "usedIn": [
-        "essays/last-generation-before-time.md — marginNote"
+        "essays/the-strange-privilege.md — marginNote"
       ],
       "source": {
         "authors": "Vodafone",
@@ -348,7 +345,7 @@
       "claim": "The Shikoku Henro links 88 temples across Japan's four Shikoku prefectures, covers approximately 1,200 kilometres, and generally takes more than 40 days on foot.",
       "status": "verified",
       "usedIn": [
-        "essays/why-humans-need-pilgrimages.md — marginNote"
+        "Unplaced — the passage citing it did not survive the four-essay merge, 24 Aug 2026. Verified, not printed, not cited. Recoverable from the eight-essay book on main."
       ],
       "source": {
         "authors": "Japan National Tourism Organization",
@@ -364,7 +361,7 @@
       "claim": "Roughly 800 kilometres separate the Pyrenean starting routes from Santiago de Compostela. The Compostela requires stated spiritual or religious motivation and at least the final 100 continuous kilometres on foot.",
       "status": "verified",
       "usedIn": [
-        "essays/why-humans-need-pilgrimages.md — marginNote"
+        "essays/while-were-here-merged.md — marginNote"
       ],
       "source": {
         "authors": "Turespaña",
@@ -380,7 +377,7 @@
       "claim": "UNESCO's French Santiago property includes 71 selected monuments and seven sections of the Chemin du Puy totalling nearly 160 kilometres.",
       "status": "verified",
       "usedIn": [
-        "essays/why-humans-need-pilgrimages.md — marginNote"
+        "Unplaced — the passage citing it did not survive the four-essay merge, 24 Aug 2026. Verified, not printed, not cited. Recoverable from the eight-essay book on main."
       ],
       "source": {
         "authors": "UNESCO World Heritage Centre",
@@ -396,7 +393,7 @@
       "claim": "Sunlight takes about 8 minutes and 20 seconds to reach Earth.",
       "status": "verified",
       "usedIn": [
-        "essays/while-were-here.md — marginNote"
+        "essays/while-were-here-merged.md — marginNote"
       ],
       "source": {
         "authors": "NASA Space Place",
@@ -412,7 +409,7 @@
       "claim": "Earth turns once relative to the Sun in 24 hours and travels around the Sun at roughly 29 to 30 kilometres per second.",
       "status": "verified",
       "usedIn": [
-        "essays/while-were-here.md — marginNote"
+        "essays/while-were-here-merged.md — marginNote"
       ],
       "source": {
         "authors": "NASA Science",
@@ -428,7 +425,7 @@
       "claim": "A healthy adult at rest typically breathes 12 to 20 times each minute, moving about 500 millilitres of air per breath.",
       "status": "verified",
       "usedIn": [
-        "essays/while-were-here.md — marginNote"
+        "Unplaced — the passage citing it did not survive the four-essay merge, 24 Aug 2026. Verified, not printed, not cited. Recoverable from the eight-essay book on main."
       ],
       "source": {
         "authors": "StatPearls",
@@ -444,8 +441,7 @@
       "status": "verified",
       "claim": "A Komodo dragon samples the air with its forked tongue and presses the tips to paired Jacobson's organs in the roof of its mouth. A stronger reading on one tip than the other tells it which way the scent is coming from.",
       "usedIn": [
-        "essays/intelligence-outside-your-head.md — specimen card",
-        "specimen-01-komodo-tongue — label"
+        "Unplaced — the passage citing it did not survive the four-essay merge, 24 Aug 2026. Verified, not printed, not cited. Recoverable from the eight-essay book on main."
       ],
       "source": {
         "authors": "Smithsonian's National Zoo and Conservation Biology Institute",
@@ -461,8 +457,7 @@
       "status": "verified",
       "claim": "Queen butterflies feed on milkweed as larvae and carry cardenolides into adulthood, as monarchs do. The two are co-mimics rather than one copying the other: a predator that learns to avoid either pattern avoids both.",
       "usedIn": [
-        "essays/beauty-of-systems-nobody-designed.md — specimen card",
-        "specimen-02-queen-butterfly — label"
+        "Unplaced — the passage citing it did not survive the four-essay merge, 24 Aug 2026. Verified, not printed, not cited. Recoverable from the eight-essay book on main."
       ],
       "source": {
         "authors": "Ritland DB",
@@ -478,7 +473,7 @@
       "claim": "A personal Facebook data export generated on 19 August 2026 lists 31 categories the platform used to reach the author, among them \"Away from family\", \"Away from hometown\" and \"Family of those who live abroad\".",
       "status": "verified",
       "usedIn": [
-        "essays/the-secret-life-of-attention.md — reproduced record"
+        "essays/most-of-life-is-a-tuesday.md — reproduced record"
       ],
       "source": {
         "authors": "Meta Platforms",
@@ -495,7 +490,7 @@
       "status": "verified",
       "claim": "A personal Facebook data export generated on 19 August 2026 lists 7,325 unique advertisers holding or having used the author's activity or information, across 7,499 entries.",
       "usedIn": [
-        "essays/strange-privilege-technological-revolution.md — reproduced record"
+        "essays/the-strange-privilege.md — marginNote"
       ],
       "source": {
         "authors": "Meta Platforms",
@@ -511,7 +506,7 @@
       "status": "verified",
       "claim": "A personal Facebook data export generated on 19 August 2026 lists 23 cities the author has checked into, five of them in Door County, Wisconsin.",
       "usedIn": [
-        "essays/why-humans-need-pilgrimages.md — reproduced record"
+        "essays/while-were-here-merged.md — reproduced record"
       ],
       "source": {
         "authors": "Meta Platforms",
@@ -543,7 +538,7 @@
       "claim": "Habituation — a declining response to a stimulus that repeats without consequence — is one of the most widely observed forms of learning, found across species from single-celled organisms to humans, and it reverses when the stimulus changes.",
       "status": "verified",
       "usedIn": [
-        "essays/why-ordinary-days-may-be-the-point-of-life.md — marginNote"
+        "essays/most-of-life-is-a-tuesday.md — marginNote"
       ],
       "source": {
         "authors": "Rankin CH, Abrams T, Barry RJ, Bhatnagar S, Clayton DF, Colombo J, et al.",

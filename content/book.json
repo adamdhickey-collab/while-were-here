@@ -33,11 +33,7 @@
     },
     {
       "type": "essay",
-      "source": "essays/why-ordinary-days-may-be-the-point-of-life.md"
-    },
-    {
-      "type": "essay",
-      "source": "essays/the-secret-life-of-attention.md"
+      "source": "essays/most-of-life-is-a-tuesday.md"
     },
     {
       "type": "field-note",
@@ -49,11 +45,7 @@
     },
     {
       "type": "essay",
-      "source": "essays/beauty-of-systems-nobody-designed.md"
-    },
-    {
-      "type": "essay",
-      "source": "essays/intelligence-outside-your-head.md"
+      "source": "essays/nobody-is-holding-the-drawing.md"
     },
     {
       "type": "field-note",
@@ -65,15 +57,7 @@
     },
     {
       "type": "essay",
-      "source": "essays/strange-privilege-technological-revolution.md"
-    },
-    {
-      "type": "essay",
-      "source": "essays/last-generation-before-time.md"
-    },
-    {
-      "type": "field-note",
-      "source": "field-notes/03-the-street.md"
+      "source": "essays/the-strange-privilege.md"
     },
     {
       "type": "divider",
@@ -81,15 +65,7 @@
     },
     {
       "type": "essay",
-      "source": "essays/why-humans-need-pilgrimages.md"
-    },
-    {
-      "type": "essay",
-      "source": "essays/while-were-here.md"
-    },
-    {
-      "type": "field-note",
-      "source": "field-notes/04-the-fire.md"
+      "source": "essays/while-were-here-merged.md"
     },
     {
       "type": "handed-over",

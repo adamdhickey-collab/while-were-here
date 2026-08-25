@@ -375,6 +375,26 @@ ${['geometry.css', ...STYLES].map((h) => `<link rel="stylesheet" href="${h}">`).
 }
 
 function indexDoc(book, count) {
+  /* DERIVED, both of them. The spread count read "68" as a literal here and in
+     verify.mjs until 25 Aug 2026 — right for the eight-essay book, still printed
+     after the condensed edition dropped to 50. A number on a page that nothing
+     measured is a number that will be wrong exactly when it matters, and this
+     one sat on the site's front door.
+
+     `otherEdition` is what makes the two builds findable from each other. The
+     site publishes this book at / and the four-essay cut at /condensed/, so the
+     link points down from one and back up from the other. WHICH edition is being
+     built is read from the page count rather than a branch name, because the
+     branch is not knowable inside the build and the page count is. */
+  const spreadPdf = path.join(root, 'public', 'download', 'while-were-here-spreads.pdf');
+  let spreadCount = '—';
+  try {
+    const raw = fs.readFileSync(spreadPdf).toString('latin1');
+    spreadCount = (raw.match(/\/Type\s*\/Page[^s]/g) || []).length || '—';
+  } catch { /* no spreads built yet — the dash is honest */ }
+  const otherEdition = count > 100
+    ? { href: 'condensed/', label: 'The condensed edition', note: 'four essays &nbsp;·&nbsp; 94 pp' }
+    : { href: '../', label: 'The full edition', note: 'eight essays &nbsp;·&nbsp; 130 pp' };
   return `<!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8">
 <title>${esc(book.title)} — production</title>
@@ -398,7 +418,7 @@ ${['geometry.css', ...STYLES].map((h) => `<link rel="stylesheet" href="${h}">`).
 <body><div class="hub">
   <h1>While We’re Here</h1>
   <p class="sub">${esc(book.author)} &nbsp;·&nbsp; prototype</p>
-  <a href="download/while-were-here-spreads.pdf"><b>Read it as spreads</b><span>68 spreads &nbsp;·&nbsp; PDF &nbsp;·&nbsp; the real typeface</span></a>
+  <a href="download/while-were-here-spreads.pdf"><b>Read it as spreads</b><span>${spreadCount} spreads &nbsp;·&nbsp; PDF &nbsp;·&nbsp; the real typeface</span></a>
   <a href="preview.html"><b>Spread preview</b><span>${count} pp &nbsp;·&nbsp; guides &amp; navigation</span></a>
   <a href="book.html"><b>Print document</b><span>raw pages &nbsp;·&nbsp; no chrome</span></a>
   <a href="cover-wrap.html"><b>Cover wrap</b><span>back | spine | front</span></a>
@@ -406,6 +426,7 @@ ${['geometry.css', ...STYLES].map((h) => `<link rel="stylesheet" href="${h}">`).
   <a href="back-options.html"><b>Back cover options</b><span>botanical | seed &mdash; question 11</span></a>
   <a href="direction.html"><b>Art direction</b><span>stages · spectrum · voices</span></a>
   <a href="type.html"><b>Type tester</b><span>candidate stacks at trim size</span></a>
+  <a href="${otherEdition.href}"><b>${otherEdition.label}</b><span>${otherEdition.note}</span></a>
   <footer>
     ${geometry.trimWidth} × ${geometry.trimHeight} mm trim &nbsp;·&nbsp; ${geometry.bleed} mm bleed
     &nbsp;·&nbsp; spine <b>${spineWidth()} mm</b> provisional.<br>

@@ -204,9 +204,21 @@ export const coverBack = (bookData, ctx, variant) => {
        and the field is no longer empty — the artwork carries a dozen marks of
        its own. Restoring it is one line if the board ever wants it back. */
     html: `
-      ${key === 'seed' ? `<div class="cover-back__plate">${figure(art, { root: ctx.root })}</div>` : ''}
       <div class="cover__inner">
         <p class="cover-back__line">${esc(bookData.backCoverLine)}</p>
+        ${/* The seed plate is a GRID CHILD, not an absolutely positioned sibling
+              behind the type. It was the latter while the artwork covered the
+              whole board and the words sat on top of it; once it was inset to
+              the middle of the board on 25 Aug 2026 there was nothing left for
+              it to sit behind, and absolute placement meant its position was
+              two percentages that knew nothing about where the type actually
+              ended. They were wrong: the drawing overlapped the line above it
+              by 3.5 mm and left 18.8 mm below, measured off the press PDF.
+
+              In the `1fr` row it is centred in whatever space the two text
+              blocks leave, so the padding above and below is equal by
+              construction and stays equal if either block rewraps. */''}
+        ${key === 'seed' ? `<div class="cover-back__plate">${figure(art, { root: ctx.root })}</div>` : ''}
         ${key === 'seed' ? '' : `<div class="cover-back__art">${figure(art, { root: ctx.root })}</div>
         <div class="cover-back__mark">${radiant(15)}</div>`}
         <div class="cover-back__meta">
@@ -734,8 +746,26 @@ export const handedOver = (data, ctx) => ({
 
 /* ---- Essay spreads ------------------------------------------------------- */
 
+/* `variant: plate` — the opener's photograph presented as an object on the page
+   rather than run to the bleed.
+
+   It exists for one picture. before-time-01-father-portrait is a studio frame
+   from a Facebook archive at 1272 x 1272 px native, and nothing larger exists.
+   Across a 300 mm bleed that is 108 dpi, which is soft on paper at arm's
+   length; inside a 150 mm plate it is 215 dpi. The alternative was to replace
+   the photograph, and it is the wrong one — an editor reading the condensed
+   edition on 26 Aug 2026 identified this portrait as the reason Part III's
+   merge works, because a single unrepeatable frame is precisely the argument
+   the essay opens with.
+
+   Which is also why the smaller treatment is not a compromise. The essay is
+   about a world where a photograph was one frame, delayed, unrevisable, and
+   printed at a size somebody chose. Presenting it as a bordered plate on a dark
+   ground says that; a full-bleed immersive crop says the opposite, and says it
+   at 108 dpi. */
 const openerSpread = (spread, essay, ctx) => {
   const over = spread.variant === 'over';
+  const plate = spread.variant === 'plate';
   const img = ctx.image(spread.image);
   return {
   pair: true,
@@ -743,13 +773,15 @@ const openerSpread = (spread, essay, ctx) => {
     {
       spread: over ? 'essay opener · over' : 'essay opener',
       folio: false,
-      cls: 'opener opener__verso' + (over ? ' opener--over' : ''),
-      html: figure(img, {
-        className: 'figure--bleed',
-        half: over ? 'left' : null,
-        inverse: true,
-        root: ctx.root,
-      }),
+      cls: 'opener opener__verso' + (over ? ' opener--over' : '') + (plate ? ' opener--plate' : ''),
+      html: plate
+        ? `<div class="opener__plate">${figure(img, { root: ctx.root })}</div>`
+        : figure(img, {
+          className: 'figure--bleed',
+          half: over ? 'left' : null,
+          inverse: true,
+          root: ctx.root,
+        }),
     },
     {
       spread: over ? 'essay opener · over' : 'essay opener',

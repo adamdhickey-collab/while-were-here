@@ -542,16 +542,72 @@
    border box and collapses to nothing on a proof, where --bleed-out is 0. */
 .cover-back--seed { box-shadow: 0 0 0 var(--bleed-out) var(--linen); }
 
+/* THE DRAWING IS CENTRED BETWEEN THE TWO TEXT BLOCKS, not pinned to the board.
+
+   It used to be `position: absolute; inset: 19% 0 24% 0; z-index: -1` — a
+   holdover from the full-board version, where the artwork ran edge to edge and
+   the type sat on top of it. Once it was inset on 25 Aug 2026 the type moved
+   onto real paper and there was nothing to sit behind, but the absolute
+   placement stayed, and two percentages of the board know nothing about where
+   the words actually end. Measured off the press PDF on 26 Aug: the drawing
+   OVERLAPPED the line above it by 3.5 mm and left 18.8 mm below it.
+
+   As a grid child in the `1fr` row it is centred in whatever the two text
+   blocks leave, so the two gaps are equal by construction — and stay equal if
+   the line or the blurb is ever reworded into a different number of lines,
+   which is exactly what the percentages could not survive.
+
+   THE BOX IS NOT THE DRAWING. cover-04-seed-section.png carries its own cream
+   margin, and it is not symmetrical: the ink runs from 4.7% to 94.0% of the
+   file's height, so centring the box leaves the drawing sitting 0.65% of its
+   own height high. At this size that is 1.95 mm between the two gaps, and that
+   is visible when the whole point is that they match. `margin-top` puts it
+   back — at TWICE the correction wanted, because a margin on a `place-self:
+   center` item does not translate it, it centres it inside the space the margin
+   leaves, so the item moves by half. 1.95 mm of margin buys 0.98 mm of shift,
+   which is the half of 1.95 that closes the gap from both ends. Re-measure both
+   constants if the artwork is ever redrawn.
+
+   Size is set here rather than left to the row, because "fill the gap" would
+   make the drawing grow whenever the copy got shorter. 150 mm against the
+   171 mm it was: smaller, and the ink with it — 153 mm of drawing down to
+   134 mm. */
 .cover-back--seed .cover-back__plate {
-  position: absolute;
-  inset: 19% 0 24% 0;
+  width: 150mm;
+  height: 150mm;
+  place-self: center;
+  margin-top: 1.95mm;
+  position: relative;
+  /* UNDER THE BOARD'S OWN LIGHT. `.cover::before` paints the linen texture and
+     the two radial gradients across the whole board, and the drawing has to be
+     beneath that layer or it reads as a rectangle pasted on top of it.
+
+     The artwork is a solid cream field — RGB 238,232,219, no alpha — and the
+     board is not flat: the gradients run 238 at the head to 222 at the foot.
+     Measured on the press PDF with the plate painting above them, its top edge
+     stepped 7 levels and its foot 9, in opposite directions, which is a visible
+     horizontal seam straight across the board. Exactly the fault the veils
+     produced in August, from the same cause: something opaque laid over the
+     board instead of under its finish.
+
+     The old absolute rule carried `z-index: -1` and that is the half of it
+     worth keeping. Backgrounds paint first, then negative-z descendants, then
+     positioned descendants at auto — so the drawing lands on the linen and the
+     texture and gradients wash over it, which is what makes it look printed on
+     the board rather than stuck to it. */
   z-index: -1;
 }
 .cover-back--seed .cover-back__plate .figure { position: absolute; inset: 0; background: transparent; }
+/* No mask. There was a `mask-image` fading the top and bottom ninth of this
+   image, added during the hunt for the hard edge the veils were making. It
+   never did anything to the book: Vivliostyle does not implement mask-image, so
+   the press PDF has always rendered the drawing whole, and the ink in it ends
+   at 217.9 mm against the 217.7 mm the unmasked geometry predicts. All it did
+   was make the browser preview disagree with the printed page about what the
+   back cover looks like. The join it was aimed at was fixed by deleting the
+   veils. */
 .cover-back--seed .cover-back__plate img {
   width: 100%; height: 100%; object-fit: contain; object-position: center;
-  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, #000 9%, #000 91%, transparent 100%);
-          mask-image: linear-gradient(to bottom, transparent 0%, #000 9%, #000 91%, transparent 100%);
 }
 
 /* THE VEILS ARE GONE, 25 Aug 2026, and removing them is what fixed the join.
@@ -583,8 +639,11 @@
    Three children now, not five — the artwork left the block and the mark is not
    emitted. Row two takes the slack, so the line holds the head and the blurb
    and coda sit down at the foot. */
+/* Four children now: the line, the plate, the meta, the coda. The plate joined
+   the block on 26 Aug 2026 — see the note beside .cover-back__plate — and it
+   takes the `1fr` row, which is what centres it between the two text blocks. */
 .cover-back--seed .cover__inner {
-  grid-template-rows: auto 1fr auto;
+  grid-template-rows: auto 1fr auto auto;
   justify-items: center;
   text-align: center;
 }

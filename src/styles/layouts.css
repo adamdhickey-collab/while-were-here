@@ -31,6 +31,38 @@
    .figure--bleed for why the inset version loses its bottom edge. */
 .opener__verso .figure { position: absolute; inset: 0; transform: scale(var(--bleed-scale)); }
 
+/* The `plate` variant: the photograph centred on the page at a chosen size,
+   with the ground around it, instead of run to the bleed. See the note beside
+   `openerSpread` for why — the short version is that the one photograph using
+   this is 1272 px native, which is 108 dpi across 300 mm and 215 dpi at 150 mm,
+   and it is a picture about single unrepeatable frames.
+
+   The `position: absolute; inset: 0` above is overridden rather than avoided,
+   because `.opener__verso .figure` would otherwise still pull the image to the
+   page edges from inside the plate. The bleed scale goes with it: nothing here
+   crosses a trim, so there is nothing to scale out.
+
+   150 mm on a 300 mm page is the picture at half the trim, which leaves the
+   ground reading as a mount rather than as a margin that ran out. */
+.opener--plate .opener__plate {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 150mm;
+  height: 150mm;
+  transform: translate(-50%, -50%);
+}
+.opener--plate .opener__plate .figure {
+  position: absolute;
+  inset: 0;
+  transform: none;
+}
+.opener--plate .opener__plate img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .opener__recto .page__block { align-content: space-between; }
 .opener__eyebrow {
   grid-column: 1 / 13;

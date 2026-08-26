@@ -52,20 +52,22 @@ most likely to disappoint on paper. Three full-bleed 300 mm pages come from a
 | Page | Image | Effective |
 |---|---|---:|
 | Part II opener | `systems-01-observation-hive` | **81 dpi** |
-| Part III opener | `before-time-01-father-portrait` | **108 dpi** |
+| Part III opener | `before-time-01-father-portrait` | ~~108 dpi~~ → **215 dpi** |
 | Part IV divider | *was* `part-4-divider-return` | screen-printed to hide it |
 
-The divider is fixed — it is now a real photograph at 254 dpi. The two openers
-are not, and both were knowing trades recorded in `content/images.json`: a real
-photograph at 81 dpi was chosen over a generated plate at 87 dpi.
+Two of the three are fixed. The divider is a real photograph at 254 dpi. The
+father's portrait stopped running at full bleed on 26 Aug — Adam's call — and is
+now a 150 mm plate on the dark ground at 215 dpi, which is also the better
+treatment for a photograph about single unrepeatable frames.
 
-The father's portrait is the one that matters, because the review singled it out
-as the reason Part III's merge works. Do not replace it. If 108 dpi is too soft
-on paper, the move is to stop running it at full bleed — at 150 mm it is 215 dpi,
-and a smaller portrait with paper around it is a legitimate opener, arguably a
-better one for a photograph about a single unrepeatable frame.
+**The observation hive is the one left.** 81 dpi across a 300 mm bleed is the
+softest thing in the book by a wide margin, and it opens Part II. The same fix
+is available and costs nothing but a decision: at 150 mm it is 163 dpi, at
+120 mm it is 203. It was a knowing trade recorded in `content/images.json` — a
+real photograph at 81 dpi over a generated plate at 87 — and that trade was
+about which IMAGE, not about what size to print it.
 
-Everything else in the book: 49 images at 300 dpi or better, 10 between 200 and
+Everything else in the book: 51 images at 300 dpi or better, 10 between 200 and
 299. `npm run dpi` prints the current table.
 
 ## 3. Ink and ground

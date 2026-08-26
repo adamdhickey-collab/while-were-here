@@ -12,7 +12,7 @@ dateline: Written in 2026, while these rules were still unsettled.
 progression: the unrevisable portrait → the before-time → what changed → the comparison → and again, now → furniture → the costs → the map beside the blue line
 spreads:
   - type: opener
-    variant: facing
+    variant: plate
     image: before-time-01-father-portrait
     blocks: [open]
   - type: reading

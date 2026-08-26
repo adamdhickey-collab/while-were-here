@@ -11,7 +11,4 @@ statement: >-
   Nothing here is permanent.
   Nothing here is therefore smaller.
 blurb: Distance, arrival, ordinary rooms, and the time we get to spend in them together.
-essays:
-  - The Body Cannot Skip the Hill
-  - While We’re Here
 ---

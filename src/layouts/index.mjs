@@ -25,7 +25,16 @@ const nb = (s = '') => String(s).replace(/ (\w{1,3})$/, '&nbsp;$1');
 
    `stage` remains in the section frontmatter and still drives the page's tone —
    it just no longer prints. Do not reintroduce a numeral here without deciding
-   what Part II's divider says about containing two of them. */
+   what Part II's divider says about containing two of them.
+
+   The divider also once listed its part's essays. That list was hand-typed in
+   each section file while contents.json held the same fact, and when the book
+   merged eight essays into four only one of the two copies was updated — so for
+   three days every divider announced essays the book no longer contained. It is
+   gone rather than corrected: each part now holds one essay whose opener is the
+   very next spread, so the list was restating, one page early, something the
+   reader is about to be told. contents.json is now the only list of essays in
+   the project, and `contents-drift` proves it against the essay files. */
 
 /* Counts on the contents page are set as words, and they are derived rather
    than typed so that re-pacing the book cannot leave the page lying. */
@@ -584,9 +593,6 @@ export const divider = (section, ctx) => ({
           </div>
           <div class="divider__foot">
             <p class="specimen divider__blurb">${esc(section.blurb)}</p>
-            <ol class="divider__essays">
-              ${(section.essays || []).map((e) => `<li><span class="divider__essay-n"></span>${esc(e)}</li>`).join('')}
-            </ol>
           </div>
         </div>`,
     },
@@ -669,6 +675,7 @@ export const handedOver = (data, ctx) => ({
     html: `
       <div class="page__block">
         <p class="meta meta--rust handed__eyebrow">${esc(data.eyebrow)}</p>
+        ${data.note ? `<p class="handed__note">${esc(data.note)}</p>` : ''}
         <ol class="handed__list">
           ${data.entries.map((e, n) => `
             <li class="handed__item">

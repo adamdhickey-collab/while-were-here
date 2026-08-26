@@ -1199,9 +1199,26 @@
 /* Two rows: the eyebrow pins to the top margin, the catalogue takes the rest
    and centres optically inside it. Without the explicit 1fr the block's rows
    both size to content and the entries ride high with a dead third beneath. */
-.page.handed .page__block { grid-template-rows: auto 1fr; }
+.page.handed .page__block { grid-template-rows: auto auto 1fr; }
 
 .handed__eyebrow { grid-column: 1 / -1; align-self: start; }
+
+/* One sentence of setup, added 26 Aug 2026. Without it the two objects read as
+   an unexplained appendix: the reader has to work out for themselves why a
+   handmade book and a child's bound complaint are the last thing in a book
+   about attention. It sits under the eyebrow rather than beside the plates so
+   it reads as the page's premise and not as a caption on either object. The
+   measure is short on purpose — this is a colophon, not a paragraph. */
+.handed__note {
+  grid-column: 1 / -1;
+  align-self: start;
+  max-width: 96mm;
+  margin: 5mm 0 0;
+  font-size: 9.5pt;
+  line-height: 1.5;
+  color: var(--ink-soft);
+  text-wrap: balance;
+}
 
 .handed__list {
   grid-column: 1 / -1;

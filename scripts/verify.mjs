@@ -736,9 +736,39 @@ check('vertical text declares text-orientation', vertical.length === 0,
 /* A claim can be used in two places, so there are two legal address forms: an
    essay ("essays/x.md — block") for body copy and margin notes, and an image id
    ("specimen-01-komodo-tongue — label") for a caption or a specimen label. Both
-   are checked against the thing they name. The stale five matched neither. */
+   are checked against the thing they name. The stale five matched neither.
+
+   Every tail is checked now. Until 26 Aug 2026 this read "only check it when it
+   looks like a block id", which skipped the two tails that are words rather
+   than ids — `marginNote` and `reproduced record` — and that hole is how four
+   citations for claims this edition does not make reached a reviewer: the
+   human/bacterial cell counts, the Google-effects memory study, the 2017
+   transformer paper, and the first SMS. All four were margin notes that the
+   four-essay merge deleted while leaving the ledger pointing at them. Nine
+   sibling facts were correctly marked Unplaced in that same pass; these four
+   were missed because that pass looked for facts whose ESSAY FILE had gone, and
+   both of these files survived the merge intact.
+
+   No text matching is involved, and that is the point. `every placed fact is
+   still on the page`, thirty lines below, asks the same question by counting
+   how many of a claim's words appear in the book, and on the faulty build these
+   four scored 55%, 69%, 63% and 78% against its 55% floor — their words are
+   ordinary English the book uses for other reasons ("cells", "human", "memory",
+   "message", "first", "limit"), the same collision the block-island note
+   describes. Dropping that floor far enough to catch them would fail the spider
+   web at 62%. No threshold separates the two sets, because word overlap is not
+   what went wrong. The address is, and an address is exact.
+
+   Margin notes are checked by COUNT rather than by matching each fact to a
+   specific note: a fact says only "a margin note in this essay", so all this
+   can prove is that the claims do not outnumber the notes. That is enough —
+   four facts cannot fit in three margin notes — and it avoids inventing a
+   fact-to-note mapping that nothing else needs and that would drift in its own
+   right, which is the failure this whole file exists to prevent. */
 const imageIds = new Set(images.map((i) => i.id));
 const badUse = [];
+const noteClaims = new Map();
+const essaySrc = (file) => fs.readFileSync(file, 'utf8');
 for (const f of facts) {
   for (const u of f.usedIn || []) {
     if (String(u).startsWith('Unplaced')) continue;      // deliberately not on a page
@@ -748,21 +778,35 @@ for (const f of facts) {
     if (!m) { badUse.push(`${f.id}: "${String(u).slice(0, 40)}" is not an address`); continue; }
     const file = P('content', m[1]);
     if (!fs.existsSync(file)) { badUse.push(`${f.id}: ${m[1]} does not exist`); continue; }
-    /* The tail after the em dash may name a block or describe a slot
-       ("marginNote"). Only check it when it looks like a block id. */
     const tail = (m[2] || '').trim();
-    if (/^[a-z0-9-]+$/.test(tail) && tail !== 'marginNote') {
-      const src = fs.readFileSync(file, 'utf8');
-      if (!new RegExp(`<!--\\s*block:\\s*${tail}\\s*-->`, 'i').test(src)) {
+    if (tail === 'marginNote') {
+      if (!noteClaims.has(m[1])) noteClaims.set(m[1], { file, ids: [] });
+      noteClaims.get(m[1]).ids.push(f.id);
+    } else if (tail === 'reproduced record') {
+      if (!/^\s*record:/m.test(essaySrc(file))) {
+        badUse.push(`${f.id}: ${m[1]} has no reproduced record`);
+      }
+    } else if (/^[a-z0-9-]+$/.test(tail)) {
+      if (!new RegExp(`<!--\\s*block:\\s*${tail}\\s*-->`, 'i').test(essaySrc(file))) {
         badUse.push(`${f.id}: ${m[1]} has no block "${tail}"`);
       }
     }
   }
 }
+let noteSlots = 0;
+for (const [name, { file, ids }] of noteClaims) {
+  const have = (essaySrc(file).match(/^\s*marginNote:/gm) || []).length;
+  noteSlots += have;
+  if (ids.length > have) {
+    badUse.push(`${name}: ${ids.length} facts claim a margin note, the essay declares ${have} (${ids.join(', ')})`);
+  }
+}
+const noteClaimed = [...noteClaims.values()].reduce((n, v) => n + v.ids.length, 0);
 check('every fact says where it is used, and means it', badUse.length === 0,
   badUse.length ? badUse.join(' · ')
-    : `${facts.length} facts, every usedIn resolves to a file and block that exist, `
-      + `or is marked Unplaced`);
+    : `${facts.length} facts, every usedIn resolves to a file, block or record that `
+      + `exists, or is marked Unplaced · ${noteClaimed} margin-note claims against `
+      + `${noteSlots} declared notes`);
 
 /* 18. Facts that are verified but have not reached a page.
 
@@ -794,7 +838,18 @@ check('every fact says where it is used, and means it', badUse.length === 0,
    62%, and its missing words are `sensing` against the book's `sense` and
    `extending` against `extends`. Nothing is near the floor, so 55% sits well
    below the real distribution rather than being tuned to pass. */
-const printedLower = text.toLowerCase();
+/* The sources page is cut out before the words are counted. It prints each
+   claim's own title, so leaving it in lets a citation stand as evidence for
+   itself: `first-sms-and-character-limit` scored 89% with the page included and
+   78% without, and `human-and-bacterial-cell-counts` 64% against 55%. Neither
+   would have crossed the floor either way — see the check below for what
+   actually caught them — but a check that reads its own output is worth
+   nothing, and it should not have been reading it. */
+const printedLower = html
+  .replace(/<section class="page[^>]*>(?:(?!<section class="page)[\s\S])*?Sources[\s\S]*?<\/section>/, '')
+  .replace(/<(script|style)[^>]*>[\s\S]*?<\/\1>/g, '')
+  .replace(/<[^>]+>/g, ' ').replace(/&nbsp;/g, ' ')
+  .toLowerCase();
 const STOP = new Set(['about','above','after','their','there','these','those','which','while','would','because','between','through','around','other','under','where','with','from','that','this','than','then','they','been','have','into','more','most','only','over','some','such','were','when']);
 const overlap = (f) => {
   const w = [...new Set((f.claim.toLowerCase().match(/[a-z]{5,}/g) || []))].filter((x) => !STOP.has(x));

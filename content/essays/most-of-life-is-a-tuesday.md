@@ -5,7 +5,7 @@ part: I
 stage: 1
 partTitle: Look Again
 title: Most of Life Is a Tuesday
-deck: Attention is not a beam you point at the world. It is the thing quietly deciding what the world is going to be.
+deck: Almost everything happens between the moments we think are important — and attention decides whether we notice.
 runningHead: Most of Life Is a Tuesday
 readingTime: 9
 progression: the ordinary claim → the maple → attention as editor → who directs it → slowness → repetition → people → the accounting → return

@@ -77,15 +77,36 @@ const MUTATIONS = [
     from: 'around eighty-five times a day', to: 'around ninety-three times a day',
     expect: 'every number in a margin note', why: 'a SPELLED-OUT figure not in the ledger' },
 
+  /* These four all aim at `every fact says where it is used, and means it`, one
+     per address form it accepts, because the check's coverage has been uneven
+     twice. The first two anchored on the-secret-life-of-attention.md until
+     26 Aug 2026 and went stale the moment the four-essay merge deleted that
+     file — they reported themselves stale rather than passing, which is the
+     only reason the gap was visible at all. The last two are new that day, for
+     the two tails the check did not read until then: `marginNote` and
+     `reproduced record` were skipped as "not block-shaped", and six citations
+     for claims this edition does not make reached a reviewer through that hole. */
   { id: 'fact-usedin-shape', file: 'content/facts.json',
-    from: '"essays/the-secret-life-of-attention.md — marginNote"',
+    from: '"essays/nobody-is-holding-the-drawing.md — marginNote"',
     to:   '"photo 177 — specimen label"',
     expect: 'every fact says where it is used', why: 'a usedIn that resolves to nothing' },
 
   { id: 'fact-usedin-block', file: 'content/facts.json',
-    from: '"essays/the-secret-life-of-attention.md — marginNote"',
-    to:   '"essays/the-secret-life-of-attention.md — flow-99z"',
+    from: '"essays/while-were-here-merged.md — s5a"',
+    to:   '"essays/while-were-here-merged.md — flow-99z"',
     expect: 'every fact says where it is used', why: 'a usedIn naming a block that does not exist' },
+
+  { id: 'fact-usedin-marginnote', file: 'content/facts.json',
+    from: '"essays/while-were-here-merged.md — s5a"',
+    to:   '"essays/while-were-here-merged.md — marginNote"',
+    expect: 'every fact says where it is used',
+    why: 'more facts claiming a margin note than the essay declares' },
+
+  { id: 'fact-usedin-record', file: 'content/facts.json',
+    from: '"essays/the-strange-privilege.md — reproduced record"',
+    to:   '"essays/while-were-here-merged.md — reproduced record"',
+    expect: 'every fact says where it is used',
+    why: 'a citation for a reproduced record the essay does not carry' },
 
   { id: 'vertical-orientation', file: 'src/styles/cover.css',
     from: 'text-orientation: sideways;', to: '/* mutated */',

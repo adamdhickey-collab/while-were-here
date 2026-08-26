@@ -11,7 +11,4 @@ statement: >-
   Nothing in this part is unfamiliar.
   That is the whole of the difficulty.
 blurb: Attention, beauty, and the case for the ordinary day.
-essays:
-  - Most of Life Is a Tuesday
-  - The Secret Life of Attention
 ---

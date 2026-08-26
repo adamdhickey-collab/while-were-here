@@ -113,5 +113,7 @@
       "type": "cover-back"
     }
   ],
-  "dedication": "For my parents, who taught me to look, and for Fabiola, who looks with me"
+  "dedication": "For my parents, who taught me to look, and for Fabiola, who looks with me",
+  "edition": "expanded",
+  "$comment_edition": "Which of the two published builds this branch is. \"reading\" is the four-essay book at /condensed/ — the one to read. \"expanded\" is this eight-essay build, kept because the material cut from the other one still lives here. The site cross-link reads this rather than inferring the edition from the page count, which it did until the four-essay book reached exactly the 100-page threshold that test used."
 }

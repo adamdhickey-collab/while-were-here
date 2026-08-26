@@ -179,6 +179,9 @@ function compose(book, toc, folios = {}) {
       case 'handed-over':
         place(L.handedOver(item, ctxBase));
         break;
+      case 'back-matter':
+        place(L.backMatter(book, Object.values(imagesById)), { prefersRecto: true });
+        break;
       case 'dedication':
         place(L.dedication(book));
         break;
@@ -392,9 +395,29 @@ function indexDoc(book, count) {
     const raw = fs.readFileSync(spreadPdf).toString('latin1');
     spreadCount = (raw.match(/\/Type\s*\/Page[^s]/g) || []).length || '—';
   } catch { /* no spreads built yet — the dash is honest */ }
-  const otherEdition = count > 100
-    ? { href: 'condensed/', label: 'The condensed edition', note: 'four essays &nbsp;·&nbsp; 94 pp' }
-    : { href: '../', label: 'The full edition', note: 'eight essays &nbsp;·&nbsp; 130 pp' };
+  /* Which edition this is comes from book.json, not from arithmetic on the page
+     count. It was `count > 100` until 26 Aug 2026, chosen when the two builds
+     were 130 and 94 pages and the midpoint looked safe. The four-essay edition
+     then reached exactly 100 — the pair restored to the closing spread and the
+     apparatus moved to the back — and the test was one spread away from
+     inverting, at which point each edition would have linked to itself and
+     described the other. `edition` is a fact about the branch's content and it
+     cannot drift into the wrong answer.
+
+     Neither link carries the other edition's page count any more. This build
+     cannot measure the other build, so that number could only ever be typed,
+     and both typed numbers were wrong: the four-essay edition was announced as
+     94 pp here while it was 96, then 98, then 100. The essay count is the thing
+     that actually distinguishes them, it is derived from contents.json below,
+     and it is the reason a reader would follow the link at all.
+
+     The four-essay book is not called "the condensed edition" on the page. It
+     is the book; the other one is where the material it was cut from still
+     lives. The /condensed/ URL stays as it is, because it is already published
+     and a name is not worth a dead link. */
+  const otherEdition = book.edition === 'expanded'
+    ? { href: 'condensed/', label: 'While We’re Here', note: 'the edition to read' }
+    : { href: '../', label: 'The expanded edition', note: 'the essays and spreads this one leaves out' };
   return `<!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8">
 <title>${esc(book.title)} — production</title>

@@ -8,6 +8,7 @@ title: The Strange Privilege
 deck: The rare condition is not living after a transformation, but living while its rules are still unsettled.
 runningHead: The Strange Privilege
 readingTime: 8
+dateline: Written in 2026, while these rules were still unsettled.
 progression: the unrevisable portrait → the before-time → what changed → the comparison → and again, now → furniture → the costs → the map beside the blue line
 spreads:
   - type: opener

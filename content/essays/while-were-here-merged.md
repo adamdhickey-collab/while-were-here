@@ -93,13 +93,19 @@ spreads:
     blocks: [s6a, s6b]
     insetOn: recto
     inset:
-      image: here-05-evening-wall
-      caption: The room is doing this whether or not anyone is in it.
+      image: here-08-dog-resting
+      caption: Resting, and not in charge of most of it.
   - type: closing
     line: While we are here, we answer when we can.
     coda: The pot will boil while the dog wakes.
-    image: here-10-ano-viejo-burning
     blocks: [close]
+  - type: facing-pair
+    images:
+      - here-09-ano-viejo
+      - here-10-ano-viejo-burning
+    captions:
+      - "An Año Viejo — the old year, built as a figure — waiting in the street. Tunja, Colombia, 31 December, 18:20."
+      - "Burned at midnight, so that the year goes with it. 1 January, 00:09."
 ---
 
 <!-- block: open -->
@@ -182,23 +188,20 @@ something that ordinary language cannot carry alone. Effort creates a boundary
 around the visit. The person arrives having paid in time rather than simply
 having appeared.
 
-This can be manipulated. Commercial routes can sell difficulty as identity. A
-crowded path can become a queue of private performances. Suffering can be treated
-as proof that the traveler deserves an answer. The road owes none. Distance does
-not make a person wise, and pain is not automatically meaningful. The value lies
-in the conditions the route creates. Progress becomes slow enough to notice.
-Dependence becomes visible. A purpose has to survive boredom and bad weather. The
-traveler can still return unchanged. Even then, the miles were real.
+None of which the road owes anybody. Distance does not make a person wise, and
+pain is not automatically meaningful. What the route supplies is conditions.
+Progress becomes slow enough to notice. Dependence becomes visible. A purpose has
+to survive boredom and bad weather. The traveler can still arrive unchanged. Even
+then, the miles were real.
 
 <!-- block: s3b -->
 
-Arrival needs a fixed edge. Without one, a long walk can dissolve into mileage.
-The temple gate, cathedral square, summit cairn, or plain stone gives the route
-somewhere to stop. People touch the surface, sit down, remove a pack, or stand
-without knowing what action belongs next. The destination often looks smaller
-than the anticipation surrounding it. This is useful too. The visible place
-cannot contain every reason brought toward it. It only marks that the distance
-has been completed.
+Arrival needs a fixed edge. Without one, a long walk dissolves into mileage. A
+gate, a square, a plain stone: the route is given somewhere to stop, and people
+touch the surface or sit down without knowing what action belongs next. The
+destination usually looks smaller than the anticipation surrounding it, which is
+useful. It cannot contain every reason brought toward it. It only marks that the
+distance has been completed.
 
 <!-- block: s4a -->
 

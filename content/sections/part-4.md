@@ -3,7 +3,7 @@ id: part-4
 number: "IV"
 stage: 5
 title: While We’re Here
-image: part-4-divider-return
+image: part-4-divider-walk
 theme: light
 imperative: Integrate
 stageTitle: what is left

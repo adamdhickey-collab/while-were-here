@@ -87,9 +87,14 @@
       ]
     },
     {
+      "type": "back-matter"
+    },
+    {
       "type": "cover-back"
     }
   ],
   "dedication": "For my parents, who taught me to look, and for Fabiola, who looks with me",
-  "$comment_blurb": "Rewritten 25 Aug 2026 for the four-essay edition. The old blurb ended “A book for reading straight through, or for opening at random on a Tuesday”, and the second half of that stopped being true: eight essays of eleven hundred words invite dipping, four of eighteen hundred do not. A back cover that promises a reading experience the book no longer offers is the same class of fault as a credit for an image that was cut. “Nobody holding a plan” echoes Part II’s title; “the length of a walk” is honest about the new length and is the book’s own recurring measure."
+  "$comment_blurb": "Rewritten 25 Aug 2026 for the four-essay edition. The old blurb ended “A book for reading straight through, or for opening at random on a Tuesday”, and the second half of that stopped being true: eight essays of eleven hundred words invite dipping, four of eighteen hundred do not. A back cover that promises a reading experience the book no longer offers is the same class of fault as a credit for an image that was cut. “Nobody holding a plan” echoes Part II’s title; “the length of a walk” is honest about the new length and is the book’s own recurring measure.",
+  "edition": "reading",
+  "$comment_edition": "Which of the two published builds this branch is. \"reading\" is the four-essay book — the one to read, and the one an editor called the definitive print edition on 26 Aug 2026. \"expanded\" is the eight-essay build on main, kept because the material cut from this one still lives there. The site cross-link reads this rather than inferring the edition from the page count, which it did until the four-essay book reached exactly the 100-page threshold that test used."
 }

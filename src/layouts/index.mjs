@@ -378,15 +378,56 @@ export const sourceLine = (f) => {
     + '</li>';
 };
 
-export const imprint = (bookData, images = []) => {
-  if (!images.some((i) => i.origin === 'archive')) return '';
-  return `
+/* Split in two on 26 Aug 2026. The copyright stays on the title spread, where a
+   reader expects it and where it is two quiet lines; the credit list and the
+   sources went to the back.
+
+   They were put on the title verso because that page was empty and the book was
+   at a 130-page ceiling, so apparatus there cost nothing — the reasoning is in
+   the SOURCES_MARKER note above and it was sound at the time. What it did not
+   account for is that this is the second page a reader opens. An editor reading
+   the condensed edition put it plainly: a dense bibliography and credit block
+   opposite the main title interrupts the opening. The ceiling is gone, the back
+   of the book is where apparatus belongs, and the two pages it now costs are
+   two pages the reader reaches after the last photograph rather than before the
+   first word. */
+export const imprint = (bookData) => `
     <div class="imprint">
       <p class="imprint__line">© ${bookData.year || 2026} ${esc(bookData.author)}. All rights reserved.</p>
       <p class="imprint__line">Photographs, drawings and diagrams by ${esc(bookData.author)} except as listed.</p>
-      <ul class="imprint__credits">${CREDIT_MARKER}</ul>
     </div>`;
-};
+
+/* The back matter: sources on the recto facing Handed Over, credits on the leaf
+   behind it. Only rendered when there is something to credit, which is the test
+   the imprint used to make before it printed a heading over an empty list. */
+export const backMatter = (bookData, images = []) => ({
+  pair: false,
+  pages: [
+    {
+      spread: 'back matter',
+      folio: true,
+      cls: 'backmatter',
+      html: `
+        <div class="page__block">
+          ${sources()}
+        </div>`,
+    },
+    {
+      spread: 'back matter',
+      folio: true,
+      cls: 'backmatter',
+      html: `
+        <div class="page__block">
+          ${images.some((i) => i.origin === 'archive') ? `
+            <div class="imprint">
+              <h2 class="sources__head">Image credits</h2>
+              <ul class="imprint__credits">${CREDIT_MARKER}</ul>
+            </div>` : ''}
+          <div class="titlespread__foot"><span class="dot"></span></div>
+        </div>`,
+    },
+  ],
+});
 
 /** One credit line, for build.mjs to assemble once the book exists. */
 /* The credit sentences end without punctuation and the licence followed on a
@@ -415,8 +456,7 @@ export const titleSpread = (bookData, images = []) => ({
       cls: 'titlespread titlespread--imprint',
       html: `
         <div class="page__block">
-          ${sources()}
-          ${imprint(bookData, images)}
+          ${imprint(bookData)}
           <div class="titlespread__foot">
             <span class="dot"></span>
           </div>
@@ -728,7 +768,19 @@ const openerSpread = (spread, essay, ctx) => {
           </div>
           <div class="opener__foot">
             <div class="prose prose--lead opener__lede">${(spread.blocks || []).map((b) => block(ctx.blocks, b)).join('')}</div>
+            <div class="opener__meta">
             <p class="meta">${essay.readingTime} min</p>
+            ${/* An optional dateline. Only Part III carries one, and it earns it:
+                  that essay is about living inside a change whose rules are not
+                  settled yet, and it names systems that will look either obvious
+                  or wrong within a few years. Undated, a reader in 2032 cannot
+                  tell whether it was written before or after they found out. The
+                  date turns the essay's own ageing into part of what it says,
+                  which is the argument it is already making about the pre-network
+                  world. Nothing else in the book needs one — the maple and the
+                  dog in the afternoon light do not date. */''}
+            ${essay.dateline ? `<p class="meta opener__dateline">${esc(essay.dateline)}</p>` : ''}
+            </div>
           </div>
         </div>`,
     },
@@ -1112,6 +1164,38 @@ const fullBleed = (spread, essay, ctx) => {
   };
 };
 
+/* TWO images facing each other, each bleeding off its own page.
+   `full-bleed` above looks like this and is not: it takes ONE image and splits
+   it across the gutter, `half: 'left'` and `half: 'right'`. Nothing in the book
+   put two DIFFERENT pictures on facing pages at full bleed, because until the
+   Año Viejo nothing needed to.
+
+   That pair needs it. Two frames of the same object either side of midnight —
+   31 Dec 18:20 and 1 Jan 00:09, five hours and forty-nine minutes apart — and
+   the gutter does the work between them: the fold is the turn of the year.
+
+   Written 22 Aug 2026 on the branch ano-viejo-pair and left there, because it
+   costs two pages and the eight-essay book was at its 130-page ceiling. Only
+   the burning half went in, onto the closing page the essay already had. On
+   26 Aug an editor reading the condensed edition found exactly the fault that
+   compromise produced: with no setup and no caption, the dark shape in the fire
+   reads as an animal or a person, and it arrives directly after a line about
+   the dog waking. The ceiling is gone at 96 pages, so the pair goes in whole.
+
+   Square images on a square page, so nothing is cropped by the slot. */
+const facingPair = (spread, essay, ctx) => ({
+  pair: true,
+  pages: [0, 1].map((n) => ({
+    spread: 'facing pair',
+    folio: false,
+    cls: 'bleed-spread bleed-spread--pair',
+    html: `
+      ${figure(ctx.image(spread.images[n]), { className: 'figure--bleed', inverse: true, root: ctx.root })}
+      ${(spread.captions || [])[n]
+        ? `<p class="bleed-spread__caption caption">${esc(spread.captions[n])}</p>` : ''}`,
+  })),
+});
+
 const diagramSpread = (spread, essay, ctx) => ({
   pair: true,
   pages: [
@@ -1307,6 +1391,7 @@ export const essaySpreads = {
   'mark-field': markField,
   'visual-essay': visualEssay,
   'full-bleed': fullBleed,
+  'facing-pair': facingPair,
   diagram: diagramSpread,
   closing,
 };

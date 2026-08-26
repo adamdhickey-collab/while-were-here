@@ -54,6 +54,37 @@
 .opener__lede { max-width: 104mm; font-size: var(--t-body); }
 .opener__foot .meta { white-space: nowrap; padding-bottom: var(--sp-1); }
 
+/* The reading time and the optional dateline share one right-hand column, so
+   the foot stays a two-item flex row — lede left, apparatus right. A third
+   sibling would have been spread by `space-between` and landed in the middle
+   of the page. The dateline is the one meta line here allowed to wrap: it is a
+   sentence, not a label, and `nowrap` above would drive it off the trim. */
+.opener__meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: var(--sp-1);
+  text-align: right;
+}
+/* The one `.meta` in the book set in sentence case. Everything else wearing
+   that class is a label of two or three words — "8 MIN", "HANDED OVER", a
+   running head — where letter-spaced caps read as a tab on the page. This is a
+   sentence, and in caps it ran two lines and shouted from the foot of an opener
+   whose whole subject is a quiet change nobody noticed happening. Caps also
+   cost it the comma's pause and made "2026" sit in the line like a headline
+   date. Dropped to sentence case, tracked normally, it reads as what it is: a
+   note in the margin of its own essay. */
+.opener__foot .opener__dateline {
+  white-space: normal;
+  max-width: 56mm;
+  padding-bottom: 0;
+  text-transform: none;
+  letter-spacing: 0;
+  font-weight: 400;
+  font-style: italic;
+  text-wrap: balance;
+}
+
 /* The `over` variant — image across both pages, title reversed out — is in §9. */
 
 /* ---- 2. READING · TWO COLUMN -------------------------------------------- */
@@ -219,6 +250,34 @@
 }
 .page--verso .bleed-spread__caption { left: var(--m-outside); }
 .page--recto .bleed-spread__caption { right: var(--m-outside); text-align: right; }
+
+/* A facing pair puts its two captions at the GUTTER instead of the outside
+   margins, so they meet across the fold rather than sitting at the far edges
+   of the spread. Two reasons, and the second one is why the rule exists.
+
+   It says what the pair is for. The Año Viejo is one object photographed either
+   side of midnight and the fold is the turn of the year, so the two timestamps
+   belong either side of that fold, not thrown out to the trims.
+
+   And it is where the pictures are dark. The burning frame was cropped "biased
+   right to centre the fire", which put the standard recto caption — outside
+   margin, right-aligned — directly on the flame: measured 3.13:1 against a 4.5
+   floor, the one contrast failure in the book on 26 Aug 2026. The bottom band
+   of that frame reads mean 138 and 90th percentile 253 on the right against
+   mean 84 on the left. The verso improves too, 61 against 77. The gradient
+   above is tuned to carry cream type over a white sky and could not carry it
+   over fire; moving the words to the dark side of each frame is the fix, and
+   it is the one that also means something. */
+.bleed-spread--pair.page--verso .bleed-spread__caption {
+  left: auto;
+  right: var(--m-inside);
+  text-align: right;
+}
+.bleed-spread--pair.page--recto .bleed-spread__caption {
+  right: auto;
+  left: var(--m-inside);
+  text-align: left;
+}
 
 /* ---- 7. DIAGRAM ---------------------------------------------------------
    A philosophical claim drawn rather than asserted. Verso argues, recto

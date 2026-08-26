@@ -512,38 +512,67 @@
    documented at length above and it is the same failure at 300 mm as at 92 mm —
    only now it would be the whole board.
 
-   Full-board rather than inset: the artwork carries its own cream margin, so
-   the DRAWN circle lands at about 85% of the trim on its own. Insetting it
-   further would have shrunk the drawing twice. */
+   INSET, 25 Aug 2026 — Adam's call, reversing the full-board version above.
+   Full-board meant every line of type crossed the drawing and needed a scrim to
+   stay readable, and a scrim over artwork is a compromise on both: the type is
+   quiet, the drawing is veiled, and neither is doing its best. Pulling the plate
+   in gives the line clean paper at the head and the blurb clean paper at the
+   foot, and the drawing keeps the middle of the board to itself.
+
+   `contain`, not `cover`. At full board the box was square and so is the
+   artwork, so cropping cost nothing; inset into a shorter box, `cover` would
+   slice the top and bottom off a drawing that is bilaterally symmetric about a
+   drawn axis, which is the one thing it cannot lose.
+
+   The vertical insets are unequal on purpose. The head carries one display line;
+   the foot carries a four-line blurb and a coda, so it needs more room. */
+/* THE BOARD BLEEDS NOW, BECAUSE THE PLATE STOPPED. Until the plate was inset it
+   ran to `calc(-1 * var(--bleed-out))` and its own cream was what carried ink
+   past the trim on all four edges of the back board. Pulling it into the middle
+   of the page took that with it, and `npm run bleed` caught it immediately: four
+   edges on page 98 at 0.0 mm against 3.0 expected.
+
+   `.cover::before` was not enough on its own. It does extend past trim, but what
+   it paints there is a highlight, a warm gradient and the linen texture — all
+   semi-transparent. Over bare white they average lighter than the detector's
+   paper threshold, which is correct behaviour from a detector measuring ink.
+
+   Same technique print.css already uses for every interior page: a spread
+   box-shadow in the ground's own colour, which paints a solid ring outside the
+   border box and collapses to nothing on a proof, where --bleed-out is 0. */
+.cover-back--seed { box-shadow: 0 0 0 var(--bleed-out) var(--linen); }
+
 .cover-back--seed .cover-back__plate {
   position: absolute;
-  inset: calc(-1 * var(--bleed-out));
+  inset: 19% 0 24% 0;
   z-index: -1;
 }
 .cover-back--seed .cover-back__plate .figure { position: absolute; inset: 0; background: transparent; }
-.cover-back--seed .cover-back__plate img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
-
-/* Two veils in one pseudo-element, top and bottom, so the type has quiet paper
-   to sit on without hiding any of the drawing. `::after` and not `::before`:
-   both are children of the plate, painted in DOM order, so only `::after`
-   lands ABOVE the image. Colour matches the bleed cover's scrims exactly. */
-.cover-back--seed .cover-back__plate::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background:
-    linear-gradient(to bottom, rgba(243,239,229,0.90) 0%, rgba(243,239,229,0.58) 15%, rgba(243,239,229,0) 29%),
-    /* The foot band is held near-flat to 24% before it fades, rather than
-       falling away from the edge like the head. The head only has to quiet a
-       few ring arcs; the foot carries three lines of 9.5 pt over the busiest
-       corner of the drawing — the blue field, the cell mass and the plotted
-       dots — and a gradient that is already down to 0.15 where the blurb
-       actually sits is a scrim in name only. Measured against the composed
-       board: blurb top at 0.795 of the height, coda foot at 0.90. */
-    linear-gradient(to top,    rgba(243,239,229,0.93) 0%, rgba(243,239,229,0.93) 24%,
-                               rgba(243,239,229,0.55) 29%, rgba(243,239,229,0) 36%);
-  pointer-events: none;
+.cover-back--seed .cover-back__plate img {
+  width: 100%; height: 100%; object-fit: contain; object-position: center;
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, #000 9%, #000 91%, transparent 100%);
+          mask-image: linear-gradient(to bottom, transparent 0%, #000 9%, #000 91%, transparent 100%);
 }
+
+/* THE VEILS ARE GONE, 25 Aug 2026, and removing them is what fixed the join.
+
+   They existed for the full-board version, where every line of type sat on the
+   drawing and needed quiet paper under it. Once the plate was inset, the type
+   moved onto real paper and the veils had nothing left to do — but they did not
+   become harmless, they became the fault. Each gradient began at 0.80 and 0.85
+   opacity AT THE CONTAINER'S OWN EDGE, with nothing painted outside it, so the
+   plate's boundary printed as a hard horizontal line straight across the back
+   board: measured at 3.7 and 4.5 levels in the press PDF, and plainly visible
+   enlarged.
+
+   Two fixes were tried first and both missed, because both assumed the step came
+   from the artwork rather than from the scrim over it. A CSS `mask-image` fade
+   on the image — which Vivliostyle does not honour at all, the same class of
+   fault as `-webkit-hyphenate-limit-lines`, and the press PDF was unchanged to
+   the tenth of a level. Then a 4% alpha ramp baked into the PNG itself, which
+   every engine honours and which changed nothing either. The steps stayed at
+   19% and 76%, exactly where `inset` puts the container edges, which is the
+   measurement that finally pointed at the right element. */
 
 /* Centred, and for a reason rather than by default: this drawing is bilaterally
    symmetric about a vertical axis it actually draws — a hairline running the

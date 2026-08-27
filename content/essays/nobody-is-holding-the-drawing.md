@@ -11,7 +11,8 @@ readingTime: 9
 progression: the hive → looking for the maker → order without a plan → the web → looking for the thinker → thought outside the head → the tool that answers back
 spreads:
   - type: opener
-    variant: facing
+    variant: plate
+    plateWidth: 120mm
     image: systems-01-observation-hive
     blocks: [open]
   - type: reading

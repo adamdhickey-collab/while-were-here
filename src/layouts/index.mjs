@@ -758,6 +758,21 @@ export const handedOver = (data, ctx) => ({
    merge works, because a single unrepeatable frame is precisely the argument
    the essay opens with.
 
+   `plateWidth` sets the size, because the right size is a property of the
+   SOURCE and the two plates in this book do not have the same source. The
+   portrait is 1272 px and takes 150 mm at 215 dpi. The observation hive opening
+   Part II is 960 px and would be 163 dpi at that size, so it takes 120 mm and
+   203 dpi instead. Both are square; both are the largest their file can carry
+   above 200 dpi, rounded to something a person would choose. If a third opener
+   ever wants this variant, work its width the same way rather than matching one
+   of these two — a plate sized to look like its neighbour is a plate printed at
+   whatever resolution that happens to leave.
+
+   The hive can afford it. Its detail is fine and repetitive — comb cells about
+   1.9% of the frame, individual bees about 4% — which is exactly what shows
+   resampling, and also what keeps reading when the plate gets smaller: at
+   120 mm a cell is still 2.25 mm and a bee 5 mm across.
+
    Which is also why the smaller treatment is not a compromise. The essay is
    about a world where a photograph was one frame, delayed, unrevisable, and
    printed at a size somebody chose. Presenting it as a bordered plate on a dark
@@ -775,7 +790,7 @@ const openerSpread = (spread, essay, ctx) => {
       folio: false,
       cls: 'opener opener__verso' + (over ? ' opener--over' : '') + (plate ? ' opener--plate' : ''),
       html: plate
-        ? `<div class="opener__plate">${figure(img, { root: ctx.root })}</div>`
+        ? `<div class="opener__plate"${spread.plateWidth ? ` style="--plate-w: ${esc(spread.plateWidth)}"` : ''}>${figure(img, { root: ctx.root })}</div>`
         : figure(img, {
           className: 'figure--bleed',
           half: over ? 'left' : null,

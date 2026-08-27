@@ -43,32 +43,36 @@ What to decide, in this order:
   length on an open 600 mm spread, it is too small regardless of what the rest
   of the page is doing.
 
-## 2. The three low-resolution full-bleed pages
+## 2. The low-resolution pages — resolved, but look anyway
 
-Not raised in the review — it is not visible at screen size — but it is the thing
-most likely to disappoint on paper. Three full-bleed 300 mm pages come from a
-1,280 px-era archive, and each got a different answer:
+Not raised in the review; it is not visible at screen size. Three full-bleed
+300 mm pages came from a 1,280 px-era archive, and each had a different answer.
+All three are now fixed, and **nothing in the book prints below 150 dpi**:
 
-| Page | Image | Effective |
-|---|---|---:|
-| Part II opener | `systems-01-observation-hive` | **81 dpi** |
-| Part III opener | `before-time-01-father-portrait` | ~~108 dpi~~ → **215 dpi** |
-| Part IV divider | *was* `part-4-divider-return` | screen-printed to hide it |
+| Page | Image | Was | Now |
+|---|---|---:|---:|
+| Part II opener | `systems-01-observation-hive` | 81 dpi, full bleed | **203 dpi**, 120 mm plate |
+| Part III opener | `before-time-01-father-portrait` | 108 dpi, full bleed | **215 dpi**, 150 mm plate |
+| Part IV divider | *was* `part-4-divider-return` | screen-print rescue | **254 dpi**, a real photograph |
 
-Two of the three are fixed. The divider is a real photograph at 254 dpi. The
-father's portrait stopped running at full bleed on 26 Aug — Adam's call — and is
-now a 150 mm plate on the dark ground at 215 dpi, which is also the better
-treatment for a photograph about single unrepeatable frames.
+The two openers stopped running to the bleed on 26–27 Aug and became plates
+centred on the ground. Each is sized to what its own file can carry above
+200 dpi — 150 mm and 120 mm, deliberately not matched to each other. A plate
+sized to look like its neighbour is a plate printed at whatever resolution that
+happens to leave.
 
-**The observation hive is the one left.** 81 dpi across a 300 mm bleed is the
-softest thing in the book by a wide margin, and it opens Part II. The same fix
-is available and costs nothing but a decision: at 150 mm it is 163 dpi, at
-120 mm it is 203. It was a knowing trade recorded in `content/images.json` — a
-real photograph at 81 dpi over a generated plate at 87 — and that trade was
-about which IMAGE, not about what size to print it.
+Still worth a look on paper, because dpi is arithmetic and sharpness is not:
 
-Everything else in the book: 51 images at 300 dpi or better, 10 between 200 and
-299. `npm run dpi` prints the current table.
+- **The hive at 120 mm.** Its detail is fine and repetitive — comb cells about
+  2.25 mm on the printed page, individual bees about 5 mm — which is both what
+  reads well and what shows resampling first. If anything in the book looks
+  soft, it is this.
+- **The portrait at 150 mm.** A scan of a studio print, so it carries the
+  original's own grain and softness on top of its resolution. Judge it as a
+  photograph of a photograph, which is what the essay is about.
+
+Current spread: 51 images at 300 dpi or better, 11 between 200 and 299, 4
+between 150 and 199, none below. `npm run dpi` prints the live table.
 
 ## 3. Ink and ground
 

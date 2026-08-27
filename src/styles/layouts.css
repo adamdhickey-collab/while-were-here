@@ -42,14 +42,16 @@
    page edges from inside the plate. The bleed scale goes with it: nothing here
    crosses a trim, so there is nothing to scale out.
 
-   150 mm on a 300 mm page is the picture at half the trim, which leaves the
-   ground reading as a mount rather than as a margin that ran out. */
+   The size comes from the spread as `--plate-w`, because it is a property of
+   the source file rather than of the layout — see the note beside
+   `openerSpread`. 150 mm is the default and the largest of the two in use;
+   both plates are square, so one value drives both axes. */
 .opener--plate .opener__plate {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 150mm;
-  height: 150mm;
+  width: var(--plate-w, 150mm);
+  height: var(--plate-w, 150mm);
   transform: translate(-50%, -50%);
 }
 .opener--plate .opener__plate .figure {

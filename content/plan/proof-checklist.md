@@ -114,10 +114,16 @@ readable download. They fail at each other's jobs.
 
 ## Still open, and none of it optional
 
-- The opening plate of essay one prints a solar survey that does not compute. The
-  drawing is right; six text values are wrong and are baked into a 4000 × 4000
-  JPEG. The corrections are in `content/images.json`. This is the only *disputed*
-  claim in the book and it is on page one of the first essay.
 - Paper caliper is a placeholder. The spine number is provisional until a printer
   supplies it.
 - Consent from everyone identifiable, if this is ever sold rather than given.
+
+The solar survey on essay one's opener was the third item here until
+29 Aug 2026: six wrong text values baked into the JPEG, the only disputed claim
+in the book, on page one of the first essay. Corrected in the pixels by
+`scripts/resurvey.py` — wrong glyphs inpainted out, right digits transplanted
+from elsewhere on the same plate. On the paper proof, look at the corrected
+runs the way you look at everything else there: DATE / LAT / LON in the solar
+block, ALTITUDE and AZIMUTH beside the drawing, ORIENTATION and DATE on the
+specimen card. The transplants measure within 13 % of their lines' stroke
+depth on screen; paper is where that gets judged.

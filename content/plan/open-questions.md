@@ -304,14 +304,26 @@ parallelogram on a floor — so the drawing is nearly right for a mid-October
 afternoon in Minneapolis and badly wrong for a June afternoon in Ottawa. Fixing
 it is a matter of relettering four values, not reshooting anything.
 
-Logged in `content/facts.json` as `opening-plate-solar-geometry`, status
-**disputed**, so `npm run facts` reports it until it is settled. Note this makes
-`npm run facts:strict` exit non-zero, which is correct and is not in CI.
+Logged in `content/facts.json` as `opening-plate-solar-geometry`. While it was
+**disputed**, `npm run facts` reported it and `npm run facts:strict` exited
+non-zero, which was correct and was not in CI.
 
-**Every other survey plate in the book checks out**, which is why this one is
+**Every other survey plate in the book checks out**, which is why this one was
 worth fixing rather than abandoning: the mug specimen card's elevation matches
 its photograph and its own colour chip, and the corner survey's four observers
 match its four sightlines.
+
+**Resolved 29 Aug 2026.** The 24 Aug solve superseded the table above: the
+patch the plate draws is 2018 mm through a 1420 mm aperture, which is a
+35.1° sun, and Minneapolis reaches that at 15:00 CDT on **1 October** —
+altitude 35.0°, azimuth 216.8° — so the drawing needed nothing and the text
+needed six values (seven, counting the card's date, which the solve note
+missed). `scripts/resurvey.py` inpainted the wrong glyphs and transplanted
+the right digits from elsewhere on the same plate, so no type from outside
+the image entered it. The fact is **verified** now, the claim rewritten to
+what the plate prints, and the NOAA citation joined the printed sources page.
+`attention-03-dog-sunlight` — unplaced — still carries the Ottawa-era numbers
+and says so in its manifest entry.
 
 ---
 

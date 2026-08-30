@@ -5,7 +5,7 @@
 Every technical number in this book is listed here with the source it came from.
 Where a figure is contested, small-sample or easy to misstate, the note says so.
 
-34 verified · 1 outstanding · 6 verified but not in the book
+35 verified · 0 outstanding · 21 verified but not in the book
 
 The book's own sources page, on the verso of the title spread, prints only the
 claims it actually makes — the ones below whose `usedIn` still resolves. This
@@ -23,7 +23,7 @@ Andrews S, Ellis DA, Shaw H, Piwek L. *Beyond Self-Report: Tools to Compare Esti
 **Note.** Device-logged over two weeks. n = 23, which is small and must not be inflated into a general population figure. The load-bearing finding is the mismatch between estimate and reality, not the count.
 **Replaces.** An earlier margin note claimed phones are 'unlocked between 58 and 80 times a day'. The 58 came from RescueTime's 2018 blog data, which counted checks rather than unlocks; the 80 had no traceable source; and the range fused two incompatible studies. Cut.
 
-*Used in essays/the-secret-life-of-attention.md — marginNote.*
+*Used in essays/most-of-life-is-a-tuesday.md — marginNote.*
 
 ---
 
@@ -99,7 +99,7 @@ Ballerini M, Cabibbo N, Candelier R, Cavagna A, Cisbani E, Giardina I, Lecomte V
 
 **Note.** The finding is TOPOLOGICAL, not metric: a bird tracks a fixed NUMBER of neighbours, six to seven, rather than everything inside a fixed radius. That distinction is the whole reason the flock holds together when it changes density, and writing it as "the birds within a few metres" reverses the paper. Do not add a leader anywhere in the sentence.
 
-*Used in essays/beauty-of-systems-nobody-designed.md — marginNote; essays/beauty-of-systems-nobody-designed.md — flow-1b.*
+*Used in essays/nobody-is-holding-the-drawing.md — marginNote.*
 
 ---
 
@@ -110,11 +110,13 @@ Tero A, Takagi S, Saigusa T, Ito K, Bebber DP, Fricker MD, Yumiki K, Kobayashi R
 
 **Note.** Write "comparable", never "identical" or "the same as". The organism did not reproduce the rail map; the two networks score similarly on cost, efficiency and resilience. It also has no brain and no nervous system, which is the point, so do not soften that into "a simple brain".
 
-*Used in essays/beauty-of-systems-nobody-designed.md — marginNote; essays/beauty-of-systems-nobody-designed.md — flow-2a.*
+*Used in essays/nobody-is-holding-the-drawing.md — s2a.*
 
 ---
 
 ### A 2016 estimate for a seventy-kilogram reference man counted about thirty trillion human cells and thirty-eight trillion bacterial cells.
+
+_Not in the book — no printed citation._
 
 
 Sender R, Fuchs S, Milo R. *Revised Estimates for the Number of Human and Bacteria Cells in the Body*. PLOS Biology 14(8): e1002533. 2016. <https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1002533>
@@ -122,18 +124,20 @@ Sender R, Fuchs S, Milo R. *Revised Estimates for the Number of Human and Bacter
 **Note.** These are estimates for a defined 70 kg reference man, not universal counts, and they carry real methodological uncertainty. The load-bearing point is that the two populations are the SAME ORDER OF SIZE.
 **Replaces.** The often-repeated claim that bacterial cells outnumber human cells ten to one. This paper is the correction to it, and the ratio is close to 1:1. Do not reintroduce the 10:1 figure.
 
-*Used in essays/beauty-of-systems-nobody-designed.md — marginNote.*
+*Used in Unplaced in the condensed edition, 26 Aug 2026 — the margin note carrying it did not survive the four-essay merge. The claim is verified and the record is intact; the eight-essay book on main still prints it..*
 
 ---
 
 ### The subterranean nests of Apicotermes termites, with their parallel floors and connecting ramps, form through local building acts in which new structure changes where later material is likely to be placed.
+
+_Not in the book — no printed citation._
 
 
 Heyde A, Guo L, Jost C, Theraulaz G, Mahadevan L. *Self-organized biotectonics of termite nests*. PNAS 118(5): e2006985118. 2021. <https://www.pnas.org/doi/10.1073/pnas.2006985118>
 
 **Note.** The prose is a plain-language compression of a model, not a behavioural account observed from one worker. Do not write that a termite "decides" anything, and do not describe the nest as built to a plan the colony holds.
 
-*Used in essays/beauty-of-systems-nobody-designed.md — flow-2b.*
+*Used in Unplaced — the passage citing it did not survive the four-essay merge, 24 Aug 2026. Verified, not printed, not cited. Recoverable from the eight-essay book on main..*
 
 ---
 
@@ -144,7 +148,7 @@ Nazzi F. *The hexagonal shape of the honeycomb cells depends on the construction
 
 **Note.** The groove rule is a proposed behavioural mechanism supported by observation and simulation, not a settled result. Keep the hedge. The competing account is that wax flows and surface tension do the shaping, and the essay must not pick a winner.
 
-*Used in essays/beauty-of-systems-nobody-designed.md — flow-2c.*
+*Used in essays/nobody-is-holding-the-drawing.md — s2b.*
 
 ---
 
@@ -156,29 +160,33 @@ Cowan N. *The magical number 4 in short-term memory: A reconsideration of mental
 **Note.** Four is an AVERAGE under constrained experimental conditions, not a fixed capacity for every person or task. Do not write "the brain can hold four things". The conditions that block rehearsal and chunking are what make the number mean anything.
 **Replaces.** The popular "seven plus or minus two" from Miller 1956. Cowan's reconsideration is the reason the figure here is four, not seven. Do not reintroduce the older number.
 
-*Used in essays/intelligence-outside-your-head.md — marginNote.*
+*Used in essays/nobody-is-holding-the-drawing.md — marginNote.*
 
 ---
 
 ### In a 2000 MRI study, licensed London taxi drivers had greater posterior hippocampal grey-matter volume than controls, and the difference correlated with years spent navigating.
+
+_Not in the book — no printed citation._
 
 
 Maguire EA, Gadian DG, Johnsrude IS, Good CD, Ashburner J, Frackowiak RSJ, Frith CD. *Navigation-related structural change in the hippocampi of taxi drivers*. PNAS 97(8): 4398-4403. 2000. <https://www.pnas.org/doi/10.1073/pnas.070039597>
 
 **Note.** The study is OBSERVATIONAL. Write "associated with" or "correlated with", never "caused by". Self-selection cannot be ruled out from this design alone.
 
-*Used in essays/intelligence-outside-your-head.md — marginNote.*
+*Used in Unplaced — the passage citing it did not survive the four-essay merge, 24 Aug 2026. Verified, not printed, not cited. Recoverable from the eight-essay book on main..*
 
 ---
 
 ### Four experiments published in 2011 found that people expecting later computer access recalled where information was stored better than the information itself.
+
+_Not in the book — no printed citation._
 
 
 Sparrow B, Liu J, Wegner DM. *Google Effects on Memory: Cognitive Consequences of Having Information at Our Fingertips*. Science 333(6043): 776-778. 2011. <https://www.science.org/doi/10.1126/science.1207745>
 
 **Note.** This is a description of four reported experiments about WHAT people encode, not evidence that internet use damages memory. Do not expand it into a claim about harm. The finding is a shift toward retrieval, not a loss.
 
-*Used in essays/intelligence-outside-your-head.md — marginNote.*
+*Used in Unplaced in the condensed edition, 26 Aug 2026 — the margin note carrying it did not survive the four-essay merge. The claim is verified and the record is intact; the eight-essay book on main still prints it..*
 
 ---
 
@@ -189,40 +197,46 @@ Japyassú HF, Laland KN. *Extended spider cognition*. Animal Cognition 20: 375-3
 
 **Note.** The vibration, tension and sensory extension are well supported. Calling the web part of COGNITION is the authors' theoretical interpretation and is contested. Stay with the observable mechanism, which is what the essay does.
 
-*Used in essays/intelligence-outside-your-head.md — flow-2c; intelligence-03-orb-web — figure caption.*
+*Used in essays/nobody-is-holding-the-drawing.md — s4a.*
 
 ---
 
 ### Intel introduced the 4004 microprocessor in 1971 with 2,300 transistors on a chip smaller than a fingernail.
+
+_Not in the book — no printed citation._
 
 
 Intel Corporation. *The First Programmable Microprocessor: The 4004*. Intel company timeline. 1971. <https://timeline.intel.com/1971/the-first-programmable-microprocessor%3A-the-4004>
 
 **Note.** Announced 15 November 1971. First-party historical record. The transistor count is exact; the "smaller than a fingernail" comparison is the essay's, not Intel's.
 
-*Used in essays/strange-privilege-technological-revolution.md — marginNote.*
+*Used in Unplaced — the passage citing it did not survive the four-essay merge, 24 Aug 2026. Verified, not printed, not cited. Recoverable from the eight-essay book on main..*
 
 ---
 
 ### The 2017 transformer paper described a network based on attention rather than recurrence. Its larger model trained for 3.5 days on eight P100 GPUs and set new reported results on two translation tasks.
+
+_Not in the book — no printed citation._
 
 
 Vaswani A, Shazeer N, Parmar N, Uszkoreit J, Jones L, Gomez AN, Kaiser L, Polosukhin I. *Attention Is All You Need*. Advances in Neural Information Processing Systems 30. 2017. <https://proceedings.neurips.cc/paper_files/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf>
 
 **Note.** The two tasks are WMT 2014 English-to-German and English-to-French machine translation, and nothing else. Do not rewrite this as the paper already doing the generative work that came later. The 3.5 days and eight P100s are the big model, not the base.
 
-*Used in essays/strange-privilege-technological-revolution.md — marginNote.*
+*Used in Unplaced in the condensed edition, 26 Aug 2026 — the margin note carrying it did not survive the four-essay merge. The claim is verified and the record is intact; the eight-essay book on main still prints it..*
 
 ---
 
 ### The AlphaFold Protein Structure Database provides over 200 million predicted protein structures.
+
+_Not in the book — no printed citation._
 
 
 EMBL-EBI and Google DeepMind. *AlphaFold Protein Structure Database*. Public database. 2024. <https://alphafold.ebi.ac.uk/>
 
 **Note.** Keep the word PREDICTED visible. These are computational predictions and a research starting point; they do not replace experimental structure determination. Dropping "predicted" turns a real achievement into a false one.
 
-*Used in essays/strange-privilege-technological-revolution.md — marginNote.*
+*Used in Unplaced — the passage citing it did not survive the four-essay merge, 24 Aug 2026. Verified, not printed, not cited. Recoverable from the eight-essay book on main..*
 
 ---
 
@@ -233,7 +247,7 @@ Pew Research Center. *Internet, Broadband Fact Sheet*. Pew Research Center. 2025
 
 **Note.** Pew changed survey mode from 2023, so the 2000 and 2025 figures are not a clean like-for-like series. Keep the methodology caution in the note. The broadband figure is dated 31 March 2000 specifically.
 
-*Used in essays/last-generation-before-time.md — marginNote.*
+*Used in essays/the-strange-privilege.md — marginNote.*
 
 ---
 
@@ -244,29 +258,33 @@ Pew Research Center. *Mobile Fact Sheet*. Pew Research Center. 2025. <https://ww
 
 **Note.** 2011 is Pew's FIRST measurement of smartphone ownership, not the year smartphones appeared. Do not imply the technology began then.
 
-*Used in essays/last-generation-before-time.md — marginNote.*
+*Used in essays/the-strange-privilege.md — marginNote.*
 
 ---
 
 ### The first SMS message was sent from a computer on 3 December 1992. Early text messages carried a 160-character limit.
+
+_Not in the book — no printed citation._
 
 
 Vodafone. *25 years since the world's first text message*. Vodafone newsroom. 2017. <https://www.vodafone.com/news/newsroom/technology/25-anniversary-text-message>
 
 **Note.** Sent by Neil Papworth, from a computer to a phone, reading "Merry Christmas". The 160-character limit is a real technical boundary. The sentence about it shaping a compressed style is an editorial inference, not a measured effect, and must not be written as one.
 
-*Used in essays/last-generation-before-time.md — marginNote.*
+*Used in Unplaced in the condensed edition, 26 Aug 2026 — the margin note carrying it did not survive the four-essay merge. The claim is verified and the record is intact; the eight-essay book on main still prints it..*
 
 ---
 
 ### The Shikoku Henro links 88 temples across Japan's four Shikoku prefectures, covers approximately 1,200 kilometres, and generally takes more than 40 days on foot.
+
+_Not in the book — no printed citation._
 
 
 Japan National Tourism Organization. *Experience an Authentic Pilgrimage in Shikoku*. japan.travel. 2024. <https://www.japan.travel/en/japans-local-treasures/experience-authentic-pilgrimage-shikoku-2024/>
 
 **Note.** Official tourism body. The 40 days is a typical walking duration, not a rule, and the route order is not fixed.
 
-*Used in essays/why-humans-need-pilgrimages.md — marginNote.*
+*Used in Unplaced — the passage citing it did not survive the four-essay merge, 24 Aug 2026. Verified, not printed, not cited. Recoverable from the eight-essay book on main..*
 
 ---
 
@@ -277,18 +295,20 @@ Turespaña. *Camino Francés*. spain.info, official tourism portal. 2024. <https
 
 **Note.** The 100 km minimum applies to walking; by bicycle it is 200 km. The essay uses the walking figure only, and the motivation requirement is a stated declaration rather than anything tested.
 
-*Used in essays/why-humans-need-pilgrimages.md — marginNote.*
+*Used in essays/while-were-here-merged.md — marginNote.*
 
 ---
 
 ### UNESCO's French Santiago property includes 71 selected monuments and seven sections of the Chemin du Puy totalling nearly 160 kilometres.
+
+_Not in the book — no printed citation._
 
 
 UNESCO World Heritage Centre. *Routes of Santiago de Compostela in France*. World Heritage List, ref. 868. 1998. <https://whc.unesco.org/en/list/868/>
 
 **Note.** The inscription covers four symbolic routes; the 71 monuments and seven sections are the selected components, not the whole network. Churches, hospitals and bridges are named as pilgrim infrastructure.
 
-*Used in essays/why-humans-need-pilgrimages.md — marginNote.*
+*Used in Unplaced — the passage citing it did not survive the four-essay merge, 24 Aug 2026. Verified, not printed, not cited. Recoverable from the eight-essay book on main..*
 
 ---
 
@@ -299,7 +319,7 @@ NASA Space Place. *All About the Sun*. NASA. 2024. <https://spaceplace.nasa.gov/
 
 **Note.** A mean figure. Earth's distance varies over the year, so the light-time varies by a few seconds either side. "About" is doing real work.
 
-*Used in essays/while-were-here.md — marginNote.*
+*Used in essays/while-were-here-merged.md — s5a.*
 
 ---
 
@@ -310,44 +330,52 @@ NASA Science. *Basics of Space Flight, Chapter 2: Reference Systems*. NASA. 2024
 
 **Note.** 24 hours is the mean SOLAR day, not the sidereal day, which is about 4 minutes shorter. Orbital speed ranges roughly 29.29 to 30.29 km/s between aphelion and perihelion, which is why the note gives a range.
 
-*Used in essays/while-were-here.md — marginNote.*
+*Used in essays/while-were-here-merged.md — marginNote.*
 
 ---
 
 ### A healthy adult at rest typically breathes 12 to 20 times each minute, moving about 500 millilitres of air per breath.
+
+_Not in the book — no printed citation._
 
 
 StatPearls. *Abnormal Respirations*. NCBI Bookshelf. 2023. <https://www.ncbi.nlm.nih.gov/books/NBK470309/>
 
 **Note.** A typical clinical range for a healthy resting adult, not a constant and not a value for any individual. Tidal volume of ~500 ml is likewise an approximation for an average adult.
 
-*Used in essays/while-were-here.md — marginNote.*
+*Used in Unplaced — the passage citing it did not survive the four-essay merge, 24 Aug 2026. Verified, not printed, not cited. Recoverable from the eight-essay book on main..*
 
 ---
 
 ### A Komodo dragon samples the air with its forked tongue and presses the tips to paired Jacobson's organs in the roof of its mouth. A stronger reading on one tip than the other tells it which way the scent is coming from.
+
+_Not in the book — no printed citation._
 
 
 Smithsonian's National Zoo and Conservation Biology Institute. *Komodo dragon*. Smithsonian National Zoo animal record. 2024. <https://nationalzoo.si.edu/animals/komodo-dragon>
 
 **Note.** The direction comes from the DIFFERENCE between the two tips, which is the whole reason the tongue is forked and the whole reason this belongs in this essay. The Smithsonian gives carrion detection at up to 2.5 miles, about 4 km. A figure of 9.5 km circulates widely online with no traceable source; do not use it. Also: the animal photographed is captive, so nothing on the card may imply a wild observation.
 
-*Used in essays/intelligence-outside-your-head.md — specimen card; specimen-01-komodo-tongue — label.*
+*Used in Unplaced — the passage citing it did not survive the four-essay merge, 24 Aug 2026. Verified, not printed, not cited. Recoverable from the eight-essay book on main..*
 
 ---
 
 ### Queen butterflies feed on milkweed as larvae and carry cardenolides into adulthood, as monarchs do. The two are co-mimics rather than one copying the other: a predator that learns to avoid either pattern avoids both.
+
+_Not in the book — no printed citation._
 
 
 Ritland DB. *Variation in Palatability of Queen Butterflies (Danaus gilippus) and Implications Regarding Mimicry*. Ecology 75(3): 732-746. 1994. <https://esajournals.onlinelibrary.wiley.com/doi/10.2307/1941731>
 
 **Note.** Palatability VARIES with the host plant: queens reared on high-cardenolide Asclepias curassavica are as distasteful as monarchs, and queens reared on low-cardenolide hosts are not. Do not write that queens are uniformly toxic. The Mullerian rather than Batesian reading is Ritland's, and the same author's 1991 Nature paper made the parallel case for the viceroy, which is the classic textbook example that turned out to be wrong the other way.
 
-*Used in essays/beauty-of-systems-nobody-designed.md — specimen card; specimen-02-queen-butterfly — label.*
+*Used in Unplaced — the passage citing it did not survive the four-essay merge, 24 Aug 2026. Verified, not printed, not cited. Recoverable from the eight-essay book on main..*
 
 ---
 
 ### A personal Facebook data export generated on 19 August 2026 lists 31 categories the platform used to reach the author, among them "Away from family", "Away from hometown" and "Family of those who live abroad".
+
+_Not in the book — no printed citation._
 
 
 Meta Platforms. *Other categories used to reach you*. Download Your Information, personal export. 2026. <https://www.facebook.com/dyi>
@@ -355,7 +383,7 @@ Meta Platforms. *Other categories used to reach you*. Download Your Information,
 **Note.** The primary document is on disk and is reproduced in the book in full and unedited, which is the only honest way to print it. The count is 31 and must be re-checked if the export is ever regenerated, because these categories change. Do not characterise them as accurate or inaccurate on the page; the interest is that a system wrote a description of a person and this is the description.
 **Replaces.** Nothing. This is the first record in the book that is a real document about its own author rather than a published study or an invented plate.
 
-*Used in essays/the-secret-life-of-attention.md — reproduced record.*
+*Used in Unplaced in the condensed edition, 26 Aug 2026 — the reproduced-record spread carrying it did not survive the four-essay merge, which kept one of the three Meta records. The export is intact; the eight-essay book on main still prints it..*
 
 ---
 
@@ -366,18 +394,20 @@ Meta Platforms. *Advertisers using your activity or information*. Download Your 
 
 **Note.** Counted twice by independent extractions of the same file, agreeing to within thirteen entries: 7,499 entries and 7,325 unique names. The page prints the first 160 in export order, unsorted, and says so. Six entries were withheld on 20 August 2026 at the author’s request — four named "Mushrooms" and two named "Zoomies" — so the page now shows 154 and states that six are withheld. Nothing else is sorted, curated or dropped: names such as "Non ddtc 1 zocket manager" are in the record and are part of what it shows. Do not restore the six, and do not let the page go back to claiming it is unedited. Re-count if the export is regenerated.
 
-*Used in essays/strange-privilege-technological-revolution.md — reproduced record.*
+*Used in essays/the-strange-privilege.md — reproduced record.*
 
 ---
 
 ### A personal Facebook data export generated on 19 August 2026 lists 23 cities the author has checked into, five of them in Door County, Wisconsin.
+
+_Not in the book — no printed citation._
 
 
 Meta Platforms. *Cities you have checked into*. Download Your Information, personal export. 2026. <https://www.facebook.com/dyi>
 
 **Note.** Reproduced in full in export order, which is NOT the order they were visited and the page says so. This is a record of where a phone reported a check-in, not a record of where a life was lived, and the essay must not blur the two. Egg Harbor, Baileys Harbor, Fish Creek, Ephraim and Sister Bay are the Door County five.
 
-*Used in essays/why-humans-need-pilgrimages.md — reproduced record.*
+*Used in Unplaced in the condensed edition, 26 Aug 2026 — the reproduced-record spread carrying it did not survive the four-essay merge, which kept one of the three Meta records. The export is intact; the eight-essay book on main still prints it..*
 
 ---
 
@@ -401,16 +431,25 @@ Rankin CH, Abrams T, Barry RJ, Bhatnagar S, Clayton DF, Colombo J, et al.. *Habi
 
 **Note.** A consensus paper by seventeen authors setting out habituation's defining characteristics, which is why it can carry a general claim where a single study could not. The essay uses only the two properties the paper is unambiguous about: the response declines with harmless repetition, and it recovers when the stimulus changes. Do not extend it into a claim about meaning, attention or relationships — the paper describes a response curve, not a life. That extension is the essay's own argument and must stay visibly the essay's.
 
-*Used in essays/why-ordinary-days-may-be-the-point-of-life.md — marginNote.*
-
+*Used in essays/most-of-life-is-a-tuesday.md — marginNote.*
 
 ---
 
-## Outstanding
+### The opening plate of Most of Life Is a Tuesday prints a solar survey over a photograph of a dog asleep in afternoon light: LAT 44.9778 N, LON 93.2650 W, DATE 01/10, TIME 15:00, ALTITUDE 35.0 degrees, AZIMUTH 216.8 degrees — Minneapolis, mid-afternoon, the first of October.
 
-These are not settled and must not appear on a page until they are.
 
-- **opening-plate-solar-geometry** (disputed) — The opening plate of Most of Life Is a Tuesday prints a solar survey over a photograph of a dog asleep in afternoon light: LAT 45.4167 N, LON 75.7000 W, DATE 21/06, TIME 15:00, ALTITUDE 61.2 degrees, AZIMUTH 212.7 degrees.
-  Three problems, all checkable from the plate's own numbers. (1) Those coordinates are OTTAWA, ONTARIO to within a kilometre. Nothing in this book happens in Ottawa; the reproduced check-in record on the pilgrimage spread is Minnesota and Wisconsin, and the field notes are Lake Harriet. (2) At the stated latitude, date and hour the sun is at altitude 57.9 and azimuth 236.7, not 61.2 and 212.7 — the azimuth is out by 24 degrees, which is about ninety minutes of afternoon. (3) The altitude contradicts the photograph it is drawn on: the plate says the light patch is 2018 mm deep from a 1420 mm aperture, and a 61.2-degree sun cannot throw a patch that long. The picture's own light is low and raking. This matters because the entry's revision field demands 'real angles, real units' and the plate's stated purpose is to establish on page one that this book measures things. For Minneapolis (44.9778 N, 93.2650 W) the honest numbers are: 21/06 15:00 CDT, altitude 59.6, azimuth 233.7; 15/10 15:00 CDT, altitude 30.2, azimuth 215.3 — and that October figure is the one whose azimuth is nearly what the plate already prints, which is the season the photograph looks like. Every other survey plate in the book checks out: the mug specimen card's elevation matches its photograph and its own colour chip, and the corner survey's four observers match its four sightlines.
+NOAA Global Monitoring Laboratory. *Solar Position Calculator (equations)*. General Solar Position Calculations. 2024. <https://gml.noaa.gov/grad/solcalc/solareqns.PDF>
+
+**Note.** Three problems, all checkable from the plate's own numbers. (1) Those coordinates are OTTAWA, ONTARIO to within a kilometre. Nothing in this book happens in Ottawa; the reproduced check-in record on the pilgrimage spread is Minnesota and Wisconsin, and the field notes are Lake Harriet. (2) At the stated latitude, date and hour the sun is at altitude 57.9 and azimuth 236.7, not 61.2 and 212.7 — the azimuth is out by 24 degrees, which is about ninety minutes of afternoon. (3) The altitude contradicts the photograph it is drawn on: the plate says the light patch is 2018 mm deep from a 1420 mm aperture, and a 61.2-degree sun cannot throw a patch that long. The picture's own light is low and raking. This matters because the entry's revision field demands 'real angles, real units' and the plate's stated purpose is to establish on page one that this book measures things. For Minneapolis (44.9778 N, 93.2650 W) the honest numbers are: 21/06 15:00 CDT, altitude 59.6, azimuth 233.7; 15/10 15:00 CDT, altitude 30.2, azimuth 215.3 — and that October figure is the one whose azimuth is nearly what the plate already prints, which is the season the photograph looks like. Every other survey plate in the book checks out: the mug specimen card's elevation matches its photograph and its own colour chip, and the corner survey's four observers match its four sightlines.
 
 SOLVED 24 Aug 2026, and the answer is kinder than the dispute suggested. The drawing was never wrong. The plate depicts a 1180 x 2018 mm patch thrown through a 1180 x 1420 mm aperture, which is exactly what a 35.1-degree sun produces — real geometry, correctly drafted. Only the printed text disagrees with it. Minneapolis at 15:00 CDT on 1 October is altitude 35.0, azimuth 216.8, so the honest plate is LAT 44.9778 N, LON 93.2650 W, DATE 01/10, TIME 15:00, ALTITUDE 35.0, AZIMUTH 216.8. That is six text values and nothing drawn. A seventh: the specimen card reads ORIENTATION: 1180, which is the window width, not an orientation — it should be a bearing, about 217. The numbers were recomputed independently from the NOAA equations rather than taken from the note above; the Ottawa figures agreed to 0.1 degree.
+
+THE OTHER DRAFTED PLATES WERE RE-CHECKED INDEPENDENTLY, 24 Aug 2026, because the sentence above asserting they were fine was a previous session's claim and trusting one of those is what left a wrong plate on page one. They hold. The mug specimen card is dated 16/05/24 and notes 'displacement since Tuesday' — 16 May 2024 is a Thursday, and its elevation closes: an 85 mm body and a 120 mm overall width give a 35 mm handle projection, with the handle at 72 mm inside a 90 mm body. The corner survey says 4 OBSERVERS and draws four, each with its own sightline terminating at its own head — to a phone, a pigeon, a shop sign, and nothing in particular. The maple survey's alt text says about thirty contours and a transect counts 29. The lake survey's says about twenty-five and the drawing carries roughly that. The house section carries no numbers at all, so there is nothing in it to be wrong.
+
+TWO AUTOMATED MEASUREMENTS PRODUCED FALSE LEADS on the way, and both were settled by enlarging the plate and looking. A band-by-band scan of the corner survey found two continuous runs and suggested two sightlines labelled at both ends; they are four lines that cross. A radial transect of the lake survey counted eight contours against a claim of twenty-five; it was sampling from the image centre, where the colour washes defeat the threshold. The plate that actually is wrong was found by reading it, not by measuring it.
+
+CORRECTED IN THE ARTWORK 29 Aug 2026. scripts/resurvey.py inpainted the wrong glyphs out and transplanted the right digits from elsewhere on the same plate — 24 cells in 14 regions, 0.09 percent of the image; nothing drawn moved. The plate now prints the numbers this claim states, and the specimen card reads ORIENTATION: 217 and DATE: 01/ 10 — the card's date was a seventh wrong value the solve note did not list. The claim above was rewritten from the Ottawa numbers to the printed ones and the status from disputed to verified, which puts the NOAA citation on the printed sources page for the first time: the book now makes this claim, so the book now cites it.
+
+*Used in ordinary-days-01a-dog-afternoon-light — printed inside the image, not in body copy.*
+
+

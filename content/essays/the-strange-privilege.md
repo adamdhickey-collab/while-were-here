@@ -247,7 +247,7 @@ spreads:
       caption: Review becomes a larger part of the craft.
   - type: reading
     variant: two
-    subhead: What Will Look Natural Because It Is Old
+    subhead: What a Museum Cannot Keep
     blocks: [s6a, s6b]
     noteOn: recto
     marginNote: >-
@@ -279,8 +279,8 @@ in which an image could be complete, portable, and still unable to be revised.
 
 <!-- block: s1a -->
 
-There was no single day when that world ended. It arrived and disappeared
-unevenly. A household could have a computer without an internet connection, then
+There was no single day when that world ended. The before-time, the years before
+constant connection became normal, faded unevenly. A household could have a computer without an internet connection, then
 a slow connection that occupied the telephone line, then broadband in one room. A
 mobile phone might be carried for emergencies and kept switched off to preserve
 the battery. Some people lived online while their neighbors still mailed checks
@@ -344,7 +344,8 @@ comparison. They can feel when a convenience replaces a skill, because both
 actions remain available in memory. They can also remember how quickly an awkward
 tool became a social requirement, then became almost invisible.
 
-That comparison is the rare thing, and it is available again right now.
+That comparison is the rare thing, and it is available again right now, as
+machines learn to write.
 
 <!-- block: s4a -->
 
@@ -373,7 +374,7 @@ begins.
 
 <!-- block: fig -->
 
-The weaknesses are easy to meet, which is itself new. Earlier advances in machine
+The weaknesses of the new tools are easy to meet, which is itself new. Earlier advances in machine
 learning arrived inside ranking systems and fraud detection, and their decisions
 affected daily life without presenting themselves as collaborators. Generative
 systems appeared in a blank field instead. A person could ask for a paragraph and
@@ -384,7 +385,9 @@ the user has to learn the difference.
 
 <!-- block: s5a -->
 
-Professions change inside that overlap. A designer can produce more variations
+For a short period, both conditions exist in the same room. The old way of
+working sits beside the new one, and professions change inside that overlap. A
+designer can produce more variations
 before a meeting. A programmer can begin with a proposed function instead of an
 empty file. Review becomes a larger part of the craft. Faster production can
 create room for judgment, or it can become the reason more production is
@@ -393,7 +396,7 @@ detecting the subtle failure that an effortless draft conceals.
 
 <!-- block: s5b -->
 
-The costs are being built into the ordinary layer at the same time. Large systems
+The costs are being built into everyday life at the same time. Large systems
 require concentrated computing power and vast collections of data. Their errors
 spread at the speed of copying. Synthetic evidence can be made cheaply, while
 trust remains slow to repair. A useful assistant can become an authority it has
@@ -411,7 +414,8 @@ reliable way to separate the origins.
 
 <!-- block: s6b -->
 
-And this seeing will thin, exactly as the other one is thinning. Objects can be
+And this comparison will fade, the same way the memory of the before-time is
+fading. Objects can be
 preserved, but the expectation around them is harder to display. A rotary
 telephone in a museum does not reproduce the experience of waiting beside it. A
 paper map does not restore a world in which nobody in the car could see the road

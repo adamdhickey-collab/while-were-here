@@ -188,7 +188,7 @@ becomes familiar. Even being alive becomes familiar.
 
 <!-- block: s3a -->
 
-And familiarity can masquerade as insignificance.
+And what is familiar starts to look unimportant.
 
 Which raises a question I find genuinely uncomfortable. If attention is doing the
 editing, who is directing the editor?
@@ -214,7 +214,8 @@ engagement with nothing. You put the phone down at eleven and cannot name one
 thing you actually attended to. It wasn't rest and it wasn't work. It was
 consumption without digestion.
 
-The older trap is quieter and does the same work. We are constantly encouraged to
+An older trap keeps us from the present just as well, and more quietly. We are
+constantly encouraged to
 imagine happiness as an event. Something happens, and then you feel different.
 You get the house. Reach the goal. Take the trip. Finally have enough time. The
 future contains the life you're trying to reach, and the present becomes
@@ -255,8 +256,8 @@ Almost everything that happens near you is discarded before you meet it. This is
 
 <!-- block: fig -->
 
-What all of these have in common is that they lower the speed of the world until
-the detail can catch up with you.
+Walking, sitting still, boredom and the dog have one thing in common. They lower
+the speed of the world until the detail can catch up with you.
 
 The maple was not a revelation. It was the ordinary result of standing still for
 ninety seconds on a street I usually crossed in twenty.

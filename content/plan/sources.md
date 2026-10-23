@@ -319,7 +319,7 @@ NASA Space Place. *All About the Sun*. NASA. 2024. <https://spaceplace.nasa.gov/
 
 **Note.** A mean figure. Earth's distance varies over the year, so the light-time varies by a few seconds either side. "About" is doing real work.
 
-*Used in essays/while-were-here-merged.md — s5a.*
+*Used in essays/while-were-here-merged.md — close.*
 
 ---
 

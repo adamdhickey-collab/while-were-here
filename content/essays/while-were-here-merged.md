@@ -76,7 +76,7 @@ spreads:
         Sitting upright at the mouth of a burrow that is one entrance of many, in a system no single animal has seen the whole of.
   - type: reading
     variant: two
-    subhead: The Only Section Available
+    subhead: What Ordinary Leaves Out
     blocks: [s5a, s5b]
     noteOn: recto
     marginNote: >-
@@ -89,7 +89,7 @@ spreads:
       caption: The room, and everything running through it.
   - type: reading
     variant: two
-    subhead: How the Relationship Exists While It Is Available
+    subhead: What a Relationship Is Made Of
     blocks: [s6a, s6b]
     insetOn: recto
     inset:
@@ -118,11 +118,11 @@ see. The route is visible as the strip that stayed clear.
 
 <!-- block: s1a -->
 
-Pilgrimage begins with this plain fact. Nothing requires it anymore — whole
-systems exist so that nobody has to walk anywhere — and the strip keeps its shape
-anyway. A place is reached by passing through the distance before it. The body
-cannot skip the hill because the destination matters. It cannot arrive early by
-understanding the map. Shoes wear. Water is carried. Weather reaches the skin. An
+Pilgrimage begins with a plain fact. A place is reached by passing through the
+distance before it. Nothing requires walking it anymore. Whole systems exist so
+that nobody has to, and the strip on the stair stays clear anyway. The body
+cannot skip the hill just because the destination matters. It cannot arrive
+early by understanding the map. Shoes wear. Water is carried. Weather reaches the skin. An
 intention that began as a sentence is given weight, duration, and a series of
 surfaces.
 
@@ -152,14 +152,14 @@ without being solved at every step.
 
 The body supplies a measure that cannot be argued with for long. A blister
 changes pace. Heat decides when to stop. Hunger makes the next town more
-important than the distant end. This narrowing is part of the usefulness.
-Ordinary life allows a difficult thought to be interrupted by a dozen smaller
-claims. On a long route, attention returns to water, grade, weather, and the next
+important than the distant end. This narrowing is part of what the walk is
+for. At home, a dozen smaller claims let a difficult thought be put off. On a
+long route, attention returns to water, grade, weather, and the next
 marker. The concern that began the journey remains present, but it loses the
 ability to occupy every minute. By evening, the walker has not escaped the
 question. The question has been placed among other facts.
 
-The walking itself goes unnoticed, which is its own small demonstration. Weight
+The walking itself goes unnoticed, the way the most familiar things do. Weight
 shifts forward. One leg catches it, then the other. An enormous amount of
 calculation is performed without asking permission, and a person crosses the
 ground while thinking about something else entirely. It is an astonishing
@@ -179,12 +179,12 @@ work.
 
 <!-- block: s3a -->
 
-Religious pilgrimage gives this direction a sacred destination, but the human
+Religious pilgrimage gives the long walk a sacred destination, but the human
 pattern appears elsewhere. People walk to a childhood home before it is sold.
 They travel to a battlefield, a grave, or the coast where a migration began. A
 runner returns to the same long race each year. The destinations differ in
-seriousness, but the structure is recognizable. A place has been asked to hold
-something that ordinary language cannot carry alone. Effort creates a boundary
+seriousness, but the structure is recognizable. In each case, the person needs a
+place to help say what words alone cannot. Effort creates a boundary
 around the visit. The person arrives having paid in time rather than simply
 having appeared.
 
@@ -211,12 +211,13 @@ walker follows it past a bakery and a road crew lifting stones. Pilgrimage does
 not remove ordinary life from the path. It threads purpose through it. The sacred
 route uses the same pavement as errands and deliveries.
 
-Which is the whole thing at a smaller scale, and also at a much larger one.
+A life is laid out the same way. Whatever it is for runs through the same days
+as the errands.
 
 <!-- block: s4b -->
 
-Human life occupies a narrow bracket. Before it, the lake froze and opened
-without us. Roads were laid along older paths. Languages arrived through mouths
+Against the whole of time, one life is a narrow bracket. Before it, the lake
+froze and opened without us. Roads were laid along older paths. Languages arrived through mouths
 that are gone. After it, the same systems will continue in altered forms. This
 scale can make one life look negligible, but size and importance are not the same
 measurement. A small interval can contain every person a person knows, every room
@@ -226,25 +227,25 @@ Its limits do not make its contents less real. They give the contents a location
 
 <!-- block: fig -->
 
-Most of those hours are not milestones. They are preparation, maintenance,
+Most of a life's hours are not milestones. They are preparation, maintenance,
 repetition, and return. Food is put away. The dog is walked. A parent calls with
 an update that nothing is wrong. Work is revised after the meeting. A person
 stands at the sink while rain moves across the yard. These intervals are easy to
-treat as the space between the important parts. In practice, they are the
-material from which a life receives its texture. The remembered events are held
+treat as the space between the important parts. In practice, they are what
+gives a life its texture. The remembered events are held
 in place by hundreds of days that did not announce themselves. A relationship is
 built as much by the repeated greeting as by the photograph chosen to represent
 it.
 
 <!-- block: s5a -->
 
-Looking closely does not make any of it fragile. It makes the word ordinary less
-precise. A glass of water is plumbing, weather, geology, treatment, and a hand
+Looking closely at an ordinary thing shows how much the word ordinary leaves
+out. A glass of water is plumbing, weather, geology, treatment, and a hand
 lifting it from the table. A tree beside the sidewalk is sunlight held in wood,
 roots working through compacted soil, insects using the bark, and years recorded
 without numbers. None of these descriptions replaces the glass or the tree. They
-add depth to what remains directly in front of us. The visible thing can be
-understood as a surface where many processes have arrived at once.
+add depth to what remains directly in front of us. Explanation is not the end of
+wonder. The visible thing can be understood as a surface where many processes have arrived at once.
 
 <!-- block: s5b -->
 
@@ -261,15 +262,14 @@ strong enough to bring it back.
 
 <!-- block: s6a -->
 
-Other people are beyond supervision too. They carry private rooms of memory,
+Other people cannot be fully known. They carry private rooms of memory,
 worry, and attention that can be approached but never occupied. Love does not
-remove that distance. It makes the distance consequential. A person can be known
+remove that distance. It makes the distance matter. A person can be known
 through habits, stories, expressions, and years of shared decisions, while still
 remaining more than the version held in another mind. This is why presence
 matters in such ordinary forms. Listening through the end of a sentence. Sitting
-nearby without improving the silence. These acts do not solve the temporary
-nature of a relationship. They are how the relationship exists while it is
-available.
+nearby without improving the silence. These acts do not make a relationship
+permanent. They are what it is made of while it lasts.
 
 <!-- block: s6b -->
 

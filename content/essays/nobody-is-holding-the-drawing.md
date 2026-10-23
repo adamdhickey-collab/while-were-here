@@ -47,7 +47,7 @@ spreads:
       caption: No brain in this one either.
   - type: reading
     variant: two
-    subhead: The Visible History of Constraints
+    subhead: Nobody Drew the River
     blocks: [s3a, s3b]
     insetOn: recto
     inset:
@@ -77,7 +77,7 @@ spreads:
         Milkweed as a larva, cardenolides carried into adulthood, and a warning pattern that several unrelated species arrived at independently.
   - type: reading
     variant: two
-    subhead: A Small Archive Made Operational
+    subhead: What Tools Remember
     blocks: [s5a, s5b]
     insetOn: recto
     inset:
@@ -176,9 +176,7 @@ Roots follow moisture and gaps in soil. A river basin takes its branching shape
 from rock, rain, gravity, vegetation, and the channels cut by earlier water. The
 map of a watershed is a record of resistance as much as flow. A harder ridge
 remains because water moved elsewhere. A new channel deepens because earlier
-water made the next passage easier. The pattern is not imposed on the materials.
-It records what the materials have encountered. Order is not a finished
-arrangement. It is the visible history of many constraints.
+water made the next passage easier. Nobody drew the river.
 
 <!-- block: s3b -->
 
@@ -209,9 +207,9 @@ work of detection happens in silk before a signal reaches the nervous system. Th
 spider made the structure, then the structure changed what the spider could
 perceive.
 
-Which is where the same habit shows up in a second form. We look for the maker,
-and we also look for the thinker — as though a thought must be located somewhere
-behind a face.
+The same habit shows up a second time, with thinking. We look for the maker, and
+we also look for the thinker, as though every thought must happen entirely inside
+a head.
 
 <!-- block: s4b -->
 
@@ -249,7 +247,7 @@ tool is a small archive made operational.
 
 <!-- block: s5b -->
 
-Groups have always stored knowledge this way. One person remembers the names.
+Groups have always kept knowledge in more than one head. One person remembers the names.
 Another remembers the sequence. A surgical team does not rely on one mind to
 contain the whole operation. Instruments are counted aloud. Readings remain
 visible. Roles are assigned so that one person's attention can catch what another
@@ -260,7 +258,7 @@ how to recognize a result that does not fit.
 
 <!-- block: s6a -->
 
-Language is the oldest infrastructure of this kind. A word compresses
+Language is the oldest way of keeping knowledge outside any one head. A word compresses
 distinctions learned by people who lived before the current speaker. Technical
 vocabulary can carry a procedure across decades. A place-name keeps an earlier
 use attached to a landscape after the building is gone. Writing makes the effect
@@ -273,7 +271,7 @@ back into motion.
 
 <!-- block: s6b -->
 
-External intelligence is powerful because it is vulnerable. A notebook can be
+Knowledge kept outside the head is powerful, and vulnerable for the same reason. A notebook can be
 lost, and a navigation database can be wrong. A checklist copied without
 understanding can preserve an old mistake with impressive consistency. Systems
 that make action easier can also hide the knowledge needed to question them. The

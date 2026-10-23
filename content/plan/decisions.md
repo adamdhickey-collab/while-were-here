@@ -1562,3 +1562,57 @@ print in some directions and overstate it in others; the numerals and margin
 script are ornamental, but "Part III" on a dark divider is wayfinding. One
 glance at the printed proof settles it, and the advisory line will keep
 reporting the numbers until then.
+
+## The essays say their point once, plainly — 22 Oct 2026
+
+**Adam's call: the essays read as vague and hard to follow, and the fix may
+not cost pages.** It changes what an essay is allowed to leave unsaid, so it is
+recorded here.
+
+**What was actually hard was measured, not assumed.** Sentence length was not
+it: about 10 words per sentence and Flesch–Kincaid grade 6–7 in all four
+essays. Two things the four-essay merge left behind were:
+
+* **The seams.** Parts II, III and IV each turn on the one sentence written to
+  join two source essays, and each pointed at something it never named —
+  *"Which is the whole thing at a smaller scale…"*, *"available again right
+  now"* (machine writing, unnamed), *"the same habit shows up in a second
+  form."*
+* **References whose antecedent was cut.** *"this direction"*, *"those
+  hours"*, *"beyond supervision too"*, *"that overlap"*, *"this seeing"*, and
+  *"all of these"*, which sat after a diagram spread, two pages from its list.
+  *"The before-time"* had no definition at all: it left with its essay's old
+  title. Found by comparing every sentence in the condensed essays with the
+  sentence before it in the eight sources on `main`. Run first on Part IV, the
+  comparison found every break already caught there by hand, which is why it
+  was trusted on the other three.
+
+**The technique: the example, then the point in plain words, then the line.**
+The book usually went example → line, and its restatements got more abstract
+each time. Basis: Gick & Holyoak (readers rarely carry an example to its
+principle unless told to), and concreteness fading (concrete → plain →
+abstract beats starting at either end).
+
+**What this overrides, and what it does not.** The drafting brief's *"trust the
+reader to make the leap and then stop talking"* no longer holds where the leap
+is the essay's turn: say the point plainly, once. TRUST THE READER still
+governs restatement, and this pass removed more of it than it added — the
+river paragraph lost two. MAKE IT PHYSICAL, the KEEP list, Parts II–III's third
+person, and Part IV's no-more-mortality guardrail all stand. Every KEEP line
+that was in the book still is.
+
+**Two KEEP lines restored, each because a surviving sentence depended on it:**
+*"Explanation is not the end of wonder."* (Part IV), and *"For a short period,
+both conditions exist in the same room."* (Part III, now followed by one plain
+sentence saying what the two conditions are). Ten more KEEP lines from the
+eight-essay edition are absent; each left with a whole passage cut on purpose,
+and they stay out.
+
+**Cost:** 6,846 → 6,894 words (+48, +0.7%). Still 100 interior pages. Three
+reading pages one line taller (48, 58, 70), two one line shorter (40, 92); the
+tightest page in the book, 16, keeps exactly its 34.6 mm. Five subheads were
+replaced where they quoted another spread's line or could not be read cold.
+
+**For the next edit:** a seam is not a place to save words. Compressing one back
+to a pointer — *which*, *this*, *the whole thing* — undoes the thing this entry
+is about.

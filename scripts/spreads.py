@@ -77,6 +77,25 @@ def plan_from_book():
     return plan, sides
 
 
+def newest_source():
+    """mtime of the newest file the book is built from."""
+    newest = 0.0
+    for d in ('content', 'src'):
+        base = ROOT / d
+        if base.is_dir():
+            for f in base.rglob('*'):
+                if SKIP_DIRS & set(f.parts):
+                    continue
+                if f.is_file() and not f.name.startswith('.'):
+                    newest = max(newest, f.stat().st_mtime)
+    return newest
+
+
+def behind(seconds):
+    hours = seconds / 3600
+    return f'{hours:.0f} h behind' if hours < 48 else f'{hours/24:.1f} days behind'
+
+
 if not SRC.exists():
     print(f'  · spreads not built — {SRC.name} does not exist. Run `npm run pdf` first.')
     sys.exit(0)
@@ -87,32 +106,36 @@ if check_only:
     # Newest source wins, same reasoning as scripts/pdfcheck.py: the reader PDF is
     # rebuilt after the press one, so comparing deliverables to each other reports
     # a correct workflow as stale.
-    newest = 0.0
-    for d in ('content', 'src'):
-        base = ROOT / d
-        if base.is_dir():
-            for f in base.rglob('*'):
-                if SKIP_DIRS & set(f.parts):
-                    continue
-                if f.is_file() and not f.name.startswith('.'):
-                    newest = max(newest, f.stat().st_mtime)
+    newest = newest_source()
+    # The spreads are cut from SRC, so they are only as current as SRC. Spreads
+    # newer than every source can still show an old book if SRC was not rebuilt.
     stale = []
+    if SRC.stat().st_mtime < newest:
+        stale.append((SRC, behind(newest - SRC.stat().st_mtime)))
     for f in (VECTOR, WEB):
         if not f.exists():
             stale.append((f, 'missing'))
         elif f.stat().st_mtime < newest:
-            hours = (newest - f.stat().st_mtime) / 3600
-            stale.append((f, f'{hours:.0f} h behind' if hours < 48 else f'{hours/24:.1f} days behind'))
+            stale.append((f, behind(newest - f.stat().st_mtime)))
+        elif f.stat().st_mtime < SRC.stat().st_mtime:
+            stale.append((f, 'older than the PDF it is cut from'))
     if not stale:
         print(f'  ✓ the spread PDFs are current ({len(plan)} spreads)')
         sys.exit(0)
-    print(f'\n  ⚠ {len(stale)} spread PDF(s) out of date:\n')
+    print(f'\n  ⚠ {len(stale)} file(s) out of date:\n')
     for f, why in stale:
-        where = 'PUBLISHED ON THE SITE' if f == WEB else 'local only'
+        where = ('PUBLISHED ON THE SITE' if f == WEB
+                 else 'the PDF the spreads are cut from' if f == SRC else 'local only')
         print(f'      {f.name:<38} {why}  ({where})')
-    print('\n    Rebuild with `npm run spreads`. The published one is committed to')
-    print('    the repository, so a stale build ships to the site on the next push.')
+    first = '`npm run pdf`, then ' if any(f == SRC for f, _ in stale) else ''
+    print(f'\n    Rebuild with {first}`npm run spreads`. The published one is committed')
+    print('    to the repository, so a stale build ships to the site on the next push.')
     sys.exit(0)
+
+if SRC.stat().st_mtime < newest_source():
+    print(f'  ✗ {SRC.name} is older than the book\'s sources, so spreads cut from it')
+    print('    would show the old book. Run `npm run pdf` first, then `npm run spreads`.')
+    sys.exit(1)
 
 src = fitz.open(SRC)
 W, H = src[0].rect.width, src[0].rect.height

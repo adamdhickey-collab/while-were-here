@@ -1616,3 +1616,51 @@ replaced where they quoted another spread's line or could not be read cold.
 **For the next edit:** a seam is not a place to save words. Compressing one back
 to a pointer — *which*, *this*, *the whole thing* — undoes the thing this entry
 is about.
+
+---
+
+## The specimen cards come off, and the book says what its pictures are
+*25 Oct 2026*
+
+An outside editorial review of the 53-spread PDF (pasted into the session that
+made this change; not in the repository) drew one distinction above all others:
+imagery that deepens an idea versus imagery that makes the reader supply the
+connection. Every claim it made about a spread was checked against the current
+spreads before acting — its numbering is PDF page and matched this book exactly.
+
+**Taken off the page (records intact, `status: unplaced`, each `spread` field
+says why):** the four specimen cards — Amur tiger (sp. 13), Queen (24), Komodo
+dragon (36), prairie dog (46) — and the violet moon-jelly inset (21). The
+photographs under the cards stay at full height. The review's test was "remove
+all four without replacing anything"; that is what this is, and it is one
+revert away. The two facts the cards' notes leaned on (Komodo chemoreception,
+Queen–Monarch mimicry) were already declared Unplaced in facts.json.
+*If the specimen device comes back,* the review's condition for it: introduce it
+once, and make each card demonstrate the invisible system in the scene beside it.
+
+**Moved / replaced.** Fabiola under the sign now sits on *The Route Repeats*,
+beside the passage about labels its caption quotes; the lake survey takes her
+old slot. `intelligence-01-pencil-mark` (unplaced only because its spread was
+cut in the merge) replaces the contour bench on *What Tools Remember* — the
+essay's own pencil line and tape measure, shown literally.
+
+**Text.** Opening note: "None of them argue for anything" → "They aren't
+attempts to win an argument" (the book makes claims; the old line said it
+didn't). Part II gets the spider-to-notebook bridge; Part IV opens on three
+sentences saying what pilgrimage is for in this book before it begins. The
+diagram note says its ratios are drawn, not measured. Three captions now name
+their subject (maple contour, index cards, pencil mark).
+
+**Closings printed their own line twice on one page.** Essays 2 and 3 ended the
+body on the exact sentence the closing display then set large, a few
+centimetres below. The body copy is cut; the display line is untouched, so
+*"Every tool so far has held the thought it was given. The next one answers
+back."* is still KEEP EXACTLY — printed once, in the place built for it. This is
+NOT the wire-line callback recorded on 22 Aug (that repeat is eight pages
+apart and is a return). Essay 4's last paragraph does the same and was left
+alone on purpose: the review asked for that ending to stay almost exactly.
+
+**Cost:** 6,894 → 6,918 words (+24). Still 100 interior pages; overflow clean
+on all 102; verify --strict green; spreads re-cut from a fresh PDF.
+
+**Not taken, and why** — see open-questions.md, "From the October review".

@@ -66,7 +66,7 @@ spreads:
     insetOn: recto
     inset:
       image: survey-02-corner-maple
-      caption: Eleven years, drawn at once.
+      caption: The corner maple as contour lines — eleven years, drawn at once.
     handOn: verso
     hand:
       image: hand-02-overwriting-diagram
@@ -87,29 +87,22 @@ spreads:
     blocks: [fig]
     caption: >-
       <b>Figure 1.</b> A bare wall, a window out of frame, and a scatter of colored light between them. She has the room to herself and is not doing anything with it.
-    specimen:
-      image: specimen-07-amur-tiger
-      Specimen: Panthera tigris altaica
-      Common: Amur tiger
-      Recorded: August 2, 2015, 11:20 a.m., captive
-      notes: >-
-        Stepping through summer growth, head low, whiskers forward. The largest cat alive, photographed doing the most ordinary thing it does.
   - type: reading
     variant: two
     subhead: The Route Repeats
     blocks: [s5a, s5b]
     insetOn: verso
     inset:
-      image: survey-01-familiar-lake
-      caption: The lake, surveyed as weather.
+      image: ordinary-days-01l-fabiola-sign
+      caption: The label, and the person underneath it.
   - type: reading
     variant: two
     subhead: The Only Nonrenewable Thing
     blocks: [s6a, s6b]
     insetOn: recto
     inset:
-      image: ordinary-days-01l-fabiola-sign
-      caption: The label, and the person underneath it.
+      image: survey-01-familiar-lake
+      caption: The lake, surveyed as weather.
   - type: closing
     line: Maybe the ordinary days were the important parts.
     coda: We just didn’t know what they were worth yet.
@@ -252,7 +245,7 @@ yard of grass every day for nine years and never once find it uninteresting.
 
 <!-- block: diagram-note -->
 
-Almost everything that happens near you is discarded before you meet it. This is not a flaw. A version of you that admitted the whole room would be unable to cross a street. But the ratios are worth looking at once, because something like them is the shape of a life.
+Almost everything that happens near you is discarded before you meet it. This is not a flaw. A version of you that admitted the whole room would be unable to cross a street. But the ratios are worth looking at once. They are drawn, not measured, but something like them is the shape of a life.
 
 <!-- block: fig -->
 

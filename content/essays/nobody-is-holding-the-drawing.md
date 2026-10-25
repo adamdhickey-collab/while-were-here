@@ -41,10 +41,6 @@ spreads:
       positions matching cities around Tokyo. The network it built balanced
       cost, transport efficiency and fault tolerance at levels comparable to the
       rail system.
-    insetOn: recto
-    inset:
-      image: systems-07-moon-jelly
-      caption: No brain in this one either.
   - type: reading
     variant: two
     subhead: Nobody Drew the River
@@ -61,28 +57,21 @@ spreads:
     insetOn: verso
     inset:
       image: intelligence-02-cards-table
-      caption: The hands make it visible; the eyes return it.
+      caption: Index cards, grouped before the groups have names.
   - type: image-essay
     variant: tall
     image: systems-03-muqarnas-vault
     blocks: [fig]
     caption: >-
       <b>Figure 2.</b> A muqarnas vault at the Alhambra: thousands of small cells stepping inward to one form. The essay's exception — this ceiling had a diagram.
-    specimen:
-      image: specimen-02-queen-butterfly
-      Specimen: Danaus gilippus
-      Common: Queen
-      Recorded: July 20, 2014, 4:46 p.m., captive
-      notes: >-
-        Milkweed as a larva, cardenolides carried into adulthood, and a warning pattern that several unrelated species arrived at independently.
   - type: reading
     variant: two
     subhead: What Tools Remember
     blocks: [s5a, s5b]
     insetOn: recto
     inset:
-      image: survey-03-workbench-field
-      caption: The bench, as the thought it was.
+      image: intelligence-01-pencil-mark
+      caption: The number forgotten; the line kept.
     handOn: verso
     hand:
       image: hand-02-overwriting-diagram
@@ -209,7 +198,8 @@ perceive.
 
 The same habit shows up a second time, with thinking. We look for the maker, and
 we also look for the thinker, as though every thought must happen entirely inside
-a head.
+a head. The spider suggests otherwise. We do what it does every time we put a
+thought into a notebook, draw a diagram, or leave a tool arranged for tomorrow.
 
 <!-- block: s4b -->
 
@@ -290,5 +280,3 @@ answer. No single glance completes the work. Intelligence appears in the traffic
 between memory and material. The mind reaches outward, receives resistance, and
 changes course. The room is not a backdrop for thought. It is one of the places
 where thought happens.
-
-Every tool so far has held the thought it was given. The next one answers back.

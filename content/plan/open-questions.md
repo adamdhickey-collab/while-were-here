@@ -851,3 +851,41 @@ disclosure; drop Record 3 entirely, which costs the spread but removes the
 location history in one move; or keep it and change the caption from
 "Reproduced in full, unedited" to something honest about what was withheld —
 which weakens the argument the spread exists to make.
+
+---
+
+## From the October review — needs Adam, not the repo
+*25 Oct 2026. What was done is in decisions.md under the same date.*
+
+- **The maple.** The essay says Adam has photographed one tree four times, one
+  a season. No such photograph is in images.json — the four `ordinary-days-01g*`
+  season plates are generated lakeshore, not the maple. If the four photographs
+  exist, they are the strongest image the first essay could have (sp. 11).
+- **Spread 39** (top priority of the replacements): the closing plate is a
+  stock laptop and cursor; the text is a paper atlas open beside a phone in a
+  cup holder. Needs a photograph of both navigation systems at once.
+- **Spread 37** band: generic computer/chip/chat collage. Wants a real moment
+  of review — a page with an AI draft marked up, say.
+- **Spread 42** inset: the stamped booklet reads as "a map on a surface". The
+  review asks for a yellow arrow; `pilgrimage-02-yellow-arrow` exists but was
+  deliberately retired 21 Aug and is generated, not a real marker. Not reverted.
+- **A concrete AI moment** for Part III — a convincing answer caught being
+  wrong, and what was trusted after. Only Adam has the real one; not invented.
+- **A personal moment in Part II** (thinking with a drawing, tool, person,
+  room). Conflicts with the Parts II–III third-person rule in the 23 Oct
+  decision — Adam's call which wins.
+- **Año Viejo caption** (sp. 50): the review wants a larger explanation. The
+  here-10 record says its caption "is two timestamps and needs to be nothing
+  else". Left as decided; the verso caption already explains the custom.
+- **Spread 9** corner survey: hard to decode, but bands have no caption slot —
+  that is a layout change, not a content one.
+- **Spread 47** house section: restrained labels for water, light, air, power
+  would answer the review; that is image surgery (a script, per house style).
+- **Spread 34** Meta record: kept as is. Its title and source line say what it
+  is; the review's point is that they are small, which is the caption-size
+  question already on the proof checklist (6.75 pt).
+- **Caption size and contrast** generally: already on proof-checklist.md,
+  judged on paper, not on screen.
+- The review's production note (the spreads PDF is a raster preview at
+  ~2,600 px) is correct and already handled: the press file is
+  `npm run pdf:press`, vector text and full-resolution masters.

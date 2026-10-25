@@ -67,13 +67,6 @@ spreads:
     blocks: [fig]
     caption: >-
       <b>Figure 4.</b> The far wall, for under a minute. The room is doing this whether or not anyone is in it.
-    specimen:
-      image: specimen-06-prairie-dog
-      Specimen: Cynomys ludovicianus
-      Common: Black-tailed prairie dog
-      Recorded: June 8, 2019, 10:05 a.m., captive
-      notes: >-
-        Sitting upright at the mouth of a burrow that is one entrance of many, in a system no single animal has seen the whole of.
   - type: reading
     variant: two
     subhead: What Ordinary Leaves Out
@@ -117,6 +110,10 @@ same first step, and went down. No single crossing changed the stair enough to
 see. The route is visible as the strip that stayed clear.
 
 <!-- block: s1a -->
+
+Much of life can be made faster now. The searching, the calculating, the
+drafting, sometimes the making, can be skipped. Some things still have to be
+lived at their own speed.
 
 Pilgrimage begins with a plain fact. A place is reached by passing through the
 distance before it. Nothing requires walking it anymore. Whole systems exist so

@@ -229,13 +229,6 @@ spreads:
     blocks: [fig]
     caption: >-
       <b>Figure 3.</b> The dog under the desk. Whatever is happening above her is, from the floor, a Tuesday.
-    specimen:
-      image: specimen-01-komodo-tongue
-      Specimen: Varanus komodoensis
-      Common: Komodo dragon
-      Recorded: May 15, 2023, 1:12 p.m., captive
-      notes: >-
-        The tongue is forked so that it can sample two places at once and compare them. Direction is read from the difference.
   - type: reading
     variant: two
     subhead: Fluency and Reliability Arrive Separately
@@ -433,6 +426,5 @@ turn. The paper map remains open anyway. Its route and the blue line agree for
 most of the distance. At one junction they divide. The driver follows the phone
 and passes a field that the old road never reached.
 
-Nothing dramatic marks the change. One system continues to work while another
-becomes unnecessary. This is how it ends in memory too — not with a closing date,
-but with an old instruction still legible beside a habit that no longer needs it.
+Nothing dramatic marks the change. This is how it ends in memory too — not with
+a closing date.
